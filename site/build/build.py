@@ -118,8 +118,8 @@ home_body = f'''
 
 <section class="section" id="wine"><div class="wrap"><div class="split">
   <div class="split__media reveal">
-    <img src="assets/img/moroccan-arty-table-koh-phangan.jpg" alt="Evening ambiance and wine pairing at The Mansour Bar, Koh Phangan">
-    <span class="tag">The Mansour Bar</span>
+    <img src="assets/img/moroccan-wine-pairing-tajine-port-koh-phangan.jpg" alt="Moroccan prune tajine paired with a tawny port on the Dar Mansour wine pairing list, Koh Phangan">
+    <span class="tag">Wine Pairing</span>
   </div>
   <div class="split__text reveal" data-delay="1">
     <span class="eyebrow">Wine Pairing &amp; The Mansour Bar</span>
@@ -282,7 +282,7 @@ pages["moroccan-restaurant-reservation-koh-phangan.html"] = L.page(
 wine_body = L.breadcrumb(("Wine Pairing", None)) + L.subhero(
     "Wine Pairing Experience", "Crafted to enhance every bite — on the spiced path of Morocco",
     "Koh Phangan's only dedicated Moroccan wine pairing list — natural, characterful labels chosen to elevate the soul of our slow food.",
-    "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening wine pairing at The Mansour Bar") + f'''
+    "assets/img/moroccan-wine-pairing-tajine-port-koh-phangan.jpg", "Moroccan prune tajine paired with a tawny port from the Dar Mansour wine pairing list") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;">
     <p class="lead">At Dar Mansour, wine is more than a drink — it's a dialogue with the dish. Each label in our curated list is selected to elevate the complexity, warmth and aromatic depth of Moroccan slow food.</p>
