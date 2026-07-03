@@ -10,6 +10,10 @@
 node_modules/
 package-lock.json
 
+# Python build cache
+__pycache__/
+*.pyc
+
 # Editor
 .vscode/
 .idea/

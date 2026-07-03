@@ -37,7 +37,8 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
 <meta property="og:image" content="{SITE_URL}/{og_image}">
 <meta property="og:url" content="{SITE_URL}/{canonical}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/logo/dar-mansour-logo.png">
+<link rel="icon" href="assets/logo/dar-mansour-icon.png">
+<link rel="apple-touch-icon" href="assets/logo/dar-mansour-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -83,9 +84,9 @@ def header():
     return f'''
 <header class="header" id="header">
   <div class="wrap header__inner">
-    <a class="brand" href="index.html" aria-label="Dar Mansour home">
-      <span class="brand__name">DAR MANSOUR</span>
-      <span class="brand__sub">Morocco's Kitchen · Koh Phangan</span>
+    <a class="brand" href="index.html" aria-label="Dar Mansour — Morocco's Kitchen, home">
+      <img class="brand__logo brand__logo--white" src="assets/logo/dar-mansour-icon-white.png" alt="Dar Mansour — Morocco's Kitchen" width="445" height="472">
+      <img class="brand__logo brand__logo--color" src="assets/logo/dar-mansour-icon.png" alt="" aria-hidden="true" width="445" height="472">
     </a>
     <nav class="nav" aria-label="Primary">
       {nav}
@@ -183,8 +184,8 @@ def footer():
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__brand">
-        <span class="brand__name">DAR MANSOUR</span>
-        <span class="brand__sub" style="display:block;margin-top:4px;">Morocco's Kitchen · Koh Phangan</span>
+        <img class="footer__logo" src="assets/logo/dar-mansour-logo-white.png" alt="Dar Mansour — Morocco's Kitchen" width="1622" height="876">
+        <p class="footer__brand-sub">Koh Phangan · Thailand</p>
         <p>A soulful Moroccan slow food sanctuary on the west coast of Koh Phangan. Rooted in tradition, slow cooked with care.</p>
       </div>
       <div>
