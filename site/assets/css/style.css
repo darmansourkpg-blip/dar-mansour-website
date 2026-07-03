@@ -141,9 +141,18 @@ p { max-width: 62ch; }
   transition: background .4s var(--ease), box-shadow .4s var(--ease), height .4s var(--ease);
 }
 .header__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
-.brand { display: flex; flex-direction: column; line-height: 1; z-index: 2; }
+.brand { display: flex; align-items: center; line-height: 1; z-index: 2; }
 .brand__name { font-family: var(--serif); font-size: 1.45rem; letter-spacing: .16em; color: #fff; transition: color .4s var(--ease); }
 .brand__sub { font-size: .58rem; letter-spacing: .34em; text-transform: uppercase; color: rgba(255,255,255,.75); margin-top: 4px; transition: color .4s var(--ease); }
+
+/* Brand logo (icon mark), swaps white/colour with header context */
+.brand__logo { display: block; height: clamp(46px, 5.4vw, 56px); width: auto; transition: height .4s var(--ease); }
+.brand__logo--color { display: none; }
+.header.is-solid .brand__logo { height: 48px; }
+.header.is-solid .brand__logo--white,
+body.menu-open .brand__logo--white { display: none; }
+.header.is-solid .brand__logo--color,
+body.menu-open .brand__logo--color { display: block; }
 
 .nav { display: flex; align-items: center; gap: 2.1rem; }
 .nav a { font-size: .78rem; font-weight: 600; letter-spacing: .06em; color: rgba(255,255,255,.9); transition: color .3s var(--ease); position: relative; }
@@ -318,6 +327,8 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .footer h4 { color: #fff; font-family: var(--sans); font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 1.3rem; font-weight: 700; }
 .footer__brand .brand__name { color: #fff; font-size: 1.6rem; }
 .footer__brand .brand__sub { color: var(--green-tint-2); }
+.footer__logo { display: block; width: clamp(180px, 42%, 215px); height: auto; }
+.footer__brand .footer__brand-sub { color: var(--green-tint-2); font-family: var(--sans); font-size: .62rem; letter-spacing: .32em; text-transform: uppercase; margin-top: .95rem; }
 .footer__brand p { color: var(--on-dark-soft); font-size: .92rem; margin-top: 1.2rem; max-width: 34ch; }
 .footer ul li { margin-bottom: .7rem; }
 .footer ul a, .footer address a, .footer address { color: var(--on-dark-soft); font-size: .92rem; font-style: normal; transition: color .3s var(--ease); }
