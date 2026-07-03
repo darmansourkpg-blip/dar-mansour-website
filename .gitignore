@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Office temp/lock files
+~$*
+**/~$*
+
+# Node / tooling (not part of the project)
+node_modules/
+package-lock.json
+
+# Editor
+.vscode/
+.idea/

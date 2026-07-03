@@ -1,0 +1,706 @@
+# -*- coding: utf-8 -*-
+"""Dar Mansour — static site generator. Run: python3 build/build.py  (from site/)"""
+import os, sys
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+OUT = os.path.dirname(HERE)  # site/
+
+import _layout as L
+from _menu import render_menu, render_legend
+from _drinks import render_wine_feature, render_wine_groups, render_cocktails
+
+WA = L.WA
+A = L.ARROW
+WI = L.WA_ICON
+pages = {}
+
+
+# ============================================================ HOME
+home_body = f'''
+<section class="hero">
+  <div class="hero__media"><img src="assets/img/moroccan-garden-dining-koh-phangan.jpg" alt="Candlelit Moroccan garden dining at Dar Mansour, Koh Phangan" fetchpriority="high"></div>
+  <div class="wrap hero__inner">
+    <span class="eyebrow">Moroccan Slow Food · West Coast, Koh Phangan</span>
+    <h1 class="display hero__title">Morocco's Kitchen in Koh Phangan</h1>
+    <p class="hero__sub">A hidden Moroccan gem near Sri Thanu &amp; Hin Kong. Fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners — rooted in tradition, slow cooked with care.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WI} Reserve Your Evening</a>
+      <a class="btn btn--light" href="moroccan-menu-koh-phangan.html">Discover the Menu</a>
+    </div>
+  </div>
+  <span class="hero__scroll" aria-hidden="true">Scroll</span>
+</section>
+
+<div class="trust"><div class="wrap trust__inner">
+  <span class="trust__item"><strong>Reservation Only</strong></span>
+  <span class="trust__item"><strong>Pre-order</strong> Philosophy</span>
+  <span class="trust__item"><strong>Slow Cooked</strong> · Zero Waste</span>
+  <span class="trust__item">Limited to <strong>40 Guests</strong> a Night</span>
+  <span class="trust__item"><strong>Curated</strong> Wine Pairing</span>
+</div></div>
+
+<section class="section" id="experience"><div class="wrap"><div class="split">
+  <div class="split__text reveal">
+    <span class="eyebrow">The Experience</span>
+    <h2>Come as a guest,<br>leave as family.</h2>
+    <p class="lead">Tucked away near Sri Thanu and Hin Kong — just minutes from The Alcove, Orion Healing Center and Bliss Villas — Dar Mansour is a soulful, immersive dining experience on the west coast of Koh Phangan.</p>
+    <p style="margin-top:1.2rem;">Rooted in the wisdom of the Dadas, our menu blends Berber, Andalusian, Jewish and Saharan influences — where sweet meets savoury, and vegetables are roasted with patience and care. Every detail, from handcrafted tiles to candlelit tables, is curated to slow you down and welcome you home.</p>
+    <a class="textlink" href="dar-mansour-founders-vision.html">Read our story {A}</a>
+  </div>
+  <div class="split__media reveal" data-delay="1">
+    <img src="assets/img/moroccan-restaurant-central-room-koh-phangan.jpg" alt="Central dining room at Dar Mansour with handcrafted Moroccan interiors">
+    <span class="tag">The Central Room</span>
+  </div>
+</div></div></section>
+
+<section class="section band-dark"><div class="wrap quote">
+  <div class="divider divider--light reveal"><span>◇◇◇</span></div>
+  <blockquote class="reveal" data-delay="1" style="margin-top:2rem;">"Dar Mansour brings the soul of contemporary Moroccan hospitality to Koh Phangan."</blockquote>
+  <cite class="reveal" data-delay="2">Slow food · Art · Culture · Human connection</cite>
+</div></section>
+
+<section class="section" id="concept"><div class="wrap">
+  <div class="center reveal" style="max-width:720px;margin-inline:auto;">
+    <span class="eyebrow">Concept &amp; Operating Model</span>
+    <h2 style="margin:1.2rem 0 1.3rem;">The art of hosting, redefined</h2>
+    <p class="lead" style="margin-inline:auto;">At Dar Mansour, the experience begins long before your arrival. As one of Koh Phangan's only Moroccan slow food restaurants, every dish is made to order — served only by reservation, because dishes like tanjia marrakchia and fire-cooked tajines need time, love and patience to reveal their full soul.</p>
+  </div>
+  <div class="features" style="margin-top:clamp(3rem,6vw,4.5rem);">
+    <div class="feature reveal"><span class="feature__num">01</span><h3>Reservation Only</h3><p>Advance booking via WhatsApp, to offer a curated, intimate experience for every table.</p></div>
+    <div class="feature reveal" data-delay="1"><span class="feature__num">02</span><h3>Pre-order Philosophy</h3><p>Main dishes pre-ordered before 2 pm — honouring long cooking times and avoiding any wait on arrival.</p></div>
+    <div class="feature reveal"><span class="feature__num">03</span><h3>Zero Waste</h3><p>No mass prep, no leftovers. Each dish is cooked fresh, just for you, at the rhythm of the ingredients.</p></div>
+    <div class="feature reveal" data-delay="1"><span class="feature__num">04</span><h3>A Peaceful Kitchen</h3><p>Limited to 40 guests a night. Slowness supports depth, care and quality — for the planet and for tradition.</p></div>
+  </div>
+  <div class="center reveal" style="margin-top:2.6rem;"><a class="textlink" href="moroccan-slow-dining-koh-phangan.html">Discover our slow-food concept {A}</a></div>
+</div></section>
+
+<section class="section" id="cuisine" style="background:var(--sand);"><div class="wrap">
+  <div class="center reveal" style="max-width:680px;margin:0 auto clamp(2.5rem,5vw,3.5rem);">
+    <span class="eyebrow">Our Moroccan Menu</span>
+    <h2 style="margin:1.2rem 0;">A journey to the roots of Moroccan cuisine</h2>
+    <p class="lead" style="margin-inline:auto;">Inspired by the Dadas — the silent guardians of Moroccan family recipes — our kitchen celebrates the authentic essence of Morocco: slow-cooked dishes full of generosity, depth and soul.</p>
+  </div>
+  <div class="dishes">
+    <article class="dish reveal"><img src="assets/img/berber-lamb-tajine-koh-phangan.jpeg" alt="Berber lamb tajine with prunes and almonds"><div class="dish__label"><h3>Tajines</h3><p>Fire-cooked, slow-simmered for hours — sweet meets savoury.</p></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/img/moroccan-couscous-koh-phangan.jpg" alt="Hand-rolled saffron couscous steamed four times"><div class="dish__label"><h3>Couscous</h3><p>Hand-rolled semolina, steamed four times until light and airy.</p></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/img/tanjia-marrakchia-koh-phangan.jpeg" alt="Tanjia Marrakchia slow-cooked Moroccan speciality"><div class="dish__label"><h3>Tanjia</h3><p>The Marrakchi speciality — cooked low and slow in its clay urn.</p></div></article>
+  </div>
+  <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+    <a class="btn btn--primary" href="moroccan-menu-koh-phangan.html">Explore the Full Menu</a>
+    <p class="book__meta">Each main dish is an individual serving, pre-ordered to honour traditional cooking times and minimise waste.</p>
+  </div>
+</div></section>
+
+<section class="section" id="story"><div class="wrap"><div class="split split--reverse">
+  <div class="split__text reveal">
+    <span class="eyebrow">Founders &amp; Vision</span>
+    <h2>A love story — and a culinary vision</h2>
+    <p class="lead">Dar Mansour is the vision of Maïja — a creative spirit who spent over 30 years immersed in Moroccan culture — and Bruno, a French entrepreneur who fell in love not only with Morocco, but with its most inspired ambassador.</p>
+    <p style="margin-top:1.2rem;">Together they imagined a place where every meal is a story, every guest is welcomed like family, and every detail — from spices to music — carries the soul of Moroccan hospitality.</p>
+    <a class="textlink" href="dar-mansour-founders-vision.html">Meet the founders {A}</a>
+  </div>
+  <div class="split__media reveal" data-delay="1">
+    <img src="assets/img/maija-art-direction-koh-phangan.jpg" alt="Maïja's artistic direction and Moroccan décor at Dar Mansour">
+    <span class="tag">Art Direction · Maïja</span>
+  </div>
+</div></div></section>
+
+<section class="section pd" id="private">
+  <div class="pd__bg"><img src="assets/img/moroccan-round-table-koh-phangan.jpg" alt="Intimate round table set for a private Moroccan celebration"></div>
+  <div class="wrap"><div class="reveal" style="max-width:560px;">
+    <span class="eyebrow">Private Dining &amp; Celebrations</span>
+    <h2 style="margin:1.2rem 0 1.3rem;">Celebrate life's most beautiful moments around a Moroccan table</h2>
+    <p class="lead" style="color:var(--on-dark-soft);">Some evenings deserve more than a restaurant. Birthdays, anniversaries, proposals, honeymoons or intimate gatherings — thoughtfully curated in our peaceful candlelit garden between Sri Thanu and Hin Kong.</p>
+    <ul class="pd__tags"><li>Birthdays</li><li>Anniversaries</li><li>Proposals</li><li>Honeymoons</li><li>Family Gatherings</li><li>Wellness Retreats</li></ul>
+    <a class="btn btn--light" href="private-dining-koh-phangan.html">Plan Your Celebration</a>
+  </div></div>
+</section>
+
+<section class="section" id="wine"><div class="wrap"><div class="split">
+  <div class="split__media reveal">
+    <img src="assets/img/moroccan-arty-table-koh-phangan.jpg" alt="Evening ambiance and wine pairing at The Mansour Bar, Koh Phangan">
+    <span class="tag">The Mansour Bar</span>
+  </div>
+  <div class="split__text reveal" data-delay="1">
+    <span class="eyebrow">Wine Pairing &amp; The Mansour Bar</span>
+    <h2>On the spiced path of Morocco</h2>
+    <p class="lead">Wine here is more than a drink — it's a dialogue with the dish. We are proud to offer Koh Phangan's only dedicated Moroccan wine pairing menu, each label selected to elevate the warmth and aromatic depth of our slow food.</p>
+    <p style="margin-top:1.2rem;">At The Mansour Bar, cocktails are a story, a scent, a spark of memory — from <em>Rock the Casbah</em> with Ras El Hanout syrup to the infamous Mansour's Jasminade.</p>
+    <a class="textlink" href="moroccan-wine-pairing-koh-phangan.html">Explore wine &amp; cocktails {A}</a>
+  </div>
+</div></div></section>
+
+<section class="section" id="reviews" style="background:var(--sand);"><div class="wrap">
+  <div class="reviews__head reveal">
+    <span class="eyebrow">What Our Guests Say</span>
+    <h2 style="margin-top:1.1rem;">More than a restaurant — an immersive Moroccan experience</h2>
+    <div class="rating"><span class="rating__stars">★★★★★</span><span>5.0 · Loved by guests from around the world</span></div>
+  </div>
+  <div class="reviews__grid">
+    <figure class="review reveal"><p>"As half Moroccan… I was eating and crying, crying and eating. You can feel the love in every bite."</p><footer><span class="avatar">O</span><cite>Oren</cite></footer></figure>
+    <figure class="review reveal" data-delay="1"><p>"We dined seated on the floor, surrounded by carpets and lanterns — just like a Moroccan riad. A magical family evening."</p><footer><span class="avatar">M</span><cite>Mo. A</cite></footer></figure>
+    <figure class="review reveal" data-delay="2"><p>"Deeply authentic Moroccan cuisine that blew me away. Cozy, stylish and full of charm."</p><footer><span class="avatar">D</span><cite>Daliah</cite></footer></figure>
+    <figure class="review reveal"><p>"We were welcomed like old friends by Maija and Bruno. Msemen starters, slow-cooked tajines — everything was perfect."</p><footer><span class="avatar">A</span><cite>Alberto</cite></footer></figure>
+    <figure class="review reveal" data-delay="1"><p>"It felt like being transported to a secret riad in Marrakech. A hidden gem with a beating heart."</p><footer><span class="avatar">K</span><cite>Kodi</cite></footer></figure>
+    <figure class="review reveal" data-delay="2"><p>"As a Moroccan living in Koh Phangan, it felt amazing to feel at home instantly. More than a meal — an experience."</p><footer><span class="avatar">S</span><cite>Soukaina</cite></footer></figure>
+  </div>
+  <div class="center reveal" style="margin-top:2.5rem;"><a class="textlink" href="moroccan-restaurant-reviews-koh-phangan.html">Read more reviews {A}</a></div>
+</div></section>
+
+<section class="section"><div class="wrap reco">
+  <div class="reveal">
+    <span class="eyebrow">Recognition</span>
+    <h2 style="margin:1.1rem auto 1.2rem;max-width:20ch;">One of the world's best Moroccan restaurants</h2>
+    <p class="lead" style="max-width:60ch;margin-inline:auto;">Featured in <em>Golf du Maroc</em> magazine among the world's finest Moroccan culinary destinations — just two months after opening. A culinary gem carrying the Moroccan soul across continents.</p>
+    <div style="margin-top:1.8rem;"><a class="textlink" href="best-moroccan-restaurant-world-press.html">Read the recognition {A}</a></div>
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:2.5rem;"><div class="divider"><span>◇◇◇</span></div><h2 style="margin-top:1.5rem;">An evening at Dar Mansour</h2></div>
+  <div class="gallery">
+    <a class="g-tall reveal" href="assets/img/moroccan-restaurant-entrance-koh-phangan.jpg"><img src="assets/img/moroccan-restaurant-entrance-koh-phangan.jpg" alt="Entrance to Dar Mansour Moroccan restaurant in Koh Phangan" loading="lazy"></a>
+    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-arty-table-koh-phangan.jpg"><img src="assets/img/moroccan-arty-table-koh-phangan.jpg" alt="Artfully set Moroccan table with candles and ceramics" loading="lazy"></a>
+    <a class="reveal" data-delay="2" href="assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg"><img src="assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg" alt="Artisanal Moroccan pastries and traditional mint tea" loading="lazy"></a>
+    <a class="reveal" href="assets/img/fez-tajine-koh-phangan.jpg"><img src="assets/img/fez-tajine-koh-phangan.jpg" alt="Fez tajine served at Dar Mansour" loading="lazy"></a>
+    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-interior-decor-koh-phangan.jpg"><img src="assets/img/moroccan-interior-decor-koh-phangan.jpg" alt="Curated Moroccan interior décor at Dar Mansour" loading="lazy"></a>
+    <a class="reveal" data-delay="2" href="assets/img/friday-couscous-koh-phangan.jpeg"><img src="assets/img/friday-couscous-koh-phangan.jpeg" alt="Traditional Friday couscous at Dar Mansour" loading="lazy"></a>
+  </div>
+</div></section>
+''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
+    "We operate on reservation only, with main dishes pre-ordered via WhatsApp before 2 pm on the day of your booking. Tell us of any allergies or dietary needs — we'll do our best to adapt while staying true to our recipes.")
+
+HOME_SCHEMA = '''<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Dar Mansour — Morocco's Kitchen","servesCuisine":"Moroccan","priceRange":"$$$","url":"https://darmansour.com/","telephone":"+66822767757","email":"hello@darmansour.com","image":"https://darmansour.com/assets/img/moroccan-garden-dining-koh-phangan.jpg","address":{"@type":"PostalAddress","streetAddress":"Hin Kong Road, Sri Thanu area","addressLocality":"Koh Phangan","addressRegion":"Surat Thani","addressCountry":"TH"},"acceptsReservations":"True","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"22:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"8"}}
+</script>'''
+
+pages["index.html"] = L.page(
+    "Dar Mansour | Best Moroccan Restaurant in Koh Phangan — Slow Food &amp; Soulful Dining",
+    "Discover Dar Mansour, a hidden Moroccan gem in Koh Phangan. Authentic slow-cooked cuisine, romantic garden dinners and soulful hospitality. Book your table for an unforgettable dining experience.",
+    "", home_body, extra_head=HOME_SCHEMA)
+
+
+# ============================================================ CONCEPT
+concept_body = L.breadcrumb(("Concept", None)) + L.subhero(
+    "Concept &amp; Operating Model", "Moroccan Slow Dining in Koh Phangan",
+    "The art of hosting, redefined — reservation-only, pre-ordered dinners, cooked with care and zero waste.",
+    "assets/img/moroccan-arty-table-koh-phangan.jpg", "Artfully set Moroccan table at Dar Mansour") + f'''
+<section class="section"><div class="wrap prose reveal">
+  <p class="lead">At Dar Mansour, the experience begins long before your arrival. As one of Koh Phangan's only Moroccan slow food restaurants, we follow a rare and intentional philosophy: every dish is made to order, with 24-hour notice, and served only by reservation.</p>
+  <p>Why? Because iconic Moroccan dishes like <strong>tanjia marrakchia</strong> and fire-cooked tajines need time, love and patience to reveal their full soul. Because we believe in honest, fresh cuisine — crafted without shortcuts, at the rhythm of the ingredients and those who cook them.</p>
+  <div class="note"><p>"A thoughtful system designed with love — for the planet, for tradition, and for those who take time to eat well."</p></div>
+  <h2>Our operating principles</h2>
+  <ul class="bullets">
+    <li><strong>Advance reservation via WhatsApp</strong> — to offer a curated, intimate experience.</li>
+    <li><strong>Main dishes pre-ordered before 2 pm</strong> — to honour long cooking times and avoid a long wait upon arrival.</li>
+    <li><strong>Zero waste</strong> — no mass prep, no leftovers; each dish is cooked just for you.</li>
+    <li><strong>Limited to 40 guests per night</strong> — to preserve intimacy, connection and attention to detail.</li>
+    <li><strong>A peaceful kitchen = better food</strong> — slowness supports depth, care and quality.</li>
+  </ul>
+  <p>Located between Sri Thanu and Hin Kong — just minutes from The Alcove and Orion Healing Center — Dar Mansour is more than a restaurant. It's a slow food sanctuary for private dinners, soulful celebrations and food-conscious travellers seeking meaning, beauty and flavour.</p>
+</div></section>
+''' + L.cta_band("Book your experience &amp; pre-order",
+    "Perfect for private dinners, slow dining lovers and food-conscious travellers seeking a soulful culinary experience in Koh Phangan.") + L.related(
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Moroccan couscous"),
+    ("Reservation", "How to Book", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Central dining room"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Maïja art direction"))
+pages["moroccan-slow-dining-koh-phangan.html"] = L.page(
+    "Concept &amp; Operating Model — Moroccan Slow Dining Koh Phangan",
+    "Discover how Dar Mansour redefines hospitality in Koh Phangan through its Moroccan slow food concept. Reservation-only, pre-ordered dinners, zero waste, cooked with care.",
+    "moroccan-slow-dining-koh-phangan.html", concept_body,
+    og_image="assets/img/moroccan-arty-table-koh-phangan.jpg")
+
+
+# ============================================================ MENU
+menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
+    "Our Moroccan Menu", "A tribute to Moroccan roots &amp; soulful flavours",
+    "From ancient Berber staples to the aromatic influences of Moorish, Andalusian, Jewish and sub-Saharan cultures — slow cooked, served with soul.",
+    "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Moroccan pastries and mint tea at Dar Mansour") + f'''
+<section class="section"><div class="wrap">
+  <div class="prose reveal" style="text-align:center;">
+    <h2>A journey to the roots of Moroccan cuisine — inspired by the Dadas</h2>
+    <p>In the heart of Moroccan homes, the Dadas stand as iconic figures, preserving a culinary heritage passed down from generation to generation. Originally from Mali or Senegal, these women became the silent guardians of Moroccan family recipes — slow-cooked dishes full of generosity, depth and soul. It is their legacy we honour at Dar Mansour: food as love, patience and memory.</p>
+  </div>
+  <div style="max-width:820px;margin:2.5rem auto 0;">{render_legend()}</div>
+  <div class="note reveal" style="max-width:820px;margin:1.4rem auto 0;"><p>All prices are in Thai Baht (฿). A 3% surcharge applies to card payments. Our Tajines, Tanjias and Couscous are freshly prepared to order in limited quantities — most requiring 1 to 5 hours of slow cooking. Pre-ordering via WhatsApp before 2 pm is advised.</p></div>
+
+{render_menu()}
+
+  <div class="menu-note note reveal"><p>Each main dish is an individual serving, crafted for one guest. Like many slow-cooked meals, our dishes often taste even better the next day — don't hesitate to take home any leftovers to enjoy later.</p></div>
+</div></section>
+''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
+    "Book now via WhatsApp to reserve your table and pre-order your soulful Moroccan dinner.") + L.related(
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening ambiance"),
+    ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/img/fez-tajine-koh-phangan.jpg", "Fez tajine"),
+    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Dining room"))
+pages["moroccan-menu-koh-phangan.html"] = L.page(
+    "Moroccan Menu Koh Phangan — Tagines, Couscous &amp; Slow Food | Dar Mansour",
+    "Explore Dar Mansour's menu in Koh Phangan: authentic Moroccan cuisine with tagines, couscous, tanjias and homemade bread. Cooked slow, served with soul.",
+    "moroccan-menu-koh-phangan.html", menu_body,
+    og_image="assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg")
+
+
+# ============================================================ RESERVATION
+res_body = L.breadcrumb(("Reservation", None)) + L.subhero(
+    "Reservation &amp; Pre-Order Required", "Slow-cooked Moroccan dishes, lovingly prepared just for you",
+    "We operate on reservation only and ask guests to pre-order their main dishes in advance, to honour our slow food philosophy.",
+    "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Central dining room at Dar Mansour") + f'''
+<section class="section"><div class="wrap prose reveal">
+  <p class="lead">At Dar Mansour, each dish is a tribute to Moroccan tradition — infused with patience, soul and care. To honour this slow food philosophy, we operate on reservation only and require guests to pre-order their main dishes in advance.</p>
+</div>
+<div class="wrap" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+  <div class="steps">
+    <div class="step reveal"><span class="step__num">01</span><h3>Reserve via WhatsApp</h3><p>Message us to request your table. Because ours is a boutique experience, we serve only guests with confirmed bookings.</p></div>
+    <div class="step reveal" data-delay="1"><span class="step__num">02</span><h3>Pre-order before 2 pm</h3><p>On the day of your reservation we'll share the pre-order menu. Choose your main dishes so they're ready in time.</p></div>
+    <div class="step reveal" data-delay="2"><span class="step__num">03</span><h3>Arrive &amp; savour</h3><p>Settle into the candlelit garden. Everything is made fresh to order — no shortcuts, no reheating.</p></div>
+  </div>
+</div>
+<div class="wrap prose reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+  <h2>Why pre-order?</h2>
+  <p>Our Tajines, Tanjias and Couscous are slow-cooked in small quantities, taking between 1 and 5 hours to cook. To ensure dish availability and avoid a long wait upon arrival (often more than an hour), we kindly ask guests to pre-order via WhatsApp before 2 pm on the booking date. This lets us:</p>
+  <ul class="bullets">
+    <li>Cook at the rhythm of our traditions</li>
+    <li>Maintain high quality and freshness</li>
+    <li>Eliminate waste and preserve the planet</li>
+    <li>Offer you a seamless, soulful dining experience</li>
+  </ul>
+  <div class="note"><p><strong>Allergy &amp; dietary notes:</strong> please inform us of any allergies or dietary restrictions when placing your pre-order. We'll do our best to adapt while staying true to our recipes.</p></div>
+</div></section>
+''' + L.cta_band("I want to book a table &amp; pre-order",
+    "Dinner only, Tuesday to Saturday. Reserve your evening and pre-order your slow-cooked Moroccan feast.") + L.related(
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Moroccan couscous"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening ambiance"),
+    ("FAQ", "Good to Know", "faq.html", "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Pastries and mint tea"))
+pages["moroccan-restaurant-reservation-koh-phangan.html"] = L.page(
+    "Reservation at Dar Mansour — Moroccan Slow Food in Koh Phangan",
+    "Book your table at Dar Mansour, the Moroccan restaurant in Koh Phangan. Pre-order required for slow-cooked tajines, couscous and tanjias. Dine with love.",
+    "moroccan-restaurant-reservation-koh-phangan.html", res_body,
+    og_image="assets/img/moroccan-restaurant-central-room-koh-phangan.jpg")
+
+
+# ============================================================ WINE
+wine_body = L.breadcrumb(("Wine Pairing", None)) + L.subhero(
+    "Wine Pairing Experience", "Crafted to enhance every bite — on the spiced path of Morocco",
+    "Koh Phangan's only dedicated Moroccan wine pairing list — natural, characterful labels chosen to elevate the soul of our slow food.",
+    "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening wine pairing at The Mansour Bar") + f'''
+<section class="section"><div class="wrap">
+  <div class="prose reveal" style="text-align:center;">
+    <p class="lead">At Dar Mansour, wine is more than a drink — it's a dialogue with the dish. Each label in our curated list is selected to elevate the complexity, warmth and aromatic depth of Moroccan slow food.</p>
+  </div>
+  <div style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+{render_wine_feature()}
+{render_wine_groups()}
+  </div>
+  <div class="center reveal" style="margin-top:2.6rem;">
+    <p class="lead" style="max-width:60ch;margin:0 auto 1.4rem;">Let us guide you to the perfect pairing — every wine has been carefully matched to highlight the soul of Moroccan cuisine.</p>
+    <a class="textlink" href="moroccan-cocktails-koh-phangan.html">Discover The Mansour Bar &amp; cocktails {A}</a>
+  </div>
+</div></section>
+''' + L.cta_band("Book your dinner &amp; discover your perfect pairing",
+    "Reserve your evening and let us match each dish to a wine that sings.") + L.related(
+    ("The Bar", "Cocktails &amp; Classics", "moroccan-cocktails-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Moroccan table"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/berber-lamb-tajine-koh-phangan.jpeg", "Berber tajine"),
+    ("Private Dining", "Celebrations", "private-dining-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table"))
+pages["moroccan-wine-pairing-koh-phangan.html"] = L.page(
+    "Moroccan Wine Pairing — Slow Food &amp; Natural Wines Koh Phangan | Dar Mansour",
+    "Discover Koh Phangan's only curated Moroccan wine pairing list. Wines selected to elevate each dish, from tagines to couscous, at Dar Mansour.",
+    "moroccan-wine-pairing-koh-phangan.html", wine_body,
+    og_image="assets/img/moroccan-arty-table-koh-phangan.jpg")
+
+
+# ============================================================ MANSOUR BAR / COCKTAILS
+bar_body = L.breadcrumb(("The Mansour Bar", None)) + L.subhero(
+    "The Mansour Bar", "Cocktails, classics &amp; nightcaps — a Moroccan-inspired experience",
+    "Blending spices, flowers, herbs and local infusions — playful mixology, relaxed barefoot nights and beautiful company.",
+    "assets/img/moroccan-arty-table-koh-phangan.jpg", "Candlelit Moroccan table at The Mansour Bar") + f'''
+<section class="section"><div class="wrap">
+  <div class="prose reveal" style="text-align:center;">
+    <p class="lead">At Dar Mansour, cocktails are more than a drink — they're a story, a scent, a spark of memory. The Mansour Bar invites you to explore Moroccan flavours through playful mixology.</p>
+  </div>
+  <div style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+{render_cocktails()}
+  </div>
+  <div class="drink-group reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+    <span class="drink-group__title">Hot Drinks</span>
+    <div class="menu-item"><div class="menu-item__head"><span class="menu-item__name">Traditional Mint Tea</span><span class="menu-item__leader"></span><span class="menu-item__price">90 / 180</span></div><p class="menu-item__desc">Green tea steeped with fresh mint and sugar, poured to aerate and served warm. (Glass / pot.)</p></div>
+    <div class="menu-item"><div class="menu-item__head"><span class="menu-item__name">Moroccan Coffee</span><span class="menu-item__leader"></span><span class="menu-item__price">100</span></div><p class="menu-item__desc">Dark roasted coffee blended with cinnamon, ginger, nutmeg, cardamom, clove, black pepper and star anise.</p></div>
+  </div>
+  <p class="book__meta center" style="margin-top:2.2rem;">All prices in Thai Baht. A 3% surcharge applies to card payments. Please drink responsibly.</p>
+</div></section>
+''' + L.cta_band("Toast to the moment", "Reserve your evening and sip Moroccan flavours under the stars.") + L.related(
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/berber-lamb-tajine-koh-phangan.jpeg", "Berber tajine"),
+    ("Private Dining", "Celebrations", "private-dining-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table"))
+pages["moroccan-cocktails-koh-phangan.html"] = L.page(
+    "The Mansour Bar — Moroccan-Inspired Cocktails in Koh Phangan | Dar Mansour",
+    "Discover the art of mixology at The Mansour Bar in Koh Phangan. Moroccan-inspired cocktails, timeless classics and non-alcoholic creations in a soulful atmosphere.",
+    "moroccan-cocktails-koh-phangan.html", bar_body,
+    og_image="assets/img/moroccan-arty-table-koh-phangan.jpg")
+
+
+# ============================================================ ARTISTIC DIRECTION
+art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
+    "Artistic Direction &amp; Décor", "Art as identity",
+    "A soulful space where Moroccan craftsmanship meets bold artistic vision — a living gallery of visual culture and culinary heritage.",
+    "assets/img/maija-art-direction-koh-phangan.jpg", "Artistic direction and Moroccan décor at Dar Mansour") + f'''
+<section class="section"><div class="wrap prose reveal">
+  <p class="lead">At Dar Mansour, art is not an afterthought — it's who we are. From ancestral Moroccan craft to striking contemporary works, the space is curated as a living gallery where visual culture and culinary heritage come together. Every detail tells a story; every corner speaks of identity.</p>
+  <h2>Currently on display</h2>
+  <ul class="bullets">
+    <li><strong>Ghita Benlamlih</strong> reimagines cultural icons with humour and audacity — think Madonna in Berber dress, or Mandela in a red tarbouch.</li>
+    <li><strong>Kamel Ghabte</strong>, with his <em>Echoes of Morocco</em> series, explores memory and identity through powerful digital compositions.</li>
+  </ul>
+  <p>Each piece is credited and presented with love — even in unexpected corners (yes, even the restrooms), because at Dar Mansour, art belongs everywhere.</p>
+  <h2>Design as immersion</h2>
+  <p>The design of Dar Mansour, signed by <strong>Eden &amp; Beyond</strong> (Maïja's interior and creative studio), blends the sensual warmth of Moroccan tradition with contemporary aesthetics. From handcrafted zellige mosaic fountains to earthen steps, from textured lime-washed walls to tables reimagined as sculptures — every material, light source and tactile element invites you to slow down and feel, with all your senses.</p>
+</div></section>
+''' + L.cta_band("Experience it in person",
+    "The best way to feel our artistic direction is around a candlelit table. Reserve your evening at Dar Mansour.") + L.related(
+    ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/moroccan-restaurant-entrance-koh-phangan.jpg", "Entrance"),
+    ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"),
+    ("Experience", "The Experience", "index.html", "assets/img/moroccan-interior-decor-koh-phangan.jpg", "Interior décor"))
+pages["moroccan-interior-art-koh-phangan.html"] = L.page(
+    "Moroccan Art &amp; Interior Design in Koh Phangan — Dar Mansour",
+    "Step inside Dar Mansour — a soulful space where Moroccan craftsmanship and bold artistic vision meet. A celebration of identity, heritage and creative expression.",
+    "moroccan-interior-art-koh-phangan.html", art_body,
+    og_image="assets/img/maija-art-direction-koh-phangan.jpg")
+
+
+# ============================================================ RECOGNITION
+reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
+    "Recognition", "One of the world's best Moroccan restaurants",
+    "As seen in Golf du Maroc magazine — a culinary gem carrying the Moroccan soul across continents.",
+    "assets/img/dar-mansour-front-koh-phangan.jpeg", "Dar Mansour storefront in Koh Phangan") + f'''
+<section class="section"><div class="wrap prose reveal">
+  <div class="note"><p>"A culinary gem carrying the Moroccan soul across continents."</p></div>
+  <p>In its latest international gastronomy feature, <strong>Golf du Maroc</strong> listed Dar Mansour among the world's finest Moroccan culinary destinations. We are humbled to appear alongside iconic names such as:</p>
+  <ul class="bullets">
+    <li><strong>Piment</strong>, by Michelin-starred Chef Wahabi Nouri — Hamburg</li>
+    <li>The legendary <strong>Café Mogador</strong> — New York</li>
+    <li><strong>Tagine Beverly Hills</strong>, co-founded by Ryan Gosling and Chef Ben — Los Angeles</li>
+  </ul>
+  <p>And now, Dar Mansour — born not in Casablanca or Marrakech, but on a small tropical island in Thailand — is proud to represent the spirit of Morocco with heart, care and authenticity.</p>
+  <h2>A Moroccan table in Koh Phangan</h2>
+  <p>This recognition came just two months after our opening. It honours not just our cuisine, but the values we hold dear:</p>
+  <ul class="bullets">
+    <li>The warmth of Moroccan hospitality</li>
+    <li>The legacy of slow, soulful cooking</li>
+    <li>The beauty of gathering and sharing a table</li>
+  </ul>
+  <p>We're incredibly grateful for this acknowledgment — and we dedicate it to everyone who believed in this journey.</p>
+</div></section>
+''' + L.cta_band("Taste what the world is talking about",
+    "Reserve your evening and discover the slow-cooked Moroccan cuisine that carries our soul across continents.") + L.related(
+    ("Reviews", "What Guests Say", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-interior-decor-koh-phangan.jpg", "Interior"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+    ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"))
+pages["best-moroccan-restaurant-world-press.html"] = L.page(
+    "Dar Mansour — Among the World's Best Moroccan Culinary Destinations",
+    "Featured in Golf du Maroc magazine as one of the best Moroccan restaurants worldwide, Dar Mansour proudly represents Moroccan soul food from Koh Phangan.",
+    "best-moroccan-restaurant-world-press.html", reco_body,
+    og_image="assets/img/dar-mansour-front-koh-phangan.jpeg")
+
+
+# ============================================================ REVIEWS
+REVIEWS = [
+    ("Oren","O","As half Moroccan… I was eating and crying, crying and eating. Maija is a kind, authentic woman — you can feel the love in every bite."),
+    ("Mo. A","M","We dined seated on the floor, surrounded by elegant décor, carpets and lanterns — just like in a Moroccan riad. A magical family evening."),
+    ("Daliah","D","The food was absolutely out of this world… deeply authentic Moroccan cuisine that blew me away. Cozy, stylish and full of charm."),
+    ("Valesca","V","Communication via WhatsApp was smooth… every dish was packed with love and flavour. Highly recommended."),
+    ("Alberto","A","We were welcomed like old friends by Maija and Bruno. Msemen starters, slow-cooked tajines, a lovely bottle of wine — everything was perfect."),
+    ("Soukaina","S","As a Moroccan living in Koh Phangan, it felt amazing to step in and feel at home instantly. It's more than just a meal — it's an experience."),
+    ("Simon","S","A romantic dinner that brought back so many memories of Morocco. We ate wonderfully and can't wait to return."),
+    ("Kodi","K","The flavours, the ambiance, the music… it felt like being transported to a secret riad in Marrakech. A hidden gem with a beating heart."),
+]
+rev_cards = "".join(f'''      <figure class="review reveal">
+        <p>"{q}"</p>
+        <footer><span class="avatar">{i}</span><cite>{n}</cite></footer>
+      </figure>''' for n,i,q in REVIEWS)
+reviews_body = L.breadcrumb(("Reviews", None)) + L.subhero(
+    "What Our Guests Say", "More than a restaurant — an immersive Moroccan experience",
+    "From our tajines to the warmth of our welcome, discover why guests from around the world call us one of the best Moroccan restaurants in Thailand.",
+    "assets/img/moroccan-interior-decor-koh-phangan.jpg", "Curated Moroccan interior at Dar Mansour") + f'''
+<section class="section"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:2.5rem;"><div class="rating"><span class="rating__stars">★★★★★</span><span>5.0 · Google Reviews</span></div></div>
+  <div class="reviews__grid">
+{rev_cards}
+  </div>
+  <div class="center reveal" style="margin-top:2.5rem;"><a class="btn btn--primary" href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">See more Google Reviews</a></div>
+</div></section>
+''' + L.cta_band("Come and write your own story", "Reserve your evening and discover the experience for yourself.") + L.related(
+    ("Recognition", "In the Press", "best-moroccan-restaurant-world-press.html", "assets/img/dar-mansour-front-koh-phangan.jpeg", "Storefront"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"))
+pages["moroccan-restaurant-reviews-koh-phangan.html"] = L.page(
+    "Reviews of Dar Mansour — Best Moroccan Restaurant in Koh Phangan",
+    "Discover what guests say about Dar Mansour in Koh Phangan. A soulful Moroccan dining experience praised for its authenticity, atmosphere and heart.",
+    "moroccan-restaurant-reviews-koh-phangan.html", reviews_body,
+    og_image="assets/img/moroccan-interior-decor-koh-phangan.jpg")
+
+
+# ============================================================ PANTRY
+PANTRY = [
+    ("Charmoula","More than a marinade, charmoula is a beloved base in Moroccan kitchens — a vibrant blend used as sauce, condiment or seasoning for everything from grilled fish to roasted vegetables. Made with garlic, olive oil, lemon juice, fresh herbs and spices, it varies from region to region and even family to family."),
+    ("Couscous","Made from coarsely ground durum wheat (semolina), moistened with water and olive oil, hand-rolled, then steamed in a couscoussière and fluffed for a light, airy texture. The steaming is repeated up to four times until perfectly tender."),
+    ("Couscoussier","A traditional steamer with two chambers: the lower pot simmers meats or vegetables, while the upper couscoussière steams the couscous, letting it absorb the rising aromatic vapours through tiny holes in its base."),
+    ("Harissa","A traditional Moroccan condiment, typically made by grinding fresh garlic and dried chilies with spices and olive oil. Our version balances mild dried chilies with dried tomatoes, garlic, coriander, fennel seeds and a touch of salt."),
+    ("Organic Saffron from Taliouine","From a women-led cooperative of 20 families cultivating it at 1,200 metres in the Anti-Atlas Mountains. Known as Morocco's “Red Gold,” it is hand-harvested from thousands of delicate purple flowers and sun-dried in traditional clay ovens."),
+    ("Preserved Lemon","Organic lemons from Cha-Am Lemon Farm in Thailand's Phetchaburi region, preserved in salt for several months. They offer an intense, tangy brightness to tajines and other dishes — and keep for up to two years."),
+    ("Ras el Hanout","A complex spice blend often used in tagines and couscous. The name means “head of the shop,” signifying the best the merchant has to offer. Our recipe blends over 15 spices in-house."),
+    ("Smen","Clarified cow butter fermented for months and lightly salted, used to elevate tajines and tanjias. Ours is infused with oregano for an earthy, tangy aroma."),
+    ("Tfaya","A traditional topping of onions and raisins slowly caramelised with cinnamon, honey and butter. Tfaya adds a signature sweetness to savoury dishes, especially couscous."),
+]
+pantry_cards = "".join(f'''    <div class="pantry__item reveal"><h3>{n}</h3><p>{d}</p></div>''' for n,d in PANTRY)
+pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
+    "Moroccan Pantry: Stories &amp; Staples", "Our culinary roots, one ingredient at a time",
+    "From the red hills of Taliouine to the family kitchens of Rabat — a pantry of soul, taste and tradition.",
+    "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "The candlelit central lounge at Dar Mansour") + f'''
+<section class="section"><div class="wrap">
+  <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
+    <p class="lead">At Dar Mansour, every ingredient carries a story. Our pantry is filled with traditions passed down by generations of Moroccan women. Here are some of the staples we love and use — with care and authenticity.</p>
+  </div>
+  <div class="pantry">
+{pantry_cards}
+  </div>
+</div></section>
+''' + L.cta_band("Want to taste it all?", "Discover how these staples come alive across our slow-cooked menu.") + L.related(
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
+    ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Table"))
+pages["moroccan-pantry-koh-phangan.html"] = L.page(
+    "Moroccan Pantry &amp; Ingredients — Dar Mansour Koh Phangan",
+    "Discover the stories behind Moroccan ingredients like charmoula, saffron and preserved lemon. A pantry of soul, taste and tradition.",
+    "moroccan-pantry-koh-phangan.html", pantry_body,
+    og_image="assets/img/moroccan-restaurant-central-room-koh-phangan.jpg")
+
+
+# ============================================================ MANSOUR SPIRIT
+spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
+    "The Mansour Spirit", "Savour the beautiful, the good, and the moment",
+    "A peaceful oasis where Moroccan hospitality meets Thai cultural respect — harmony, gratitude and barefoot freedom.",
+    "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Peaceful candlelit garden at Dar Mansour") + f'''
+<section class="section"><div class="wrap prose reveal">
+  <p class="lead">Mansour Spirit is about more than food — it's about embracing the values of the place we're in. As proud guests of the Kingdom of Thailand, we hold deep respect for its culture, its laws and the spirit of harmony that defines it. Honouring Thai values is not just a duty — it's a sincere expression of gratitude.</p>
+  <h2>A few gentle requests</h2>
+  <p>To preserve this peaceful energy, we kindly ask our guests to:</p>
+  <ul class="bullets">
+    <li>Dress respectfully (no bare chests)</li>
+    <li>Remove shoes where required</li>
+    <li>Refrain from disruptive behaviour</li>
+  </ul>
+  <p>To maintain the calm and welcoming nature of the space, we reserve the right to refuse service to intoxicated guests. In accordance with Thai law and our commitment to responsible hospitality, no illegal substances — including marijuana — are permitted on the premises.</p>
+  <h2>A peaceful oasis</h2>
+  <p>Dar Mansour is a place of slowness, barefoot freedom and quiet joy — anchored in gratitude for Thai hospitality and open cultural dialogue. We believe in harmony, presence and generosity — in savouring life, dish by dish, moment by moment.</p>
+  <p style="font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--green-deep);">With gratitude, Mansour's Family.</p>
+</div></section>
+''' + L.cta_band("Come and feel it",
+    "Slow down, breathe, and savour the moment around a Moroccan table. Reserve your evening at Dar Mansour.") + L.related(
+    ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/moroccan-restaurant-entrance-koh-phangan.jpg", "Entrance"),
+    ("Art", "Artistic Direction", "moroccan-interior-art-koh-phangan.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
+    ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"))
+pages["moroccan-hospitality-values-koh-phangan.html"] = L.page(
+    "Mansour Spirit — Moroccan Hospitality &amp; Thai Values in Koh Phangan",
+    "Dar Mansour is a peaceful oasis where Moroccan hospitality meets Thai cultural respect. Discover our values of harmony, gratitude and barefoot freedom in Koh Phangan.",
+    "moroccan-hospitality-values-koh-phangan.html", spirit_body,
+    og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg")
+
+
+# ============================================================ FOUNDERS
+founders_body = L.breadcrumb(("Founders", None)) + L.subhero(
+    "Founders &amp; Vision", "A love story — and a culinary vision",
+    "Meet Maïja and Bruno, who created a soulful Moroccan dining experience rooted in love and tradition.",
+    "assets/img/moroccan-restaurant-entrance-koh-phangan.jpg", "Entrance to Dar Mansour") + f'''
+<section class="section"><div class="wrap prose reveal">
+  <p class="lead">Dar Mansour is the vision of <strong>Maïja</strong> — a creative spirit who spent over 30 years immersed in Moroccan culture — and <strong>Bruno</strong>, a French entrepreneur who once lived in China, and who fell in love… not only with Morocco, but with its most inspired ambassador.</p>
+  <p>Together, they imagined a place where every meal is a story, every guest is welcomed like family, and every detail — from spices to music — carries the soul of Moroccan hospitality.</p>
+  <p>Dar Mansour is more than a restaurant. It's the meeting point of two lives, two cultures, and a shared dream: to celebrate slow food, meaningful connection and the timeless elegance of Moroccan cuisine and culture — from a quiet garden in Koh Phangan.</p>
+  <div class="note"><p>Guided by the wisdom of the Dadas, Maïja carries forward Morocco's culinary heritage with a modern soul — while P'Jaei, our Head of Kitchen, translates these traditions into refined, slow-cooked dishes every evening.</p></div>
+</div></section>
+''' + L.cta_band("Share our table",
+    "Come and become part of the story. Reserve your evening at Dar Mansour and be welcomed like family.") + L.related(
+    ("Reviews", "Through Our Guests' Eyes", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-interior-decor-koh-phangan.jpg", "Interior"),
+    ("Art", "Artistic Direction", "moroccan-interior-art-koh-phangan.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
+    ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden"))
+pages["dar-mansour-founders-vision.html"] = L.page(
+    "The Story of Dar Mansour — Founders &amp; Vision",
+    "Meet the founders of Dar Mansour in Koh Phangan. Discover how Maïja and Bruno created a soulful Moroccan dining experience rooted in love and tradition.",
+    "dar-mansour-founders-vision.html", founders_body,
+    og_image="assets/img/moroccan-restaurant-entrance-koh-phangan.jpg")
+
+
+# ============================================================ PRIVATE DINING
+pd_body = L.breadcrumb(("Private Dining", None)) + L.subhero(
+    "Private Dining &amp; Celebrations", "Celebrate life's most beautiful moments around a Moroccan table",
+    "Birthdays, anniversaries, proposals and intimate gatherings — thoughtfully curated in our peaceful candlelit garden.",
+    "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table set for a private Moroccan celebration", tall=True) + f'''
+<section class="section"><div class="wrap prose reveal">
+  <p class="lead">Some evenings deserve more than a restaurant. Whether you're celebrating a birthday, anniversary, engagement, family gathering, honeymoon, or simply bringing together people you love, Dar Mansour offers an intimate Moroccan dining experience designed to create unforgettable memories.</p>
+  <p>Nestled in our peaceful candlelit garden between Sri Thanu and Hin Kong, every celebration is thoughtfully curated with the warmth of Moroccan hospitality, slow-cooked cuisine, beautiful music and attentive service. Because every gathering is unique, we tailor your evening to feel personal, elegant and meaningful.</p>
+  <h2>Perfect for</h2>
+  <ul class="bullets">
+    <li>Birthday celebrations</li><li>Anniversary dinners</li><li>Marriage proposals</li><li>Honeymoon dinners</li>
+    <li>Family celebrations</li><li>Friends gathering</li><li>Small corporate dinners</li><li>Wellness retreat dinners</li><li>Private group experiences</li>
+  </ul>
+  <h2>An intimate setting</h2>
+  <p>Unlike traditional event venues, Dar Mansour welcomes only a limited number of guests each evening, allowing us to dedicate our full attention to every table. Our reservation-only philosophy ensures a relaxed atmosphere where every dish is prepared especially for your guests and every detail is cared for with intention.</p>
+  <h2>Tailored experiences</h2>
+  <ul class="bullets">
+    <li>Personalised table decoration</li><li>Birthday surprises</li><li>Anniversary celebrations</li><li>Proposal dinners</li>
+    <li>Wine pairing experiences</li><li>Group menus</li><li>Vegetarian and dietary adaptations</li><li>Private venue booking (upon request)</li>
+  </ul>
+  <div class="note"><p>"The most beautiful celebrations aren't measured by the number of guests, but by the memories shared around the table."</p></div>
+</div></section>
+''' + L.cta_band("Plan your celebration", "Our team will be delighted to help you create a memorable Moroccan dining experience. Book your private dining experience via WhatsApp.") + L.related(
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
+    ("Reviews", "What Guests Say", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-interior-decor-koh-phangan.jpg", "Interior"))
+pages["private-dining-koh-phangan.html"] = L.page(
+    "Private Dining in Koh Phangan | Celebrate at Dar Mansour",
+    "Celebrate life's special moments with a private Moroccan dining experience at Dar Mansour in Koh Phangan. Birthdays, anniversaries, proposals and intimate celebrations.",
+    "private-dining-koh-phangan.html", pd_body,
+    og_image="assets/img/moroccan-round-table-koh-phangan.jpg")
+
+
+# ============================================================ FAQ
+FAQ = [
+    ("What Moroccan dishes can you try at Dar Mansour in Koh Phangan?","At Dar Mansour you'll discover authentic Moroccan soul food — slow-cooked tajines, saffron couscous, roasted seasonal vegetables and sweet-savoury touches like prunes, apricots and preserved lemon. Everything is handmade and slow-cooked to order, using traditional recipes passed down through generations."),
+    ("Why is Dar Mansour considered a hidden gem restaurant in Koh Phangan?","Dar Mansour is a hidden gem Moroccan restaurant near Sri Thanu and Hin Kong, designed for romantic, slow and meaningful dining. From candlelit garden tables to handcrafted interiors, every detail invites you to slow down and reconnect — with food, with art and with yourself."),
+    ("Where exactly is Dar Mansour located in Koh Phangan?","Dar Mansour is on the west coast of Koh Phangan, minutes from Sri Thanu, Hin Kong, The Alcove and Orion Healing Centre. Tucked away in a quiet garden, it blends Moroccan warmth with island calm."),
+    ("What are Dar Mansour's opening hours for dinner?","We are open for dinner only, from 7:00 PM to 10:30 PM, Tuesday to Saturday. We are closed on Sundays and Mondays. Reservations are required — we welcome a limited number of guests each evening."),
+    ("How do I book a table at Dar Mansour?","Reservations are made via WhatsApp: +66 82 276 7757. Because Dar Mansour offers a boutique dining experience, we only serve guests with confirmed bookings — please reserve in advance."),
+    ("How does the pre-order dining system work?","To ensure freshness and eliminate waste, we use a daily pre-order system. On the day of your reservation we'll send you the pre-order menu via WhatsApp; you then pre-order your main dishes in advance. Everything is prepared just for you, with care and intention."),
+    ("Is Dar Mansour a kid-friendly restaurant?","We are not a typical kid-friendly restaurant. Dar Mansour is an intimate, peaceful setting. We welcome babies under 2 and children over 9 who can enjoy the calm of the space. Please inform us in advance if you're bringing children so we can prepare accordingly."),
+    ("Can I bring my dog to Dar Mansour?","Unfortunately dogs are not allowed, even in the garden area. We love animals, but we prioritise hygiene, safety and a tranquil atmosphere for all our guests."),
+    ("Does Dar Mansour serve wine and cocktails?","Yes. Our selection includes a curated wine list paired with Moroccan dishes, signature cocktails with Moroccan twists, and homemade non-alcoholic drinks."),
+    ("Are there vegetarian, vegan or gluten-free options?","Yes. Many of our dishes are naturally vegetarian or vegan. Please let us know your dietary needs when booking — we'll be happy to accommodate you."),
+    ("Are the portions large enough to share?","Each dish is crafted as an individual portion — generous, satisfying and designed to serve one person. We don't recommend sharing a single main course between two guests. Our slow-cooked meals often taste even better the next day, so you're welcome to take home any leftovers."),
+    ("How many guests can Dar Mansour host per evening?","To preserve our slow, soulful experience, we serve a limited number of guests per night — perfect for quiet couples' dinners, artistic gatherings and intimate private celebrations."),
+    ("Can I book a private dinner or event?","Yes. We host private dinners, birthdays, artist residencies and bespoke events in a serene, elegant setting. Dar Mansour is a top pick for private dining in Koh Phangan thanks to its beauty, warmth and discretion."),
+    ("What payment methods are accepted?","We accept cash, Thai QR Code (PromptPay) and credit card. A 3% surcharge applies to card payments."),
+    ("What makes the experience unique in Thailand?","Dar Mansour is one of the few places in Thailand offering a truly immersive North African dining journey, with personalised service, candlelit ambiance and a deep sense of care and storytelling."),
+    ("How can I contact Dar Mansour or follow on social media?","Contact us via WhatsApp at +66 82 276 7757. Follow us on Instagram @darmansour.kohphangan and on Facebook, Dar Mansour Koh Phangan."),
+]
+faq_items = "".join(f'''      <details class="faq__item reveal"><summary>{q}</summary><div class="faq__answer"><p>{a}</p></div></details>''' for q,a in FAQ)
+faq_schema = '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' + ",".join(
+    '{"@type":"Question","name":"%s","acceptedAnswer":{"@type":"Answer","text":"%s"}}' % (q.replace('"',"'"), a.replace('"',"'")) for q,a in FAQ) + ']}'
+faq_body = L.breadcrumb(("FAQ", None)) + L.subhero(
+    "Frequently Asked Questions", "Best Moroccan restaurant in Koh Phangan — rooted in tradition, slow cooked with care",
+    "Everything you need to know before your visit — reservations, food, wine, location and more.",
+    "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Moroccan pastries and mint tea at Dar Mansour") + f'''
+<section class="section"><div class="wrap">
+  <div class="faq">
+{faq_items}
+  </div>
+</div></section>
+''' + L.cta_band("Still have a question?", "Message us on WhatsApp — we usually respond within a few hours.") + L.related(
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Dining room"),
+    ("Contact", "Find Us", "contact-dar-mansour-koh-phangan.html", "assets/img/dar-mansour-street-view-koh-phangan.jpeg", "Street view"))
+pages["faq.html"] = L.page(
+    "FAQ — Best Moroccan Restaurant in Koh Phangan | Dar Mansour",
+    "Answers to common questions about Dar Mansour in Koh Phangan: reservations, pre-order dining, opening hours, dietary options, private dining and location.",
+    "faq.html", faq_body,
+    og_image="assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg",
+    extra_head=f'<script type="application/ld+json">{faq_schema}</script>')
+
+
+# ============================================================ CONTACT
+contact_body = L.breadcrumb(("Contact", None)) + L.subhero(
+    "Contact &amp; Location", "Reach out — we'd love to hear from you",
+    "Dinner only, by reservation and pre-order. Message us on WhatsApp; we usually respond within a few hours.",
+    "assets/img/dar-mansour-street-view-koh-phangan.jpeg", "Street view of Dar Mansour in Koh Phangan") + f'''
+<section class="section"><div class="wrap">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <dl>
+        <div><dt>Address</dt><dd><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road (Sri Thanu area)<br>Koh Phangan, Thailand</a></dd></div>
+        <div><dt>Reservations · WhatsApp</dt><dd><a href="{WA}" target="_blank" rel="noopener">+66 82 276 7757</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:hello@darmansour.com">hello@darmansour.com</a></dd></div>
+        <div><dt>Opening Hours</dt><dd>Tuesday to Saturday · 7:00 PM – 10:30 PM<br>Closed Sunday &amp; Monday</dd></div>
+        <div><dt>Follow</dt><dd><a href="https://instagram.com/darmansour.kohphangan" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/people/Dar-Mansour/" target="_blank" rel="noopener">Facebook</a></dd></div>
+      </dl>
+      <a class="btn btn--primary" style="margin-top:2rem;" href="{WA}" target="_blank" rel="noopener">{WI} Book a table &amp; pre-order</a>
+    </div>
+    <div class="contact-map reveal" data-delay="1">
+      <iframe title="Dar Mansour on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Dar+Mansour+Koh+Phangan+Hin+Kong+Sri+Thanu&output=embed"></iframe>
+    </div>
+  </div>
+</div></section>
+'''
+pages["contact-dar-mansour-koh-phangan.html"] = L.page(
+    "Contact Dar Mansour — Moroccan Slow Food in Koh Phangan",
+    "Want to book a table at Dar Mansour? Contact us on WhatsApp, check our location in Koh Phangan and get directions to our Moroccan restaurant.",
+    "contact-dar-mansour-koh-phangan.html", contact_body,
+    og_image="assets/img/dar-mansour-street-view-koh-phangan.jpeg")
+
+
+# ============================================================ BLOG / JOURNAL
+PILLARS = [
+    ("The Menu — Tajines, Couscous, Chhiwats, Msemen",
+     "Every dish at Dar Mansour is a piece of Morocco brought to Koh Phangan. From saffron couscous steamed four times, to tajines that simmer for hours, to msemen and chhiwats that echo the streets of Marrakech — a soulful journey through Moroccan culinary heritage.",
+     "moroccan-menu-koh-phangan.html", "Explore the menu"),
+    ("Mansour Spirit — Hospitality, Dadas &amp; Family Rituals",
+     "Hospitality is sacred in Morocco. We continue the traditions of the Dadas — women who carried recipes, wisdom and rituals from one generation to the next. Here, every guest is welcomed like family, every dinner a ritual of care.",
+     "moroccan-hospitality-values-koh-phangan.html", "Discover the spirit"),
+    ("Morocco's Kitchen — Slow Cooking &amp; Sacred Pantry",
+     "In Morocco, patience is flavour. Our tajines, couscous and tanjias are prepared the slow way — hours of cooking, layers of spices and care in every step. We believe in sacred cooking: food that nourishes body and soul.",
+     "moroccan-pantry-koh-phangan.html", "Enter the pantry"),
+    ("Morocco &amp; Koh Phangan — Inspirations, Travel &amp; Culture",
+     "Dar Mansour is a bridge between Morocco and Koh Phangan. We highlight Moroccan cities and traditions while guiding you through the island's hidden beaches, artistic inspirations and cultural gems.",
+     "index.html", "Discover the experience"),
+    ("Mansour Bar — Cocktails &amp; Artful Evenings",
+     "Our bar is a celebration of creativity: Moroccan-inspired cocktails, curated wines and evenings filled with art and conversation. From citrus-infused gin to spiced rum creations, each drink is designed to complement our food.",
+     "moroccan-cocktails-koh-phangan.html", "Step into the bar"),
+]
+pillar_cards = "".join(f'''    <div class="feature reveal"><h3>{t}</h3><p>{d}</p><a class="textlink" href="{href}" style="margin-top:1rem;">{lbl} {A}</a></div>''' for t,d,href,lbl in PILLARS)
+
+blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
+    "Journal &amp; Stories", "Stories of Morocco and Koh Phangan",
+    "Beyond being the best Moroccan restaurant in Koh Phangan, Dar Mansour is a story — of Morocco's timeless cuisine, the Dadas' wisdom, family rituals and the island inspirations that surround us.",
+    "assets/img/maija-art-direction-koh-phangan.jpg", "Artistic Moroccan décor and creative direction at Dar Mansour") + f'''
+<section class="section"><div class="wrap">
+  <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
+    <p class="lead">Our journal is a journey through flavours, traditions, art and soulful living — a bridge between Morocco's timeless heritage and the vibrant spirit of Thailand.</p>
+    <div class="note" style="margin-top:1.6rem;text-align:left;"><p>New stories are published regularly. In the meantime, explore the worlds our journal is built upon — each one a doorway into Dar Mansour.</p></div>
+  </div>
+  <div class="features">
+{pillar_cards}
+  </div>
+</div></section>
+
+<section class="section" style="background:var(--sand);"><div class="wrap">
+  <div class="center reveal" style="max-width:640px;margin:0 auto 2.5rem;">
+    <span class="eyebrow">Authors &amp; Credibility</span>
+    <h2 style="margin-top:1rem;">The voices behind our stories</h2>
+    <p class="lead" style="margin-inline:auto;">Every word is rooted in real experience, real recipes and real people.</p>
+  </div>
+  <div class="pantry">
+    <div class="pantry__item reveal"><h3>Maïja — Co-Founder</h3><p>A creative spirit who has spent more than 30 years immersed in Moroccan culture, carrying forward its culinary heritage with a modern soul. Guided by the wisdom of the Dadas, she co-founded Dar Mansour as a sanctuary of food, culture and soulful hospitality in Koh Phangan.</p></div>
+    <div class="pantry__item reveal" data-delay="1"><h3>P'Jaei — Head of Kitchen</h3><p>P'Jaei brings daily hands-on expertise to Dar Mansour, translating Moroccan traditions into refined, slow-cooked dishes. As Head of Kitchen, P'Jaei contributes culinary knowledge rooted in respect for sacred cooking and island hospitality.</p></div>
+  </div>
+</div></section>
+
+<section class="section band-dark"><div class="wrap quote">
+  <div class="divider divider--light reveal"><span>◇◇◇</span></div>
+  <blockquote class="reveal" data-delay="1" style="margin-top:2rem;">"Where Morocco meets Koh Phangan — every story is a bridge between two worlds."</blockquote>
+  <cite class="reveal" data-delay="2">The Dar Mansour Journal</cite>
+</div></section>
+''' + L.cta_band("Live the story, don't just read it",
+    "The best chapters are written around the table. Reserve your evening at Dar Mansour.") + L.related(
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+    ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
+    ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/img/fez-tajine-koh-phangan.jpg", "Fez tajine"))
+pages["blog.html"] = L.page(
+    "Dar Mansour Journal — Stories of Morocco and Koh Phangan",
+    "The Dar Mansour journal: stories of Moroccan cuisine, the wisdom of the Dadas, slow cooking, island inspirations, wine and soulful living in Koh Phangan.",
+    "blog.html", blog_body,
+    og_image="assets/img/maija-art-direction-koh-phangan.jpg")
+
+
+# ============================================================ WRITE
+for fname, html in pages.items():
+    with open(os.path.join(OUT, fname), "w", encoding="utf-8") as f:
+        f.write(html)
+    print("wrote", fname)
+print(f"\n{len(pages)} pages generated.")
