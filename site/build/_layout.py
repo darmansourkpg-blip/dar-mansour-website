@@ -23,6 +23,16 @@ def _asset_v(rel):
 CSS_V = _asset_v("css/style.css")
 JS_V = _asset_v("js/main.js")
 
+
+def _webp(path):
+    """Serve visible photos as WebP. og:image / schema keep their JPG paths
+    (better handled by social scrapers) — those never pass through here."""
+    if path.startswith("assets/img/"):
+        base, ext = os.path.splitext(path)
+        if ext.lower() in (".jpg", ".jpeg", ".png"):
+            return base + ".webp"
+    return path
+
 WA_ICON = ('<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 '
            '4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 '
            '0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.3.5-.5.7-.7 1-.2.2-.3.4-.1.7.2.3.9 1.5 '
@@ -155,7 +165,7 @@ def subhero(eyebrow, h1, sub, image, alt, tall=False):
     cls = "subhero subhero--tall" if tall else "subhero"
     return f'''
 <section class="{cls}">
-  <div class="subhero__media"><img src="{image}" alt="{alt}" fetchpriority="high"></div>
+  <div class="subhero__media"><img src="{_webp(image)}" alt="{alt}" fetchpriority="high"></div>
   <div class="wrap subhero__inner">
     <span class="eyebrow">{eyebrow}</span>
     <h1>{h1}</h1>
@@ -184,7 +194,7 @@ def related(*cards):
     """cards: (eyebrow, title, href, image, alt)"""
     inner = "".join(
         f'''<a class="related__card reveal" href="{href}">
-          <img src="{img}" alt="{alt}" loading="lazy">
+          <img src="{_webp(img)}" alt="{alt}" loading="lazy">
           <div><span>{eyebrow}</span><h3>{title}</h3></div>
         </a>''' for eyebrow, title, href, img, alt in cards)
     return f'''

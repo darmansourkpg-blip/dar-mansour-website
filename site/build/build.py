@@ -18,7 +18,7 @@ pages = {}
 # ============================================================ HOME
 home_body = f'''
 <section class="hero">
-  <div class="hero__media"><img src="assets/img/moroccan-garden-dining-koh-phangan.jpg" alt="Candlelit Moroccan garden dining at Dar Mansour, Koh Phangan" fetchpriority="high"></div>
+  <div class="hero__media"><img src="assets/img/moroccan-garden-dining-koh-phangan.webp" alt="Candlelit Moroccan garden dining at Dar Mansour, Koh Phangan" fetchpriority="high"></div>
   <div class="wrap hero__inner">
     <span class="eyebrow">Moroccan Slow Food · West Coast, Koh Phangan</span>
     <h1 class="display hero__title">Morocco's Kitchen in Koh Phangan</h1>
@@ -48,7 +48,7 @@ home_body = f'''
     <a class="textlink" href="dar-mansour-founders-vision.html">Read our story {A}</a>
   </div>
   <div class="split__media reveal" data-delay="1">
-    <img src="assets/img/moroccan-restaurant-central-room-koh-phangan.jpg" alt="Central dining room at Dar Mansour with handcrafted Moroccan interiors">
+    <img src="assets/img/moroccan-restaurant-central-room-koh-phangan.webp" alt="Central dining room at Dar Mansour with handcrafted Moroccan interiors">
     <span class="tag">The Central Room</span>
   </div>
 </div></div></section>
@@ -81,9 +81,9 @@ home_body = f'''
     <p class="lead" style="margin-inline:auto;">Inspired by the Dadas — the silent guardians of Moroccan family recipes — our kitchen celebrates the authentic essence of Morocco: slow-cooked dishes full of generosity, depth and soul.</p>
   </div>
   <div class="dishes">
-    <article class="dish reveal"><img src="assets/img/berber-lamb-tajine-koh-phangan.jpeg" alt="Berber lamb tajine with prunes and almonds"><div class="dish__label"><h3>Tajines</h3><p>Fire-cooked, slow-simmered for hours — sweet meets savoury.</p></div></article>
-    <article class="dish reveal" data-delay="1"><img src="assets/img/moroccan-couscous-koh-phangan.jpg" alt="Hand-rolled saffron couscous steamed four times"><div class="dish__label"><h3>Couscous</h3><p>Hand-rolled semolina, steamed four times until light and airy.</p></div></article>
-    <article class="dish reveal" data-delay="2"><img src="assets/img/tanjia-marrakchia-koh-phangan.jpeg" alt="Tanjia Marrakchia slow-cooked Moroccan speciality"><div class="dish__label"><h3>Tanjia</h3><p>The Marrakchi speciality — cooked low and slow in its clay urn.</p></div></article>
+    <article class="dish reveal"><img src="assets/img/berber-lamb-tajine-koh-phangan.webp" alt="Berber lamb tajine with prunes and almonds"><div class="dish__label"><h3>Tajines</h3><p>Fire-cooked, slow-simmered for hours — sweet meets savoury.</p></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/img/moroccan-couscous-koh-phangan.webp" alt="Hand-rolled saffron couscous steamed four times"><div class="dish__label"><h3>Couscous</h3><p>Hand-rolled semolina, steamed four times until light and airy.</p></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/img/tanjia-marrakchia-koh-phangan.webp" alt="Tanjia Marrakchia slow-cooked Moroccan speciality"><div class="dish__label"><h3>Tanjia</h3><p>The Marrakchi speciality — cooked low and slow in its clay urn.</p></div></article>
   </div>
   <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
     <a class="btn btn--primary" href="moroccan-menu-koh-phangan.html">Explore the Full Menu</a>
@@ -100,13 +100,13 @@ home_body = f'''
     <a class="textlink" href="dar-mansour-founders-vision.html">Meet the founders {A}</a>
   </div>
   <div class="split__media reveal" data-delay="1">
-    <img src="assets/img/maija-art-direction-koh-phangan.jpg" alt="Maïja's artistic direction and Moroccan décor at Dar Mansour">
+    <img src="assets/img/maija-art-direction-koh-phangan.webp" alt="Maïja's artistic direction and Moroccan décor at Dar Mansour">
     <span class="tag">Art Direction · Maïja</span>
   </div>
 </div></div></section>
 
 <section class="section pd" id="private">
-  <div class="pd__bg"><img src="assets/img/moroccan-round-table-koh-phangan.jpg" alt="Intimate round table set for a private Moroccan celebration"></div>
+  <div class="pd__bg"><img src="assets/img/moroccan-round-table-koh-phangan.webp" alt="Intimate round table set for a private Moroccan celebration"></div>
   <div class="wrap"><div class="reveal" style="max-width:560px;">
     <span class="eyebrow">Private Dining &amp; Celebrations</span>
     <h2 style="margin:1.2rem 0 1.3rem;">Celebrate life's most beautiful moments around a Moroccan table</h2>
@@ -118,7 +118,7 @@ home_body = f'''
 
 <section class="section" id="wine"><div class="wrap"><div class="split">
   <div class="split__media reveal">
-    <img src="assets/img/moroccan-wine-pairing-tajine-port-koh-phangan.jpg" alt="Moroccan prune tajine paired with a tawny port on the Dar Mansour wine pairing list, Koh Phangan">
+    <img src="assets/img/moroccan-wine-pairing-tajine-port-koh-phangan.webp" alt="Moroccan prune tajine paired with a tawny port on the Dar Mansour wine pairing list, Koh Phangan">
     <span class="tag">Wine Pairing</span>
   </div>
   <div class="split__text reveal" data-delay="1">
@@ -159,12 +159,12 @@ home_body = f'''
 <section class="section" style="padding-top:0;"><div class="wrap">
   <div class="center reveal" style="margin-bottom:2.5rem;"><div class="divider"><span>◇◇◇</span></div><h2 style="margin-top:1.5rem;">An evening at Dar Mansour</h2></div>
   <div class="gallery">
-    <a class="g-tall reveal" href="assets/img/moroccan-restaurant-entrance-koh-phangan.jpg"><img src="assets/img/moroccan-restaurant-entrance-koh-phangan.jpg" alt="Entrance to Dar Mansour Moroccan restaurant in Koh Phangan" loading="lazy"></a>
-    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-arty-table-koh-phangan.jpg"><img src="assets/img/moroccan-arty-table-koh-phangan.jpg" alt="Artfully set Moroccan table with candles and ceramics" loading="lazy"></a>
-    <a class="reveal" data-delay="2" href="assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg"><img src="assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg" alt="Artisanal Moroccan pastries and traditional mint tea" loading="lazy"></a>
-    <a class="reveal" href="assets/img/fez-tajine-koh-phangan.jpg"><img src="assets/img/fez-tajine-koh-phangan.jpg" alt="Fez tajine served at Dar Mansour" loading="lazy"></a>
-    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-interior-decor-koh-phangan.jpg"><img src="assets/img/moroccan-interior-decor-koh-phangan.jpg" alt="Curated Moroccan interior décor at Dar Mansour" loading="lazy"></a>
-    <a class="reveal" data-delay="2" href="assets/img/friday-couscous-koh-phangan.jpeg"><img src="assets/img/friday-couscous-koh-phangan.jpeg" alt="Traditional Friday couscous at Dar Mansour" loading="lazy"></a>
+    <a class="g-tall reveal" href="assets/img/moroccan-restaurant-entrance-koh-phangan.webp"><img src="assets/img/moroccan-restaurant-entrance-koh-phangan.webp" alt="Entrance to Dar Mansour Moroccan restaurant in Koh Phangan" loading="lazy"></a>
+    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-arty-table-koh-phangan.webp"><img src="assets/img/moroccan-arty-table-koh-phangan.webp" alt="Artfully set Moroccan table with candles and ceramics" loading="lazy"></a>
+    <a class="reveal" data-delay="2" href="assets/img/moroccan-pastries-mint-tea-koh-phangan.webp"><img src="assets/img/moroccan-pastries-mint-tea-koh-phangan.webp" alt="Artisanal Moroccan pastries and traditional mint tea" loading="lazy"></a>
+    <a class="reveal" href="assets/img/fez-tajine-koh-phangan.webp"><img src="assets/img/fez-tajine-koh-phangan.webp" alt="Fez tajine served at Dar Mansour" loading="lazy"></a>
+    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-interior-decor-koh-phangan.webp"><img src="assets/img/moroccan-interior-decor-koh-phangan.webp" alt="Curated Moroccan interior décor at Dar Mansour" loading="lazy"></a>
+    <a class="reveal" data-delay="2" href="assets/img/friday-couscous-koh-phangan.webp"><img src="assets/img/friday-couscous-koh-phangan.webp" alt="Traditional Friday couscous at Dar Mansour" loading="lazy"></a>
   </div>
 </div></section>
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
