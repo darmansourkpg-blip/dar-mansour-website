@@ -316,7 +316,7 @@ bar_body = L.breadcrumb(("The Mansour Bar", None)) + L.subhero(
     "assets/img/mansour-bar-signature-cocktail-koh-phangan.jpg", "Signature cocktail served at The Mansour Bar, Koh Phangan") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;">
-    <p class="lead">At Dar Mansour, cocktails are more than a drink — they're a story, a scent, a spark of memory. The Mansour Bar invites you to explore Moroccan flavours through playful mixology.</p>
+    <p class="lead">At Dar Mansour, cocktails are more than a drink — they're a story, a scent, a spark of memory. The Mansour Bar invites you to explore <a class="ilink" href="moroccan-menu-koh-phangan.html">Moroccan flavours</a> through playful mixology.</p>
   </div>
   <div style="margin-top:clamp(2.5rem,5vw,3.5rem);">
 {render_cocktails()}
@@ -385,7 +385,7 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
   <p>This recognition came just two months after our opening. It honours not just our cuisine, but the values we hold dear:</p>
   <ul class="bullets">
     <li>The warmth of Moroccan hospitality</li>
-    <li>The legacy of slow, soulful cooking</li>
+    <li>The legacy of <a class="ilink" href="moroccan-slow-dining-koh-phangan.html">slow, soulful cooking</a></li>
     <li>The beauty of gathering and sharing a table</li>
   </ul>
   <p>We're incredibly grateful for this acknowledgment — and we dedicate it to everyone who believed in this journey.</p>
@@ -472,7 +472,7 @@ pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
     "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "The candlelit central lounge at Dar Mansour") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
-    <p class="lead">At Dar Mansour, every ingredient carries a story. Our pantry is filled with traditions passed down by generations of Moroccan women. Here are some of the staples we love and use — with care and authenticity.</p>
+    <p class="lead">At Dar Mansour, every ingredient carries a story. Our pantry is filled with traditions passed down by <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">generations of Moroccan women</a>. Here are some of the staples we love and use — with care and authenticity.</p>
   </div>
   <div class="pantry">
 {pantry_cards}
@@ -505,7 +505,7 @@ spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
   </ul>
   <p>To maintain the calm and welcoming nature of the space, we reserve the right to refuse service to intoxicated guests. In accordance with Thai law and our commitment to responsible hospitality, no illegal substances — including marijuana — are permitted on the premises.</p>
   <h2>A peaceful oasis</h2>
-  <p>Dar Mansour is a place of slowness, barefoot freedom and quiet joy — anchored in gratitude for Thai hospitality and open cultural dialogue. We believe in harmony, presence and generosity — in savouring life, dish by dish, moment by moment.</p>
+  <p>Dar Mansour is a place of <a class="ilink" href="moroccan-slow-dining-koh-phangan.html">slowness</a>, barefoot freedom and quiet joy — anchored in gratitude for Thai hospitality and open cultural dialogue. We believe in harmony, presence and generosity — in savouring life, dish by dish, moment by moment.</p>
   <p style="font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--green-deep);">With gratitude, Mansour's Family.</p>
 </div></section>
 ''' + L.cta_band("Come and feel it",
