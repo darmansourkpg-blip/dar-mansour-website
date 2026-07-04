@@ -195,9 +195,8 @@ concept_body = L.breadcrumb(("Concept", None)) + L.subhero(
     <li><strong>Main dishes pre-ordered, ideally 5 hours ahead</strong> — to honour long cooking times and avoid a long wait upon arrival.</li>
     <li><strong>Zero waste</strong> — no mass prep, no leftovers; each dish is cooked just for you.</li>
     <li><strong>Limited to 40 guests per night</strong> — to preserve intimacy, connection and attention to detail.</li>
-    <li><strong>A peaceful kitchen = better food</strong> — slowness supports depth, care and quality.</li>
+    <li><strong>A peaceful kitchen creates better food</strong> — slowness fosters care, depth of flavour and quality.</li>
   </ul>
-  <div class="note"><p><strong>P.S. — Walk-in guests are always warmly welcome.</strong> Depending on availability, we'll be delighted to prepare a selection of our menu for you. As our signature dishes are slow-cooked to order and produced in limited quantities, some specialties may no longer be available, and waiting times may exceed one hour. To enjoy the full Dar Mansour experience, we recommend reserving your table and pre-ordering your main dishes in advance.</p></div>
   <p>Located between Sri Thanu and Hin Kong — just minutes from The Alcove and Orion Healing Center — Dar Mansour is more than a restaurant. It's a slow food sanctuary for private dinners, soulful celebrations and food-conscious travellers seeking meaning, beauty and flavour.</p>
 </div></section>
 ''' + L.cta_band("Book your experience &amp; pre-order",
@@ -570,6 +569,7 @@ FAQ = [
     ("What are Dar Mansour's opening hours for dinner?","We are open for dinner only, from 7:00 PM to 10:30 PM, Tuesday to Saturday. We are closed on Sundays and Mondays. Reservations are highly recommended, as we welcome only a limited number of guests each evening."),
     ("How do I book a table at Dar Mansour?","Reservations are made via WhatsApp: +66 82 276 7757. Because Dar Mansour offers a boutique dining experience with limited seats, we highly recommend reserving in advance."),
     ("How does the pre-order dining system work?","To ensure freshness and eliminate waste, we use a daily pre-order system. Ahead of your visit we'll send you the pre-order menu via WhatsApp; you then pre-order your main dishes in advance, ideally 5 hours ahead. Everything is prepared just for you, with care and intention."),
+    ("Can I dine at Dar Mansour without a reservation?","Absolutely. Walk-in guests are always warmly welcome, subject to availability. As every dish at Dar Mansour is freshly prepared to order and many of our signature Moroccan specialties require several hours of slow cooking, some dishes may no longer be available without advance notice. During busy evenings, waiting times can also exceed one hour. To enjoy the full Dar Mansour experience and guarantee the availability of our signature tajines, couscous and tanjias, we highly recommend reserving your table and pre-ordering your main dishes in advance."),
     ("Is Dar Mansour a kid-friendly restaurant?","We are not a typical kid-friendly restaurant. Dar Mansour is an intimate, peaceful setting. We welcome babies under 2 and children over 9 who can enjoy the calm of the space. Please inform us in advance if you're bringing children so we can prepare accordingly."),
     ("Can I bring my dog to Dar Mansour?","Unfortunately dogs are not allowed, even in the garden area. We love animals, but we prioritise hygiene, safety and a tranquil atmosphere for all our guests."),
     ("Does Dar Mansour serve wine and cocktails?","Yes. Our selection includes a curated wine list paired with Moroccan dishes, signature cocktails with Moroccan twists, and homemade non-alcoholic drinks."),
