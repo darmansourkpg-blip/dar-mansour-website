@@ -87,7 +87,7 @@ home_body = f'''
   </div>
   <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
     <a class="btn btn--primary" href="moroccan-menu-koh-phangan.html">Explore the Full Menu</a>
-    <p class="book__meta">Each main dish is an individual serving, pre-ordered to honour traditional cooking times and minimise waste.</p>
+    <p class="book__meta">Every main course is individually crafted, prepared to order to honour tradition and minimise waste.</p>
   </div>
 </div></section>
 
