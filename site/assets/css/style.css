@@ -174,6 +174,17 @@ body.menu-open .brand__logo--color { display: block; }
 .header__cta { display: flex; align-items: center; gap: 1rem; }
 .header .btn { padding: .8rem 1.4rem; min-height: 44px; }
 
+/* language switcher (EN · FR) — matches nav colour over hero / when solid */
+.langswitch { display: inline-flex; align-items: center; gap: .45rem; font-size: .74rem; font-weight: 700; letter-spacing: .08em; }
+.langswitch a, .langswitch .is-active { color: rgba(255,255,255,.55); transition: color .3s var(--ease); }
+.langswitch .is-active { color: #fff; }
+.langswitch a:hover { color: #fff; }
+.langswitch span[aria-hidden] { color: rgba(255,255,255,.35); }
+.header.is-solid .langswitch a, body.menu-open .langswitch a { color: var(--muted); }
+.header.is-solid .langswitch .is-active, body.menu-open .langswitch .is-active { color: var(--green-deep); }
+.header.is-solid .langswitch a:hover, body.menu-open .langswitch a:hover { color: var(--green-deep); }
+.header.is-solid .langswitch span[aria-hidden], body.menu-open .langswitch span[aria-hidden] { color: var(--line); }
+
 /* scrolled state */
 .header.is-solid { background: var(--bone); height: 74px; box-shadow: 0 1px 0 var(--line); }
 .header.is-solid .brand__name { color: var(--green-deep); }

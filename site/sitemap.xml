@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://darmansour.com/</loc><lastmod>2026-07-04</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://darmansour.com/</loc><lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://darmansour.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://darmansour.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://darmansour.com/"/></url>
   <url><loc>https://darmansour.com/moroccan-slow-dining-koh-phangan.html</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://darmansour.com/moroccan-menu-koh-phangan.html</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://darmansour.com/moroccan-restaurant-reservation-koh-phangan.html</loc><lastmod>2026-07-04</lastmod></url>
@@ -16,4 +19,8 @@
   <url><loc>https://darmansour.com/faq.html</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://darmansour.com/contact-dar-mansour-koh-phangan.html</loc><lastmod>2026-07-04</lastmod></url>
   <url><loc>https://darmansour.com/blog.html</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://darmansour.com/fr/</loc><lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://darmansour.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://darmansour.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://darmansour.com/"/></url>
 </urlset>

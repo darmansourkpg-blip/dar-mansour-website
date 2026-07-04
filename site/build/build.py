@@ -14,6 +14,13 @@ A = L.ARROW
 WI = L.WA_ICON
 pages = {}
 
+# Pages that already have a French twin under /fr/. Set before building the
+# English pages so their <head> can advertise the hreflang alternates, and so
+# the language switcher points at real French pages (untranslated links fall
+# back to English automatically — see _layout.loc).
+FR_READY = {"index.html"}
+L.FR_READY = FR_READY
+
 
 # ============================================================ HOME
 home_body = f'''
@@ -714,11 +721,193 @@ pages["blog.html"] = L.page(
     og_image="assets/img/maija-art-direction-koh-phangan.jpg")
 
 
+# ============================================================ FRENCH (/fr/)
+# The French twin. Built with LANG="fr" / BASE="../" so shared partials
+# (header, footer, CTA, breadcrumb…) render in French and reach /assets from
+# one level down. Only pages listed in FR_READY are generated here; every other
+# link gracefully falls back to its English page via _layout.loc().
+L.LANG = "fr"
+L.BASE = "../"
+B = L.BASE
+fr_pages = {}
+
+fr_home_body = f'''
+<section class="hero">
+  <div class="hero__media"><img src="{B}assets/img/moroccan-garden-dining-koh-phangan.webp" alt="Dîner marocain aux chandelles dans le jardin de Dar Mansour, Koh Phangan" fetchpriority="high"></div>
+  <div class="wrap hero__inner">
+    <span class="eyebrow">Slow Food Marocain · Côte Ouest, Koh Phangan</span>
+    <h1 class="display hero__title">La cuisine du Maroc à Koh Phangan</h1>
+    <p class="hero__sub">Un joyau marocain caché près de Sri Thanu &amp; Hin Kong. Tajines cuits au feu, tanjias mijotées et dîners aux chandelles au jardin — enracinés dans la tradition, cuisinés lentement avec soin.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WI} Réservez votre soirée</a>
+      <a class="btn btn--light" href="{L.loc("moroccan-menu-koh-phangan.html")}">Découvrir la carte</a>
+    </div>
+  </div>
+  <span class="hero__scroll" aria-hidden="true">Défiler</span>
+</section>
+
+<div class="trust"><div class="wrap trust__inner">
+  <span class="trust__item"><strong>Sur Réservation</strong></span>
+  <span class="trust__item"><strong>Précommande</strong> · Notre philosophie</span>
+  <span class="trust__item"><strong>Cuisiné Lentement</strong> · Zéro Gaspillage</span>
+  <span class="trust__item">Limité à <strong>40 Convives</strong> par soir</span>
+  <span class="trust__item">Accords <strong>Mets &amp; Vins</strong></span>
+</div></div>
+
+<section class="section" id="experience"><div class="wrap"><div class="split">
+  <div class="split__text reveal">
+    <span class="eyebrow">L'Expérience</span>
+    <h2>Venez en invité,<br>repartez en famille.</h2>
+    <p class="lead">Niché près de Sri Thanu et Hin Kong — à quelques minutes de The Alcove, du Orion Healing Center et des Bliss Villas — Dar Mansour est une expérience culinaire immersive et pleine d'âme, sur la côte ouest de Koh Phangan.</p>
+    <p style="margin-top:1.2rem;">Puisée dans la sagesse des Dadas, notre cuisine mêle les influences berbères, andalouses, juives et sahariennes — là où le sucré rencontre le salé, où les légumes sont rôtis avec patience et soin. Chaque détail, des zelliges faits main aux tables éclairées à la bougie, invite à ralentir et à se sentir chez soi.</p>
+    <a class="textlink" href="{L.loc("dar-mansour-founders-vision.html")}">Lire notre histoire {A}</a>
+  </div>
+  <div class="split__media reveal" data-delay="1">
+    <img src="{B}assets/img/moroccan-restaurant-central-room-koh-phangan.webp" alt="La salle centrale de Dar Mansour, intérieur marocain fait main">
+    <span class="tag">La Salle Centrale</span>
+  </div>
+</div></div></section>
+
+<section class="section band-dark"><div class="wrap quote">
+  <div class="divider divider--light reveal"><span>◇◇◇</span></div>
+  <blockquote class="reveal" data-delay="1" style="margin-top:2rem;">« Dar Mansour apporte l'âme de l'hospitalité marocaine contemporaine à Koh Phangan. »</blockquote>
+  <cite class="reveal" data-delay="2">Slow food · Art · Culture · Lien humain</cite>
+</div></section>
+
+<section class="section" id="concept"><div class="wrap">
+  <div class="center reveal" style="max-width:720px;margin-inline:auto;">
+    <span class="eyebrow">Concept &amp; Modèle</span>
+    <h2 style="margin:1.2rem 0 1.3rem;">L'art de recevoir, réinventé</h2>
+    <p class="lead" style="margin-inline:auto;">Chez Dar Mansour, l'expérience commence bien avant votre arrivée. Comme l'un des seuls restaurants de slow food marocain de Koh Phangan, chaque plat est préparé à la commande, au rythme de la cuisine traditionnelle. La réservation est vivement recommandée et nos plats signature sont disponibles en précommande — idéalement 5 heures à l'avance — car des plats comme la tanjia marrakchia et les tajines cuits au feu ont besoin de temps, d'amour et de patience pour révéler toute leur âme.</p>
+  </div>
+  <div class="features" style="margin-top:clamp(3rem,6vw,4.5rem);">
+    <div class="feature reveal"><span class="feature__num">01</span><h3>Sur Réservation</h3><p>Réservation à l'avance via WhatsApp — pour une expérience intime et sur-mesure à chaque table.</p></div>
+    <div class="feature reveal" data-delay="1"><span class="feature__num">02</span><h3>Philosophie de la Précommande</h3><p>Plats principaux précommandés, idéalement 5 heures à l'avance — pour honorer les longues cuissons et éviter toute attente à l'arrivée.</p></div>
+    <div class="feature reveal"><span class="feature__num">03</span><h3>Zéro Gaspillage</h3><p>Pas de préparation en masse, pas de restes. Chaque plat est cuisiné frais, rien que pour vous, au rythme des ingrédients.</p></div>
+    <div class="feature reveal" data-delay="1"><span class="feature__num">04</span><h3>Une Cuisine Paisible</h3><p>Limité à 40 convives par soir. La lenteur nourrit la profondeur, le soin et la qualité — pour la planète et pour la tradition.</p></div>
+  </div>
+  <div class="center reveal" style="margin-top:2.6rem;"><a class="textlink" href="{L.loc("moroccan-slow-dining-koh-phangan.html")}">Découvrir notre concept slow food {A}</a></div>
+</div></section>
+
+<section class="section" id="cuisine" style="background:var(--sand);"><div class="wrap">
+  <div class="center reveal" style="max-width:680px;margin:0 auto clamp(2.5rem,5vw,3.5rem);">
+    <span class="eyebrow">Notre Carte Marocaine</span>
+    <h2 style="margin:1.2rem 0;">Un voyage aux racines de la cuisine marocaine</h2>
+    <p class="lead" style="margin-inline:auto;">Inspirée par les Dadas — gardiennes silencieuses des recettes familiales marocaines — notre cuisine célèbre l'essence authentique du Maroc : des plats mijotés, pleins de générosité, de profondeur et d'âme.</p>
+  </div>
+  <div class="dishes">
+    <article class="dish reveal"><img src="{B}assets/img/berber-lamb-tajine-koh-phangan.webp" alt="Tajine d'agneau berbère aux pruneaux et amandes"><div class="dish__label"><h3>Tajines</h3><p>Cuits au feu, mijotés des heures durant — le sucré rencontre le salé.</p></div></article>
+    <article class="dish reveal" data-delay="1"><img src="{B}assets/img/moroccan-couscous-koh-phangan.webp" alt="Couscous au safran roulé à la main, cuit quatre fois à la vapeur"><div class="dish__label"><h3>Couscous</h3><p>Semoule roulée à la main, cuite quatre fois à la vapeur jusqu'à devenir légère et aérienne.</p></div></article>
+    <article class="dish reveal" data-delay="2"><img src="{B}assets/img/tanjia-marrakchia-koh-phangan.webp" alt="Tanjia Marrakchia, spécialité marocaine mijotée"><div class="dish__label"><h3>Tanjia</h3><p>La spécialité marrakchie — cuite doucement et lentement dans sa jarre de terre.</p></div></article>
+  </div>
+  <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+    <a class="btn btn--primary" href="{L.loc("moroccan-menu-koh-phangan.html")}">Explorer toute la carte</a>
+    <p class="book__meta">Chaque plat principal est confectionné individuellement, préparé à la commande pour honorer la tradition et limiter le gaspillage.</p>
+  </div>
+</div></section>
+
+<section class="section" id="story"><div class="wrap"><div class="split split--reverse">
+  <div class="split__text reveal">
+    <span class="eyebrow">Fondateurs &amp; Vision</span>
+    <h2>Une histoire d'amour — et une vision de l'hospitalité marocaine</h2>
+    <p class="lead">Dar Mansour est la vision de <a class="ilink" href="{L.loc("dar-mansour-founders-vision.html")}">Maïja</a> — une âme créative qui a passé plus de 30 ans immergée dans la culture marocaine — et de Bruno, entrepreneur français tombé amoureux non seulement du Maroc, mais de sa plus inspirée des ambassadrices.</p>
+    <p style="margin-top:1.2rem;">Ensemble, ils ont imaginé un lieu où chaque repas est une histoire, chaque invité accueilli comme un proche, et chaque détail — des épices à la musique — porte l'âme de l'hospitalité marocaine.</p>
+    <a class="textlink" href="{L.loc("dar-mansour-founders-vision.html")}">Rencontrer les fondateurs {A}</a>
+  </div>
+  <div class="split__media reveal" data-delay="1">
+    <img src="{B}assets/img/maija-art-direction-koh-phangan.webp" alt="Direction artistique de Maïja et décor marocain chez Dar Mansour">
+    <span class="tag">Direction Artistique · Maïja</span>
+  </div>
+</div></div></section>
+
+<section class="section pd" id="private">
+  <div class="pd__bg"><img src="{B}assets/img/moroccan-round-table-koh-phangan.webp" alt="Table ronde intime dressée pour une célébration marocaine privée"></div>
+  <div class="wrap"><div class="reveal" style="max-width:560px;">
+    <span class="eyebrow">Privatisation &amp; Célébrations</span>
+    <h2 style="margin:1.2rem 0 1.3rem;">Célébrez les plus beaux moments de la vie autour d'une table marocaine</h2>
+    <p class="lead" style="color:var(--on-dark-soft);">Certaines soirées méritent plus qu'un restaurant. Anniversaires, fêtes, demandes en mariage, lunes de miel ou réunions intimes — orchestrés avec soin dans notre paisible jardin aux chandelles, entre Sri Thanu et Hin Kong.</p>
+    <ul class="pd__tags"><li>Anniversaires</li><li>Célébrations</li><li>Demandes en mariage</li><li>Lunes de miel</li><li>Réunions de famille</li><li>Retraites bien-être</li></ul>
+    <a class="btn btn--light" href="{L.loc("private-dining-koh-phangan.html")}">Organiser votre célébration</a>
+  </div></div>
+</section>
+
+<section class="section" id="wine"><div class="wrap"><div class="split">
+  <div class="split__media reveal">
+    <img src="{B}assets/img/moroccan-wine-pairing-tajine-port-koh-phangan.webp" alt="Tajine marocain aux pruneaux accordé à un porto tawny sur la carte des vins de Dar Mansour, Koh Phangan">
+    <span class="tag">Accords Mets &amp; Vins</span>
+  </div>
+  <div class="split__text reveal" data-delay="1">
+    <span class="eyebrow">Accords Mets &amp; Vins &amp; Le Mansour Bar</span>
+    <h2>Sur la route épicée du Maroc</h2>
+    <p class="lead">Ici, le vin est plus qu'une boisson — c'est un dialogue avec le plat. Nous sommes fiers de proposer la seule carte d'accords mets &amp; vins marocains de Koh Phangan, chaque cuvée choisie pour sublimer la chaleur et la profondeur aromatique de notre slow food.</p>
+    <p style="margin-top:1.2rem;">Au Mansour Bar, les cocktails sont une histoire, un parfum, une étincelle de mémoire — du <em>Rock the Casbah</em> au sirop de Ras El Hanout à la célèbre Mansour's Jasminade.</p>
+    <a class="textlink" href="{L.loc("moroccan-wine-pairing-koh-phangan.html")}">Explorer vins &amp; cocktails {A}</a>
+  </div>
+</div></div></section>
+
+<section class="section" id="reviews" style="background:var(--sand);"><div class="wrap">
+  <div class="reviews__head reveal">
+    <span class="eyebrow">Ce Que Disent Nos Invités</span>
+    <h2 style="margin-top:1.1rem;">Plus qu'un restaurant — une expérience marocaine immersive</h2>
+    <div class="rating"><span class="rating__stars">★★★★★</span><span>Aimé par des invités du monde entier</span></div>
+  </div>
+  <div class="reviews__grid">
+    <figure class="review reveal"><p>« Étant à moitié marocain… je mangeais et je pleurais, je pleurais et je mangeais. On sent l'amour dans chaque bouchée. »</p><footer><span class="avatar">O</span><cite>Oren</cite></footer></figure>
+    <figure class="review reveal" data-delay="1"><p>« Nous avons dîné assis au sol, entourés de tapis et de lanternes — comme dans un riad marocain. Une soirée familiale magique. »</p><footer><span class="avatar">M</span><cite>Mo. A</cite></footer></figure>
+    <figure class="review reveal" data-delay="2"><p>« Une cuisine marocaine profondément authentique qui m'a bouleversée. Chaleureux, élégant et plein de charme. »</p><footer><span class="avatar">D</span><cite>Daliah</cite></footer></figure>
+    <figure class="review reveal"><p>« Maija et Bruno nous ont accueillis comme de vieux amis. Msemen en entrée, tajines mijotés — tout était parfait. »</p><footer><span class="avatar">A</span><cite>Alberto</cite></footer></figure>
+    <figure class="review reveal" data-delay="1"><p>« On se serait cru transporté dans un riad secret de Marrakech. Un joyau caché au cœur battant. »</p><footer><span class="avatar">K</span><cite>Kodi</cite></footer></figure>
+    <figure class="review reveal" data-delay="2"><p>« Marocaine vivant à Koh Phangan, je me suis sentie chez moi instantanément. Plus qu'un repas — une expérience. »</p><footer><span class="avatar">S</span><cite>Soukaina</cite></footer></figure>
+  </div>
+  <div class="center reveal" style="margin-top:2.5rem;"><a class="textlink" href="{L.loc("moroccan-restaurant-reviews-koh-phangan.html")}">Lire plus d'avis {A}</a></div>
+</div></section>
+
+<section class="section"><div class="wrap reco">
+  <div class="reveal">
+    <span class="eyebrow">Reconnaissance</span>
+    <h2 style="margin:1.1rem auto 1.2rem;max-width:22ch;">L'un des meilleurs restaurants marocains au monde</h2>
+    <p class="lead" style="max-width:60ch;margin-inline:auto;">Cité dans le magazine <em>Golf du Maroc</em> parmi les plus belles destinations culinaires marocaines au monde — deux mois seulement après l'ouverture. Un joyau culinaire qui porte l'âme marocaine à travers les continents.</p>
+    <div style="margin-top:1.8rem;"><a class="textlink" href="{L.loc("best-moroccan-restaurant-world-press.html")}">Lire la reconnaissance {A}</a></div>
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:2.5rem;"><div class="divider"><span>◇◇◇</span></div><h2 style="margin-top:1.5rem;">Une soirée chez Dar Mansour</h2></div>
+  <div class="gallery">
+    <a class="g-tall reveal" href="{B}assets/img/dar-mansour-entrance-night-koh-phangan.webp"><img src="{B}assets/img/dar-mansour-entrance-night-koh-phangan.webp" alt="Entrée et lanterne de Dar Mansour à la tombée du jour, Koh Phangan" loading="lazy"></a>
+    <a class="reveal" data-delay="1" href="{B}assets/img/moroccan-garden-candlelight-koh-phangan.webp"><img src="{B}assets/img/moroccan-garden-candlelight-koh-phangan.webp" alt="Lanterne du jardin aux chandelles chez Dar Mansour, la nuit" loading="lazy"></a>
+    <a class="reveal" data-delay="2" href="{B}assets/img/moroccan-pastries-mint-tea-koh-phangan.webp"><img src="{B}assets/img/moroccan-pastries-mint-tea-koh-phangan.webp" alt="Pâtisseries marocaines artisanales et thé à la menthe traditionnel" loading="lazy"></a>
+    <a class="reveal" href="{B}assets/img/tanjia-marrakchia-koh-phangan.webp"><img src="{B}assets/img/tanjia-marrakchia-koh-phangan.webp" alt="Tanjia Marrakchia mijotée dans sa jarre de terre chez Dar Mansour" loading="lazy"></a>
+    <a class="g-wide reveal" data-delay="1" href="{B}assets/img/moroccan-garden-lounge-night-koh-phangan.webp"><img src="{B}assets/img/moroccan-garden-lounge-night-koh-phangan.webp" alt="Salon-jardin marocain la nuit chez Dar Mansour" loading="lazy"></a>
+    <a class="reveal" data-delay="2" href="{B}assets/img/berber-lamb-tajine-koh-phangan.webp"><img src="{B}assets/img/berber-lamb-tajine-koh-phangan.webp" alt="Tajine d'agneau berbère aux pruneaux et amandes chez Dar Mansour" loading="lazy"></a>
+  </div>
+</div></section>
+''' + L.cta_band("Prêt à goûter le Maroc à Koh Phangan ?",
+    "La réservation est vivement recommandée, les plats principaux étant précommandés via WhatsApp — idéalement 5 heures avant votre venue. Signalez-nous toute allergie ou besoin alimentaire — nous ferons de notre mieux pour nous adapter tout en restant fidèles à nos recettes.")
+
+FR_HOME_SCHEMA = HOME_SCHEMA.replace('"url":"https://darmansour.com/"', '"url":"https://darmansour.com/fr/"')
+fr_pages["index.html"] = L.page(
+    "Dar Mansour | Meilleur Restaurant Marocain à Koh Phangan — Slow Food &amp; Cuisine de l'Âme",
+    "Découvrez Dar Mansour, un joyau marocain caché à Koh Phangan. Cuisine authentique mijotée, dîners romantiques au jardin et hospitalité pleine d'âme. Réservez votre table pour une expérience inoubliable.",
+    "", fr_home_body, extra_head=FR_HOME_SCHEMA)
+
+# back to English defaults for anything that follows
+L.LANG = "en"
+L.BASE = ""
+
+
 # ============================================================ WRITE
 for fname, html in pages.items():
     with open(os.path.join(OUT, fname), "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", fname)
+
+frdir = os.path.join(OUT, "fr")
+os.makedirs(frdir, exist_ok=True)
+for fname, html in fr_pages.items():
+    with open(os.path.join(frdir, fname), "w", encoding="utf-8") as f:
+        f.write(html)
+    print("wrote fr/" + fname)
 
 # ---- robots.txt (+ sitemap.xml only once the site is open for indexing) ----
 from datetime import date
@@ -736,18 +925,29 @@ if L.NOINDEX:
     print("wrote robots.txt (noindex mode — sitemap omitted)")
 else:
     today = date.today().isoformat()
-    def _loc(fn):
-        return SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
-    _urls = "".join(
-        f"  <url><loc>{_loc(fn)}</loc><lastmod>{today}</lastmod></url>\n"
-        for fn in pages)
+    XH = "http://www.w3.org/1999/xhtml"
+    def _loc(fn, prefix=""):
+        base = f"{SITE}/{prefix}"
+        return base if fn == "index.html" else f"{base}{fn}"
+    def _alts(fn):
+        # hreflang alternates for pages that exist in both languages
+        if fn not in FR_READY:
+            return ""
+        return (f'\n    <xhtml:link rel="alternate" hreflang="en" href="{_loc(fn)}"/>'
+                f'\n    <xhtml:link rel="alternate" hreflang="fr" href="{_loc(fn, "fr/")}"/>'
+                f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{_loc(fn)}"/>')
+    rows = []
+    for fn in pages:
+        rows.append(f'  <url><loc>{_loc(fn)}</loc><lastmod>{today}</lastmod>{_alts(fn)}</url>')
+    for fn in fr_pages:
+        rows.append(f'  <url><loc>{_loc(fn, "fr/")}</loc><lastmod>{today}</lastmod>{_alts(fn)}</url>')
     with open(sitemap_path, "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
-                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                + _urls + '</urlset>\n')
+                f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="{XH}">\n'
+                + "\n".join(rows) + '\n</urlset>\n')
     robots = "User-agent: *\nAllow: /\n\n" f"Sitemap: {SITE}/sitemap.xml\n"
     print("wrote sitemap.xml + robots.txt")
 with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
     f.write(robots)
 
-print(f"\n{len(pages)} pages generated.")
+print(f"\n{len(pages)} EN + {len(fr_pages)} FR pages generated.")
