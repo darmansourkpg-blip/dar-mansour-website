@@ -382,6 +382,7 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 }
 @media (max-width: 720px) {
   .hero__scroll { display: none; }
+  .press { grid-template-columns: 1fr; }
   .dishes { grid-template-columns: 1fr; }
   .reviews__grid { columns: 1; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
@@ -436,6 +437,13 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 /* Callout / note box */
 .note { background: var(--green-tint); border-left: 3px solid var(--green); padding: 1.4rem 1.6rem; border-radius: 2px; }
 .note p { max-width: none; margin: 0; color: var(--green-deep); }
+
+/* Press features */
+.press { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; margin-top: 1.6rem; }
+.press__card { background: var(--cream); border: 1px solid var(--line); border-radius: 3px; padding: 1.9rem 1.8rem; display: flex; flex-direction: column; }
+.press__source { font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--green); }
+.press__quote { font-family: var(--serif); font-size: 1.22rem; line-height: 1.45; color: var(--green-deep); font-style: italic; max-width: none; margin: .9rem 0 1.4rem; }
+.press__card .textlink { margin-top: auto; align-self: flex-start; }
 
 /* Info steps (reservation, concept) */
 .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.6rem; }

@@ -390,11 +390,19 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
   </ul>
   <p>We're incredibly grateful for this acknowledgment — and we dedicate it to everyone who believed in this journey.</p>
   <h2>Featured in the local press</h2>
-  <p>Closer to home, Koh Phangan's own publications have shared our story too:</p>
-  <ul class="bullets">
-    <li><a href="https://phanganist.com/koh-phangan/dar-mansour-morocco-kitchen-slow-dining-big-soul-and-taste-morocco-koh-phangan" target="_blank" rel="noopener"><strong>Phanganist</strong> — Dar Mansour, Morocco's Kitchen: slow dining, big soul and the taste of Morocco {A}</a></li>
-    <li><a href="https://phanganlife.com/catalog/restaurants-and-cafes/world-cuisine/dar-mansour-moroccos-kitchen" target="_blank" rel="noopener"><strong>Phangan Life</strong> — Dar Mansour, Morocco's Kitchen {A}</a></li>
-  </ul>
+  <p>Closer to home, Koh Phangan's own publications have shared our story too.</p>
+  <div class="press">
+    <article class="press__card reveal">
+      <span class="press__source">Phanganist</span>
+      <p class="press__quote">"If Koh Phangan had a secret door to another world, it might open somewhere in Sri Thanu — behind warm light, textured walls, and a soundtrack designed to slow the rhythm of the evening."</p>
+      <a class="textlink" href="https://phanganist.com/koh-phangan/dar-mansour-morocco-kitchen-slow-dining-big-soul-and-taste-morocco-koh-phangan" target="_blank" rel="noopener">Read the full article {A}</a>
+    </article>
+    <article class="press__card reveal" data-delay="1">
+      <span class="press__source">Phangan Life</span>
+      <p class="press__quote">Dar Mansour, Morocco's Kitchen — featured among the island's finest world-cuisine tables in the Phangan Life guide.</p>
+      <a class="textlink" href="https://phanganlife.com/catalog/restaurants-and-cafes/world-cuisine/dar-mansour-moroccos-kitchen" target="_blank" rel="noopener">View the listing {A}</a>
+    </article>
+  </div>
 </div></section>
 ''' + L.cta_band("Taste what the world is talking about",
     "Reserve your evening and discover the slow-cooked Moroccan cuisine that carries our soul across continents.") + L.related(
