@@ -133,6 +133,10 @@ p { max-width: 62ch; }
 .textlink svg { width: 15px; transition: transform .35s var(--ease); }
 .textlink:hover svg { transform: translateX(5px); }
 
+/* Inline contextual link (in-body internal linking) */
+.ilink { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(0,131,125,.38); transition: text-decoration-color .3s var(--ease); }
+.ilink:hover { text-decoration-color: var(--green); }
+
 /* ---------- 6. Header ---------- */
 .header {
   position: fixed; inset: 0 0 auto 0; z-index: 130;
