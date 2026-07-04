@@ -413,13 +413,13 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .subhero h1 { color: #fff; margin: 1rem 0 1rem; font-size: clamp(2.4rem, 6vw, 4.6rem); max-width: 18ch; }
 .subhero__sub { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: rgba(255,255,255,.9); max-width: 50ch; font-weight: 300; }
 
-/* Breadcrumb */
-.breadcrumb { padding-top: calc(var(--header-h) + 1.4rem); padding-bottom: 0; }
-.breadcrumb ol { display: flex; flex-wrap: wrap; gap: .5rem; font-size: .76rem; letter-spacing: .04em; color: var(--muted); }
-.breadcrumb a { color: var(--muted); }
-.breadcrumb a:hover { color: var(--green); }
-.breadcrumb li[aria-current] { color: var(--ink); }
-.breadcrumb .sep { opacity: .5; }
+/* Breadcrumb — overlaid over the subhero image (full-bleed under the header) */
+.breadcrumb { position: absolute; z-index: 6; left: 0; right: 0; top: calc(var(--header-h) + .2rem); padding-top: 0; padding-bottom: 0; }
+.breadcrumb ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; font-size: .76rem; letter-spacing: .04em; color: rgba(255,255,255,.82); }
+.breadcrumb a { color: rgba(255,255,255,.82); }
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb li[aria-current] { color: #fff; }
+.breadcrumb .sep { opacity: .55; }
 
 /* Editorial prose block */
 .prose { max-width: 720px; margin-inline: auto; }
