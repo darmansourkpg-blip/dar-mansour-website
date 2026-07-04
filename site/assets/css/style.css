@@ -298,10 +298,10 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .rating { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .35rem .7rem; margin-top: 1.2rem; }
 .rating__stars { color: var(--green); letter-spacing: .1em; font-size: 1.1rem; }
 .rating span { font-size: .82rem; color: var(--muted); letter-spacing: .04em; }
-.reviews__grid { columns: 3; column-gap: 1.6rem; }
-.review { break-inside: avoid; background: var(--cream); border: 1px solid var(--line); border-radius: 3px; padding: 2rem 1.8rem; margin-bottom: 1.6rem; }
-.review p { font-family: var(--serif); font-size: 1.28rem; line-height: 1.4; color: var(--green-deep); font-style: italic; max-width: none; }
-.review footer { margin-top: 1.3rem; display: flex; align-items: center; gap: .7rem; }
+.reviews__grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 1fr; gap: 1.6rem; }
+.review { background: var(--cream); border: 1px solid var(--line); border-radius: 3px; padding: 2rem 1.8rem; display: flex; flex-direction: column; }
+.review p { font-family: var(--serif); font-size: 1.28rem; line-height: 1.4; color: var(--green-deep); font-style: italic; max-width: none; margin: 0 0 1.3rem; }
+.review footer { margin-top: auto; display: flex; align-items: center; gap: .7rem; }
 .review .avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--green-tint); color: var(--green-deep); display: grid; place-items: center; font-family: var(--sans); font-weight: 700; font-size: .85rem; }
 .review cite { font-style: normal; font-weight: 700; font-size: .84rem; letter-spacing: .04em; }
 
@@ -380,6 +380,7 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
   .split--reverse .split__text { order: 0; }
   .split__media img { aspect-ratio: 16/11; }
   .features { grid-template-columns: 1fr; gap: 2rem; }
+  .reviews__grid { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 1fr 1fr; }
   .mega__groups { grid-template-columns: repeat(2, 1fr); align-content: start; }
   .mega__foot { grid-template-columns: 1fr; }
@@ -388,7 +389,7 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
   .hero__scroll { display: none; }
   .press { grid-template-columns: 1fr; }
   .dishes { grid-template-columns: 1fr; }
-  .reviews__grid { columns: 1; }
+  .reviews__grid { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .gallery .g-wide { grid-column: span 2; }
   .footer__grid { grid-template-columns: 1fr; }
