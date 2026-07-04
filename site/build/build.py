@@ -720,21 +720,34 @@ for fname, html in pages.items():
         f.write(html)
     print("wrote", fname)
 
-# ---- sitemap.xml + robots.txt (kept in sync with the pages above) ----
+# ---- robots.txt (+ sitemap.xml only once the site is open for indexing) ----
 from datetime import date
 SITE = L.SITE_URL.rstrip("/")
-today = date.today().isoformat()
-def _loc(fn):
-    return SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
-_urls = "".join(
-    f"  <url><loc>{_loc(fn)}</loc><lastmod>{today}</lastmod></url>\n"
-    for fn in pages)
-with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
-    f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            + _urls + '</urlset>\n')
+sitemap_path = os.path.join(OUT, "sitemap.xml")
+if L.NOINDEX:
+    # Pre-launch: pages carry a noindex meta. Keep crawling allowed so bots can
+    # actually see that noindex, but don't advertise a sitemap. Drop any stale one.
+    if os.path.exists(sitemap_path):
+        os.remove(sitemap_path)
+    robots = ("# Pre-launch — every page carries a 'noindex' meta so search engines\n"
+              "# keep this site out of results. Crawling stays allowed so the\n"
+              "# noindex is actually seen. Remove this once the site goes public.\n"
+              "User-agent: *\nAllow: /\n")
+    print("wrote robots.txt (noindex mode — sitemap omitted)")
+else:
+    today = date.today().isoformat()
+    def _loc(fn):
+        return SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
+    _urls = "".join(
+        f"  <url><loc>{_loc(fn)}</loc><lastmod>{today}</lastmod></url>\n"
+        for fn in pages)
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                + _urls + '</urlset>\n')
+    robots = "User-agent: *\nAllow: /\n\n" f"Sitemap: {SITE}/sitemap.xml\n"
+    print("wrote sitemap.xml + robots.txt")
 with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
-    f.write("User-agent: *\nAllow: /\n\n" f"Sitemap: {SITE}/sitemap.xml\n")
-print("wrote sitemap.xml + robots.txt")
+    f.write(robots)
 
 print(f"\n{len(pages)} pages generated.")
