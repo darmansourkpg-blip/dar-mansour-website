@@ -1,0 +1,71 @@
+# Decap CMS — configuration du back-office Dar Mansour
+# Le contenu (articles) est enregistré en Markdown dans site/content/journal/
+# et les photos dans site/assets/uploads/. Chaque publication déclenche le
+# rebuild du site (GitHub Actions) et met l'article en ligne, optimisé SEO.
+
+backend:
+  name: github
+  repo: darmansourkpg-blip/dar-mansour-website
+  branch: main
+  # Relais de connexion sécurisé (Cloudflare Worker). À remplacer par ton URL
+  # après l'étape Cloudflare — ex. https://dar-mansour-auth.toncompte.workers.dev
+  base_url: https://REMPLACER-PAR-TON-RELAIS.workers.dev
+
+# Où sont stockées les images téléversées depuis l'éditeur
+media_folder: "site/assets/uploads"
+public_folder: "assets/uploads"
+
+publish_mode: simple
+locale: en
+site_url: https://darmansour.com
+display_url: https://darmansour.com
+logo_url: https://darmansour.com/favicon-192.png
+
+collections:
+  - name: journal
+    label: "Journal — Articles"
+    label_singular: "Article"
+    description: "Écris, modifie et publie tes articles de blog."
+    folder: "site/content/journal"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: [date, title]
+    editor:
+      preview: true
+    fields:
+      - label: "Titre de l'article"
+        name: "title"
+        widget: "string"
+        hint: "Le grand titre affiché en haut de l'article (H1)."
+      - label: "Date de publication"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+      - label: "Auteur"
+        name: "author"
+        widget: "string"
+        default: "Dar Mansour"
+      - label: "Photo de couverture"
+        name: "cover"
+        widget: "image"
+        hint: "Grande image en haut de l'article — aussi utilisée lors des partages (WhatsApp, réseaux)."
+      - label: "Texte alternatif de la photo (alt)"
+        name: "cover_alt"
+        widget: "string"
+        hint: "Décris la photo en une phrase — important pour Google et l'accessibilité."
+      - label: "Titre SEO (Google) — optionnel"
+        name: "seo_title"
+        widget: "string"
+        required: false
+        hint: "50–60 caractères. Laisse vide pour réutiliser le titre de l'article."
+      - label: "Méta-description (Google)"
+        name: "description"
+        widget: "text"
+        hint: "140–160 caractères. C'est le résumé affiché sous le titre dans les résultats Google."
+      - label: "Contenu de l'article"
+        name: "body"
+        widget: "markdown"
+        hint: "Ton texte. Utilise les sous-titres (H2), le gras, les listes, les liens…"

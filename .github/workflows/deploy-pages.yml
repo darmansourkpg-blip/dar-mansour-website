@@ -28,6 +28,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install build dependencies
+        run: pip install markdown PyYAML
+
+      # Regenerate the site from the Python generator + Journal markdown, so
+      # articles published via the CMS (which only commit markdown) become
+      # real, SEO-optimised HTML pages before deploy.
+      - name: Build site
+        run: python3 site/build/build.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:

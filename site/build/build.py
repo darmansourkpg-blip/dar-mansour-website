@@ -8,6 +8,9 @@ OUT = os.path.dirname(HERE)  # site/
 import _layout as L
 from _menu import render_menu, render_legend
 from _drinks import render_wine_feature, render_wine_groups, render_cocktails
+import _journal
+
+ARTICLES = _journal.load_articles()
 
 WA = L.WA
 A = L.ARROW
@@ -670,15 +673,22 @@ PILLARS = [
      "moroccan-cocktails-koh-phangan.html", "Step into the bar"),
 ]
 pillar_cards = "".join(f'''    <div class="feature reveal"><h3>{t}</h3><p>{d}</p><a class="textlink" href="{href}" style="margin-top:1rem;">{lbl} {A}</a></div>''' for t,d,href,lbl in PILLARS)
+journal_cards = _journal.render_index_cards(ARTICLES)
 
 blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
     "Journal &amp; Stories", "Stories of Morocco and Koh Phangan",
     "Beyond being the best Moroccan restaurant in Koh Phangan, Dar Mansour is a story — of Morocco's timeless cuisine, the Dadas' wisdom, family rituals and the island inspirations that surround us.",
     "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige star motifs and candlelight at Dar Mansour") + f'''
+<section class="section" style="padding-bottom:0;"><div class="wrap">
+  <div class="prose reveal center" style="text-align:center;">
+    <p class="lead" style="margin-inline:auto;">Our journal is a journey through flavours, traditions, art and soulful living — a bridge between Morocco's timeless heritage and the vibrant spirit of Thailand.</p>
+  </div>
+</div></section>
+{journal_cards}
 <section class="section"><div class="wrap">
-  <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
-    <p class="lead">Our journal is a journey through flavours, traditions, art and soulful living — a bridge between Morocco's timeless heritage and the vibrant spirit of Thailand.</p>
-    <div class="note" style="margin-top:1.6rem;text-align:left;"><p>New stories are published regularly. In the meantime, explore the worlds our journal is built upon — each one a doorway into Dar Mansour.</p></div>
+  <div class="center reveal" style="max-width:640px;margin:0 auto clamp(2rem,4vw,3rem);">
+    <span class="eyebrow">The Worlds We Write From</span>
+    <h2 style="margin-top:1rem;">Five doorways into Dar Mansour</h2>
   </div>
   <div class="features">
 {pillar_cards}
@@ -712,6 +722,12 @@ pages["blog.html"] = L.page(
     "The Dar Mansour journal: stories of Moroccan cuisine, the wisdom of the Dadas, slow cooking, island inspirations, wine and soulful living in Koh Phangan.",
     "blog.html", blog_body,
     og_image="assets/img/maija-art-direction-koh-phangan.jpg")
+
+
+# ============================================================ JOURNAL ARTICLES
+# One page per markdown file in content/journal/ (authored via Decap CMS).
+for _a in ARTICLES:
+    pages[_a["url"]] = _journal.render_article(_a)
 
 
 # ============================================================ WRITE
