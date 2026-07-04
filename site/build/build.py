@@ -134,7 +134,7 @@ home_body = f'''
   <div class="reviews__head reveal">
     <span class="eyebrow">What Our Guests Say</span>
     <h2 style="margin-top:1.1rem;">More than a restaurant — an immersive Moroccan experience</h2>
-    <div class="rating"><span class="rating__stars">★★★★★</span><span>5.0 · Loved by guests from around the world</span></div>
+    <div class="rating"><span class="rating__stars">★★★★★</span><span>Loved by guests from around the world</span></div>
   </div>
   <div class="reviews__grid">
     <figure class="review reveal"><p>"As half Moroccan… I was eating and crying, crying and eating. You can feel the love in every bite."</p><footer><span class="avatar">O</span><cite>Oren</cite></footer></figure>
@@ -422,7 +422,7 @@ reviews_body = L.breadcrumb(("Reviews", None)) + L.subhero(
     "From our tajines to the warmth of our welcome, discover why guests from around the world call us one of the best Moroccan restaurants in Thailand.",
     "assets/img/moroccan-interior-decor-koh-phangan.jpg", "Curated Moroccan interior at Dar Mansour") + f'''
 <section class="section"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:2.5rem;"><div class="rating"><span class="rating__stars">★★★★★</span><span>5.0 · Google Reviews</span></div></div>
+  <div class="center reveal" style="margin-bottom:2.5rem;"><div class="rating"><span class="rating__stars">★★★★★</span><span>Google Reviews</span></div></div>
   <div class="reviews__grid">
 {rev_cards}
   </div>
