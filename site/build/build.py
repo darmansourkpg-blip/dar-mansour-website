@@ -160,9 +160,9 @@ home_body = f'''
   <div class="center reveal" style="margin-bottom:2.5rem;"><div class="divider"><span>◇◇◇</span></div><h2 style="margin-top:1.5rem;">An evening at Dar Mansour</h2></div>
   <div class="gallery">
     <a class="g-tall reveal" href="assets/img/moroccan-restaurant-entrance-koh-phangan.webp"><img src="assets/img/moroccan-restaurant-entrance-koh-phangan.webp" alt="Entrance to Dar Mansour Moroccan restaurant in Koh Phangan" loading="lazy"></a>
-    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-arty-table-koh-phangan.webp"><img src="assets/img/moroccan-arty-table-koh-phangan.webp" alt="Artfully set Moroccan table with candles and ceramics" loading="lazy"></a>
+    <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-garden-lounge-night-koh-phangan.webp"><img src="assets/img/moroccan-garden-lounge-night-koh-phangan.webp" alt="Moroccan garden lounge at night at Dar Mansour" loading="lazy"></a>
     <a class="reveal" data-delay="2" href="assets/img/moroccan-pastries-mint-tea-koh-phangan.webp"><img src="assets/img/moroccan-pastries-mint-tea-koh-phangan.webp" alt="Artisanal Moroccan pastries and traditional mint tea" loading="lazy"></a>
-    <a class="reveal" href="assets/img/fez-tajine-koh-phangan.webp"><img src="assets/img/fez-tajine-koh-phangan.webp" alt="Fez tajine served at Dar Mansour" loading="lazy"></a>
+    <a class="reveal" href="assets/img/moroccan-garden-candlelight-koh-phangan.webp"><img src="assets/img/moroccan-garden-candlelight-koh-phangan.webp" alt="Candlelit garden lantern at Dar Mansour at night" loading="lazy"></a>
     <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-interior-decor-koh-phangan.webp"><img src="assets/img/moroccan-interior-decor-koh-phangan.webp" alt="Curated Moroccan interior décor at Dar Mansour" loading="lazy"></a>
     <a class="reveal" data-delay="2" href="assets/img/friday-couscous-koh-phangan.webp"><img src="assets/img/friday-couscous-koh-phangan.webp" alt="Traditional Friday couscous at Dar Mansour" loading="lazy"></a>
   </div>
@@ -299,7 +299,7 @@ wine_body = L.breadcrumb(("Wine Pairing", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Book your dinner &amp; discover your perfect pairing",
     "Reserve your evening and let us match each dish to a wine that sings.") + L.related(
-    ("The Bar", "Cocktails &amp; Classics", "moroccan-cocktails-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Moroccan table"),
+    ("The Bar", "Cocktails &amp; Classics", "moroccan-cocktails-koh-phangan.html", "assets/img/mansour-bar-cocktail-sand-koh-phangan.jpg", "Signature Mansour Bar cocktail"),
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/berber-lamb-tajine-koh-phangan.jpeg", "Berber tajine"),
     ("Private Dining", "Celebrations", "private-dining-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table"))
 pages["moroccan-wine-pairing-koh-phangan.html"] = L.page(
@@ -343,7 +343,7 @@ pages["moroccan-cocktails-koh-phangan.html"] = L.page(
 art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
     "Artistic Direction &amp; Décor", "Art as identity",
     "A soulful space where Moroccan craftsmanship meets bold artistic vision — a living gallery of visual culture and culinary heritage.",
-    "assets/img/maija-art-direction-koh-phangan.jpg", "Artistic direction and Moroccan décor at Dar Mansour") + f'''
+    "assets/img/moroccan-ysl-street-table-koh-phangan.jpg", "Rue Saint Laurent table — a Marrakech homage at Dar Mansour") + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="lead">At Dar Mansour, art is not an afterthought — it's who we are. From ancestral Moroccan craft to striking contemporary works, the space is curated as a living gallery where visual culture and culinary heritage come together. Every detail tells a story; every corner speaks of identity.</p>
   <h2>Currently on display</h2>
@@ -371,7 +371,7 @@ pages["moroccan-interior-art-koh-phangan.html"] = L.page(
 reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     "Recognition", "One of the world's best Moroccan restaurants",
     "As seen in Golf du Maroc magazine — a culinary gem carrying the Moroccan soul across continents.",
-    "assets/img/dar-mansour-front-koh-phangan.jpeg", "Dar Mansour storefront in Koh Phangan") + f'''
+    "assets/img/dar-mansour-entrance-night-koh-phangan.jpg", "Dar Mansour entrance and lantern at dusk, Koh Phangan") + f'''
 <section class="section"><div class="wrap prose reveal">
   <div class="note"><p>"A culinary gem carrying the Moroccan soul across continents."</p></div>
   <p>In its latest international gastronomy feature, <strong>Golf du Maroc</strong> listed Dar Mansour among the world's finest Moroccan culinary destinations. We are humbled to appear alongside iconic names such as:</p>
@@ -469,7 +469,7 @@ pantry_cards = "".join(f'''    <div class="pantry__item reveal"><h3>{n}</h3><p>{
 pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
     "Moroccan Pantry: Stories &amp; Staples", "Our culinary roots, one ingredient at a time",
     "From the red hills of Taliouine to the family kitchens of Rabat — a pantry of soul, taste and tradition.",
-    "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "The candlelit central lounge at Dar Mansour") + f'''
+    "assets/img/moroccan-interior-corner-koh-phangan.jpg", "Candlelit Moroccan interior corner at Dar Mansour") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
     <p class="lead">At Dar Mansour, every ingredient carries a story. Our pantry is filled with traditions passed down by <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">generations of Moroccan women</a>. Here are some of the staples we love and use — with care and authenticity.</p>
@@ -481,7 +481,7 @@ pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
 ''' + L.cta_band("Want to taste it all?", "Discover how these staples come alive across our slow-cooked menu.") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
     ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
-    ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Table"))
+    ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Moroccan garden lounge"))
 pages["moroccan-pantry-koh-phangan.html"] = L.page(
     "Moroccan Pantry &amp; Ingredients — Dar Mansour Koh Phangan",
     "Discover the stories behind Moroccan ingredients like charmoula, saffron and preserved lemon. A pantry of soul, taste and tradition.",
@@ -493,7 +493,7 @@ pages["moroccan-pantry-koh-phangan.html"] = L.page(
 spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
     "The Mansour Spirit", "Savour the beautiful, the good, and the moment",
     "A peaceful oasis where Moroccan hospitality meets Thai cultural respect — harmony, gratitude and barefoot freedom.",
-    "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Peaceful candlelit garden at Dar Mansour") + f'''
+    "assets/img/moroccan-zellige-fountain-koh-phangan.jpg", "Brass tap on a green zellige fountain at Dar Mansour") + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="lead">Mansour Spirit is about more than food — it's about embracing the values of the place we're in. As proud guests of the Kingdom of Thailand, we hold deep respect for its culture, its laws and the spirit of harmony that defines it. Honouring Thai values is not just a duty — it's a sincere expression of gratitude.</p>
   <h2>A few gentle requests</h2>
@@ -602,7 +602,7 @@ faq_schema = '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":['
 faq_body = L.breadcrumb(("FAQ", None)) + L.subhero(
     "Frequently Asked Questions", "Best Moroccan restaurant in Koh Phangan — rooted in tradition, slow cooked with care",
     "Everything you need to know before your visit — reservations, food, wine, location and more.",
-    "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Moroccan pastries and mint tea at Dar Mansour") + f'''
+    "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Candlelit Moroccan garden dining at Dar Mansour") + f'''
 <section class="section"><div class="wrap">
   <div class="faq">
 {faq_items}
@@ -674,7 +674,7 @@ pillar_cards = "".join(f'''    <div class="feature reveal"><h3>{t}</h3><p>{d}</p
 blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
     "Journal &amp; Stories", "Stories of Morocco and Koh Phangan",
     "Beyond being the best Moroccan restaurant in Koh Phangan, Dar Mansour is a story — of Morocco's timeless cuisine, the Dadas' wisdom, family rituals and the island inspirations that surround us.",
-    "assets/img/maija-art-direction-koh-phangan.jpg", "Artistic Moroccan décor and creative direction at Dar Mansour") + f'''
+    "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige star motifs and candlelight at Dar Mansour") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
     <p class="lead">Our journal is a journey through flavours, traditions, art and soulful living — a bridge between Morocco's timeless heritage and the vibrant spirit of Thailand.</p>
