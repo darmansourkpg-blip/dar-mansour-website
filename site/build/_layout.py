@@ -120,8 +120,12 @@ def header():
 <header class="header" id="header">
   <div class="wrap header__inner">
     <a class="brand" href="index.html" aria-label="Dar Mansour — Morocco's Kitchen, home">
-      <img class="brand__logo brand__logo--white" src="assets/logo/dar-mansour-icon-white.png" alt="Dar Mansour — Morocco's Kitchen" width="445" height="472">
+      <img class="brand__logo brand__logo--white" src="assets/logo/dar-mansour-icon-white.png" alt="" aria-hidden="true" width="445" height="472">
       <img class="brand__logo brand__logo--color" src="assets/logo/dar-mansour-icon.png" alt="" aria-hidden="true" width="445" height="472">
+      <span class="brand__text">
+        <span class="brand__name">Dar Mansour</span>
+        <span class="brand__sub">Morocco's Kitchen</span>
+      </span>
     </a>
     <nav class="nav" aria-label="Primary">
       {nav}

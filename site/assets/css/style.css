@@ -148,6 +148,7 @@ p { max-width: 62ch; }
 .brand { display: flex; align-items: center; line-height: 1; z-index: 2; }
 .brand__name { font-family: var(--serif); font-size: 1.45rem; letter-spacing: .16em; color: #fff; transition: color .4s var(--ease); }
 .brand__sub { font-size: .58rem; letter-spacing: .34em; text-transform: uppercase; color: rgba(255,255,255,.75); margin-top: 4px; transition: color .4s var(--ease); }
+.brand__text { display: flex; flex-direction: column; justify-content: center; margin-left: .6rem; }
 
 /* Brand logo (icon mark), swaps white/colour with header context */
 .brand__logo { display: block; height: clamp(46px, 5.4vw, 56px); width: auto; transition: height .4s var(--ease); }
