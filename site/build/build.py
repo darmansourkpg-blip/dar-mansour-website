@@ -515,7 +515,7 @@ founders_body = L.breadcrumb(("Founders", None)) + L.subhero(
   <p class="lead">Dar Mansour is the vision of <strong>Maïja</strong> — a creative spirit who spent over 30 years immersed in Moroccan culture — and <strong>Bruno</strong>, a French entrepreneur who once lived in China, and who fell in love… not only with Morocco, but with its most inspired ambassador.</p>
   <p>Together, they imagined a place where every meal is a story, every guest is welcomed like family, and every detail — from spices to music — carries the soul of Moroccan hospitality.</p>
   <p>Dar Mansour is more than a restaurant. It's the meeting point of two lives, two cultures, and a shared dream: to celebrate slow food, meaningful connection and the timeless elegance of Moroccan cuisine and culture — from a quiet garden in Koh Phangan.</p>
-  <div class="note"><p>Guided by the wisdom of the Dadas, Maïja carries forward Morocco's culinary heritage with a modern soul — while P'Jaei, our Head of Kitchen, translates these traditions into refined, slow-cooked dishes every evening.</p></div>
+  <div class="note"><p>Guided by the wisdom of the Dadas, Maïja carries forward the spirit of Moroccan hospitality with a contemporary soul. In the kitchen, P'Jae, our local partner and Head of Kitchen, brings these traditions to life each evening through refined, slow-cooked dishes prepared with patience, care, and respect for time-honoured recipes.</p></div>
 </div></section>
 ''' + L.cta_band("Share our table",
     "Come and become part of the story. Reserve your evening at Dar Mansour and be welcomed like family.") + L.related(
@@ -679,7 +679,7 @@ blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
   </div>
   <div class="pantry">
     <div class="pantry__item reveal"><h3>Maïja — Co-Founder</h3><p>A creative spirit who has spent more than 30 years immersed in Moroccan culture, carrying forward its culinary heritage with a modern soul. Guided by the wisdom of the Dadas, she co-founded Dar Mansour as a sanctuary of food, culture and soulful hospitality in Koh Phangan.</p></div>
-    <div class="pantry__item reveal" data-delay="1"><h3>P'Jaei — Head of Kitchen</h3><p>P'Jaei brings daily hands-on expertise to Dar Mansour, translating Moroccan traditions into refined, slow-cooked dishes. As Head of Kitchen, P'Jaei contributes culinary knowledge rooted in respect for sacred cooking and island hospitality.</p></div>
+    <div class="pantry__item reveal" data-delay="1"><h3>P'Jae — Head of Kitchen</h3><p>Our local partner and Head of Kitchen, P'Jae brings daily hands-on expertise to Dar Mansour, translating Moroccan traditions into refined, slow-cooked dishes prepared with patience and care — rooted in respect for sacred cooking and island hospitality.</p></div>
   </div>
 </div></section>
 
