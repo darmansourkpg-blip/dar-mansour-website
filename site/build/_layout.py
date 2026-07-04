@@ -1,8 +1,27 @@
 # -*- coding: utf-8 -*-
 """Shared layout: head, header, footer, small helpers. Static-site partials."""
 
+import hashlib
+import os
+
 SITE_URL = "https://darmansour.com"
 WA = "https://wa.me/66822767757"
+
+# Cache-busting: short content hash appended to asset URLs so browsers fetch the
+# new CSS/JS immediately after a deploy instead of serving a stale cached copy.
+_ASSETS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
+
+
+def _asset_v(rel):
+    try:
+        with open(os.path.join(_ASSETS, rel), "rb") as f:
+            return hashlib.md5(f.read()).hexdigest()[:8]
+    except OSError:
+        return "1"
+
+
+CSS_V = _asset_v("css/style.css")
+JS_V = _asset_v("js/main.js")
 
 WA_ICON = ('<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 '
            '4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 '
@@ -42,7 +61,7 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v={CSS_V}">
 {extra}
 </head>
 <body>'''
@@ -233,7 +252,7 @@ def footer():
   </div>
 </footer>
 <a class="wa-float" href="{WA}" target="_blank" rel="noopener" aria-label="Book via WhatsApp">{WA_ICON}</a>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v={JS_V}"></script>
 </body>
 </html>'''
 
