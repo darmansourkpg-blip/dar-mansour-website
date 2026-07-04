@@ -94,7 +94,7 @@ home_body = f'''
 <section class="section" id="story"><div class="wrap"><div class="split split--reverse">
   <div class="split__text reveal">
     <span class="eyebrow">Founders &amp; Vision</span>
-    <h2>A love story — and a culinary vision</h2>
+    <h2>A love story — and a vision of Moroccan hospitality</h2>
     <p class="lead">Dar Mansour is the vision of Maïja — a creative spirit who spent over 30 years immersed in Moroccan culture — and Bruno, a French entrepreneur who fell in love not only with Morocco, but with its most inspired ambassador.</p>
     <p style="margin-top:1.2rem;">Together they imagined a place where every meal is a story, every guest is welcomed like family, and every detail — from spices to music — carries the soul of Moroccan hospitality.</p>
     <a class="textlink" href="dar-mansour-founders-vision.html">Meet the founders {A}</a>
@@ -508,7 +508,7 @@ pages["moroccan-hospitality-values-koh-phangan.html"] = L.page(
 
 # ============================================================ FOUNDERS
 founders_body = L.breadcrumb(("Founders", None)) + L.subhero(
-    "Founders &amp; Vision", "A love story — and a culinary vision",
+    "Founders &amp; Vision", "A love story — and a vision of Moroccan hospitality",
     "Meet Maïja and Bruno, who created a soulful Moroccan dining experience rooted in love and tradition.",
     "assets/img/moroccan-restaurant-entrance-koh-phangan.jpg", "Entrance to Dar Mansour") + f'''
 <section class="section"><div class="wrap prose reveal">
