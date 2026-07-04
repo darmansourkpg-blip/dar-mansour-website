@@ -47,7 +47,7 @@ Nav : menu ☰ plein écran (toutes les pages, tous écrans) + nav rapide deskto
 Chaque page finit par un CTA WhatsApp + un bloc « Continue the journey » (maillage interne).
 
 ## Infos établissement (verbatim — ne pas inventer)
-- Réservation only · pré-commande via WhatsApp avant 14h · max 40 couverts/soir
+- Réservation **vivement recommandée** (walk-ins bienvenus selon disponibilité) · pré-commande via WhatsApp **idéalement 5h à l'avance** · max 40 couverts/soir
 - WhatsApp **+66 82 276 7757** · hello@darmansour.com · Instagram @darmansour.kohphangan
 - Hin Kong Road (zone Sri Thanu), Koh Phangan, Thaïlande
 - Dîner uniquement, mar–sam 19h–22h30 (fermé dim & lun) · Fondateurs : Maïja & Bruno

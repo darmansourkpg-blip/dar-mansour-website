@@ -32,7 +32,7 @@ home_body = f'''
 </section>
 
 <div class="trust"><div class="wrap trust__inner">
-  <span class="trust__item"><strong>Reservation Only</strong></span>
+  <span class="trust__item"><strong>Reservations Advised</strong></span>
   <span class="trust__item"><strong>Pre-order</strong> Philosophy</span>
   <span class="trust__item"><strong>Slow Cooked</strong> · Zero Waste</span>
   <span class="trust__item">Limited to <strong>40 Guests</strong> a Night</span>
@@ -63,11 +63,11 @@ home_body = f'''
   <div class="center reveal" style="max-width:720px;margin-inline:auto;">
     <span class="eyebrow">Concept &amp; Operating Model</span>
     <h2 style="margin:1.2rem 0 1.3rem;">The art of hosting, redefined</h2>
-    <p class="lead" style="margin-inline:auto;">At Dar Mansour, the experience begins long before your arrival. As one of Koh Phangan's only Moroccan slow food restaurants, every dish is made to order — served only by reservation, because dishes like tanjia marrakchia and fire-cooked tajines need time, love and patience to reveal their full soul.</p>
+    <p class="lead" style="margin-inline:auto;">At Dar Mansour, the experience begins long before your arrival. As one of Koh Phangan's only Moroccan slow food restaurants, every dish is prepared to order, at the rhythm of traditional cooking. Reservations are highly recommended and our signature dishes are available by pre-order — ideally 5 hours ahead — because dishes like tanjia marrakchia and fire-cooked tajines need time, love and patience to reveal their full soul.</p>
   </div>
   <div class="features" style="margin-top:clamp(3rem,6vw,4.5rem);">
-    <div class="feature reveal"><span class="feature__num">01</span><h3>Reservation Only</h3><p>Advance booking via WhatsApp, to offer a curated, intimate experience for every table.</p></div>
-    <div class="feature reveal" data-delay="1"><span class="feature__num">02</span><h3>Pre-order Philosophy</h3><p>Main dishes pre-ordered before 2 pm — honouring long cooking times and avoiding any wait on arrival.</p></div>
+    <div class="feature reveal"><span class="feature__num">01</span><h3>Reservations Advised</h3><p>Advance booking via WhatsApp is highly recommended — walk-in guests are warmly welcome, subject to availability.</p></div>
+    <div class="feature reveal" data-delay="1"><span class="feature__num">02</span><h3>Pre-order Philosophy</h3><p>Main dishes pre-ordered, ideally 5 hours ahead — honouring long cooking times and avoiding any wait on arrival.</p></div>
     <div class="feature reveal"><span class="feature__num">03</span><h3>Zero Waste</h3><p>No mass prep, no leftovers. Each dish is cooked fresh, just for you, at the rhythm of the ingredients.</p></div>
     <div class="feature reveal" data-delay="1"><span class="feature__num">04</span><h3>A Peaceful Kitchen</h3><p>Limited to 40 guests a night. Slowness supports depth, care and quality — for the planet and for tradition.</p></div>
   </div>
@@ -168,7 +168,7 @@ home_body = f'''
   </div>
 </div></section>
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
-    "We operate on reservation only, with main dishes pre-ordered via WhatsApp before 2 pm on the day of your booking. Tell us of any allergies or dietary needs — we'll do our best to adapt while staying true to our recipes.")
+    "Reservations are highly recommended, with main dishes pre-ordered via WhatsApp — ideally 5 hours ahead of your booking. Walk-in guests are always warmly welcome, subject to availability. Tell us of any allergies or dietary needs — we'll do our best to adapt while staying true to our recipes.")
 
 HOME_SCHEMA = '''<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Dar Mansour — Morocco's Kitchen","servesCuisine":"Moroccan","priceRange":"$$$","url":"https://darmansour.com/","telephone":"+66822767757","email":"hello@darmansour.com","image":"https://darmansour.com/assets/img/moroccan-garden-dining-koh-phangan.jpg","address":{"@type":"PostalAddress","streetAddress":"Hin Kong Road, Sri Thanu area","addressLocality":"Koh Phangan","addressRegion":"Surat Thani","addressCountry":"TH"},"acceptsReservations":"True","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"22:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"8"}}
@@ -183,20 +183,22 @@ pages["index.html"] = L.page(
 # ============================================================ CONCEPT
 concept_body = L.breadcrumb(("Concept", None)) + L.subhero(
     "Concept &amp; Operating Model", "Moroccan Slow Dining in Koh Phangan",
-    "The art of hosting, redefined — reservation-only, pre-ordered dinners, cooked with care and zero waste.",
+    "The art of hosting, redefined — pre-ordered dinners, reservations recommended, walk-ins welcome, cooked with care and zero waste.",
     "assets/img/moroccan-arty-table-koh-phangan.jpg", "Artfully set Moroccan table at Dar Mansour") + f'''
 <section class="section"><div class="wrap prose reveal">
-  <p class="lead">At Dar Mansour, the experience begins long before your arrival. As one of Koh Phangan's only Moroccan slow food restaurants, we follow a rare and intentional philosophy: every dish is made to order, with 24-hour notice, and served only by reservation.</p>
+  <p class="lead">At Dar Mansour, the experience begins long before your arrival. As one of Koh Phangan's only Moroccan slow food restaurants, we embrace a rare and intentional philosophy: every dish is prepared to order, at the rhythm of traditional Moroccan cooking. While reservations are highly recommended, our signature slow-cooked dishes are available by pre-order, ideally with 5 hours' notice, allowing every meal to be crafted with patience, care and authenticity.</p>
   <p>Why? Because iconic Moroccan dishes like <strong>tanjia marrakchia</strong> and fire-cooked tajines need time, love and patience to reveal their full soul. Because we believe in honest, fresh cuisine — crafted without shortcuts, at the rhythm of the ingredients and those who cook them.</p>
   <div class="note"><p>"A thoughtful system designed with love — for the planet, for tradition, and for those who take time to eat well."</p></div>
   <h2>Our operating principles</h2>
   <ul class="bullets">
-    <li><strong>Advance reservation via WhatsApp</strong> — to offer a curated, intimate experience.</li>
-    <li><strong>Main dishes pre-ordered before 2 pm</strong> — to honour long cooking times and avoid a long wait upon arrival.</li>
+    <li><strong>Reservations highly recommended via WhatsApp</strong> — to offer a curated, intimate experience.</li>
+    <li><strong>Main dishes pre-ordered, ideally 5 hours ahead</strong> — to honour long cooking times and avoid a long wait upon arrival.</li>
+    <li><strong>Walk-in guests warmly welcome</strong> — subject to availability, as some slow-cooked specialties may sell out.</li>
     <li><strong>Zero waste</strong> — no mass prep, no leftovers; each dish is cooked just for you.</li>
     <li><strong>Limited to 40 guests per night</strong> — to preserve intimacy, connection and attention to detail.</li>
     <li><strong>A peaceful kitchen = better food</strong> — slowness supports depth, care and quality.</li>
   </ul>
+  <div class="note"><p><strong>P.S. — Walk-in guests are always warmly welcome.</strong> Depending on availability, we'll be delighted to prepare a selection of our menu for you. As our signature dishes are slow-cooked to order and produced in limited quantities, some specialties may no longer be available, and waiting times may exceed one hour. To enjoy the full Dar Mansour experience, we recommend reserving your table and pre-ordering your main dishes in advance.</p></div>
   <p>Located between Sri Thanu and Hin Kong — just minutes from The Alcove and Orion Healing Center — Dar Mansour is more than a restaurant. It's a slow food sanctuary for private dinners, soulful celebrations and food-conscious travellers seeking meaning, beauty and flavour.</p>
 </div></section>
 ''' + L.cta_band("Book your experience &amp; pre-order",
@@ -206,7 +208,7 @@ concept_body = L.breadcrumb(("Concept", None)) + L.subhero(
     ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Maïja art direction"))
 pages["moroccan-slow-dining-koh-phangan.html"] = L.page(
     "Concept &amp; Operating Model — Moroccan Slow Dining Koh Phangan",
-    "Discover how Dar Mansour redefines hospitality in Koh Phangan through its Moroccan slow food concept. Reservation-only, pre-ordered dinners, zero waste, cooked with care.",
+    "Discover how Dar Mansour redefines hospitality in Koh Phangan through its Moroccan slow food concept. Reservations recommended, pre-ordered dinners, walk-ins welcome, zero waste, cooked with care.",
     "moroccan-slow-dining-koh-phangan.html", concept_body,
     og_image="assets/img/moroccan-arty-table-koh-phangan.jpg")
 
@@ -222,7 +224,7 @@ menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
     <p>In the heart of Moroccan homes, the Dadas stand as iconic figures, preserving a culinary heritage passed down from generation to generation. Originally from Mali or Senegal, these women became the silent guardians of Moroccan family recipes — slow-cooked dishes full of generosity, depth and soul. It is their legacy we honour at Dar Mansour: food as love, patience and memory.</p>
   </div>
   <div style="max-width:820px;margin:2.5rem auto 0;">{render_legend()}</div>
-  <div class="note reveal" style="max-width:820px;margin:1.4rem auto 0;"><p>All prices are in Thai Baht (฿). A 3% surcharge applies to card payments. Our Tajines, Tanjias and Couscous are freshly prepared to order in limited quantities — most requiring 1 to 5 hours of slow cooking. Pre-ordering via WhatsApp before 2 pm is advised.</p></div>
+  <div class="note reveal" style="max-width:820px;margin:1.4rem auto 0;"><p>All prices are in Thai Baht (฿). A 3% surcharge applies to card payments. Our Tajines, Tanjias and Couscous are freshly prepared to order in limited quantities — most requiring 1 to 5 hours of slow cooking. Pre-ordering via WhatsApp, ideally 5 hours ahead, is advised.</p></div>
 
 {render_menu()}
 
@@ -242,22 +244,22 @@ pages["moroccan-menu-koh-phangan.html"] = L.page(
 
 # ============================================================ RESERVATION
 res_body = L.breadcrumb(("Reservation", None)) + L.subhero(
-    "Reservation &amp; Pre-Order Required", "Slow-cooked Moroccan dishes, lovingly prepared just for you",
-    "We operate on reservation only and ask guests to pre-order their main dishes in advance, to honour our slow food philosophy.",
+    "Reservation &amp; Pre-Order Recommended", "Slow-cooked Moroccan dishes, lovingly prepared just for you",
+    "We highly recommend reserving your table and pre-ordering your main dishes in advance to honour our slow food philosophy — though walk-in guests are always warmly welcome.",
     "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Central dining room at Dar Mansour") + f'''
 <section class="section"><div class="wrap prose reveal">
-  <p class="lead">At Dar Mansour, each dish is a tribute to Moroccan tradition — infused with patience, soul and care. To honour this slow food philosophy, we operate on reservation only and require guests to pre-order their main dishes in advance.</p>
+  <p class="lead">At Dar Mansour, each dish is a tribute to Moroccan tradition — infused with patience, soul and care. To honour this slow food philosophy, we highly recommend reserving your table and pre-ordering your main dishes in advance. Walk-in guests are always warmly welcome, subject to availability.</p>
 </div>
 <div class="wrap" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
   <div class="steps">
-    <div class="step reveal"><span class="step__num">01</span><h3>Reserve via WhatsApp</h3><p>Message us to request your table. Because ours is a boutique experience, we serve only guests with confirmed bookings.</p></div>
-    <div class="step reveal" data-delay="1"><span class="step__num">02</span><h3>Pre-order before 2 pm</h3><p>On the day of your reservation we'll share the pre-order menu. Choose your main dishes so they're ready in time.</p></div>
+    <div class="step reveal"><span class="step__num">01</span><h3>Reserve via WhatsApp</h3><p>Message us to request your table. Reserving ahead secures your seat in our intimate garden — walk-ins are warmly welcome too, subject to availability.</p></div>
+    <div class="step reveal" data-delay="1"><span class="step__num">02</span><h3>Pre-order in advance</h3><p>We'll share the pre-order menu ahead of your visit. Choose your main dishes — ideally 5 hours ahead — so they're ready in time.</p></div>
     <div class="step reveal" data-delay="2"><span class="step__num">03</span><h3>Arrive &amp; savour</h3><p>Settle into the candlelit garden. Everything is made fresh to order — no shortcuts, no reheating.</p></div>
   </div>
 </div>
 <div class="wrap prose reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
   <h2>Why pre-order?</h2>
-  <p>Our Tajines, Tanjias and Couscous are slow-cooked in small quantities, taking between 1 and 5 hours to cook. To ensure dish availability and avoid a long wait upon arrival (often more than an hour), we kindly ask guests to pre-order via WhatsApp before 2 pm on the booking date. This lets us:</p>
+  <p>Our Tajines, Tanjias and Couscous are slow-cooked in small quantities, taking between 1 and 5 hours to cook. To ensure dish availability and avoid a long wait upon arrival (often more than an hour), we kindly ask guests to pre-order via WhatsApp, ideally 5 hours ahead of their booking. This lets us:</p>
   <ul class="bullets">
     <li>Cook at the rhythm of our traditions</li>
     <li>Maintain high quality and freshness</li>
@@ -273,7 +275,7 @@ res_body = L.breadcrumb(("Reservation", None)) + L.subhero(
     ("FAQ", "Good to Know", "faq.html", "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Pastries and mint tea"))
 pages["moroccan-restaurant-reservation-koh-phangan.html"] = L.page(
     "Reservation at Dar Mansour — Moroccan Slow Food in Koh Phangan",
-    "Book your table at Dar Mansour, the Moroccan restaurant in Koh Phangan. Pre-order required for slow-cooked tajines, couscous and tanjias. Dine with love.",
+    "Book your table at Dar Mansour, the Moroccan restaurant in Koh Phangan. Pre-order recommended for slow-cooked tajines, couscous and tanjias; walk-ins welcome. Dine with love.",
     "moroccan-restaurant-reservation-koh-phangan.html", res_body,
     og_image="assets/img/moroccan-restaurant-central-room-koh-phangan.jpg")
 
@@ -542,7 +544,7 @@ pd_body = L.breadcrumb(("Private Dining", None)) + L.subhero(
     <li>Family celebrations</li><li>Friends gathering</li><li>Small corporate dinners</li><li>Wellness retreat dinners</li><li>Private group experiences</li>
   </ul>
   <h2>An intimate setting</h2>
-  <p>Unlike traditional event venues, Dar Mansour welcomes only a limited number of guests each evening, allowing us to dedicate our full attention to every table. Our reservation-only philosophy ensures a relaxed atmosphere where every dish is prepared especially for your guests and every detail is cared for with intention.</p>
+  <p>Unlike traditional event venues, Dar Mansour welcomes only a limited number of guests each evening, allowing us to dedicate our full attention to every table. Our reservation-led philosophy ensures a relaxed atmosphere where every dish is prepared especially for your guests and every detail is cared for with intention.</p>
   <h2>Tailored experiences</h2>
   <ul class="bullets">
     <li>Personalised table decoration</li><li>Birthday surprises</li><li>Anniversary celebrations</li><li>Proposal dinners</li>
@@ -566,9 +568,9 @@ FAQ = [
     ("What Moroccan dishes can you try at Dar Mansour in Koh Phangan?","At Dar Mansour you'll discover authentic Moroccan soul food — slow-cooked tajines, saffron couscous, roasted seasonal vegetables and sweet-savoury touches like prunes, apricots and preserved lemon. Everything is handmade and slow-cooked to order, using traditional recipes passed down through generations."),
     ("Why is Dar Mansour considered a hidden gem restaurant in Koh Phangan?","Dar Mansour is a hidden gem Moroccan restaurant near Sri Thanu and Hin Kong, designed for romantic, slow and meaningful dining. From candlelit garden tables to handcrafted interiors, every detail invites you to slow down and reconnect — with food, with art and with yourself."),
     ("Where exactly is Dar Mansour located in Koh Phangan?","Dar Mansour is on the west coast of Koh Phangan, minutes from Sri Thanu, Hin Kong, The Alcove and Orion Healing Centre. Tucked away in a quiet garden, it blends Moroccan warmth with island calm."),
-    ("What are Dar Mansour's opening hours for dinner?","We are open for dinner only, from 7:00 PM to 10:30 PM, Tuesday to Saturday. We are closed on Sundays and Mondays. Reservations are required — we welcome a limited number of guests each evening."),
-    ("How do I book a table at Dar Mansour?","Reservations are made via WhatsApp: +66 82 276 7757. Because Dar Mansour offers a boutique dining experience, we only serve guests with confirmed bookings — please reserve in advance."),
-    ("How does the pre-order dining system work?","To ensure freshness and eliminate waste, we use a daily pre-order system. On the day of your reservation we'll send you the pre-order menu via WhatsApp; you then pre-order your main dishes in advance. Everything is prepared just for you, with care and intention."),
+    ("What are Dar Mansour's opening hours for dinner?","We are open for dinner only, from 7:00 PM to 10:30 PM, Tuesday to Saturday. We are closed on Sundays and Mondays. Reservations are highly recommended — we welcome a limited number of guests each evening, and walk-ins are welcome subject to availability."),
+    ("How do I book a table at Dar Mansour?","Reservations are made via WhatsApp: +66 82 276 7757. Because Dar Mansour offers a boutique dining experience with limited seats, we highly recommend reserving in advance. Walk-in guests are always warmly welcome, subject to availability."),
+    ("How does the pre-order dining system work?","To ensure freshness and eliminate waste, we use a daily pre-order system. Ahead of your visit we'll send you the pre-order menu via WhatsApp; you then pre-order your main dishes in advance, ideally 5 hours ahead. Everything is prepared just for you, with care and intention."),
     ("Is Dar Mansour a kid-friendly restaurant?","We are not a typical kid-friendly restaurant. Dar Mansour is an intimate, peaceful setting. We welcome babies under 2 and children over 9 who can enjoy the calm of the space. Please inform us in advance if you're bringing children so we can prepare accordingly."),
     ("Can I bring my dog to Dar Mansour?","Unfortunately dogs are not allowed, even in the garden area. We love animals, but we prioritise hygiene, safety and a tranquil atmosphere for all our guests."),
     ("Does Dar Mansour serve wine and cocktails?","Yes. Our selection includes a curated wine list paired with Moroccan dishes, signature cocktails with Moroccan twists, and homemade non-alcoholic drinks."),
