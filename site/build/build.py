@@ -719,4 +719,22 @@ for fname, html in pages.items():
     with open(os.path.join(OUT, fname), "w", encoding="utf-8") as f:
         f.write(html)
     print("wrote", fname)
+
+# ---- sitemap.xml + robots.txt (kept in sync with the pages above) ----
+from datetime import date
+SITE = L.SITE_URL.rstrip("/")
+today = date.today().isoformat()
+def _loc(fn):
+    return SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
+_urls = "".join(
+    f"  <url><loc>{_loc(fn)}</loc><lastmod>{today}</lastmod></url>\n"
+    for fn in pages)
+with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
+    f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + _urls + '</urlset>\n')
+with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
+    f.write("User-agent: *\nAllow: /\n\n" f"Sitemap: {SITE}/sitemap.xml\n")
+print("wrote sitemap.xml + robots.txt")
+
 print(f"\n{len(pages)} pages generated.")
