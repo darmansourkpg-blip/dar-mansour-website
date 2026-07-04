@@ -389,6 +389,12 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     <li>The beauty of gathering and sharing a table</li>
   </ul>
   <p>We're incredibly grateful for this acknowledgment — and we dedicate it to everyone who believed in this journey.</p>
+  <h2>Featured in the local press</h2>
+  <p>Closer to home, Koh Phangan's own publications have shared our story too:</p>
+  <ul class="bullets">
+    <li><a href="https://phanganist.com/koh-phangan/dar-mansour-morocco-kitchen-slow-dining-big-soul-and-taste-morocco-koh-phangan" target="_blank" rel="noopener"><strong>Phanganist</strong> — Dar Mansour, Morocco's Kitchen: slow dining, big soul and the taste of Morocco {A}</a></li>
+    <li><a href="https://phanganlife.com/catalog/restaurants-and-cafes/world-cuisine/dar-mansour-moroccos-kitchen" target="_blank" rel="noopener"><strong>Phangan Life</strong> — Dar Mansour, Morocco's Kitchen {A}</a></li>
+  </ul>
 </div></section>
 ''' + L.cta_band("Taste what the world is talking about",
     "Reserve your evening and discover the slow-cooked Moroccan cuisine that carries our soul across continents.") + L.related(
@@ -397,7 +403,7 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"))
 pages["best-moroccan-restaurant-world-press.html"] = L.page(
     "Dar Mansour — Among the World's Best Moroccan Culinary Destinations",
-    "Featured in Golf du Maroc magazine as one of the best Moroccan restaurants worldwide, Dar Mansour proudly represents Moroccan soul food from Koh Phangan.",
+    "Featured in Golf du Maroc, Phanganist and Phangan Life — Dar Mansour is recognised among the world's best Moroccan restaurants and celebrated on Koh Phangan for its slow-cooked Moroccan soul food.",
     "best-moroccan-restaurant-world-press.html", reco_body,
     og_image="assets/img/dar-mansour-front-koh-phangan.jpeg")
 
