@@ -9,7 +9,7 @@ SITE_URL = "https://darmansour.com"
 # Pre-launch switch: while True, every page carries a noindex meta and the
 # sitemap is not advertised, so search engines keep the site out of results.
 # Flip to False (and rebuild) to open the site for indexing at launch.
-NOINDEX = True
+NOINDEX = False
 WA = "https://wa.me/66822767757"
 
 # Cache-busting: short content hash appended to asset URLs so browsers fetch the

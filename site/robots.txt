@@ -1,5 +1,4 @@
-# Pre-launch — every page carries a 'noindex' meta so search engines
-# keep this site out of results. Crawling stays allowed so the
-# noindex is actually seen. Remove this once the site goes public.
 User-agent: *
 Allow: /
+
+Sitemap: https://darmansour.com/sitemap.xml
