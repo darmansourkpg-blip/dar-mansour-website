@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Dar Mansour — static site generator. Run: python3 build/build.py  (from site/)"""
-import os, sys
+import os, sys, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 OUT = os.path.dirname(HERE)  # site/
@@ -582,7 +582,7 @@ FAQ = [
     ("Why is Dar Mansour considered a hidden gem restaurant in Koh Phangan?","Dar Mansour is a hidden gem Moroccan restaurant near Sri Thanu and Hin Kong, designed for romantic, slow and meaningful dining. From candlelit garden tables to handcrafted interiors, every detail invites you to slow down and reconnect — with food, with art and with yourself."),
     ("Where exactly is Dar Mansour located in Koh Phangan?","Dar Mansour is on the west coast of Koh Phangan, minutes from Sri Thanu, Hin Kong, The Alcove and Orion Healing Centre. Tucked away in a quiet garden, it blends Moroccan warmth with island calm."),
     ("What are Dar Mansour's opening hours for dinner?","We are open for dinner only, from 7:00 PM to 10:30 PM, Tuesday to Saturday. We are closed on Sundays and Mondays. Reservations are highly recommended, as we welcome only a limited number of guests each evening."),
-    ("How do I book a table at Dar Mansour?","Reservations are made via WhatsApp: +66 82 276 7757. Because Dar Mansour offers a boutique dining experience with limited seats, we highly recommend reserving in advance."),
+    ("How do I book a table at Dar Mansour?",'Reservations are made via WhatsApp: <a class="ilink" href="https://wa.me/66822767757" target="_blank" rel="noopener">+66 82 276 7757</a>. Because Dar Mansour offers a boutique dining experience with limited seats, we highly recommend reserving in advance.'),
     ("How does the pre-order dining system work?","To ensure freshness and eliminate waste, we use a daily pre-order system. Ahead of your visit we'll send you the pre-order menu via WhatsApp; you then pre-order your main dishes in advance, ideally 5 hours ahead. Everything is prepared just for you, with care and intention."),
     ("Can I dine at Dar Mansour without a reservation?","Absolutely. Walk-in guests are always warmly welcome, subject to availability. As every dish at Dar Mansour is freshly prepared to order and many of our signature Moroccan specialties require several hours of slow cooking, some dishes may no longer be available without advance notice. During busy evenings, waiting times can also exceed one hour. To enjoy the full Dar Mansour experience and guarantee the availability of our signature tajines, couscous and tanjias, we highly recommend reserving your table and pre-ordering your main dishes in advance."),
     ("Is Dar Mansour a kid-friendly restaurant?","We are not a typical kid-friendly restaurant. Dar Mansour is an intimate, peaceful setting. We welcome babies under 2 and children over 9 who can enjoy the calm of the space. Please inform us in advance if you're bringing children so we can prepare accordingly."),
@@ -594,11 +594,11 @@ FAQ = [
     ("Can I book a private dinner or event?","Yes. We host private dinners, birthdays, artist residencies and bespoke events in a serene, elegant setting. Dar Mansour is a top pick for private dining in Koh Phangan thanks to its beauty, warmth and discretion."),
     ("What payment methods are accepted?","We accept cash, Thai QR Code (PromptPay) and credit card. A 3% surcharge applies to card payments."),
     ("What makes the experience unique in Thailand?","Dar Mansour is one of the few places in Thailand offering a truly immersive North African dining journey, with personalised service, candlelit ambiance and a deep sense of care and storytelling."),
-    ("How can I contact Dar Mansour or follow on social media?","Contact us via WhatsApp at +66 82 276 7757. Follow us on Instagram @darmansour.kohphangan and on Facebook, Dar Mansour Koh Phangan."),
+    ("How can I contact Dar Mansour or follow on social media?",'Contact us via WhatsApp at <a class="ilink" href="https://wa.me/66822767757" target="_blank" rel="noopener">+66 82 276 7757</a>. Follow us on Instagram @darmansour.kohphangan and on Facebook, Dar Mansour Koh Phangan.'),
 ]
 faq_items = "".join(f'''      <details class="faq__item reveal"><summary>{q}</summary><div class="faq__answer"><p>{a}</p></div></details>''' for q,a in FAQ)
 faq_schema = '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' + ",".join(
-    '{"@type":"Question","name":"%s","acceptedAnswer":{"@type":"Answer","text":"%s"}}' % (q.replace('"',"'"), a.replace('"',"'")) for q,a in FAQ) + ']}'
+    '{"@type":"Question","name":"%s","acceptedAnswer":{"@type":"Answer","text":"%s"}}' % (q.replace('"',"'"), re.sub(r'<[^>]+>', '', a).replace('"',"'")) for q,a in FAQ) + ']}'
 faq_body = L.breadcrumb(("FAQ", None)) + L.subhero(
     "Frequently Asked Questions", "Best Moroccan restaurant in Koh Phangan — rooted in tradition, slow cooked with care",
     "Everything you need to know before your visit — reservations, food, wine, location and more.",
