@@ -291,7 +291,7 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 
 /* ---------- 14. Reviews ---------- */
 .reviews__head { text-align: center; margin-bottom: clamp(2.5rem, 6vw, 4rem); }
-.rating { display: inline-flex; align-items: center; gap: .7rem; margin-top: 1.2rem; }
+.rating { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .35rem .7rem; margin-top: 1.2rem; }
 .rating__stars { color: var(--green); letter-spacing: .1em; font-size: 1.1rem; }
 .rating span { font-size: .82rem; color: var(--muted); letter-spacing: .04em; }
 .reviews__grid { columns: 3; column-gap: 1.6rem; }
@@ -381,6 +381,7 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
   .mega__foot { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
+  .hero__scroll { display: none; }
   .dishes { grid-template-columns: 1fr; }
   .reviews__grid { columns: 1; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
