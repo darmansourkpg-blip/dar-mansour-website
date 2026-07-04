@@ -5,6 +5,11 @@ import hashlib
 import os
 
 SITE_URL = "https://darmansour.com"
+
+# Pre-launch switch: while True, every page carries a noindex meta and the
+# sitemap is not advertised, so search engines keep the site out of results.
+# Flip to False (and rebuild) to open the site for indexing at launch.
+NOINDEX = True
 WA = "https://wa.me/66822767757"
 
 # Cache-busting: short content hash appended to asset URLs so browsers fetch the
@@ -58,6 +63,7 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
+{'<meta name="robots" content="noindex, nofollow">' if NOINDEX else ''}
 <link rel="canonical" href="{SITE_URL}/{canonical}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dar Mansour — Morocco's Kitchen">
