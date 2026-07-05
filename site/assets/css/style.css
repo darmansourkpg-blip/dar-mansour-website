@@ -458,6 +458,26 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .prose img { display: block; width: 100%; border-radius: 4px; margin: 1.8rem 0; }
 .prose img + em { display: block; margin-top: -1.2rem; margin-bottom: 1.8rem; font-size: .82rem; color: var(--muted); text-align: center; }
 
+/* "Good to know" checklist box */
+.prose .goodtoknow { background: var(--green-tint); border: 1px solid var(--green-tint-2); border-radius: 4px; padding: 1.2rem 1.5rem; margin: 1.5rem 0 0; }
+.goodtoknow__title { font-size: .68rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--green); margin: 0 0 .8rem; }
+.goodtoknow ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .45rem 1.6rem; }
+.goodtoknow li { position: relative; padding-left: 1.5rem; font-size: .92rem; color: var(--ink-soft); }
+.goodtoknow li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 800; }
+@media (max-width: 560px) { .goodtoknow ul { grid-template-columns: 1fr; } }
+
+/* "Local Tip" callout */
+.prose .localtip { border-left: 3px solid var(--green); background: var(--cream); padding: .95rem 1.3rem; margin: 1.4rem 0 0; border-radius: 2px; }
+.localtip__label { display: block; font-size: .66rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--green); margin-bottom: .35rem; }
+.localtip p { margin: 0; color: var(--ink-soft); font-size: .95rem; max-width: none; }
+
+/* Author / E-E-A-T box at the end of an article */
+.prose .authorbox { border-top: 1px solid var(--line); margin-top: 2.6rem; padding-top: 1.7rem; display: flex; gap: 1.2rem; align-items: flex-start; }
+.authorbox__mark { flex: none; width: 46px; height: 46px; }
+.authorbox__mark img { width: 100%; height: auto; }
+.authorbox h3 { font-family: var(--serif); font-size: 1.4rem; margin: 0 0 .4rem; color: var(--green-deep); }
+.authorbox p { margin: 0; font-size: .92rem; color: var(--ink-soft); }
+
 /* Callout / note box */
 .note { background: var(--green-tint); border-left: 3px solid var(--green); padding: 1.4rem 1.6rem; border-radius: 2px; }
 .note p { max-width: none; margin: 0; color: var(--green-deep); }
