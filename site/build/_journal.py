@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Journal (blog) — reads markdown articles authored via Decap CMS and turns
-them into full SEO pages + the index listing.
+them into full SEO pages, category (editorial universe) hubs and the index.
 
 Articles live in  content/journal/*.md  with YAML front matter:
 
@@ -10,15 +10,21 @@ Articles live in  content/journal/*.md  with YAML front matter:
     description: "..."       # meta description
     date: 2026-07-04
     author: "Dar Mansour"
+    category: "moroccan-culture"   # editorial universe (see CATEGORIES)
     cover: "assets/uploads/photo.jpg"
     cover_alt: "..."
+    faq:                     # optional — renders an FAQ block + FAQ schema
+      - question: "..."
+        answer: "..."
     ---
     Markdown body…
 
-Everything technical (canonical, Article JSON-LD, Open Graph, sitemap entry,
-breadcrumb, WebP) is generated here — the author only fills the fields above.
+Everything technical (canonical, Article + FAQ JSON-LD, Open Graph, sitemap,
+breadcrumb, table of contents, WebP, cluster linking) is generated here — the
+author only fills the fields above.
 """
 import os
+import re
 import glob
 import json
 import datetime
@@ -31,6 +37,46 @@ import _layout as L
 HERE = os.path.dirname(os.path.abspath(__file__))
 CONTENT = os.path.join(HERE, "..", "content", "journal")
 DEFAULT_COVER = "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg"
+
+# Editorial universes (the playbook's clusters). Each gets a hub page listing
+# its articles; articles link back to their hub for topical authority.
+CATEGORIES = {
+    "koh-phangan-guide": {
+        "label": "Koh Phangan Guide",
+        "title": "Koh Phangan Guide",
+        "tagline": "Your insider guide to the island",
+        "intro": "Where to eat, the best beaches, hidden sunset spots and slow island living — an evolving guide to discovering Koh Phangan with intention.",
+        "hero": "assets/img/moroccan-garden-lounge-night-koh-phangan.jpg",
+        "hero_alt": "Candlelit Moroccan garden lounge at night on Koh Phangan",
+        "url": "koh-phangan-guide.html",
+        "seo_title": "Koh Phangan Guide — Where to Eat, Beaches &amp; Hidden Gems | Dar Mansour",
+        "seo_desc": "An insider's guide to Koh Phangan by Dar Mansour: where to eat, the best beaches, sunset spots, hidden gems and slow island living.",
+        "hub": True,
+    },
+    "moroccan-culture": {
+        "label": "Moroccan Culture",
+        "title": "Moroccan Culture &amp; Cuisine",
+        "tagline": "Beyond the recipes",
+        "intro": "Tajines, spices, mint tea, riads, music and craftsmanship — stories that carry the soul of Morocco far beyond the plate.",
+        "hero": "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg",
+        "hero_alt": "Zellige star motifs and candlelight at Dar Mansour",
+        "url": "moroccan-culture-cuisine.html",
+        "seo_title": "Moroccan Culture &amp; Cuisine — Stories, Traditions &amp; Food | Dar Mansour",
+        "seo_desc": "Explore Moroccan culture and cuisine with Dar Mansour: tajines, spices, mint tea, riads, music and craftsmanship — the soul of Morocco beyond the plate.",
+        "hub": True,
+    },
+    "journal": {
+        "label": "Journal",
+        "title": "The Dar Mansour Journal",
+        "tagline": "Behind the scenes",
+        "intro": "Design, interviews, events and the people behind Dar Mansour.",
+        "hero": "assets/img/maija-art-direction-koh-phangan.jpg",
+        "hero_alt": "Art direction and décor at Dar Mansour",
+        "url": "blog.html",       # the main Journal index acts as this hub
+        "hub": False,
+    },
+}
+DEFAULT_CATEGORY = "journal"
 
 
 def _split_front_matter(raw):
@@ -75,6 +121,20 @@ def _render_body(text):
     return toc + html
 
 
+def _parse_faq(raw):
+    """raw: list of {question, answer}. Returns display-ready + plain-text."""
+    faq = []
+    for item in raw or []:
+        q = (str(item.get("question", "")) or "").strip()
+        a = (str(item.get("answer", "")) or "").strip()
+        if not q or not a:
+            continue
+        a_html = _md.markdown(a, extensions=["extra"])
+        a_text = re.sub(r"<[^>]+>", "", a_html).strip()
+        faq.append({"q": q, "a_html": a_html, "a_text": a_text})
+    return faq
+
+
 def load_articles():
     """Return a list of article dicts, newest first."""
     articles = []
@@ -85,6 +145,7 @@ def load_articles():
         iso, disp = _dates(meta.get("date"))
         cover = (meta.get("cover") or DEFAULT_COVER).lstrip("/")
         title = meta.get("title") or slug.replace("-", " ").title()
+        cat_key = meta.get("category") if meta.get("category") in CATEGORIES else DEFAULT_CATEGORY
         articles.append({
             "slug": slug,
             "title": title,
@@ -93,8 +154,11 @@ def load_articles():
             "date_iso": iso,
             "date_disp": disp,
             "author": meta.get("author") or "Dar Mansour",
+            "category": cat_key,
+            "cat": CATEGORIES[cat_key],
             "cover": cover,
             "cover_alt": meta.get("cover_alt") or title,
+            "faq": _parse_faq(meta.get("faq")),
             "body_html": _render_body(body),
             "url": f"journal-{slug}.html",
         })
@@ -102,9 +166,9 @@ def load_articles():
     return articles
 
 
-def _schema(a):
+def _blog_schema(a):
     site = L.SITE_URL
-    data = {
+    return {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": a["title"],
@@ -119,33 +183,84 @@ def _schema(a):
             "logo": {"@type": "ImageObject", "url": f"{site}/assets/logo/dar-mansour-logo-green.png"},
         },
         "mainEntityOfPage": f'{site}/{a["url"]}',
+        "articleSection": a["cat"]["label"],
     }
-    return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False) + '</script>'
 
 
-def render_article(a):
+def _faq_schema(a):
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": f["q"],
+             "acceptedAnswer": {"@type": "Answer", "text": f["a_text"]}}
+            for f in a["faq"]
+        ],
+    }
+
+
+def _schema_head(a):
+    scripts = ['<script type="application/ld+json">' + json.dumps(_blog_schema(a), ensure_ascii=False) + '</script>']
+    if a["faq"]:
+        scripts.append('<script type="application/ld+json">' + json.dumps(_faq_schema(a), ensure_ascii=False) + '</script>')
+    return "\n".join(scripts)
+
+
+def _faq_section(a):
+    if not a["faq"]:
+        return ""
+    items = "".join(
+        f'<details class="faq__item"><summary>{f["q"]}</summary>'
+        f'<div class="faq__answer">{f["a_html"]}</div></details>'
+        for f in a["faq"])
+    return f'''
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center" style="margin-bottom:2rem;">
+    <span class="eyebrow">Good to know</span>
+    <h2 style="margin-top:.7rem;">Frequently asked questions</h2>
+  </div>
+  <div class="faq">{items}</div>
+</div></section>'''
+
+
+def _related_cards(a, all_articles):
+    """Prefer other articles in the same universe; top up with evergreen pages."""
+    same = [x for x in all_articles if x["category"] == a["category"] and x["url"] != a["url"]][:3]
+    cards = [(x["cat"]["label"], x["title"], x["url"], x["cover"], x["cover_alt"]) for x in same]
+    fallbacks = [
+        ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+        ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
+        ("Journal", "More Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+    ]
+    i = 0
+    while len(cards) < 3 and i < len(fallbacks):
+        if fallbacks[i][2] != a["url"]:
+            cards.append(fallbacks[i])
+        i += 1
+    return cards[:3]
+
+
+def render_article(a, all_articles):
+    cat = a["cat"]
     body = L.breadcrumb(("Journal", "blog.html"), (a["title"], None)) + L.subhero(
-        "Journal", a["title"], a["description"], a["cover"], a["cover_alt"]) + f'''
+        cat["label"], a["title"], a["description"], a["cover"], a["cover_alt"]) + f'''
 <section class="section"><div class="wrap prose reveal">
-  <p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time> · {a["author"]}</p>
+  <p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time> · {a["author"]} · <a class="ilink" href="{cat["url"]}">{cat["label"]}</a></p>
 {a["body_html"]}
 </div></section>
-''' + L.cta_band("Taste the story around our table",
-        "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
-        ("Journal", "More Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
-        ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
-        ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"))
+''' + _faq_section(a) + L.cta_band("Taste the story around our table",
+        "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(*_related_cards(a, all_articles))
     return L.page(a["seo_title"], a["description"], a["url"], body,
-                  og_image=a["cover"], extra_head=_schema(a))
+                  og_image=a["cover"], extra_head=_schema_head(a))
 
 
-def render_index_cards(articles):
-    """Grid of article cards for the Journal index page (empty string if none)."""
+def render_index_cards(articles, eyebrow="Latest Stories", heading="Fresh from the Journal", show_header=True):
+    """Grid of article cards (empty string if none)."""
     if not articles:
         return ""
     cards = "".join(f'''
       <a class="jcard reveal" href="{a["url"]}">
-        <span class="jcard__img"><img src="{L._webp(a["cover"])}" alt="{a["cover_alt"]}" loading="lazy"></span>
+        <span class="jcard__img"><img src="{L._webp(a["cover"])}" alt="{a["cover_alt"]}" loading="lazy"><span class="jcard__cat">{a["cat"]["label"]}</span></span>
         <span class="jcard__body">
           <span class="jcard__date">{a["date_disp"]}</span>
           <span class="jcard__title">{a["title"]}</span>
@@ -153,11 +268,61 @@ def render_index_cards(articles):
           <span class="textlink">Read the story {L.ARROW}</span>
         </span>
       </a>''' for a in articles)
+    header = ""
+    if show_header:
+        header = (f'<div class="center reveal" style="margin-bottom:clamp(2rem,4vw,3rem);">'
+                  f'<span class="eyebrow">{eyebrow}</span>'
+                  f'<h2 style="margin-top:1rem;">{heading}</h2></div>')
     return f'''
 <section class="section" id="latest" style="padding-top:0;"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:clamp(2rem,4vw,3rem);">
-    <span class="eyebrow">Latest Stories</span>
-    <h2 style="margin-top:1rem;">Fresh from the Journal</h2>
-  </div>
+  {header}
   <div class="jgrid">{cards}</div>
 </div></section>'''
+
+
+def universe_hubs(articles):
+    """(cat_key, cat, [articles]) for each hub universe that has articles."""
+    out = []
+    for key, cat in CATEGORIES.items():
+        if not cat.get("hub"):
+            continue
+        arts = [a for a in articles if a["category"] == key]
+        if arts:
+            out.append((key, cat, arts))
+    return out
+
+
+def render_universe_nav(articles):
+    """Section on the Journal index linking to each editorial universe hub."""
+    hubs = universe_hubs(articles)
+    if not hubs:
+        return ""
+    cards = "".join(f'''
+      <a class="uni reveal" href="{cat["url"]}">
+        <span class="uni__img"><img src="{L._webp(cat["hero"])}" alt="{cat["hero_alt"]}" loading="lazy"></span>
+        <span class="uni__body"><span class="eyebrow">{cat["tagline"]}</span>
+        <span class="uni__title">{cat["title"]}</span>
+        <span class="uni__count">{len(arts)} article{"s" if len(arts) != 1 else ""}</span></span>
+      </a>''' for _key, cat, arts in hubs)
+    return f'''
+<section class="section" style="background:var(--sand);"><div class="wrap">
+  <div class="center reveal" style="max-width:640px;margin:0 auto clamp(2rem,4vw,3rem);">
+    <span class="eyebrow">Editorial Universes</span>
+    <h2 style="margin-top:1rem;">Explore by world</h2>
+  </div>
+  <div class="unigrid">{cards}</div>
+</div></section>'''
+
+
+def render_category(cat, arts):
+    body = L.breadcrumb(("Journal", "blog.html"), (cat["title"], None)) + L.subhero(
+        cat["tagline"], cat["title"], cat["intro"], cat["hero"], cat["hero_alt"]) + render_index_cards(
+        arts, show_header=False) + L.cta_band(
+        "Come and live the story",
+        "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
+        ("Journal", "All Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+        ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
+        ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"))
+    return L.page(cat.get("seo_title") or cat["title"],
+                  cat.get("seo_desc") or cat["intro"],
+                  cat["url"], body, og_image=cat["hero"])

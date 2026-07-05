@@ -674,6 +674,7 @@ PILLARS = [
 ]
 pillar_cards = "".join(f'''    <div class="feature reveal"><h3>{t}</h3><p>{d}</p><a class="textlink" href="{href}" style="margin-top:1rem;">{lbl} {A}</a></div>''' for t,d,href,lbl in PILLARS)
 journal_cards = _journal.render_index_cards(ARTICLES)
+universe_nav = _journal.render_universe_nav(ARTICLES)
 
 blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
     "Journal &amp; Stories", "Stories of Morocco and Koh Phangan",
@@ -685,6 +686,7 @@ blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
   </div>
 </div></section>
 {journal_cards}
+{universe_nav}
 <section class="section"><div class="wrap">
   <div class="center reveal" style="max-width:640px;margin:0 auto clamp(2rem,4vw,3rem);">
     <span class="eyebrow">The Worlds We Write From</span>
@@ -727,7 +729,11 @@ pages["blog.html"] = L.page(
 # ============================================================ JOURNAL ARTICLES
 # One page per markdown file in content/journal/ (authored via Decap CMS).
 for _a in ARTICLES:
-    pages[_a["url"]] = _journal.render_article(_a)
+    pages[_a["url"]] = _journal.render_article(_a, ARTICLES)
+
+# Editorial-universe hub pages (cluster pages), one per category with articles.
+for _key, _cat, _arts in _journal.universe_hubs(ARTICLES):
+    pages[_cat["url"]] = _journal.render_category(_cat, _arts)
 
 
 # ============================================================ WRITE

@@ -47,6 +47,15 @@ collections:
         name: "author"
         widget: "string"
         default: "Dar Mansour"
+      - label: "Univers éditorial (catégorie)"
+        name: "category"
+        widget: "select"
+        default: "journal"
+        hint: "L'univers de l'article — sert au maillage SEO et aux pages de thème."
+        options:
+          - { label: "Koh Phangan Guide", value: "koh-phangan-guide" }
+          - { label: "Culture & Cuisine marocaines", value: "moroccan-culture" }
+          - { label: "Journal Dar Mansour (coulisses)", value: "journal" }
       - label: "Photo de couverture"
         name: "cover"
         widget: "image"
@@ -68,3 +77,13 @@ collections:
         name: "body"
         widget: "markdown"
         hint: "Ton texte. Utilise les sous-titres (H2), le gras, les listes, les liens…"
+      - label: "FAQ (optionnel)"
+        name: "faq"
+        widget: "list"
+        required: false
+        label_singular: "Question"
+        summary: "{{fields.question}}"
+        hint: "Questions/réponses affichées en bas de l'article + balisage FAQ Google (résultats enrichis)."
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Réponse", name: "answer", widget: "text" }
