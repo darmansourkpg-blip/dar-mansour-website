@@ -7,9 +7,8 @@ backend:
   name: github
   repo: darmansourkpg-blip/dar-mansour-website
   branch: main
-  # Relais de connexion sécurisé (Cloudflare Worker). À remplacer par ton URL
-  # après l'étape Cloudflare — ex. https://dar-mansour-auth.toncompte.workers.dev
-  base_url: https://REMPLACER-PAR-TON-RELAIS.workers.dev
+  # Relais de connexion sécurisé (Cloudflare Worker sveltia-cms-auth).
+  base_url: https://dar-mansour-auth.darmansour-kpg.workers.dev
 
 # Où sont stockées les images téléversées depuis l'éditeur
 media_folder: "site/assets/uploads"
