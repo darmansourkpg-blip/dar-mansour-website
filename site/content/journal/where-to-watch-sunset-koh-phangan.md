@@ -1,7 +1,7 @@
 ---
 title: "Where to Watch the Sunset in Koh Phangan: A Slow West-Coast Guide"
 seo_title: "Where to Watch the Sunset in Koh Phangan — Best Spots & Bars"
-description: "The best sunset spots on Koh Phangan — Zen Beach, Amsterdam Bar, Three Sixty, Secret Mountain and more — plus how to turn golden hour into a slow evening."
+description: "The best sunset spots on Koh Phangan — Zen Beach, Amsterdam Bar, Bluerama, Three Sixty and more — with directions, and how to turn golden hour into a slow evening."
 date: 2026-07-05
 author: "Dar Mansour"
 category: "koh-phangan-guide"
@@ -31,7 +31,7 @@ faq:
 
 Koh Phangan is famous for its full-moon nights. But the island's quietest magic happens a little earlier — when the sun slips into the Gulf of Thailand and the whole west coast turns gold, then rose, then deep indigo.
 
-You don't need a party to feel it. You need a good spot, a few minutes of patience, and the willingness to slow down. This is an unhurried guide to the island's finest sunsets — from the sand and from the hills — and to letting golden hour become a whole evening.
+You don't need a party to feel it. You need a good spot, a few minutes of patience, and the willingness to slow down. This is an unhurried guide to the island's finest sunsets — from the sand and from the hills — with directions for each, and how to let golden hour become a whole evening.
 
 ## Why the west coast owns the sunset
 
@@ -45,17 +45,25 @@ Happily, this is also the calm, soulful side of the island — the one traveller
 
 The island's sunset ritual. In the hippy town of Sri Thanu, Zen Beach draws musicians, yogis, free spirits and long-term travellers who gather quietly as the light drops — a guitar here, a fire spinner there, conversation with strangers who quickly feel like friends. It is less touristy than most, and all the warmer for it. Come early: after dark, every parked scooter looks the same.
 
+<p class="getthere"><strong>Getting there</strong> — Sri Thanu; follow the small lane past CM Thai Language School, about five minutes through the trees. <a href="https://www.google.com/maps/search/?api=1&amp;query=Zen+Beach+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
 ### Phangan Cove, Sri Thanu
 
 Right by the Sri Thanu pier, the bay is wide, flat and open, with no hills to hide the horizon. When the light hits the still water, the reflection stretches out like a painting — one of the most photogenic spots on this coast.
+
+<p class="getthere"><strong>Getting there</strong> — Beside the Sri Thanu pier, on the west side of town. <a href="https://www.google.com/maps/search/?api=1&amp;query=Phangan+Cove+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 ### Hin Kong Beach
 
 A long, calm, uncrowded stretch of west-coast sand, with wide open views and a gentle, local feel. It's also the closest beach to Dar Mansour, which makes it easy to drift from golden hour straight to the dinner table. Right on the sand here, **L'Alcove** — a barefoot French restaurant by the water — is a lovely place to watch the light go with a glass of wine before dinner.
 
+<p class="getthere"><strong>Getting there</strong> — Along Hin Kong Road, the west-coast stretch closest to Dar Mansour. <a href="https://www.google.com/maps/search/?api=1&amp;query=Hin+Kong+Beach+Koh+Phangan" target="_blank" rel="noopener">Beach on map ↗</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">L'Alcove on map ↗</a></p>
+
 ### Secret Beach (and the viewpoint above it)
 
 A smaller, gentler cove for a more private sunset. On the road down, there's a high point where you can stop and take in the sea for a mile or two — an unmarked, breathtaking pause before you even reach the sand.
+
+<p class="getthere"><strong>Getting there</strong> — North of Sri Thanu; the viewpoint is on the hill just before the road drops to the beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=Secret+Beach+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 ## Up high: sunset with a view
 
@@ -65,17 +73,25 @@ For a panorama rather than a beach, Koh Phangan's hills deliver some of Thailand
 
 The island's classic. On the hill between Hin Kong and Thong Sala, Amsterdam Bar pairs an infinity pool and Thai-style mattresses with a sweeping view over the west coast and, on a clear day, the National Park in the distance. It draws a young, lively crowd, so arrive early — during Full Moon week especially, it fills fast.
 
+<p class="getthere"><strong>Getting there</strong> — On the coastal hill road between Hin Kong and Thong Sala; the climb is steep, take it slowly. <a href="https://www.google.com/maps/search/?api=1&amp;query=Amsterdam+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
 ### Bluerama
 
 The coast's grown-up alternative, a short distance before Amsterdam Bar, above Nai Wok. Bluerama is an adults-only pool bar with an infinity edge that frames what many call the finest sunset view on the island — calm, refined and blissfully free of crowds. It's more of a treat than most, with a small, elevated menu; if you'd like to dine at the top level as the sky turns, book ahead. For drinks and the view alone, there's ample space to simply stand and watch the light go.
+
+<p class="getthere"><strong>Getting there</strong> — Nai Wok Beach, just before Amsterdam Bar (162/1 Nai Wok Beach, Wok Tum). <a href="https://www.google.com/maps/search/?api=1&amp;query=Bluerama+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 ### Three Sixty (360) Rooftop Bar
 
 In the north-west, above Koh Ma, the name says it all: turn in any direction and the view changes. A fully paved road, great music and an easy, house-party crowd make it a favourite for a panoramic sunset.
 
+<p class="getthere"><strong>Getting there</strong> — Above Koh Ma; head towards Utopia Resort and turn at the sign — the road is fully paved. <a href="https://www.google.com/maps/search/?api=1&amp;query=Three+Sixty+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
 ### Secret Mountain
 
 Up in the hills of Baan Tai, near the centre of the island, Secret Mountain layers palm-fringed jungle against a distant sea, with a swimming pool and terraces at different levels. It's a firm all-rounder for a golden hour spent with friends.
+
+<p class="getthere"><strong>Getting there</strong> — Baan Tai hills, central island (Ban Kao Mae Ngam); the concrete road up is narrow and steep. <a href="https://www.google.com/maps/search/?api=1&amp;query=Secret+Mountain+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 ## Worth the ride: two beyond the west coast
 
@@ -83,9 +99,13 @@ Up in the hills of Baan Tai, near the centre of the island, Secret Mountain laye
 
 In the far north-west near Chaloklum, Mae Haad is famous for the sandbank that runs out to the tiny island of Koh Ma — superb for snorkelling by day and soft-sanded sunsets in the evening.
 
+<p class="getthere"><strong>Getting there</strong> — North-west, about five minutes from Chaloklum village. <a href="https://www.google.com/maps/search/?api=1&amp;query=Mae+Haad+Beach+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
 ### Leela Beach
 
 Down south, a few minutes from Haad Rin, Leela is the closest west-facing beach on that side of the island — quiet and elegant, a lovely choice for couples. Note that later in the year the sun can set too far north to see well from here.
+
+<p class="getthere"><strong>Getting there</strong> — South, about five minutes from Haad Rin. <a href="https://www.google.com/maps/search/?api=1&amp;query=Leela+Beach+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 ## How to make the most of it
 
