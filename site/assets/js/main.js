@@ -43,7 +43,9 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+      // threshold 0 so even very tall elements (long articles) reveal as soon
+      // as they scroll into view — 12% of a 10,000px block never fits a screen.
+      { threshold: 0, rootMargin: '0px 0px -8% 0px' }
     );
     reveals.forEach((el) => io.observe(el));
   } else {
