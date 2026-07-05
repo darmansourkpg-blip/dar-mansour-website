@@ -680,10 +680,11 @@ blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
     "Journal &amp; Stories", "Stories of Morocco and Koh Phangan",
     "Beyond being the best Moroccan restaurant in Koh Phangan, Dar Mansour is a story — of Morocco's timeless cuisine, the Dadas' wisdom, family rituals and the island inspirations that surround us.",
     "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige star motifs and candlelight at Dar Mansour") + f'''
-<section class="section" style="padding-bottom:0;"><div class="wrap">
-  <div class="prose reveal center" style="text-align:center;">
-    <p class="lead" style="margin-inline:auto;">Our journal is a journey through flavours, traditions, art and soulful living — a bridge between Morocco's timeless heritage and the vibrant spirit of Thailand.</p>
-  </div>
+<section class="jmast reveal"><div class="wrap">
+  <div class="jmast__rule"></div>
+  <span class="jmast__kicker">The Journal</span>
+  <p class="jmast__name">The Dar Mansour Journal</p>
+  <p class="jmast__sub">A travel &amp; culture journal — where Morocco's timeless heritage meets the west coast of Koh Phangan, one story at a time.</p>
 </div></section>
 {journal_cards}
 {universe_nav}
@@ -723,7 +724,7 @@ pages["blog.html"] = L.page(
     "Dar Mansour Journal — Stories of Morocco and Koh Phangan",
     "The Dar Mansour journal: stories of Moroccan cuisine, the wisdom of the Dadas, slow cooking, island inspirations, wine and soulful living in Koh Phangan.",
     "blog.html", blog_body,
-    og_image="assets/img/maija-art-direction-koh-phangan.jpg")
+    og_image="assets/img/maija-art-direction-koh-phangan.jpg", body_class="journal")
 
 
 # ============================================================ JOURNAL ARTICLES

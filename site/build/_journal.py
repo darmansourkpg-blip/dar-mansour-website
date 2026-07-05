@@ -273,7 +273,7 @@ def render_article(a, all_articles):
 ''' + _faq_section(a) + L.cta_band("Taste the story around our table",
         "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(*_related_cards(a, all_articles))
     return L.page(a["seo_title"], a["description"], a["url"], body,
-                  og_image=a["cover"], extra_head=_schema_head(a))
+                  og_image=a["cover"], extra_head=_schema_head(a), body_class="journal")
 
 
 def render_index_cards(articles, eyebrow="Latest Stories", heading="Fresh from the Journal", show_header=True):
@@ -347,4 +347,4 @@ def render_category(cat, arts):
         ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"))
     return L.page(cat.get("seo_title") or cat["title"],
                   cat.get("seo_desc") or cat["intro"],
-                  cat["url"], body, og_image=cat["hero"])
+                  cat["url"], body, og_image=cat["hero"], body_class="journal")

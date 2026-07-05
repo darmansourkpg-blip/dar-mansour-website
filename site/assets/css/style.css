@@ -12,6 +12,12 @@
   --green-deep:   #0B403C;   /* deep forest — footer, dark sections */
   --green-darker: #072B29;
   --green-tint:   #E5F0EE;   /* pale wash */
+
+  /* Journal — editorial secondary accent (terracotta-ochre) */
+  --journal:      #B26A3C;   /* editorial accent, used only under body.journal */
+  --journal-deep: #8C4E2A;
+  --journal-tint: #F1E3D4;   /* warm wash for journal boxes */
+  --paper:        #F8F2E7;   /* journal page ground (warm paper) */
   --green-tint-2: #D3E5E2;
 
   /* Warm neutrals */
@@ -625,3 +631,67 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
   .contact-grid { grid-template-columns: 1fr; }
   .related { grid-template-columns: 1fr; }
 }
+
+/* =================================================================
+   THE DAR MANSOUR JOURNAL — editorial art direction (body.journal)
+   A distinct magazine voice: warm paper ground + terracotta-ochre
+   accent, sitting inside the same green brand chrome (header/footer).
+   ================================================================= */
+body.journal { background: var(--paper); }
+
+/* the editorial accent replaces green for in-content marks */
+body.journal .eyebrow,
+body.journal .article__meta,
+body.journal .jcard__date,
+body.journal .toc a::before,
+body.journal .toc__title,
+body.journal .goodtoknow li::before,
+body.journal .localtip__label,
+body.journal .qguide__title,
+body.journal .divider,
+body.journal .textlink { color: var(--journal); }
+
+body.journal .article__meta a.ilink,
+body.journal .qguide dt,
+body.journal .goodtoknow__title,
+body.journal .authorbox h3 { color: var(--journal-deep); }
+
+/* in-body links read in ochre on journal pages */
+body.journal .prose p a, body.journal .prose li a { color: var(--journal); text-decoration-color: color-mix(in srgb, var(--journal) 45%, transparent); }
+body.journal .prose p a:hover, body.journal .prose li a:hover { text-decoration-color: var(--journal); }
+body.journal .getthere strong { color: var(--journal-deep); }
+
+/* boxes take the warm wash + ochre rule */
+body.journal .toc,
+body.journal .goodtoknow { background: var(--journal-tint); border-color: color-mix(in srgb, var(--journal) 28%, var(--line)); }
+body.journal .toc { border-left-color: var(--journal); }
+body.journal .localtip, body.journal .qguide { border-left-color: var(--journal); background: color-mix(in srgb, var(--journal-tint) 55%, #fff); }
+body.journal .jcard__cat { background: var(--journal-deep); }
+body.journal .jcard { background: #fff; }
+
+/* magazine drop cap on the article intro (paragraph after the ToC) */
+body.journal .prose .toc + p::first-letter {
+  float: left; font-family: var(--serif); font-weight: 600;
+  font-size: 4.4rem; line-height: .72; margin: .35rem .55rem .1rem 0;
+  color: var(--journal);
+}
+
+/* pull quotes */
+body.journal .prose blockquote {
+  margin: 2.2rem 0; padding: .2rem 0 .2rem 1.5rem;
+  border-left: 3px solid var(--journal);
+  font-family: var(--serif); font-style: italic; font-weight: 500;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem); line-height: 1.3;
+  color: var(--green-deep); max-width: none;
+}
+body.journal .prose blockquote p { max-width: none; font-size: inherit; color: inherit; margin: 0; }
+
+/* subhero kicker on journal heroes reads in ochre over the image */
+body.journal .subhero .eyebrow { color: #F0C9A6; }
+
+/* Journal masthead ribbon (index) */
+.jmast { text-align: center; padding: clamp(2.4rem, 5vw, 3.6rem) 0 clamp(1.4rem, 3vw, 2rem); }
+.jmast__rule { width: 44px; height: 2px; background: var(--journal); margin: 0 auto 1.3rem; }
+.jmast__kicker { font-size: .7rem; font-weight: 800; letter-spacing: .3em; text-transform: uppercase; color: var(--journal); }
+.jmast__name { font-family: var(--serif); font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.04; color: var(--green-deep); margin: .5rem 0 .5rem; }
+.jmast__sub { color: var(--ink-soft); max-width: 54ch; margin: 0 auto; font-size: 1.05rem; }

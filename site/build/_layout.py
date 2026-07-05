@@ -55,7 +55,8 @@ NAV_ITEMS = [
 ]
 
 
-def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra=""):
+def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra="", body_class=""):
+    bodycls = f' class="{body_class}"' if body_class else ''
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +84,8 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
 <link rel="stylesheet" href="assets/css/style.css?v={CSS_V}">
 {extra}
 </head>
-<body>'''
+<body{bodycls}>'''
+
 
 
 # Full-menu groups (every page, grouped by cluster)
@@ -276,5 +278,5 @@ def footer():
 </html>'''
 
 
-def page(title, desc, canonical, body, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra_head=""):
-    return head(title, desc, canonical, og_image, extra_head) + header() + "\n<main id=\"top\">\n" + body + "\n</main>\n" + footer()
+def page(title, desc, canonical, body, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra_head="", body_class=""):
+    return head(title, desc, canonical, og_image, extra_head, body_class) + header() + "\n<main id=\"top\">\n" + body + "\n</main>\n" + footer()
