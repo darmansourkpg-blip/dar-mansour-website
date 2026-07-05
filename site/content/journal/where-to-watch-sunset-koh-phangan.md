@@ -5,8 +5,8 @@ description: "A local's guide to Koh Phangan's best sunset spots — Zen Beach, 
 date: 2026-07-05
 author: "The Dar Mansour Journal"
 category: "koh-phangan-guide"
-cover: "assets/img/moroccan-garden-lounge-night-koh-phangan.jpg"
-cover_alt: "Warm candlelit evening in the garden at Dar Mansour, on Koh Phangan's west coast"
+cover: "assets/uploads/koh-phangan-sunset-lowtide-hero.jpg"
+cover_alt: "Golden sunset over the mirror-like low-tide sand on Koh Phangan's west coast"
 quick_guide:
   - label: "Best for"
     value: "Sunset lovers, couples & slow evenings"
@@ -39,11 +39,17 @@ Whether you prefer your feet in the sand, a panoramic viewpoint high above the s
 
 ## Why the West Coast Offers the Island's Best Sunsets
 
+![Aerial view of Koh Phangan's green west coast, headlands and turquoise bays](assets/uploads/koh-phangan-west-coast-aerial.jpg)
+*Koh Phangan's west coast, where the land meets the open Gulf of Thailand.*
+
 The answer is wonderfully simple. Koh Phangan's western coastline faces directly towards the open Gulf of Thailand, offering uninterrupted views of the horizon. From **Sri Thanu** through **Hin Kong** and **Wok Tum**, there is nothing between you and the setting sun except the sea.
 
 Unlike the east coast — known for sunrise and the famous Full Moon Party — the west coast has developed a completely different personality. It feels calmer, slower and more residential, attracting travellers looking for beautiful beaches, cafés, yoga studios and relaxed evenings rather than late-night parties. It's here that many locals choose to finish their day.
 
 ## Sunset on the Beach
+
+![Pink and rose sunset over a calm Koh Phangan beach framed by trees](assets/uploads/koh-phangan-beach-sunset-pink.jpg)
+*The soft rose light of a west-coast beach sunset.*
 
 ### Zen Beach — Koh Phangan's Sunset Ritual
 
@@ -125,6 +131,9 @@ In Baan Tai, Tiki Beach is a very quiet stretch of sand just off the road. Sit o
 
 ## Sunset from Above
 
+![Fiery orange sunset reflected in an infinity pool overlooking the Gulf of Thailand](assets/uploads/koh-phangan-infinity-pool-sunset.jpg)
+*An infinity-pool sunset high above the west coast.*
+
 Sometimes, the most breathtaking sunsets aren't found on the beach, but high above it. Several of Koh Phangan's most spectacular viewpoints overlook the entire west coast, offering sweeping panoramas across the Gulf of Thailand.
 
 Do keep in mind that some of the access roads are steep. If you're not comfortable riding a scooter uphill, it's perfectly fine to park lower down and walk the final section.
@@ -176,6 +185,9 @@ Hidden among the hills above Baan Tai, Secret Mountain feels like a peaceful esc
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Swimming pool</li><li>Jungle views</li><li>Relaxed atmosphere</li><li>Less crowded</li><li>Sunset dining available</li></ul></div>
 
 ## Worth the Journey
+
+![Aerial view of the Mae Haad sandbank running out to the islet of Koh Ma](assets/uploads/koh-phangan-mae-haad-sandbank.jpg)
+*The sandbank linking Mae Haad to the islet of Koh Ma, in the north-west.*
 
 Although the west coast offers the island's finest sunsets, two additional locations deserve a special mention.
 
