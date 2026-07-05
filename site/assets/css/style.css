@@ -447,6 +447,9 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .prose ul.bullets li { position: relative; padding-left: 1.6rem; color: var(--ink-soft); }
 .prose ul.bullets li::before { content:"◇"; position: absolute; left: 0; color: var(--green); font-size: .8rem; top: .15rem; }
 .prose strong { color: var(--green-deep); }
+/* in-body links (from markdown articles) read as links */
+.prose p a, .prose li a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(0,131,125,.4); transition: text-decoration-color .3s var(--ease); }
+.prose p a:hover, .prose li a:hover { text-decoration-color: var(--green); }
 
 /* Callout / note box */
 .note { background: var(--green-tint); border-left: 3px solid var(--green); padding: 1.4rem 1.6rem; border-radius: 2px; }
