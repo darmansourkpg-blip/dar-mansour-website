@@ -55,6 +55,26 @@ def _dates(value):
     return iso, disp
 
 
+# Markdown renderer with the 'toc' extension: it slugs every heading into an id
+# (so anchors work) and exposes the heading tree via .toc_tokens.
+_MD = _md.Markdown(extensions=["extra", "sane_lists", "toc"],
+                   extension_configs={"toc": {"toc_depth": "2-3"}})
+
+
+def _render_body(text):
+    """Markdown -> HTML, with an auto clickable table of contents prepended
+    when the article has 2+ H2 sub-headings."""
+    _MD.reset()
+    html = _MD.convert((text or "").strip())
+    h2s = [t for t in _MD.toc_tokens if t.get("level") == 2]
+    if len(h2s) < 2:
+        return html
+    items = "".join(f'<li><a href="#{t["id"]}">{t["name"]}</a></li>' for t in h2s)
+    toc = (f'<nav class="toc" aria-label="In this article">'
+           f'<p class="toc__title">In this article</p><ol>{items}</ol></nav>')
+    return toc + html
+
+
 def load_articles():
     """Return a list of article dicts, newest first."""
     articles = []
@@ -75,7 +95,7 @@ def load_articles():
             "author": meta.get("author") or "Dar Mansour",
             "cover": cover,
             "cover_alt": meta.get("cover_alt") or title,
-            "body_html": _md.markdown((body or "").strip(), extensions=["extra", "sane_lists"]),
+            "body_html": _render_body(body),
             "url": f"journal-{slug}.html",
         })
     articles.sort(key=lambda a: a["date_iso"], reverse=True)

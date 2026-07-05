@@ -521,6 +521,17 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .jcard .textlink { margin-top: .3rem; }
 .article__meta { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 1.6rem; }
 
+/* Auto table of contents at the top of an article */
+.toc { background: var(--green-tint); border: 1px solid var(--green-tint-2); border-left: 3px solid var(--green); border-radius: 4px; padding: 1.3rem 1.6rem; margin: 0 0 2.4rem; }
+.toc__title { font-family: var(--sans); font-size: .72rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--green); margin: 0 0 .7rem; }
+.toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc; display: flex; flex-direction: column; gap: .5rem; }
+.toc li { counter-increment: toc; }
+.toc a { color: var(--green-deep); font-weight: 600; display: inline-flex; gap: .6rem; line-height: 1.4; }
+.toc a::before { content: counter(toc, decimal-leading-zero); color: var(--green); font-weight: 700; font-variant-numeric: tabular-nums; }
+.toc a:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+/* keep anchored headings clear of the fixed header when jumped to */
+.prose h2[id], .prose h3[id] { scroll-margin-top: 104px; }
+
 @media (max-width: 900px) { .jgrid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .jgrid { grid-template-columns: 1fr; } }
 
