@@ -546,6 +546,15 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 /* keep anchored headings clear of the fixed header when jumped to */
 .prose h2[id], .prose h3[id] { scroll-margin-top: 104px; }
 
+/* Quick Guide key-facts box */
+.qguide { background: var(--cream); border: 1px solid var(--line); border-left: 3px solid var(--green); border-radius: 4px; padding: 1.4rem 1.7rem; margin: 0 0 2.4rem; }
+.qguide__title { font-family: var(--sans); font-size: .72rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--green); margin: 0 0 .9rem; }
+.qguide dl { margin: 0; display: flex; flex-direction: column; gap: .6rem; }
+.qguide dl > div { display: grid; grid-template-columns: minmax(120px, 32%) 1fr; gap: 1rem; align-items: baseline; }
+.qguide dt { font-weight: 700; color: var(--green-deep); }
+.qguide dd { margin: 0; color: var(--ink-soft); }
+@media (max-width: 520px) { .qguide dl > div { grid-template-columns: 1fr; gap: .1rem; } }
+
 @media (max-width: 900px) { .jgrid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .jgrid { grid-template-columns: 1fr; } }
 

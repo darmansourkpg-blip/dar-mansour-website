@@ -7,6 +7,13 @@ author: "Dar Mansour"
 category: "moroccan-culture"
 cover: "assets/img/maija-art-direction-koh-phangan.jpg"
 cover_alt: "Warm candlelit Moroccan interior and art direction at Dar Mansour, Koh Phangan"
+quick_guide:
+  - label: "Best for"
+    value: "Lovers of slow, soulful cooking"
+  - label: "Origin"
+    value: "Moroccan households, Marrakech & Fez traditions"
+  - label: "At Dar Mansour"
+    value: "Every main dish slow-cooked to order, Dada-style"
 faq:
   - question: "Who are the Dadas in Moroccan cuisine?"
     answer: "The Dadas are women — often of Malian or Senegalese origin — who worked within Moroccan households for generations and became the silent guardians of family recipes, passing down technique, ritual and taste."

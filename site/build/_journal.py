@@ -121,6 +121,17 @@ def _render_body(text):
     return toc + html
 
 
+def _parse_quick_guide(raw):
+    """raw: list of {label, value} -> cleaned key/value rows."""
+    out = []
+    for item in raw or []:
+        label = (str(item.get("label", "")) or "").strip()
+        value = (str(item.get("value", "")) or "").strip()
+        if label and value:
+            out.append({"label": label, "value": value})
+    return out
+
+
 def _parse_faq(raw):
     """raw: list of {question, answer}. Returns display-ready + plain-text."""
     faq = []
@@ -158,6 +169,7 @@ def load_articles():
             "cat": CATEGORIES[cat_key],
             "cover": cover,
             "cover_alt": meta.get("cover_alt") or title,
+            "quick_guide": _parse_quick_guide(meta.get("quick_guide")),
             "faq": _parse_faq(meta.get("faq")),
             "body_html": _render_body(body),
             "url": f"journal-{slug}.html",
@@ -206,6 +218,15 @@ def _schema_head(a):
     return "\n".join(scripts)
 
 
+def _quick_guide(a):
+    """A 'Quick Guide' key-facts box shown near the top of the article."""
+    qg = a["quick_guide"]
+    if not qg:
+        return ""
+    rows = "".join(f'<div><dt>{r["label"]}</dt><dd>{r["value"]}</dd></div>' for r in qg)
+    return f'<aside class="qguide"><p class="qguide__title">Quick Guide</p><dl>{rows}</dl></aside>'
+
+
 def _faq_section(a):
     if not a["faq"]:
         return ""
@@ -246,6 +267,7 @@ def render_article(a, all_articles):
         cat["label"], a["title"], a["description"], a["cover"], a["cover_alt"]) + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time> · {a["author"]} · <a class="ilink" href="{cat["url"]}">{cat["label"]}</a></p>
+{_quick_guide(a)}
 {a["body_html"]}
 </div></section>
 ''' + _faq_section(a) + L.cta_band("Taste the story around our table",

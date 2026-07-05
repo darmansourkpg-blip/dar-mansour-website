@@ -73,10 +73,40 @@ collections:
         name: "description"
         widget: "text"
         hint: "140–160 caractères. C'est le résumé affiché sous le titre dans les résultats Google."
+      - label: "Quick Guide (optionnel)"
+        name: "quick_guide"
+        widget: "list"
+        required: false
+        label_singular: "Ligne"
+        summary: "{{fields.label}} — {{fields.value}}"
+        hint: "Encadré de repères en tête d'article (ex. « Best for » → « Sunsets & couples »)."
+        fields:
+          - { label: "Intitulé", name: "label", widget: "string", hint: "ex. Best for, Best time, Ideal for" }
+          - { label: "Valeur", name: "value", widget: "string" }
       - label: "Contenu de l'article"
         name: "body"
         widget: "markdown"
-        hint: "Ton texte. Utilise les sous-titres (H2), le gras, les listes, les liens…"
+        hint: "Structure conseillée (playbook) : intro → sections H2 → clôture. Pense à ajouter 3 à 5 liens vers d'autres articles."
+        default: |
+          ## Introduction
+
+          Commence par 2–3 phrases qui plantent le décor et disent pourquoi le sujet compte pour le lecteur.
+
+          ## Première section
+
+          Développe ici. Ajoute un lien interne vers un autre article quand c'est naturel.
+
+          ## Deuxième section
+
+          Développe ici.
+
+          ## Troisième section
+
+          Développe ici.
+
+          ## Final thoughts
+
+          Une clôture courte et chaleureuse — et une invitation naturelle si elle a sa place.
       - label: "FAQ (optionnel)"
         name: "faq"
         widget: "list"
