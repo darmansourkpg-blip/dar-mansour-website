@@ -15,7 +15,7 @@ quick_guide:
   - label: "Best time"
     value: "Arrive 30–40 minutes before sundown"
   - label: "Don't miss"
-    value: "Zen Beach, Amsterdam Bar, Three Sixty"
+    value: "Zen Beach, Amsterdam Bar, Bluerama"
 faq:
   - question: "What time is sunset in Koh Phangan?"
     answer: "Sunset falls roughly between 6:00 and 6:45 pm depending on the season — a little earlier around December, later around June. Arrive 30 to 40 minutes ahead to settle in, as the richest colours often come just after the sun has dipped."
@@ -39,7 +39,7 @@ Koh Phangan's western shore faces open water. From **Sri Thanu** down through **
 
 Happily, this is also the calm, soulful side of the island — the one travellers come to for slow living rather than late nights.
 
-## On the sand: the best sunset beaches
+## On the sand: beaches & beach bars
 
 ### Zen Beach, Sri Thanu
 
@@ -47,23 +47,31 @@ The island's sunset ritual. In the hippy town of Sri Thanu, Zen Beach draws musi
 
 <p class="getthere"><strong>Getting there</strong> — Sri Thanu; follow the small lane past CM Thai Language School, about five minutes through the trees. <a href="https://www.google.com/maps/search/?api=1&amp;query=Zen+Beach+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
-### Phangan Cove, Sri Thanu
-
-Right by the Sri Thanu pier, the bay is wide, flat and open, with no hills to hide the horizon. When the light hits the still water, the reflection stretches out like a painting — one of the most photogenic spots on this coast.
-
-<p class="getthere"><strong>Getting there</strong> — Beside the Sri Thanu pier, on the west side of town. <a href="https://www.google.com/maps/search/?api=1&amp;query=Phangan+Cove+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
-
 ### Hin Kong Beach
 
 A long, calm, uncrowded stretch of west-coast sand, with wide open views and a gentle, local feel. It's also the closest beach to Dar Mansour, which makes it easy to drift from golden hour straight to the dinner table. Right on the sand here, **L'Alcove** — a barefoot French restaurant by the water — is a lovely place to watch the light go with a glass of wine before dinner.
 
 <p class="getthere"><strong>Getting there</strong> — Along Hin Kong Road, the west-coast stretch closest to Dar Mansour. <a href="https://www.google.com/maps/search/?api=1&amp;query=Hin+Kong+Beach+Koh+Phangan" target="_blank" rel="noopener">Beach on map ↗</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">L'Alcove on map ↗</a></p>
 
+### Wave Sunset Restaurant & Bar
+
+A beachfront restaurant and bar that has quietly become one of the island's favourite places to watch the sun go down — good food, easy drinks and an unhurried, calm atmosphere right on the sand.
+
+<p class="getthere"><strong>Getting there</strong> — On the west-coast beach strip. <a href="https://www.google.com/maps/search/?api=1&amp;query=Wave+Sunset+Restaurant+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
+### Kupu Kupu
+
+On the coastal road opposite Amsterdam Bar but down by the beach, Kupu Kupu is one of the loveliest low-key spots for a barefoot sunset — with a happy hour from 4 to 6 pm that makes its beautiful setting easy to enjoy.
+
+<p class="getthere"><strong>Getting there</strong> — Coastal road opposite Amsterdam Bar, on the beach side. <a href="https://www.google.com/maps/search/?api=1&amp;query=Kupu+Kupu+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
 ### Secret Beach (and the viewpoint above it)
 
 A smaller, gentler cove for a more private sunset. On the road down, there's a high point where you can stop and take in the sea for a mile or two — an unmarked, breathtaking pause before you even reach the sand.
 
 <p class="getthere"><strong>Getting there</strong> — North of Sri Thanu; the viewpoint is on the hill just before the road drops to the beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=Secret+Beach+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
+<p>For an unfussy, barefoot sundowner, a few more beach bars line the west coast: <strong>Charlie's Bar</strong> (<a href="https://www.google.com/maps/search/?api=1&amp;query=Charlie+Bar+Koh+Phangan" target="_blank" rel="noopener">map ↗</a>) right on the beach strip, <strong>Ocean Vibes</strong> (<a href="https://www.google.com/maps/search/?api=1&amp;query=Ocean+Vibes+Koh+Phangan" target="_blank" rel="noopener">map ↗</a>) pairing the view with food, drinks and a calm atmosphere, and <strong>Tiki Beach</strong> (<a href="https://www.google.com/maps/search/?api=1&amp;query=Tiki+Beach+Koh+Phangan" target="_blank" rel="noopener">map ↗</a>) in Baan Tai — a quiet, dog-friendly patch of sand off the lane just past Phanganist Hostel.</p>
 
 ## Up high: sunset with a view
 
@@ -80,6 +88,12 @@ The island's classic. On the hill between Hin Kong and Thong Sala, Amsterdam Bar
 The coast's grown-up alternative, a short distance before Amsterdam Bar, above Nai Wok. Bluerama is an adults-only pool bar with an infinity edge that frames what many call the finest sunset view on the island — calm, refined and blissfully free of crowds. It's more of a treat than most, with a small, elevated menu; if you'd like to dine at the top level as the sky turns, book ahead. For drinks and the view alone, there's ample space to simply stand and watch the light go.
 
 <p class="getthere"><strong>Getting there</strong> — Nai Wok Beach, just before Amsterdam Bar (162/1 Nai Wok Beach, Wok Tum). <a href="https://www.google.com/maps/search/?api=1&amp;query=Bluerama+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
+### Apichada
+
+A viewpoint that feels like the treehouse dream you never had as a kid — simple wooden design, comfy Thai-style mattresses and unreal views over the south-west. Handily placed if you're coming from Haad Rin, Thong Nai Pan or Baan Tai.
+
+<p class="getthere"><strong>Getting there</strong> — Near Baan Kai (by the Family Mart); the first hill is steep, so park at the bottom if unsure. <a href="https://www.google.com/maps/search/?api=1&amp;query=Apichada+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 ### Three Sixty (360) Rooftop Bar
 
@@ -126,6 +140,6 @@ Because everything is slow-cooked to order, [reserving your table and pre-orderi
 
 ## Final thoughts
 
-Koh Phangan gives its best light to those who slow down for it. Choose your spot on the west coast — the sand at Zen Beach, the mirror of Phangan Cove, the height of Amsterdam Bar or Three Sixty — arrive before the sun does, and stay a little past the moment everyone else leaves.
+Koh Phangan gives its best light to those who slow down for it. Choose your spot on the west coast — the sand at Zen Beach, the height of Amsterdam Bar or Bluerama, the panorama at Three Sixty — arrive before the sun does, and stay a little past the moment everyone else leaves.
 
 And when the sky turns to indigo and you're ready for dinner, you'll already be on the right side of the island.

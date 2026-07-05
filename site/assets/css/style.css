@@ -454,6 +454,9 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .prose .getthere { font-size: .84rem; color: var(--muted); margin-top: .55rem; line-height: 1.5; }
 .prose .getthere strong { color: var(--green-deep); font-weight: 700; }
 .prose .getthere a { white-space: nowrap; }
+/* images inserted into an article body */
+.prose img { display: block; width: 100%; border-radius: 4px; margin: 1.8rem 0; }
+.prose img + em { display: block; margin-top: -1.2rem; margin-bottom: 1.8rem; font-size: .82rem; color: var(--muted); text-align: center; }
 
 /* Callout / note box */
 .note { background: var(--green-tint); border-left: 3px solid var(--green); padding: 1.4rem 1.6rem; border-radius: 2px; }
