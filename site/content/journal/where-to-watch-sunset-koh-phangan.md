@@ -23,6 +23,8 @@ faq:
     answer: "The west coast. Areas like Sri Thanu, Hin Kong and Wok Tum face open water, so the sun sets straight into the Gulf of Thailand. The east coast, around Thong Sala and Haad Rin, is the sunrise side."
   - question: "Which is the most popular sunset bar in Koh Phangan?"
     answer: "Amsterdam Bar, on the hill between Hin Kong and Thong Sala, is the island's classic sundowner spot — famous for its infinity pool and wide view over the west coast. Three Sixty, in the north-west, is the other favourite for a panoramic view."
+  - question: "Is there an adults-only sunset bar in Koh Phangan?"
+    answer: "Yes — Bluerama, above Nai Wok just before Amsterdam Bar, is an adults-only pool bar known for its infinity pool and one of the island's most refined sunset views. For a calm, grown-up evening, it's the pick of the coast."
   - question: "Where can I have dinner after sunset near Sri Thanu?"
     answer: "The west coast is also where the evening slows down. Dar Mansour, a Moroccan slow-food restaurant on Hin Kong Road near Sri Thanu, is a few minutes from the main sunset beaches. Because everything is slow-cooked to order, reserving your table and pre-ordering ahead is recommended."
 ---
@@ -61,7 +63,11 @@ For a panorama rather than a beach, Koh Phangan's hills deliver some of Thailand
 
 ### Amsterdam Bar
 
-The island's classic. On the hill between Hin Kong and Thong Sala, Amsterdam Bar pairs an infinity pool and Thai-style mattresses with a sweeping view over the west coast and, on a clear day, the National Park in the distance. Arrive early — during Full Moon week especially, it fills fast.
+The island's classic. On the hill between Hin Kong and Thong Sala, Amsterdam Bar pairs an infinity pool and Thai-style mattresses with a sweeping view over the west coast and, on a clear day, the National Park in the distance. It draws a young, lively crowd, so arrive early — during Full Moon week especially, it fills fast.
+
+### Bluerama
+
+The coast's grown-up alternative, a short distance before Amsterdam Bar, above Nai Wok. Bluerama is an adults-only pool bar with an infinity edge that frames what many call the finest sunset view on the island — calm, refined and blissfully free of crowds. It's more of a treat than most, with a small, elevated menu; if you'd like to dine at the top level as the sky turns, book ahead. For drinks and the view alone, there's ample space to simply stand and watch the light go.
 
 ### Three Sixty (360) Rooftop Bar
 
