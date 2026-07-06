@@ -169,6 +169,7 @@ def load_articles():
             "cat": CATEGORIES[cat_key],
             "cover": cover,
             "cover_alt": meta.get("cover_alt") or title,
+            "cover_fit": (meta.get("cover_fit") or "").strip(),
             "quick_guide": _parse_quick_guide(meta.get("quick_guide")),
             "faq": _parse_faq(meta.get("faq")),
             "body_html": _render_body(body),
@@ -264,7 +265,9 @@ def _related_cards(a, all_articles):
 def render_article(a, all_articles):
     cat = a["cat"]
     body = L.breadcrumb(("Journal", "blog.html"), (a["title"], None)) + L.subhero(
-        cat["label"], a["title"], a["description"], a["cover"], a["cover_alt"]) + f'''
+        cat["label"], a["title"], a["description"], a["cover"], a["cover_alt"],
+        tall=(a.get("cover_fit") == "portrait"),
+        variant=("portrait" if a.get("cover_fit") == "portrait" else None)) + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time> · {a["author"]} · <a class="ilink" href="{cat["url"]}">{cat["label"]}</a></p>
 {_quick_guide(a)}
