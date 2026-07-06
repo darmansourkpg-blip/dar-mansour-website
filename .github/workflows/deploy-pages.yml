@@ -68,3 +68,15 @@ jobs:
         id: deployment_retry
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
+
+      # IndexNow: after a successful deploy, notify Bing/Yandex of the current
+      # URLs so they re-crawl within minutes. Non-fatal (never fails the job).
+      - name: Ping IndexNow
+        if: steps.deployment.outcome == 'success' || steps.deployment_retry.outcome == 'success'
+        run: |
+          KEY=d560aac2461f36d3a26e14cd4bd4f84f
+          URLS=$(grep -oE '<loc>[^<]+</loc>' site/sitemap.xml | sed -E 's#</?loc>##g' | awk '{printf "\"%s\",",$0}' | sed 's/,$//')
+          curl -sS -m 30 -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{\"host\":\"darmansour.com\",\"key\":\"$KEY\",\"keyLocation\":\"https://darmansour.com/$KEY.txt\",\"urlList\":[$URLS]}" \
+            && echo "IndexNow ping sent" || echo "IndexNow ping failed (non-fatal)"

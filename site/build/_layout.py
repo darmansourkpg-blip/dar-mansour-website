@@ -13,6 +13,10 @@ SITE_URL = "https://darmansour.com"
 NOINDEX = False
 WA = "https://wa.me/66822767757"
 
+# --- SEO / Analytics integrations (leave empty to disable) ---
+GA4_ID = ""          # Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX"
+BING_VERIFY = ""     # Bing Webmaster verification code (msvalidate.01)
+
 # Cache-busting: short content hash appended to asset URLs so browsers fetch the
 # new CSS/JS immediately after a deploy instead of serving a stale cached copy.
 _ASSETS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
@@ -58,6 +62,15 @@ NAV_ITEMS = [
 
 def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra="", body_class=""):
     bodycls = f' class="{body_class}"' if body_class else ''
+    analytics = ""
+    if BING_VERIFY:
+        analytics += f'<meta name="msvalidate.01" content="{BING_VERIFY}">\n'
+    if GA4_ID:
+        analytics += (
+            f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script>\n'
+            "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+            f"gtag('js',new Date());gtag('config','{GA4_ID}');</script>\n"
+        )
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +92,7 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
 <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#00837D">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+{analytics}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css?v={CSS_V}">
