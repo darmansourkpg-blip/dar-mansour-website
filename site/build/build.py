@@ -84,12 +84,12 @@ home_body = f'''
     <p class="lead" style="margin-inline:auto;">Inspired by the Dadas — the silent guardians of Moroccan family recipes — our kitchen celebrates the authentic essence of Morocco: slow-cooked dishes full of generosity, depth and soul.</p>
   </div>
   <div class="dishes dishes--photos">
-    <article class="dish reveal"><img src="assets/uploads/Couscous.jpg" alt="Moroccan couscous with slow-cooked vegetables at Dar Mansour" loading="lazy"></article>
-    <article class="dish reveal" data-delay="1"><img src="assets/uploads/Berber%27s%20Tajine.jpg" alt="Berber tajine with prunes, almonds and cinnamon" loading="lazy"></article>
-    <article class="dish reveal" data-delay="2"><img src="assets/uploads/Fez%27s%20Tajine.jpg" alt="Fez-style chicken tajine with olives and preserved lemon" loading="lazy"></article>
-    <article class="dish reveal"><img src="assets/uploads/Chefchaouen%27s%20Tajine.jpg" alt="Chefchaouen vegetable tajine with courgette and carrots" loading="lazy"></article>
-    <article class="dish reveal" data-delay="1"><img src="assets/uploads/Tanjia%20Marrakchia.jpg" alt="Tanjia Marrakchia slow-cooked in its clay urn over embers" loading="lazy"></article>
-    <article class="dish reveal" data-delay="2"><img src="assets/uploads/M%27semen.jpg" alt="Msemen, traditional Moroccan layered flatbread" loading="lazy"></article>
+    <article class="dish reveal"><img src="assets/uploads/Couscous.jpg" alt="Moroccan couscous with slow-cooked vegetables at Dar Mansour" loading="lazy"><div class="dish__label"><h3>Couscous</h3></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/uploads/Berber%27s%20Tajine.jpg" alt="Berber tajine with prunes, almonds and cinnamon" loading="lazy"><div class="dish__label"><h3>Berber's Tajine</h3></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/uploads/Fez%27s%20Tajine.jpg" alt="Fez-style chicken tajine with olives and preserved lemon" loading="lazy"><div class="dish__label"><h3>Fez's Tajine</h3></div></article>
+    <article class="dish reveal"><img src="assets/uploads/Chefchaouen%27s%20Tajine.jpg" alt="Chefchaouen vegetable tajine with courgette and carrots" loading="lazy"><div class="dish__label"><h3>Chefchaouen's Tajine</h3></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/uploads/Tanjia%20Marrakchia.jpg" alt="Tanjia Marrakchia slow-cooked in its clay urn over embers" loading="lazy"><div class="dish__label"><h3>Tanjia Marrakchia</h3></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/uploads/M%27semen.jpg" alt="Msemen, traditional Moroccan layered flatbread" loading="lazy"><div class="dish__label"><h3>M'semen</h3></div></article>
   </div>
   <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
     <a class="btn btn--primary" href="moroccan-menu-koh-phangan.html">Explore the Full Menu</a>
@@ -124,7 +124,7 @@ home_body = f'''
 
 <section class="section" id="wine"><div class="wrap"><div class="split">
   <div class="split__media reveal">
-    <img src="assets/uploads/Wine%20Pairing%20List.jpg" alt="Moroccan prune tajine paired with a tawny port on the Dar Mansour wine pairing list, Koh Phangan">
+    <img src="assets/uploads/Wine%20Pairing.jpg" alt="Moroccan prune tajine paired with a tawny port on the Dar Mansour wine pairing list, Koh Phangan">
     <span class="tag">Wine Pairing</span>
   </div>
   <div class="split__text reveal" data-delay="1">
@@ -497,15 +497,15 @@ pantry_cards = "".join(f'''    <div class="pantry__item reveal"><h3>{n}</h3><p>{
 pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
     "Moroccan Pantry: Stories &amp; Staples", "Our culinary roots, one ingredient at a time",
     "From the red hills of Taliouine to the family kitchens of Rabat — a pantry of soul, taste and tradition.",
-    "assets/uploads/Ras%20El%20Hanout-1.jpg", "Ras el Hanout and Moroccan spices, the heart of the Dar Mansour pantry", tall=True, variant="portrait") + f'''
+    "assets/uploads/Ras%20El%20Hanout-2.jpg", "Ras el Hanout and Moroccan spices, the heart of the Dar Mansour pantry", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
     <p class="lead">At Dar Mansour, every ingredient carries a story. Our pantry is filled with traditions passed down by <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">generations of Moroccan women</a>. Here are some of the staples we love and use — with care and authenticity.</p>
   </div>
   <div class="dishes dishes--photos" style="margin-bottom:clamp(2.5rem,5vw,3.5rem);">
-    <article class="dish reveal"><img src="assets/uploads/Preserved%20Lemons.jpg" alt="Jars of Moroccan preserved lemons with fresh lemons" loading="lazy"></article>
-    <article class="dish reveal" data-delay="1"><img src="assets/uploads/Ras%20El%20Hanout-1.jpg" alt="Ras el Hanout Moroccan spice blend surrounded by bowls of spices" loading="lazy"></article>
-    <article class="dish reveal" data-delay="2"><img src="assets/uploads/Smen-1.jpg" alt="Smen, Moroccan fermented clarified butter in a painted bowl" loading="lazy"></article>
+    <article class="dish reveal"><img src="assets/uploads/Preserved%20Lemons.jpg" alt="Jars of Moroccan preserved lemons with fresh lemons" loading="lazy"><div class="dish__label"><h3>Preserved Lemons</h3></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/uploads/Ras%20El%20Hanout-2.jpg" alt="Ras el Hanout Moroccan spice blend surrounded by bowls of spices" loading="lazy"><div class="dish__label"><h3>Ras el Hanout</h3></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/uploads/Smen-2.jpg" alt="Smen, Moroccan fermented clarified butter in a painted bowl" loading="lazy"><div class="dish__label"><h3>Smen</h3></div></article>
   </div>
   <div class="pantry">
 {pantry_cards}

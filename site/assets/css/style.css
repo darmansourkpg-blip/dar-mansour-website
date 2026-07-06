@@ -273,7 +273,7 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .dish__label p { font-size: .82rem; color: rgba(255,255,255,.82); max-width: none; }
 /* clean photo gallery (dish names are baked into the photos) */
 .dishes--photos .dish img { aspect-ratio: 1/1; }
-.dishes--photos .dish::after { display: none; }
+.dishes--photos .dish__label h3 { font-size: clamp(1.15rem, 1.9vw, 1.5rem); }
 
 /* ---------- 11. Dark editorial band ---------- */
 .band-dark { background: var(--green-deep); color: var(--on-dark); }
