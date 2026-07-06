@@ -679,7 +679,7 @@ universe_nav = _journal.render_universe_nav(ARTICLES)
 blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
     "Journal &amp; Stories", "Stories of Morocco and Koh Phangan",
     "Beyond being the best Moroccan restaurant in Koh Phangan, Dar Mansour is a story — of Morocco's timeless cuisine, the Dadas' wisdom, family rituals and the island inspirations that surround us.",
-    "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige star motifs and candlelight at Dar Mansour") + f'''
+    "assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg", "Aerial view of a turquoise bay and white-sand beach on the west coast of Koh Phangan") + f'''
 <section class="jmast reveal"><div class="wrap">
   <div class="jmast__rule"></div>
   <span class="jmast__kicker">The Journal</span>
