@@ -23,7 +23,7 @@ faq:
   - question: What makes Dada-style cooking unique?
     answer: Patience above all. Traditional dishes are never rushed. Tajines simmer gently for hours, couscous is steamed several times, and flavours develop naturally over time rather than through shortcuts.
   - question: How does Dar Mansour honour this tradition?
-    answer: 'At Dar Mansour, our slow-cooked philosophy is inspired by the values that defined the Dadas'' kitchens: patience, craftsmanship, generosity and genuine hospitality. Many of our signature dishes are prepared by pre-order so they can be cooked with the time they truly deserve.'
+    answer: 'Many of our recipes come directly from the Dadas who cooked for Maïja''s stepmother''s family in Morocco — passed down through generations rather than written in cookbooks. We honour them by cooking in the same spirit, guided by the values that defined their kitchens: patience, craftsmanship, generosity and genuine hospitality. Many of our signature dishes are prepared by pre-order so they can be given the time they truly deserve.'
 ---
 
 ## Who Were the Dadas?
