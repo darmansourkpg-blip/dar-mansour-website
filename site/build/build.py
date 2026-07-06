@@ -549,7 +549,7 @@ pages["moroccan-hospitality-values-koh-phangan.html"] = L.page(
 founders_body = L.breadcrumb(("Founders", None)) + L.subhero(
     "Founders &amp; Vision", "A love story — and a vision of Moroccan hospitality",
     "Meet Maïja and Bruno, who created a soulful Moroccan dining experience rooted in love and tradition.",
-    "assets/img/moroccan-restaurant-entrance-koh-phangan.jpg", "Entrance to Dar Mansour") + f'''
+    "assets/uploads/mod_aimant1.jpg", "Maïja and Bruno, founders of Dar Mansour, sharing a tender embrace", tall=True, focus="center 30%") + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="lead">Dar Mansour is the vision of <strong>Maïja</strong> — a creative spirit who spent over 30 years immersed in Moroccan culture — and <strong>Bruno</strong>, a French entrepreneur who once lived in China, and who fell in love… not only with Morocco, but with its most inspired ambassador.</p>
   <p>Together, they imagined a place where every meal is a story, every guest is welcomed like family, and every detail — from spices to music — carries the soul of Moroccan hospitality.</p>
