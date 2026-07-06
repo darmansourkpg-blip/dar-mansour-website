@@ -21,7 +21,7 @@ pages = {}
 # ============================================================ HOME
 home_body = f'''
 <section class="hero">
-  <div class="hero__media"><img src="assets/img/moroccan-garden-dining-koh-phangan.webp" alt="Candlelit Moroccan garden dining at Dar Mansour, Koh Phangan" fetchpriority="high"></div>
+  <div class="hero__media"><img src="assets/uploads/Dar%20Mansour%20-%20Morocco%27s%20kitchen%20Service.jpg" alt="Guests sharing a festive candlelit Moroccan dinner around the mosaic table at Dar Mansour, Koh Phangan" style="object-position:center 35%" fetchpriority="high"></div>
   <div class="wrap hero__inner">
     <span class="eyebrow">Moroccan Slow Food · West Coast, Koh Phangan</span>
     <h1 class="display hero__title">Morocco's Kitchen in Koh Phangan</h1>
