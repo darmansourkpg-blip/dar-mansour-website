@@ -429,6 +429,14 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .subhero--tall { min-height: 72vh; }
 .subhero__media { position: absolute; inset: 0; z-index: -2; }
 .subhero__media img { width: 100%; height: 100%; object-fit: cover; }
+/* portrait/square photo hero: mobile keeps the cover crop; desktop shows the
+   whole photo over a soft blurred fill of itself (no awkward zoom) */
+.subhero__backdrop { display: none; }
+.subhero--portrait .subhero__media img { object-position: center 62%; }
+@media (min-width: 900px) {
+  .subhero--portrait .subhero__media img { object-fit: contain; object-position: right center; position: relative; z-index: 1; }
+  .subhero--portrait .subhero__backdrop { display: block; position: absolute; inset: 0; z-index: 0; background-size: cover; background-position: center; filter: blur(34px) brightness(.5) saturate(1.15); transform: scale(1.12); }
+}
 .subhero::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(180deg, rgba(7,43,41,.5) 0%, rgba(7,43,41,.15) 45%, rgba(7,43,41,.8) 100%); }
 .subhero__inner { padding-top: calc(var(--header-h) + 3rem); padding-bottom: clamp(2.5rem, 6vh, 4.5rem); }
 .subhero .eyebrow { color: #fff; opacity: .92; }

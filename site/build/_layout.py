@@ -173,14 +173,21 @@ def breadcrumb(*crumbs):
             + "".join(items) + '</ol></nav>')
 
 
-def subhero(eyebrow, h1, sub, image, alt, tall=False, focus=None):
+def subhero(eyebrow, h1, sub, image, alt, tall=False, focus=None, variant=None):
     cls = "subhero subhero--tall" if tall else "subhero"
     # focus lets a page steer the crop (object-position) — handy for portrait
     # photos whose subject sits away from the centre.
+    if variant:
+        cls += f" subhero--{variant}"
     style = f' style="object-position:{focus}"' if focus else ''
+    src = _webp(image)
+    # A "portrait" variant keeps the mobile cover crop but, on desktop, shows the
+    # whole (square/portrait) photo over a soft blurred fill of itself — so it
+    # never looks awkwardly zoomed on a wide screen.
+    backdrop = f'<div class="subhero__backdrop" style="background-image:url(&quot;{src}&quot;)"></div>' if variant else ''
     return f'''
 <section class="{cls}">
-  <div class="subhero__media"><img src="{_webp(image)}" alt="{alt}"{style} fetchpriority="high"></div>
+  <div class="subhero__media">{backdrop}<img src="{src}" alt="{alt}"{style} fetchpriority="high"></div>
   <div class="wrap subhero__inner">
     <span class="eyebrow">{eyebrow}</span>
     <h1>{h1}</h1>
