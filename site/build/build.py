@@ -288,7 +288,7 @@ pages["moroccan-restaurant-reservation-koh-phangan.html"] = L.page(
 wine_body = L.breadcrumb(("Wine Pairing", None)) + L.subhero(
     "Wine Pairing Experience", "Crafted to enhance every bite — on the spiced path of Morocco",
     "Koh Phangan's only dedicated Moroccan wine pairing list — natural, characterful labels chosen to elevate the soul of our slow food.",
-    "assets/img/moroccan-arty-table-koh-phangan.jpg", "Candlelit Moroccan table set for an evening of wine and slow food at Dar Mansour") + f'''
+    "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a Porto Maynard's tawny at Dar Mansour", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;">
     <p class="lead">At Dar Mansour, wine is more than a drink — it's a dialogue with the dish. Each label in our curated list is selected to elevate the complexity, warmth and aromatic depth of <a class="ilink" href="moroccan-slow-dining-koh-phangan.html">Moroccan slow food</a>.</p>
@@ -311,7 +311,7 @@ pages["moroccan-wine-pairing-koh-phangan.html"] = L.page(
     "Moroccan Wine Pairing — Slow Food &amp; Natural Wines Koh Phangan | Dar Mansour",
     "Discover Koh Phangan's only curated Moroccan wine pairing list. Wines selected to elevate each dish, from tagines to couscous, at Dar Mansour.",
     "moroccan-wine-pairing-koh-phangan.html", wine_body,
-    og_image="assets/img/moroccan-arty-table-koh-phangan.jpg")
+    og_image="assets/uploads/Wine%20Pairing.jpg")
 
 
 # ============================================================ MANSOUR BAR / COCKTAILS
