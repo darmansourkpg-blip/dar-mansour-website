@@ -526,7 +526,7 @@ pages["moroccan-pantry-koh-phangan.html"] = L.page(
 spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
     "The Mansour Spirit", "Savour the beautiful, the good, and the moment",
     "A peaceful oasis where Moroccan hospitality meets Thai cultural respect — harmony, gratitude and barefoot freedom.",
-    "assets/img/moroccan-zellige-fountain-koh-phangan.jpg", "Brass tap on a green zellige fountain at Dar Mansour") + f'''
+    "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging framed artwork on an ochre wall — the spirit of hospitality and cultural respect", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="lead">Mansour Spirit is about more than food — it's about embracing the values of the place we're in. As proud guests of the Kingdom of Thailand, we hold deep respect for its culture, its laws and the spirit of harmony that defines it. Honouring Thai values is not just a duty — it's a sincere expression of gratitude.</p>
   <h2>A few gentle requests</h2>
