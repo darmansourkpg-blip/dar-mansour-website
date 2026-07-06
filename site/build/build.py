@@ -362,7 +362,7 @@ art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Experience it in person",
     "The best way to feel our artistic direction is around a candlelit table. Reserve your evening at Dar Mansour.") + L.related(
-    ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/moroccan-restaurant-entrance-koh-phangan.jpg", "Entrance"),
+    ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/uploads/mod_aimant1.jpg", "Maïja and Bruno, founders of Dar Mansour, sharing a tender embrace"),
     ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging artwork — the spirit of hospitality and cultural respect"),
     ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior décor"))
 pages["moroccan-interior-art-koh-phangan.html"] = L.page(
