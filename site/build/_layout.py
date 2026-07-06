@@ -15,7 +15,7 @@ WA = "https://wa.me/66822767757"
 
 # --- SEO / Analytics integrations (leave empty to disable) ---
 GA4_ID = "G-L2GLFDZHCR"   # Google Analytics 4 Measurement ID
-BING_VERIFY = ""     # Bing Webmaster verification code (msvalidate.01)
+BING_VERIFY = "8ED8A01F43B5C8FE82AE6C2F87241426"   # Bing Webmaster (msvalidate.01)
 
 # Cache-busting: short content hash appended to asset URLs so browsers fetch the
 # new CSS/JS immediately after a deploy instead of serving a stale cached copy.
