@@ -173,11 +173,14 @@ def breadcrumb(*crumbs):
             + "".join(items) + '</ol></nav>')
 
 
-def subhero(eyebrow, h1, sub, image, alt, tall=False):
+def subhero(eyebrow, h1, sub, image, alt, tall=False, focus=None):
     cls = "subhero subhero--tall" if tall else "subhero"
+    # focus lets a page steer the crop (object-position) — handy for portrait
+    # photos whose subject sits away from the centre.
+    style = f' style="object-position:{focus}"' if focus else ''
     return f'''
 <section class="{cls}">
-  <div class="subhero__media"><img src="{_webp(image)}" alt="{alt}" fetchpriority="high"></div>
+  <div class="subhero__media"><img src="{_webp(image)}" alt="{alt}"{style} fetchpriority="high"></div>
   <div class="wrap subhero__inner">
     <span class="eyebrow">{eyebrow}</span>
     <h1>{h1}</h1>

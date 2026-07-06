@@ -374,7 +374,7 @@ pages["moroccan-interior-art-koh-phangan.html"] = L.page(
 reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     "Recognition", "One of the world's best Moroccan restaurants",
     "As seen in Golf du Maroc magazine — a culinary gem carrying the Moroccan soul across continents.",
-    "assets/img/dar-mansour-front-koh-phangan.jpeg", "Dar Mansour storefront in Koh Phangan") + f'''
+    "assets/uploads/Dar%20Mansour%20Morocco%27s%20Kitchen%20Koh%20Phangan.jpg", "The illuminated Dar Mansour entrance sign with a Moroccan candle lantern at dusk in Koh Phangan", tall=True, focus="center 22%") + f'''
 <section class="section"><div class="wrap prose reveal">
   <span class="eyebrow">Golf du Maroc Magazine · Gastronomy</span>
   <h2>"Morocco under different skies"</h2>
