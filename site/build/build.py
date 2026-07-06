@@ -236,7 +236,7 @@ menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
     "Book now via WhatsApp to reserve your table and pre-order your soulful Moroccan dinner.") + L.related(
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening ambiance"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/Preserved%20Lemons.jpg", "Jars of Moroccan preserved lemons"),
     ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Dining room"))
 pages["moroccan-menu-koh-phangan.html"] = L.page(
@@ -275,7 +275,7 @@ res_body = L.breadcrumb(("Reservation", None)) + L.subhero(
 ''' + L.cta_band("I want to book a table &amp; pre-order",
     "Dinner only, Tuesday to Saturday. Reserve your evening and pre-order your slow-cooked Moroccan feast.") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Moroccan couscous"),
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening ambiance"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("FAQ", "Good to Know", "faq.html", "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Pastries and mint tea"))
 pages["moroccan-restaurant-reservation-koh-phangan.html"] = L.page(
     "Reservation at Dar Mansour — Moroccan Slow Food in Koh Phangan",
@@ -334,7 +334,7 @@ bar_body = L.breadcrumb(("The Mansour Bar", None)) + L.subhero(
   <p class="book__meta center" style="margin-top:2.2rem;">All prices in Thai Baht. A 3% surcharge applies to card payments. Please drink responsibly.</p>
 </div></section>
 ''' + L.cta_band("Toast to the moment", "Reserve your evening and sip Moroccan flavours under the stars.") + L.related(
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Moroccan couscous"),
     ("Private Dining", "Celebrations", "private-dining-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table"))
 pages["moroccan-cocktails-koh-phangan.html"] = L.page(
@@ -513,7 +513,7 @@ pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Want to taste it all?", "Discover how these staples come alive across our slow-cooked menu.") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Moroccan garden lounge"))
 pages["moroccan-pantry-koh-phangan.html"] = L.page(
     "Moroccan Pantry &amp; Ingredients — Dar Mansour Koh Phangan",
@@ -605,7 +605,7 @@ pd_body = L.breadcrumb(("Private Dining", None)) + L.subhero(
     btn_label="Enquire via WhatsApp",
     wa_message="Hello Dar Mansour, I'd like to enquire about private dining. Here are a few details about my celebration:") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Reviews", "What Guests Say", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior"))
 pages["private-dining-koh-phangan.html"] = L.page(
     "Private Dining in Koh Phangan | Celebrate at Dar Mansour",
