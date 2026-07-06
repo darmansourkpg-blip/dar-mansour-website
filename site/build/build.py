@@ -401,7 +401,7 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
   </ul>
   <p>And now, Dar Mansour — born not in Casablanca or Marrakech, but on a small tropical island in Thailand — proud to represent the spirit of Morocco with heart, care and authenticity.</p>
   <h2>Read the full feature</h2>
-  <p>The complete article — <em>Morocco Under Different Skies</em>, by Carole Belahrach, as published in Golf du Maroc magazine. Tap any page to open it full-size and read it in full.</p>
+  <p>The complete article — <em>Morocco Under Different Skies</em>, by Carole Belahrach, as published in Golf du Maroc magazine. Tap any page to read it in the viewer, then use the arrows to flip through.</p>
   <div class="pressgallery reveal">
     <figure><a href="assets/uploads/Golf%20du%20Maroc1.jpg" target="_blank" rel="noopener"><img src="assets/uploads/Golf%20du%20Maroc1.jpg" alt="Golf du Maroc feature cover — Morocco Under Different Skies" loading="lazy"></a><figcaption>The cover</figcaption></figure>
     <figure><a href="assets/uploads/golf%20du%20maroc%202.jpg" target="_blank" rel="noopener"><img src="assets/uploads/golf%20du%20maroc%202.jpg" alt="Magazine page featuring Dar Mansour (Thailand) and Piment (Germany)" loading="lazy"></a><figcaption>Dar Mansour &amp; Piment</figcaption></figure>
