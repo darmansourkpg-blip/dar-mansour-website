@@ -318,7 +318,7 @@ pages["moroccan-wine-pairing-koh-phangan.html"] = L.page(
 bar_body = L.breadcrumb(("The Mansour Bar", None)) + L.subhero(
     "The Mansour Bar", "Cocktails, classics &amp; nightcaps — a Moroccan-inspired experience",
     "Blending spices, flowers, herbs and local infusions — playful mixology, relaxed barefoot nights and beautiful company.",
-    "assets/img/mansour-bar-signature-cocktail-koh-phangan.jpg", "Signature cocktail served at The Mansour Bar, Koh Phangan") + f'''
+    "assets/uploads/mansour-bar-hero.webp", "Artwork for The Mansour Bar at Dar Mansour, Koh Phangan", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;">
     <p class="lead">At Dar Mansour, cocktails are more than a drink — they're a story, a scent, a spark of memory. The Mansour Bar invites you to explore <a class="ilink" href="moroccan-menu-koh-phangan.html">Moroccan flavours</a> through playful mixology.</p>
