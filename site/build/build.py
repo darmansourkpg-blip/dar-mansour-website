@@ -497,7 +497,7 @@ pantry_cards = "".join(f'''    <div class="pantry__item reveal"><h3>{n}</h3><p>{
 pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
     "Moroccan Pantry: Stories &amp; Staples", "Our culinary roots, one ingredient at a time",
     "From the red hills of Taliouine to the family kitchens of Rabat — a pantry of soul, taste and tradition.",
-    "assets/img/moroccan-interior-corner-koh-phangan.jpg", "Candlelit Moroccan interior corner at Dar Mansour") + f'''
+    "assets/uploads/Ras%20El%20Hanout-1.jpg", "Ras el Hanout and Moroccan spices, the heart of the Dar Mansour pantry", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
     <p class="lead">At Dar Mansour, every ingredient carries a story. Our pantry is filled with traditions passed down by <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">generations of Moroccan women</a>. Here are some of the staples we love and use — with care and authenticity.</p>
