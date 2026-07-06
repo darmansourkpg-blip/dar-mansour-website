@@ -363,7 +363,7 @@ art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
 ''' + L.cta_band("Experience it in person",
     "The best way to feel our artistic direction is around a candlelit table. Reserve your evening at Dar Mansour.") + L.related(
     ("Founders", "Founders &amp; Vision", "dar-mansour-founders-vision.html", "assets/img/moroccan-restaurant-entrance-koh-phangan.jpg", "Entrance"),
-    ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"),
+    ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging artwork — the spirit of hospitality and cultural respect"),
     ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior décor"))
 pages["moroccan-interior-art-koh-phangan.html"] = L.page(
     "Moroccan Art &amp; Interior Design in Koh Phangan — Dar Mansour",
@@ -569,7 +569,7 @@ founders_body = L.breadcrumb(("Founders", None)) + L.subhero(
     "Come and become part of the story. Reserve your evening at Dar Mansour and be welcomed like family.") + L.related(
     ("Reviews", "Through Our Guests' Eyes", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior"),
     ("Art", "Artistic Direction", "moroccan-interior-art-koh-phangan.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
-    ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden"))
+    ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging artwork — the spirit of hospitality and cultural respect"))
 pages["dar-mansour-founders-vision.html"] = L.page(
     "The Story of Dar Mansour — Founders &amp; Vision",
     "Meet the founders of Dar Mansour in Koh Phangan. Discover how Maïja and Bruno created a soulful Moroccan dining experience rooted in love and tradition.",
