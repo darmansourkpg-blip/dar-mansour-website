@@ -271,6 +271,9 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .dish__label { position: absolute; left: 1.3rem; right: 1.3rem; bottom: 1.3rem; z-index: 2; color: #fff; }
 .dish__label h3 { color: #fff; font-size: 1.5rem; margin-bottom: .2rem; }
 .dish__label p { font-size: .82rem; color: rgba(255,255,255,.82); max-width: none; }
+/* clean photo gallery (dish names are baked into the photos) */
+.dishes--photos .dish img { aspect-ratio: 1/1; }
+.dishes--photos .dish::after { display: none; }
 
 /* ---------- 11. Dark editorial band ---------- */
 .band-dark { background: var(--green-deep); color: var(--on-dark); }
