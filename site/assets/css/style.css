@@ -633,37 +633,38 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 }
 
 /* =================================================================
-   THE DAR MANSOUR JOURNAL — bold dark editorial art direction
-   A distinctly different world: warm "evening" dark ground + vivid
-   terracotta accent + magazine typography. Achieved by re-mapping the
-   neutral tokens under body.journal, so every token-driven surface
-   follows automatically. Green brand chrome (footer, Book button) stays.
+   THE DAR MANSOUR JOURNAL — bright contemporary editorial (body.journal)
+   Modern & luminous: crisp near-white ground, clean sans-serif display
+   type (vs the restaurant's serif), a punchy warm coral accent, white
+   cards and lots of air. Deliberately "décalé" from the restaurant site,
+   inside the same green brand chrome.
    ================================================================= */
 body.journal {
-  --bone:  #191310;   /* page ground */
-  --sand:  #211913;   /* secondary sections */
-  --cream: #251C15;   /* cards */
-  --linen: #2C2219;
-  --ink:   #F1E6D6;   /* primary text (cream) */
-  --ink-soft: #CFC0AC;
-  --muted: #A2937F;
-  --line:  rgba(241,230,214,.13);
-  --green-tint:   #2C2118;
-  --green-tint-2: #3E2F22;
-  --journal:      #DB8B4F;   /* vivid terracotta on dark */
-  --journal-deep: #ECAF7A;
-  --journal-tint: #2E2318;
+  --bone:  #FCFBF8;
+  --sand:  #F4F2EC;
+  --cream: #FFFFFF;
+  --linen: #EFEDE5;
+  --ink:   #201D19;
+  --ink-soft: #56514A;
+  --muted: #8C877E;
+  --line:  rgba(32,29,25,.12);
+  --green-tint:   #FBEDE6;
+  --green-tint-2: #F2DED2;
+  --journal:      #D9603A;
+  --journal-deep: #B04220;
+  --journal-tint: #FBEEE7;
   background: var(--bone);
   color: var(--ink);
 }
-
-/* headings & titles -> cream */
+/* contemporary SANS display headings — the key modern signal */
 body.journal h1, body.journal h2, body.journal h3, body.journal h4,
-body.journal .prose h3, body.journal .jcard__title,
-body.journal .jmast__name, body.journal .authorbox h3,
-body.journal .prose strong { color: var(--ink); }
-
-/* editorial terracotta accents */
+body.journal .prose h2, body.journal .prose h3,
+body.journal .jcard__title, body.journal .jmast__name,
+body.journal .subhero h1 {
+  font-family: var(--sans); font-weight: 800; letter-spacing: -.02em;
+  line-height: 1.08; color: var(--ink);
+}
+/* editorial coral accents */
 body.journal .eyebrow, body.journal .subhero .eyebrow,
 body.journal .article__meta, body.journal .jcard__date,
 body.journal .toc a::before, body.journal .toc__title,
@@ -673,58 +674,44 @@ body.journal .qguide dt, body.journal .getthere strong,
 body.journal .divider, body.journal .textlink,
 body.journal .jmast__kicker { color: var(--journal); }
 body.journal .article__meta a.ilink { color: var(--journal-deep); }
-
 /* in-body links */
-body.journal .prose p a, body.journal .prose li a { color: var(--journal-deep); text-decoration-color: color-mix(in srgb, var(--journal) 50%, transparent); }
+body.journal .prose p a, body.journal .prose li a { color: var(--journal-deep); text-decoration-color: color-mix(in srgb, var(--journal) 45%, transparent); }
 body.journal .prose p a:hover, body.journal .prose li a:hover { text-decoration-color: var(--journal-deep); }
-
-/* boxes as dark surfaces with a terracotta edge */
+/* boxes: light coral wash + coral edge */
 body.journal .toc, body.journal .goodtoknow, body.journal .localtip,
 body.journal .qguide, body.journal .note {
   background: var(--journal-tint);
-  border-color: color-mix(in srgb, var(--journal) 26%, var(--line));
+  border-color: color-mix(in srgb, var(--journal) 22%, var(--line));
 }
 body.journal .toc, body.journal .localtip, body.journal .qguide { border-left-color: var(--journal); }
 body.journal .toc a { color: var(--ink); }
 body.journal .toc a:hover { color: var(--journal-deep); }
-body.journal .goodtoknow li, body.journal .localtip p, body.journal .qguide dd, body.journal .note p { color: var(--ink-soft); }
-
-/* article cards */
-body.journal .jcard { background: var(--cream); }
-body.journal .jcard__cat { background: var(--journal); color: #17100A; }
-
-/* keep the white wordmark on the (now dark) solid header */
-body.journal .header.is-solid { background: var(--bone); box-shadow: 0 1px 0 var(--line); }
-body.journal .header.is-solid .nav a { color: var(--ink); }
-body.journal .header.is-solid .brand__full--white { display: block; }
-body.journal .header.is-solid .brand__full--color { display: none; }
-body.journal .header.is-solid .btn--light { border-color: var(--line); color: var(--ink); }
-
-/* magazine drop cap on the article intro (paragraph after the ToC) */
+/* article cards: clean white with a soft modern lift */
+body.journal .jcard { background: #fff; border-color: var(--line); }
+body.journal .jcard:hover { box-shadow: 0 24px 48px -28px rgba(32,29,25,.30); }
+body.journal .jcard__cat { background: var(--journal); color: #fff; }
+/* serif drop cap in coral — a warm editorial note against the modern sans */
 body.journal .prose .toc + p::first-letter {
   float: left; font-family: var(--serif); font-weight: 600;
   font-size: 4.8rem; line-height: .72; margin: .35rem .6rem .05rem 0;
   color: var(--journal);
 }
-
-/* pull quotes */
+/* modern (sans) pull quotes */
 body.journal .prose blockquote {
-  margin: 2.4rem 0; padding: .2rem 0 .2rem 1.5rem;
+  margin: 2.4rem 0; padding: .1rem 0 .1rem 1.5rem;
   border-left: 3px solid var(--journal);
-  font-family: var(--serif); font-style: italic; font-weight: 500;
-  font-size: clamp(1.4rem, 2.6vw, 1.95rem); line-height: 1.3;
-  color: var(--journal-deep); max-width: none;
+  font-family: var(--sans); font-weight: 700; font-style: normal;
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem); line-height: 1.3;
+  letter-spacing: -.01em; color: var(--ink); max-width: none;
 }
 body.journal .prose blockquote p { max-width: none; font-size: inherit; color: inherit; margin: 0; }
-
-/* Journal masthead ribbon (index) — big & bold */
-.jmast { text-align: center; padding: clamp(3rem, 7vw, 5rem) 0 clamp(2rem, 4vw, 3rem); }
-.jmast__rule { width: 54px; height: 2px; background: var(--journal); margin: 0 auto 1.5rem; }
+/* masthead — big, modern, airy */
+.jmast { text-align: center; padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2rem, 4vw, 3rem); }
+.jmast__rule { width: 48px; height: 3px; background: var(--journal); margin: 0 auto 1.6rem; }
 .jmast__kicker { font-size: .72rem; font-weight: 800; letter-spacing: .34em; text-transform: uppercase; color: var(--journal); }
-.jmast__name { font-family: var(--serif); font-weight: 600; font-size: clamp(2.6rem, 7vw, 4.6rem); line-height: 1; color: var(--ink); margin: .6rem 0 .7rem; }
-.jmast__sub { color: var(--ink-soft); max-width: 54ch; margin: 0 auto; font-size: clamp(1.05rem, 1.6vw, 1.2rem); }
-
-/* Journal: FAQ accordion legible on the dark ground */
-body.journal .faq__item summary { color: var(--ink); }
+.jmast__name { font-family: var(--sans); font-weight: 800; letter-spacing: -.03em; font-size: clamp(2.6rem, 7.5vw, 5rem); line-height: .98; color: var(--ink); margin: .7rem 0 .7rem; }
+.jmast__sub { color: var(--ink-soft); max-width: 52ch; margin: 0 auto; font-size: clamp(1.05rem, 1.6vw, 1.2rem); }
+/* FAQ on the bright journal */
+body.journal .faq__item summary { color: var(--ink); font-family: var(--sans); font-weight: 700; }
 body.journal .faq__item summary:hover { color: var(--journal-deep); }
 body.journal .faq__item summary::after { color: var(--journal); }
