@@ -660,8 +660,8 @@ pages["faq.html"] = L.page(
 
 # ============================================================ CONTACT
 contact_body = L.breadcrumb(("Contact", None)) + L.subhero(
-    "Contact &amp; Location", "Reach out — we'd love to hear from you",
-    "Dinner only, by reservation and pre-order. Message us on WhatsApp; we usually respond within a few hours.",
+    "Contact &amp; Location", "Let's Plan Your Evening",
+    "Dinner by reservation and pre-order via WhatsApp.",
     "assets/img/moroccan-garden-lounge-night-koh-phangan.jpg", "Candlelit Moroccan garden lounge at Dar Mansour, Koh Phangan") + f'''
 <section class="section"><div class="wrap">
   <div class="contact-grid">
@@ -686,7 +686,7 @@ pages["contact-dar-mansour-koh-phangan.html"] = L.page(
     "Contact Dar Mansour — Moroccan Slow Food in Koh Phangan",
     "Want to book a table at Dar Mansour? Contact us on WhatsApp, check our location in Koh Phangan and get directions to our Moroccan restaurant.",
     "contact-dar-mansour-koh-phangan.html", contact_body,
-    og_image="assets/img/dar-mansour-street-view-koh-phangan.jpeg")
+    og_image="assets/img/moroccan-garden-lounge-night-koh-phangan.jpg")
 
 
 # ============================================================ BLOG / JOURNAL
