@@ -494,6 +494,11 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .press__source { font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--green); }
 .press__quote { font-family: var(--serif); font-size: 1.22rem; line-height: 1.45; color: var(--green-deep); font-style: italic; max-width: none; margin: .9rem 0 1.4rem; }
 .press__card .textlink { margin-top: auto; align-self: flex-start; }
+/* full-width magazine feature (the marquee recognition) */
+.press__card--feature { margin: 1.8rem 0 .6rem; padding: 2.4rem 2.4rem; border-left: 3px solid var(--green); background: var(--green-tint); }
+.press__card--feature .press__quote:first-of-type { font-size: 1.5rem; }
+.press__card--feature p:not(.press__quote) { color: var(--ink-soft); margin: 0 0 1rem; }
+.press__byline { font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--green); margin-top: .4rem; }
 
 /* Info steps (reservation, concept) */
 .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.6rem; }

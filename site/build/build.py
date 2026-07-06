@@ -376,14 +376,24 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     "As seen in Golf du Maroc magazine — a culinary gem carrying the Moroccan soul across continents.",
     "assets/img/dar-mansour-front-koh-phangan.jpeg", "Dar Mansour storefront in Koh Phangan") + f'''
 <section class="section"><div class="wrap prose reveal">
-  <div class="note"><p>"A culinary gem carrying the Moroccan soul across continents."</p></div>
-  <p>In its latest international gastronomy feature, <strong>Golf du Maroc</strong> listed Dar Mansour among the world's finest Moroccan culinary destinations. We are humbled to appear alongside iconic names such as:</p>
+  <span class="eyebrow">Golf du Maroc Magazine · Gastronomy</span>
+  <h2>"Morocco under different skies"</h2>
+  <p>In an international gastronomy feature titled <em>Morocco Under Different Skies</em>, journalist Carole Belahrach set out, for <strong>Golf du Maroc</strong> magazine, to find the tables that carry Morocco's soul beyond its borders: <em>"When traveling abroad, you want to get away from it all and taste the local cuisine — just as you might want to discover the places that showcase Morocco and its gastronomy."</em> From Hamburg to New York and Los Angeles, the magazine's journey led — among a handful of chosen addresses — to a small tropical island in Thailand.</p>
+  <article class="press__card press__card--feature reveal">
+    <span class="press__source">Golf du Maroc — "Dar Mansour, a tribute to dadas"</span>
+    <p class="press__quote">"This is a place imagined as an oasis for nomads in search of new experiences. At Dar Mansour, guests savor traditional, generous, and authentic home-style Moroccan cuisine, lovingly prepared by two 'veterans of Morocco.' But Dar Mansour is more than just a restaurant — it's a space that embodies the values of Moroccan hospitality."</p>
+    <p>"The cooking follows time-honored practices: tanjia, tajines, salads, msemmen, tafernout… The owners lived in Morocco for nearly 30 years, long enough to master the country's culinary traditions. They also trained under professionals in Marrakech — and with a dada (traditional female cook), to whom every dish pays tribute. From ingredients to tableware and décor, everything has been brought straight from Morocco. Absolutely everything is homemade — even the smen (fermented butter) and preserved lemons. The restaurant works on a pre-order basis to honor the principle of slow cooking and to reduce waste, embracing an eco-conscious philosophy."</p>
+    <span class="press__byline">Feature by Carole Belahrach · Golf du Maroc Magazine</span>
+  </article>
+  <h2>In extraordinary company</h2>
+  <p>The feature gathered some of the most celebrated Moroccan tables in the world. We are humbled to be listed alongside:</p>
   <ul class="bullets">
-    <li><strong>Piment</strong>, by Michelin-starred Chef Wahabi Nouri — Hamburg</li>
-    <li>The legendary <strong>Café Mogador</strong> — New York</li>
-    <li><strong>Tagine Beverly Hills</strong>, co-founded by Ryan Gosling and Chef Ben — Los Angeles</li>
+    <li><strong>Piment</strong> — Hamburg. The Michelin-starred restaurant of Casablanca-born chef Wahabi Nouri.</li>
+    <li><strong>Café Mogador</strong> — New York. A beloved family-run institution since 1983, in the East Village and Williamsburg.</li>
+    <li><strong>Zerza</strong> — New York. A Lower East Side favourite for zaalouk, couscous and tajines.</li>
+    <li><strong>Tagine Beverly Hills</strong> — Los Angeles. Co-founded in 2004 by actor Ryan Gosling, with chef Ben (Abdessamad Benameur) from Larache.</li>
   </ul>
-  <p>And now, Dar Mansour — born not in Casablanca or Marrakech, but on a small tropical island in Thailand — is proud to represent the spirit of Morocco with heart, care and authenticity.</p>
+  <p>And now, Dar Mansour — born not in Casablanca or Marrakech, but on a small tropical island in Thailand — proud to represent the spirit of Morocco with heart, care and authenticity.</p>
   <h2>A Moroccan table in Koh Phangan</h2>
   <p>This recognition came just two months after our opening. It honours not just our cuisine, but the values we hold dear:</p>
   <ul class="bullets">
