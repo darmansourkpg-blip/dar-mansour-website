@@ -662,7 +662,7 @@ pages["faq.html"] = L.page(
 contact_body = L.breadcrumb(("Contact", None)) + L.subhero(
     "Contact &amp; Location", "Reach out — we'd love to hear from you",
     "Dinner only, by reservation and pre-order. Message us on WhatsApp; we usually respond within a few hours.",
-    "assets/img/dar-mansour-street-view-koh-phangan.jpeg", "Street view of Dar Mansour in Koh Phangan") + f'''
+    "assets/img/moroccan-garden-lounge-night-koh-phangan.jpg", "Candlelit Moroccan garden lounge at Dar Mansour, Koh Phangan") + f'''
 <section class="section"><div class="wrap">
   <div class="contact-grid">
     <div class="contact-info reveal">
