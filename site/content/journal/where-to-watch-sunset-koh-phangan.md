@@ -38,7 +38,6 @@ faq:
       of the evening, Dar Mansour in Hin Kong welcomes guests with traditional
       Moroccan slow dining inspired by generations of hospitality.
 ---
-
 Koh Phangan is famous for its Full Moon nights. But the island's quietest magic happens a little earlier.
 
 Every evening, as the sun slowly disappears into the Gulf of Thailand, the west coast transforms into one of Thailand's most beautiful natural spectacles. The sea turns gold, then pink, then deep shades of purple and indigo, while the pace of the island softens with the fading light.
@@ -47,15 +46,17 @@ You don't need a party to experience the best of Koh Phangan. You simply need th
 
 Whether you prefer your feet in the sand, a panoramic viewpoint high above the sea or a quiet drink overlooking the horizon, this guide brings together our favourite places to experience sunset on the island — carefully selected by people who call Koh Phangan home.
 
-## Why the West Coast Offers the Island's Best Sunsets
+![](assets/uploads/where-to-watch-the-sunset-in-koh-phangan6.jpg)
 
+## Why the West Coast Offers the Island's Best Sunsets
 
 The answer is wonderfully simple. Koh Phangan's western coastline faces directly towards the open Gulf of Thailand, offering uninterrupted views of the horizon. From **Sri Thanu** through **Hin Kong** and **Wok Tum**, there is nothing between you and the setting sun except the sea.
 
 Unlike the east coast — known for sunrise and the famous Full Moon Party — the west coast has developed a completely different personality. It feels calmer, slower and more residential, attracting travellers looking for beautiful beaches, cafés, yoga studios and relaxed evenings rather than late-night parties. It's here that many locals choose to finish their day.
 
-## Sunset on the Beach
+![](assets/uploads/where-to-watch-the-sunset-in-koh-phangan7.jpg)
 
+## Sunset on the Beach
 
 ### Zen Beach — Koh Phangan's Sunset Ritual
 
@@ -135,8 +136,9 @@ In Baan Tai, Tiki Beach is a very quiet stretch of sand just off the road. Sit o
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Very quiet</li><li>Dog-friendly</li><li>Beach bar</li><li>Off the beaten track</li></ul></div>
 
-## Sunset from Above
+![](assets/uploads/where-to-watch-the-sunset-in-koh-phangan8.jpg)
 
+## Sunset from Above
 
 Sometimes, the most breathtaking sunsets aren't found on the beach, but high above it. Several of Koh Phangan's most spectacular viewpoints overlook the entire west coast, offering sweeping panoramas across the Gulf of Thailand.
 
@@ -188,8 +190,9 @@ Hidden among the hills above Baan Tai, Secret Mountain feels like a peaceful esc
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Swimming pool</li><li>Jungle views</li><li>Relaxed atmosphere</li><li>Less crowded</li><li>Sunset dining available</li></ul></div>
 
-## Worth the Journey
+![](assets/uploads/where-to-watch-the-sunset-in-koh-phangan5.jpg)
 
+## Worth the Journey
 
 Although the west coast offers the island's finest sunsets, two additional locations deserve a special mention.
 
@@ -213,11 +216,11 @@ Just south of Haad Rin lies one of Koh Phangan's most elegant beaches. Leela Bea
 
 Sunset on Koh Phangan isn't something to rush. A few simple habits can make the experience even more memorable.
 
-- **Arrive 30 to 40 minutes before sunset.**
-- **Stay for the blue hour** after the sun disappears — the colours often become even more beautiful.
-- **Check the tide** before visiting Hin Kong if you're hoping to photograph the reflections.
-- **Bring a sarong** or light towel to sit comfortably on the sand.
-- **Resist the temptation to leave** immediately after sunset. Some of the island's most peaceful moments happen once the crowds begin to disperse.
+* **Arrive 30 to 40 minutes before sunset.**
+* **Stay for the blue hour** after the sun disappears — the colours often become even more beautiful.
+* **Check the tide** before visiting Hin Kong if you're hoping to photograph the reflections.
+* **Bring a sarong** or light towel to sit comfortably on the sand.
+* **Resist the temptation to leave** immediately after sunset. Some of the island's most peaceful moments happen once the crowds begin to disperse.
 
 ## From Sunset to Slow Evenings
 
