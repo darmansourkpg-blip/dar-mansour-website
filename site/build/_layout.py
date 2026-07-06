@@ -14,7 +14,7 @@ NOINDEX = False
 WA = "https://wa.me/66822767757"
 
 # --- SEO / Analytics integrations (leave empty to disable) ---
-GA4_ID = ""          # Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX"
+GA4_ID = "G-L2GLFDZHCR"   # Google Analytics 4 Measurement ID
 BING_VERIFY = ""     # Bing Webmaster verification code (msvalidate.01)
 
 # Cache-busting: short content hash appended to asset URLs so browsers fetch the
