@@ -3,6 +3,7 @@
 
 import hashlib
 import os
+from urllib.parse import quote
 
 SITE_URL = "https://darmansour.com"
 
@@ -185,15 +186,19 @@ def subhero(eyebrow, h1, sub, image, alt, tall=False):
 </section>'''
 
 
-def cta_band(title, text):
+def cta_band(title, text, eyebrow="Reservation &amp; Pre-order",
+             btn_label="Book &amp; Pre-order via WhatsApp", wa_message=None):
+    # Optional pre-filled WhatsApp message, so the guest lands on a ready-to-send
+    # text (handy for enquiry-led pages like Private Dining).
+    href = f"{WA}?text={quote(wa_message)}" if wa_message else WA
     return f'''
 <section class="section book">
   <div class="wrap wrap--narrow reveal">
-    <span class="eyebrow">Reservation &amp; Pre-order</span>
+    <span class="eyebrow">{eyebrow}</span>
     <h2>{title}</h2>
     <p class="lead">{text}</p>
     <div class="book__actions">
-      <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WA_ICON} Book &amp; Pre-order via WhatsApp</a>
+      <a class="btn btn--primary" href="{href}" target="_blank" rel="noopener">{WA_ICON} {btn_label}</a>
       <a class="btn btn--ghost" href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Get Directions</a>
     </div>
     <p class="book__meta">Dinner only · Tuesday to Saturday · 7:00 PM – 10:30 PM · Closed Sunday &amp; Monday</p>

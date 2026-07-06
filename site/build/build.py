@@ -550,7 +550,7 @@ pages["dar-mansour-founders-vision.html"] = L.page(
 pd_body = L.breadcrumb(("Private Dining", None)) + L.subhero(
     "Private Dining &amp; Celebrations", "Celebrate life's most beautiful moments around a Moroccan table",
     "Birthdays, anniversaries, proposals and intimate gatherings — thoughtfully curated in our peaceful candlelit garden.",
-    "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table set for a private Moroccan celebration", tall=True) + f'''
+    "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Warm candlelit Moroccan lounge with low tables and lanterns, set for a private celebration", tall=True) + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="lead">Some evenings deserve more than a restaurant. Whether you're celebrating a birthday, anniversary, engagement, family gathering, honeymoon, or simply bringing together people you love, Dar Mansour offers an intimate Moroccan dining experience designed to create unforgettable memories.</p>
   <p>Nestled in our peaceful candlelit garden between Sri Thanu and Hin Kong, every celebration is thoughtfully curated with the warmth of <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">Moroccan hospitality</a>, slow-cooked cuisine, beautiful music and attentive service. Because every gathering is unique, we tailor your evening to feel personal, elegant and meaningful.</p>
@@ -568,7 +568,11 @@ pd_body = L.breadcrumb(("Private Dining", None)) + L.subhero(
   </ul>
   <div class="note"><p>"The most beautiful celebrations aren't measured by the number of guests, but by the memories shared around the table."</p></div>
 </div></section>
-''' + L.cta_band("Plan your celebration", "Our team will be delighted to help you create a memorable Moroccan dining experience. Book your private dining experience via WhatsApp.") + L.related(
+''' + L.cta_band("Plan your celebration",
+    "Tell us a little about the occasion — the date, the number of guests and what you have in mind — and we'll craft an evening around it. We'll be delighted to answer any questions and guide you through the details.",
+    eyebrow="Private Dining &amp; Celebrations",
+    btn_label="Enquire via WhatsApp",
+    wa_message="Hello Dar Mansour, I'd like to enquire about private dining. Here are a few details about my celebration:") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
     ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Evening"),
     ("Reviews", "What Guests Say", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior"))
@@ -576,7 +580,7 @@ pages["private-dining-koh-phangan.html"] = L.page(
     "Private Dining in Koh Phangan | Celebrate at Dar Mansour",
     "Celebrate life's special moments with a private Moroccan dining experience at Dar Mansour in Koh Phangan. Birthdays, anniversaries, proposals and intimate celebrations.",
     "private-dining-koh-phangan.html", pd_body,
-    og_image="assets/img/moroccan-round-table-koh-phangan.jpg")
+    og_image="assets/img/moroccan-restaurant-central-room-koh-phangan.jpg")
 
 
 # ============================================================ FAQ
