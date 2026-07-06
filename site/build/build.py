@@ -379,6 +379,12 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
   <span class="eyebrow">Golf du Maroc Magazine · Gastronomy</span>
   <h2>"Morocco under different skies"</h2>
   <p>In an international gastronomy feature titled <em>Morocco Under Different Skies</em>, journalist Carole Belahrach set out, for <strong>Golf du Maroc</strong> magazine, to find the tables that carry Morocco's soul beyond its borders: <em>"When traveling abroad, you want to get away from it all and taste the local cuisine — just as you might want to discover the places that showcase Morocco and its gastronomy."</em> From Hamburg to New York and Los Angeles, the magazine's journey led — among a handful of chosen addresses — to a small tropical island in Thailand.</p>
+  <figure class="tearsheet reveal">
+    <a href="assets/uploads/Golf%20du%20Maroc%20english%20version.jpg" target="_blank" rel="noopener">
+      <img src="assets/uploads/Golf%20du%20Maroc%20english%20version.jpg" alt="Dar Mansour featured in Golf du Maroc magazine — 'Among the World's Best Moroccan Restaurants'" loading="lazy">
+    </a>
+    <figcaption>As featured in Golf du Maroc Magazine</figcaption>
+  </figure>
   <article class="press__card press__card--feature reveal">
     <span class="press__source">Golf du Maroc — "Dar Mansour, a tribute to dadas"</span>
     <p class="press__quote">"This is a place imagined as an oasis for nomads in search of new experiences. At Dar Mansour, guests savor traditional, generous, and authentic home-style Moroccan cuisine, lovingly prepared by two 'veterans of Morocco.' But Dar Mansour is more than just a restaurant — it's a space that embodies the values of Moroccan hospitality."</p>
