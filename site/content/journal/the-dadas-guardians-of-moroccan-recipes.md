@@ -1,26 +1,26 @@
 ---
-title: "The Dadas: Silent Guardians of Moroccan Family Recipes"
-seo_title: "The Dadas — Guardians of Moroccan Recipes | Dar Mansour"
-description: "Meet the Dadas, the women who preserved Morocco's family recipes across generations — and whose slow-cooked legacy lives on at Dar Mansour, Koh Phangan."
+title: 'The Dadas: Silent Guardians of Moroccan Family Recipes'
 date: 2026-07-04
-author: "Dar Mansour"
-category: "moroccan-culture"
-cover: "assets/img/maija-art-direction-koh-phangan.jpg"
-cover_alt: "Warm candlelit Moroccan interior and art direction at Dar Mansour, Koh Phangan"
+author: Dar Mansour
+category: moroccan-culture
+cover: /assets/uploads/Dada Maroc.jpg
+cover_alt: Warm candlelit Moroccan interior and art direction at Dar Mansour, Koh Phangan
+seo_title: The Dadas — Guardians of Moroccan Recipes | Dar Mansour
+description: Meet the Dadas, the women who preserved Morocco's family recipes across generations — and whose slow-cooked legacy lives on at Dar Mansour, Koh Phangan.
 quick_guide:
-  - label: "Best for"
-    value: "Lovers of slow, soulful cooking"
-  - label: "Origin"
-    value: "Moroccan households, Marrakech & Fez traditions"
-  - label: "At Dar Mansour"
-    value: "Every main dish slow-cooked to order, Dada-style"
+  - label: Best for
+    value: Lovers of slow, soulful cooking
+  - label: Origin
+    value: Moroccan households, Marrakech & Fez traditions
+  - label: At Dar Mansour
+    value: Every main dish slow-cooked to order, Dada-style
 faq:
-  - question: "Who are the Dadas in Moroccan cuisine?"
-    answer: "The Dadas are women — often of Malian or Senegalese origin — who worked within Moroccan households for generations and became the silent guardians of family recipes, passing down technique, ritual and taste."
-  - question: "What makes Dada cooking different?"
-    answer: "Patience. Dishes are never rushed: tajines simmer for hours and couscous is steamed several times, so flavour and texture develop slowly and fully."
-  - question: "Can I taste Dada-style Moroccan food in Koh Phangan?"
-    answer: "Yes. At Dar Mansour every main dish is slow-cooked to order in the spirit of the Dadas. We recommend reserving your table and pre-ordering your dishes ahead."
+  - question: Who are the Dadas in Moroccan cuisine?
+    answer: The Dadas are women — often of Malian or Senegalese origin — who worked within Moroccan households for generations and became the silent guardians of family recipes, passing down technique, ritual and taste.
+  - question: What makes Dada cooking different?
+    answer: 'Patience. Dishes are never rushed: tajines simmer for hours and couscous is steamed several times, so flavour and texture develop slowly and fully.'
+  - question: Can I taste Dada-style Moroccan food in Koh Phangan?
+    answer: Yes. At Dar Mansour every main dish is slow-cooked to order in the spirit of the Dadas. We recommend reserving your table and pre-ordering your dishes ahead.
 ---
 
 In the heart of Moroccan homes, the **Dadas** stand as quiet, iconic figures — the keepers of a culinary heritage passed down from one generation to the next. Their names rarely appear in cookbooks, yet their hands shaped the flavours that define Moroccan cuisine.
