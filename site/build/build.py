@@ -348,7 +348,7 @@ pages["moroccan-cocktails-koh-phangan.html"] = L.page(
 art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
     "Artistic Direction &amp; Décor", "Art as identity",
     "A soulful space where Moroccan craftsmanship meets bold artistic vision — a living gallery of visual culture and culinary heritage.",
-    "assets/uploads/Stay%20Calm%20and%20Drink%20Berber%20Whisky.png", "Stay Calm and Drink Berber Whisky — a playful artwork celebrating Moroccan mint tea at Dar Mansour", tall=True, variant="portrait") + f'''
+    "assets/uploads/Stay%20Calm%20and%20Drink%20Berber%20Whisky.webp", "Stay Calm and Drink Berber Whisky — a playful artwork celebrating Moroccan mint tea at Dar Mansour", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="lead">At Dar Mansour, art is not an afterthought — it's who we are. From ancestral Moroccan craft to striking contemporary works, the space is curated as a living gallery where visual culture and culinary heritage come together. Every detail tells a story; every corner speaks of identity.</p>
   <h2>Currently on display</h2>
