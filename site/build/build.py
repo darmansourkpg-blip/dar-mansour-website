@@ -221,7 +221,7 @@ pages["moroccan-slow-dining-koh-phangan.html"] = L.page(
 menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
     "Our Moroccan Menu", "A tribute to Moroccan roots &amp; soulful flavours",
     "From ancient Berber staples to the aromatic influences of Moorish, Andalusian, Jewish and sub-Saharan cultures — slow cooked, served with soul.",
-    "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Moroccan pastries and mint tea at Dar Mansour") + f'''
+    "assets/uploads/Fez%27s%20Tajine.jpg", "A Fez-style chicken tajine with olives, herbs and preserved lemon at Dar Mansour", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;">
     <h2>A journey to the roots of Moroccan cuisine — inspired by the Dadas</h2>
