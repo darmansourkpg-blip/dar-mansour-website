@@ -475,6 +475,10 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 /* images inserted into an article body */
 .prose img { display: block; width: 100%; border-radius: 4px; margin: 1.8rem 0; }
 .prose img + em { display: block; margin-top: -1.2rem; margin-bottom: 1.8rem; font-size: .82rem; color: var(--muted); text-align: center; }
+/* constrained, centred figure — for smaller archival/portrait photos */
+.prose figure.figc { max-width: 480px; margin: 2.2rem auto; }
+.prose figure.figc img { width: 100%; margin: 0; }
+.prose figure.figc figcaption { margin-top: .7rem; font-size: .82rem; color: var(--muted); text-align: center; font-style: italic; }
 
 /* "Good to know" checklist box */
 .prose .goodtoknow { background: var(--green-tint); border: 1px solid var(--green-tint-2); border-radius: 4px; padding: 1.2rem 1.5rem; margin: 1.5rem 0 0; }

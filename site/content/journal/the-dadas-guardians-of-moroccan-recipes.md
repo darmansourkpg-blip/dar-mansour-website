@@ -50,6 +50,8 @@ Their kitchens became places where knowledge was transmitted not through written
 
 A pinch of cumin. A handful of coriander. The colour of caramelised onions. The scent that tells you a tajine is finally ready. These are things no recipe can truly teach.
 
+<figure class="figc"><img src="assets/uploads/dada-tea.webp" alt="A Dada pouring Moroccan mint tea in a riad courtyard" loading="lazy"><figcaption>Mint tea, poured exactly as each family preferred it — a daily ritual of care.</figcaption></figure>
+
 ## Guardians of Morocco's Culinary Memory
 
 Much of Morocco's extraordinary culinary heritage survived because these women prepared the same dishes thousands of times throughout their lives.
@@ -59,6 +61,8 @@ Every family had its own version of a tajine. Its own spice blend. Its own cousc
 Rather than following precise measurements, the Dadas cooked by intuition. They tasted. Adjusted. Waited. Then tasted again. Cooking was never rushed, because flavour itself needs time.
 
 Their influence can still be found throughout Moroccan cuisine today — not because they signed famous cookbooks, but because they quietly shaped the flavours that millions of Moroccans continue to recognise as home.
+
+<figure class="figc"><img src="assets/uploads/dada-cooking.webp" alt="A Dada preparing a Moroccan meal surrounded by tajines and fresh produce" loading="lazy"><figcaption>Cooking by instinct — a pinch, a taste, a patience no recipe can teach.</figcaption></figure>
 
 ## A Philosophy of Slow Cooking
 
