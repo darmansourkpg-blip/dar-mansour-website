@@ -38,6 +38,8 @@ faq:
       of the evening, Dar Mansour in Hin Kong welcomes guests with traditional
       Moroccan slow dining inspired by generations of hospitality.
 ---
+![](assets/uploads/where-to-watch-the-sunset-in-koh-phangan9.jpg)
+
 Koh Phangan is famous for its Full Moon nights. But the island's quietest magic happens a little earlier.
 
 Every evening, as the sun slowly disappears into the Gulf of Thailand, the west coast transforms into one of Thailand's most beautiful natural spectacles. The sea turns gold, then pink, then deep shades of purple and indigo, while the pace of the island softens with the fading light.
