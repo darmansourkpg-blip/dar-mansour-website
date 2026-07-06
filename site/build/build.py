@@ -170,7 +170,7 @@ home_body = f'''
     <a class="reveal" data-delay="2" href="assets/img/moroccan-pastries-mint-tea-koh-phangan.webp"><img src="assets/img/moroccan-pastries-mint-tea-koh-phangan.webp" alt="Artisanal Moroccan pastries and traditional mint tea" loading="lazy"></a>
     <a class="reveal" href="assets/img/moroccan-restaurant-central-room-koh-phangan.webp"><img src="assets/img/moroccan-restaurant-central-room-koh-phangan.webp" alt="Warm candlelit Moroccan lounge with colourful lanterns at Dar Mansour" loading="lazy"></a>
     <a class="g-wide reveal" data-delay="1" href="assets/img/moroccan-garden-lounge-night-koh-phangan.webp"><img src="assets/img/moroccan-garden-lounge-night-koh-phangan.webp" alt="Moroccan garden lounge at night at Dar Mansour" loading="lazy"></a>
-    <a class="reveal" data-delay="2" href="assets/img/moroccan-round-table-koh-phangan.webp"><img src="assets/img/moroccan-round-table-koh-phangan.webp" alt="Round mosaic table set with candles for a Moroccan evening at Dar Mansour" loading="lazy"></a>
+    <a class="reveal" data-delay="2" href="assets/img/moroccan-zellige-fountain-koh-phangan.webp"><img src="assets/img/moroccan-zellige-fountain-koh-phangan.webp" alt="Brass tap on a green zellige mosaic fountain at Dar Mansour" loading="lazy"></a>
   </div>
 </div></section>
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
