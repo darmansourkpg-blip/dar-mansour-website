@@ -311,7 +311,7 @@ pages["moroccan-wine-pairing-koh-phangan.html"] = L.page(
     "Moroccan Wine Pairing — Slow Food &amp; Natural Wines Koh Phangan | Dar Mansour",
     "Discover Koh Phangan's only curated Moroccan wine pairing list. Wines selected to elevate each dish, from tagines to couscous, at Dar Mansour.",
     "moroccan-wine-pairing-koh-phangan.html", wine_body,
-    og_image="assets/uploads/Wine%20Pairing.jpg")
+    og_image="assets/uploads/Wine%20Pairing.jpg", body_class="page-wine")
 
 
 # ============================================================ MANSOUR BAR / COCKTAILS

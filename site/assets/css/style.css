@@ -441,6 +441,11 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 @media (min-width: 900px) {
   .subhero--portrait .subhero__media img { object-position: right center; }
 }
+/* Wine page only: nudge the portrait hero left on desktop so the whole port
+   bottle stays fully visible with breathing room (mobile crop untouched) */
+@media (min-width: 900px) {
+  body.page-wine .subhero--portrait .subhero__media img { object-position: 85% center; }
+}
 .subhero::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(180deg, rgba(7,43,41,.5) 0%, rgba(7,43,41,.15) 45%, rgba(7,43,41,.8) 100%); }
 .subhero__inner { padding-top: calc(var(--header-h) + 3rem); padding-bottom: clamp(2.5rem, 6vh, 4.5rem); }
 .subhero .eyebrow { color: #fff; opacity: .92; }
