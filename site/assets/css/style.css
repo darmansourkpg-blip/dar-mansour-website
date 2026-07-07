@@ -674,6 +674,10 @@ body.lb-open { overflow: hidden; }
 .related__card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 1s var(--ease); }
 .related__card::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(180deg, transparent 30%, rgba(7,43,41,.85)); }
 .related__card:hover img { transform: scale(1.06); }
+/* Founders "Our Story" vignette: the temple photo has power lines across the sky —
+   zoom in slightly, anchored to the bottom, to push the wires out of the frame */
+.related__card img[src*="Dar-Mansour-1"] { transform: scale(1.3); transform-origin: center bottom; }
+.related__card:hover img[src*="Dar-Mansour-1"] { transform: scale(1.36); transform-origin: center bottom; }
 .related__card span { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; opacity: .85; display: block; margin-bottom: .3rem; }
 .related__card h3 { color: #fff; font-size: 1.35rem; }
 
