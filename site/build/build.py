@@ -209,7 +209,7 @@ concept_body = L.breadcrumb(("Concept", None)) + L.subhero(
     "Perfect for private dinners, slow dining lovers and food-conscious travellers seeking a soulful culinary experience in Koh Phangan.") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Moroccan couscous"),
     ("Reservation", "How to Book", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Central dining room"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour.jpg", "Maïja and Bruno's intertwined hands with matching rings — the founders of Dar Mansour"))
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["moroccan-slow-dining-koh-phangan.html"] = L.page(
     "Concept &amp; Operating Model — Moroccan Slow Dining Koh Phangan",
     "Discover how Dar Mansour redefines hospitality in Koh Phangan through its Moroccan slow food concept. Reservations recommended, pre-ordered dinners, zero waste, cooked with care.",
@@ -362,7 +362,7 @@ art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Experience it in person",
     "The best way to feel our artistic direction is around a candlelit table. Reserve your evening at Dar Mansour.") + L.related(
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour.jpg", "Maïja and Bruno's intertwined hands with matching rings — the founders of Dar Mansour"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging artwork — the spirit of hospitality and cultural respect"),
     ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior décor"))
 pages["moroccan-interior-art-koh-phangan.html"] = L.page(
@@ -436,7 +436,7 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     "Reserve your evening and discover the slow-cooked Moroccan cuisine that carries our soul across continents.") + L.related(
     ("Reviews", "What Guests Say", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior"),
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour.jpg", "Maïja and Bruno's intertwined hands with matching rings — the founders of Dar Mansour"))
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["best-moroccan-restaurant-world-press.html"] = L.page(
     "Dar Mansour — Among the World's Best Moroccan Culinary Destinations",
     "Featured in Golf du Maroc, Phanganist and Phangan Life — Dar Mansour is recognised among the world's best Moroccan restaurants and celebrated on Koh Phangan for its slow-cooked Moroccan soul food.",
@@ -473,7 +473,7 @@ reviews_body = L.breadcrumb(("Reviews", None)) + L.subhero(
 ''' + L.cta_band("Come and write your own story", "Reserve your evening and discover the experience for yourself.") + L.related(
     ("Recognition", "In the Press", "best-moroccan-restaurant-world-press.html", "assets/img/dar-mansour-front-koh-phangan.jpeg", "Storefront"),
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour.jpg", "Maïja and Bruno's intertwined hands with matching rings — the founders of Dar Mansour"))
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["moroccan-restaurant-reviews-koh-phangan.html"] = L.page(
     "Reviews of Dar Mansour — Best Moroccan Restaurant in Koh Phangan",
     "Discover what guests say about Dar Mansour in Koh Phangan. A soulful Moroccan dining experience praised for its authenticity, atmosphere and heart.",
@@ -543,7 +543,7 @@ spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Come and feel it",
     "Slow down, breathe, and savour the moment around a Moroccan table. Reserve your evening at Dar Mansour.") + L.related(
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour.jpg", "Maïja and Bruno's intertwined hands with matching rings — the founders of Dar Mansour"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Art", "Artistic Direction", "moroccan-interior-art-koh-phangan.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
     ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"))
 pages["moroccan-hospitality-values-koh-phangan.html"] = L.page(
@@ -753,7 +753,7 @@ blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
 ''' + L.cta_band("Live the story, don't just read it",
     "The best chapters are written around the table. Reserve your evening at Dar Mansour.") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour.jpg", "Maïja and Bruno's intertwined hands with matching rings — the founders of Dar Mansour"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/Preserved%20Lemons.jpg", "Jars of Moroccan preserved lemons"))
 pages["blog.html"] = L.page(
     "Dar Mansour Journal — Stories of Morocco &amp; Koh Phangan",

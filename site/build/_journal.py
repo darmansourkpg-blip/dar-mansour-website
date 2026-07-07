@@ -251,7 +251,7 @@ def _related_cards(a, all_articles):
     cards = [(x["cat"]["label"], x["title"], x["url"], x["cover"], x["cover_alt"]) for x in same]
     fallbacks = [
         ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
-        ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour.jpg", "Maïja and Bruno's intertwined hands with matching rings — the founders of Dar Mansour"),
+        ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
         ("Journal", "More Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
     ]
     i = 0
