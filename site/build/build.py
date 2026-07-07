@@ -539,7 +539,7 @@ spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
   <p>To maintain the calm and welcoming nature of the space, we reserve the right to refuse service to intoxicated guests. In accordance with Thai law and our commitment to responsible hospitality, no illegal substances — including marijuana — are permitted on the premises.</p>
   <h2>A peaceful oasis</h2>
   <p>Dar Mansour is a place of <a class="ilink" href="moroccan-slow-dining-koh-phangan.html">slowness</a>, barefoot freedom and quiet joy — anchored in gratitude for Thai hospitality and open cultural dialogue. We believe in harmony, presence and generosity — in savouring life, dish by dish, moment by moment.</p>
-  <p style="font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--green-deep);">With gratitude, Mansour's Family.</p>
+  <p style="font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--green-deep);">With gratitude,<br>Mansour's Family.</p>
 </div></section>
 ''' + L.cta_band("Come and feel it",
     "Slow down, breathe, and savour the moment around a Moroccan table. Reserve your evening at Dar Mansour.") + L.related(
