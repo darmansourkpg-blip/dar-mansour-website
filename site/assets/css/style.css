@@ -669,8 +669,11 @@ body.lb-open { overflow: hidden; }
 
 /* Related pages */
 .related { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.4rem; }
-.related__card { position: relative; overflow: hidden; border-radius: 3px; min-height: 240px; display: flex; align-items: flex-end; color: #fff; padding: 1.6rem; }
+.related__card { position: relative; overflow: hidden; border-radius: 3px; min-height: 320px; display: flex; align-items: flex-end; color: #fff; padding: 1.6rem; }
 .related__card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 1s var(--ease); }
+/* The founders (couple) photo is a square close-up: with taller cards, frame it
+   a touch lower so the whole embrace — arms included — reads, not just the faces */
+.related__card img[src*="mod_aimant1"] { object-position: center 58%; }
 .related__card::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(180deg, transparent 30%, rgba(7,43,41,.85)); }
 .related__card:hover img { transform: scale(1.06); }
 .related__card span { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; opacity: .85; display: block; margin-bottom: .3rem; }
