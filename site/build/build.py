@@ -112,7 +112,7 @@ home_body = f'''
 </div></div></section>
 
 <section class="section pd" id="private">
-  <div class="pd__bg"><img src="assets/uploads/Main%20room-dar-mansour.%20Koh%20Phangna.jpg" alt="Guests gathered on floor cushions around low tables under Moroccan lanterns in the main room at Dar Mansour, Koh Phangan" style="object-position:center 55%"></div>
+  <div class="pd__bg"><img src="assets/uploads/Main%20room-dar-mansour.%20Koh%20Phangna.webp" alt="Guests gathered on floor cushions around low tables under Moroccan lanterns in the main room at Dar Mansour, Koh Phangan" style="object-position:center 55%"></div>
   <div class="wrap"><div class="reveal" style="max-width:560px;">
     <span class="eyebrow">Private Dining &amp; Celebrations</span>
     <h2 style="margin:1.2rem 0 1.3rem;">Celebrate life's most beautiful moments around a Moroccan table</h2>
