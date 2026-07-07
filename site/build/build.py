@@ -667,9 +667,9 @@ contact_body = L.breadcrumb(("Contact", None)) + L.subhero(
   <div class="contact-grid">
     <div class="contact-info reveal">
       <dl>
+        <div><dt>Reservations &amp; Pre-order</dt><dd><a href="{WA}" target="_blank" rel="noopener"><strong>WhatsApp</strong> · +66 82 276 7757</a><span class="contact-note">For the fastest response and reservations.</span></dd></div>
+        <div><dt>General Enquiries</dt><dd><a href="mailto:hello@darmansour.com">hello@darmansour.com</a><span class="contact-note">For partnerships, private events, media, and general enquiries.</span></dd></div>
         <div><dt>Address</dt><dd><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road (Sri Thanu area)<br>Koh Phangan, Thailand</a></dd></div>
-        <div><dt>Reservations · WhatsApp</dt><dd><a href="{WA}" target="_blank" rel="noopener">+66 82 276 7757</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:hello@darmansour.com">hello@darmansour.com</a></dd></div>
         <div><dt>Opening Hours</dt><dd>Tuesday to Saturday · 7:00 PM – 10:30 PM<br>Closed Sunday &amp; Monday</dd></div>
         <div><dt>Follow</dt><dd><a href="https://instagram.com/darmansour.kohphangan" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/people/Dar-Mansour/" target="_blank" rel="noopener">Facebook</a></dd></div>
       </dl>
