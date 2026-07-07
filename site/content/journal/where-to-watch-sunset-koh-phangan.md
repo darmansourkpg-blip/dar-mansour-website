@@ -211,7 +211,7 @@ Just south of Haad Rin lies one of Koh Phangan's most elegant beaches. Leela Bea
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Couples</li><li>Quiet beach</li><li>Easy walk from Haad Rin</li><li>Romantic atmosphere</li></ul></div>
 
-![](assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg)
+![Sunset over a thai longtail boat in Koh Phangan](/assets/uploads/hin-kong-beach-sunset-koh-phangan.jpg "Sunset at Koh Phangan")
 
 ## How to Enjoy Sunset Like a Local
 
