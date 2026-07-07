@@ -712,14 +712,14 @@ journal_cards = _journal.render_index_cards(ARTICLES)
 universe_nav = _journal.render_universe_nav(ARTICLES)
 
 blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
-    "Journal &amp; Stories", "Stories of Morocco and Koh Phangan",
-    "Beyond being the best Moroccan restaurant in Koh Phangan, Dar Mansour is a story — of Morocco's timeless cuisine, the Dadas' wisdom, family rituals and the island inspirations that surround us.",
+    "Journal &amp; Stories", "Stories of Morocco &amp; Koh Phangan",
+    "Travel more thoughtfully. Discover more deeply.",
     "assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg", "Aerial view of a turquoise bay and white-sand beach on the west coast of Koh Phangan") + f'''
 <section class="jmast reveal"><div class="wrap">
   <div class="jmast__rule"></div>
   <span class="jmast__kicker">The Journal</span>
   <p class="jmast__name">The Dar Mansour Journal</p>
-  <p class="jmast__sub">A travel &amp; culture journal — where Morocco's timeless heritage meets the west coast of Koh Phangan, one story at a time.</p>
+  <p class="jmast__sub">Exploring Koh Phangan beyond the obvious, and Morocco beyond the clichés — through thoughtful travel guides, cultural stories and timeless tradition.</p>
 </div></section>
 {journal_cards}
 {universe_nav}
@@ -756,8 +756,8 @@ blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
     ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/mod_aimant1.jpg", "Maïja and Bruno, founders of Dar Mansour, sharing a tender embrace"),
     ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/Preserved%20Lemons.jpg", "Jars of Moroccan preserved lemons"))
 pages["blog.html"] = L.page(
-    "Dar Mansour Journal — Stories of Morocco and Koh Phangan",
-    "The Dar Mansour journal: stories of Moroccan cuisine, the wisdom of the Dadas, slow cooking, island inspirations, wine and soulful living in Koh Phangan.",
+    "Dar Mansour Journal — Stories of Morocco &amp; Koh Phangan",
+    "A slow travel and culture journal where Koh Phangan's quieter side meets Morocco's timeless heritage — through cuisine, hospitality, art, music, traditions and craftsmanship.",
     "blog.html", blog_body,
     og_image="assets/img/maija-art-direction-koh-phangan.jpg", body_class="journal")
 
