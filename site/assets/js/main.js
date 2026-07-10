@@ -65,64 +65,74 @@
     });
   });
 
-  /* 5. Lightbox — read press-feature pages in an overlay (flip with arrows,
-        close with ✕ / Escape / backdrop). Falls back to the plain image
-        links when JS is unavailable. */
-  document.querySelectorAll('.pressgallery').forEach((gallery) => {
-    const links = Array.from(gallery.querySelectorAll('a'));
-    if (!links.length) return;
-    const items = links.map((a) => ({
-      href: a.getAttribute('href'),
-      alt: (a.querySelector('img') || {}).alt || '',
-    }));
-    let idx = 0;
-    let box = null;
+  /* 5. Lightbox — interactive photo gallery with navigation (flip with arrows,
+        close with ✕ / Escape / backdrop, swipe on mobile). */
+  const initLightbox = (selector) => {
+    document.querySelectorAll(selector).forEach((gallery) => {
+      const links = Array.from(gallery.querySelectorAll('a'));
+      if (!links.length) return;
+      const items = links.map((a) => ({
+        href: a.getAttribute('href'),
+        alt: (a.querySelector('img') || {}).alt || '',
+      }));
+      let idx = 0;
+      let box = null;
+      let touchX = 0;
 
-    const render = () => {
-      const it = items[idx];
-      box.querySelector('.lb__img').src = it.href;
-      box.querySelector('.lb__img').alt = it.alt;
-      box.querySelector('.lb__count').textContent = idx + 1 + ' / ' + items.length;
-      box.querySelector('.lb__full').href = it.href;
-      box.querySelector('.lb__prev').style.visibility = items.length > 1 ? '' : 'hidden';
-      box.querySelector('.lb__next').style.visibility = items.length > 1 ? '' : 'hidden';
-    };
-    const go = (d) => { idx = (idx + d + items.length) % items.length; render(); };
-    const close = () => {
-      document.body.classList.remove('lb-open');
-      if (box) box.classList.remove('is-open');
-    };
-    const open = (i) => {
-      idx = i;
-      if (!box) {
-        box = document.createElement('div');
-        box.className = 'lb';
-        box.innerHTML =
-          '<button class="lb__close" aria-label="Close">&times;</button>' +
-          '<button class="lb__nav lb__prev" aria-label="Previous">&#8249;</button>' +
-          '<img class="lb__img" src="" alt="">' +
-          '<button class="lb__nav lb__next" aria-label="Next">&#8250;</button>' +
-          '<div class="lb__bar"><span class="lb__count"></span>' +
-          '<a class="lb__full" target="_blank" rel="noopener">Open full size ↗</a></div>';
-        document.body.appendChild(box);
-        box.querySelector('.lb__close').addEventListener('click', close);
-        box.querySelector('.lb__prev').addEventListener('click', (e) => { e.stopPropagation(); go(-1); });
-        box.querySelector('.lb__next').addEventListener('click', (e) => { e.stopPropagation(); go(1); });
-        box.addEventListener('click', (e) => { if (e.target === box) close(); });
-      }
-      render();
-      document.body.classList.add('lb-open');
-      box.classList.add('is-open');
-    };
+      const render = () => {
+        const it = items[idx];
+        box.querySelector('.lb__img').src = it.href;
+        box.querySelector('.lb__img').alt = it.alt;
+        box.querySelector('.lb__count').textContent = idx + 1 + ' / ' + items.length;
+        box.querySelector('.lb__full').href = it.href;
+        box.querySelector('.lb__prev').style.visibility = items.length > 1 ? '' : 'hidden';
+        box.querySelector('.lb__next').style.visibility = items.length > 1 ? '' : 'hidden';
+      };
+      const go = (d) => { idx = (idx + d + items.length) % items.length; render(); };
+      const close = () => {
+        document.body.classList.remove('lb-open');
+        if (box) box.classList.remove('is-open');
+      };
+      const open = (i) => {
+        idx = i;
+        if (!box) {
+          box = document.createElement('div');
+          box.className = 'lb';
+          box.innerHTML =
+            '<button class="lb__close" aria-label="Close">&times;</button>' +
+            '<button class="lb__nav lb__prev" aria-label="Previous">&#8249;</button>' +
+            '<img class="lb__img" src="" alt="">' +
+            '<button class="lb__nav lb__next" aria-label="Next">&#8250;</button>' +
+            '<div class="lb__bar"><span class="lb__count"></span>' +
+            '<a class="lb__full" target="_blank" rel="noopener">Open full size ↗</a></div>';
+          document.body.appendChild(box);
+          box.querySelector('.lb__close').addEventListener('click', close);
+          box.querySelector('.lb__prev').addEventListener('click', (e) => { e.stopPropagation(); go(-1); });
+          box.querySelector('.lb__next').addEventListener('click', (e) => { e.stopPropagation(); go(1); });
+          box.addEventListener('click', (e) => { if (e.target === box) close(); });
+          box.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, false);
+          box.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].clientX - touchX;
+            if (Math.abs(dx) > 60) go(dx > 0 ? -1 : 1);
+          }, false);
+        }
+        render();
+        document.body.classList.add('lb-open');
+        box.classList.add('is-open');
+      };
 
-    links.forEach((a, i) =>
-      a.addEventListener('click', (e) => { e.preventDefault(); open(i); })
-    );
-    window.addEventListener('keydown', (e) => {
-      if (!box || !box.classList.contains('is-open')) return;
-      if (e.key === 'Escape') close();
-      else if (e.key === 'ArrowLeft') go(-1);
-      else if (e.key === 'ArrowRight') go(1);
+      links.forEach((a, i) =>
+        a.addEventListener('click', (e) => { e.preventDefault(); open(i); })
+      );
+      window.addEventListener('keydown', (e) => {
+        if (!box || !box.classList.contains('is-open')) return;
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowLeft') go(-1);
+        else if (e.key === 'ArrowRight') go(1);
+      });
     });
-  });
+  };
+
+  initLightbox('.pressgallery');
+  initLightbox('.gallery');
 })();
