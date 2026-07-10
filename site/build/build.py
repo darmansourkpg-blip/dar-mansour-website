@@ -238,7 +238,7 @@ menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
     "Book now via WhatsApp to reserve your table and pre-order your soulful Moroccan dinner.") + L.related(
     ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/Preserved%20Lemons.jpg", "Jars of Moroccan preserved lemons"),
-    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Moroccan mosaic round table set for dinner"))
+    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/uploads/Romantic%20Dinner-Dar-Mansour-Koh%20Phangan.webp", "A candlelit table set for a romantic dinner at Dar Mansour"))
 pages["moroccan-menu-koh-phangan.html"] = L.page(
     "Moroccan Menu Koh Phangan — Tagines, Couscous &amp; Slow Food | Dar Mansour",
     "Explore Dar Mansour's menu in Koh Phangan: authentic Moroccan cuisine with tagines, couscous, tanjias and homemade bread. Cooked slow, served with soul.",
@@ -364,7 +364,7 @@ art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
     "The best way to feel our artistic direction is around a candlelit table. Reserve your evening at Dar Mansour.") + L.related(
     ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging artwork — the spirit of hospitality and cultural respect"),
-    ("Experience", "The Experience", "index.html", "assets/uploads/main%20room-%20ambiance-dar-mansour-%20Koh%20Phangan.webp", "The candlelit main room at Dar Mansour, Koh Phangan"))
+    ("Experience", "The Experience", "index.html", "assets/uploads/Kamel%20Ghabte-%20women%20-men%20-rest%20room-%20dar%20mansour-koh%20phangan.webp", "Colourful Kamel Ghabte pop-art portraits at Dar Mansour, Koh Phangan"))
 pages["moroccan-interior-art-koh-phangan.html"] = L.page(
     "Moroccan Art &amp; Interior Design in Koh Phangan — Dar Mansour",
     "Step inside Dar Mansour — a soulful space where Moroccan craftsmanship and bold artistic vision meet. A celebration of identity, heritage and creative expression.",
