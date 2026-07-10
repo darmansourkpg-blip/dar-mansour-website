@@ -454,7 +454,7 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
   body.page-wine .subhero--portrait .subhero__media img { object-position: 85% center; }
 }
 .subhero::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(180deg, rgba(7,43,41,.5) 0%, rgba(7,43,41,.15) 45%, rgba(7,43,41,.8) 100%); }
-.subhero__inner { padding-top: calc(var(--header-h) + 3rem); padding-bottom: clamp(2.5rem, 6vh, 4.5rem); }
+.subhero__inner { padding-top: calc(var(--header-h) + 3rem); padding-bottom: clamp(2.5rem, 6vh, 4.5rem); padding-right: 1.5rem; }
 .subhero .eyebrow { color: #fff; opacity: .92; }
 .subhero h1 { color: #fff; margin: 1rem 0 1rem; font-size: clamp(2.4rem, 6vw, 4.6rem); max-width: 18ch; }
 .subhero__sub { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: rgba(255,255,255,.9); max-width: 50ch; font-weight: 300; }

@@ -27,7 +27,7 @@ home_body = f'''
   </picture></div>
   <div class="wrap hero__inner">
     <span class="eyebrow">Moroccan Slow Food · West Coast, Koh Phangan</span>
-    <h1 class="display hero__title">Moroccan Restaurant — Morocco's Kitchen in Koh Phangan</h1>
+    <h1 class="display hero__title" style="font-size:clamp(2rem,7vw,3.2rem);line-height:1.15;">Moroccan Restaurant<br>Morocco's Kitchen in Koh Phangan</h1>
     <p class="hero__sub">A hidden Moroccan gem near Sri Thanu &amp; Hin Kong. Fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners — rooted in tradition, slow cooked with care.</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WI} Reserve Your Evening</a>
@@ -115,7 +115,7 @@ home_body = f'''
 </div></div></section>
 
 <section class="section pd" id="private">
-  <div class="pd__bg"><img src="assets/uploads/Main%20room-dar-mansour.%20Koh%20Phangna.webp" alt="Guests gathered on floor cushions around low tables under Moroccan lanterns in the main room at Dar Mansour, Koh Phangan" style="object-position:center 55%"></div>
+  <div class="pd__bg"><img src="assets/uploads/main%20room-%20ambiance-dar-mansour-%20Koh%20Phangan.webp" alt="Warm ambient lighting in the main dining room at Dar Mansour Koh Phangan, creating an intimate Moroccan atmosphere" style="object-position:center 55%"></div>
   <div class="wrap"><div class="reveal" style="max-width:560px;">
     <span class="eyebrow">Private Dining &amp; Celebrations</span>
     <h2 style="margin:1.2rem 0 1.3rem;">Celebrate life's most beautiful moments around a Moroccan table</h2>
