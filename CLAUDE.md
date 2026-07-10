@@ -85,3 +85,52 @@ conversion WebP des heros._
 Contenu verbatim des docs dans `ressources/` — **ne jamais inventer** de plats, prix ou infos.
 Améliorer seulement la hiérarchie, l'accessibilité, le SEO et la technique. Ton : chaleureux,
 élégant, authentique, jamais « vendeur ».
+
+## Règles éditoriales du Journal (blog)
+Référence complète : `ressources/Dar_Mansour_Editorial_Playbook` + `Dar_Mansour_Journal_Structure`.
+Ceci en est la synthèse actionnable. Gabarits prêts à remplir : `ressources/journal-templates/`.
+
+**Raison d'être** : le Journal inspire la curiosité et construit l'autorité (Koh Phangan +
+Morocco). Un article doit rester utile **même si le restaurant n'existait pas**. SEO invisible :
+la structure sert Google, l'écriture sert le lecteur.
+
+**Voix** : un ami cultivé qui connaît l'île toute l'année et aime le Maroc. Chaleureux, informé,
+jamais vendeur ni académique. Phrases courtes/moyennes, rythme varié, paragraphes de 1–3 phrases.
+**Montrer, pas déclarer** : au lieu de « the tajine is delicious », écrire « the lamb is tender
+enough to separate with a spoon, the sweetness of prunes balanced by toasted almonds ».
+
+**Ne jamais inventer** : prix, horaires, plats, ingrédients, récompenses, citations, faits
+historiques, ni fausse expérience à la première personne (« we tried… ») sauf visite réelle de
+l'équipe. En cas de doute → vérifier ou l'écrire au conditionnel.
+
+**Mots/tournures à bannir** (le linter du build les signale) : best ever, world-class, incredible,
+amazing, breathtaking, unforgettable, hidden gem, must-visit, bucket list, culinary journey,
+nestled in, vibrant/rich tapestry, foodies, paradise, game-changer, delve into, boasts, « whether
+you're… », « it's not just X, it's Y », « a testament to », « seamlessly blends ».
+
+**SEO par article** : 1 mot-clé principal + variations naturelles (pas de bourrage) · 1 intention
+de recherche claire · `seo_title` ~50–60 car. · `description` ~145–160 car. · H2/H3 utiles et
+naturels · **≥ 3 liens internes** (anchor text descriptif, jamais « click here ») · FAQ (5–8 vraies
+questions, réponses 40–100 mots) sur les guides/piliers. La ligne « année » (…for 2026) seulement
+sur les guides restaurants (fraîcheur), **pas** sur les articles culture (intemporels).
+
+**Transparence Dar Mansour** : toujours divulguer que le guide est publié par le restaurant. DM
+apparaît naturellement (Moroccan dining, Hin Kong, romantique, occasion, cocktails) mais **ne gagne
+jamais toutes les catégories** et n'est pas premier partout. Une seule CTA douce par article.
+
+**Pyramide de contenu** : ~10 % piliers (3 500–5 000 mots) · 40 % standard (1 200–2 000) ·
+30 % quick reads (600–900) · 20 % stories (800–1 800). Priorité SEO des 3 premiers mois : contenu
+Koh Phangan à forte intention de réservation (Best Restaurants, Romantic Dinner…) avant la culture.
+**La qualité prime sur la cadence.**
+
+**Structure standard** (garder seulement les sections utiles au sujet) : H1 → intro qui répond vite
+→ How We Selected (si classement) → Quick Picks → sections « Best of » (H2) → chaque lieu en H3
+(80–160 mots + Best for / What to order / Price / Location / Good to know) → Best by Experience →
+Best by Area → Practical Tips → Final Thoughts → FAQ. Le bloc **« About the Journal » et le sommaire
+« In this article » sont générés automatiquement** par `_journal.py` — ne pas les écrire à la main.
+
+**Champs front matter** (voir `_journal.py` / gabarits) : `title`, `seo_title`, `description`,
+`date`, `category` (`koh-phangan-guide` | `moroccan-culture` | `journal`), `cover`, `cover_alt`
+(décrire la photo, pas de bourrage de mots-clés), `quick_guide` (liste label/value), `faq` (liste
+question/answer), `about` (optionnel — sinon signature standard). Après édition :
+`cd site && python3 build/build.py` — corriger les ⚠ avertissements éditoriaux affichés.

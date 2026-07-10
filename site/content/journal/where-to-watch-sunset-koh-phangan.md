@@ -6,7 +6,7 @@ category: koh-phangan-guide
 cover: assets/uploads/3t5vr1ltvowz_tc3_bdwopto77ym5epsw0hyfxd9tiknj3wlrx3wtc_jrwtadg_4jeej1o0oew40rgxvxw2dpulxtnrly-pxwvd3m-oj7k-by7h9ikmvyqrkjyhmleciiikv8f2qdk2venxgxdrbtlqar4cq7r1ke4nuedled9e.jpg
 cover_alt: Sunset over Koh Phangan's west coast
 seo_title: Where to Watch the Sunset in Koh Phangan — Best Spots & Bars
-description: Discover Koh Phangan's best sunset spots, from Zen Beach and Hin Kong to Amsterdam Bar and Bluerama, with local tips for a slow evening on the island's beautiful west coast.
+description: Koh Phangan's best sunset spots — from Zen Beach and Hin Kong to Amsterdam Bar and Bluerama, with local tips for a slow evening on the west coast.
 quick_guide:
   - label: Best for
     value: Sunset lovers, couples & slow evenings
@@ -139,7 +139,7 @@ In Baan Tai, Tiki Beach is a very quiet stretch of sand just off the road. Sit o
 
 ## Sunset from Above
 
-Sometimes, the most breathtaking sunsets aren't found on the beach, but high above it. Several of Koh Phangan's most spectacular viewpoints overlook the entire west coast, offering sweeping panoramas across the Gulf of Thailand.
+Sometimes, the finest sunsets aren't found on the beach, but high above it. Several of Koh Phangan's most spectacular viewpoints overlook the entire west coast, offering sweeping panoramas across the Gulf of Thailand.
 
 Do keep in mind that some of the access roads are steep. If you're not comfortable riding a scooter uphill, it's perfectly fine to park lower down and walk the final section.
 

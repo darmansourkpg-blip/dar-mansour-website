@@ -86,27 +86,27 @@ collections:
       - label: "Contenu de l'article"
         name: "body"
         widget: "markdown"
-        hint: "Structure conseillée (playbook) : intro → sections H2 → clôture. Pense à ajouter 3 à 5 liens vers d'autres articles."
+        hint: "Structure conseillée (playbook) : intro → How We Selected (si classement) → sections H2 → Final thoughts. Montre par des détails concrets au lieu de dire « incroyable ». Ajoute au moins 3 liens internes. Ne jamais inventer prix, horaires, plats. Des gabarits complets sont dans ressources/journal-templates/."
         default: |
-          ## Introduction
+          Introduction — 120–200 mots. Réponds tout de suite à la question du lecteur et pose le contexte local. Évite « Koh Phangan is a beautiful tropical island… ».
 
-          Commence par 2–3 phrases qui plantent le décor et disent pourquoi le sujet compte pour le lecteur.
+          ## How We Selected
+
+          This guide is published by Dar Mansour, a Moroccan restaurant in Hin Kong. Our own restaurant is included where it genuinely fits the subject, but the wider selection is based on food quality, character, atmosphere, value and usefulness for the reader.
+
+          <!-- (Supprime cette section si l'article n'est pas un classement.) -->
 
           ## Première section
 
-          Développe ici. Ajoute un lien interne vers un autre article quand c'est naturel.
+          Développe ici. Montre ce qui rend le lieu ou le sujet intéressant, avec des détails concrets. Ajoute un lien interne quand c'est naturel.
 
           ## Deuxième section
 
           Développe ici.
 
-          ## Troisième section
+          ## Final Thoughts
 
-          Développe ici.
-
-          ## Final thoughts
-
-          Une clôture courte et chaleureuse — et une invitation naturelle si elle a sa place.
+          Une clôture courte et chaleureuse (100–200 mots) — une observation humaine et, si elle a sa place, une seule invitation discrète.
       - label: "FAQ (optionnel)"
         name: "faq"
         widget: "list"
@@ -117,3 +117,8 @@ collections:
         fields:
           - { label: "Question", name: "question", widget: "string" }
           - { label: "Réponse", name: "answer", widget: "text" }
+      - label: "Signature « About the Journal » (optionnel)"
+        name: "about"
+        widget: "text"
+        required: false
+        hint: "Laisse vide pour la signature standard ajoutée automatiquement en bas de l'article. Ne remplis que pour la personnaliser."
