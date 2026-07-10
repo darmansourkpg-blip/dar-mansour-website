@@ -649,6 +649,11 @@ body.lb-open { overflow: hidden; }
 .qguide dd { margin: 0; color: var(--ink-soft); }
 @media (max-width: 520px) { .qguide dl > div { grid-template-columns: 1fr; gap: .1rem; } }
 
+/* "About the Journal" editorial signature (closes every article) */
+.about-journal { background: var(--sand); border-radius: 4px; padding: 1.6rem 1.9rem; max-width: 760px; margin: 0 auto; }
+.about-journal__title { font-family: var(--sans); font-size: .72rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--green); margin: 0 0 .6rem; }
+.about-journal p:last-child { margin: 0; color: var(--ink-soft); font-size: .96rem; line-height: 1.7; }
+
 @media (max-width: 900px) { .jgrid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .jgrid { grid-template-columns: 1fr; } }
 

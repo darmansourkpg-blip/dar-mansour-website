@@ -38,6 +38,63 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CONTENT = os.path.join(HERE, "..", "content", "journal")
 DEFAULT_COVER = "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg"
 
+# Editorial signature appended to every article (playbook §19 "About the Journal").
+# An article may override it with an `about:` front-matter field.
+ABOUT_DEFAULT = (
+    "Written by the Dar Mansour team. Living between Koh Phangan and Morocco, "
+    "we share carefully researched island guides, cultural stories and culinary "
+    "traditions inspired by both worlds. Our articles are regularly reviewed to "
+    "keep recommendations useful and up to date.")
+
+# --- Editorial linter -------------------------------------------------------
+# Non-blocking warnings printed at build time, enforcing the Editorial Playbook
+# (style guide, SEO rules, internal-linking rules). Nothing here changes output;
+# it only flags articles that drift from the guidelines so they can be fixed.
+BANNED_PHRASES = [
+    "best ever", "world-class", "world class", "incredible", "amazing",
+    "breathtaking", "unforgettable", "hidden secret", "hidden gem", "must-do",
+    "must do", "must-visit", "must visit", "bucket list", "game-changer",
+    "game changer", "ultimate experience", "authentic experience",
+    "something for everyone", "nestled in", "culinary journey",
+    "tantalise your taste buds", "tantalize your taste buds", "vibrant tapestry",
+    "rich tapestry", "foodies", "paradise", "delve into", "boasts",
+    "offers a plethora", "a testament to", "seamlessly blend", "more than just",
+    "leaves a lasting impression", "in today's fast-paced world",
+]
+
+
+def lint_article(a, raw_body):
+    """Print gentle warnings when an article drifts from the Playbook. Never
+    raises — the build always succeeds; the author just sees what to improve."""
+    warn = lambda msg: print(f"  ⚠ [{a['slug']}] {msg}")
+    d = a["description"]
+    if not d:
+        warn("missing meta description (playbook: ~145–160 characters).")
+    elif len(d) < 120:
+        warn(f"meta description is short ({len(d)} chars) — aim for ~145–160.")
+    elif len(d) > 165:
+        warn(f"meta description is long ({len(d)} chars) — aim for ~145–160, it may be truncated by Google.")
+    if len(a["seo_title"]) > 62:
+        warn(f"SEO title is {len(a['seo_title'])} chars — aim for ~50–60.")
+    if not a["cover_alt"] or a["cover_alt"] == a["title"]:
+        warn("cover image has no descriptive alt text (avoid keyword stuffing; describe the photo).")
+    # Internal linking: playbook asks for at least 3 links to other Dar Mansour
+    # pages. Count both HTML (href="x.html") and Markdown ([text](x.html)) links.
+    body = raw_body or ""
+    internal = (re.findall(r'href="(?!https?:|#|mailto:|tel:)[^"]+\.html', body)
+                + re.findall(r'\]\((?!https?:|#|mailto:|tel:)[^)]+\.html', body))
+    if len(internal) < 3:
+        warn(f"only {len(internal)} internal link(s) in the body — playbook asks for at least 3.")
+    # FAQ is expected on guide/pillar articles (rough proxy: long body).
+    words = len(re.findall(r"\w+", raw_body or ""))
+    if words >= 1200 and not a["faq"]:
+        warn("long article with no FAQ — guide/pillar articles should include 5–8 real questions.")
+    # Banned / empty marketing vocabulary.
+    low = (raw_body or "").lower()
+    hits = sorted({p for p in BANNED_PHRASES if p in low})
+    if hits:
+        warn("avoid empty/AI marketing words — found: " + ", ".join(hits))
+
 # Editorial universes (the playbook's clusters). Each gets a hub page listing
 # its articles; articles link back to their hub for topical authority.
 CATEGORIES = {
@@ -172,9 +229,11 @@ def load_articles():
             "cover_fit": (meta.get("cover_fit") or "").strip(),
             "quick_guide": _parse_quick_guide(meta.get("quick_guide")),
             "faq": _parse_faq(meta.get("faq")),
+            "about": (meta.get("about") or ABOUT_DEFAULT).strip(),
             "body_html": _render_body(body),
             "url": f"journal-{slug}.html",
         })
+        lint_article(articles[-1], body)
     articles.sort(key=lambda a: a["date_iso"], reverse=True)
     return articles
 
@@ -245,6 +304,17 @@ def _faq_section(a):
 </div></section>'''
 
 
+def _about_section(a):
+    """Short editorial signature closing every article (playbook §19)."""
+    return f'''
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <aside class="about-journal">
+    <p class="about-journal__title">About the Dar Mansour Journal</p>
+    <p>{a["about"]}</p>
+  </aside>
+</div></section>'''
+
+
 def _related_cards(a, all_articles):
     """Prefer other articles in the same universe; top up with evergreen pages."""
     same = [x for x in all_articles if x["category"] == a["category"] and x["url"] != a["url"]][:3]
@@ -273,7 +343,7 @@ def render_article(a, all_articles):
 {_quick_guide(a)}
 {a["body_html"]}
 </div></section>
-''' + _faq_section(a) + L.cta_band("Taste the story around our table",
+''' + _faq_section(a) + _about_section(a) + L.cta_band("Taste the story around our table",
         "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(*_related_cards(a, all_articles))
     return L.page(a["seo_title"], a["description"], a["url"], body,
                   og_image=a["cover"], extra_head=_schema_head(a), body_class="journal")
