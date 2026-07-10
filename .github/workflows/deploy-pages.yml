@@ -34,7 +34,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install build dependencies
-        run: pip install markdown PyYAML
+        run: pip install markdown PyYAML Pillow
 
       # Regenerate the site from the Python generator + Journal markdown, so
       # articles published via the CMS (which only commit markdown) become

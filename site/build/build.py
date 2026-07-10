@@ -179,9 +179,10 @@ home_body = f'''
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
     "Reservations are highly recommended, with main dishes pre-ordered via WhatsApp — ideally 5 hours ahead of your booking. Tell us of any allergies or dietary needs — we'll do our best to adapt while staying true to our recipes.")
 
-HOME_SCHEMA = '''<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Dar Mansour — Morocco's Kitchen","servesCuisine":"Moroccan","priceRange":"$$$","url":"https://darmansour.com/","telephone":"+66822767757","email":"hello@darmansour.com","image":"https://darmansour.com/assets/img/moroccan-garden-dining-koh-phangan.jpg","address":{"@type":"PostalAddress","streetAddress":"Hin Kong Road, Sri Thanu area","addressLocality":"Koh Phangan","addressRegion":"Surat Thani","addressCountry":"TH"},"acceptsReservations":"True","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"22:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"8"}}
+RESTAURANT_SCHEMA = '''<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","@id":"https://darmansour.com/#restaurant","name":"Dar Mansour — Morocco's Kitchen","servesCuisine":"Moroccan","priceRange":"$$$","url":"https://darmansour.com/","telephone":"+66822767757","email":"hello@darmansour.com","image":"https://darmansour.com/assets/img/moroccan-garden-dining-koh-phangan.jpg","hasMenu":"https://darmansour.com/moroccan-menu-koh-phangan.html","sameAs":["https://instagram.com/darmansour.kohphangan","https://www.facebook.com/people/Dar-Mansour/","https://share.google/Rp8YllnPe9Z9E9Va0"],"address":{"@type":"PostalAddress","streetAddress":"Hin Kong Road, Sri Thanu area","addressLocality":"Koh Phangan","addressRegion":"Surat Thani","postalCode":"84280","addressCountry":"TH"},"geo":{"@type":"GeoCoordinates","latitude":9.753335,"longitude":99.968729},"acceptsReservations":"True","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"22:30"}]}
 </script>'''
+HOME_SCHEMA = RESTAURANT_SCHEMA
 
 pages["index.html"] = L.page(
     "Dar Mansour | Best Moroccan Restaurant in Koh Phangan — Slow Food &amp; Soulful Dining",
@@ -672,7 +673,7 @@ contact_body = L.breadcrumb(("Contact", None)) + L.subhero(
       <dl>
         <div><dt>Reservations &amp; Pre-order</dt><dd><a href="{WA}" target="_blank" rel="noopener"><strong>WhatsApp</strong> · +66 82 276 7757</a><span class="contact-note">For the fastest response and reservations.</span></dd></div>
         <div><dt>General Enquiries</dt><dd><a href="mailto:hello@darmansour.com">hello@darmansour.com</a><span class="contact-note">For partnerships, private events, media, and general enquiries.</span></dd></div>
-        <div><dt>Address</dt><dd><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road (Sri Thanu area)<br>Koh Phangan, Thailand</a></dd></div>
+        <div><dt>Address</dt><dd><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road (Sri Thanu area)<br>Koh Phangan 84280, Thailand</a></dd></div>
         <div><dt>Opening Hours</dt><dd>Tuesday to Saturday · 7:00 PM – 10:30 PM<br>Closed Sunday &amp; Monday</dd></div>
         <div><dt>Follow</dt><dd><a href="https://instagram.com/darmansour.kohphangan" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/people/Dar-Mansour/" target="_blank" rel="noopener">Facebook</a></dd></div>
       </dl>
@@ -689,7 +690,7 @@ pages["contact-dar-mansour-koh-phangan.html"] = L.page(
     "Contact Dar Mansour — Moroccan Slow Food in Koh Phangan",
     "Want to book a table at Dar Mansour? Contact us on WhatsApp, check our location in Koh Phangan and get directions to our Moroccan restaurant.",
     "contact-dar-mansour-koh-phangan.html", contact_body,
-    og_image="assets/img/moroccan-garden-lounge-night-koh-phangan.jpg")
+    og_image="assets/img/moroccan-garden-lounge-night-koh-phangan.jpg", extra_head=RESTAURANT_SCHEMA)
 
 
 # ============================================================ BLOG / JOURNAL
@@ -775,10 +776,47 @@ for _key, _cat, _arts in _journal.universe_hubs(ARTICLES):
     pages[_cat["url"]] = _journal.render_category(_cat, _arts)
 
 
+# ============================================================ IMAGE DIMENSIONS
+# Add intrinsic width/height to every <img> that lacks them, by reading the real
+# file size — reserves aspect ratio in the browser and avoids layout shift (CLS).
+import urllib.parse
+_dim_cache = {}
+def _img_size(src):
+    if src.startswith(("http", "data:")):
+        return None
+    key = src.split("?")[0]
+    if key in _dim_cache:
+        return _dim_cache[key]
+    dims = None
+    try:
+        from PIL import Image
+        path = os.path.join(OUT, urllib.parse.unquote(key).lstrip("/"))
+        with Image.open(path) as im:
+            dims = im.size
+    except Exception:
+        dims = None
+    _dim_cache[key] = dims
+    return dims
+
+_IMG_RE = re.compile(r"<img\b[^>]*>")
+def add_img_dims(html):
+    def repl(m):
+        tag = m.group(0)
+        if " width=" in tag or " height=" in tag:
+            return tag
+        ms = re.search(r'src="([^"]+)"', tag)
+        if not ms:
+            return tag
+        dims = _img_size(ms.group(1))
+        if not dims:
+            return tag
+        return tag.replace("<img", f'<img width="{dims[0]}" height="{dims[1]}"', 1)
+    return _IMG_RE.sub(repl, html)
+
 # ============================================================ WRITE
 for fname, html in pages.items():
     with open(os.path.join(OUT, fname), "w", encoding="utf-8") as f:
-        f.write(html)
+        f.write(add_img_dims(html))
     print("wrote", fname)
 
 # ---- robots.txt (+ sitemap.xml only once the site is open for indexing) ----

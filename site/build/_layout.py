@@ -3,7 +3,7 @@
 
 import hashlib
 import os
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 SITE_URL = "https://darmansour.com"
 
@@ -37,10 +37,15 @@ JS_V = _asset_v("js/main.js")
 def _webp(path):
     """Serve visible photos as WebP. og:image / schema keep their JPG paths
     (better handled by social scrapers) — those never pass through here."""
-    if path.startswith("assets/img/"):
-        base, ext = os.path.splitext(path)
-        if ext.lower() in (".jpg", ".jpeg", ".png"):
+    base, ext = os.path.splitext(path)
+    if ext.lower() in (".jpg", ".jpeg", ".png"):
+        if path.startswith("assets/img/"):
             return base + ".webp"
+        if path.startswith("assets/uploads/"):
+            # CMS uploads: only switch to WebP if a sibling actually exists
+            disk = os.path.join(os.path.dirname(_ASSETS), unquote(base) + ".webp")
+            if os.path.exists(disk):
+                return base + ".webp"
     return path
 
 WA_ICON = ('<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 '
@@ -165,7 +170,7 @@ def header():
       </div>
       <div>
         <span class="eyebrow">Find us</span>
-        <p>Hin Kong Road, Sri Thanu area<br>Koh Phangan, Thailand<br>Tue–Sat · 7:00–10:30 PM</p>
+        <p>Hin Kong Road, Sri Thanu area<br>Koh Phangan 84280, Thailand<br>Tue–Sat · 7:00–10:30 PM</p>
       </div>
       <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WA_ICON} Book via WhatsApp</a>
     </div>
@@ -283,7 +288,7 @@ def footer():
       <div>
         <h4>Visit &amp; Contact</h4>
         <address>
-          <p><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road, Sri Thanu area<br>Koh Phangan, Thailand</a></p>
+          <p><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road, Sri Thanu area<br>Koh Phangan 84280, Thailand</a></p>
           <p>Tue – Sat · 7:00–10:30 PM<br>Closed Sun &amp; Mon</p>
           <p><a href="{WA}" target="_blank" rel="noopener">WhatsApp · +66 82 276 7757</a></p>
           <p><a href="mailto:hello@darmansour.com">hello@darmansour.com</a></p>
