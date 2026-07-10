@@ -469,10 +469,13 @@ reviews_body = L.breadcrumb(("Reviews", None)) + L.subhero(
     "assets/img/maija-art-direction-koh-phangan.jpg", "Warm candlelit Moroccan interior at Dar Mansour") + f'''
 <section class="section"><div class="wrap">
   <div class="center reveal" style="margin-bottom:2.5rem;"><div class="rating"><span class="rating__stars">★★★★★</span><span>Google Reviews</span></div></div>
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin:2rem 0 1.5rem;color:#1a1a1a;">Featured Guest Reviews</h3>
   <div class="reviews__grid">
 {rev_cards}
   </div>
-  <div class="center reveal" style="margin-top:2.5rem;"><a class="btn btn--primary" href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">See more Google Reviews</a></div>
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin:3rem 0 1.5rem;color:#1a1a1a;">All Google Reviews</h3>
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-5bfc57f3-42b7-4a48-9677-31510ee6435e" data-elfsight-app-lazy style="margin:2rem 0;"></div>
 </div></section>
 ''' + L.cta_band("Come and write your own story", "Reserve your evening and discover the experience for yourself.") + L.related(
     ("Recognition", "In the Press", "best-moroccan-restaurant-world-press.html", "assets/img/dar-mansour-front-koh-phangan.jpeg", "Storefront"),
