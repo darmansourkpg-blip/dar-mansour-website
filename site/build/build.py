@@ -364,7 +364,7 @@ art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
     "The best way to feel our artistic direction is around a candlelit table. Reserve your evening at Dar Mansour.") + L.related(
     ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging artwork — the spirit of hospitality and cultural respect"),
-    ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior décor"))
+    ("Experience", "The Experience", "index.html", "assets/uploads/main%20room-%20ambiance-dar-mansour-%20Koh%20Phangan.webp", "The candlelit main room at Dar Mansour, Koh Phangan"))
 pages["moroccan-interior-art-koh-phangan.html"] = L.page(
     "Moroccan Art &amp; Interior Design in Koh Phangan — Dar Mansour",
     "Step inside Dar Mansour — a soulful space where Moroccan craftsmanship and bold artistic vision meet. A celebration of identity, heritage and creative expression.",
@@ -545,7 +545,7 @@ spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
     "Slow down, breathe, and savour the moment around a Moroccan table. Reserve your evening at Dar Mansour.") + L.related(
     ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Art", "Artistic Direction", "moroccan-interior-art-koh-phangan.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
-    ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"))
+    ("Experience", "The Experience", "index.html", "assets/uploads/amabiance-arty-dar%20mansour-koh%20phangan.webp", "Warm candlelit tables in the main room at Dar Mansour"))
 pages["moroccan-hospitality-values-koh-phangan.html"] = L.page(
     "Mansour Spirit — Moroccan Hospitality &amp; Thai Values in Koh Phangan",
     "Dar Mansour is a peaceful oasis where Moroccan hospitality meets Thai cultural respect. Discover our values of harmony, gratitude and barefoot freedom in Koh Phangan.",
