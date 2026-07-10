@@ -238,7 +238,7 @@ menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
     "Book now via WhatsApp to reserve your table and pre-order your soulful Moroccan dinner.") + L.related(
     ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/Preserved%20Lemons.jpg", "Jars of Moroccan preserved lemons"),
-    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Dining room"))
+    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Moroccan mosaic round table set for dinner"))
 pages["moroccan-menu-koh-phangan.html"] = L.page(
     "Moroccan Menu Koh Phangan — Tagines, Couscous &amp; Slow Food | Dar Mansour",
     "Explore Dar Mansour's menu in Koh Phangan: authentic Moroccan cuisine with tagines, couscous, tanjias and homemade bread. Cooked slow, served with soul.",
@@ -514,7 +514,7 @@ pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
 ''' + L.cta_band("Want to taste it all?", "Discover how these staples come alive across our slow-cooked menu.") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
     ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
-    ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Moroccan garden lounge"))
+    ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/uploads/Arty%20table-Dar-Mansour-%20Koh%20Phangan.webp", "Moroccan art books and candlelight on an arty table at Dar Mansour"))
 pages["moroccan-pantry-koh-phangan.html"] = L.page(
     "Moroccan Pantry &amp; Ingredients — Dar Mansour Koh Phangan",
     "Discover the stories behind Moroccan ingredients like charmoula, saffron and preserved lemon. A pantry of soul, taste and tradition.",
@@ -648,7 +648,7 @@ faq_body = L.breadcrumb(("FAQ", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Still have a question?", "Message us on WhatsApp — we usually respond within a few hours.") + L.related(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Dining room"),
+    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Candlelit table set for the evening at Dar Mansour"),
     ("Contact", "Find Us", "contact-dar-mansour-koh-phangan.html", "assets/img/dar-mansour-street-view-koh-phangan.jpeg", "Street view"))
 pages["faq.html"] = L.page(
     "FAQ — Best Moroccan Restaurant in Koh Phangan | Dar Mansour",
