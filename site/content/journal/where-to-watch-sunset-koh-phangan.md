@@ -27,6 +27,7 @@ faq:
     answer: Hin Kong Beach and Secret Beach are excellent choices if you're looking for a calmer atmosphere away from the larger crowds.
   - question: Where should I have dinner after sunset?
     answer: The west coast offers several dining options. To extend the slow rhythm of the evening, Dar Mansour in Hin Kong welcomes guests with traditional Moroccan slow dining inspired by generations of hospitality.
+about: ''
 ---
 
 ![Sunset over Hin Kong Beach on Koh Phangan's west coast, Thailand](assets/uploads/where-to-watch-the-sunset-in-koh-phangan9.jpg "Hin Kong Beach at Sunset")
@@ -238,5 +239,3 @@ Sometimes, the most memorable journeys begin after the sun has disappeared.
 Koh Phangan rewards those who slow down. Whether you choose the barefoot atmosphere of Zen Beach, the peaceful reflections of Hin Kong, the panoramic heights of Amsterdam Bar or the elegant setting of Bluerama, every sunset tells a slightly different story.
 
 Take your time. Stay a little longer. Watch the colours change one last time. Because on Koh Phangan, the day doesn't end when the sun touches the horizon — that's when the island becomes its most beautiful.
-
-<div class="authorbox"><span class="authorbox__mark"><img src="assets/logo/dar-mansour-icon.png" alt="Dar Mansour" width="46" height="49"></span><div><h3>About the Dar Mansour Journal</h3><p>Written by the Dar Mansour team. Living between Koh Phangan and Morocco, we share carefully curated travel guides, cultural stories and culinary traditions inspired by both worlds. Every recommendation is based on first-hand experience and regularly updated to help travellers discover the island — and Morocco — with curiosity and authenticity.</p></div></div>
