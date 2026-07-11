@@ -89,9 +89,11 @@ def lint_article(a, raw_body):
     words = len(re.findall(r"\w+", raw_body or ""))
     if words >= 1200 and not a["faq"]:
         warn("long article with no FAQ — guide/pillar articles should include 5–8 real questions.")
-    # Banned / empty marketing vocabulary.
+    # Banned / empty marketing vocabulary (whole-word/phrase match so words like
+    # "best everyday" don't trip the "best ever" rule).
     low = (raw_body or "").lower()
-    hits = sorted({p for p in BANNED_PHRASES if p in low})
+    hits = sorted({p for p in BANNED_PHRASES
+                   if re.search(r"\b" + re.escape(p) + r"\b", low)})
     if hits:
         warn("avoid empty/AI marketing words — found: " + ", ".join(hits))
 
