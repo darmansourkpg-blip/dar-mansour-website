@@ -4,7 +4,6 @@ date: 2026-07-04
 author: Dar Mansour
 category: moroccan-culture
 cover: /assets/uploads/Dada Maroc.jpg
-cover_fit: portrait
 cover_alt: A Dada carrying a couscoussier — a vintage portrait of the women who preserved Moroccan family cooking
 seo_title: "The Dadas: Keepers of Morocco's Family Recipes"
 description: Meet the Dadas, the women who preserved Morocco's family recipes across generations — and whose slow-cooked legacy lives on at Dar Mansour, Koh Phangan.
@@ -23,7 +22,9 @@ faq:
   - question: What makes Dada-style cooking unique?
     answer: Patience above all. Traditional dishes are never rushed. Tajines simmer gently for hours, couscous is steamed several times, and flavours develop naturally over time rather than through shortcuts.
   - question: How does Dar Mansour honour this tradition?
-    answer: 'Many of our recipes come directly from the Dadas who cooked for Maïja''s stepmother''s family in Morocco — passed down through generations rather than written in cookbooks. We honour them by cooking in the same spirit, guided by the values that defined their kitchens: patience, craftsmanship, generosity and genuine hospitality. Many of our signature dishes are prepared by pre-order so they can be given the time they truly deserve.'
+    answer: "Many of our recipes come directly from the Dadas who cooked for Maïja's stepmother's family in Morocco — passed down through generations rather than written in cookbooks. We honour them by cooking in the same spirit, guided by the values that defined their kitchens: patience, craftsmanship, generosity and genuine hospitality. Many of our signature dishes are prepared by pre-order so they can be given the time they truly deserve."
+about: ''
+cover_fit: portrait
 ---
 
 ## Who Were the Dadas?
@@ -107,7 +108,3 @@ The Dadas may rarely appear in history books, yet their influence lives on in al
 Their legacy reminds us that the greatest meals are rarely the most complicated. They are the ones prepared with patience, generosity and love.
 
 At Dar Mansour, every slow-cooked tajine and every carefully prepared tanjia is a small tribute to these remarkable women — and to our [slow-cooked philosophy](moroccan-slow-dining-koh-phangan.html), inspired by everything the Dadas taught us. To taste that lineage for yourself, [reserve your evening](moroccan-restaurant-reservation-koh-phangan.html) and let us slow-cook a story just for you.
-
-### About the Dar Mansour Journal
-
-Written by the Dar Mansour team. Living between Morocco and Koh Phangan, we share carefully curated stories, travel guides and culinary traditions inspired by both worlds. Every article is rooted in research, first-hand experience and a deep respect for Morocco's living heritage.
