@@ -164,9 +164,12 @@ def header():
     <div class="mega__groups">{groups}</div>
     <div class="mega__foot">
       <div>
-        <span class="eyebrow">Reservations</span>
+        <span class="eyebrow">Reservations &amp; Pre-order</span>
         <p><a href="{WA}" target="_blank" rel="noopener">WhatsApp · +66 82 276 7757</a><br>
-        <a href="mailto:hello@darmansour.com">hello@darmansour.com</a></p>
+        <span class="mega__note">For the fastest response and reservations.</span></p>
+        <span class="eyebrow" style="margin-top:1.4rem;display:inline-block;">General Enquiries</span>
+        <p><a href="mailto:hello@darmansour.com">hello@darmansour.com</a><br>
+        <span class="mega__note">Partnerships, private events, media &amp; general enquiries.</span></p>
       </div>
       <div>
         <span class="eyebrow">Find us</span>

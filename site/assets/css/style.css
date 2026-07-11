@@ -220,6 +220,7 @@ body.menu-open { overflow: hidden; }
 .mega__group a:hover { color: var(--green); padding-left: .4rem; }
 .mega__foot { display: grid; grid-template-columns: 1fr 1fr auto; gap: 1.5rem 2rem; align-items: center; border-top: 1px solid var(--line); padding-top: 2rem; }
 .mega__foot p { font-size: .92rem; color: var(--ink-soft); margin-top: .5rem; }
+.mega__note { display: inline-block; margin-top: .15rem; font-size: .8rem; color: var(--ink-soft); opacity: .8; }
 .mega__foot a { color: var(--ink-soft); }
 .mega__foot a:hover { color: var(--green); }
 /* staggered reveal of links */
@@ -307,11 +308,12 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 /* ---------- 13. Private dining ---------- */
 .pd { position: relative; color: #fff; overflow: hidden; }
 .pd__bg { position: absolute; inset: 0; z-index: -2; }
-.pd__bg img { width: 100%; height: 100%; object-fit: cover; }
+.pd__bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(1.3) contrast(1.04) saturate(1.06); }
 /* On phones the landscape main-room photo is cropped narrow — bias it to the
    right so the lanterns and gathered guests stay in view (home only) */
 @media (max-width: 720px) { .pd__bg img { object-position: right 55% !important; } }
-.pd::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(90deg, rgba(7,43,41,.9) 0%, rgba(7,43,41,.55) 60%, rgba(7,43,41,.35)); }
+.pd::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(90deg, rgba(7,43,41,.8) 0%, rgba(7,43,41,.42) 60%, rgba(7,43,41,.2)); }
+@media (max-width: 720px) { .pd::after { background: linear-gradient(180deg, rgba(7,43,41,.35) 0%, rgba(7,43,41,.55) 50%, rgba(7,43,41,.85) 100%); } }
 .pd .eyebrow { color: var(--green-tint-2); }
 .pd h2 { color: #fff; }
 .pd__tags { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.8rem 0; }
