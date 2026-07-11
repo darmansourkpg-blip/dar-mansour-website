@@ -26,9 +26,9 @@ home_body = f'''
     <img src="assets/uploads/entrance-%20dar%20mansour%20-%20koh%20phangan.webp" alt="The candlelit garden lounge and illuminated Dar Mansour sign in Koh Phangan" fetchpriority="high">
   </picture></div>
   <div class="wrap hero__inner">
-    <span class="eyebrow">Moroccan Slow Food · West Coast, Koh Phangan</span>
-    <h1 class="display hero__title"><span style="font-size:0.75em;">Moroccan Restaurant —</span><br>Morocco's Kitchen<br>in Koh Phangan</h1>
-    <p class="hero__sub">A hidden Moroccan gem near Sri Thanu &amp; Hin Kong. Fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners — rooted in tradition, slow cooked with care.</p>
+    <span class="eyebrow">Slow Food · West Coast, Koh Phangan</span>
+    <h1 class="display hero__title">Moroccan Restaurant<br>in Koh Phangan</h1>
+    <p class="hero__sub">A hidden gem near Sri Thanu &amp; Hin Kong — fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners, rooted in tradition and slow cooked with care.</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WI} Reserve Your Evening</a>
       <a class="btn btn--light" href="moroccan-menu-koh-phangan.html">Discover the Menu</a>
