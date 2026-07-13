@@ -210,13 +210,7 @@ A garden of papaya, banana, tamarind and fresh herbs surrounds this quiet open-a
 **Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong.
 [View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+restaurant+Koh+Phangan)
 
-<<<<<<< Updated upstream
-**Why we love it —** fish tacos and a michelada on a rooftop as the sun drops.
-**Good to know —** ฿฿ · rooftop busy at sunset · check current hours on Google.
-**Getting there —** see the map for directions. [View on map ↗](https://maps.app.goo.gl/r5yhB3SWaS7vQVqN7)
-=======
 #### Thai Element
->>>>>>> Stashed changes
 
 Some kitchens honour Thai tradition by preserving it; Thai Element does it by reinterpreting it. Classic flavours meet modern technique and a few international touches, in refined dishes that feel familiar and contemporary at once, with careful sourcing and elegant plating. On a first visit, order the Massaman Heang — beef slow-braised in a rich Massaman curry with potatoes and roasted spices, reduced until thick and deeply flavoured.
 
@@ -372,11 +366,7 @@ Burmese cuisine is one of Southeast Asia's quieter treasures. It blends influenc
 
 #### thanaka
 
-<<<<<<< Updated upstream
-**Hin Kong & Wok Tum (west coast)** — the quiet villages for a slow evening: L'Alcove on the bay for sunset, Dar Mansour for Moroccan slow dining, Mama KOP on the beach, Dear Phangan in its garden, and NENA for Southern Italian.
-=======
 Travelling isn't only about new places — sometimes it's new flavours. thanaka is an invitation into Myanmar's cooking, made with care by a welcoming family. The menu runs from Lahpet Thoke, the famous fermented tea-leaf salad, to bowls of Ohn No Khao Swe, fragrant claypot curries and well-balanced noodle dishes you won't easily find elsewhere on the island.
->>>>>>> Stashed changes
 
 **Why we love it —** A real taste of Myanmar, served with heartfelt family hospitality.
 **Best for —** Discovering Burmese cuisine · Casual dinner · Food lovers
