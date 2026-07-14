@@ -778,6 +778,9 @@ for _a in ARTICLES:
 for _key, _cat, _arts in _journal.universe_hubs(ARTICLES):
     pages[_cat["url"]] = _journal.render_category(_cat, _arts)
 
+# Journal author / editorial-team page (credibility + E-E-A-T).
+pages["journal-authors.html"] = _journal.render_authors()
+
 
 # ============================================================ IMAGE DIMENSIONS
 # Add intrinsic width/height to every <img> that lacks them, by reading the real
