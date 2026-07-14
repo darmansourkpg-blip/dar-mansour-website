@@ -46,6 +46,36 @@ ABOUT_DEFAULT = (
     "traditions inspired by both worlds. Our articles are regularly reviewed to "
     "keep recommendations useful and up to date.")
 
+# Author / editorial team page (credibility + SEO / E-E-A-T). Bios are drawn
+# from existing verified site copy — do not invent biographical detail.
+AUTHORS_URL = "journal-authors.html"
+AUTHORS = [
+    {
+        "name": "Maïja",
+        "role": "Co-Founder & Creative Director",
+        "photo": "assets/img/maija-art-direction-koh-phangan.jpg",
+        "photo_alt": "Maïja, co-founder and creative director of Dar Mansour, Koh Phangan",
+        "bio": ("A creative spirit who has spent more than 30 years immersed in "
+                "Moroccan culture, Maïja co-founded Dar Mansour and shapes its "
+                "world of food, design and hospitality. Through her interior and "
+                "creative studio, Eden & Beyond, she designed the restaurant's "
+                "spaces — and it is the wisdom of the Dadas, the women who carried "
+                "Morocco's family recipes across generations, that guides the "
+                "kitchen's slow-cooked philosophy."),
+    },
+    {
+        "name": "P'Jae",
+        "role": "Head of Kitchen",
+        "photo": "assets/img/moroccan-couscous-koh-phangan.jpg",
+        "photo_alt": "Slow-cooked Moroccan couscous from the Dar Mansour kitchen led by P'Jae",
+        "bio": ("Dar Mansour's local partner and Head of Kitchen, P'Jae brings "
+                "daily hands-on expertise to the restaurant, translating Moroccan "
+                "traditions into refined, slow-cooked dishes prepared with patience "
+                "and care — rooted in respect for sacred cooking and island "
+                "hospitality."),
+    },
+]
+
 # --- Editorial linter -------------------------------------------------------
 # Non-blocking warnings printed at build time, enforcing the Editorial Playbook
 # (style guide, SEO rules, internal-linking rules). Nothing here changes output;
@@ -313,6 +343,7 @@ def _about_section(a):
   <aside class="about-journal">
     <p class="about-journal__title">About the Dar Mansour Journal</p>
     <p>{a["about"]}</p>
+    <p style="margin-top:.6rem;"><a class="ilink" href="{AUTHORS_URL}">Meet the team behind the Journal — Maïja &amp; P'Jae {L.ARROW}</a></p>
   </aside>
 </div></section>'''
 
@@ -341,7 +372,7 @@ def render_article(a, all_articles):
         tall=(a.get("cover_fit") == "portrait"),
         variant=("portrait" if a.get("cover_fit") == "portrait" else None)) + f'''
 <section class="section"><div class="wrap prose reveal">
-  <p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time> · {a["author"]} · <a class="ilink" href="{cat["url"]}">{cat["label"]}</a></p>
+  <p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time> · <a class="ilink" href="{AUTHORS_URL}">{a["author"]}</a> · <a class="ilink" href="{cat["url"]}">{cat["label"]}</a></p>
 {_quick_guide(a)}
 {a["body_html"]}
 </div></section>
@@ -423,3 +454,53 @@ def render_category(cat, arts):
     return L.page(cat.get("seo_title") or cat["title"],
                   cat.get("seo_desc") or cat["intro"],
                   cat["url"], body, og_image=cat["hero"], body_class="journal")
+
+
+def _authors_schema():
+    site = L.SITE_URL
+    people = [{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": p["name"],
+        "jobTitle": p["role"],
+        "image": f'{site}/{p["photo"]}',
+        "description": p["bio"],
+        "url": f"{site}/{AUTHORS_URL}",
+        "worksFor": {"@type": "Organization", "name": "Dar Mansour — Morocco's Kitchen",
+                     "url": site + "/"},
+    } for p in AUTHORS]
+    return "\n".join('<script type="application/ld+json">' + json.dumps(p, ensure_ascii=False) + '</script>'
+                     for p in people)
+
+
+def render_authors():
+    """Editorial team / author page — credibility and E-E-A-T for the Journal."""
+    cards = "".join(f'''
+    <article class="author reveal">
+      <div class="author__img"><img src="{L._webp(p["photo"])}" alt="{p["photo_alt"]}" loading="lazy"></div>
+      <div class="author__body">
+        <h2 class="author__name">{p["name"]}</h2>
+        <p class="author__role">{p["role"]}</p>
+        <p>{p["bio"]}</p>
+      </div>
+    </article>''' for p in AUTHORS)
+    intro = ("The Dar Mansour Journal is written by the team behind the restaurant, living "
+             "between Koh Phangan and Morocco. Our island guides and cultural stories are "
+             "shaped by real local knowledge and a lifelong connection to Moroccan cooking, "
+             "and reviewed regularly to stay useful and accurate.")
+    body = L.breadcrumb(("Journal", "blog.html"), ("Authors", None)) + L.subhero(
+        "The Dar Mansour Journal", "The team behind the Journal", intro,
+        "assets/img/maija-art-direction-koh-phangan.jpg",
+        "Maïja's art direction and Moroccan décor at Dar Mansour, Koh Phangan") + f'''
+<section class="section"><div class="wrap authors">{cards}</div></section>
+''' + L.cta_band(
+        "Taste the story around our table",
+        "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
+        ("Journal", "All Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+        ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, founders of Dar Mansour"),
+        ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"))
+    return L.page(
+        "The Dar Mansour Journal — Meet the Team (Maïja &amp; P'Jae)",
+        "Meet the team behind the Dar Mansour Journal: Maïja, co-founder and creative director, and P'Jae, head of kitchen — the people behind our Koh Phangan and Moroccan guides.",
+        AUTHORS_URL, body, og_image="assets/img/maija-art-direction-koh-phangan.jpg",
+        extra_head=_authors_schema(), body_class="journal")
