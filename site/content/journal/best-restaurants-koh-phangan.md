@@ -655,15 +655,15 @@ Every part of Koh Phangan has its own atmosphere — and its own food scene. Sta
 
 **Baan Tai.** South of Thong Sala, known for beachfront cafés, relaxed brunch spots and an easy-going feel.<br>*Don't miss:* Fisherman's Restaurant & Bar · SAGE Breakfast & More · Seasalt & Sage · Ban Tai Night Market · Chacha Coffee.
 
-**Ban Kai.** A quieter stretch of coast with several restaurants making the most of elevated settings and sweeping sea views.<br>*Don't miss:* Art of Nature Restaurant (Adults Only).
+**Ban Kai.** A quieter stretch of coast with several restaurants making the most of elevated settings and sweeping sea views.<br>*Don't miss:* Art of Nature Restaurant (Adults Only) · Sun Sky View · Thongyang Sea View.
 
-**Chaloklum.** A traditional fishing village on the north coast, and one of the island's most authentic places to eat, with fresh seafood and a weekly Sunday market.<br>*Don't miss:* Mojo's (Chaloklum) · Chaloklum Sunday Night Market.
+**Chaloklum.** A traditional fishing village on the north coast, and one of the island's most authentic places to eat, with fresh seafood and a weekly Sunday market.<br>*Don't miss:* Mojo's (Chaloklum) · Chaloklum Sunday Night Market · Caffe Della Moca · Phorn Restaurant With Seaview · Culture Club.
 
-**Haad Yao & Haad Salad.** Turquoise water, beautiful beaches and a relaxed mix of destination restaurants, beach bars and wide sea views.<br>*Don't miss:* Carte Blanche · Salaad View Restaurant.
+**Haad Yao & Haad Salad.** Turquoise water, beautiful beaches and a relaxed mix of destination restaurants, beach bars and wide sea views.<br>*Don't miss:* Carte Blanche · Salaad View Restaurant · Amara Restaurant & Bar · The Memory Restaurant · Secret Beach: Lost 'N Found Beach Bar.
 
-**Haad Rin.** Best known for the Full Moon Party, but with a surprisingly varied food scene beyond the nightlife.<br>*Don't miss:* Vertigo Resto Bar · El Barrio Koh Phangan.
+**Haad Rin.** Best known for the Full Moon Party, but with a surprisingly varied food scene beyond the nightlife.<br>*Don't miss:* Vertigo Resto Bar · He Eat · M. Thai Food Restaurant · Chilli Milli Bar & Burger Lounge · Explorar Koh Phangan (Adults Only Resort).
 
-**Thong Nai Pan (east coast).** A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites.<br>*Don't miss:* Yukinoya (Anantara Rasananda).
+**Thong Nai Pan (east coast).** A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites.<br>*Don't miss:* Yukinoya (Anantara Rasananda) · Luna Restaurant · Krua Thai Restaurant · Coco Loco Ice Cream Bar & Restaurant · Siam Beach Bar and Restaurant · 2C Bar.
 
 **Madua Wan.** Hidden in the island's lush interior, home to a few destination restaurants that reward venturing away from the coast.<br>*Don't miss:* BUSTAN · Swiss Farmacy.
 
