@@ -116,7 +116,7 @@ So instead of asking "what's the best restaurant in Koh Phangan?", it's more use
 
 **For families & groups.** El Barrio Koh Phangan is perfect for sharing tacos and bright Mexican flavours, while The Lakehouse offers a varied menu and lively atmosphere for larger groups. If everyone wants something different, Phantip Night Market in Thong Sala is an easy call, with dozens of street-food vendors under one roof. For a warm sit-down dinner built around sharing, Dar Mansour brings people together over generous tajines, couscous and colourful Moroccan dishes.
 
-## Best Restaurants by Experience
+## Best Restaurants in Koh Phangan by Experience
 
 Not every great restaurant offers the same experience. If you're after one standout recommendation for a particular kind of evening, these are our top picks.
 
@@ -135,7 +135,7 @@ Not every great restaurant offers the same experience. If you're after one stand
 - **Best local favourite** — No Name Kitchen Phangan
 - **Best for something different** — SnooZe Sinful Dining
 
-## Best Restaurants by Cuisine
+## Best Restaurants in Koh Phangan by Cuisine
 
 No single restaurant can represent Koh Phangan — and that's part of the island's charm. One evening might call for grilled seafood with your feet almost in the sand. Another deserves handmade pasta, a bottle of wine and a table that slowly fills with empty plates. Rather than an artificial ranking, we've organised our favourites by cuisine, so it's easier to find what you're craving.
 
@@ -490,7 +490,7 @@ Some places are worth the trip for the food, others for the view — Salaad View
 **Getting there —** On the hillside above Haad Salad Beach, overlooking Haad Salad Bay on the northwest coast.
 [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salaad+View+Restaurant+Haad+Salad+Koh+Phangan)
 
-## Coffee Shops, Breakfast & Brunch
+## Coffee Shops, Breakfast & Brunch in Koh Phangan
 
 A great day on Koh Phangan often starts with excellent coffee and a leisurely breakfast. From artisan bakeries and specialty roasters to healthy brunch cafés by the sea, the island has become one of southern Thailand's best places for slow mornings. After a perfectly brewed coffee, fluffy pancakes or a full brunch, these are the places worth waking up for.
 
@@ -544,7 +544,7 @@ Some breakfasts deserve a sea view. Seasalt & Sage pairs fresh, wholesome food w
 **Getting there —** On the Ban Tai beachfront, a few minutes south of Thong Sala.
 [View on map ↗](https://www.google.com/maps/search/?api=1&query=Seasalt+Sage+Ban+Tai+Koh+Phangan)
 
-## Best Burgers
+## Best Burgers in Koh Phangan
 
 Sometimes only a proper burger will do. From slow-smoked barbecue to a classic cheeseburger, Koh Phangan has a couple of spots that consistently turn out some of the island's best comfort food.
 
@@ -568,7 +568,7 @@ The best burgers don't need a fancy dining room — just good ingredients. Tucke
 **Getting there —** Inside Mama Market Food Court, Sri Thanu.
 [View on map ↗](https://maps.app.goo.gl/AcMPZ9v8kLAjJc6i8)
 
-## Healthy, Vegetarian & Vegan
+## Healthy, Vegetarian & Vegan Restaurants in Koh Phangan
 
 Koh Phangan is one of Thailand's leading wellness destinations, drawing yogis, digital nomads and health-conscious travellers from around the world. Naturally, the island has an outstanding selection of cafés and restaurants built around fresh ingredients and plant-based cooking. Vegan, vegetarian or simply after wholesome food, these are the places we recommend most.
 
@@ -602,7 +602,7 @@ Tucked into the greenery of Madua Wan, Swiss Farmacy is the kind of place that q
 **Getting there —** In Madua Wan, surrounded by jungle in the heart of the island.
 [View on map ↗](https://www.google.com/maps/search/?api=1&query=Swiss+Farmacy+Madua+Wan+Koh+Phangan)
 
-## Night Markets & Food Courts
+## Night Markets & Food Courts in Koh Phangan
 
 Some of the island's best meals aren't found in restaurants at all. Every evening, markets and food courts come alive with local families, independent vendors and travelling chefs serving everything from Thai street food to international specialities. Affordable, lively and full of character, they're an essential part of the island's food culture.
 
@@ -654,7 +654,7 @@ Every Sunday, the fishing village of Chaloklum becomes one of the island's most 
 **Getting there —** In Chaloklum village, on the north coast.
 [View on map ↗](https://www.google.com/maps/search/?api=1&query=Chaloklum+Sunday+Night+Market+Koh+Phangan)
 
-## Cocktail & Sunset Bars
+## Cocktail & Sunset Bars in Koh Phangan
 
 Sunset is a ritual on Koh Phangan. As the afternoon light softens, people drift towards the west coast, where beachfront bars, rooftop terraces and quiet lounges offer front-row seats to one of Thailand's finest daily spectacles. After expertly crafted cocktails, chilled music or simply the best seat for the sunset, these are the bars we return to.
 
@@ -693,11 +693,11 @@ Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Be
 
 Every part of Koh Phangan has its own atmosphere — and its own food scene. Staying on the west coast, exploring the fishing villages or relaxing on a quieter beach, these are the restaurants, cafés and bars worth seeking out in each area.
 
-**Hin Kong.** Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening. *Don't miss:* Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Dar Mansour – Morocco's Kitchen.
+**Hin Kong.** Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening. *Don't miss:* Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.
 
 **Wok Tum / Nai Wok.** Just south of Hin Kong, peaceful coastal scenery with some of the island's most creative kitchens and wide sunset views. *Don't miss:* NENA Locanda Italiana · Bluerama · Il Toscano · Dear Phangan · thanaka.
 
-**Sri Thanu.** The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner. *Don't miss:* Restaurant Sunshine · Sonolito Thai Food · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.
+**Sri Thanu.** The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner. *Don't miss:* Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.
 
 **Thong Sala.** The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food. *Don't miss:* DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.
 
@@ -715,7 +715,7 @@ Every part of Koh Phangan has its own atmosphere — and its own food scene. Sta
 
 **Madua Wan.** Hidden in the island's lush interior, home to a few destination restaurants that reward venturing away from the coast. *Don't miss:* BUSTAN · Swiss Farmacy.
 
-## Where to Eat for Every Occasion
+## Where to Eat in Koh Phangan for Every Occasion
 
 Planning a romantic dinner, celebrating something special or just after the perfect post-yoga brunch — here are our favourite picks by occasion.
 
