@@ -151,7 +151,7 @@ A family-run kitchen a few steps from Hin Kong Beach, and something of a west co
 **Best for —** Authentic Thai food · Beachfront lunch · Sunset dinner<br>
 **Price —** ฿<br>
 **Good to know —** There are two similarly named places in Hin Kong. This is Mama KOP, the beachfront one — not MamaKOP Restaurant, set further inland.<br>
-**Getting there —** Directly on Hin Kong Beach, a short stroll south of L'Alcove. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+KOP+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, a short stroll south of L'Alcove. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+KOP+19+Hin+Kong+Road%2C+Ko+Pha-ngan+84280)
 
 #### Restaurant Sunshine
 
@@ -160,7 +160,7 @@ One of the few places on the island where authentic Thai cooking and healthy eat
 **Why we love it —** Thai cooking, southern specialities and healthy dishes in one relaxed spot.<br>
 **Best for —** Breakfast · Lunch · Casual Thai dinner<br>
 **Price —** ฿<br>
-**Getting there —** On the main road between Thong Sala and Chaloklum, a few metres past Pum Pui Restaurant on the same side. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Restaurant+Sunshine+Sri+Thanu+Koh+Phangan)
+**Getting there —** On the main road between Thong Sala and Chaloklum, a few metres past Pum Pui Restaurant on the same side. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Restaurant+Sunshine+52%2F23+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### No Name Kitchen Phangan
 
@@ -178,7 +178,7 @@ A small family-run place of the kind travellers always hope to stumble on. The k
 **Why we love it —** Home-style Thai food served with real family hospitality.<br>
 **Best for —** Local experience · Everyday Thai food · Budget-friendly meals<br>
 **Price —** ฿<br>
-**Getting there —** On the main road between Hin Kong and Sri Thanu, a little north of Indigo Specialty Coffee & Bakery. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Sonolito+Thai+Food+Koh+Phangan)
+**Getting there —** On the main road between Hin Kong and Sri Thanu, a little north of Indigo Specialty Coffee & Bakery. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Sonolito+Thai+Food+14%2F2+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 ### Contemporary Thai & Chef-Led Dining
 
@@ -202,7 +202,7 @@ A garden of papaya, banana, tamarind and fresh herbs surrounds this quiet open-a
 **Best for —** Food lovers · Special occasions · Contemporary Thai cuisine<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Reservations are essential. The chef prepares only the number of covers booked, and the blind menu follows the freshest ingredients of the day.<br>
-**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+restaurant+Koh+Phangan)
+**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+13%2F9+Moo+4%2C+Wok+Tum%2C+Ko+Pha-ngan+84280)
 
 #### Thai Element
 
@@ -224,7 +224,7 @@ An institution, simply because it has done the right thing for years. Beside the
 **Why we love it —** One of the island's landmark seafood restaurants, in a timeless waterfront setting.<br>
 **Best for —** Fresh seafood · Sunset dinner · Family meals<br>
 **Price —** ฿฿฿<br>
-**Getting there —** Beside the small pier in Baan Tai, on the south coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Fisherman%27s+Restaurant+Bar+Baan+Tai+Koh+Phangan)
+**Getting there —** Beside the small pier in Baan Tai, on the south coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Fisherman%27s+Restaurant+%26+Bar+30%2F6+Moo+1%2C+Ban+Tai+Pier%2C+Ko+Pha-ngan+84280)
 
 #### Salt. Seafood Restaurant & Bar
 
@@ -233,7 +233,7 @@ Seafood doesn't have to be traditional. Salt. takes a contemporary line — the 
 **Why we love it —** Contemporary seafood and creative cocktails on the Thong Sala waterfront.<br>
 **Best for —** Seafood lovers · Date nights · Cocktails by the sea<br>
 **Price —** ฿฿฿<br>
-**Getting there —** On the Thong Sala waterfront, a short walk from the ferry pier and Raja Ferry terminal. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salt+Seafood+Restaurant+Thong+Sala+Koh+Phangan)
+**Getting there —** On the Thong Sala waterfront, a short walk from the ferry pier and Raja Ferry terminal. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salt.+Seafood+Restaurant+%26+Bar+26+Moo+9%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
 
 #### La Ceviche's – Ceviche Bar
 
@@ -242,7 +242,7 @@ There aren't many places where your seafood travels only a few metres to the pla
 **Why we love it —** A market-to-table experience unlike anywhere else on the island.<br>
 **Best for —** Lunch · Seafood lovers · Food explorers<br>
 **Price —** ฿฿<br>
-**Getting there —** Inside Thong Sala Fresh Market. [View on map ↗](https://www.google.com/maps/search/?api=1&query=La+Ceviche%27s+Ceviche+Bar+Thong+Sala+Koh+Phangan)
+**Getting there —** Inside Thong Sala Fresh Market. [View on map ↗](https://www.google.com/maps/search/?api=1&query=La+Ceviche%27s+%E2%80%93+Ceviche+Bar+Thong+Sala+Fresh+Market%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
 
 #### Happiness Restaurant (ทะเลถัง)
 
@@ -265,7 +265,7 @@ Some Italian restaurants just make you feel at home. Run by Mimmo and his partne
 **Why we love it —** Homemade pasta and a genuine Southern Italian welcome.<br>
 **Best for —** Couples · Families · Wine lovers<br>
 **Price —** ฿฿<br>
-**Getting there —** In Wok Tum, a few minutes south of Hin Kong on the coastal road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=NENA+Locanda+Italiana+Koh+Phangan)
+**Getting there —** In Wok Tum, a few minutes south of Hin Kong on the coastal road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=NENA+Locanda+Italiana+38%2F5+Moo+4%2C+Wok+Tum+Road%2C+Ko+Pha-ngan+84280)
 
 #### Vertigo Resto Bar
 
@@ -297,7 +297,7 @@ Some chefs follow recipes; Dodo, the French owner here, follows inspiration. Thi
 **Best for —** Food lovers · Date nights · Creative cuisine<br>
 **Price —** ฿฿฿<br>
 **Good to know —** The menu changes often with the season and the chef's mood — check the blackboard for the day's dishes.<br>
-**Getting there —** In Haad Yao, a few minutes from Haad Yao Beach. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Carte+Blanche+Haad+Yao+Koh+Phangan)
+**Getting there —** In Haad Yao, a few minutes from Haad Yao Beach. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Carte+Blanche+57%2F7+Moo+8%2C+Haad+Yao%2C+Ko+Pha-ngan+84280)
 
 #### L'Alcove
 
@@ -307,7 +307,7 @@ Run by Karine and Mélanie, L'Alcove has become a west coast fixture — tables 
 **Best for —** Sunset dinner · Romantic evenings · Wine lovers<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Arrive before sunset to get a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
-**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+15+Hin+Kong+Beach%2C+Ko+Pha-ngan+84280)
 
 ### Japanese
 
@@ -321,7 +321,7 @@ Koh Phangan's only teppanyaki restaurant, inside the Anantara Rasananda resort o
 **Best for —** Special occasions · Teppanyaki · Japanese fine dining<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Reservations recommended, especially for the teppanyaki counter.<br>
-**Getting there —** Within Anantara Rasananda Koh Phangan Villas, Thong Nai Pan, on the east coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Yukinoya+Anantara+Rasananda+Koh+Phangan)
+**Getting there —** Within Anantara Rasananda Koh Phangan Villas, Thong Nai Pan, on the east coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Yukinoya+at+Anantara+Rasananda+Anantara+Rasananda%2C+5%2F5+Moo+5%2C+Thong+Nai+Pan+Noi%2C+Ko+Pha-ngan+84280)
 
 #### WASABI
 
@@ -352,7 +352,7 @@ Travelling isn't only about new places — sometimes it's new flavours. thanaka 
 **Why we love it —** A real taste of Myanmar, served with heartfelt family hospitality.<br>
 **Best for —** Discovering Burmese cuisine · Casual dinner · Food lovers<br>
 **Price —** ฿<br>
-**Getting there —** In Thong Sala, close to the town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=thanaka+Burmese+restaurant+Thong+Sala+Koh+Phangan)
+**Getting there —** In Thong Sala, close to the town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=thanaka+134%2F47%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
 
 ### Moroccan
 
@@ -415,7 +415,7 @@ Comfort food means something different in every country. Here it's generous Ukra
 **Why we love it —** A rare taste of Eastern Europe, plus one of Thong Sala's most inviting cocktail lounges.<br>
 **Best for —** Comfort food · Relaxed dinners · Cocktails<br>
 **Price —** ฿฿<br>
-**Getting there —** In Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=BASIL+Restaurant+Be+High+Lounge+Thong+Sala+Koh+Phangan)
+**Getting there —** In Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=BASIL+Restaurant+%26+Be+High+Lounge+2%2F53%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
 
 ### Modern International
 
@@ -428,7 +428,7 @@ Good pubs are about more than food — they bring people together. Inspired by t
 **Why we love it —** Bold open-flame cooking and one of Sri Thanu's most social tables.<br>
 **Best for —** Groups · Live music · Cocktails & dinner<br>
 **Price —** ฿฿<br>
-**Getting there —** Beside the lake in Sri Thanu, just off the main road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=The+Lakehouse+Restaurant+Pub+Sri+Thanu+Koh+Phangan)
+**Getting there —** Beside the lake in Sri Thanu, just off the main road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=The+Lakehouse+%7C+Restaurant+%26+Pub+84%2F32%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### SnooZe Sinful Dining
 
@@ -437,7 +437,7 @@ Set aside what you expect from a restaurant. SnooZe cooks with curiosity and a b
 **Why we love it —** Inventive cooking that's creative, approachable and genuinely satisfying.<br>
 **Best for —** Food lovers · Date nights · Something different<br>
 **Price —** ฿฿฿<br>
-**Getting there —** In Sri Thanu, on the west coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SnooZe+Sinful+Dining+Koh+Phangan)
+**Getting there —** In Sri Thanu, on the west coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SnooZe+Sinful+Dining+99%2F121%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
 
 ### Restaurants with a View
 
@@ -450,7 +450,7 @@ Set high above Ban Kai within the adults-only Art of Nature Resort, this open-ai
 **Why we love it —** A hilltop setting where fresh cooking meets a wide-open sunset over the Gulf.<br>
 **Best for —** Sunset dining · Romantic dinners · Adults-only escape<br>
 **Price —** ฿฿฿<br>
-**Getting there —** Within Art of Nature Resort, on the Ban Kai hillside overlooking the Gulf of Thailand. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Art+of+Nature+Resort+restaurant+Ban+Kai+Koh+Phangan)
+**Getting there —** Within Art of Nature Resort, on the Ban Kai hillside overlooking the Gulf of Thailand. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Art+of+Nature+Restaurant+%28Adults+Only%29+32%2F9+Moo+4%2C+Ban+Kai%2C+Ko+Pha-ngan+84280)
 
 #### Salaad View Restaurant
 
@@ -472,7 +472,7 @@ The kind of café that becomes routine after one visit. Indigo has built its nam
 **Why we love it —** Specialty coffee and one of the island's best artisan bakeries.<br>
 **Best for —** Specialty coffee · Breakfast · Fresh pastries<br>
 **Price —** ฿฿<br>
-**Getting there —** On the main road between Hin Kong and Sri Thanu, just north of Sonolito Thai Food. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Indigo+Specialty+Coffee+Bakery+Koh+Phangan)
+**Getting there —** On the main road between Hin Kong and Sri Thanu, just north of Sonolito Thai Food. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Indigo+Specialty+Coffee+%26+Bakery+7%2F24+Moo+6%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### SAGE Breakfast & More
 
@@ -481,7 +481,7 @@ Long breakfasts are close to a way of life here, and SAGE leans right into them.
 **Why we love it —** One of the island's best all-day breakfasts, with good coffee and a sea view.<br>
 **Best for —** Breakfast · Brunch · Specialty coffee · Sea views<br>
 **Price —** ฿฿<br>
-**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SAGE+Breakfast+More+Ban+Tai+Koh+Phangan)
+**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SAGE+Breakfast+%26+More+128+Moo+1%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
 
 #### Foxxy's Restaurant & Café
 
@@ -490,7 +490,7 @@ One of Sri Thanu's most dependable all-day cafés, good for a slow breakfast, a 
 **Why we love it —** Good coffee, generous brunches and one of Sri Thanu's warmest cafés.<br>
 **Best for —** Breakfast · Brunch · Digital nomads<br>
 **Price —** ฿฿<br>
-**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga studios and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+Cafe+Sri+Thanu+Koh+Phangan)
+**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga studios and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+%26+Caf%C3%A9+17%2F11+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### Chacha Coffee
 
@@ -508,7 +508,7 @@ Some breakfasts deserve a sea view. Seasalt & Sage pairs fresh, wholesome food w
 **Why we love it —** Relaxed beachfront brunches, good coffee and fresh, healthy dishes.<br>
 **Best for —** Beachfront breakfast · Brunch · Healthy food<br>
 **Price —** ฿฿<br>
-**Getting there —** On the Ban Tai beachfront, a few minutes south of Thong Sala. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Seasalt+Sage+Ban+Tai+Koh+Phangan)
+**Getting there —** On the Ban Tai beachfront, a few minutes south of Thong Sala. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Seasalt+%26+Sage+11+Moo+2%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
 
 ## Best Burgers in Koh Phangan
 
@@ -543,7 +543,7 @@ Plant-based cooking with real imagination. Pure Vegan Heaven reworks Thai food t
 **Why we love it —** Creative vegan food that's nourishing and full of flavour.<br>
 **Best for —** Vegan dining · Healthy lunch · Smoothie bowls<br>
 **Price —** ฿฿<br>
-**Getting there —** In Thong Sala, a few minutes from the town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Pure+Vegan+Heaven+Thong+Sala+Koh+Phangan)
+**Getting there —** In Thong Sala, a few minutes from the town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Pure+Vegan+Heaven+Thongsala+42%2F5+Moo+4%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
 
 #### Deli Devi
 
@@ -552,7 +552,7 @@ Part deli, part artisan café, and unlike anywhere else on the island. Deli Devi
 **Why we love it —** Artisan plant-based products made with genuine attention to detail.<br>
 **Best for —** Healthy treats · Vegan cheeses · Coffee & cake<br>
 **Price —** ฿฿<br>
-**Getting there —** In Sri Thanu, at the heart of the island's wellness community. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Deli+Devi+Sri+Thanu+Koh+Phangan)
+**Getting there —** In Sri Thanu, at the heart of the island's wellness community. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Deli+Devi+45+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### Swiss Farmacy
 
@@ -561,7 +561,7 @@ Tucked into the greenery of Madua Wan, Swiss Farmacy is the kind of place that q
 **Why we love it —** Wholesome homemade food in one of the island's most peaceful settings.<br>
 **Best for —** Healthy lunch · Homemade food · Families<br>
 **Price —** ฿฿<br>
-**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Swiss+Farmacy+Madua+Wan+Koh+Phangan)
+**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://www.google.com/maps/search/?api=1&query=9.7348011,100.0081449)
 
 ## Night Markets & Food Courts in Koh Phangan
 
