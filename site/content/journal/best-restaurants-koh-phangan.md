@@ -147,42 +147,38 @@ At the heart of Thai cuisine lies one idea: balance. Sweet meets spicy, fresh he
 
 A family-run kitchen a few steps from Hin Kong Beach, and something of a west coast fixture. Fresh seafood, fragrant curries and classic stir-fries are cooked simply and well, with local ingredients and recipes that taste properly homemade. Come late afternoon and you can watch the bay change colour before dinner.
 
-**Why we love it —** Home-style Thai cooking on one of Hin Kong's most relaxed stretches of beach.
-**Best for —** Authentic Thai food · Beachfront lunch · Sunset dinner
-**Price —** ฿
-**Good to know —** There are two similarly named places in Hin Kong. This is Mama KOP, the beachfront one — not MamaKOP Restaurant, set further inland.
-**Getting there —** Directly on Hin Kong Beach, a short stroll south of L'Alcove.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+KOP+Hin+Kong+Koh+Phangan)
+**Why we love it —** Home-style Thai cooking on one of Hin Kong's most relaxed stretches of beach.<br>
+**Best for —** Authentic Thai food · Beachfront lunch · Sunset dinner<br>
+**Price —** ฿<br>
+**Good to know —** There are two similarly named places in Hin Kong. This is Mama KOP, the beachfront one — not MamaKOP Restaurant, set further inland.<br>
+**Getting there —** Directly on Hin Kong Beach, a short stroll south of L'Alcove. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+KOP+Hin+Kong+Koh+Phangan)
 
 #### Restaurant Sunshine
 
 One of the few places on the island where authentic Thai cooking and healthy eating sit side by side. Alongside fragrant curries and stir-fries, the kitchen does excellent southern Thai specialities, with their bold, aromatic flavours. Smoothie bowls, fresh juices and generous vegetarian dishes round out a menu that fits the relaxed, wellness-minded spirit of Sri Thanu.
 
-**Why we love it —** Thai cooking, southern specialities and healthy dishes in one relaxed spot.
-**Best for —** Breakfast · Lunch · Casual Thai dinner
-**Price —** ฿
-**Getting there —** On the main road between Thong Sala and Chaloklum, a few metres past Pum Pui Restaurant on the same side.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Restaurant+Sunshine+Sri+Thanu+Koh+Phangan)
+**Why we love it —** Thai cooking, southern specialities and healthy dishes in one relaxed spot.<br>
+**Best for —** Breakfast · Lunch · Casual Thai dinner<br>
+**Price —** ฿<br>
+**Getting there —** On the main road between Thong Sala and Chaloklum, a few metres past Pum Pui Restaurant on the same side. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Restaurant+Sunshine+Sri+Thanu+Koh+Phangan)
 
 #### No Name Kitchen Phangan
 
 Some of the island's best Thai food hides in places you'd walk past without noticing. This small, owner-run kitchen in Thong Sala has built a loyal following on honest cooking rather than marketing. The menu sticks to Thai favourites — crispy spring rolls, a good Pad Thai, tender Thai chicken — finished with excellent mango sticky rice and homemade fruit smoothies.
 
-**Why we love it —** Honest home-style Thai cooking served with real warmth.
-**Best for —** Authentic Thai food · Casual lunch · Local favourite
-**Price —** ฿
-**Getting there —** On the main road between Thong Sala and Baan Tai, just past Phangan Food Court coming from Thong Sala.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=No+Name+Kitchen+Phangan+Koh+Phangan)
+**Why we love it —** Honest home-style Thai cooking served with real warmth.<br>
+**Best for —** Authentic Thai food · Casual lunch · Local favourite<br>
+**Price —** ฿<br>
+**Getting there —** On the main road between Thong Sala and Baan Tai, just past Phangan Food Court coming from Thong Sala. [View on map ↗](https://www.google.com/maps/search/?api=1&query=No+Name+Kitchen+Phangan+Koh+Phangan)
 
 #### Sonolito Thai Food
 
 A small family-run place of the kind travellers always hope to stumble on. The kitchen keeps to Thai home cooking — generous portions, bold flavours, fresh local ingredients — served with genuine warmth. It's popular enough with residents that a table isn't always easy at busy times; if it's full, they'll often send you to June's Table by Sonolito's Daughter nearby, where the same family spirit carries on.
 
-**Why we love it —** Home-style Thai food served with real family hospitality.
-**Best for —** Local experience · Everyday Thai food · Budget-friendly meals
-**Price —** ฿
-**Getting there —** On the main road between Hin Kong and Sri Thanu, a little north of Indigo Specialty Coffee & Bakery.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Sonolito+Thai+Food+Koh+Phangan)
+**Why we love it —** Home-style Thai food served with real family hospitality.<br>
+**Best for —** Local experience · Everyday Thai food · Budget-friendly meals<br>
+**Price —** ฿<br>
+**Getting there —** On the main road between Hin Kong and Sri Thanu, a little north of Indigo Specialty Coffee & Bakery. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Sonolito+Thai+Food+Koh+Phangan)
 
 ### Contemporary Thai & Chef-Led Dining
 
@@ -192,33 +188,30 @@ Thai cuisine has always evolved through creativity, regional influences and exce
 
 The island's benchmark for chef-led dining, set in a restored Thai house in Thong Sala with just sixteen seats around a communal chef's table. Nir Mesika — who ran restaurants in New York and Tel Aviv before settling here — cooks an ever-changing ten-course menu that folds his Mediterranean and Israeli background into local Thai produce. Nir and Liat introduce every course themselves, so you leave knowing the thinking behind each plate.
 
-**Why we love it —** A ten-course menu where every plate is introduced by the people who cooked it.
-**Best for —** Food lovers · Special occasions · Chef's table experience
-**Price —** ฿฿฿
-**Good to know —** Just sixteen seats. Reservations are essential and best made well ahead.
-**Getting there —** In a restored Thai house in Thong Sala, a few minutes from the ferry pier.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=DAO+by+Chef+Nir+Mesika+Koh+Phangan)
+**Why we love it —** A ten-course menu where every plate is introduced by the people who cooked it.<br>
+**Best for —** Food lovers · Special occasions · Chef's table experience<br>
+**Price —** ฿฿฿<br>
+**Good to know —** Just sixteen seats. Reservations are essential and best made well ahead.<br>
+**Getting there —** In a restored Thai house in Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=DAO+by+Chef+Nir+Mesika+Koh+Phangan)
 
 #### Dear Phangan
 
 A garden of papaya, banana, tamarind and fresh herbs surrounds this quiet open-air restaurant, and every part of the evening feels considered. It's chef-led and firmly local: a blind menu that changes with the seasons, seafood in daily from the pier, produce from nearby farms and edible flowers from the garden. The cooking is quietly creative but rooted in Thai flavours — reason enough for the Michelin Guide to take notice.
 
-**Why we love it —** A chef-led blind menu that changes with the seasons and the island itself.
-**Best for —** Food lovers · Special occasions · Contemporary Thai cuisine
-**Price —** ฿฿฿
-**Good to know —** Reservations are essential. The chef prepares only the number of covers booked, and the blind menu follows the freshest ingredients of the day.
-**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+restaurant+Koh+Phangan)
+**Why we love it —** A chef-led blind menu that changes with the seasons and the island itself.<br>
+**Best for —** Food lovers · Special occasions · Contemporary Thai cuisine<br>
+**Price —** ฿฿฿<br>
+**Good to know —** Reservations are essential. The chef prepares only the number of covers booked, and the blind menu follows the freshest ingredients of the day.<br>
+**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+restaurant+Koh+Phangan)
 
 #### Thai Element
 
 Some kitchens honour Thai tradition by preserving it; Thai Element does it by reinterpreting it. Classic flavours meet modern technique and a few international touches, in refined dishes that feel familiar and contemporary at once, with careful sourcing and elegant plating. On a first visit, order the Massaman Heang — beef slow-braised in a rich Massaman curry with potatoes and roasted spices, reduced until thick and deeply flavoured.
 
-**Why we love it —** A refined, contemporary take on Thai cooking that stays true to its roots.
-**Best for —** Food lovers · Date nights · Contemporary Thai cuisine
-**Price —** ฿฿฿
-**Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Dar Mansour – Morocco's Kitchen.
-[View on map ↗](https://maps.app.goo.gl/Th29wHxKmtd1TKGq8)
+**Why we love it —** A refined, contemporary take on Thai cooking that stays true to its roots.<br>
+**Best for —** Food lovers · Date nights · Contemporary Thai cuisine<br>
+**Price —** ฿฿฿<br>
+**Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Dar Mansour – Morocco's Kitchen. [View on map ↗](https://maps.app.goo.gl/Th29wHxKmtd1TKGq8)
 
 ### Seafood
 
@@ -228,42 +221,38 @@ Life on an island revolves around the sea — and so does its cuisine. Each day,
 
 An institution, simply because it has done the right thing for years. Beside the small pier in Baan Tai, it's long been one of the island's go-to spots for fresh seafood — whole fish, giant river prawns, squid and shellfish, handled with a focus on quality rather than fuss, and served just metres from the water. As the light fades over the bay, it's easy to see why people come back each trip.
 
-**Why we love it —** One of the island's landmark seafood restaurants, in a timeless waterfront setting.
-**Best for —** Fresh seafood · Sunset dinner · Family meals
-**Price —** ฿฿฿
-**Getting there —** Beside the small pier in Baan Tai, on the south coast.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Fisherman%27s+Restaurant+Bar+Baan+Tai+Koh+Phangan)
+**Why we love it —** One of the island's landmark seafood restaurants, in a timeless waterfront setting.<br>
+**Best for —** Fresh seafood · Sunset dinner · Family meals<br>
+**Price —** ฿฿฿<br>
+**Getting there —** Beside the small pier in Baan Tai, on the south coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Fisherman%27s+Restaurant+Bar+Baan+Tai+Koh+Phangan)
 
 #### Salt. Seafood Restaurant & Bar
 
 Seafood doesn't have to be traditional. Salt. takes a contemporary line — the freshest local catch with clean plating and Mediterranean touches. Oysters, premium fish, shellfish and well-made sharing plates come with creative cocktails in a stylish waterfront room. Refined without feeling formal, it works for a long lunch, sunset drinks or dinner by the sea.
 
-**Why we love it —** Contemporary seafood and creative cocktails on the Thong Sala waterfront.
-**Best for —** Seafood lovers · Date nights · Cocktails by the sea
-**Price —** ฿฿฿
-**Getting there —** On the Thong Sala waterfront, a short walk from the ferry pier and Raja Ferry terminal.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Salt+Seafood+Restaurant+Thong+Sala+Koh+Phangan)
+**Why we love it —** Contemporary seafood and creative cocktails on the Thong Sala waterfront.<br>
+**Best for —** Seafood lovers · Date nights · Cocktails by the sea<br>
+**Price —** ฿฿฿<br>
+**Getting there —** On the Thong Sala waterfront, a short walk from the ferry pier and Raja Ferry terminal. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salt+Seafood+Restaurant+Thong+Sala+Koh+Phangan)
 
 #### La Ceviche's – Ceviche Bar
 
 There aren't many places where your seafood travels only a few metres to the plate. La Ceviche's sits inside Thong Sala Fresh Market, among the fishermen and traders who supply half the island — lively, local, and far from a formal dining room. The menu centres on ceviche made with fish straight from the market, plus prawns, seasonal vegetables and produce from nearby farmers. Fresh, simple, and part of the market's rhythm.
 
-**Why we love it —** A market-to-table experience unlike anywhere else on the island.
-**Best for —** Lunch · Seafood lovers · Food explorers
-**Price —** ฿฿
-**Getting there —** Inside Thong Sala Fresh Market.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=La+Ceviche%27s+Ceviche+Bar+Thong+Sala+Koh+Phangan)
+**Why we love it —** A market-to-table experience unlike anywhere else on the island.<br>
+**Best for —** Lunch · Seafood lovers · Food explorers<br>
+**Price —** ฿฿<br>
+**Getting there —** Inside Thong Sala Fresh Market. [View on map ↗](https://www.google.com/maps/search/?api=1&query=La+Ceviche%27s+Ceviche+Bar+Thong+Sala+Koh+Phangan)
 
 #### Happiness Restaurant (ทะเลถัง)
 
 Some of the best seafood here comes with nothing more than the sound of the waves. Set on Hin Kong Beach, a short walk from Mama KOP, this local favourite does Thai seafood from the daily catch. Live tanks let you pick prawns, crab, shellfish or fish before they're cooked to order, and the soft-shell crab is the dish to get.
 
-**Why we love it —** Fresh Thai seafood, a standout soft-shell crab and a calm beachfront setting.
-**Best for —** Fresh seafood · Beachfront dining · Sunset dinner
-**Price —** ฿฿
-**Good to know —** Opens from 2:00 pm — good for a late lunch, sunset drinks or dinner by the sea.
-**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Happiness+Restaurant+Hin+Kong+Koh+Phangan)
+**Why we love it —** Fresh Thai seafood, a standout soft-shell crab and a calm beachfront setting.<br>
+**Best for —** Fresh seafood · Beachfront dining · Sunset dinner<br>
+**Price —** ฿฿<br>
+**Good to know —** Opens from 2:00 pm — good for a late lunch, sunset drinks or dinner by the sea.<br>
+**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Happiness+Restaurant+Hin+Kong+Koh+Phangan)
 
 ### Italian
 
@@ -273,31 +262,28 @@ Few cuisines are loved as universally as Italian. Fresh handmade pasta, crisp wo
 
 Some Italian restaurants just make you feel at home. Run by Mimmo and his partner, this Southern Italian kitchen has quietly built one of the island's best reputations for the real thing. Homemade pasta leads — generous seafood pasta, spaghetti properly al dente, a slow-cooked ragù, a simple ricotta, tomato and basil. Good ingredients, a warm welcome and a solid wine list. Gluten-free pasta available.
 
-**Why we love it —** Homemade pasta and a genuine Southern Italian welcome.
-**Best for —** Couples · Families · Wine lovers
-**Price —** ฿฿
-**Getting there —** In Wok Tum, a few minutes south of Hin Kong on the coastal road.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=NENA+Locanda+Italiana+Koh+Phangan)
+**Why we love it —** Homemade pasta and a genuine Southern Italian welcome.<br>
+**Best for —** Couples · Families · Wine lovers<br>
+**Price —** ฿฿<br>
+**Getting there —** In Wok Tum, a few minutes south of Hin Kong on the coastal road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=NENA+Locanda+Italiana+Koh+Phangan)
 
 #### Vertigo Resto Bar
 
 Good Italian food starts with good ingredients, and Chef Roberto imports his flour from Italy — you taste it in the crisp wood-fired pizza and fresh handmade pasta. Alongside the classics, the kitchen makes the most of local seafood, like red snapper cooked with Mediterranean simplicity. Run by Roberto and his wife, this cosy resto, cocktail and wine bar pairs the cooking with a warm welcome and fair prices.
 
-**Why we love it —** Real Italian pizza and pasta, made with flour brought over from home.
-**Best for —** Wood-fired pizza · Couples · Wine lovers
-**Price —** ฿฿
-**Getting there —** In Haad Rin, a short walk from Haad Rin Beach.
-[View on map ↗](https://share.google/Erf4OqTYRMK9299tU)
+**Why we love it —** Real Italian pizza and pasta, made with flour brought over from home.<br>
+**Best for —** Wood-fired pizza · Couples · Wine lovers<br>
+**Price —** ฿฿<br>
+**Getting there —** In Haad Rin, a short walk from Haad Rin Beach. [View on map ↗](https://share.google/Erf4OqTYRMK9299tU)
 
 #### Il Toscano
 
 Some Italian places focus on pizza; this one celebrates the regional cooking you rarely find outside Italy. Run by Tuscan chef Gabriele Pastonchi, the kitchen works entirely to order — fresh hand-rolled pici, slow-cooked Bolognese ragù, warm schiacciata bread stuffed with good Italian ingredients, and a proper Tuscan-style tagliata. Homemade pasta is the heart of it, with a few Thai dishes for mixed groups.
 
-**Why we love it —** Tuscan cooking made to order, from hand-rolled pici to warm schiacciata.
-**Best for —** Homemade pasta · Couples · Families · Traditional Italian cuisine
-**Price —** ฿฿
-**Getting there —** In Thong Sala, a few minutes from the ferry pier.
-[View on map ↗](https://maps.app.goo.gl/apkajJWDsDDUZWFi9)
+**Why we love it —** Tuscan cooking made to order, from hand-rolled pici to warm schiacciata.<br>
+**Best for —** Homemade pasta · Couples · Families · Traditional Italian cuisine<br>
+**Price —** ฿฿<br>
+**Getting there —** In Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://maps.app.goo.gl/apkajJWDsDDUZWFi9)
 
 ### French
 
@@ -307,23 +293,21 @@ Few cuisines celebrate the pleasure of dining quite like French cooking — from
 
 Some chefs follow recipes; Dodo, the French owner here, follows inspiration. This intimate Haad Yao restaurant blends French technique with the best seasonal produce from around Thailand, and the menu shifts with the market — tuna tartare, house-cured gravlax, squid-ink spaghetti, and desserts worth leaving room for. The mood stays relaxed and unpretentious, as good for a date as for dinner with friends who care about cooking.
 
-**Why we love it —** French-rooted cooking that changes with the chef's inspiration and the day's produce.
-**Best for —** Food lovers · Date nights · Creative cuisine
-**Price —** ฿฿฿
-**Good to know —** The menu changes often with the season and the chef's mood — check the blackboard for the day's dishes.
-**Getting there —** In Haad Yao, a few minutes from Haad Yao Beach.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Carte+Blanche+Haad+Yao+Koh+Phangan)
+**Why we love it —** French-rooted cooking that changes with the chef's inspiration and the day's produce.<br>
+**Best for —** Food lovers · Date nights · Creative cuisine<br>
+**Price —** ฿฿฿<br>
+**Good to know —** The menu changes often with the season and the chef's mood — check the blackboard for the day's dishes.<br>
+**Getting there —** In Haad Yao, a few minutes from Haad Yao Beach. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Carte+Blanche+Haad+Yao+Koh+Phangan)
 
 #### L'Alcove
 
 Run by two French women, L'Alcove has become a west coast fixture — tables almost on the sand at Hin Kong Beach, French cooking with a light Thai touch, and one of the island's deepest lists of French wine and Champagne. Expect duck confit, fresh salmon and a generous cheese platter. Come before the sun drops: on Fridays and Sundays, live musicians, singers and fire performers take over the beach as the light fades.
 
-**Why we love it —** French cooking, a serious wine list and a table almost on the sand as the sun goes down.
-**Best for —** Sunset dinner · Romantic evenings · Wine lovers
-**Price —** ฿฿฿
-**Good to know —** Arrive before sunset to get a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.
-**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+Hin+Kong+Koh+Phangan)
+**Why we love it —** French cooking, a serious wine list and a table almost on the sand as the sun goes down.<br>
+**Best for —** Sunset dinner · Romantic evenings · Wine lovers<br>
+**Price —** ฿฿฿<br>
+**Good to know —** Arrive before sunset to get a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
+**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+Hin+Kong+Koh+Phangan)
 
 ### Japanese
 
@@ -333,32 +317,29 @@ Japanese cuisine has quietly become one of the island's highlights. From careful
 
 Koh Phangan's only teppanyaki restaurant, inside the Anantara Rasananda resort on the east coast. Sit at the counter and dinner comes with a show — flames off the teppan, quick knife-work — as the chef grills A5 Wagyu, Tajima beef, local lobster, hamachi and scallop carpaccio in front of you. There's a deep list of rare sake and a few inventive cocktails, the cucumber-wasabi martini among them. Prefer it quieter? The outside tables sit under the stars, over the pool and the sea.
 
-**Why we love it —** A teppanyaki show, wagyu off the grill and sake under the stars.
-**Best for —** Special occasions · Teppanyaki · Japanese fine dining
-**Price —** ฿฿฿
-**Good to know —** Reservations recommended, especially for the teppanyaki counter.
-**Getting there —** Within Anantara Rasananda Koh Phangan Villas, Thong Nai Pan, on the east coast.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Yukinoya+Anantara+Rasananda+Koh+Phangan)
+**Why we love it —** A teppanyaki show, wagyu off the grill and sake under the stars.<br>
+**Best for —** Special occasions · Teppanyaki · Japanese fine dining<br>
+**Price —** ฿฿฿<br>
+**Good to know —** Reservations recommended, especially for the teppanyaki counter.<br>
+**Getting there —** Within Anantara Rasananda Koh Phangan Villas, Thong Nai Pan, on the east coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Yukinoya+Anantara+Rasananda+Koh+Phangan)
 
 #### WASABI
 
 Consistency is the hardest thing in a sushi restaurant, and it's what brings people back to Wasabi. Fresh fish, carefully made sushi, generous sashimi and comforting Japanese standards, done with the same care each visit. Good for a quick lunch or a relaxed dinner — the kind of dependable place you recommend without a second thought.
 
-**Why we love it —** Fresh, reliable sushi you'll happily come back to.
-**Best for —** Sushi · Casual dinners · Everyday Japanese dining
-**Price —** ฿฿
-**Getting there —** In Thong Sala, with a second branch in Haad Son on the west coast.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Wasabi+sushi+Thong+Sala+Koh+Phangan)
+**Why we love it —** Fresh, reliable sushi you'll happily come back to.<br>
+**Best for —** Sushi · Casual dinners · Everyday Japanese dining<br>
+**Price —** ฿฿<br>
+**Getting there —** In Thong Sala, with a second branch in Haad Son on the west coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Wasabi+sushi+Thong+Sala+Koh+Phangan)
 
 #### Umami Ramen & Sushi Japanese
 
 Little beats a steaming bowl of ramen after a day out on the island, and that's Umami's stock in trade — rich broths, well-cooked noodles and fresh sushi in a relaxed room that suits solo travellers and families alike. Generous portions, friendly service and steady quality make it an easy call for honest Japanese comfort food without the fine-dining formality.
 
-**Why we love it —** Good ramen, fresh sushi and easy everyday dining.
-**Best for —** Ramen · Casual lunch · Families
-**Price —** ฿฿
-**Getting there —** In Thong Sala, a few minutes from the ferry pier.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Umami+Ramen+Sushi+Thong+Sala+Koh+Phangan)
+**Why we love it —** Good ramen, fresh sushi and easy everyday dining.<br>
+**Best for —** Ramen · Casual lunch · Families<br>
+**Price —** ฿฿<br>
+**Getting there —** In Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Umami+Ramen+Sushi+Thong+Sala+Koh+Phangan)
 
 ### Burmese (Myanmar)
 
@@ -368,11 +349,10 @@ Burmese cuisine is one of Southeast Asia's quieter treasures. It blends influenc
 
 Travelling isn't only about new places — sometimes it's new flavours. thanaka is an invitation into Myanmar's cooking, made with care by a welcoming family. The menu runs from Lahpet Thoke, the famous fermented tea-leaf salad, to bowls of Ohn No Khao Swe, fragrant claypot curries and well-balanced noodle dishes you won't easily find elsewhere on the island.
 
-**Why we love it —** A real taste of Myanmar, served with heartfelt family hospitality.
-**Best for —** Discovering Burmese cuisine · Casual dinner · Food lovers
-**Price —** ฿
-**Getting there —** In Thong Sala, close to the town centre.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=thanaka+Burmese+restaurant+Thong+Sala+Koh+Phangan)
+**Why we love it —** A real taste of Myanmar, served with heartfelt family hospitality.<br>
+**Best for —** Discovering Burmese cuisine · Casual dinner · Food lovers<br>
+**Price —** ฿<br>
+**Getting there —** In Thong Sala, close to the town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=thanaka+Burmese+restaurant+Thong+Sala+Koh+Phangan)
 
 ### Moroccan
 
@@ -382,11 +362,10 @@ Moroccan cuisine is inseparable from hospitality. Built around slow cooking, fra
 
 Dar Mansour brings Moroccan cooking to Koh Phangan through family recipes, warm hospitality and a room unlike any other on the island. Everything is made from scratch — traditional techniques, homemade spice blends, carefully chosen ingredients — from fragrant tajines and royal couscous to handmade pastilla, slow-cooked meats and delicate pastries. Handcrafted décor sourced across Morocco turns dinner into something closer to an evening in a riad, where food, design and music meet. *(This is our own restaurant — see the [menu](moroccan-menu-koh-phangan.html), [wine pairing](moroccan-wine-pairing-koh-phangan.html) or [private dining](private-dining-koh-phangan.html).)*
 
-**Why we love it —** It's our table: Moroccan food, hospitality and design built for slow, shared evenings.
-**Best for —** Romantic dinners · Special occasions · Discovering Moroccan cuisine
-**Price —** ฿฿฿
-**Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Thai Element, five minutes from Zen Beach and Orion Healing.
-[View on map ↗](https://share.google/Rp8YllnPe9Z9E9Va0)
+**Why we love it —** It's our table: Moroccan food, hospitality and design built for slow, shared evenings.<br>
+**Best for —** Romantic dinners · Special occasions · Discovering Moroccan cuisine<br>
+**Price —** ฿฿฿<br>
+**Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Thai Element, five minutes from Zen Beach and Orion Healing. [View on map ↗](https://share.google/Rp8YllnPe9Z9E9Va0)
 
 ### Persian & Middle Eastern
 
@@ -396,23 +375,21 @@ Persian and Middle Eastern cooking is rich in fragrance, colour and contrast —
 
 Some dinners feel less like a restaurant and more like being welcomed into a private garden. Under fairy lights in the middle of the island, this intimate chef's table serves a seasonal multi-course menu just a few nights a week. The pescatarian menu follows the market and local harvests, with vegetarian and vegan versions prepared for each guest. Mediterranean flavours meet gentle Thai touches across seven or eight courses, with homemade cocktails alongside.
 
-**Why we love it —** A seasonal tasting menu under the trees, in one of the island's most personal settings.
-**Best for —** Romantic dinners · Food lovers · Special occasions
-**Price —** ฿฿฿
-**Good to know —** Open only a few evenings a week. Reservations are essential.
-**Getting there —** In the heart of the island, surrounded by tropical gardens.
-[View on map ↗](https://maps.app.goo.gl/JGBXH3FqHLSM9rbbA)
+**Why we love it —** A seasonal tasting menu under the trees, in one of the island's most personal settings.<br>
+**Best for —** Romantic dinners · Food lovers · Special occasions<br>
+**Price —** ฿฿฿<br>
+**Good to know —** Open only a few evenings a week. Reservations are essential.<br>
+**Getting there —** In the heart of the island, surrounded by tropical gardens. [View on map ↗](https://maps.app.goo.gl/JGBXH3FqHLSM9rbbA)
 
 #### SatiPot Persian Experience
 
 Few places carry you somewhere else quite so completely. As the island's first Persian restaurant, SatiPot is as much about hospitality as dinner — floor cushions, low tables, warm light and traditional music that invite you to slow down. The kitchen cooks generous family recipes rich with saffron, herbs and balanced spice. The King's Rice and slow-cooked saffron lamb, baked under Persian bread with caramelised onions and raisins, are reason enough to return.
 
-**Why we love it —** Persian cooking and genuine warmth, in a room made for lingering.
-**Best for —** Discovering Persian cuisine · Sharing with friends · Comfort food
-**Price —** ฿฿
-**Good to know —** Reservations recommended a day or two ahead, especially in high season.
-**Getting there —** In Sri Thanu village, on the main road between Hin Kong and Haad Yao.
-[View on map ↗](https://maps.app.goo.gl/4LZj9gbvCCDS83Xw6)
+**Why we love it —** Persian cooking and genuine warmth, in a room made for lingering.<br>
+**Best for —** Discovering Persian cuisine · Sharing with friends · Comfort food<br>
+**Price —** ฿฿<br>
+**Good to know —** Reservations recommended a day or two ahead, especially in high season.<br>
+**Getting there —** In Sri Thanu village, on the main road between Hin Kong and Haad Yao. [View on map ↗](https://maps.app.goo.gl/4LZj9gbvCCDS83Xw6)
 
 ### Mexican
 
@@ -422,11 +399,10 @@ Mexican cuisine is made for sharing — bright flavours, fresh ingredients and c
 
 A two-storey cantina going since 2008, with a sister spot on Koh Chang, run with a warm welcome. The kitchen turns out battered fish tacos with chipotle-yoghurt, ceviche, freshly made guacamole and a proper michelada — best taken up on the rooftop terrace, where the tables look out to sea. Casual early on, and easy to settle into over cocktails as the light goes.
 
-**Why we love it —** Fish tacos and a michelada on a rooftop as the sun drops.
-**Best for —** Groups · Tacos · Margaritas · Sunset drinks
-**Price —** ฿฿
-**Getting there —** On Hin Kong Road, directly in front of L'Alcove.
-[View on map ↗](https://maps.app.goo.gl/r5yhB3SWaS7vQVqN7)
+**Why we love it —** Fish tacos and a michelada on a rooftop as the sun drops.<br>
+**Best for —** Groups · Tacos · Margaritas · Sunset drinks<br>
+**Price —** ฿฿<br>
+**Getting there —** On Hin Kong Road, directly in front of L'Alcove. [View on map ↗](https://maps.app.goo.gl/r5yhB3SWaS7vQVqN7)
 
 ### Eastern European
 
@@ -436,11 +412,10 @@ Eastern European cooking isn't something most travellers expect to find on Koh P
 
 Comfort food means something different in every country. Here it's generous Ukrainian, Russian and Eastern European home cooking, made with care in a warm, stylish room. Traditional family dishes sit next to lighter contemporary European plates, so it works whether these flavours are new to you or a taste of home. Afterwards, head up to the Be High Lounge — soft sofas, creative cocktails and an easy mood for the rest of the night.
 
-**Why we love it —** A rare taste of Eastern Europe, plus one of Thong Sala's most inviting cocktail lounges.
-**Best for —** Comfort food · Relaxed dinners · Cocktails
-**Price —** ฿฿
-**Getting there —** In Thong Sala, a few minutes from the ferry pier.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=BASIL+Restaurant+Be+High+Lounge+Thong+Sala+Koh+Phangan)
+**Why we love it —** A rare taste of Eastern Europe, plus one of Thong Sala's most inviting cocktail lounges.<br>
+**Best for —** Comfort food · Relaxed dinners · Cocktails<br>
+**Price —** ฿฿<br>
+**Getting there —** In Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=BASIL+Restaurant+Be+High+Lounge+Thong+Sala+Koh+Phangan)
 
 ### Modern International
 
@@ -450,21 +425,19 @@ Koh Phangan's food scene isn't limited by borders. Drawing on cuisines from arou
 
 Good pubs are about more than food — they bring people together. Inspired by the laid-back feel of Bali and modern Australia, The Lakehouse does exactly that beside the lake in Sri Thanu. Open-flame cooking is the heart of the kitchen: wood-fired bread, charcoal chicken and slow-cooked BBQ ribs alongside newer plates like stracciatella with pistachio pesto and grapes, or prawn tostadas with avocado and chipotle. Come for dinner, drinks or live music — one round tends to become the whole evening.
 
-**Why we love it —** Bold open-flame cooking and one of Sri Thanu's most social tables.
-**Best for —** Groups · Live music · Cocktails & dinner
-**Price —** ฿฿
-**Getting there —** Beside the lake in Sri Thanu, just off the main road.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=The+Lakehouse+Restaurant+Pub+Sri+Thanu+Koh+Phangan)
+**Why we love it —** Bold open-flame cooking and one of Sri Thanu's most social tables.<br>
+**Best for —** Groups · Live music · Cocktails & dinner<br>
+**Price —** ฿฿<br>
+**Getting there —** Beside the lake in Sri Thanu, just off the main road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=The+Lakehouse+Restaurant+Pub+Sri+Thanu+Koh+Phangan)
 
 #### SnooZe Sinful Dining
 
 Set aside what you expect from a restaurant. SnooZe cooks with curiosity and a bit of surprise — European, Middle Eastern and seafood influences in dishes that look striking and eat well, proving presentation and bold flavour can share a plate. The dining room follows suit: modern, playful and a little different. One of the island's more original nights out.
 
-**Why we love it —** Inventive cooking that's creative, approachable and genuinely satisfying.
-**Best for —** Food lovers · Date nights · Something different
-**Price —** ฿฿฿
-**Getting there —** In Sri Thanu, on the west coast.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=SnooZe+Sinful+Dining+Koh+Phangan)
+**Why we love it —** Inventive cooking that's creative, approachable and genuinely satisfying.<br>
+**Best for —** Food lovers · Date nights · Something different<br>
+**Price —** ฿฿฿<br>
+**Getting there —** In Sri Thanu, on the west coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SnooZe+Sinful+Dining+Koh+Phangan)
 
 ### Restaurants with a View
 
@@ -474,21 +447,19 @@ On Koh Phangan, the scenery is often as memorable as the meal. Looking out over 
 
 Set high above Ban Kai within the adults-only Art of Nature Resort, this open-air restaurant looks clear across the Gulf of Thailand. The kitchen keeps things fresh and natural — smoothie bowls and colourful breakfasts through to grilled dishes, seafood and cocktails across the day. As the sun drops, tropical gardens, easy house music and the wide sea view make it a fine place to settle in.
 
-**Why we love it —** A hilltop setting where fresh cooking meets a wide-open sunset over the Gulf.
-**Best for —** Sunset dining · Romantic dinners · Adults-only escape
-**Price —** ฿฿฿
-**Getting there —** Within Art of Nature Resort, on the Ban Kai hillside overlooking the Gulf of Thailand.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Art+of+Nature+Resort+restaurant+Ban+Kai+Koh+Phangan)
+**Why we love it —** A hilltop setting where fresh cooking meets a wide-open sunset over the Gulf.<br>
+**Best for —** Sunset dining · Romantic dinners · Adults-only escape<br>
+**Price —** ฿฿฿<br>
+**Getting there —** Within Art of Nature Resort, on the Ban Kai hillside overlooking the Gulf of Thailand. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Art+of+Nature+Resort+restaurant+Ban+Kai+Koh+Phangan)
 
 #### Salaad View Restaurant
 
 Some places are worth the trip for the food, others for the view — Salaad View has both. Perched above Haad Salad Bay, this long-running family restaurant does authentic Thai cooking against one of the island's widest sea views. Fresh local seafood, whole grilled fish, fragrant curries and Thai standards, best from the open-air terrace over the bay. Come for a slow lunch after the beach, or as the afternoon light softens.
 
-**Why we love it —** Authentic Thai cooking with one of Koh Phangan's finest sea views.
-**Best for —** Lunch with a view · Fresh seafood · Relaxed coastal dining
-**Price —** ฿
-**Getting there —** On the hillside above Haad Salad Beach, overlooking Haad Salad Bay on the northwest coast.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Salaad+View+Restaurant+Haad+Salad+Koh+Phangan)
+**Why we love it —** Authentic Thai cooking with one of Koh Phangan's finest sea views.<br>
+**Best for —** Lunch with a view · Fresh seafood · Relaxed coastal dining<br>
+**Price —** ฿<br>
+**Getting there —** On the hillside above Haad Salad Beach, overlooking Haad Salad Bay on the northwest coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salaad+View+Restaurant+Haad+Salad+Koh+Phangan)
 
 ## Coffee Shops, Breakfast & Brunch in Koh Phangan
 
@@ -498,51 +469,46 @@ A great day on Koh Phangan often starts with excellent coffee and a leisurely br
 
 The kind of café that becomes routine after one visit. Indigo has built its name on specialty coffee, pastries baked fresh each morning and an easy welcome. Whether it's a flat white, a flaky croissant or a slow brunch, everything's done with care and a steady hand — which is why locals, remote workers and travellers all end up here.
 
-**Why we love it —** Specialty coffee and one of the island's best artisan bakeries.
-**Best for —** Specialty coffee · Breakfast · Fresh pastries
-**Price —** ฿฿
-**Getting there —** On the main road between Hin Kong and Sri Thanu, just north of Sonolito Thai Food.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Indigo+Specialty+Coffee+Bakery+Koh+Phangan)
+**Why we love it —** Specialty coffee and one of the island's best artisan bakeries.<br>
+**Best for —** Specialty coffee · Breakfast · Fresh pastries<br>
+**Price —** ฿฿<br>
+**Getting there —** On the main road between Hin Kong and Sri Thanu, just north of Sonolito Thai Food. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Indigo+Specialty+Coffee+Bakery+Koh+Phangan)
 
 #### SAGE Breakfast & More
 
 Long breakfasts are close to a way of life here, and SAGE leans right into them. Overlooking the sea in Ban Tai, this bright café serves one of the island's fullest all-day breakfast and brunch menus, drawing on European café culture — specialty coffee, smoothie bowls, pancakes, generous egg dishes and lighter options through the day. Vegan, vegetarian or classic, it's covered.
 
-**Why we love it —** One of the island's best all-day breakfasts, with good coffee and a sea view.
-**Best for —** Breakfast · Brunch · Specialty coffee · Sea views
-**Price —** ฿฿
-**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=SAGE+Breakfast+More+Ban+Tai+Koh+Phangan)
+**Why we love it —** One of the island's best all-day breakfasts, with good coffee and a sea view.<br>
+**Best for —** Breakfast · Brunch · Specialty coffee · Sea views<br>
+**Price —** ฿฿<br>
+**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SAGE+Breakfast+More+Ban+Tai+Koh+Phangan)
 
 #### Foxxy's Restaurant & Café
 
 One of Sri Thanu's most dependable all-day cafés, good for a slow breakfast, a relaxed lunch or just a proper coffee. The menu pulls together generous brunch plates, smoothie bowls, fresh salads and homemade cakes with quality specialty coffee, in a bright, welcoming room. Easy-going and consistent — a place you'll come back to through your stay.
 
-**Why we love it —** Good coffee, generous brunches and one of Sri Thanu's warmest cafés.
-**Best for —** Breakfast · Brunch · Digital nomads
-**Price —** ฿฿
-**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga studios and wellness centres.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+Cafe+Sri+Thanu+Koh+Phangan)
+**Why we love it —** Good coffee, generous brunches and one of Sri Thanu's warmest cafés.<br>
+**Best for —** Breakfast · Brunch · Digital nomads<br>
+**Price —** ฿฿<br>
+**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga studios and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+Cafe+Sri+Thanu+Koh+Phangan)
 
 #### Chacha Coffee
 
 Coffee is taken seriously here. Chacha pairs carefully sourced beans with well-pulled espresso and an easy atmosphere that keeps locals and remote workers coming back. Alongside espresso, filter and iced drinks, the all-day breakfast carries a subtle thread of Moroccan spice that gives a few dishes their own twist. Community events like the Friday Run Club have made it a favourite morning meeting spot.
 
-**Why we love it —** Excellent specialty coffee in one of the island's friendliest café communities.
-**Best for —** Specialty coffee · Breakfast · Digital nomads
-**Price —** ฿฿
-**Getting there —** On the west coast; open daily from 8 am.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Chacha+Coffee+Koh+Phangan)
+**Why we love it —** Excellent specialty coffee in one of the island's friendliest café communities.<br>
+**Best for —** Specialty coffee · Breakfast · Digital nomads<br>
+**Price —** ฿฿<br>
+**Getting there —** On the west coast; open daily from 8 am. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Chacha+Coffee+Koh+Phangan)
 
 #### Seasalt & Sage
 
 Some breakfasts deserve a sea view. Seasalt & Sage pairs fresh, wholesome food with a calm beachfront setting — smoothie bowls, generous breakfasts, salads, good coffee and healthy brunch plates. Whether you've just walked the beach or you're settling in with a laptop and a flat white, it's one of Ban Tai's most relaxing cafés.
 
-**Why we love it —** Relaxed beachfront brunches, good coffee and fresh, healthy dishes.
-**Best for —** Beachfront breakfast · Brunch · Healthy food
-**Price —** ฿฿
-**Getting there —** On the Ban Tai beachfront, a few minutes south of Thong Sala.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Seasalt+Sage+Ban+Tai+Koh+Phangan)
+**Why we love it —** Relaxed beachfront brunches, good coffee and fresh, healthy dishes.<br>
+**Best for —** Beachfront breakfast · Brunch · Healthy food<br>
+**Price —** ฿฿<br>
+**Getting there —** On the Ban Tai beachfront, a few minutes south of Thong Sala. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Seasalt+Sage+Ban+Tai+Koh+Phangan)
 
 ## Best Burgers in Koh Phangan
 
@@ -552,21 +518,19 @@ Sometimes only a proper burger will do. From slow-smoked barbecue to a classic c
 
 A great burger starts with good ingredients, but consistency is what brings people back. With branches in Thong Sala and Chaloklum, Mojo's has a loyal following for juicy burgers, slow-smoked barbecue, loaded fries and generous comfort food in a lively, laid-back room. Quality beef, fresh toppings and toasted buns — as popular with residents as with travellers.
 
-**Why we love it —** Consistently good burgers, smoky barbecue and easy comfort food.
-**Best for —** Burgers · BBQ · Casual dinners · Groups
-**Price —** ฿฿
-**Getting there —** Two branches, in Thong Sala and Chaloklum.
-[View on map ↗](https://share.google/RHe2n9pf9huUBOIgV)
+**Why we love it —** Consistently good burgers, smoky barbecue and easy comfort food.<br>
+**Best for —** Burgers · BBQ · Casual dinners · Groups<br>
+**Price —** ฿฿<br>
+**Getting there —** Two branches, in Thong Sala and Chaloklum. [View on map ↗](https://share.google/RHe2n9pf9huUBOIgV)
 
 #### Oh My Burger
 
 The best burgers don't need a fancy dining room — just good ingredients. Tucked inside Mama Market in Sri Thanu, Oh My Burger keeps the focus on quality: fresh buns from a local bakery, grass-fed beef from a local butcher and homemade sauces, in burgers that are simple, juicy and full of flavour. Vegetarian options too, which makes it easy for mixed groups grazing the market stalls.
 
-**Why we love it —** Handcrafted burgers made with excellent local ingredients, in one of the island's liveliest markets.
-**Best for —** Burger lovers · Casual dinner · Families · Street food
-**Price —** ฿฿
-**Getting there —** Inside Mama Market Food Court, Sri Thanu.
-[View on map ↗](https://maps.app.goo.gl/AcMPZ9v8kLAjJc6i8)
+**Why we love it —** Handcrafted burgers made with excellent local ingredients, in one of the island's liveliest markets.<br>
+**Best for —** Burger lovers · Casual dinner · Families · Street food<br>
+**Price —** ฿฿<br>
+**Getting there —** Inside Mama Market Food Court, Sri Thanu. [View on map ↗](https://maps.app.goo.gl/AcMPZ9v8kLAjJc6i8)
 
 ## Healthy, Vegetarian & Vegan Restaurants in Koh Phangan
 
@@ -576,31 +540,28 @@ Koh Phangan is one of Thailand's leading wellness destinations, drawing yogis, d
 
 Plant-based cooking with real imagination. Pure Vegan Heaven reworks Thai food through a fully vegan lens, turning local ingredients into colourful, nutrient-dense dishes with plenty of flavour — smoothie bowls and salads through to hearty curries, burgers and Thai-fusion plates, all carefully sourced. Bright, friendly and consistent, it's one of the island's best-known vegan kitchens.
 
-**Why we love it —** Creative vegan food that's nourishing and full of flavour.
-**Best for —** Vegan dining · Healthy lunch · Smoothie bowls
-**Price —** ฿฿
-**Getting there —** In Thong Sala, a few minutes from the town centre.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Pure+Vegan+Heaven+Thong+Sala+Koh+Phangan)
+**Why we love it —** Creative vegan food that's nourishing and full of flavour.<br>
+**Best for —** Vegan dining · Healthy lunch · Smoothie bowls<br>
+**Price —** ฿฿<br>
+**Getting there —** In Thong Sala, a few minutes from the town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Pure+Vegan+Heaven+Thong+Sala+Koh+Phangan)
 
 #### Deli Devi
 
 Part deli, part artisan café, and unlike anywhere else on the island. Deli Devi specialises in handmade plant-based products — vegan cheeses, raw desserts, ceremonial cacao, homemade cakes, smoothies and specialty coffee. Drop in for a healthy breakfast, pick up ingredients or just have cake with a coffee; everything shows real care and craft.
 
-**Why we love it —** Artisan plant-based products made with genuine attention to detail.
-**Best for —** Healthy treats · Vegan cheeses · Coffee & cake
-**Price —** ฿฿
-**Getting there —** In Sri Thanu, at the heart of the island's wellness community.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Deli+Devi+Sri+Thanu+Koh+Phangan)
+**Why we love it —** Artisan plant-based products made with genuine attention to detail.<br>
+**Best for —** Healthy treats · Vegan cheeses · Coffee & cake<br>
+**Price —** ฿฿<br>
+**Getting there —** In Sri Thanu, at the heart of the island's wellness community. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Deli+Devi+Sri+Thanu+Koh+Phangan)
 
 #### Swiss Farmacy
 
 Tucked into the greenery of Madua Wan, Swiss Farmacy is the kind of place that quickly feels like home. The focus is wholesome homemade cooking, organic ingredients and a genuinely relaxed pace — fresh sandwiches, homemade kebabs, changing daily specials and good coffee, with a few resident animals wandering about. It has earned a loyal following without chasing trends.
 
-**Why we love it —** Wholesome homemade food in one of the island's most peaceful settings.
-**Best for —** Healthy lunch · Homemade food · Families
-**Price —** ฿฿
-**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Swiss+Farmacy+Madua+Wan+Koh+Phangan)
+**Why we love it —** Wholesome homemade food in one of the island's most peaceful settings.<br>
+**Best for —** Healthy lunch · Homemade food · Families<br>
+**Price —** ฿฿<br>
+**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Swiss+Farmacy+Madua+Wan+Koh+Phangan)
 
 ## Night Markets & Food Courts in Koh Phangan
 
@@ -610,49 +571,43 @@ Some of the island's best meals aren't found in restaurants at all. Every evenin
 
 The island's best-known night market, in the heart of Thong Sala. Dozens of vendors cover everything from Thai street food and freshly grilled seafood to sushi, Indian curries, vegan dishes, fruit shakes and homemade desserts. The lively atmosphere, communal seating and low prices make it one of the easiest ways to try a lot in one evening.
 
-**Why we love it —** The whole island's street food in one place, at everyday prices.
-**Getting there —** In the heart of Thong Sala, a short walk from the ferry pier and town centre.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Phantip+Night+Market+Thong+Sala+Koh+Phangan)
+**Why we love it —** The whole island's street food in one place, at everyday prices.<br>
+**Getting there —** In the heart of Thong Sala, a short walk from the ferry pier and town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Phantip+Night+Market+Thong+Sala+Koh+Phangan)
 
 #### Ban Tai Night Market
 
 Smaller and more local than Phantip, the Ban Tai market has a relaxed feel — residents and visitors gathering for affordable Thai food, grilled meats, seafood, fresh fruit and homemade snacks. A good place to find local flavours away from the busier spots, with live music on some nights.
 
-**Why we love it —** A genuine local market with good Thai food at local prices.
-**Getting there —** In Ban Tai, on the main road between Thong Sala and Haad Rin.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Ban+Tai+Night+Market+Koh+Phangan)
+**Why we love it —** A genuine local market with good Thai food at local prices.<br>
+**Getting there —** In Ban Tai, on the main road between Thong Sala and Haad Rin. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Ban+Tai+Night+Market+Koh+Phangan)
 
 #### Mama Market Sri Thanu
 
 One of the west coast's favourite evening food courts, gathering local and international street food in a lively open-air setting — Thai dishes and grilled seafood through to wood-fired pizza, fresh noodles, vegan plates and homemade desserts. One standout stall is Oh My Burger, with its handcrafted burgers on local-bakery buns and grass-fed beef. Relaxed and affordable, and ideal for a group that can't agree on one cuisine.
 
-**Why we love it —** A lively food court with one of the widest street-food selections on the west coast.
-**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+Market+Sri+Thanu+Koh+Phangan)
+**Why we love it —** A lively food court with one of the widest street-food selections on the west coast.<br>
+**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+Market+Sri+Thanu+Koh+Phangan)
 
 #### Phangan Food Court
 
 Sometimes the simplest places become local favourites. Phangan Food Court is one of Thong Sala's busiest everyday spots, gathering Thai and international kitchens under one roof — Thai dishes, Japanese, burgers, grilled meats, seafood or vegetarian, an easy call when everyone wants something different. Casual, affordable and reliable at almost any time of day.
 
-**Why we love it —** An easy, affordable place to eat across many cuisines in one spot.
-**Getting there —** On the main road between Thong Sala and Ban Tai, just before No Name Kitchen Phangan.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Phangan+Food+Court+Thong+Sala+Koh+Phangan)
+**Why we love it —** An easy, affordable place to eat across many cuisines in one spot.<br>
+**Getting there —** On the main road between Thong Sala and Ban Tai, just before No Name Kitchen Phangan. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Phangan+Food+Court+Thong+Sala+Koh+Phangan)
 
 #### Thong Sala Saturday Night Market
 
 Every Saturday, Thong Sala's Walking Street turns the town centre into one of the island's liveliest weekly events. Local food vendors, artisan stalls and small producers line the street with Thai street food, grilled seafood, homemade desserts, tropical fruit, cocktails and crafts. As good for an evening stroll as for dinner.
 
-**Why we love it —** A lively weekly celebration of Koh Phangan's street food and local culture.
-**Getting there —** Along Thong Sala Walking Street, in the town centre, a short walk from the ferry pier.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Thong+Sala+Walking+Street+Saturday+Market+Koh+Phangan)
+**Why we love it —** A lively weekly celebration of Koh Phangan's street food and local culture.<br>
+**Getting there —** Along Thong Sala Walking Street, in the town centre, a short walk from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Thong+Sala+Walking+Street+Saturday+Market+Koh+Phangan)
 
 #### Chaloklum Sunday Night Market
 
 Every Sunday, the fishing village of Chaloklum becomes one of the island's most characterful weekly markets. Local restaurants, fishermen, artisans and vendors line the streets with freshly grilled seafood, southern Thai specialities, homemade desserts, tropical fruit and international dishes. Smaller than the Thong Sala markets but full of character.
 
-**Why we love it —** Local food and community spirit in one of the island's prettiest villages.
-**Getting there —** In Chaloklum village, on the north coast.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Chaloklum+Sunday+Night+Market+Koh+Phangan)
+**Why we love it —** Local food and community spirit in one of the island's prettiest villages.<br>
+**Getting there —** In Chaloklum village, on the north coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Chaloklum+Sunday+Night+Market+Koh+Phangan)
 
 ## Cocktail & Sunset Bars in Koh Phangan
 
@@ -662,58 +617,55 @@ Sunset is a ritual on Koh Phangan. As the afternoon light softens, people drift 
 
 Stepping into CINTAMANI feels like arriving somewhere else entirely. Inspired by the colours and textures of the Silk Road, it mixes jungle-glam, Bedouin touches and maximalist design into one of the island's most striking rooms — set among tropical gardens right on Hin Kong Beach, every corner full of handmade detail and vintage finds. The cocktails match the setting, alongside a considered wine list and Mediterranean-style tapas. Arrive before sunset, order a house creation and settle in as the sky changes over the Gulf.
 
-**Why we love it —** One of the island's most original cocktail bars, where inventive drinks meet striking design.
-**Best for —** Signature cocktails · Sunset drinks · Design lovers · Date nights
-**Price —** ฿฿฿
-**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=CINTAMANI+Bar+Hin+Kong+Koh+Phangan)
+**Why we love it —** One of the island's most original cocktail bars, where inventive drinks meet striking design.<br>
+**Best for —** Signature cocktails · Sunset drinks · Design lovers · Date nights<br>
+**Price —** ฿฿฿<br>
+**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://www.google.com/maps/search/?api=1&query=CINTAMANI+Bar+Hin+Kong+Koh+Phangan)
 
 #### Bluerama
 
 Watching the sunset from an infinity pool over the Gulf of Thailand is hard to beat, and Bluerama has built one of the island's most elegant sunset spots around exactly that. High above Nai Wok Beach, this adults-only venue pairs a wide sea view with a stylish infinity pool, daybeds, good cocktails and refined international food. Calm and sophisticated by day; on Saturdays it builds from the afternoon, with DJs carrying the mood from sunset into the evening.
 
-**Why we love it —** An adults-only infinity pool, a wide sunset and one of the island's most stylish bars.
-**Best for —** Sunset cocktails · Couples · Infinity pool · DJs
-**Price —** ฿฿฿
-**Good to know —** The infinity pool is adults-only. Saturdays feature sunset DJ sessions into the evening.
-**Getting there —** On the hillside above Nai Wok Beach, just before Amsterdam Bar coming from Thong Sala towards Hin Kong.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Bluerama+Nai+Wok+Koh+Phangan)
+**Why we love it —** An adults-only infinity pool, a wide sunset and one of the island's most stylish bars.<br>
+**Best for —** Sunset cocktails · Couples · Infinity pool · DJs<br>
+**Price —** ฿฿฿<br>
+**Good to know —** The infinity pool is adults-only. Saturdays feature sunset DJ sessions into the evening.<br>
+**Getting there —** On the hillside above Nai Wok Beach, just before Amsterdam Bar coming from Thong Sala towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Bluerama+Nai+Wok+Koh+Phangan)
 
 #### Grasshopper Beach Bar
 
 Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Beach, Grasshopper comes alive each evening as travellers, locals and performers gather for the sunset. Tables sit right on the sand, cocktails flow and resident DJs set the mood as the sky turns. Fridays bring the Zen Beach Drum Circle just steps away; weekends often carry on with beachside electronic sets long after dark.
 
-**Why we love it —** One of the island's liveliest sunset gatherings, with beach cocktails, DJs and the Zen Beach mood.
-**Best for —** Sunset drinks · DJs · Meeting people · Zen Beach
-**Price —** ฿฿
-**Getting there —** Directly on Zen Beach, next to the Friday Drum Circle.
-[View on map ↗](https://www.google.com/maps/search/?api=1&query=Grasshopper+Beach+Bar+Zen+Beach+Koh+Phangan)
+**Why we love it —** One of the island's liveliest sunset gatherings, with beach cocktails, DJs and the Zen Beach mood.<br>
+**Best for —** Sunset drinks · DJs · Meeting people · Zen Beach<br>
+**Price —** ฿฿<br>
+**Getting there —** Directly on Zen Beach, next to the Friday Drum Circle. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Grasshopper+Beach+Bar+Zen+Beach+Koh+Phangan)
 
 ## Where to Eat in Koh Phangan by Area
 
 Every part of Koh Phangan has its own atmosphere — and its own food scene. Staying on the west coast, exploring the fishing villages or relaxing on a quieter beach, these are the restaurants, cafés and bars worth seeking out in each area.
 
-**Hin Kong.** Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening. *Don't miss:* Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.
+**Hin Kong.** Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening.<br>*Don't miss:* Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.
 
-**Wok Tum / Nai Wok.** Just south of Hin Kong, peaceful coastal scenery with some of the island's most creative kitchens and wide sunset views. *Don't miss:* NENA Locanda Italiana · Bluerama · Il Toscano · Dear Phangan · thanaka.
+**Wok Tum / Nai Wok.** Just south of Hin Kong, peaceful coastal scenery with some of the island's most creative kitchens and wide sunset views.<br>*Don't miss:* NENA Locanda Italiana · Bluerama · Il Toscano · Dear Phangan · thanaka.
 
-**Sri Thanu.** The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner. *Don't miss:* Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.
+**Sri Thanu.** The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner.<br>*Don't miss:* Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.
 
-**Thong Sala.** The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food. *Don't miss:* DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.
+**Thong Sala.** The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food.<br>*Don't miss:* DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.
 
-**Baan Tai.** South of Thong Sala, known for beachfront cafés, relaxed brunch spots and an easy-going feel. *Don't miss:* Fisherman's Restaurant & Bar · SAGE Breakfast & More · Seasalt & Sage · Ban Tai Night Market · Chacha Coffee.
+**Baan Tai.** South of Thong Sala, known for beachfront cafés, relaxed brunch spots and an easy-going feel.<br>*Don't miss:* Fisherman's Restaurant & Bar · SAGE Breakfast & More · Seasalt & Sage · Ban Tai Night Market · Chacha Coffee.
 
-**Ban Kai.** A quieter stretch of coast with several restaurants making the most of elevated settings and sweeping sea views. *Don't miss:* Art of Nature Restaurant (Adults Only).
+**Ban Kai.** A quieter stretch of coast with several restaurants making the most of elevated settings and sweeping sea views.<br>*Don't miss:* Art of Nature Restaurant (Adults Only).
 
-**Chaloklum.** A traditional fishing village on the north coast, and one of the island's most authentic places to eat, with fresh seafood and a weekly Sunday market. *Don't miss:* Mojo's (Chaloklum) · Chaloklum Sunday Night Market.
+**Chaloklum.** A traditional fishing village on the north coast, and one of the island's most authentic places to eat, with fresh seafood and a weekly Sunday market.<br>*Don't miss:* Mojo's (Chaloklum) · Chaloklum Sunday Night Market.
 
-**Haad Yao & Haad Salad.** Turquoise water, beautiful beaches and a relaxed mix of destination restaurants, beach bars and wide sea views. *Don't miss:* Carte Blanche · Salaad View Restaurant.
+**Haad Yao & Haad Salad.** Turquoise water, beautiful beaches and a relaxed mix of destination restaurants, beach bars and wide sea views.<br>*Don't miss:* Carte Blanche · Salaad View Restaurant.
 
-**Haad Rin.** Best known for the Full Moon Party, but with a surprisingly varied food scene beyond the nightlife. *Don't miss:* Vertigo Resto Bar · El Barrio Koh Phangan.
+**Haad Rin.** Best known for the Full Moon Party, but with a surprisingly varied food scene beyond the nightlife.<br>*Don't miss:* Vertigo Resto Bar · El Barrio Koh Phangan.
 
-**Thong Nai Pan (east coast).** A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites. *Don't miss:* Yukinoya (Anantara Rasananda).
+**Thong Nai Pan (east coast).** A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites.<br>*Don't miss:* Yukinoya (Anantara Rasananda).
 
-**Madua Wan.** Hidden in the island's lush interior, home to a few destination restaurants that reward venturing away from the coast. *Don't miss:* BUSTAN · Swiss Farmacy.
+**Madua Wan.** Hidden in the island's lush interior, home to a few destination restaurants that reward venturing away from the coast.<br>*Don't miss:* BUSTAN · Swiss Farmacy.
 
 ## Where to Eat in Koh Phangan for Every Occasion
 
