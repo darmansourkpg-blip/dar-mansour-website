@@ -74,6 +74,14 @@ Plusieurs fichiers de `ressources/Pix/` sont des **visuels marketing**, pas des 
   entrance, front, street-view, maija-art-direction, interior-decor, pastries-mint-tea.
 - **À demander au client** : des photos de plats en haute résolution, sans cadre ni texte.
 
+## 📸 Règle images (OBLIGATOIRE)
+Toute image ajoutée au site (couverture d'article, photo de fiche, visuel de page) **doit être optimisée et SEO** avant intégration :
+- **Nom de fichier** : kebab-case descriptif avec mots-clés (ex. `aerial-view-hin-kong-beach-koh-phangan.webp`). Jamais d'espaces, de majuscules, de noms aléatoires (`IMG_1234`, hash CMS) ni de slash initial.
+- **Format** : **WebP** de préférence — mais seulement s'il est **plus léger** que l'original (sinon garder JPG/PNG). Viser < ~200 Ko pour une couverture.
+- **`alt` descriptif** (décrire la scène + lieu, sans bourrage de mots-clés) et **`cover_alt`** rempli dans le front matter.
+- `width`/`height`, `loading="lazy"` et `fetchpriority` sont gérés automatiquement par le template `_journal.py` — ne pas les retirer.
+→ Si le client uploade une image via le CMS avec un mauvais nom (espaces/hash), la **renommer** et convertir avant de la référencer.
+
 ## Reste à faire
 - Intégrer de vraies photos de plats « propres » en haute résolution (sans cadre ni texte)
 - Écrire de vrais articles de blog (via le CMS `/admin` ou en Markdown dans `site/content/journal/`)
