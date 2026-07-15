@@ -210,7 +210,7 @@ Some kitchens honour Thai tradition by preserving it; Thai Element does it by re
 
 **Why we love it —** A refined, contemporary take on Thai cooking that stays true to its roots.<br>
 **Best for —** Food lovers · Date nights · Contemporary Thai cuisine<br>
-**Price —** ฿฿฿<br>
+**Price —** ฿฿<br>
 **Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Dar Mansour – Morocco's Kitchen. [View on map ↗](https://maps.app.goo.gl/Th29wHxKmtd1TKGq8)
 
 ### Seafood
@@ -619,7 +619,7 @@ Stepping into CINTAMANI feels like arriving somewhere else entirely. Inspired by
 
 **Why we love it —** One of the island's most original cocktail bars, where inventive drinks meet striking design.<br>
 **Best for —** Signature cocktails · Sunset drinks · Design lovers · Date nights<br>
-**Price —** ฿฿฿<br>
+**Price —** ฿฿<br>
 **Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://www.google.com/maps/search/?api=1&query=CINTAMANI+Bar+Hin+Kong+Koh+Phangan)
 
 #### Bluerama
