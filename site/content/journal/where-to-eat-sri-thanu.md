@@ -181,6 +181,15 @@ A favourite for plant-based food that satisfies everyone, not only vegans. Every
 **Price —** ฿<br>
 **Getting there —** In Sri Thanu, at the heart of the wellness community. [View on map ↗](https://share.google/8YLBdPCuWG8C8vnKG)
 
+#### Street Vegan House
+
+A family-run spot that has quickly become a favourite for a relaxed plant-based lunch in Sri Thanu. Everything is vegan and made fresh, served with a warm family welcome that suits kids and solo travellers alike — an easy stop between the beach and a yoga class.
+
+**Why we love it —** Fresh homemade vegan food and a genuinely family-friendly welcome.<br>
+**Best for —** Vegan lunch · Families · Healthy food<br>
+**Price —** ฿<br>
+**Getting there —** In Sri Thanu village. [View on map ↗](https://share.google/kG2ckxTZpKqZXcsRF)
+
 #### Seasalt & Sage
 
 Some breakfasts deserve a calm setting. Seasalt & Sage pairs fresh, wholesome food with a relaxed room — smoothie bowls, generous breakfasts, salads, good coffee and healthy brunch plates. Just walked the beach, or settling in with a laptop and a flat white, it's one of Sri Thanu's most relaxing cafés.
