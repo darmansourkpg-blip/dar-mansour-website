@@ -125,7 +125,7 @@ Some of the best seafood here comes with nothing more than the sound of the wave
 **Best for —** Fresh seafood · Beachfront dining · Sunset dinner<br>
 **Price —** ฿฿<br>
 **Good to know —** Opens from 2:00 pm — good for a late lunch, sunset drinks or dinner by the sea.<br>
-**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Happiness+Restaurant+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://maps.app.goo.gl/3qdAKVbJYNfDLb5v7)
 
 #### L'Alcove
 
@@ -223,7 +223,7 @@ Set among tropical gardens above Hin Kong Beach, CINTAMANI is one of the island'
 **Why we love it —** One of the island's most original cocktail bars, where striking design meets inventive drinks.<br>
 **Best for —** Signature cocktails · Sunset drinks · Design lovers · Date nights<br>
 **Price —** ฿฿<br>
-**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://www.google.com/maps/search/?api=1&query=CINTAMANI+Bar+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://maps.app.goo.gl/iZU8nHdSUvTf8y1R6)
 
 #### Charlie's Bar
 
@@ -272,7 +272,7 @@ As evening falls, Mama Market becomes one of Sri Thanu's liveliest gathering pla
 **Why we love it —** A lively food court with one of the widest street-food selections on the west coast.<br>
 **Best for —** Groups · Street food · Casual dinner · Budget-friendly<br>
 **Price —** ฿<br>
-**Getting there —** On the main road in Sri Thanu, close to the village's cafés and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+Market+Sri+Thanu+Koh+Phangan)
+**Getting there —** On the main road in Sri Thanu, close to the village's cafés and wellness centres. [View on map ↗](https://maps.app.goo.gl/MoRQn4QcJJZuknTz6)
 
 #### Oh My Burger
 

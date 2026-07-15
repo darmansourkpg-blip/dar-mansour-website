@@ -169,7 +169,7 @@ Some of the island's best Thai food hides in places you'd walk past without noti
 **Why we love it —** Honest home-style Thai cooking served with real warmth.<br>
 **Best for —** Authentic Thai food · Casual lunch · Local favourite<br>
 **Price —** ฿<br>
-**Getting there —** On the main road between Thong Sala and Baan Tai, just past Phangan Food Court coming from Thong Sala. [View on map ↗](https://www.google.com/maps/search/?api=1&query=No+Name+Kitchen+Phangan+Koh+Phangan)
+**Getting there —** On the main road between Thong Sala and Baan Tai, just past Phangan Food Court coming from Thong Sala. [View on map ↗](https://maps.app.goo.gl/4ov9xA5Z4eh3YDfW7)
 
 #### Sonolito Thai Food
 
@@ -192,7 +192,7 @@ The island's benchmark for chef-led dining, set in a restored Thai house in Thon
 **Best for —** Food lovers · Special occasions · Chef's table experience<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Just sixteen seats. Reservations are essential and best made well ahead.<br>
-**Getting there —** In a restored Thai house in Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=DAO+by+Chef+Nir+Mesika+Koh+Phangan)
+**Getting there —** In a restored Thai house in Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://maps.app.goo.gl/yjT9ryagAwwmPP1K8)
 
 #### Dear Phangan
 
@@ -252,7 +252,7 @@ Some of the best seafood here comes with nothing more than the sound of the wave
 **Best for —** Fresh seafood · Beachfront dining · Sunset dinner<br>
 **Price —** ฿฿<br>
 **Good to know —** Opens from 2:00 pm — good for a late lunch, sunset drinks or dinner by the sea.<br>
-**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Happiness+Restaurant+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://maps.app.goo.gl/3qdAKVbJYNfDLb5v7)
 
 ### Italian
 
@@ -323,14 +323,14 @@ Koh Phangan's only teppanyaki restaurant, inside the Anantara Rasananda resort o
 **Good to know —** Reservations recommended, especially for the teppanyaki counter.<br>
 **Getting there —** Within Anantara Rasananda Koh Phangan Villas, Thong Nai Pan, on the east coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Yukinoya+at+Anantara+Rasananda+Anantara+Rasananda%2C+5%2F5+Moo+5%2C+Thong+Nai+Pan+Noi%2C+Ko+Pha-ngan+84280)
 
-#### WASABI
+#### Wasabi
 
 Consistency is the hardest thing in a sushi restaurant, and it's what brings people back to Wasabi. Fresh fish, carefully made sushi, generous sashimi and comforting Japanese standards, done with the same care each visit. Good for a quick lunch or a relaxed dinner — the kind of dependable place you recommend without a second thought.
 
 **Why we love it —** Fresh, reliable sushi you'll happily come back to.<br>
 **Best for —** Sushi · Casual dinners · Everyday Japanese dining<br>
 **Price —** ฿฿<br>
-**Getting there —** In Thong Sala, with a second branch in Haad Son on the west coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Wasabi+sushi+Thong+Sala+Koh+Phangan)
+**Getting there —** In Thong Sala, with a second branch in Haad Son on the west coast. [View on map ↗](https://maps.app.goo.gl/pPTNwyfYEScAW1Wr7)
 
 #### Umami Ramen & Sushi Japanese
 
@@ -339,7 +339,7 @@ Little beats a steaming bowl of ramen after a day out on the island, and that's 
 **Why we love it —** Good ramen, fresh sushi and easy everyday dining.<br>
 **Best for —** Ramen · Casual lunch · Families<br>
 **Price —** ฿฿<br>
-**Getting there —** In Sri Thanu, a few minutes from the village centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Umami+Ramen+Sushi+Sri+Thanu+Koh+Phangan)
+**Getting there —** In Sri Thanu, a few minutes from the village centre. [View on map ↗](https://share.google/1OAQV3EVjDxe8WpST)
 
 ### Burmese (Myanmar)
 
@@ -459,7 +459,7 @@ Some places are worth the trip for the food, others for the view — Salaad View
 **Why we love it —** Authentic Thai cooking with one of Koh Phangan's finest sea views.<br>
 **Best for —** Lunch with a view · Fresh seafood · Relaxed coastal dining<br>
 **Price —** ฿<br>
-**Getting there —** On the hillside above Haad Salad Beach, overlooking Haad Salad Bay on the northwest coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salaad+View+Restaurant+Haad+Salad+Koh+Phangan)
+**Getting there —** On the hillside above Haad Salad Beach, overlooking Haad Salad Bay on the northwest coast. [View on map ↗](https://maps.app.goo.gl/1JsGzVPHXbkjFdaY6)
 
 ## Coffee Shops, Breakfast & Brunch in Koh Phangan
 
@@ -499,7 +499,7 @@ Coffee is taken seriously here. Chacha pairs carefully sourced beans with well-p
 **Why we love it —** Excellent specialty coffee in one of the island's friendliest café communities.<br>
 **Best for —** Specialty coffee · Breakfast · Digital nomads<br>
 **Price —** ฿<br>
-**Getting there —** On the west coast; open daily from 8 am. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Chacha+Coffee+Koh+Phangan)
+**Getting there —** On the west coast; open daily from 8 am. [View on map ↗](https://maps.app.goo.gl/CA1fP5D5tXQEoVdA9)
 
 #### Seasalt & Sage
 
@@ -586,7 +586,7 @@ Smaller and more local than Phantip, the Ban Tai market has a relaxed feel — r
 One of the west coast's favourite evening food courts, gathering local and international street food in a lively open-air setting — Thai dishes and grilled seafood through to wood-fired pizza, fresh noodles, vegan plates and homemade desserts. One standout stall is Oh My Burger, with its handcrafted burgers on local-bakery buns and grass-fed beef. Relaxed and affordable, and ideal for a group that can't agree on one cuisine.
 
 **Why we love it —** A lively food court with one of the widest street-food selections on the west coast.<br>
-**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+Market+Sri+Thanu+Koh+Phangan)
+**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres. [View on map ↗](https://maps.app.goo.gl/MoRQn4QcJJZuknTz6)
 
 #### Phangan Food Court
 
@@ -620,7 +620,7 @@ Stepping into CINTAMANI feels like arriving somewhere else entirely. Inspired by
 **Why we love it —** One of the island's most original cocktail bars, where inventive drinks meet striking design.<br>
 **Best for —** Signature cocktails · Sunset drinks · Design lovers · Date nights<br>
 **Price —** ฿฿<br>
-**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://www.google.com/maps/search/?api=1&query=CINTAMANI+Bar+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://maps.app.goo.gl/iZU8nHdSUvTf8y1R6)
 
 #### Bluerama
 
@@ -630,7 +630,7 @@ Watching the sunset from an infinity pool over the Gulf of Thailand is hard to b
 **Best for —** Sunset cocktails · Couples · Infinity pool · DJs<br>
 **Price —** ฿฿฿<br>
 **Good to know —** The infinity pool is adults-only. Saturdays feature sunset DJ sessions into the evening.<br>
-**Getting there —** On the hillside above Nai Wok Beach, just before Amsterdam Bar coming from Thong Sala towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Bluerama+Nai+Wok+Koh+Phangan)
+**Getting there —** On the hillside above Nai Wok Beach, just before Amsterdam Bar coming from Thong Sala towards Hin Kong. [View on map ↗](https://maps.app.goo.gl/TZgN5djME1FBU3B1A)
 
 #### Grasshopper Beach Bar
 
@@ -639,7 +639,7 @@ Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Be
 **Why we love it —** One of the island's liveliest sunset gatherings, with beach cocktails, DJs and the Zen Beach mood.<br>
 **Best for —** Sunset drinks · DJs · Meeting people · Zen Beach<br>
 **Price —** ฿฿<br>
-**Getting there —** Directly on Zen Beach, next to the Friday Drum Circle. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Grasshopper+Beach+Bar+Zen+Beach+Koh+Phangan)
+**Getting there —** Directly on Zen Beach, next to the Friday Drum Circle. [View on map ↗](https://maps.app.goo.gl/8KoN1Bc1rVXBgHV98)
 
 ## Where to Eat in Koh Phangan by Area
 
