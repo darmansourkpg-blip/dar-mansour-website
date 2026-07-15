@@ -157,7 +157,7 @@ One of the west coast's favourite evening food courts, gathering local and inter
 **Why we love it —** A lively food court with one of the widest street-food selections on the west coast.<br>
 **Best for —** Groups · Street food · Casual dinner · Budget-friendly<br>
 **Price —** ฿<br>
-**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+Market+Sri+Thanu+Koh+Phangan)
+**Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres. [View on map ↗](https://maps.app.goo.gl/MoRQn4QcJJZuknTz6)
 
 #### Oh My Burger
 
@@ -219,7 +219,7 @@ Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Be
 **Why we love it —** One of the island's liveliest sunset gatherings, with beach cocktails, DJs and the Zen Beach mood.<br>
 **Best for —** Sunset drinks · DJs · Meeting people · Zen Beach<br>
 **Price —** ฿฿<br>
-**Getting there —** Directly on Zen Beach, next to the Friday Drum Circle. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Grasshopper+Beach+Bar+Zen+Beach+Koh+Phangan)
+**Getting there —** Directly on Zen Beach, next to the Friday Drum Circle. [View on map ↗](https://maps.app.goo.gl/8KoN1Bc1rVXBgHV98)
 
 #### Three Monkey Bar
 
@@ -280,7 +280,7 @@ Stepping into CINTAMANI feels like arriving somewhere else entirely. Inspired by
 **Why we love it —** One of the island's most original cocktail bars, where inventive drinks meet striking design.<br>
 **Best for —** Signature cocktails · Sunset drinks · Design lovers · Date nights<br>
 **Price —** ฿฿<br>
-**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://www.google.com/maps/search/?api=1&query=CINTAMANI+Bar+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://maps.app.goo.gl/iZU8nHdSUvTf8y1R6)
 
 #### Happiness Restaurant
 
@@ -290,7 +290,7 @@ Some of the best seafood here comes with nothing more than the sound of the wave
 **Best for —** Fresh seafood · Beachfront dining · Sunset dinner<br>
 **Price —** ฿฿<br>
 **Good to know —** Opens from 2:00 pm — good for a late lunch, sunset drinks or dinner by the sea.<br>
-**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Happiness+Restaurant+Hin+Kong+Koh+Phangan)
+**Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://maps.app.goo.gl/3qdAKVbJYNfDLb5v7)
 
 ## Where to Eat After Yoga in Sri Thanu
 
