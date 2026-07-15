@@ -1,12 +1,12 @@
 ---
-title: 'Best Breakfast & Brunch in Koh Phangan'
-seo_title: 'Best Breakfast & Brunch in Koh Phangan | Local Guide (2026)'
-description: "Discover the best breakfast and brunch in Koh Phangan, from specialty coffee and artisan bakeries to healthy cafés, vegan brunches and local favourites."
+title: Best Breakfast & Brunch in Koh Phangan
 date: 2026-07-15
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: assets/uploads/koh-phangan-day.webp
-cover_alt: A slow island morning on Koh Phangan's west coast — coffee and breakfast weather
+cover: /assets/uploads/Breakfast-and-Brunch-Koh Phangan.jpg
+cover_alt: A breakfast plate with coffee in Koh Phangan
+seo_title: Best Breakfast & Brunch in Koh Phangan | Local Guide (2026)
+description: Discover the best breakfast and brunch in Koh Phangan, from specialty coffee and artisan bakeries to healthy cafés, vegan brunches and local favourites.
 quick_guide:
   - label: Best for
     value: Finding the best breakfast, brunch and coffee across Koh Phangan
@@ -35,7 +35,7 @@ faq:
     answer: Many cafés open around 7–8 am for the post-yoga crowd, especially in Sri Thanu and Baan Tai. Chacha Coffee and the Bubba's cafés are dependable early starts; hours shift in low season, so check current times before you go.
 ---
 
-*A Local Guide to the Island's Best Cafés, Specialty Coffee & Morning Spots (2026).*
+_A Local Guide to the Island's Best Cafés, Specialty Coffee & Morning Spots (2026)._
 
 ## Breakfast in Koh Phangan: More Than the First Meal of the Day
 
@@ -54,7 +54,7 @@ This guide is published by Dar Mansour, a Moroccan restaurant on the road betwee
 Short on time? These are our favourite morning recommendations across the island.
 
 | Looking for… | Our recommendation |
-|---|---|
+| --- | --- |
 | Best overall breakfast | Bubba's Coffee |
 | Best brunch | Foxxy's Restaurant & Café |
 | Best specialty coffee | Indigo Specialty Coffee & Bakery |
@@ -249,21 +249,27 @@ For croissants and French-style bakes, French Bakery Phangan is the island's go-
 Wherever you're based, there's a good morning nearby. Our favourites by village:
 
 ### Breakfast in Sri Thanu
-Foxxy's Restaurant & Café · Mimi's Café · Indigo Specialty Coffee & Bakery · Deli Devi · Eat.Co · ETHOS Wholefood Cafe & Shala · Kia Ora Café · Balance Specialty Coffee. *(See our full [Sri Thanu food guide](journal-where-to-eat-sri-thanu.html).)*
+
+Foxxy's Restaurant & Café · Mimi's Café · Indigo Specialty Coffee & Bakery · Deli Devi · Eat.Co · ETHOS Wholefood Cafe & Shala · Kia Ora Café · Balance Specialty Coffee. _(See our full_ [_Sri Thanu food guide_](journal-where-to-eat-sri-thanu.html)_.)_
 
 ### Breakfast in Baan Tai
+
 Bubba's Coffee · SAGE Breakfast & More · Chacha Coffee · Seasalt & Sage.
 
 ### Breakfast in Haad Yao
+
 Bubba's Roastery · What's Cup!
 
 ### Breakfast in Thong Sala
+
 Bubba's Thong Sala · Nira's Home Bakery.
 
 ### Breakfast in Chaloklum
+
 Caffe Della Moca.
 
 ### Breakfast Elsewhere on the Island
+
 Sand & Tan (on the beach in the south) · Summer Stone · Southway Coffee Bar · Swiss Farmacy (Madua Wan) · German Bakery by Achim · French Bakery Phangan.
 
 ## Best Cafés for Digital Nomads in Koh Phangan
