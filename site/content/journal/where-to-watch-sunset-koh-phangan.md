@@ -1,11 +1,11 @@
 ---
-title: 'Best Sunset Spots in Koh Phangan: A Local Guide to the West Coast'
+title: 'Best Sunset Spots in Koh Phangan: A Local Guide to the West Coast (2026)'
 date: 2026-07-05
 author: The Dar Mansour Journal
 category: koh-phangan-guide
 cover: assets/uploads/3t5vr1ltvowz_tc3_bdwopto77ym5epsw0hyfxd9tiknj3wlrx3wtc_jrwtadg_4jeej1o0oew40rgxvxw2dpulxtnrly-pxwvd3m-oj7k-by7h9ikmvyqrkjyhmleciiikv8f2qdk2venxgxdrbtlqar4cq7r1ke4nuedled9e.jpg
 cover_alt: Sunset over Koh Phangan's west coast
-seo_title: Where to Watch the Sunset in Koh Phangan — Best Spots & Bars
+seo_title: Where to Watch the Sunset in Koh Phangan — Best Spots 2026
 description: Koh Phangan's best sunset spots — from Zen Beach and Hin Kong to Amsterdam Bar and Bluerama, with local tips for a slow evening on the west coast.
 quick_guide:
   - label: Best for
