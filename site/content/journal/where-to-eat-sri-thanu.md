@@ -325,9 +325,13 @@ When the workday is done, Mama Market, Grasshopper Beach Bar and Dar Mansour are
 ## A Perfect Food Day in Sri Thanu
 
 **Breakfast —** Start with good coffee and a slow breakfast at Foxxy's Restaurant & Café.
+
 **Morning —** Join a class at Orion Healing, Wonderland or Samma Karuna, then unwind at Zen Beach.
+
 **Lunch —** Authentic Thai flavours at Restaurant Sunshine, or open-flame cooking at The Lakehouse.
+
 **Sunset —** Watch the sun drop over the Gulf of Thailand with a cocktail at Grasshopper Beach Bar.
+
 **Dinner —** End the day at Dar Mansour – Morocco's Kitchen, over Moroccan food in one of the island's most distinctive rooms.
 
 ## Final Thoughts

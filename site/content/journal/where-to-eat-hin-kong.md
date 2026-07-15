@@ -293,8 +293,11 @@ Tucked inside Mama Market, Oh My Burger has built one of the island's strongest 
 ## A Perfect Food Day in Hin Kong
 
 **Breakfast —** Start with authentic Thai flavours at Mama KOP, or take the short ride to Foxxy's Restaurant & Café for specialty coffee and a slow breakfast.
+
 **Lunch —** Contemporary Thai at Thai Element, or fresh seafood over the bay at Happiness Restaurant.
+
 **Sunset —** Watch the sun drop over Hin Kong Bay with cocktails at Charlie's Bar or CINTAMANI Bar.
+
 **Dinner —** Choose the chef-led evening at Dear Phangan, or Moroccan food and hospitality at Dar Mansour – Morocco's Kitchen.
 
 ## Final Thoughts
