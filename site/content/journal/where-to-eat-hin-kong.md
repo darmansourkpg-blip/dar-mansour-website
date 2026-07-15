@@ -175,7 +175,7 @@ A long-standing local favourite serving authentic Thai cooking in a relaxed, fam
 **Why we love it —** Authentic Thai cooking, generous portions and consistently good value.<br>
 **Best for —** Thai classics · Families · Casual lunch or dinner<br>
 **Price —** ฿<br>
-**Getting there —**Nestled just inland from Hin Kong Beach. [View on map ↗](https://maps.app.goo.gl/MzagbRyfPrNDXnEk6)
+**Getting there —** Just inland from Hin Kong Beach. [View on map ↗](https://maps.app.goo.gl/MzagbRyfPrNDXnEk6)
 
 ## International Cuisine in Hin Kong
 
