@@ -5,7 +5,7 @@ description: "Discover where to eat in Sri Thanu, Koh Phangan, with authentic Th
 date: 2026-07-14
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: assets/uploads/grasshopper-beach-bar-koh-phangan.jpg
+cover: assets/uploads/grasshopper-beach-bar-koh-phangan.webp
 cover_alt: Sunset over Zen Beach at Grasshopper Beach Bar, Sri Thanu, Koh Phangan
 quick_guide:
   - label: Best for

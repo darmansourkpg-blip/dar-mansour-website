@@ -3,7 +3,7 @@ title: "The Dadas: The Women Who Preserved Morocco's Family Recipes"
 date: 2026-07-04
 author: Dar Mansour
 category: moroccan-culture
-cover: /assets/uploads/Dada Maroc.jpg
+cover: assets/uploads/dadas-moroccan-couscoussier.jpg
 cover_alt: A Dada carrying a couscoussier — a vintage portrait of the women who preserved Moroccan family cooking
 seo_title: "The Dadas: Keepers of Morocco's Family Recipes"
 description: Meet the Dadas, the women who preserved Morocco's family recipes across generations — and whose slow-cooked legacy lives on at Dar Mansour, Koh Phangan.
