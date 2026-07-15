@@ -64,6 +64,7 @@ Short on time? These are our favourite morning recommendations across the island
 | Best bakery | German Bakery by Achim |
 | Best artisan pastries | Nira's Home Bakery |
 | Best breakfast with a sea view | SAGE Breakfast & More |
+| Best quiet hideaway | Swiss Farmacy |
 
 ## Best Breakfast & Brunch in Koh Phangan
 
@@ -243,7 +244,7 @@ For croissants and French-style bakes, French Bakery Phangan is the island's go-
 **Price —** ฿<br>
 **Getting there —** In Thong Sala. [View on map ↗](https://maps.app.goo.gl/8yNwSNkyWyApWfeu6)
 
-## Best Breakfast by Area in Koh Phangan
+## Where to Have Breakfast by Area in Koh Phangan
 
 Wherever you're based, there's a good morning nearby. Our favourites by village:
 
@@ -276,7 +277,7 @@ Reliable Wi-Fi, good coffee and a comfortable spot to work make these easy morni
 
 **9:00 — breakfast.** A generous brunch at Foxxy's Restaurant & Café, or a sea-view breakfast at SAGE in Ban Tai.
 
-**10:30 — beach or market.** Walk the beach, or browse a local market in Thong Sala.
+**10:30 — yoga or beach.** A late-morning yoga class, or time on the beach.
 
 **11:30 — something sweet.** A fresh pastry from Nira's Home Bakery or French Bakery Phangan.
 
