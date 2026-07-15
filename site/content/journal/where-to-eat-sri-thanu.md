@@ -232,7 +232,7 @@ At the southern end of Sri Thanu Beach, just before the fishing boats, Three Mon
 
 ## Great Restaurants Just Minutes from Sri Thanu
 
-One of the advantages of staying in Sri Thanu is that some of the island's finest restaurants are barely five minutes away, in neighbouring Hin Kong — several of them in our [full Koh Phangan restaurant guide](journal-best-restaurants-koh-phangan.html). Together, the two villages make one of the island's best food destinations.
+One of the advantages of staying in Sri Thanu is that some of the island's finest restaurants are barely five minutes away, in neighbouring Hin Kong — see our [full Hin Kong food guide](journal-where-to-eat-hin-kong.html), or the [island-wide restaurant guide](journal-best-restaurants-koh-phangan.html). Together, the two villages make one of the island's best food destinations.
 
 #### Dear Phangan
 
