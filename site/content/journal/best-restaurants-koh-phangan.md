@@ -11,7 +11,7 @@ quick_guide:
   - label: Best for
     value: Travellers and residents choosing where to eat, by cuisine and area
   - label: Where
-    value: Across the island — Hin Kong, Sri Thanu, Thong Sala, Baan Tai & the east
+    value: Across the island — Hin Kong, Sri Thanu, Thong Sala, Baan Tai, the east & the south (Haad Rin)
   - label: Best time to book
     value: Evenings in high season fill fast — reserve ahead
   - label: Good to know
@@ -339,7 +339,7 @@ Little beats a steaming bowl of ramen after a day out on the island, and that's 
 **Why we love it —** Good ramen, fresh sushi and easy everyday dining.<br>
 **Best for —** Ramen · Casual lunch · Families<br>
 **Price —** ฿฿<br>
-**Getting there —** In Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Umami+Ramen+Sushi+Thong+Sala+Koh+Phangan)
+**Getting there —** In Sri Thanu, a few minutes from the village centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Umami+Ramen+Sushi+Sri+Thanu+Koh+Phangan)
 
 ### Burmese (Myanmar)
 
@@ -364,7 +364,7 @@ Dar Mansour brings Moroccan cooking to Koh Phangan through family recipes, warm 
 
 **Why we love it —** It's our table: Moroccan food, hospitality and design built for slow, shared evenings.<br>
 **Best for —** Romantic dinners · Special occasions · Discovering Moroccan cuisine<br>
-**Price —** ฿฿฿<br>
+**Price —** ฿฿<br>
 **Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Thai Element, five minutes from Zen Beach and Orion Healing. [View on map ↗](https://share.google/Rp8YllnPe9Z9E9Va0)
 
 ### Persian & Middle Eastern
@@ -498,7 +498,7 @@ Coffee is taken seriously here. Chacha pairs carefully sourced beans with well-p
 
 **Why we love it —** Excellent specialty coffee in one of the island's friendliest café communities.<br>
 **Best for —** Specialty coffee · Breakfast · Digital nomads<br>
-**Price —** ฿฿<br>
+**Price —** ฿<br>
 **Getting there —** On the west coast; open daily from 8 am. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Chacha+Coffee+Koh+Phangan)
 
 #### Seasalt & Sage
@@ -663,7 +663,7 @@ Every part of Koh Phangan has its own atmosphere — and its own food scene. Sta
 
 **Haad Rin.** Best known for the Full Moon Party, but with a surprisingly varied food scene beyond the nightlife.<br>_Don't miss:_ Vertigo Resto Bar · He Eat · M. Thai Food Restaurant · Chilli Milli Bar & Burger Lounge · Explorar Koh Phangan (Adults Only Resort).
 
-**Thong Nai Pan (east coast).** A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites.<br>_Don't miss:_ Yukinoya (Anantara Rasananda) · Luna Restaurant · Krua Thai Restaurant · Coco Loco Ice Cream Bar & Restaurant · Siam Beach Bar and Restaurant · 2C Bar.
+**Thong Nai Pan Noi & Thong Nai Pan Yai (east coast).** A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites.<br>_Don't miss:_ Yukinoya (Anantara Rasananda) · Luna Restaurant · Krua Thai Restaurant · Coco Loco Ice Cream Bar & Restaurant · Siam Beach Bar and Restaurant · 2C Bar.
 
 **Madua Wan.** Hidden in the island's lush interior, home to a few destination restaurants that reward venturing away from the coast.<br>_Don't miss:_ BUSTAN · Swiss Farmacy.
 
