@@ -645,11 +645,11 @@ Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Be
 
 Every part of Koh Phangan has its own atmosphere — and its own food scene. Staying on the west coast, exploring the fishing villages or relaxing on a quieter beach, these are the restaurants, cafés and bars worth seeking out in each area.
 
-**Hin Kong.** Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening.<br>_Don't miss:_ Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.
+**Hin Kong.** Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening.<br>_Don't miss:_ Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.<br>→ Read our full guide: [Where to Eat in Hin Kong](journal-where-to-eat-hin-kong.html).
 
 **Wok Tum / Nai Wok.** Just south of Hin Kong, peaceful coastal scenery with some of the island's most creative kitchens and wide sunset views.<br>_Don't miss:_ NENA Locanda Italiana · Bluerama · Il Toscano · Dear Phangan · thanaka.
 
-**Sri Thanu.** The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner.<br>_Don't miss:_ Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.
+**Sri Thanu.** The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner.<br>_Don't miss:_ Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.<br>→ Read our full guide: [Where to Eat in Sri Thanu](journal-where-to-eat-sri-thanu.html).
 
 **Thong Sala.** The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food.<br>_Don't miss:_ DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.
 
