@@ -5,8 +5,8 @@ description: "Discover where to eat in Hin Kong, Koh Phangan, from authentic Tha
 date: 2026-07-15
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: assets/uploads/grasshopper-beach-bar-koh-phangan.jpg
-cover_alt: Sunset over Hin Kong Bay on the west coast of Koh Phangan
+cover: assets/uploads/aerial-view-hin-kong-beach-koh-phangan.webp
+cover_alt: Aerial view of Hin Kong Beach and bay on Koh Phangan's west coast
 quick_guide:
   - label: Best for
     value: Choosing where to eat in Hin Kong — Thai, beachfront seafood, sunset dining and cocktails
