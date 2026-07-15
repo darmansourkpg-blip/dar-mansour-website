@@ -248,17 +248,23 @@ For croissants and French-style bakes, French Bakery Phangan is the island's go-
 
 Wherever you're based, there's a good morning nearby. Our favourites by village:
 
-**Sri Thanu.** Foxxy's Restaurant & Café · Mimi's Café · Indigo Specialty Coffee & Bakery · Deli Devi · Eat.Co · ETHOS Wholefood Cafe & Shala · Kia Ora Café · Balance Specialty Coffee. *(See our full [Sri Thanu food guide](journal-where-to-eat-sri-thanu.html).)*
+### Breakfast in Sri Thanu
+Foxxy's Restaurant & Café · Mimi's Café · Indigo Specialty Coffee & Bakery · Deli Devi · Eat.Co · ETHOS Wholefood Cafe & Shala · Kia Ora Café · Balance Specialty Coffee. *(See our full [Sri Thanu food guide](journal-where-to-eat-sri-thanu.html).)*
 
-**Baan Tai.** Bubba's Coffee · SAGE Breakfast & More · Chacha Coffee · Seasalt & Sage.
+### Breakfast in Baan Tai
+Bubba's Coffee · SAGE Breakfast & More · Chacha Coffee · Seasalt & Sage.
 
-**Haad Yao.** Bubba's Roastery · What's Cup!
+### Breakfast in Haad Yao
+Bubba's Roastery · What's Cup!
 
-**Thong Sala.** Bubba's Thong Sala · Nira's Home Bakery.
+### Breakfast in Thong Sala
+Bubba's Thong Sala · Nira's Home Bakery.
 
-**Chaloklum.** Caffe Della Moca.
+### Breakfast in Chaloklum
+Caffe Della Moca.
 
-**South & elsewhere.** Sand & Tan (on the beach in the south) · Summer Stone · Southway Coffee Bar · Swiss Farmacy (Madua Wan) · German Bakery by Achim · French Bakery Phangan.
+### Breakfast Elsewhere on the Island
+Sand & Tan (on the beach in the south) · Summer Stone · Southway Coffee Bar · Swiss Farmacy (Madua Wan) · German Bakery by Achim · French Bakery Phangan.
 
 ## Best Cafés for Digital Nomads in Koh Phangan
 
