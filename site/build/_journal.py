@@ -196,15 +196,18 @@ _MD = _md.Markdown(extensions=["extra", "sane_lists", "toc"],
                    extension_configs={"toc": {"toc_depth": "2-3"}})
 
 
-def _render_body(text):
+def _render_body(text, has_faq=False):
     """Markdown -> HTML, with an auto clickable table of contents prepended
-    when the article has 2+ H2 sub-headings."""
+    when the article has 2+ H2 sub-headings. The FAQ section (rendered later
+    as HTML, outside the markdown body) is appended to the TOC when present."""
     _MD.reset()
     html = _MD.convert((text or "").strip())
     h2s = [t for t in _MD.toc_tokens if t.get("level") == 2]
     if len(h2s) < 2:
         return html
     items = "".join(f'<li><a href="#{t["id"]}">{t["name"]}</a></li>' for t in h2s)
+    if has_faq:
+        items += '<li><a href="#faq">Frequently asked questions</a></li>'
     toc = (f'<nav class="toc" aria-label="In this article">'
            f'<p class="toc__title">In this article</p><ol>{items}</ol></nav>')
     return toc + html
@@ -262,7 +265,7 @@ def load_articles():
             "quick_guide": _parse_quick_guide(meta.get("quick_guide")),
             "faq": _parse_faq(meta.get("faq")),
             "about": (meta.get("about") or ABOUT_DEFAULT).strip(),
-            "body_html": _render_body(body),
+            "body_html": _render_body(body, bool(_parse_faq(meta.get("faq")))),
             "url": f"journal-{slug}.html",
         })
         lint_article(articles[-1], body)
@@ -327,7 +330,7 @@ def _faq_section(a):
         f'<div class="faq__answer">{f["a_html"]}</div></details>'
         for f in a["faq"])
     return f'''
-<section class="section" style="padding-top:0;"><div class="wrap">
+<section class="section" id="faq" style="padding-top:0;"><div class="wrap">
   <div class="center" style="margin-bottom:2rem;">
     <span class="eyebrow">Good to know</span>
     <h2 style="margin-top:.7rem;">Frequently asked questions</h2>
