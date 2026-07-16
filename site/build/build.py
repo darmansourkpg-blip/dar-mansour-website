@@ -825,6 +825,13 @@ for fname, html in pages.items():
         f.write(add_img_dims(html))
     print("wrote", fname)
 
+# Standalone 'link in bio' page (darmansour.com/links) — written directly, kept
+# out of `pages` so it stays out of the sitemap and site chrome.
+import _links
+with open(os.path.join(OUT, "links.html"), "w", encoding="utf-8") as f:
+    f.write(_links.render())
+print("wrote links.html")
+
 # ---- robots.txt (+ sitemap.xml only once the site is open for indexing) ----
 from datetime import date
 SITE = L.SITE_URL.rstrip("/")
