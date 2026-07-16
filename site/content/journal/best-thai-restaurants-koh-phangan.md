@@ -5,8 +5,8 @@ description: "Discover the best Thai restaurants in Koh Phangan, from authentic 
 date: 2026-07-15
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: assets/uploads/koh-phangan-day.webp
-cover_alt: A Thai meal shared at a family-run kitchen on Koh Phangan
+cover: assets/uploads/traditional-thai-food-koh-phangan.jpg
+cover_alt: A spread of traditional Thai dishes served at a family-run kitchen on Koh Phangan
 quick_guide:
   - label: Best for
     value: Finding authentic Thai food across Koh Phangan — family kitchens, regional and contemporary Thai
