@@ -2,7 +2,7 @@
 title: 'Best Thai Restaurants in Koh Phangan'
 seo_title: 'Best Thai Restaurants in Koh Phangan | Authentic Guide 2026'
 description: "Discover the best Thai restaurants in Koh Phangan, from authentic family kitchens and regional Thai cuisine to contemporary Thai dining and local favourites."
-date: 2026-07-15
+date: 2026-07-16
 author: The Dar Mansour Journal
 category: koh-phangan-guide
 cover: assets/uploads/traditional-thai-food-koh-phangan.jpg
@@ -195,7 +195,7 @@ Muai's Thai Traditional Cooking Academy & Restaurant · No Name Kitchen Phangan 
 Auntie's Restaurant · Krua Thai.
 
 ### Thai Restaurants in Thong Nai Pan
-[Tamarind Tales Thai Restaurant and All Day Brunch](https://share.google/eCKI3xMR473TAMiAo) · [Pat&Da](https://maps.app.goo.gl/qZ3gBVgfb76DjWfs9).
+Tamarind Tales Thai Restaurant and All Day Brunch · Pat&Da.
 
 ## A Perfect Thai Food Day on Koh Phangan
 
