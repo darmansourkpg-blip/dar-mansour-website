@@ -834,6 +834,9 @@ if L.NOINDEX:
     # actually see that noindex, but don't advertise a sitemap. Drop any stale one.
     if os.path.exists(sitemap_path):
         os.remove(sitemap_path)
+    _llms_path = os.path.join(OUT, "llms.txt")
+    if os.path.exists(_llms_path):
+        os.remove(_llms_path)
     robots = ("# Pre-launch — every page carries a 'noindex' meta so search engines\n"
               "# keep this site out of results. Crawling stays allowed so the\n"
               "# noindex is actually seen. Remove this once the site goes public.\n"
@@ -850,8 +853,55 @@ else:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                 + _urls + '</urlset>\n')
-    robots = "User-agent: *\nAllow: /\n\n" f"Sitemap: {SITE}/sitemap.xml\n"
-    print("wrote sitemap.xml + robots.txt")
+    # Explicitly welcome the major AI / LLM crawlers (GEO). `Allow: /` already
+    # covers them via the wildcard, but naming them is an unambiguous opt-in and
+    # a positive signal — and makes it obvious we want to be cited, not blocked.
+    _ai_bots = ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot",
+                "Claude-Web", "anthropic-ai", "PerplexityBot", "Perplexity-User",
+                "Google-Extended", "CCBot", "Applebot-Extended", "cohere-ai")
+    _ai_block = "\n\n".join(f"User-agent: {b}\nAllow: /" for b in _ai_bots)
+    robots = ("User-agent: *\nAllow: /\n\n"
+              "# AI / generative-engine crawlers are welcome (GEO).\n"
+              f"{_ai_block}\n\n"
+              f"Sitemap: {SITE}/sitemap.xml\n"
+              f"# llms.txt: {SITE}/llms.txt\n")
+
+    # ---- llms.txt (a curated, AI-facing map of the site — the emerging GEO
+    # standard). Markdown, human-readable, points crawlers at the best pages.
+    _key_pages = [
+        ("moroccan-menu-koh-phangan.html", "Our Menu", "The full slow-cooked Moroccan menu — tajines, couscous, pastilla and more."),
+        ("moroccan-restaurant-reservation-koh-phangan.html", "Reservations", "How to book a table or pre-order via WhatsApp (dinner only, Tue–Sat)."),
+        ("moroccan-slow-dining-koh-phangan.html", "The Concept", "Slow food, Moroccan art de vivre and the philosophy behind Dar Mansour."),
+        ("moroccan-wine-pairing-koh-phangan.html", "Wine Pairing", "Our approach to pairing wine with Moroccan cuisine."),
+        ("moroccan-cocktails-koh-phangan.html", "Mansour Bar", "Signature cocktails and the bar programme."),
+        ("private-dining-koh-phangan.html", "Private Dining", "Private events and group dining at Dar Mansour."),
+        ("dar-mansour-founders-vision.html", "Founders & Story", "Maïja and Bruno, and the story behind the restaurant."),
+        ("moroccan-restaurant-reviews-koh-phangan.html", "Reviews", "What guests say about dining at Dar Mansour."),
+        ("faq.html", "FAQ", "Practical questions: hours, booking, location, dietary options."),
+        ("contact-dar-mansour-koh-phangan.html", "Contact & Location", "Address in the Sri Thanu / Hin Kong area, phone, email and map."),
+    ]
+    def _abs(fn):
+        return SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
+    _lines = [
+        "# Dar Mansour — Morocco's Kitchen",
+        "",
+        "> Moroccan slow-food restaurant on the west coast of Koh Phangan, Thailand "
+        "(Sri Thanu / Hin Kong area). Dinner only, Tuesday to Saturday, reservation "
+        "recommended. Also publishes The Journal: independent local guides to eating "
+        "and living on Koh Phangan, plus Moroccan culture.",
+        "",
+        "Founded by Maïja and Bruno. WhatsApp +66 82 276 7757 · hello@darmansour.com.",
+        "",
+        "## The Restaurant",
+        "",
+    ]
+    _lines += [f"- [{t}]({_abs(fn)}): {d}" for fn, t, d in _key_pages]
+    _lines += ["", "## The Journal (guides & stories)", ""]
+    _lines += [f"- [{a['title']}]({_abs(a['url'])}): {a['description']}"
+               for a in ARTICLES]
+    with open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(_lines) + "\n")
+    print("wrote sitemap.xml + robots.txt + llms.txt")
 with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
     f.write(robots)
 
