@@ -142,6 +142,7 @@ p { max-width: 62ch; }
 /* Inline contextual link (in-body internal linking) */
 .ilink { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(0,131,125,.38); transition: text-decoration-color .3s var(--ease); }
 .ilink:hover { text-decoration-color: var(--green); }
+.ilink svg { width: 14px; height: 14px; vertical-align: -2px; margin-left: .15em; }
 
 /* ---------- 6. Header ---------- */
 .header {
