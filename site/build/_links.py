@@ -14,7 +14,7 @@ import _layout as L
 WA = L.WA  # https://wa.me/66822767757
 
 # Real, verified destinations (see JSON-LD on the home page).
-GMAPS_DIR = "https://www.google.com/maps/dir/?api=1&destination=9.753335,99.968729"
+GMAPS_DIR = "https://www.google.com/maps/dir/?api=1&destination=9.753356308284413,99.96873999581217"
 GMAPS_PLACE = "https://share.google/Rp8YllnPe9Z9E9Va0"
 INSTAGRAM = "https://instagram.com/darmansour.kohphangan"
 FACEBOOK = "https://www.facebook.com/people/Dar-Mansour/"
@@ -85,12 +85,12 @@ def render():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dar Mansour — Morocco's Kitchen · Links</title>
+<title>Dar Mansour - Morocco's Kitchen · Links</title>
 <meta name="description" content="Reserve a table, explore the menu, get directions and follow Dar Mansour — Moroccan slow food in Koh Phangan.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://darmansour.com/links">
 <link rel="icon" href="assets/logo/dar-mansour-icon.png">
-<meta property="og:title" content="Dar Mansour — Morocco's Kitchen">
+<meta property="og:title" content="Dar Mansour - Morocco's Kitchen">
 <meta property="og:description" content="Reserve a table, explore the menu, get directions and follow Dar Mansour — Moroccan slow food in Koh Phangan.">
 <meta property="og:image" content="https://darmansour.com/assets/img/moroccan-garden-dining-koh-phangan.jpg">
 <meta property="og:type" content="website">
@@ -202,7 +202,7 @@ def render():
   <main class="lk">
     <div class="lk__pattern"></div>
     <div class="lk__card">
-      <img class="lk__logo" src="assets/logo/dar-mansour-logo-green.png" alt="Dar Mansour — Morocco's Kitchen">
+      <img class="lk__logo" src="assets/logo/dar-mansour-logo-green.png" alt="Dar Mansour - Morocco's Kitchen">
       <div class="lk__divider" aria-hidden="true"><span>&#9671; &#9671; &#9671;</span></div>
       <p class="lk__eyebrow">Welcome to</p>
       <h1 class="lk__name">Dar Mansour<br>Morocco's Kitchen</h1>
