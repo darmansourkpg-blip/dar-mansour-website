@@ -29,6 +29,8 @@ cover_fit: portrait
 
 ## Who Were the Dadas?
 
+**In short:** a Dada was a trusted household caretaker in Moroccan families — historically often a woman of Sub-Saharan African origin — who raised children across generations and became a guardian of the family's cooking and its recipes.
+
 Behind every great Moroccan family table, there was often a woman whose name rarely appeared in history books. She was known simply as the Dada.
 
 The word Dada (دادا) traditionally referred to a trusted nurse, governess or household caretaker. Yet within Moroccan families, these women became much more than domestic employees. They raised children, cared for several generations, shared stories, soothed tears and quietly shaped daily family life.

@@ -37,6 +37,8 @@ faq:
 
 _A Local Guide to Hin Kong's Best Restaurants, Beach Bars & Sunset Dining (2026)._
 
+**Straight to it:** in Hin Kong, the best tables are **Dear Phangan** for an all-round dinner, **Mama KOP** for authentic Thai, **Thai Element** for contemporary Thai, **Happiness Restaurant** for seafood, **Kikekla Bar & Restaurant** for beachfront dining and **L'Alcove** for a sunset meal. Below, our full picks for the village.
+
 ## Hin Kong: Koh Phangan's Sunset Coast and Emerging Food Destination
 
 With its laid-back atmosphere, west coast sunsets and a growing collection of independent restaurants, Hin Kong has quietly become one of Koh Phangan's most rewarding places to eat. Once known mainly for its peaceful bay and beachfront bars, the village is now home to some of the island's most creative chefs, honest local kitchens and distinctive dining rooms.
