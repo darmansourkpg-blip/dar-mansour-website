@@ -152,3 +152,61 @@ Thong Sala ») — plus proches des vraies requêtes que des questions génériq
 (décrire la photo, pas de bourrage de mots-clés), `quick_guide` (liste label/value), `faq` (liste
 question/answer), `about` (optionnel — sinon signature standard). Après édition :
 `cd site && python3 build/build.py` — corriger les ⚠ avertissements éditoriaux affichés.
+
+## Optimisation GEO (moteurs IA) — RÈGLES VALIDÉES (à appliquer à toute parution)
+Standards actés avec le client pour être **lu et cité** par les moteurs IA (ChatGPT, Perplexity,
+Google AI Overviews, Claude) **et** garder un SEO Google sain. À respecter pour chaque nouvel
+article et toute évolution du site.
+
+**1. Lisibilité technique (déjà en place — ne pas casser)**
+- **HTML pré-rendu, zéro dépendance JS pour le contenu** (site statique) — les LLMs ne rendent pas le JS.
+- **URLs sémantiques** — ne pas renommer les URLs existantes (casse l'indexation).
+- **`llms.txt`** à la racine : généré automatiquement par `build.py` (intro marque + pages clés + tous
+  les articles). Se met à jour seul → ne pas éditer à la main.
+- **`robots.txt`** accueille explicitement les crawlers IA (GPTBot, ClaudeBot, PerplexityBot,
+  Google-Extended, CCBot, Applebot-Extended…) — généré par `build.py`.
+
+**2. Answer-First (OBLIGATOIRE sur chaque guide)**
+- Juste sous le titre (après le sous-titre), une **phrase-réponse directe** qui nomme les meilleurs
+  choix par style/zone/occasion → citable par l'IA + éligible featured snippet Google.
+- **Varier la formule** d'un article à l'autre (« Short answer », « In a hurry? », « Quick answer »,
+  « Straight to it », « The quick version », « In short »…) — jamais le même boilerplate (Google
+  pénalise les patterns identiques). Pour un article **culture**, préférer une phrase-**définition**.
+- La `description` (meta) doit elle aussi contenir la réponse synthétique.
+
+**3. Structure en fragments (chaque guide doit cocher les 4)**
+- **H2/H3 explicites**, formulés comme des questions ou affirmations directes (« Where to Eat… »,
+  « Why You Can Trust This Guide », « How to… »).
+- **Listes** à puces **et** numérotées aux moments clés.
+- **≥ 1 tableau comparatif** synthétisant plusieurs options (type « Quick Picks »). *(Exception :
+  les articles culture/narratifs — ex. Les Dadas — n'en ont pas besoin.)*
+- **FAQ** en fin d'article (5–8 questions, anticipe le Query Fan-Out) — ancre `#faq` + schéma
+  FAQPage générés automatiquement, et la FAQ apparaît dans le sommaire « In this article ».
+
+**4. Balisage Schema.org / JSON-LD (géré par `_journal.py` / `build.py`)**
+- Types : `BlogPosting` (articles), `FAQPage`, `Restaurant` (home + contact), `Organization`, `Person`.
+- **Fraîcheur** : `datePublished` + `dateModified`. `dateModified` = **date du dernier commit git**
+  du fichier (repli : champ front matter `updated:`, puis date de publication). Ne pas remettre
+  `dateModified = datePublished` en dur. Le workflow de déploiement doit garder `fetch-depth: 0`.
+- **`sameAs`** (profils officiels) centralisé dans la constante **`SAME_AS`** (`_journal.py`) **et**
+  dans le schéma Restaurant (`build.py`) — garder les deux **synchronisés**. Profils actuels :
+  Instagram, Facebook, Google (fiche Maps), TripAdvisor. **À ajouter quand créé : Wikidata**
+  (le `sameAs` le plus suivi par les IA).
+- **Ne jamais** inventer de `review`/`aggregateRating` (faux avis = risque). Les avis clients réels
+  ne sont **jamais** réécrits (ni pour les mots bannis).
+
+**5. Autorité & confiance (E-E-A-T)**
+- **Attribuer** les distinctions au lieu d'auto-proclamer : « Featured by Golf du Maroc among the
+  world's notable Moroccan restaurants » (PAS « one of the world's best »). Les IA citent l'attribué,
+  se méfient du superlatif nu. Transparence : divulguer que le guide est publié par le restaurant.
+- Chantier long terme : **Wikidata**, mentions presse sans lien, présence tierce fiable.
+
+**6. Linter mots bannis — étendu aux pages statiques**
+- `build.py` passe **toutes** les pages (pas que le blog) au crible des `BANNED_PHRASES`. Exceptions
+  whitelistées dans `STATIC_LINT_ALLOW` : citations d'avis clients réels, citation presse, et la
+  FAQ SEO « hidden gem » (volontaire — pas une pénalité Google, juste une exception de charte).
+  Corriger les ⚠ affichés au build (dans `build.py` / `_menu.py` / `_drinks.py`), ou whitelister
+  si c'est une citation.
+
+**7. Page « link in bio » Instagram** : `darmansour.com/links` (générée par `_links.py`) — `noindex`,
+hors sitemap, design de marque (losange ◇◇◇, lanterne), 5 boutons max + Instagram/Facebook en icônes.
