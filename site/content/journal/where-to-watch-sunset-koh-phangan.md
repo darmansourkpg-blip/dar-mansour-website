@@ -46,6 +46,8 @@ You simply need the right place, a little patience, and the willingness to slow 
 
 Whether your perfect sunset means bare feet on the sand, a panoramic viewpoint high above the Gulf of Thailand, or a quiet drink overlooking the horizon, this guide brings together our favourite sunset spots on the island—carefully selected by people who are proud to call Koh Phangan home.
 
+**The quick version:** the best places to watch the sunset in Koh Phangan are **Zen Beach** and **Hin Kong Beach** for bare feet on the sand, **Amsterdam Bar** and **Three Sixty Rooftop Bar** for panoramic views, and **Bluerama** or **Secret Mountain** for an elegant sunset drink. Below, our favourite spots, beach by beach.
+
 ![Golden sunset over Hin Kong Beach, Koh Phangan](assets/uploads/where-to-watch-the-sunset-in-koh-phangan6.jpg "Sunset at Hin Kong Beach")
 
 ## Why the West Coast Offers the Island's Best Sunsets

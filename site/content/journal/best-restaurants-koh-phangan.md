@@ -47,6 +47,8 @@ faq:
 
 _A Local Guide to Koh Phangan's Most Memorable Dining Experiences._
 
+**Short answer:** Koh Phangan's best restaurants cover every mood — **Dear Phangan** for a standout all-round dinner, **DAO by Chef Nir Mesika** for a chef's table, **Mama KOP** for authentic Thai, **Fisherman's Restaurant & Bar** for seafood, **L'Alcove** for a sunset table and **Dar Mansour** for a romantic Moroccan evening. Below, our full picks by cuisine, area and occasion.
+
 ## Koh Phangan Is No Longer Just About the Full Moon Party
 
 Mention Koh Phangan to someone who's never been here and there's a good chance they'll picture beach parties, neon paint and sunrise after a long night. Spend a little time on the island and a completely different picture begins to emerge.

@@ -37,6 +37,8 @@ faq:
 
 *The Best Restaurants, Cafés & Sunset Spots (2026).*
 
+**Quick answer:** in Sri Thanu, eat at **Restaurant Sunshine** for authentic Thai, **Umami Ramen & Sushi** for Japanese, **Deli Devi** for a healthy café, **Mimi's Café** for breakfast, **Grasshopper Beach Bar** for sunset drinks and **Dar Mansour** for a special dinner. Below, our full picks for the village.
+
 ## Sri Thanu: Koh Phangan's Wellness Village and Its Food Scene
 
 Sri Thanu is best known as Koh Phangan's wellness hub — home to internationally recognised yoga schools, holistic healing centres and the island's most laid-back stretch of the west coast. Visiting Orion Healing, Wonderland or Samma Karuna, or just catching the sunset at Zen Beach, you're never far from somewhere good to eat.
