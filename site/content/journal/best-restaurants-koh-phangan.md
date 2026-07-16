@@ -641,31 +641,42 @@ Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Be
 **Price —** ฿฿<br>
 **Getting there —** Directly on Zen Beach, next to the Friday Drum Circle. [View on map ↗](https://maps.app.goo.gl/8KoN1Bc1rVXBgHV98)
 
-## Where to Eat in Koh Phangan by Area
+## Where to Eat Around Koh Phangan
 
 Every part of Koh Phangan has its own atmosphere — and its own food scene. Staying on the west coast, exploring the fishing villages or relaxing on a quieter beach, these are the restaurants, cafés and bars worth seeking out in each area.
 
-**Hin Kong.** Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening.<br>_Don't miss:_ Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.<br>→ Read our full guide: [Where to Eat in Hin Kong](journal-where-to-eat-hin-kong.html).
+### Restaurants in Hin Kong
+Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening.<br>_Don't miss:_ Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.<br>→ Read our full guide: [Where to Eat in Hin Kong](journal-where-to-eat-hin-kong.html).
 
-**Wok Tum / Nai Wok.** Just south of Hin Kong, peaceful coastal scenery with some of the island's most creative kitchens and wide sunset views.<br>_Don't miss:_ NENA Locanda Italiana · Bluerama · Il Toscano · Dear Phangan · thanaka.
+### Restaurants in Wok Tum & Nai Wok
+Just south of Hin Kong, peaceful coastal scenery with some of the island's most creative kitchens and wide sunset views.<br>_Don't miss:_ NENA Locanda Italiana · Bluerama · Il Toscano · Dear Phangan · thanaka.
 
-**Sri Thanu.** The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner.<br>_Don't miss:_ Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.<br>→ Read our full guide: [Where to Eat in Sri Thanu](journal-where-to-eat-sri-thanu.html).
+### Restaurants in Sri Thanu
+The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner.<br>_Don't miss:_ Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.<br>→ Read our full guide: [Where to Eat in Sri Thanu](journal-where-to-eat-sri-thanu.html).
 
-**Thong Sala.** The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food.<br>_Don't miss:_ DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.
+### Restaurants in Thong Sala
+The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food.<br>_Don't miss:_ DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.
 
-**Baan Tai.** South of Thong Sala, known for beachfront cafés, relaxed brunch spots and an easy-going feel.<br>_Don't miss:_ Fisherman's Restaurant & Bar · SAGE Breakfast & More · Seasalt & Sage · Ban Tai Night Market · Chacha Coffee.
+### Restaurants in Baan Tai
+South of Thong Sala, known for beachfront cafés, relaxed brunch spots and an easy-going feel.<br>_Don't miss:_ Fisherman's Restaurant & Bar · SAGE Breakfast & More · Seasalt & Sage · Ban Tai Night Market · Chacha Coffee.
 
-**Ban Kai.** A quieter stretch of coast with several restaurants making the most of elevated settings and sweeping sea views.<br>_Don't miss:_ Art of Nature Restaurant (Adults Only) · Sun Sky View · Thongyang Sea View.
+### Restaurants in Ban Kai
+A quieter stretch of coast with several restaurants making the most of elevated settings and sweeping sea views.<br>_Don't miss:_ Art of Nature Restaurant (Adults Only) · Sun Sky View · Thongyang Sea View.
 
-**Chaloklum.** A traditional fishing village on the north coast, and one of the island's most authentic places to eat, with fresh seafood and a weekly Sunday market.<br>_Don't miss:_ Mojo's (Chaloklum) · Chaloklum Sunday Night Market · Caffe Della Moca · Phorn Restaurant With Seaview · Culture Club.
+### Restaurants in Chaloklum
+A traditional fishing village on the north coast, and one of the island's most authentic places to eat, with fresh seafood and a weekly Sunday market.<br>_Don't miss:_ Mojo's (Chaloklum) · Chaloklum Sunday Night Market · Caffe Della Moca · Phorn Restaurant With Seaview · Culture Club.
 
-**Haad Yao & Haad Salad.** Turquoise water, beautiful beaches and a relaxed mix of destination restaurants, beach bars and wide sea views.<br>_Don't miss:_ Carte Blanche · Salaad View Restaurant · Amara Restaurant & Bar · The Memory Restaurant · Secret Beach: Lost 'N Found Beach Bar.
+### Restaurants in Haad Yao & Haad Salad
+Turquoise water, beautiful beaches and a relaxed mix of destination restaurants, beach bars and wide sea views.<br>_Don't miss:_ Carte Blanche · Salaad View Restaurant · Amara Restaurant & Bar · The Memory Restaurant · Secret Beach: Lost 'N Found Beach Bar.
 
-**Haad Rin.** Best known for the Full Moon Party, but with a surprisingly varied food scene beyond the nightlife.<br>_Don't miss:_ Vertigo Resto Bar · He Eat · M. Thai Food Restaurant · Chilli Milli Bar & Burger Lounge · Explorar Koh Phangan (Adults Only Resort).
+### Restaurants in Haad Rin
+Best known for the Full Moon Party, but with a surprisingly varied food scene beyond the nightlife.<br>_Don't miss:_ Vertigo Resto Bar · He Eat · M. Thai Food Restaurant · Chilli Milli Bar & Burger Lounge · Explorar Koh Phangan (Adults Only Resort).
 
-**Thong Nai Pan Noi & Thong Nai Pan Yai (east coast).** A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites.<br>_Don't miss:_ Yukinoya (Anantara Rasananda) · Luna Restaurant · Krua Thai Restaurant · Coco Loco Ice Cream Bar & Restaurant · Siam Beach Bar and Restaurant · 2C Bar.
+### Restaurants in Thong Nai Pan
+A slower pace, beautiful beaches and a mix of refined resort dining and relaxed beachfront favourites.<br>_Don't miss:_ Yukinoya (Anantara Rasananda) · Luna Restaurant · Krua Thai Restaurant · Coco Loco Ice Cream Bar & Restaurant · Siam Beach Bar and Restaurant · 2C Bar.
 
-**Madua Wan.** Hidden in the island's lush interior, home to a few destination restaurants that reward venturing away from the coast.<br>_Don't miss:_ BUSTAN · Swiss Farmacy.
+### Restaurants in Madua Wan
+Hidden in the island's lush interior, home to a few destination restaurants that reward venturing away from the coast.<br>_Don't miss:_ BUSTAN · Swiss Farmacy.
 
 ## Where to Eat in Koh Phangan for Every Occasion
 

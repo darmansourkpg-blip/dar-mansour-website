@@ -137,6 +137,16 @@ Koh Phangan à forte intention de réservation (Best Restaurants, Romantic Dinne
 Best by Area → Practical Tips → Final Thoughts → FAQ. Le bloc **« About the Journal » et le sommaire
 « In this article » sont générés automatiquement** par `_journal.py` — ne pas les écrire à la main.
 
+**Pattern « by area » (OBLIGATOIRE — SEO local)** : la section géographique de chaque guide suit ce
+schéma pour capter les recherches « [type] [village] » :
+- **H2** = « Where to [Eat / Have Breakfast / Find Great Coffee / Eat Authentic Thai Food] Around Koh Phangan ».
+- **H3 par zone** = « [Type] in [Zone] » → `Restaurants in Sri Thanu`, `Breakfast in Baan Tai`,
+  `Cafés in Thong Sala`, `Thai Restaurants in Hin Kong`… (le mot-clé + le village dans le titre).
+- Chaque H3 renvoie vers le guide de zone dédié quand il existe (maillage interne).
+Ajouter « Authentic » aux H2/FAQ Thai (« authentic Thai food koh phangan » = requête à forte intention).
+FAQ : privilégier des questions **localisées** (« best Thai restaurant in Sri Thanu », « breakfast in
+Thong Sala ») — plus proches des vraies requêtes que des questions génériques.
+
 **Champs front matter** (voir `_journal.py` / gabarits) : `title`, `seo_title`, `description`,
 `date`, `category` (`koh-phangan-guide` | `moroccan-culture` | `journal`), `cover`, `cover_alt`
 (décrire la photo, pas de bourrage de mots-clés), `quick_guide` (liste label/value), `faq` (liste

@@ -3,7 +3,7 @@ title: Best Breakfast & Brunch in Koh Phangan
 date: 2026-07-15
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: /assets/uploads/Breakfast-and-Brunch-Koh Phangan.jpg
+cover: assets/uploads/breakfast-and-brunch-koh-phangan.jpg
 cover_alt: A breakfast plate with coffee in Koh Phangan
 seo_title: Best Breakfast & Brunch in Koh Phangan | Local Guide (2026)
 description: Discover the best breakfast and brunch in Koh Phangan, from specialty coffee and artisan bakeries to healthy cafés, vegan brunches and local favourites.
@@ -244,7 +244,7 @@ For croissants and French-style bakes, French Bakery Phangan is the island's go-
 **Price —** ฿<br>
 **Getting there —** In Thong Sala. [View on map ↗](https://maps.app.goo.gl/8yNwSNkyWyApWfeu6)
 
-## Where to Have Breakfast by Area in Koh Phangan
+## Where to Have Breakfast Around Koh Phangan
 
 Wherever you're based, there's a good morning nearby. Our favourites by village:
 
