@@ -138,8 +138,8 @@ CATEGORIES = {
         "hero": "assets/uploads/koh-phangan-day.webp",
         "hero_alt": "Turquoise bay and white-sand beach on the west coast of Koh Phangan",
         "url": "koh-phangan-guide.html",
-        "seo_title": "Koh Phangan Guide — Where to Eat, Beaches &amp; Hidden Gems | Dar Mansour",
-        "seo_desc": "An insider's guide to Koh Phangan by Dar Mansour: where to eat, the best beaches, sunset spots, hidden gems and slow island living.",
+        "seo_title": "Koh Phangan Guide — Where to Eat, Beaches &amp; Secret Spots | Dar Mansour",
+        "seo_desc": "An insider's guide to Koh Phangan by Dar Mansour: where to eat, the best beaches, sunset spots, local secrets and slow island living.",
         "hub": True,
     },
     "moroccan-culture": {

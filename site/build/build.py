@@ -28,7 +28,7 @@ home_body = f'''
   <div class="wrap hero__inner">
     <span class="eyebrow">Slow Food · West Coast, Koh Phangan</span>
     <h1 class="display hero__title">Moroccan Restaurant<br>in Koh Phangan</h1>
-    <p class="hero__sub">A hidden gem near Sri Thanu &amp; Hin Kong — fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners, rooted in tradition and slow cooked with care.</p>
+    <p class="hero__sub">A quiet Moroccan table near Sri Thanu &amp; Hin Kong — fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners, rooted in tradition and slow cooked with care.</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WI} Reserve Your Evening</a>
       <a class="btn btn--light" href="moroccan-menu-koh-phangan.html">Discover the Menu</a>
@@ -159,8 +159,8 @@ home_body = f'''
 <section class="section"><div class="wrap reco">
   <div class="reveal">
     <span class="eyebrow">Recognition</span>
-    <h2 style="margin:1.1rem auto 1.2rem;max-width:20ch;">One of the world's best Moroccan restaurants</h2>
-    <p class="lead" style="max-width:60ch;margin-inline:auto;">Featured in <em>Golf du Maroc</em> magazine among the world's finest Moroccan culinary destinations — just two months after opening. A culinary gem carrying the Moroccan soul across continents.</p>
+    <h2 style="margin:1.1rem auto 1.2rem;max-width:22ch;">Featured by Golf du Maroc among the world's notable Moroccan restaurants</h2>
+    <p class="lead" style="max-width:60ch;margin-inline:auto;">Featured in <em>Golf du Maroc</em> magazine among the world's notable Moroccan culinary destinations — just two months after opening. A table carrying the Moroccan soul across continents.</p>
     <div style="margin-top:1.8rem;"><a class="textlink" href="best-moroccan-restaurant-world-press.html">Read the recognition {A}</a></div>
   </div>
 </div></section>
@@ -186,7 +186,7 @@ HOME_SCHEMA = RESTAURANT_SCHEMA
 
 pages["index.html"] = L.page(
     "Dar Mansour | Best Moroccan Restaurant in Koh Phangan — Slow Food &amp; Soulful Dining",
-    "Discover Dar Mansour, a hidden Moroccan gem in Koh Phangan. Authentic slow-cooked cuisine, romantic garden dinners and soulful hospitality. Book your table for an unforgettable dining experience.",
+    "Discover Dar Mansour, a Moroccan restaurant in Koh Phangan. Authentic slow-cooked cuisine, romantic garden dinners and soulful hospitality. Book your table for a slow Moroccan dinner.",
     "", home_body, extra_head=HOME_SCHEMA)
 
 
@@ -378,8 +378,8 @@ pages["moroccan-interior-art-koh-phangan.html"] = L.page(
 
 # ============================================================ RECOGNITION
 reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
-    "Recognition", "One of the world's best Moroccan restaurants",
-    "As seen in Golf du Maroc magazine — a culinary gem carrying the Moroccan soul across continents.",
+    "Recognition", "Featured by Golf du Maroc among the world's notable Moroccan restaurants",
+    "As seen in Golf du Maroc magazine — a table carrying the Moroccan soul across continents.",
     "assets/uploads/Dar%20Mansour%20Morocco%27s%20Kitchen%20Koh%20Phangan.jpg", "The illuminated Dar Mansour entrance sign with a Moroccan candle lantern at dusk in Koh Phangan", tall=True, focus="center 22%") + f'''
 <section class="section"><div class="wrap prose reveal">
   <span class="eyebrow">Golf du Maroc Magazine · Gastronomy</span>
@@ -387,7 +387,7 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
   <p>In an international gastronomy feature titled <em>Morocco Under Different Skies</em>, journalist Carole Belahrach set out, for <strong>Golf du Maroc</strong> magazine, to find the tables that carry Morocco's soul beyond its borders: <em>"When traveling abroad, you want to get away from it all and taste the local cuisine — just as you might want to discover the places that showcase Morocco and its gastronomy."</em> From Hamburg to New York and Los Angeles, the magazine's journey led — among a handful of chosen addresses — to a small tropical island in Thailand.</p>
   <figure class="tearsheet reveal">
     <a href="assets/uploads/Golf%20du%20Maroc%20english%20version.jpg" target="_blank" rel="noopener">
-      <img src="assets/uploads/Golf%20du%20Maroc%20english%20version.jpg" alt="Dar Mansour featured in Golf du Maroc magazine — 'Among the World's Best Moroccan Restaurants'" loading="lazy">
+      <img src="assets/uploads/Golf%20du%20Maroc%20english%20version.jpg" alt="Dar Mansour featured in Golf du Maroc magazine among the world's notable Moroccan culinary destinations" loading="lazy">
     </a>
     <figcaption>As featured in Golf du Maroc Magazine</figcaption>
   </figure>
@@ -442,8 +442,8 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
     ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["best-moroccan-restaurant-world-press.html"] = L.page(
-    "Dar Mansour — Among the World's Best Moroccan Culinary Destinations",
-    "Featured in Golf du Maroc, Phanganist and Phangan Life — Dar Mansour is recognised among the world's best Moroccan restaurants and celebrated on Koh Phangan for its slow-cooked Moroccan soul food.",
+    "Dar Mansour — Featured by Golf du Maroc | Notable Moroccan Dining",
+    "Featured in Golf du Maroc, Phanganist and Phangan Life, Dar Mansour is recognised among the world's notable Moroccan culinary destinations and celebrated on Koh Phangan for its slow-cooked Moroccan soul food.",
     "best-moroccan-restaurant-world-press.html", reco_body,
     og_image="assets/img/dar-mansour-front-koh-phangan.jpeg")
 
@@ -590,8 +590,8 @@ pd_body = L.breadcrumb(("Private Dining", None)) + L.subhero(
     "Birthdays, anniversaries, proposals and intimate gatherings — thoughtfully curated in our peaceful candlelit garden.",
     "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Warm candlelit Moroccan lounge with low tables and lanterns, set for a private celebration", tall=True) + f'''
 <section class="section"><div class="wrap prose reveal">
-  <p class="lead">Some evenings deserve more than a restaurant. Whether you're celebrating a birthday, anniversary, engagement, family gathering, honeymoon, or simply bringing together people you love, Dar Mansour offers an intimate Moroccan dining experience designed to create unforgettable memories.</p>
-  <p>Nestled in our peaceful candlelit garden between Sri Thanu and Hin Kong, every celebration is thoughtfully curated with the warmth of <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">Moroccan hospitality</a>, slow-cooked cuisine, beautiful music and attentive service. Because every gathering is unique, we tailor your evening to feel personal, elegant and meaningful.</p>
+  <p class="lead">Some evenings deserve more than a restaurant. Whether you're celebrating a birthday, anniversary, engagement, family gathering, honeymoon, or simply bringing together people you love, Dar Mansour offers an intimate Moroccan dining experience designed to create lasting memories.</p>
+  <p>Set in our peaceful candlelit garden between Sri Thanu and Hin Kong, every celebration is thoughtfully curated with the warmth of <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">Moroccan hospitality</a>, slow-cooked cuisine, beautiful music and attentive service. Because every gathering is unique, we tailor your evening to feel personal, elegant and meaningful.</p>
   <h2>Perfect for</h2>
   <ul class="bullets">
     <li>Birthday celebrations</li><li>Anniversary dinners</li><li>Marriage proposals</li><li>Honeymoon dinners</li>
@@ -624,7 +624,7 @@ pages["private-dining-koh-phangan.html"] = L.page(
 # ============================================================ FAQ
 FAQ = [
     ("What Moroccan dishes can you try at Dar Mansour in Koh Phangan?","At Dar Mansour you'll discover authentic Moroccan soul food — slow-cooked tajines, saffron couscous, roasted seasonal vegetables and sweet-savoury touches like prunes, apricots and preserved lemon. Everything is handmade and slow-cooked to order, using traditional recipes passed down through generations."),
-    ("Why is Dar Mansour considered a hidden gem restaurant in Koh Phangan?","Dar Mansour is a hidden gem Moroccan restaurant near Sri Thanu and Hin Kong, designed for romantic, slow and meaningful dining. From candlelit garden tables to handcrafted interiors, every detail invites you to slow down and reconnect — with food, with art and with yourself."),
+    ("What makes Dar Mansour a special place to dine in Koh Phangan?","Dar Mansour is an intimate Moroccan restaurant near Sri Thanu and Hin Kong, designed for romantic, slow and meaningful dining. From candlelit garden tables to handcrafted interiors, every detail invites you to slow down and reconnect — with food, with art and with yourself."),
     ("Where exactly is Dar Mansour located in Koh Phangan?","Dar Mansour is on the west coast of Koh Phangan, minutes from Sri Thanu, Hin Kong, The Alcove and Orion Healing Centre. Tucked away in a quiet garden, it blends Moroccan warmth with island calm."),
     ("What are Dar Mansour's opening hours for dinner?","We are open for dinner only, from 7:00 PM to 10:30 PM, Tuesday to Saturday. We are closed on Sundays and Mondays. Reservations are highly recommended, as we welcome only a limited number of guests each evening."),
     ("How do I book a table at Dar Mansour?",'Reservations are made via WhatsApp: <a class="ilink" href="https://wa.me/66822767757" target="_blank" rel="noopener">+66 82 276 7757</a>. Because Dar Mansour offers a boutique dining experience with limited seats, we highly recommend reserving in advance.'),
