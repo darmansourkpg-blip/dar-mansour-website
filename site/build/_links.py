@@ -66,17 +66,19 @@ LANTERN = (
 
 def render():
     year = datetime.date.today().year
+    # Concentrated set: one primary action (reserve) + the four links that
+    # actually drive a decision. Wine/cocktail lists live inside the menu/site;
+    # Instagram & Facebook move to a discreet icon row below.
     buttons = "\n".join([
         _btn(WA, "Reserve a Table", "whatsapp", primary=True, note="via WhatsApp"),
-        _btn("https://darmansour.com/", "Official Website", "globe", external=False),
         _btn("moroccan-menu-koh-phangan.html", "View Our Menu", "menu", external=False),
-        _btn("moroccan-wine-pairing-koh-phangan.html", "Wine Pairing List", "wine", external=False),
-        _btn("moroccan-cocktails-koh-phangan.html", "Cocktail Menu", "cocktail", external=False),
         _btn(GMAPS_DIR, "Get Directions", "pin", note="Google Maps"),
+        _btn("https://darmansour.com/", "Official Website", "globe", external=False),
         _btn(GMAPS_PLACE, "Reviews", "star"),
-        _btn(INSTAGRAM, "Instagram", "instagram"),
-        _btn(FACEBOOK, "Facebook", "facebook"),
     ])
+    socials = (
+        f'<a href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram">{_icon("instagram")}</a>'
+        f'<a href="{FACEBOOK}" target="_blank" rel="noopener" aria-label="Facebook">{_icon("facebook", filled=True)}</a>')
 
     return f'''<!doctype html>
 <html lang="en">
@@ -139,7 +141,11 @@ def render():
     text-align:center;
   }}
   .lk__logo{{height:64px;width:auto;margin:0 auto .9rem}}
-  .lk__star{{width:26px;height:26px;color:var(--green);margin:0 auto .5rem;display:block}}
+  /* Brand diamond divider (matches the site's ◇◇◇ ornament) */
+  .lk__divider{{display:flex;align-items:center;justify-content:center;gap:.55rem;
+    color:var(--green);max-width:210px;margin:.2rem auto .5rem}}
+  .lk__divider::before,.lk__divider::after{{content:"";flex:1;height:1px;background:currentColor;opacity:.45}}
+  .lk__divider span{{font-size:.6rem;letter-spacing:.35em;line-height:1}}
   .lk__eyebrow{{
     font-size:.66rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;
     color:var(--green);
@@ -178,6 +184,13 @@ def render():
   }}
   .lk__btn--primary .lk__note{{opacity:.85}}
 
+  .lk__social{{display:flex;justify-content:center;gap:.9rem;margin-top:1.2rem}}
+  .lk__social a{{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;
+    border:1px solid var(--line);color:var(--green-deep);
+    transition:transform .25s var(--ease),background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}}
+  .lk__social a:hover,.lk__social a:focus-visible{{transform:translateY(-2px);background:var(--green);color:#fff;border-color:var(--green)}}
+  .lk__social svg{{width:20px;height:20px}}
+
   .lk__foot{{
     position:relative; z-index:1; margin-top:1.4rem; text-align:center;
     color:rgba(244,239,228,.7); font-size:.72rem; letter-spacing:.04em;
@@ -190,7 +203,7 @@ def render():
     <div class="lk__pattern"></div>
     <div class="lk__card">
       <img class="lk__logo" src="assets/logo/dar-mansour-logo-green.png" alt="Dar Mansour — Morocco's Kitchen">
-      {ZELLIGE_STAR}
+      <div class="lk__divider" aria-hidden="true"><span>&#9671; &#9671; &#9671;</span></div>
       <p class="lk__eyebrow">Welcome to</p>
       <h1 class="lk__name">Dar Mansour<br>Morocco's Kitchen</h1>
       <p class="lk__sub">Moroccan slow food · Koh Phangan</p>
@@ -198,6 +211,9 @@ def render():
       <nav class="lk__btns" aria-label="Dar Mansour links">
         {buttons}
       </nav>
+      <div class="lk__social" aria-label="Follow Dar Mansour">
+        {socials}
+      </div>
     </div>
     <p class="lk__foot">Hin Kong · Sri Thanu, Koh Phangan · Dinner Tue–Sat<br>
       &copy; {year} Dar Mansour — <a href="https://darmansour.com/">darmansour.com</a></p>
