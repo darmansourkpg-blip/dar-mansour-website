@@ -318,7 +318,7 @@ def _blog_schema(a):
         "author": {"@type": "Organization", "name": a["author"]},
         "publisher": {
             "@type": "Organization",
-            "name": "Dar Mansour — Morocco's Kitchen",
+            "name": "Dar Mansour - Morocco's Kitchen",
             "url": f"{site}/",
             "logo": {"@type": "ImageObject", "url": f"{site}/assets/logo/dar-mansour-logo-green.png"},
             # Official profiles — same list as the Restaurant schema, so every
@@ -505,7 +505,7 @@ def _authors_schema():
         "image": f'{site}/{p["photo"]}',
         "description": p["bio"],
         "url": f"{site}/{AUTHORS_URL}",
-        "worksFor": {"@type": "Organization", "name": "Dar Mansour — Morocco's Kitchen",
+        "worksFor": {"@type": "Organization", "name": "Dar Mansour - Morocco's Kitchen",
                      "url": site + "/"},
     } for p in AUTHORS]
     return "\n".join('<script type="application/ld+json">' + json.dumps(p, ensure_ascii=False) + '</script>'

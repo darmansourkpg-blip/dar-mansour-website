@@ -86,7 +86,7 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
 {'<meta name="robots" content="noindex, nofollow">' if NOINDEX else ''}
 <link rel="canonical" href="{SITE_URL}/{canonical}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Dar Mansour — Morocco's Kitchen">
+<meta property="og:site_name" content="Dar Mansour - Morocco's Kitchen">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:image" content="{SITE_URL}/{og_image}">
@@ -143,8 +143,8 @@ def header():
     return f'''
 <header class="header" id="header">
   <div class="wrap header__inner">
-    <a class="brand" href="index.html" aria-label="Dar Mansour — Morocco's Kitchen, home">
-      <img class="brand__full brand__full--white" src="assets/logo/dar-mansour-logo-white.png" alt="Dar Mansour — Morocco's Kitchen" width="1622" height="876">
+    <a class="brand" href="index.html" aria-label="Dar Mansour - Morocco's Kitchen, home">
+      <img class="brand__full brand__full--white" src="assets/logo/dar-mansour-logo-white.png" alt="Dar Mansour - Morocco's Kitchen" width="1622" height="876">
       <img class="brand__full brand__full--color" src="assets/logo/dar-mansour-logo-green.png" alt="" aria-hidden="true" width="1622" height="876">
     </a>
     <nav class="nav" aria-label="Primary">
@@ -260,7 +260,7 @@ def footer():
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img class="footer__logo" src="assets/logo/dar-mansour-logo-white.png" alt="Dar Mansour — Morocco's Kitchen" width="1622" height="876">
+        <img class="footer__logo" src="assets/logo/dar-mansour-logo-white.png" alt="Dar Mansour - Morocco's Kitchen" width="1622" height="876">
         <p class="footer__brand-sub">Koh Phangan · Thailand</p>
         <p>A soulful Moroccan slow food sanctuary on the west coast of Koh Phangan. Rooted in tradition, slow cooked with care.</p>
       </div>
