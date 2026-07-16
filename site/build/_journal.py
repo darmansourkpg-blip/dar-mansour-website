@@ -45,6 +45,7 @@ SAME_AS = [
     "https://www.facebook.com/people/Dar-Mansour/",
     "https://share.google/Rp8YllnPe9Z9E9Va0",
     "https://www.tripadvisor.com/Restaurant_Review-d32851492",
+    "https://www.wikidata.org/wiki/Q140585802",
 ]
 
 # Editorial signature appended to every article (playbook §19 "About the Journal").
