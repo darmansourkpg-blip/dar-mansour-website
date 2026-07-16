@@ -38,6 +38,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CONTENT = os.path.join(HERE, "..", "content", "journal")
 DEFAULT_COVER = "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg"
 
+# Official brand profiles (Schema.org sameAs) — kept in sync with the Restaurant
+# schema on the home page. Add Wikidata / TripAdvisor / others here when created.
+SAME_AS = [
+    "https://instagram.com/darmansour.kohphangan",
+    "https://www.facebook.com/people/Dar-Mansour/",
+    "https://share.google/Rp8YllnPe9Z9E9Va0",
+]
+
 # Editorial signature appended to every article (playbook §19 "About the Journal").
 # An article may override it with an `about:` front-matter field.
 ABOUT_DEFAULT = (
@@ -310,7 +318,11 @@ def _blog_schema(a):
         "publisher": {
             "@type": "Organization",
             "name": "Dar Mansour — Morocco's Kitchen",
+            "url": f"{site}/",
             "logo": {"@type": "ImageObject", "url": f"{site}/assets/logo/dar-mansour-logo-green.png"},
+            # Official profiles — same list as the Restaurant schema, so every
+            # article ties the brand to its verified entities (Google/AI).
+            "sameAs": SAME_AS,
         },
         "mainEntityOfPage": f'{site}/{a["url"]}',
         "articleSection": a["cat"]["label"],
