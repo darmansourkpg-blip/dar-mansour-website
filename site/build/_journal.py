@@ -238,6 +238,21 @@ def _parse_faq(raw):
     return faq
 
 
+def _git_mod_date(path):
+    """Last git commit date (YYYY-MM-DD) for a file, or None if unavailable
+    (no git, shallow checkout with no history, or file not yet committed)."""
+    try:
+        import subprocess
+        out = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", path],
+            cwd=os.path.dirname(os.path.abspath(path)),
+            capture_output=True, text=True, timeout=10)
+        d = out.stdout.strip()
+        return d if re.match(r"^\d{4}-\d{2}-\d{2}$", d) else None
+    except Exception:
+        return None
+
+
 def load_articles():
     """Return a list of article dicts, newest first."""
     articles = []
@@ -246,6 +261,13 @@ def load_articles():
             meta, body = _split_front_matter(f.read())
         slug = os.path.splitext(os.path.basename(path))[0]
         iso, disp = _dates(meta.get("date"))
+        # Freshness signal (JSON-LD dateModified): explicit `updated:` field wins,
+        # else the file's last git-commit date, else the published date. Never
+        # earlier than the published date.
+        upd, _ = _dates(meta.get("updated")) if meta.get("updated") else (None, None)
+        mod_iso = upd or _git_mod_date(path) or iso
+        if mod_iso < iso:
+            mod_iso = iso
         cover = (meta.get("cover") or DEFAULT_COVER).lstrip("/")
         title = meta.get("title") or slug.replace("-", " ").title()
         cat_key = meta.get("category") if meta.get("category") in CATEGORIES else DEFAULT_CATEGORY
@@ -256,6 +278,7 @@ def load_articles():
             "description": (meta.get("description") or "").strip(),
             "date_iso": iso,
             "date_disp": disp,
+            "mod_iso": mod_iso,
             "author": meta.get("author") or "Dar Mansour",
             "category": cat_key,
             "cat": CATEGORIES[cat_key],
@@ -282,7 +305,7 @@ def _blog_schema(a):
         "description": a["description"],
         "image": f'{site}/{a["cover"]}',
         "datePublished": a["date_iso"],
-        "dateModified": a["date_iso"],
+        "dateModified": a["mod_iso"],
         "author": {"@type": "Organization", "name": a["author"]},
         "publisher": {
             "@type": "Organization",
