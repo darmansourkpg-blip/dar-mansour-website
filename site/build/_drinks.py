@@ -8,7 +8,7 @@ WINE_FEATURE = {
     "origin": "Portugal · Glass (10cl) 290 · Bottle 2300",
     "grapes": "",
     "pairing": "Berber's Lamb Tajine (prunes &amp; almonds)",
-    "desc": "Smooth, amber and rich — a silk-sweet, surprising match that enhances the spices and deep savoury flavours of this unique tajine. “Unexpected? Yes. Unforgettable? Absolutely.”",
+    "desc": "Smooth, amber and rich — a silk-sweet, surprising match that enhances the spices and deep savoury flavours of this unique tajine. “Unexpected? Yes. A revelation? Absolutely.”",
 }
 
 WINE_GROUPS = [

@@ -64,7 +64,7 @@ MENU = [
      ]),
 
     ("tanjia", "Tanjia — Kitchen's Recommendation",
-     "Our tribute to slowness. This traditional Marrakech dish is gently simmered for over 5 hours in a sealed clay jar nestled among glowing embers, creating a rich concentration of deep flavours. An individual serving for one guest, accompanied by Tafarnout bread.",
+     "Our tribute to slowness. This traditional Marrakech dish is gently simmered for over 5 hours in a sealed clay jar buried in glowing embers, creating a rich concentration of deep flavours. An individual serving for one guest, accompanied by Tafarnout bread.",
      "",
      [
         ("Tanjia Marrakchia — Beef Shank, Preserved Lemon &amp; Smen", "580",
