@@ -168,15 +168,6 @@ Tucked away in Thong Sala, No Name Kitchen has quietly become one of the island'
 **Price —** ฿<br>
 **Getting there —** On the main road between Thong Sala and Baan Tai, just past Phangan Food Court coming from Thong Sala. [View on map ↗](https://maps.app.goo.gl/4ov9xA5Z4eh3YDfW7)
 
-#### Local Café & Restaurant
-
-Despite the plain name, Local Café & Restaurant has become a Baan Tai favourite. Fresh seafood, authentic Thai cooking and generous portions have earned it a strong local reputation. The menu pairs Thai classics with seafood specialities — fresh fish, prawns and squid alongside fragrant curries and stir-fries — good for a relaxed lunch or dinner.
-
-**Why we love it —** Fresh seafood and authentic Thai cooking served with genuine family hospitality.<br>
-**Best for —** Fresh seafood · Family meals · Local experience<br>
-**Must try —** Whole Fried Sea Bass with Fish Sauce, Seafood Tom Yum and Stir-Fried Squid with Garlic.<br>
-**Getting there —** In Baan Tai. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Local+Cafe+Restaurant+Baan+Tai+Koh+Phangan)
-
 #### Krua Thai
 
 Krua Thai is one of those dependable local restaurants that earns a following through consistency rather than publicity. In Baan Tai, it serves an extensive menu of traditional Thai dishes — fresh ingredients, generous portions, honest flavours. Whether it's a comforting curry, a noodle dish or a spicy papaya salad, the kitchen delivers the familiar favourites with confidence, and friendly service and good value keep people coming back.
@@ -201,7 +192,7 @@ Mama KOP. *(More in our [Hin Kong food guide](journal-where-to-eat-hin-kong.html
 Muai's Thai Traditional Cooking Academy & Restaurant · No Name Kitchen Phangan · At Chiang Mai.
 
 ### Thai Restaurants in Baan Tai
-Local Café & Restaurant · Auntie's Restaurant · Krua Thai.
+Auntie's Restaurant · Krua Thai.
 
 ### Thai Restaurants in Thong Nai Pan
 [Tamarind Tales Thai Restaurant and All Day Brunch](https://share.google/eCKI3xMR473TAMiAo) · [Pat&Da](https://maps.app.goo.gl/qZ3gBVgfb76DjWfs9).
