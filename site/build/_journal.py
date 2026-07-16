@@ -39,11 +39,12 @@ CONTENT = os.path.join(HERE, "..", "content", "journal")
 DEFAULT_COVER = "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg"
 
 # Official brand profiles (Schema.org sameAs) — kept in sync with the Restaurant
-# schema on the home page. Add Wikidata / TripAdvisor / others here when created.
+# schema on the home page. Add Wikidata / others here when created.
 SAME_AS = [
     "https://instagram.com/darmansour.kohphangan",
     "https://www.facebook.com/people/Dar-Mansour/",
     "https://share.google/Rp8YllnPe9Z9E9Va0",
+    "https://www.tripadvisor.com/Restaurant_Review-d32851492",
 ]
 
 # Editorial signature appended to every article (playbook §19 "About the Journal").
