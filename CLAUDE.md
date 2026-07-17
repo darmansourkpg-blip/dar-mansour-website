@@ -190,8 +190,9 @@ article et toute évolution du site.
   `dateModified = datePublished` en dur. Le workflow de déploiement doit garder `fetch-depth: 0`.
 - **`sameAs`** (profils officiels) centralisé dans la constante **`SAME_AS`** (`_journal.py`) **et**
   dans le schéma Restaurant (`build.py`) — garder les deux **synchronisés**. Profils actuels :
-  Instagram, Facebook, Google (fiche Maps), TripAdvisor. **À ajouter quand créé : Wikidata**
-  (le `sameAs` le plus suivi par les IA).
+  Instagram, Facebook, Google (fiche Maps), TripAdvisor, **Wikidata (`Q140585802`)** et
+  **Crunchbase** (`/organization/dar-mansour-morocco-s-kitchen`). **À ajouter quand créés** :
+  Wikimedia Commons, Pinterest, LinkedIn, Apple Maps, Bing Places, OpenStreetMap.
 - **Ne jamais** inventer de `review`/`aggregateRating` (faux avis = risque). Les avis clients réels
   ne sont **jamais** réécrits (ni pour les mots bannis).
 
@@ -199,7 +200,9 @@ article et toute évolution du site.
 - **Attribuer** les distinctions au lieu d'auto-proclamer : « Featured by Golf du Maroc among the
   world's notable Moroccan restaurants » (PAS « one of the world's best »). Les IA citent l'attribué,
   se méfient du superlatif nu. Transparence : divulguer que le guide est publié par le restaurant.
-- Chantier long terme : **Wikidata**, mentions presse sans lien, présence tierce fiable.
+- **Fait** : Wikidata (`Q140585802`) + Crunchbase créés et reliés au `sameAs`. Chantier long terme
+  restant : mentions presse sans lien, Wikimedia Commons, présence tierce fiable, puis Wikipédia
+  seulement quand la couverture presse indépendante sera suffisante.
 
 **6. Linter mots bannis — étendu aux pages statiques**
 - `build.py` passe **toutes** les pages (pas que le blog) au crible des `BANNED_PHRASES`. Exceptions
