@@ -194,8 +194,9 @@ article et toute évolution du site.
   **Crunchbase** (`/organization/dar-mansour-morocco-s-kitchen`) et **OpenStreetMap**
   (`node/14021567355`, relié en retour via le tag `brand:wikidata=Q140585802`), **Apple Maps**
   et **Bing Places** (URL stable `ss=ypid.YN8178x5570947916035674182` — jamais l'URL de recherche
-  avec jeton de session, qui expire). **À ajouter quand créés** : Wikimedia Commons, Pinterest,
-  LinkedIn.
+  avec jeton de session, qui expire). Wikimedia Commons a 8 photos du restaurant sous ce même nom
+  (dont une reliée en `image` P18 sur Wikidata) — pas de « profil » unique à ajouter au `sameAs`
+  pour une galerie de fichiers. **À ajouter quand créés** : Pinterest, LinkedIn.
 - **Ne jamais** inventer de `review`/`aggregateRating` (faux avis = risque). Les avis clients réels
   ne sont **jamais** réécrits (ni pour les mots bannis).
 
@@ -206,8 +207,7 @@ article et toute évolution du site.
 - **Fait** : Wikidata (`Q140585802`) + Crunchbase + OpenStreetMap (`node/14021567355`) créés et
   reliés au `sameAs` (et dans le schéma Restaurant), **Apple Maps** et **Bing Places** ajoutés.
   Chantier long terme restant : mentions presse sans lien, Wikimedia Commons, présence tierce
-  fiable, puis Wikipédia
-  seulement quand la couverture presse indépendante sera suffisante.
+  fiable, puis Wikipédia seulement quand la couverture presse indépendante sera suffisante.
 
 **6. Linter mots bannis — étendu aux pages statiques**
 - `build.py` passe **toutes** les pages (pas que le blog) au crible des `BANNED_PHRASES`. Exceptions
