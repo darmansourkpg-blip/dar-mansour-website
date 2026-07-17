@@ -47,6 +47,7 @@ SAME_AS = [
     "https://www.tripadvisor.com/Restaurant_Review-d32851492",
     "https://www.wikidata.org/wiki/Q140585802",
     "https://www.crunchbase.com/organization/dar-mansour-morocco-s-kitchen",
+    "https://www.openstreetmap.org/node/14021567355",
 ]
 
 # Editorial signature appended to every article (playbook §19 "About the Journal").
