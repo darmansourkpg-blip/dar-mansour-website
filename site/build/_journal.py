@@ -48,6 +48,7 @@ SAME_AS = [
     "https://www.wikidata.org/wiki/Q140585802",
     "https://www.crunchbase.com/organization/dar-mansour-morocco-s-kitchen",
     "https://www.openstreetmap.org/node/14021567355",
+    "https://maps.apple.com/place?place-id=I620A58D27664AA56&address=5%2F5+O+Bo+to+Ko+Pa-Ngan+Road%2C+Ko+Pha-Ngan%2C+Ko+Pha-Ngan+District%2C+Surat+Thani+84280%2C+Thailand&coordinate=9.753081%2C99.968740&name=Dar+Mansour+-+Morocco%27s+Kitchen&_provider=9902",
 ]
 
 # Editorial signature appended to every article (playbook §19 "About the Journal").
