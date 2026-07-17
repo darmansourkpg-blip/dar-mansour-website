@@ -16,6 +16,7 @@ WA = "https://wa.me/66822767757"
 # --- SEO / Analytics integrations (leave empty to disable) ---
 GA4_ID = "G-L2GLFDZHCR"   # Google Analytics 4 Measurement ID
 BING_VERIFY = "8ED8A01F43B5C8FE82AE6C2F87241426"   # Bing Webmaster (msvalidate.01)
+PINTEREST_VERIFY = "1a3c57976ae153f40f53e3ba2ff91b52"   # Pinterest domain claim (p:domain_verify)
 
 # Cache-busting: short content hash appended to asset URLs so browsers fetch the
 # new CSS/JS immediately after a deploy instead of serving a stale cached copy.
@@ -70,6 +71,8 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
     analytics = ""
     if BING_VERIFY:
         analytics += f'<meta name="msvalidate.01" content="{BING_VERIFY}">\n'
+    if PINTEREST_VERIFY:
+        analytics += f'<meta name="p:domain_verify" content="{PINTEREST_VERIFY}">\n'
     if GA4_ID:
         analytics += (
             f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script>\n'
