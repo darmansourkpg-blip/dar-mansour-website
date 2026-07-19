@@ -472,7 +472,7 @@ reviews_body = L.breadcrumb(("Reviews", None)) + L.subhero(
     "From our tajines to the warmth of our welcome, discover why guests from around the world call us one of the best Moroccan restaurants in Thailand.",
     "assets/img/maija-art-direction-koh-phangan.jpg", "Warm candlelit Moroccan interior at Dar Mansour") + f'''
 <section class="section"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:2.5rem;"><div class="rating"><span class="rating__stars">★★★★★</span><span>Google Reviews</span></div></div>
+  <div class="center reveal" style="margin-bottom:2.5rem;"><div class="rating rating--hero"><span class="rating__stars rating__stars--gold">★★★★★</span><span class="rating__score">4.9</span><span>Google Reviews</span></div></div>
   <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin:2rem 0 1.5rem;color:#1a1a1a;">Featured Guest Reviews</h3>
   <div class="reviews__grid">
 {rev_cards}
