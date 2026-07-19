@@ -28,7 +28,7 @@ home_body = f'''
   <div class="wrap hero__inner">
     <span class="eyebrow">Slow Food · West Coast, Koh Phangan</span>
     <h1 class="display hero__title">Moroccan Restaurant<br>in Koh Phangan</h1>
-    <p class="hero__sub">A quiet Moroccan table near Sri Thanu &amp; Hin Kong — fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners, rooted in tradition and slow cooked with care.</p>
+    <p class="hero__sub">A boutique Moroccan slow-dining restaurant near Sri Thanu &amp; Hin Kong — fire-cooked tajines, slow-simmered tanjias and candlelit garden dinners, rooted in tradition and slow cooked with care.</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WI} Reserve Your Evening</a>
       <a class="btn btn--light" href="moroccan-menu-koh-phangan.html">Discover the Menu</a>
