@@ -117,6 +117,24 @@ home_body = f'''
 </div></section>
 
 <section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="split" style="align-items:flex-end;margin-bottom:clamp(2rem,5vw,3rem);">
+    <div class="split__text reveal">
+      <span class="eyebrow">Art by Maija</span>
+      <h2 style="margin:1rem 0 1.2rem;">Where the studio<br>gets loud.</h2>
+      <p class="lead">Maija's collages and objects collide Moroccan craft with a wink at Western art — fez and Mona Lisa,
+      mint tea and Michelangelo. The same instinct runs through every project we design.</p>
+      <a class="textlink" href="art.html" style="margin-top:1.4rem;">See the art {A}</a>
+    </div>
+  </div>
+  <div class="artstrip reveal">
+    {ph('Poppy Queen', 'ph--poppy ph--round')}
+    {ph('Wondermint', 'ph--electric')}
+    {ph('The Creation of Mint Tea', 'ph--teal ph--round')}
+    {ph('Teapot Camel', 'ph--sun')}
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap">
   <div class="center reveal" style="margin-bottom:clamp(2.5rem,6vw,3.5rem);">
     <span class="eyebrow">Journal</span>
     <h2 style="margin-top:1rem;">Ideas that inspire our work</h2>
@@ -504,6 +522,79 @@ pages["contact.html"] = L.page(
 )
 
 
+# ============================================================ ART (Maija's work)
+# Working titles + tints per piece the client shared. `img` is filled once the
+# real files land in assets/img/ (kebab-case, WebP, SEO alt) — until then a
+# vivid tinted placeholder named after the piece stands in.
+ARTWORKS = [
+    # slug,                       title,                         medium,                       shape,          tint,          img
+    ("poppy-queen",              "Poppy Queen",                 "Collage · tondo",            "art--round",   "ph--poppy",    None),
+    ("wondermint-camel",         "Wondermint",                  "Collage",                    "",             "ph--electric", None),
+    ("mona-lisa-fez",            "Mona, Fez",                   "Collage · tondo",            "art--round",   "ph--teal",     None),
+    ("babouche-mandala",         "Babouche Mandala",            "Collage",                    "",             "ph--magenta",  None),
+    ("creation-of-mint-tea",     "The Creation of Mint Tea",    "Collage · tondo",            "art--round",   "ph--teal",     None),
+    ("chefchaouen-framed",       "Chefchaouen, Framed",         "Collage",                    "",             "ph--electric", None),
+    ("desert-caravan-neon",      "Desert Caravan",              "Collage · tondo",            "art--round",   "ph--magenta",  None),
+    ("teapot-camel",             "Teapot Camel",                "Collage",                    "",             "ph--sun",      None),
+    ("rue-yves-saint-laurent",   "Rue Yves Saint Laurent",      "Photograph · Marrakech",     "",             "ph--teal",     None),
+    ("fez-lamp",                 "Fez Lamp",                    "Object · mixed media",       "art--tall",    "ph--poppy",    None),
+]
+
+
+def artwork(slug, title, medium, shape, tint, img):
+    cls = f"art {shape}".strip()
+    if img:
+        media = f'<img src="assets/img/{img}" alt="{title} — artwork by Maija, Eden &amp; Beyond" loading="lazy">'
+    else:
+        media = ph(title, tint)
+    return f'''<a class="{cls} reveal" href="contact.html" id="{slug}">
+      <div class="art__media">{media}</div>
+      <div class="art__cap"><span class="art__title">{title}</span>
+      <span class="art__meta">{medium}</span></div>
+    </a>'''
+
+
+art_grid = "\n    ".join(artwork(*a) for a in ARTWORKS)
+art_body = f'''
+{L.breadcrumb(("Art by Maija", None))}
+{L.subhero(
+    eyebrow="Art by Maija",
+    h1="Where Morocco meets pop.",
+    sub=("Collages, tondos and objects that borrow from Moroccan craft and Western art history in equal measure — "
+         "fez and Mona Lisa, mint tea and Michelangelo, babouches and Warhol. Playful, saturated, unmistakably her."),
+)}
+
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <p class="lead">Maija's art is where the studio's spirit is loudest. Each piece takes something instantly Moroccan —
+  a camel, a teapot, a fez, a wall of zellige — and collides it with a wink at Western art and pop culture.
+  It's the same instinct behind every Eden &amp; Beyond project: take the familiar, break the frame, make it feel new.</p>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="artgrid">
+    {art_grid}
+  </div>
+  <p class="center reveal" style="margin-top:2.4rem;color:var(--muted);font-size:.86rem;">
+    Titles, media and dimensions are working placeholders — final captions and images to be added.
+    For availability, editions or commissions, <a class="ilink" href="contact.html">get in touch</a>.
+  </p>
+</div></section>
+
+{L.cta_band(
+    title="Want a piece — or a commission?",
+    text="Maija creates original collages and bespoke objects for private collectors and hospitality projects. Tell us what you have in mind.",
+    btn_label="Enquire",
+)}
+'''
+pages["art.html"] = L.page(
+    title="Art by Maija — Moroccan Pop Collage & Objects | Eden & Beyond",
+    desc=("Original collage art and objects by Maija of Eden & Beyond — Moroccan iconography meets Western pop and art "
+          "history. Fez, camels, mint tea and zellige, reimagined. Commissions and pieces available."),
+    canonical="art.html",
+    body=art_body,
+)
+
+
 # ============================================================ SEO LANDING PAGES
 def landing(slug, eyebrow, h1, sub, overview, wwd_title, wwd_items, services,
             approach_title, approach, why_title=None, why=None, crumb_label=None):
@@ -669,7 +760,9 @@ landing(
     overview={"h2": "Objects that tell a story",
               "body": ("<p>An object should tell a story. Eden &amp; Beyond designs bespoke furniture, lighting and decorative objects — "
                        "either as part of a larger project or as standalone commissions. Each piece is designed with purpose, made to be "
-                       "kept for a lifetime.</p>")},
+                       "kept for a lifetime.</p>"
+                       '<p>Our <em>Fez Lamp</em> — a collaged bust crowned with a tasselled fez shade — is one example of how a single '
+                       'object can carry a whole atmosphere. See it and other pieces in <a href="art.html">Art by Maija</a>.</p>')},
     wwd_title="What we design",
     wwd_items=[
         ("Bespoke Furniture", "Custom pieces designed for a specific space and story."),
@@ -737,6 +830,7 @@ SITEMAP_ORDER = [
     ("furniture-object-design.html", "0.8"),
     ("creative-direction.html", "0.8"),
     ("projects.html", "0.8"),
+    ("art.html", "0.8"),
     ("about.html", "0.7"),
     ("journal.html", "0.7"),
     ("contact.html", "0.7"),
@@ -787,6 +881,7 @@ def write_llms():
         f"- [About]({L.SITE_URL}/about.html): The studio & founder Maija",
         f"- [Services]({L.SITE_URL}/services.html): Creative services & process",
         f"- [Projects]({L.SITE_URL}/projects.html): Selected work, including Dar Mansour",
+        f"- [Art by Maija]({L.SITE_URL}/art.html): Moroccan pop collage art & objects",
         f"- [Journal]({L.SITE_URL}/journal.html): Editorial on design & hospitality",
         f"- [Contact]({L.SITE_URL}/contact.html): Start a project",
         "",

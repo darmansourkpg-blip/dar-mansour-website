@@ -419,6 +419,37 @@ body.menu-open .mega__group:nth-child(2) a { transition-delay: .2s; }
 .tags li { border: 1px solid var(--line); border-radius: 40px; padding: .5rem 1.1rem; font-size: .82rem; color: var(--ink-soft); }
 .band-dark .tags li { border-color: rgba(244,239,230,.32); color: var(--on-dark-soft); }
 
+/* Vivid placeholder tints — echo Maija's palette while awaiting real artwork */
+.ph--poppy    { background: linear-gradient(150deg,#E23B2E,#8F1D1A); }
+.ph--electric { background: linear-gradient(150deg,#2BB3D6,#123B7A); }
+.ph--magenta  { background: linear-gradient(150deg,#D63A8F,#6A1E64); }
+.ph--sun      { background: linear-gradient(150deg,#F2B33A,#C4531F); }
+.ph--teal     { background: linear-gradient(150deg,#1FA98F,#0C5A56); }
+.ph--poppy::after, .ph--electric::after, .ph--magenta::after,
+.ph--sun::after, .ph--teal::after { color: rgba(255,255,255,.85); }
+
+/* ---------- Art gallery (Maija's work) ---------- */
+.artgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.2rem, 3vw, 2.4rem); }
+.art { display: block; }
+.art__media { position: relative; overflow: hidden; border-radius: 3px; aspect-ratio: 1/1; }
+.art__media .ph { position: absolute; inset: 0; aspect-ratio: auto; }
+.art__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.art:hover .art__media img { transform: scale(1.04); }
+.art--round .art__media { border-radius: 50%; }
+.art--tall .art__media { aspect-ratio: 3/4; }
+.art__cap { margin-top: .95rem; }
+.art__title { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); line-height: 1.2; }
+.art__meta { display: block; margin-top: .2rem; font-size: .78rem; color: var(--muted); letter-spacing: .02em; }
+.art__price { color: var(--clay); font-weight: 600; }
+@media (max-width: 900px) { .artgrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .artgrid { grid-template-columns: 1fr; max-width: 380px; margin-inline: auto; } }
+
+/* Art teaser strip (home / about) — a taste, links to the full gallery */
+.artstrip { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(.8rem, 2vw, 1.4rem); }
+.artstrip .ph { aspect-ratio: 1/1; border-radius: 3px; }
+.artstrip .ph--round { border-radius: 50%; }
+@media (max-width: 720px) { .artstrip { grid-template-columns: repeat(2, 1fr); } }
+
 /* ---------- 20. Journal ---------- */
 .jgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .jcard { display: flex; flex-direction: column; background: var(--cream); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; transition: transform .4s var(--ease), box-shadow .4s var(--ease); }

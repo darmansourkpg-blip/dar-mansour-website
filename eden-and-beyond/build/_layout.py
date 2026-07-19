@@ -46,6 +46,7 @@ NAV_ITEMS = [
     ("about.html", "About"),
     ("services.html", "Services"),
     ("projects.html", "Projects"),
+    ("art.html", "Art"),
     ("journal.html", "Journal"),
     ("contact.html", "Contact"),
 ]
@@ -56,6 +57,7 @@ MEGA_GROUPS = [
         ("index.html", "Home"),
         ("about.html", "About &amp; Maija"),
         ("projects.html", "Projects"),
+        ("art.html", "Art by Maija"),
         ("journal.html", "Journal"),
         ("contact.html", "Contact"),
     ]),
@@ -246,6 +248,7 @@ def footer():
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Projects</a></li>
+          <li><a href="art.html">Art by Maija</a></li>
           <li><a href="journal.html">Journal</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>

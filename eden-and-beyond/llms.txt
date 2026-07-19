@@ -7,6 +7,7 @@
 - [About](https://edenandbeyond.studio/about.html): The studio & founder Maija
 - [Services](https://edenandbeyond.studio/services.html): Creative services & process
 - [Projects](https://edenandbeyond.studio/projects.html): Selected work, including Dar Mansour
+- [Art by Maija](https://edenandbeyond.studio/art.html): Moroccan pop collage art & objects
 - [Journal](https://edenandbeyond.studio/journal.html): Editorial on design & hospitality
 - [Contact](https://edenandbeyond.studio/contact.html): Start a project
 
