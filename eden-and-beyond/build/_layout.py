@@ -130,7 +130,7 @@ def header():
       {nav}
     </nav>
     <div class="header__cta">
-      <a class="btn btn--light" href="contact.html">Start a Project</a>
+      <a class="btn btn--primary" href="contact.html">Start a Project</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open full menu" aria-expanded="false" aria-controls="mega">
         <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="menu-toggle__label">Menu</span>

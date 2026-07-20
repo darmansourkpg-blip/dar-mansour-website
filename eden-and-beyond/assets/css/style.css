@@ -131,7 +131,7 @@ em, .italic { font-style: italic; }
   min-height: 48px;
 }
 .btn svg { width: 15px; height: 15px; }
-.btn--primary { background: var(--ink); color: var(--bone); }
+.btn--primary { background: var(--accent-deep); color: #fff; }
 .btn--primary:hover { background: var(--accent-bright); color: #fff; transform: translateY(-2px); }
 .btn--ghost { border: 1px solid var(--line); color: var(--ink); }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); }

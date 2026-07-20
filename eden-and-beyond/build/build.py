@@ -25,6 +25,33 @@ def ph(label, cls="", extra=""):
     return f'<div class="{c}" data-label="{label}"{extra}></div>'
 
 
+IMG_DIR = os.path.join(OUT, "assets", "img")
+
+
+def find_img(slug):
+    """Plug-and-play: if a real photo named <slug>.<ext> exists, return its path,
+    else None (a placeholder is shown). Drop a file in assets/img/ and it appears."""
+    for ext in (".webp", ".jpg", ".jpeg", ".png"):
+        if os.path.exists(os.path.join(IMG_DIR, slug + ext)):
+            return f"assets/img/{slug}{ext}"
+    return None
+
+
+def hero_media(slug, alt):
+    """Full-bleed hero: real photo if present, else the placeholder gradient."""
+    img = find_img(slug)
+    if img:
+        return "", f'<img src="{img}" alt="{alt}" fetchpriority="high">'
+    return "hero__media--placeholder", ""
+
+
+def subhero_media(slug):
+    img = find_img(slug)
+    if img:
+        return "", f'<img src="{img}" alt="" fetchpriority="high">'
+    return "subhero__media--placeholder", ""
+
+
 def jcard(cat, title, desc):
     return f'''<article class="jcard reveal">
       <a class="jcard__img" href="journal.html"><span class="jcard__cat">{cat}</span>{ph(title)}</a>
@@ -42,6 +69,7 @@ def wwd_item(title, desc):
 
 
 # ============================================================ HOME
+_home_hero_cls, _home_hero_media = hero_media("hero-home", "Eden & Beyond creative studio")
 home_body = f'''
 {L.hero(
     eyebrow="Creative Studio · Hospitality · Living · Lifestyle",
@@ -53,6 +81,8 @@ home_body = f'''
     actions_html=(
         '<a class="btn btn--primary" href="contact.html">Start a Project</a>'
         '<a class="btn btn--light" href="projects.html">Explore Our Work</a>'),
+    media_class=_home_hero_cls,
+    media_html=_home_hero_media,
 )}
 
 <div class="trust"><div class="wrap trust__inner">
@@ -541,6 +571,7 @@ pages["contact.html"] = L.page(
 # tinted placeholder named after the piece stands in.
 def piece(slug, title, medium, shape, tint, img=None):
     cls = f"art {shape}".strip()
+    img = img or find_img(slug)
     if img:
         media = f'<img src="assets/img/{img}" alt="{title} — {medium}, Eden &amp; Beyond" loading="lazy">'
     else:
