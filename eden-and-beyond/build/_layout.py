@@ -43,10 +43,9 @@ ARROW = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
 
 # Primary top nav (desktop) — kept short and premium.
 NAV_ITEMS = [
-    ("about.html", "About"),
-    ("services.html", "Services"),
+    ("studio.html", "Studio"),
     ("projects.html", "Projects"),
-    ("art.html", "Art"),
+    ("collection.html", "Collection"),
     ("journal.html", "Journal"),
     ("contact.html", "Contact"),
 ]
@@ -55,11 +54,17 @@ NAV_ITEMS = [
 MEGA_GROUPS = [
     ("The Studio", [
         ("index.html", "Home"),
-        ("about.html", "About &amp; Maija"),
+        ("studio.html", "Studio &amp; Maija"),
         ("projects.html", "Projects"),
-        ("art.html", "Art by Maija"),
         ("journal.html", "Journal"),
         ("contact.html", "Contact"),
+    ]),
+    ("The Collection", [
+        ("collection.html", "All Pieces"),
+        ("collection.html#furniture", "Furniture"),
+        ("collection.html#lighting", "Lighting"),
+        ("collection.html#objects", "Objects"),
+        ("collection.html#limited-editions", "Limited Editions"),
     ]),
     ("What We Do", [
         ("hospitality-design.html", "Hospitality Design"),
@@ -119,8 +124,7 @@ def header():
 <header class="header" id="header">
   <div class="wrap header__inner">
     <a class="brand" href="index.html" aria-label="Eden &amp; Beyond, home">
-      <span class="brand__name">Eden &amp; Beyond</span>
-      <span class="brand__sub">Creative Studio</span>
+      <img class="brand__logo" src="assets/img/eden-and-beyond-logo.png" alt="Eden &amp; Beyond" width="681" height="681">
     </a>
     <nav class="nav" aria-label="Primary">
       {nav}
@@ -245,22 +249,23 @@ def footer():
       <div>
         <h4>Studio</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="studio.html">Studio</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="art.html">Art by Maija</a></li>
           <li><a href="journal.html">Journal</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="hospitality-design.html">Hospitality Design</a></li>
+          <li><a href="residential-design.html">Residential Design</a></li>
+          <li><a href="creative-direction.html">Creative Direction</a></li>
         </ul>
       </div>
       <div>
-        <h4>What We Do</h4>
+        <h4>The Collection</h4>
         <ul>
-          <li><a href="hospitality-design.html">Hospitality Design</a></li>
-          <li><a href="restaurant-design.html">Restaurant Design</a></li>
-          <li><a href="residential-design.html">Residential Design</a></li>
-          <li><a href="furniture-object-design.html">Furniture &amp; Objects</a></li>
-          <li><a href="creative-direction.html">Creative Direction</a></li>
+          <li><a href="collection.html">All Pieces</a></li>
+          <li><a href="collection.html#furniture">Furniture</a></li>
+          <li><a href="collection.html#lighting">Lighting</a></li>
+          <li><a href="collection.html#objects">Objects</a></li>
+          <li><a href="collection.html#limited-editions">Limited Editions</a></li>
         </ul>
       </div>
       <div>

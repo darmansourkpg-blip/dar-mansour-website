@@ -73,9 +73,34 @@ home_body = f'''
   </div>
 </div></section>
 
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="max-width:660px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
+    <span class="eyebrow">Two ways to experience Eden &amp; Beyond</span>
+    <h2 style="margin-top:1rem;">Commission a project,<br>or own a piece.</h2>
+  </div>
+  <div class="duo">
+    <div class="duo__card reveal">{ph('Creative studio — a hospitality project', 'ph--dark')}
+      <div class="duo__body">
+        <span class="eyebrow">01 — Creative Studio</span>
+        <h3>Designing unforgettable places, objects &amp; experiences.</h3>
+        <p>High-end creative direction and design for hotels, restaurants, bars, villas and commercial spaces.</p>
+        <a class="btn btn--light" href="contact.html">Start a Project {A}</a>
+      </div>
+    </div>
+    <div class="duo__card reveal" data-delay="1">{ph('Design collection — a signature object', 'ph--dark')}
+      <div class="duo__body">
+        <span class="eyebrow">02 — Design Collection</span>
+        <h3>Bring a piece of Eden &amp; Beyond into your home.</h3>
+        <p>A curated collection of bespoke furniture, lighting and objects — available on their own, no project required.</p>
+        <a class="btn btn--light" href="collection.html">Explore the Collection {A}</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
 <section class="section band-dark"><div class="wrap">
   <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2.5rem,6vw,4rem);">
-    <span class="eyebrow">What We Do</span>
+    <span class="eyebrow">Creative Studio · What We Do</span>
     <h2 style="margin-top:1.1rem;">Four disciplines,<br>one way of thinking.</h2>
   </div>
   <div class="disc">
@@ -119,11 +144,11 @@ home_body = f'''
 <section class="section" style="padding-top:0;"><div class="wrap">
   <div class="split" style="align-items:flex-end;margin-bottom:clamp(2rem,5vw,3rem);">
     <div class="split__text reveal">
-      <span class="eyebrow">Art by Maija</span>
+      <span class="eyebrow">The Collection</span>
       <h2 style="margin:1rem 0 1.2rem;">Where the studio<br>gets loud.</h2>
-      <p class="lead">Maija's collages and objects collide Moroccan craft with a wink at Western art — fez and Mona Lisa,
-      mint tea and Michelangelo. The same instinct runs through every project we design.</p>
-      <a class="textlink" href="art.html" style="margin-top:1.4rem;">See the art {A}</a>
+      <p class="lead">Maija's collages, objects and limited editions collide Moroccan craft with a wink at Western art —
+      fez and Mona Lisa, mint tea and Michelangelo. Each piece can be commissioned or acquired on its own.</p>
+      <a class="textlink" href="collection.html" style="margin-top:1.4rem;">Explore the Collection {A}</a>
     </div>
   </div>
   <div class="artstrip reveal">
@@ -166,13 +191,13 @@ pages["index.html"] = L.page(
 )
 
 
-# ============================================================ ABOUT
+# ============================================================ STUDIO (was About + Services)
 about_body = f'''
 {L.subhero(
-    eyebrow="About the Studio",
+    eyebrow="The Studio · Creative Services",
     h1="We don't follow trends.<br>We create stories.",
-    sub=("Eden & Beyond is an independent multidisciplinary creative studio creating places, objects and "
-         "experiences for hospitality, residential and lifestyle projects."),
+    sub=("Eden & Beyond is an independent creative studio designing places, objects and experiences for "
+         "hospitality, residential and commercial projects — and a design brand with its own collection."),
 )}
 
 <section class="section"><div class="wrap">
@@ -246,34 +271,10 @@ about_body = f'''
   </div>
 </div></section>
 
-{L.cta_band(
-    title="Let's create something unforgettable.",
-    text="If you believe your project deserves more than a beautiful design, we'd love to hear your story.",
-)}
-'''
-pages["about.html"] = L.page(
-    title="About — Eden & Beyond Creative Studio | Maija",
-    desc=("Eden & Beyond is an independent multidisciplinary creative studio founded by Maija, designing places, "
-          "objects and experiences for hospitality, residential and lifestyle projects. Based in Thailand."),
-    canonical="about.html",
-    body=about_body,
-    body_class="",
-)
-
-
-# ============================================================ SERVICES
-services_body = f'''
-{L.subhero(
-    eyebrow="Creative Services",
-    h1="From concept to completion.",
-    sub=("We design places, objects and experiences with identity, purpose and lasting impact — "
-         "across hospitality, residential, furniture and creative direction."),
-)}
-
-<section class="section"><div class="wrap">
+<section class="section" style="padding-top:0;"><div class="wrap">
   <div class="center reveal" style="margin-bottom:clamp(2.5rem,6vw,3.5rem);">
-    <span class="eyebrow">Our Expertise</span>
-    <h2 style="margin-top:1rem;">Four disciplines</h2>
+    <span class="eyebrow">Creative Services</span>
+    <h2 style="margin-top:1rem;">Four disciplines,<br>one way of thinking.</h2>
   </div>
   <div class="disc">
     <a class="disc__card reveal" href="hospitality-design.html">{ph('Hospitality design', 'ph--dark')}
@@ -284,7 +285,7 @@ services_body = f'''
       <p>Luxury villas, private residences and holiday homes designed around the people who live in them.</p></div></a>
     <a class="disc__card reveal" href="furniture-object-design.html">{ph('Furniture &amp; object design', 'ph--dark')}
       <div class="disc__body"><h3>Furniture &amp; Object Design</h3>
-      <p>Bespoke furniture, lighting and custom objects that give every project its own identity.</p></div></a>
+      <p>Bespoke furniture, lighting and custom objects — for a project, or as part of our <a href="collection.html" style="color:inherit;text-decoration:underline;">Collection</a>.</p></div></a>
     <a class="disc__card reveal" data-delay="1" href="creative-direction.html">{ph('Creative direction', 'ph--dark')}
       <div class="disc__body"><h3>Creative Direction</h3>
       <p>Concept development, storytelling, styling and creative vision for hospitality, residential and commercial projects.</p></div></a>
@@ -306,17 +307,17 @@ services_body = f'''
   </div>
 </div></section>
 
-<section class="section"><div class="wrap wrap--narrow">
-  <div class="center reveal">
-    <span class="eyebrow">How We Work</span>
-    <h2 style="margin:1rem 0 1.6rem;">We collaborate with</h2>
+<section class="section"><div class="wrap">
+  <div class="split" style="align-items:center;">
+    <div class="split__text reveal">
+      <span class="eyebrow">The Design Collection</span>
+      <h2 style="margin:1rem 0 1.2rem;">Own a piece,<br>no project required.</h2>
+      <p class="lead">Beyond commissioned projects, Eden &amp; Beyond is a design brand in its own right — a curated
+      collection of bespoke furniture, lighting and objects you can discover, commission or acquire on their own.</p>
+      <a class="btn btn--primary" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
+    </div>
+    <div class="split__media reveal" data-delay="1">{ph('Collection — signature object', 'ph--dark')}<span class="tag">The Collection</span></div>
   </div>
-  <ul class="tags reveal" style="margin-bottom:2rem;">
-    <li>Hotel Owners</li><li>Restaurateurs</li><li>Private Clients</li><li>Developers</li>
-    <li>Architects</li><li>Hospitality Brands</li><li>Commercial Businesses</li>
-  </ul>
-  <p class="lead center reveal" style="margin-inline:auto;">Whether we're involved from day one or joining an existing team, our role
-  remains the same: to create projects with identity, coherence and lasting value.</p>
 </div></section>
 
 {L.cta_band(
@@ -324,12 +325,12 @@ services_body = f'''
     text="Let's create something people will remember.",
 )}
 '''
-pages["services.html"] = L.page(
-    title="Creative Services — Hospitality, Residential, Furniture & Creative Direction | Eden & Beyond",
-    desc=("Eden & Beyond creative services: hospitality design, residential design, bespoke furniture and object "
-          "design, and creative direction. From concept to completion, designed around your story."),
-    canonical="services.html",
-    body=services_body,
+pages["studio.html"] = L.page(
+    title="Studio — Eden & Beyond Creative Studio & Design Brand | Maija",
+    desc=("Eden & Beyond is an independent creative studio and design brand founded by Maija — hospitality, "
+          "residential and commercial design, creative direction, and a collection of bespoke furniture and objects. Based in Thailand."),
+    canonical="studio.html",
+    body=about_body,
 )
 
 
@@ -361,6 +362,17 @@ projects_body = f'''
       <p style="margin-top:1.1rem;">That's why no two Eden &amp; Beyond projects will ever look the same.</p>
     </div>
     <div class="split__media reveal" data-delay="1">{ph('Dar Mansour — interior detail')}<span class="tag">Dar Mansour · Detail</span></div>
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="note reveal" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.4rem;">
+    <div>
+      <span class="eyebrow" style="margin-bottom:.5rem;">Inspired by this project?</span>
+      <p style="max-width:52ch;">Several furniture pieces, lighting fixtures and objects created for Dar Mansour are available as
+      bespoke commissions or limited editions.</p>
+    </div>
+    <a class="btn btn--primary" href="collection.html">Explore the Collection {A}</a>
   </div>
 </div></section>
 
@@ -522,29 +534,15 @@ pages["contact.html"] = L.page(
 )
 
 
-# ============================================================ ART (Maija's work)
-# Working titles + tints per piece the client shared. `img` is filled once the
-# real files land in assets/img/ (kebab-case, WebP, SEO alt) — until then a
-# vivid tinted placeholder named after the piece stands in.
-ARTWORKS = [
-    # slug,                       title,                         medium,                       shape,          tint,          img
-    ("poppy-queen",              "Poppy Queen",                 "Collage · tondo",            "art--round",   "ph--poppy",    None),
-    ("wondermint-camel",         "Wondermint",                  "Collage",                    "",             "ph--electric", None),
-    ("mona-lisa-fez",            "Mona, Fez",                   "Collage · tondo",            "art--round",   "ph--teal",     None),
-    ("babouche-mandala",         "Babouche Mandala",            "Collage",                    "",             "ph--magenta",  None),
-    ("creation-of-mint-tea",     "The Creation of Mint Tea",    "Collage · tondo",            "art--round",   "ph--teal",     None),
-    ("chefchaouen-framed",       "Chefchaouen, Framed",         "Collage",                    "",             "ph--electric", None),
-    ("desert-caravan-neon",      "Desert Caravan",              "Collage · tondo",            "art--round",   "ph--magenta",  None),
-    ("teapot-camel",             "Teapot Camel",                "Collage",                    "",             "ph--sun",      None),
-    ("rue-yves-saint-laurent",   "Rue Yves Saint Laurent",      "Photograph · Marrakech",     "",             "ph--teal",     None),
-    ("fez-lamp",                 "Fez Lamp",                    "Object · mixed media",       "art--tall",    "ph--poppy",    None),
-]
-
-
-def artwork(slug, title, medium, shape, tint, img):
+# ============================================================ COLLECTION (design brand)
+# Editorial presentation, not a shop — pieces feel collectible. Categories:
+# Furniture / Lighting / Objects / Limited Editions. `img` fills in once real
+# files land in assets/img/ (kebab-case, WebP, SEO alt); until then a vivid
+# tinted placeholder named after the piece stands in.
+def piece(slug, title, medium, shape, tint, img=None):
     cls = f"art {shape}".strip()
     if img:
-        media = f'<img src="assets/img/{img}" alt="{title} — artwork by Maija, Eden &amp; Beyond" loading="lazy">'
+        media = f'<img src="assets/img/{img}" alt="{title} — {medium}, Eden &amp; Beyond" loading="lazy">'
     else:
         media = ph(title, tint)
     return f'''<a class="{cls} reveal" href="contact.html" id="{slug}">
@@ -554,44 +552,88 @@ def artwork(slug, title, medium, shape, tint, img):
     </a>'''
 
 
-art_grid = "\n    ".join(artwork(*a) for a in ARTWORKS)
-art_body = f'''
-{L.breadcrumb(("Art by Maija", None))}
+COLLECTION = [
+    ("furniture", "Furniture",
+     "Sculptural tables, seating and consoles — one-off pieces and bespoke commissions.", [
+        ("console-table",  "Console",       "Furniture · bespoke commission", "",           "ph--dark"),
+        ("lounge-chair",   "Lounge Chair",  "Furniture · bespoke commission", "",           "ph--dark"),
+        ("low-table",      "Low Table",     "Furniture · bespoke commission", "",           "ph--dark"),
+     ]),
+    ("lighting", "Lighting",
+     "Light as atmosphere. Lamps and fixtures where the object matters as much as the glow.", [
+        ("fez-lamp",       "Fez Lamp",      "Lighting · mixed-media object",  "art--tall",  "ph--poppy"),
+        ("tassel-light",   "Tassel Light",  "Lighting · bespoke commission",  "art--tall",  "ph--dark"),
+     ]),
+    ("objects", "Objects",
+     "Decorative objects, mirrors and sculptural pieces — the small things that give a room its soul.", [
+        ("zellige-mirror",   "Zellige Mirror",   "Object · bespoke commission", "",  "ph--teal"),
+        ("sculptural-vessel","Sculptural Vessel","Object · limited edition",    "",  "ph--sun"),
+        ("brass-object",     "Brass Object",     "Object · bespoke commission", "",  "ph--dark"),
+     ]),
+    ("limited-editions", "Limited Editions",
+     "Maija's original collages and tondos — Moroccan icons collided with Western art. Numbered and collectible.", [
+        ("poppy-queen",            "Poppy Queen",              "Collage · tondo · limited edition", "art--round", "ph--poppy"),
+        ("wondermint-camel",       "Wondermint",               "Collage · limited edition",         "",           "ph--electric"),
+        ("mona-lisa-fez",          "Mona, Fez",                "Collage · tondo · limited edition", "art--round", "ph--teal"),
+        ("babouche-mandala",       "Babouche Mandala",         "Collage · limited edition",         "",           "ph--magenta"),
+        ("creation-of-mint-tea",   "The Creation of Mint Tea", "Collage · tondo · limited edition", "art--round", "ph--teal"),
+        ("chefchaouen-framed",     "Chefchaouen, Framed",      "Collage · limited edition",         "",           "ph--electric"),
+        ("desert-caravan-neon",    "Desert Caravan",           "Collage · tondo · limited edition", "art--round", "ph--magenta"),
+        ("teapot-camel",           "Teapot Camel",             "Collage · limited edition",         "",           "ph--sun"),
+        ("rue-yves-saint-laurent", "Rue Yves Saint Laurent",   "Photograph · Marrakech",            "",           "ph--teal"),
+     ]),
+]
+
+
+def collection_section(anchor, title, blurb, pieces):
+    grid = "\n    ".join(piece(*p) for p in pieces)
+    return f'''
+<section class="section" id="{anchor}" style="padding-top:0;"><div class="wrap">
+  <div class="reveal" style="margin-bottom:clamp(1.6rem,4vw,2.4rem);">
+    <span class="eyebrow">{title}</span>
+    <p class="lead" style="margin-top:.6rem;max-width:60ch;">{blurb}</p>
+  </div>
+  <div class="artgrid">{grid}</div>
+</div></section>'''
+
+
+collection_nav = " · ".join(
+    f'<a class="ilink" href="#{a}">{t}</a>' for a, t, _, _ in COLLECTION)
+collection_sections = "\n".join(collection_section(*c) for c in COLLECTION)
+collection_body = f'''
+{L.breadcrumb(("Collection", None))}
 {L.subhero(
-    eyebrow="Art by Maija",
-    h1="Where Morocco meets pop.",
-    sub=("Collages, tondos and objects that borrow from Moroccan craft and Western art history in equal measure — "
-         "fez and Mona Lisa, mint tea and Michelangelo, babouches and Warhol. Playful, saturated, unmistakably her."),
+    eyebrow="The Design Collection",
+    h1="Bring a piece of Eden &amp; Beyond into your home.",
+    sub=("A curated collection of bespoke furniture, lighting, objects and limited editions — designed by the studio, "
+         "available on their own. Discover, commission or acquire a single piece, no project required."),
 )}
 
 <section class="section"><div class="wrap wrap--narrow center reveal">
-  <p class="lead">Maija's art is where the studio's spirit is loudest. Each piece takes something instantly Moroccan —
-  a camel, a teapot, a fez, a wall of zellige — and collides it with a wink at Western art and pop culture.
-  It's the same instinct behind every Eden &amp; Beyond project: take the familiar, break the frame, make it feel new.</p>
+  <p class="lead">Every piece begins the way our projects do — with a story, a material, a wink. Some are born inside a
+  commission and released as editions; others exist purely as objects. None are mass-produced.</p>
+  <p style="margin-top:1.2rem;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);">{collection_nav}</p>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap">
-  <div class="artgrid">
-    {art_grid}
-  </div>
-  <p class="center reveal" style="margin-top:2.4rem;color:var(--muted);font-size:.86rem;">
-    Titles, media and dimensions are working placeholders — final captions and images to be added.
-    For availability, editions or commissions, <a class="ilink" href="contact.html">get in touch</a>.
-  </p>
+{collection_sections}
+
+<section class="section" style="padding-top:0;"><div class="wrap wrap--narrow center reveal">
+  <p style="color:var(--muted);font-size:.86rem;">Titles, media and dimensions are working placeholders — final photography and captions to
+  be added. For availability, editions, pricing or commissions, <a class="ilink" href="contact.html">get in touch</a>.</p>
 </div></section>
 
 {L.cta_band(
-    title="Want a piece — or a commission?",
-    text="Maija creates original collages and bespoke objects for private collectors and hospitality projects. Tell us what you have in mind.",
-    btn_label="Enquire",
+    title="Found a piece you love — or want your own?",
+    text="Eden & Beyond creates bespoke furniture, lighting and objects for private collectors and hospitality projects. Tell us what you have in mind.",
+    btn_label="Enquire About a Piece",
 )}
 '''
-pages["art.html"] = L.page(
-    title="Art by Maija — Moroccan Pop Collage & Objects | Eden & Beyond",
-    desc=("Original collage art and objects by Maija of Eden & Beyond — Moroccan iconography meets Western pop and art "
-          "history. Fez, camels, mint tea and zellige, reimagined. Commissions and pieces available."),
-    canonical="art.html",
-    body=art_body,
+pages["collection.html"] = L.page(
+    title="The Collection — Bespoke Furniture, Lighting & Objects | Eden & Beyond",
+    desc=("The Eden & Beyond design collection — bespoke furniture, lighting, decorative objects and limited-edition "
+          "collages by Maija. Collectible pieces available on their own, no project required. Based in Thailand."),
+    canonical="collection.html",
+    body=collection_body,
 )
 
 
@@ -692,7 +734,7 @@ landing(
                        "design. The result is coherent from the first impression to the smallest detail — a space with its own identity "
                        "rather than a borrowed trend.</p>"
                        '<p>See how this shaped <a href="projects.html">Dar Mansour</a>, our Moroccan hospitality project in Koh Phangan, '
-                       'or read more about our <a href="services.html">creative process</a>.</p>')},
+                       'or read more about our <a href="studio.html">creative process</a>.</p>')},
     why_title="Why It Matters",
     why={"h2": "Memorable hospitality is designed on purpose",
          "body": "Guests don't remember decoration. They remember how a place made them feel — and that feeling is the outcome of hundreds of intentional decisions."},
@@ -748,7 +790,7 @@ landing(
     approach={"h2": "Designed for years, not for seasons",
               "body": ("<p>We design homes that age beautifully — with natural materials, human craftsmanship and details chosen to "
                        "last. Every project begins by understanding how you actually want to live.</p>"
-                       '<p>Explore our <a href="services.html">full range of services</a> or <a href="contact.html">start a '
+                       '<p>Explore our <a href="studio.html">full range of services</a> or <a href="contact.html">start a '
                        'conversation</a> about your home.</p>')},
 )
 
@@ -762,7 +804,7 @@ landing(
                        "either as part of a larger project or as standalone commissions. Each piece is designed with purpose, made to be "
                        "kept for a lifetime.</p>"
                        '<p>Our <em>Fez Lamp</em> — a collaged bust crowned with a tasselled fez shade — is one example of how a single '
-                       'object can carry a whole atmosphere. See it and other pieces in <a href="art.html">Art by Maija</a>.</p>')},
+                       'object can carry a whole atmosphere. See it and other pieces in <a href="collection.html">the Collection</a>.</p>')},
     wwd_title="What we design",
     wwd_items=[
         ("Bespoke Furniture", "Custom pieces designed for a specific space and story."),
@@ -802,7 +844,7 @@ landing(
     approach={"h2": "Design should communicate",
               "body": ("<p>Our role isn't to impose a style — it's to reveal an identity. We question assumptions, challenge conventions "
                        "and explore beyond expectations, so the final project feels authentic and entirely its own.</p>"
-                       '<p>Learn more <a href="about.html">about the studio</a> or <a href="contact.html">start a project</a>.</p>')},
+                       '<p>Learn more <a href="studio.html">about the studio</a> or <a href="contact.html">start a project</a>.</p>')},
     why_title="Why It Matters",
     why={"h2": "People remember how a place made them feel",
          "body": "Creative direction is what makes a project coherent — from the first impression to the smallest object — so it leaves a lasting impression rather than a forgettable one."},
@@ -823,15 +865,14 @@ def write_all():
 # Order pages for sitemap (priority high → low)
 SITEMAP_ORDER = [
     ("index.html", "1.0"),
-    ("services.html", "0.9"),
+    ("studio.html", "0.9"),
+    ("collection.html", "0.9"),
     ("hospitality-design.html", "0.9"),
     ("restaurant-design.html", "0.9"),
     ("residential-design.html", "0.9"),
     ("furniture-object-design.html", "0.8"),
     ("creative-direction.html", "0.8"),
     ("projects.html", "0.8"),
-    ("art.html", "0.8"),
-    ("about.html", "0.7"),
     ("journal.html", "0.7"),
     ("contact.html", "0.7"),
 ]
@@ -872,18 +913,18 @@ def write_llms():
     lines = [
         "# Eden & Beyond",
         "",
-        "> Eden & Beyond is an independent multidisciplinary creative studio designing places, objects and "
-        "experiences — boutique hotels, restaurants, private villas, bespoke furniture and creative direction. "
-        "Based in Thailand, working internationally.",
+        "> Eden & Beyond is an independent creative studio and design brand founded by Maija. Two activities: "
+        "(1) a creative studio designing hospitality, residential and commercial projects (hotels, restaurants, "
+        "bars, villas) with creative direction; and (2) a design collection of bespoke furniture, lighting, objects "
+        "and limited editions available on their own. Based in Thailand, working internationally.",
         "",
         "## Key pages",
-        f"- [Home]({L.SITE_URL}/): Studio overview",
-        f"- [About]({L.SITE_URL}/about.html): The studio & founder Maija",
-        f"- [Services]({L.SITE_URL}/services.html): Creative services & process",
+        f"- [Home]({L.SITE_URL}/): Studio & design brand overview",
+        f"- [Studio]({L.SITE_URL}/studio.html): The studio, founder Maija & creative services",
+        f"- [Collection]({L.SITE_URL}/collection.html): Bespoke furniture, lighting, objects & limited editions",
         f"- [Projects]({L.SITE_URL}/projects.html): Selected work, including Dar Mansour",
-        f"- [Art by Maija]({L.SITE_URL}/art.html): Moroccan pop collage art & objects",
         f"- [Journal]({L.SITE_URL}/journal.html): Editorial on design & hospitality",
-        f"- [Contact]({L.SITE_URL}/contact.html): Start a project",
+        f"- [Contact]({L.SITE_URL}/contact.html): Start a project or enquire about a piece",
         "",
         "## Disciplines",
         f"- [Hospitality Design]({L.SITE_URL}/hospitality-design.html)",

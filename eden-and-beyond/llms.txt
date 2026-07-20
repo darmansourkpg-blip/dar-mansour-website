@@ -1,15 +1,14 @@
 # Eden & Beyond
 
-> Eden & Beyond is an independent multidisciplinary creative studio designing places, objects and experiences — boutique hotels, restaurants, private villas, bespoke furniture and creative direction. Based in Thailand, working internationally.
+> Eden & Beyond is an independent creative studio and design brand founded by Maija. Two activities: (1) a creative studio designing hospitality, residential and commercial projects (hotels, restaurants, bars, villas) with creative direction; and (2) a design collection of bespoke furniture, lighting, objects and limited editions available on their own. Based in Thailand, working internationally.
 
 ## Key pages
-- [Home](https://edenandbeyond.studio/): Studio overview
-- [About](https://edenandbeyond.studio/about.html): The studio & founder Maija
-- [Services](https://edenandbeyond.studio/services.html): Creative services & process
+- [Home](https://edenandbeyond.studio/): Studio & design brand overview
+- [Studio](https://edenandbeyond.studio/studio.html): The studio, founder Maija & creative services
+- [Collection](https://edenandbeyond.studio/collection.html): Bespoke furniture, lighting, objects & limited editions
 - [Projects](https://edenandbeyond.studio/projects.html): Selected work, including Dar Mansour
-- [Art by Maija](https://edenandbeyond.studio/art.html): Moroccan pop collage art & objects
 - [Journal](https://edenandbeyond.studio/journal.html): Editorial on design & hospitality
-- [Contact](https://edenandbeyond.studio/contact.html): Start a project
+- [Contact](https://edenandbeyond.studio/contact.html): Start a project or enquire about a piece
 
 ## Disciplines
 - [Hospitality Design](https://edenandbeyond.studio/hospitality-design.html)
