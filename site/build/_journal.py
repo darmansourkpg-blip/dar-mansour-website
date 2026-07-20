@@ -211,12 +211,32 @@ _MD = _md.Markdown(extensions=["extra", "sane_lists", "toc"],
                    extension_configs={"toc": {"toc_depth": "2-3"}})
 
 
+def _add_target_blank_to_external_links(html):
+    """Add target="_blank" and rel="noopener" to all external links in HTML."""
+    def replace_link(match):
+        tag = match.group(0)
+        href = match.group(1)
+        # Skip internal links, anchors, mailto, tel, and links that already have target="_blank"
+        if href.startswith(('#', 'mailto:', 'tel:')) or 'target=' in tag:
+            return tag
+        if href.startswith('http') or href.startswith('//'):
+            # Add target="_blank" and rel="noopener" if not present
+            if 'target=' not in tag:
+                tag = tag.replace('>', ' target="_blank" rel="noopener">', 1)
+            return tag
+        return tag
+    # Match <a ...> tags with href attribute
+    return re.sub(r'<a\s+href="([^"]*)"[^>]*>', replace_link, html)
+
+
 def _render_body(text, has_faq=False):
     """Markdown -> HTML, with an auto clickable table of contents prepended
     when the article has 2+ H2 sub-headings. The FAQ section (rendered later
     as HTML, outside the markdown body) is appended to the TOC when present."""
     _MD.reset()
     html = _MD.convert((text or "").strip())
+    # Add target="_blank" to external links to prevent navigating away
+    html = _add_target_blank_to_external_links(html)
     h2s = [t for t in _MD.toc_tokens if t.get("level") == 2]
     if len(h2s) < 2:
         return html
