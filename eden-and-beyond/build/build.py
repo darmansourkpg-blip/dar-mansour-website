@@ -73,7 +73,7 @@ _home_hero_cls, _home_hero_media = hero_media("hero-home", "Eden & Beyond creati
 home_body = f'''
 {L.hero(
     eyebrow="Creative Studio · Hospitality · Living · Lifestyle",
-    h1_html='<span class="fbox">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> The Box.</span>',
+    h1_html='<span class="fbox">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> The Box</span>',
     sub=("A creative studio designing unforgettable places, objects &amp; experiences. "
          "From boutique hotels and restaurants to private villas and bespoke objects, "
          "we create projects with soul — where design, storytelling and craftsmanship "
@@ -109,7 +109,7 @@ home_body = f'''
     <h2 style="margin-top:1rem;">Commission a project,<br>or own a piece.</h2>
   </div>
   <div class="duo">
-    <div class="duo__card reveal">{ph('Creative studio — a hospitality project', 'ph--dark')}
+    <div class="duo__card reveal">
       <div class="duo__body">
         <span class="eyebrow">01 — Creative Studio</span>
         <h3>Designing unforgettable places, objects &amp; experiences.</h3>
@@ -117,7 +117,7 @@ home_body = f'''
         <a class="btn btn--light" href="contact.html">Start a Project {A}</a>
       </div>
     </div>
-    <div class="duo__card reveal" data-delay="1">{ph('Design collection — a signature object', 'ph--dark')}
+    <div class="duo__card duo__card--red reveal" data-delay="1">
       <div class="duo__body">
         <span class="eyebrow">02 — Design Collection</span>
         <h3>Bring a piece of Eden &amp; Beyond into your home.</h3>
@@ -178,7 +178,7 @@ home_body = f'''
 <section class="section section--sand"><div class="wrap">
   <div class="split" style="align-items:flex-end;margin-bottom:clamp(2rem,5vw,3rem);">
     <div class="split__text reveal">
-      <span class="eyebrow">The Collection</span>
+      <span class="eyebrow eyebrow--red">The Collection</span>
       <h2 style="margin:1rem 0 1.2rem;">Where the studio<br>gets loud.</h2>
       <p class="lead">Maija's collages, objects and limited editions collide Moroccan craft with a wink at Western art —
       fez and Mona Lisa, mint tea and Michelangelo. Each piece can be commissioned or acquired on its own.</p>
@@ -672,6 +672,7 @@ pages["collection.html"] = L.page(
           "collages by Maija. Collectible pieces available on their own, no project required. Based in Thailand."),
     canonical="collection.html",
     body=collection_body,
+    body_class="page-collection",
 )
 
 

@@ -32,8 +32,8 @@
   --accent-tint:   #DBEFD5;   /* pale green wash */
   --logo-red:      #D40702;   /* logo red — used for the F*** stars */
 
-  /* Type */
-  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  /* Type — Archivo is the display face (bold modern grotesque) */
+  --serif: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* Rhythm */
@@ -75,7 +75,7 @@ ul { list-style: none; padding: 0; }
 ::selection { background: var(--accent); color: #fff; }
 
 /* ---------- 3. Typography ---------- */
-h1,h2,h3,h4 { font-family: var(--serif); font-weight: 500; line-height: 1.06; letter-spacing: -.015em; color: var(--ink); }
+h1,h2,h3,h4 { font-family: var(--serif); font-weight: 700; line-height: 1.05; letter-spacing: -.02em; color: var(--ink); }
 .display {
   font-size: clamp(3rem, 9vw, 7rem);
   font-weight: 500;
@@ -94,6 +94,11 @@ h3 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
   color: var(--accent);
   display: inline-block;
 }
+/* Two brand colours: green = creative studio (default) · red = design collection */
+.eyebrow--red { color: var(--logo-red); }
+body.page-collection .eyebrow { color: var(--logo-red); }
+body.page-collection .textlink, body.page-collection .ilink { color: var(--logo-red); }
+body.page-collection .art__price, body.page-collection .divider { color: var(--logo-red); }
 .lead {
   font-size: clamp(1.05rem, 1.6vw, 1.28rem);
   line-height: 1.7;
@@ -309,10 +314,13 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 
 /* Dual entry points (home): commission a project / own a piece */
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.8rem); }
-.duo__card { position: relative; overflow: hidden; border-radius: 3px; min-height: 400px; display: flex; align-items: flex-end; color: #fff; padding: clamp(1.6rem, 3vw, 2.6rem); }
-.duo__card .ph { position: absolute; inset: 0; z-index: -2; aspect-ratio: auto; }
-.duo__card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, transparent 28%, rgba(13,20,15,.86)); }
+.duo__card { position: relative; overflow: hidden; border-radius: 3px; min-height: 400px; display: flex; align-items: flex-end; color: #fff; padding: clamp(1.6rem, 3vw, 2.6rem); background: linear-gradient(150deg, #17402a, var(--charcoal)); }
+.duo__card .ph { position: absolute; inset: 0; z-index: 0; aspect-ratio: auto; }
+.duo__card::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, transparent 28%, rgba(13,20,15,.86)); }
+.duo__body { position: relative; z-index: 2; }
 .duo__body .eyebrow { color: #fff; opacity: .85; }
+.duo__card--red { background: linear-gradient(150deg, #7d2015, var(--charcoal)); }
+.duo__card--red .duo__body .eyebrow { color: #ff8a72; opacity: 1; }
 .duo__body h3 { color: #fff; font-size: clamp(1.55rem, 2.6vw, 2.1rem); margin: .7rem 0 .7rem; max-width: 18ch; }
 .duo__body p { color: rgba(255,255,255,.85); max-width: 40ch; margin-bottom: 1.5rem; }
 @media (max-width: 720px) { .duo { grid-template-columns: 1fr; } }
