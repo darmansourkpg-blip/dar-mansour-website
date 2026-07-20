@@ -40,7 +40,7 @@
   --wrap: 1280px;
   --wrap-narrow: 820px;
   --gutter: clamp(1.25rem, 5vw, 4rem);
-  --section: clamp(4.5rem, 10vw, 8.5rem);
+  --section: clamp(3.5rem, 7vw, 6rem);
 
   /* Motion */
   --ease: cubic-bezier(.22,.61,.36,1);
@@ -281,9 +281,26 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .ph--accent { background: linear-gradient(150deg, #C46B45, #93421F); }
 .ph--accent::after { color: rgba(255,255,255,.75); }
 
+/* Section background helpers — used to alternate rhythm on the home page */
+.section--sand { background: var(--sand); }
+.section--tint { background: var(--accent-tint); }
+
 /* ---------- 10. Discipline grid (what we do) ---------- */
 .disc { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1rem, 2.5vw, 1.8rem); }
-.disc__card { position: relative; overflow: hidden; border-radius: 2px; min-height: 340px; display: flex; align-items: flex-end; color: #fff; padding: 1.8rem; }
+.disc__card { position: relative; overflow: hidden; border-radius: 2px; min-height: 300px; display: flex; align-items: flex-end; color: #fff; padding: 1.8rem; }
+
+/* Light discipline cards (no big empty photo blocks — clean editorial) */
+.disc-lite { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2vw, 1.6rem); }
+.disc-lite__item { display: flex; flex-direction: column; background: var(--cream); border: 1px solid var(--line); border-top: 2px solid var(--accent); border-radius: 3px; padding: 1.7rem 1.5rem 1.5rem; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.disc-lite__item:hover { transform: translateY(-4px); box-shadow: 0 20px 42px -26px rgba(20,32,25,.32); }
+.disc-lite__item h3 { font-size: 1.4rem; margin-bottom: .5rem; }
+.disc-lite__item p { font-size: .92rem; color: var(--ink-soft); }
+.disc-lite__tags { margin-top: auto; padding-top: 1rem; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.disc-lite__more { display: inline-flex; align-items: center; gap: .4rem; margin-top: .8rem; font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.disc-lite__more svg { width: 14px; height: 14px; transition: transform .3s var(--ease); }
+.disc-lite__item:hover .disc-lite__more svg { transform: translateX(4px); }
+@media (max-width: 900px) { .disc-lite { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .disc-lite { grid-template-columns: 1fr; } }
 .disc__card .ph { position: absolute; inset: 0; z-index: -2; aspect-ratio: auto; }
 .disc__card::after { content:""; position:absolute; inset:0; z-index:-1; background: linear-gradient(180deg, transparent 35%, rgba(13,20,15,.82)); }
 .disc__body h3 { color: #fff; font-size: 1.7rem; margin-bottom: .5rem; }
@@ -292,7 +309,7 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 
 /* Dual entry points (home): commission a project / own a piece */
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.8rem); }
-.duo__card { position: relative; overflow: hidden; border-radius: 3px; min-height: 440px; display: flex; align-items: flex-end; color: #fff; padding: clamp(1.6rem, 3vw, 2.6rem); }
+.duo__card { position: relative; overflow: hidden; border-radius: 3px; min-height: 400px; display: flex; align-items: flex-end; color: #fff; padding: clamp(1.6rem, 3vw, 2.6rem); }
 .duo__card .ph { position: absolute; inset: 0; z-index: -2; aspect-ratio: auto; }
 .duo__card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, transparent 28%, rgba(13,20,15,.86)); }
 .duo__body .eyebrow { color: #fff; opacity: .85; }
@@ -468,6 +485,10 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .artstrip { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(.8rem, 2vw, 1.4rem); }
 .artstrip .ph { aspect-ratio: 1/1; border-radius: 3px; }
 .artstrip .ph--round { border-radius: 50%; }
+.artstrip__i { position: relative; overflow: hidden; border-radius: 3px; aspect-ratio: 1/1; display: block; background: var(--linen); }
+.artstrip__i--round { border-radius: 50%; }
+.artstrip__i img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.artstrip__i:hover img { transform: scale(1.05); }
 @media (max-width: 720px) { .artstrip { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------- 20. Journal ---------- */

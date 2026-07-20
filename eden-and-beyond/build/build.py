@@ -103,7 +103,7 @@ home_body = f'''
   </div>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap">
+<section class="section section--sand"><div class="wrap">
   <div class="center reveal" style="max-width:660px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
     <span class="eyebrow">Two ways to experience Eden &amp; Beyond</span>
     <h2 style="margin-top:1rem;">Commission a project,<br>or own a piece.</h2>
@@ -128,28 +128,32 @@ home_body = f'''
   </div>
 </div></section>
 
-<section class="section band-dark"><div class="wrap">
-  <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2.5rem,6vw,4rem);">
+<section class="section"><div class="wrap">
+  <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
     <span class="eyebrow">Creative Studio · What We Do</span>
     <h2 style="margin-top:1.1rem;">Four disciplines,<br>one way of thinking.</h2>
   </div>
-  <div class="disc">
-    <a class="disc__card reveal" href="hospitality-design.html">{ph('Boutique hotel — hospitality design', 'ph--dark')}
-      <div class="disc__body"><h3>Hospitality</h3>
+  <div class="disc-lite">
+    <a class="disc-lite__item reveal" href="hospitality-design.html">
+      <h3>Hospitality</h3>
       <p>Memorable destinations through thoughtful design and storytelling.</p>
-      <p class="disc__tags">Hotels · Restaurants · Bars · Beach Clubs · Cafés · Wellness</p></div></a>
-    <a class="disc__card reveal" data-delay="1" href="residential-design.html">{ph('Private villa — residential design', 'ph--dark')}
-      <div class="disc__body"><h3>Residential</h3>
+      <span class="disc-lite__tags">Hotels · Restaurants · Bars · Beach Clubs · Cafés · Wellness</span>
+      <span class="disc-lite__more">Explore {A}</span></a>
+    <a class="disc-lite__item reveal" data-delay="1" href="residential-design.html">
+      <h3>Residential</h3>
       <p>Homes with personality, warmth and timeless character.</p>
-      <p class="disc__tags">Private Villas · Luxury Residences · Holiday Homes</p></div></a>
-    <a class="disc__card reveal" href="furniture-object-design.html">{ph('Bespoke furniture &amp; objects', 'ph--dark')}
-      <div class="disc__body"><h3>Objects &amp; Furniture</h3>
+      <span class="disc-lite__tags">Private Villas · Luxury Residences · Holiday Homes</span>
+      <span class="disc-lite__more">Explore {A}</span></a>
+    <a class="disc-lite__item reveal" data-delay="2" href="furniture-object-design.html">
+      <h3>Objects &amp; Furniture</h3>
       <p>Bespoke pieces that give every project its own identity.</p>
-      <p class="disc__tags">Furniture · Lighting · Objects · Art Curation</p></div></a>
-    <a class="disc__card reveal" data-delay="1" href="creative-direction.html">{ph('Creative direction &amp; storytelling', 'ph--dark')}
-      <div class="disc__body"><h3>Creative Direction</h3>
+      <span class="disc-lite__tags">Furniture · Lighting · Objects · Art Curation</span>
+      <span class="disc-lite__more">Explore {A}</span></a>
+    <a class="disc-lite__item reveal" data-delay="3" href="creative-direction.html">
+      <h3>Creative Direction</h3>
       <p>Concept, storytelling and brand experiences from first idea to last detail.</p>
-      <p class="disc__tags">Concept · Brand Identity · Art Direction · Styling</p></div></a>
+      <span class="disc-lite__tags">Concept · Brand Identity · Art Direction · Styling</span>
+      <span class="disc-lite__more">Explore {A}</span></a>
   </div>
 </div></section>
 
@@ -171,7 +175,7 @@ home_body = f'''
   every story deserves something uniquely its own.</p>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap">
+<section class="section section--sand"><div class="wrap">
   <div class="split" style="align-items:flex-end;margin-bottom:clamp(2rem,5vw,3rem);">
     <div class="split__text reveal">
       <span class="eyebrow">The Collection</span>
@@ -182,10 +186,10 @@ home_body = f'''
     </div>
   </div>
   <div class="artstrip reveal">
-    {ph('Poppy Queen', 'ph--poppy ph--round')}
-    {ph('Wondermint', 'ph--electric')}
-    {ph('The Creation of Mint Tea', 'ph--teal ph--round')}
-    {ph('Teapot Camel', 'ph--sun')}
+    <a class="artstrip__i artstrip__i--round" href="collection.html#limited-editions"><img src="{find_img('poppy-queen')}" alt="Poppy Queen — collage by Maija" loading="lazy"></a>
+    <a class="artstrip__i" href="collection.html#limited-editions"><img src="{find_img('wondermint-camel')}" alt="Wondermint — collage by Maija" loading="lazy"></a>
+    <a class="artstrip__i artstrip__i--round" href="collection.html#limited-editions"><img src="{find_img('mona-lisa-fez')}" alt="Mona, Fez — collage by Maija" loading="lazy"></a>
+    <a class="artstrip__i" href="collection.html#limited-editions"><img src="{find_img('babouche-mandala')}" alt="Babouche Mandala — collage by Maija" loading="lazy"></a>
   </div>
 </div></section>
 
