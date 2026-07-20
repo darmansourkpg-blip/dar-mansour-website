@@ -571,9 +571,9 @@ pages["contact.html"] = L.page(
 # tinted placeholder named after the piece stands in.
 def piece(slug, title, medium, shape, tint, img=None):
     cls = f"art {shape}".strip()
-    img = img or find_img(slug)
-    if img:
-        media = f'<img src="assets/img/{img}" alt="{title} — {medium}, Eden &amp; Beyond" loading="lazy">'
+    src = find_img(slug) or (f"assets/img/{img}" if img else None)
+    if src:
+        media = f'<img src="{src}" alt="{title} — {medium}, Eden &amp; Beyond" loading="lazy">'
     else:
         media = ph(title, tint)
     return f'''<a class="{cls} reveal" href="contact.html" id="{slug}">
@@ -631,6 +631,7 @@ def collection_section(anchor, title, blurb, pieces):
 collection_nav = " · ".join(
     f'<a class="ilink" href="#{a}">{t}</a>' for a, t, _, _ in COLLECTION)
 collection_sections = "\n".join(collection_section(*c) for c in COLLECTION)
+_col_cls, _col_media = subhero_media("hero-collection")
 collection_body = f'''
 {L.breadcrumb(("Collection", None))}
 {L.subhero(
@@ -638,6 +639,8 @@ collection_body = f'''
     h1="Bring a piece of Eden &amp; Beyond into your home.",
     sub=("A curated collection of bespoke furniture, lighting, objects and limited editions — designed by the studio, "
          "available on their own. Discover, commission or acquire a single piece, no project required."),
+    media_class=_col_cls,
+    media_html=_col_media,
 )}
 
 <section class="section"><div class="wrap wrap--narrow center reveal">
