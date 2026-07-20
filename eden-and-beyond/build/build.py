@@ -73,7 +73,7 @@ _home_hero_cls, _home_hero_media = hero_media("hero-home", "Eden & Beyond creati
 home_body = f'''
 {L.hero(
     eyebrow="Creative Studio · Hospitality · Living · Lifestyle",
-    h1_html='F*** the Box.',
+    h1_html='<span class="fbox">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> The Box.</span>',
     sub=("A creative studio designing unforgettable places, objects &amp; experiences. "
          "From boutique hotels and restaurants to private villas and bespoke objects, "
          "we create projects with soul — where design, storytelling and craftsmanship "

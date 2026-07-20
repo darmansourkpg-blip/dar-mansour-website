@@ -30,6 +30,7 @@
   --accent-deep:   #14671E;   /* forest — in-body link text, hovers */
   --accent-bright: #27B031;   /* exact logo green — small pops, hovers */
   --accent-tint:   #DBEFD5;   /* pale green wash */
+  --logo-red:      #D40702;   /* logo red — used for the F*** stars */
 
   /* Type */
   --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -246,6 +247,9 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .hero .eyebrow { color: #fff; opacity: .9; }
 .hero__title { color: #fff; max-width: 16ch; margin: 1.2rem 0 1.5rem; }
 .hero__title em { font-style: italic; color: var(--accent-tint); }
+/* Bold statement wordmark (poster-style) — heavy condensed sans + red stars */
+.fbox { font-family: 'Anton', 'Arial Narrow', Impact, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: -.005em; line-height: .9; }
+.fbox__stars { font-family: Arial, Helvetica, sans-serif; font-style: normal; color: var(--logo-red); letter-spacing: .06em; margin: 0 .05em; font-size: .82em; vertical-align: .04em; }
 .hero__sub { font-size: clamp(1.05rem, 1.8vw, 1.35rem); max-width: 52ch; color: rgba(255,255,255,.92); font-weight: 300; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.2rem; }
 .hero__scroll { position: absolute; bottom: 1.8rem; left: 50%; transform: translateX(-50%); font-size: .62rem; letter-spacing: .28em; text-transform: uppercase; opacity: .8; display: flex; flex-direction: column; align-items: center; gap: .6rem; }
