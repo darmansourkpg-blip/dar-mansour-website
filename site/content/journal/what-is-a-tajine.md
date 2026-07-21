@@ -5,8 +5,8 @@ description: "A tajine (also spelled tagine) is both Morocco's conical clay pot 
 date: 2026-07-21
 author: The Dar Mansour Journal
 category: moroccan-culture
-cover: assets/img/berber-lamb-tajine-koh-phangan.jpg
-cover_alt: A Berber lamb tajine slow-cooked in a traditional conical clay pot at Dar Mansour, Koh Phangan
+cover: assets/uploads/moroccan-lamb-tajine-prunes-almonds-koh-phangan.jpg
+cover_alt: A Moroccan lamb tajine with prunes, almonds and sesame in a traditional conical clay pot at Dar Mansour, Koh Phangan
 quick_guide:
   - label: What it is
     value: A Moroccan clay pot — and the slow-cooked dish prepared inside it
