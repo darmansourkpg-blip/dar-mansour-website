@@ -899,8 +899,24 @@ else:
     today = date.today().isoformat()
     def _loc(fn):
         return SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
+    # Accurate <lastmod> per URL (freshness signal for Google, aligned with the
+    # JSON-LD dateModified philosophy — never a blanket "today" on every deploy):
+    #  - Journal article pages: the real git date of their markdown source
+    #    (already computed as mod_iso in _journal.load_articles).
+    #  - Static / generated pages: the most recent git commit among the generator
+    #    sources, so the date only moves when the code that builds them actually
+    #    changes — not on every unrelated deploy.
+    # Falls back to today only when git history is unavailable.
+    _art_moddate = {a["url"]: a["mod_iso"] for a in ARTICLES}
+    _gen_files = [os.path.join(HERE, f) for f in (
+        "build.py", "_layout.py", "_menu.py", "_drinks.py", "_links.py",
+        "_journal.py", "maps_links.py")]
+    _gen_dates = [d for d in (_journal._git_mod_date(p) for p in _gen_files) if d]
+    _gen_date = max(_gen_dates) if _gen_dates else today
+    def _lastmod(fn):
+        return _art_moddate.get(fn) or _gen_date
     _urls = "".join(
-        f"  <url><loc>{_loc(fn)}</loc><lastmod>{today}</lastmod></url>\n"
+        f"  <url><loc>{_loc(fn)}</loc><lastmod>{_lastmod(fn)}</lastmod></url>\n"
         for fn in pages)
     with open(sitemap_path, "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
