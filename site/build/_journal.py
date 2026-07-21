@@ -288,9 +288,26 @@ def _git_mod_date(path):
         return None
 
 
+def lint_incoming_links(articles, raw_bodies):
+    """Cross-article check: warn about journal articles that few (or no) other
+    articles link to. Internal links pass authority between pages, so an
+    orphaned article ranks worse. The per-article linter only counts OUTGOING
+    links, so this catches the gap it can't see. Aim for >= 2 incoming links
+    from other journal articles."""
+    for a in articles:
+        target = a["url"]  # e.g. journal-best-thai-restaurants-koh-phangan.html
+        incoming = sum(1 for other in articles
+                       if other["slug"] != a["slug"]
+                       and target in (raw_bodies.get(other["slug"]) or ""))
+        if incoming < 2:
+            print(f"  ⚠ [{a['slug']}] only {incoming} other article(s) link to "
+                  f"it — add internal links from related articles (aim for >= 2).")
+
+
 def load_articles():
     """Return a list of article dicts, newest first."""
     articles = []
+    raw_bodies = {}
     for path in sorted(glob.glob(os.path.join(CONTENT, "*.md"))):
         with open(path, encoding="utf-8") as f:
             meta, body = _split_front_matter(f.read())
@@ -326,7 +343,9 @@ def load_articles():
             "body_html": _render_body(body, bool(_parse_faq(meta.get("faq")))),
             "url": f"journal-{slug}.html",
         })
+        raw_bodies[slug] = body
         lint_article(articles[-1], body)
+    lint_incoming_links(articles, raw_bodies)
     articles.sort(key=lambda a: a["date_iso"], reverse=True)
     return articles
 

@@ -358,7 +358,7 @@ Travelling isn't only about new places — sometimes it's new flavours. thanaka 
 
 ### Moroccan
 
-Moroccan cuisine is inseparable from hospitality. Built around slow cooking, fragrant spices, preserved ingredients and dishes made to be shared, it turns every meal into a moment of generosity. From the imperial kitchens of Marrakech and Fez to Berber recipes from the Atlas Mountains and the flavours of the Atlantic coast, each region tells its own story. Discovering these flavours for the first time or returning to old favourites, Dar Mansour invites you to the warmth at the heart of Moroccan culture.
+Moroccan cuisine is inseparable from hospitality. Built around slow cooking, fragrant spices, preserved ingredients and dishes made to be shared, it turns every meal into a moment of generosity. From the imperial kitchens of Marrakech and Fez to Berber recipes from the Atlas Mountains and the flavours of the Atlantic coast, each region tells its own story. Discovering these flavours for the first time or returning to old favourites, Dar Mansour invites you to the warmth at the heart of Moroccan culture — a tradition kept alive by the [Dadas, the women who have guarded Moroccan family recipes](journal-the-dadas-guardians-of-moroccan-recipes.html) across generations.
 
 #### Dar Mansour – Morocco's Kitchen
 
