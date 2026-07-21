@@ -6,7 +6,7 @@ date: 2026-07-21
 author: The Dar Mansour Journal
 category: moroccan-culture
 cover: assets/uploads/moroccan-lamb-tajine-prunes-almonds-koh-phangan.jpg
-cover_alt: A Moroccan lamb tajine with prunes, almonds and sesame in a traditional conical clay pot at Dar Mansour, Koh Phangan
+cover_alt: Dar Mansour - Morocco's Kitchen Berber's tajine — lamb, prunes and almonds, Koh Phangan, Thailand
 quick_guide:
   - label: What it is
     value: A Moroccan clay pot — and the slow-cooked dish prepared inside it
