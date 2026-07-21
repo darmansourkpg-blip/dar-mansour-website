@@ -3,6 +3,7 @@
 Static-site partials (no framework, no build step beyond this generator)."""
 
 import hashlib
+import json
 import os
 from urllib.parse import quote
 
@@ -76,6 +77,84 @@ MEGA_GROUPS = [
 ]
 
 
+# --- Structured data (JSON-LD) — GEO/SEO entity graph ---
+# Official profiles for the entity graph. Add LinkedIn / Facebook / Pinterest /
+# Wikidata etc. here as they are created, and keep this list the single source.
+SAME_AS = [INSTAGRAM]
+
+
+def _jsonld(obj):
+    return ('<script type="application/ld+json">'
+            + json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+            + '</script>')
+
+
+def org_schema():
+    """Organization + WebSite — emitted on every page (via head)."""
+    org = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": f"{SITE_URL}/#organization",
+        "name": "Eden & Beyond",
+        "url": f"{SITE_URL}/",
+        "logo": f"{SITE_URL}/assets/img/eden-and-beyond-logo.png",
+        "description": ("Independent creative studio and design brand — hospitality, residential and commercial "
+                        "design, creative direction, and a collection of bespoke furniture, lighting and objects."),
+        "founder": {"@type": "Person", "name": "Maija"},
+        "email": EMAIL,
+        "areaServed": "Worldwide",
+        "address": {"@type": "PostalAddress", "addressCountry": "TH"},
+        "sameAs": SAME_AS,
+    }
+    website = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": f"{SITE_URL}/#website",
+        "url": f"{SITE_URL}/",
+        "name": "Eden & Beyond",
+        "publisher": {"@id": f"{SITE_URL}/#organization"},
+    }
+    return _jsonld(org) + "\n" + _jsonld(website)
+
+
+def person_maija_schema():
+    return _jsonld({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": f"{SITE_URL}/studio.html#maija",
+        "name": "Maija",
+        "jobTitle": "Founder & Creative Director",
+        "worksFor": {"@id": f"{SITE_URL}/#organization"},
+        "url": f"{SITE_URL}/studio.html",
+    })
+
+
+def faq_schema(items):
+    """items: list of (question, answer) tuples."""
+    return _jsonld({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": q,
+             "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in items],
+    })
+
+
+def project_schema(name, description, url, location=None):
+    obj = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": name,
+        "description": description,
+        "url": url,
+        "sameAs": url,
+        "creator": {"@id": f"{SITE_URL}/#organization"},
+    }
+    if location:
+        obj["locationCreated"] = {"@type": "Place", "name": location}
+    return _jsonld(obj)
+
+
 def head(title, desc, canonical, og_image="assets/img/eden-and-beyond-studio.jpg",
          extra="", body_class=""):
     bodycls = f' class="{body_class}"' if body_class else ''
@@ -109,6 +188,7 @@ def head(title, desc, canonical, og_image="assets/img/eden-and-beyond-studio.jpg
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css?v={CSS_V}">
+{org_schema()}
 {extra}
 </head>
 <body{bodycls}>'''

@@ -365,6 +365,7 @@ pages["studio.html"] = L.page(
           "residential and commercial design, creative direction, and a collection of bespoke furniture and objects. Based in Thailand."),
     canonical="studio.html",
     body=about_body,
+    extra_head=L.person_maija_schema(),
 )
 
 
@@ -432,6 +433,11 @@ pages["projects.html"] = L.page(
           "Hospitality, residential and object design built around each project's own story."),
     canonical="projects.html",
     body=projects_body,
+    extra_head=L.project_schema(
+        "Dar Mansour — Morocco's Kitchen",
+        "A contemporary interpretation of Moroccan hospitality by Eden & Beyond — architecture, craftsmanship, objects and storytelling.",
+        "https://darmansour.com",
+        "Koh Phangan, Thailand"),
 )
 
 
@@ -559,12 +565,24 @@ contact_body = f'''
   </div>
 </div></section>
 '''
+CONTACT_FAQS = [
+    ("Where do you work?",
+     "We collaborate with clients worldwide. The studio is based in Thailand and works internationally."),
+    ("Can you work remotely?",
+     "Yes. Many projects begin remotely before moving on site."),
+    ("Do you work with architects and developers?",
+     "Absolutely. We regularly collaborate with architects, developers, consultants and contractors."),
+    ("Do you only work on large projects?",
+     "No. Whether it's a complete hospitality concept, a private villa or a bespoke furniture commission, "
+     "every project receives the same attention to detail."),
+]
 pages["contact.html"] = L.page(
     title="Contact — Start a Project | Eden & Beyond Creative Studio",
     desc=("Start a project with Eden & Beyond. Boutique hotels, restaurants, private villas, bespoke furniture and "
           "creative direction. Working internationally, based in Thailand. hello@edenandbeyond.studio"),
     canonical="contact.html",
     body=contact_body,
+    extra_head=L.faq_schema(CONTACT_FAQS),
 )
 
 
