@@ -28,6 +28,41 @@ place.)
 
 ---
 
+> 📊 A ready-to-paste spreadsheet version of this whole plan lives at
+> `ressources/Dar-Mansour-Backlink-Outreach.xlsx` (open it and copy into Google Sheets).
+
+## ⚡ Quick reference — which email to send
+
+| Target | Email |
+|--------|:-----:|
+| Phanganist | B |
+| Phanganlife | B |
+| phangan.events | A |
+| Thailand Vloggers | B |
+| Nomadic Matt | B |
+| The Broke Backpacker | B |
+| Southeast Asia Backpacker | B |
+| Hostelworld Blog | B |
+| Global Gallivanting | A |
+| The Froggy Adventures | A |
+| On a Hammock | A |
+| Type1 Travelling | A |
+| Traveler's Itch | A |
+| Tristan Balme | A |
+| Adventures of Jellie | A |
+| Aritra Bose (Medium) | A |
+| Villa La Favela | C |
+| Bay Villas Koh Phangan | C |
+| High Life Villas | C |
+| Villa Exotic / Tropical | C |
+| Haad Salad Villa | C |
+| Kupu Kupu Phangan | C |
+| Anantara Rasananda | C |
+| Santhiya Resort & Spa | C |
+| Tiki Beach Koh Phangan | A |
+
+**A** = add me to your listicle · **B** = story pitch (media/big guides) · **C** = reciprocal partnership (luxury stays)
+
 ## 🎯 Target list (by priority)
 
 ### Tier 1 — Local island media (best effort/value ratio)
