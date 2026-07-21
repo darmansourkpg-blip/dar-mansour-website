@@ -186,10 +186,10 @@ home_body = f'''
     </div>
   </div>
   <div class="artstrip reveal">
-    <a class="artstrip__i artstrip__i--round" href="collection.html#limited-editions"><img src="{find_img('poppy-queen')}" alt="Poppy Queen — collage by Maija" loading="lazy"></a>
-    <a class="artstrip__i" href="collection.html#limited-editions"><img src="{find_img('wondermint-camel')}" alt="Wondermint — collage by Maija" loading="lazy"></a>
-    <a class="artstrip__i artstrip__i--round" href="collection.html#limited-editions"><img src="{find_img('mona-lisa-fez')}" alt="Mona, Fez — collage by Maija" loading="lazy"></a>
-    <a class="artstrip__i" href="collection.html#limited-editions"><img src="{find_img('babouche-mandala')}" alt="Babouche Mandala — collage by Maija" loading="lazy"></a>
+    <a class="artstrip__i artstrip__i--round" href="collection.html#tables"><img src="{find_img('poppy-queen')}" alt="Hubb — limited-edition table by Maija" loading="lazy"></a>
+    <a class="artstrip__i" href="collection.html#tables"><img src="{find_img('wondermint-camel')}" alt="Flash — limited-edition table by Maija" loading="lazy"></a>
+    <a class="artstrip__i artstrip__i--round" href="collection.html#tables"><img src="{find_img('mona-lisa-fez')}" alt="Mona — limited-edition table by Maija" loading="lazy"></a>
+    <a class="artstrip__i" href="collection.html#tables"><img src="{find_img('babouche-mandala')}" alt="Babouche — limited-edition table by Maija" loading="lazy"></a>
   </div>
 </div></section>
 
@@ -261,21 +261,50 @@ about_body = f'''
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="split split--reverse">
+  <div class="split split--reverse" style="align-items:center;">
     <div class="split__text reveal">
       <span class="eyebrow">Meet Maija</span>
       <h2>Founder &amp; Creative Director</h2>
-      <p class="lead">Maija founded Eden &amp; Beyond with one conviction: design should create emotion before admiration.</p>
-      <p style="margin-top:1.1rem;">Her multidisciplinary approach combines creative direction, interior design, craftsmanship
-      and storytelling to create projects that feel authentic, timeless and deeply personal. Rather than designing around a
-      recognisable style, she believes every project should become a reflection of its own story.</p>
-      <p class="note" style="margin-top:1.6rem;"><em>Placeholder — full founder bio to be written with Maija (background, path, notable work). This is the most important page for trust and E-E-A-T.</em></p>
+      <p class="lead" style="font-style:italic;">&ldquo;I don't create objects for people. I reveal people through objects.&rdquo;</p>
+      <p style="margin-top:1.1rem;">I have always been a creator — but I spent much of my life following conventional
+      paths rather than acting on it. There is a world inside me that has never been fully revealed, one that has
+      relentlessly knocked at the door of my mind, asking to be released and allowed to exist. Eden &amp; Beyond is the
+      key to that door.</p>
     </div>
     <div class="split__media reveal" data-delay="1">
-      {ph('Portrait — Maija')}
+      {('<img src="'+find_img('maija')+'" alt="Maija, founder and creative director of Eden &amp; Beyond">') if find_img('maija') else ph('Portrait — Maija')}
       <span class="tag">Maija · Founder</span>
     </div>
   </div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap prose reveal">
+  <p>I create furniture and lighting, transform objects and dress walls — through unique pieces and limited editions.
+  Using paper, paint, stencils and layered collage, I take familiar forms and let them reveal the invisible life they carry within.</p>
+  <p>For commissioned pieces, the process becomes deeply personal. I don't simply design something for someone. I observe,
+  sense and interpret what lives beneath the surface — then reveal it through the object. Each creation becomes a mirror:
+  not a literal portrait, but a material expression of the person who inspired it.</p>
+
+  <h3>Before objects, the invisible</h3>
+  <p>Before working with objects, I spent twelve years exploring the invisible dimensions of human beings — as a
+  psychotherapist, hypnotherapist and family constellation practitioner. That exploration of the unconscious, of symbols,
+  hidden loyalties and unseen energies, still inhabits everything I create. The language has changed. The intention has not.</p>
+
+  <h3>Several worlds, on purpose</h3>
+  <p>Born in Italy to French parents, raised within the Montessori system, shaped by thirty years in Morocco and now living
+  in Thailand, I carry several worlds within me. I am not interested in choosing between them, or in making them behave.
+  I let them collide, spark and come alive.</p>
+
+  <h3>Where the name came from</h3>
+  <p>Eden &amp; Beyond was born from <em>Eden</em>, Koh Phangan's iconic dance floor — the place that first made me want to
+  live on this island. <em>Beyond</em> stands for everything that came after, and for the infinite possibilities that begin
+  when we stop accepting the limits handed to us.</p>
+  <p>I have no interest in conventional good taste. I am interested in character, contradiction, instinct and life. Some
+  pieces are created freely; others are commissioned for private spaces, restaurants, hotels — places that refuse to look
+  like anywhere else. All are made to provoke something: curiosity, desire, recognition, discomfort, fascination —
+  sometimes all at once.</p>
+
+  <blockquote>F*** the Box is my manifesto, my philosophy of life. Because the Box was never the problem — believing we had to live inside it was.</blockquote>
 </div></section>
 
 <section class="section" style="padding-top:0;"><div class="wrap">
@@ -593,7 +622,8 @@ pages["contact.html"] = L.page(
 # tinted placeholder named after the piece stands in.
 def piece(slug, title, medium, shape, tint, img=None):
     cls = f"art {shape}".strip()
-    src = find_img(slug) or (f"assets/img/{img}" if img else None)
+    # img (when given) is the image-file stem, which can differ from the display slug
+    src = find_img(slug) or (find_img(img) if img else None)
     if src:
         media = f'<img src="{src}" alt="{title} — {medium}, Eden &amp; Beyond" loading="lazy">'
     else:
@@ -605,35 +635,37 @@ def piece(slug, title, medium, shape, tint, img=None):
     </a>'''
 
 
+# Slug = image filename stem (keeps the photo mapping); title = the real piece
+# name from Maija's captions. The collaged tondos & panels are limited-edition
+# TABLES — furniture, not wall art.
 COLLECTION = [
-    ("furniture", "Furniture",
-     "Sculptural tables, seating and consoles — one-off pieces and bespoke commissions.", [
-        ("console-table",  "Console",       "Furniture · bespoke commission", "",           "ph--dark"),
-        ("lounge-chair",   "Lounge Chair",  "Furniture · bespoke commission", "",           "ph--dark"),
-        ("low-table",      "Low Table",     "Furniture · bespoke commission", "",           "ph--dark"),
+    ("tables", "Tables",
+     "Each table is a one-off — a familiar form dressed in paper, paint and layered collage until it reveals the "
+     "invisible life it carries. Moroccan icons collided with Western art. Numbered, collectible, made to be lived with.", [
+        ("hubb",                   "Hubb",              "Limited-edition table", "art--round", "ph--poppy",    "poppy-queen"),
+        ("flash",                  "Flash",             "Limited-edition table", "",           "ph--electric", "wondermint-camel"),
+        ("mona",                   "Mona",              "Limited-edition table", "art--round", "ph--teal",     "mona-lisa-fez"),
+        ("babouche",               "Babouche",          "Limited-edition table", "",           "ph--magenta",  "babouche-mandala"),
+        ("divine-touch",           "Divine Touch",      "Limited-edition table", "art--round", "ph--teal",     "creation-of-mint-tea"),
+        ("framed",                 "Framed",            "Limited-edition table", "",           "ph--electric", "chefchaouen-framed"),
+        ("qaf-in-the-oasis",       "Qaf in the Oasis",  "Limited-edition table", "art--round", "ph--magenta",  "desert-caravan-neon"),
+        ("a-tea-in-the-desert",    "A Tea in the Desert","Limited-edition table","",           "ph--sun",      "teapot-camel"),
+        ("ysl",                    "YSL",               "Limited-edition table", "",           "ph--teal",     "rue-yves-saint-laurent"),
      ]),
     ("lighting", "Lighting",
-     "Light as atmosphere. Lamps and fixtures where the object matters as much as the glow.", [
+     "Light as atmosphere — pieces where the object matters as much as the glow.", [
         ("fez-lamp",       "Fez Lamp",      "Lighting · mixed-media object",  "art--tall",  "ph--poppy"),
         ("tassel-light",   "Tassel Light",  "Lighting · bespoke commission",  "art--tall",  "ph--dark"),
      ]),
     ("objects", "Objects",
-     "Decorative objects, mirrors and sculptural pieces — the small things that give a room its soul.", [
+     "Transformed objects and decorative pieces — the small things that give a room its soul.", [
         ("zellige-mirror",   "Zellige Mirror",   "Object · bespoke commission", "",  "ph--teal"),
         ("sculptural-vessel","Sculptural Vessel","Object · limited edition",    "",  "ph--sun"),
-        ("brass-object",     "Brass Object",     "Object · bespoke commission", "",  "ph--dark"),
      ]),
-    ("limited-editions", "Limited Editions",
-     "Maija's original collages and tondos — Moroccan icons collided with Western art. Numbered and collectible.", [
-        ("poppy-queen",            "Poppy Queen",              "Collage · tondo · limited edition", "art--round", "ph--poppy"),
-        ("wondermint-camel",       "Wondermint",               "Collage · limited edition",         "",           "ph--electric"),
-        ("mona-lisa-fez",          "Mona, Fez",                "Collage · tondo · limited edition", "art--round", "ph--teal"),
-        ("babouche-mandala",       "Babouche Mandala",         "Collage · limited edition",         "",           "ph--magenta"),
-        ("creation-of-mint-tea",   "The Creation of Mint Tea", "Collage · tondo · limited edition", "art--round", "ph--teal"),
-        ("chefchaouen-framed",     "Chefchaouen, Framed",      "Collage · limited edition",         "",           "ph--electric"),
-        ("desert-caravan-neon",    "Desert Caravan",           "Collage · tondo · limited edition", "art--round", "ph--magenta"),
-        ("teapot-camel",           "Teapot Camel",             "Collage · limited edition",         "",           "ph--sun"),
-        ("rue-yves-saint-laurent", "Rue Yves Saint Laurent",   "Photograph · Marrakech",            "",           "ph--teal"),
+    ("walls", "Walls",
+     "Dressed walls — bespoke panels and murals that turn a surface into a story.", [
+        ("dressed-wall",   "Dressed Wall",  "Wall piece · bespoke commission", "",  "ph--dark"),
+        ("mural",          "Mural",         "Wall piece · bespoke commission", "",  "ph--magenta"),
      ]),
 ]
 
@@ -659,8 +691,8 @@ collection_body = f'''
 {L.subhero(
     eyebrow="The Design Collection",
     h1="Bring a piece of Eden &amp; Beyond into your home.",
-    sub=("A curated collection of bespoke furniture, lighting, objects and limited editions — designed by the studio, "
-         "available on their own. Discover, commission or acquire a single piece, no project required."),
+    sub=("Limited-edition tables, lighting, transformed objects and dressed walls — collaged by hand, designed by the "
+         "studio, available on their own. Discover, commission or acquire a single piece, no project required."),
     media_class=_col_cls,
     media_html=_col_media,
 )}

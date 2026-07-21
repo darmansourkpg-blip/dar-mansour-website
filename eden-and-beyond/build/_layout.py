@@ -62,10 +62,10 @@ MEGA_GROUPS = [
     ]),
     ("The Collection", [
         ("collection.html", "All Pieces"),
-        ("collection.html#furniture", "Furniture"),
+        ("collection.html#tables", "Tables"),
         ("collection.html#lighting", "Lighting"),
         ("collection.html#objects", "Objects"),
-        ("collection.html#limited-editions", "Limited Editions"),
+        ("collection.html#walls", "Walls"),
     ]),
     ("What We Do", [
         ("hospitality-design.html", "Hospitality Design"),
@@ -342,10 +342,10 @@ def footer():
         <h4>The Collection</h4>
         <ul>
           <li><a href="collection.html">All Pieces</a></li>
-          <li><a href="collection.html#furniture">Furniture</a></li>
+          <li><a href="collection.html#tables">Tables</a></li>
           <li><a href="collection.html#lighting">Lighting</a></li>
           <li><a href="collection.html#objects">Objects</a></li>
-          <li><a href="collection.html#limited-editions">Limited Editions</a></li>
+          <li><a href="collection.html#walls">Walls</a></li>
         </ul>
       </div>
       <div>
