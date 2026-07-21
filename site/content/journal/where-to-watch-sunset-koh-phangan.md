@@ -208,7 +208,7 @@ Hidden among the hills above Baan Tai, Secret Mountain feels like a peaceful esc
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Swimming pool</li><li>Jungle views</li><li>Relaxed atmosphere</li><li>Less crowded</li><li>Sunset dining available</li></ul></div>
 
-![Sunset over Koh Ma Beach in Koh Phangan](/assets/uploads/Koh%20Ma-beach-sunset-koh-phangan.jpeg "Sunset from Koh Ma Beach")
+![Sunset over Koh Ma Beach in Koh Phangan](/assets/uploads/koh-ma-beach-sunset-koh-phangan.jpeg "Sunset from Koh Ma Beach")
 
 ## Worth the Journey
 

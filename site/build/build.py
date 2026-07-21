@@ -22,8 +22,8 @@ pages = {}
 home_body = f'''
 <section class="hero">
   <div class="hero__media"><picture>
-    <source media="(max-width: 720px)" srcset="assets/uploads/Dar%20Mansour%20Morocco%27s%20Kitchen%20Koh%20Phangan.webp">
-    <img src="assets/uploads/entrance-%20dar%20mansour%20-%20koh%20phangan.webp" alt="The candlelit garden lounge and illuminated Dar Mansour sign in Koh Phangan" fetchpriority="high">
+    <source media="(max-width: 720px)" srcset="assets/uploads/dar-mansour-moroccos-kitchen-koh-phangan.webp">
+    <img src="assets/uploads/entrance-dar-mansour-koh-phangan.webp" alt="The candlelit garden lounge and illuminated Dar Mansour sign in Koh Phangan" fetchpriority="high">
   </picture></div>
   <div class="wrap hero__inner">
     <span class="eyebrow">Slow Food · West Coast, Koh Phangan</span>
@@ -87,12 +87,12 @@ home_body = f'''
     <p class="lead" style="margin-inline:auto;">Inspired by the Dadas — the silent guardians of Moroccan family recipes — our kitchen celebrates the authentic essence of Morocco: slow-cooked dishes full of generosity, depth and soul.</p>
   </div>
   <div class="dishes dishes--photos">
-    <article class="dish reveal"><img src="assets/uploads/Couscous.jpg" alt="Moroccan couscous with slow-cooked vegetables at Dar Mansour" loading="lazy"><div class="dish__label"><h3>Couscous</h3></div></article>
+    <article class="dish reveal"><img src="assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg" alt="Moroccan couscous with slow-cooked vegetables at Dar Mansour" loading="lazy"><div class="dish__label"><h3>Couscous</h3></div></article>
     <article class="dish reveal" data-delay="1"><img src="assets/uploads/moroccan-lamb-tajine-prunes-almonds-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Berber's tajine — lamb, prunes and almonds, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Berber's Tajine</h3></div></article>
     <article class="dish reveal" data-delay="2"><img src="assets/uploads/moroccan-chicken-tajine-olives-preserved-lemon-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Fez's tajine — chicken, preserved lemon and olives, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Fez's Tajine</h3></div></article>
     <article class="dish reveal"><img src="assets/uploads/moroccan-vegetable-tajine-courgette-carrot-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Chefchaouen's tajine — seasonal vegetables, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Chefchaouen's Tajine</h3></div></article>
     <article class="dish reveal" data-delay="1"><img src="assets/uploads/moroccan-tanjia-marrakchia-charcoal-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Tanjia Marrakchia — slow-cooked over embers, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Tanjia Marrakchia</h3></div></article>
-    <article class="dish reveal" data-delay="2"><img src="assets/uploads/M%27semen.jpg" alt="Msemen, traditional Moroccan layered flatbread" loading="lazy"><div class="dish__label"><h3>M'semen</h3></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/uploads/moroccan-msemen-flatbread-koh-phangan.jpg" alt="Msemen, traditional Moroccan layered flatbread" loading="lazy"><div class="dish__label"><h3>M'semen</h3></div></article>
   </div>
   <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
     <a class="btn btn--primary" href="moroccan-menu-koh-phangan.html">Explore the Full Menu</a>
@@ -115,7 +115,7 @@ home_body = f'''
 </div></div></section>
 
 <section class="section pd" id="private">
-  <div class="pd__bg"><img src="assets/uploads/main%20room-%20ambiance-dar-mansour-%20Koh%20Phangan.webp" alt="Warm ambient lighting in the main dining room at Dar Mansour Koh Phangan, creating an intimate Moroccan atmosphere" style="object-position:center 55%"></div>
+  <div class="pd__bg"><img src="assets/uploads/main-room-ambiance-dar-mansour-koh-phangan.webp" alt="Warm ambient lighting in the main dining room at Dar Mansour Koh Phangan, creating an intimate Moroccan atmosphere" style="object-position:center 55%"></div>
   <div class="wrap"><div class="reveal" style="max-width:560px;">
     <span class="eyebrow">Private Dining &amp; Celebrations</span>
     <h2 style="margin:1.2rem 0 1.3rem;">Celebrate life's most beautiful moments around a Moroccan table</h2>
@@ -127,7 +127,7 @@ home_body = f'''
 
 <section class="section" id="wine"><div class="wrap"><div class="split">
   <div class="split__media reveal">
-    <img src="assets/uploads/Wine%20Pairing.jpg" alt="Moroccan prune tajine paired with a tawny port on the Dar Mansour wine pairing list, Koh Phangan">
+    <img src="assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg" alt="Moroccan prune tajine paired with a tawny port on the Dar Mansour wine pairing list, Koh Phangan">
     <span class="tag">Wine Pairing</span>
   </div>
   <div class="split__text reveal" data-delay="1">
@@ -211,9 +211,9 @@ concept_body = L.breadcrumb(("Concept", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Book your experience &amp; pre-order",
     "Perfect for private dinners, slow dining lovers and food-conscious travellers seeking a soulful culinary experience in Koh Phangan.") + L.related(
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Moroccan couscous"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Moroccan couscous"),
     ("Reservation", "How to Book", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-restaurant-central-room-koh-phangan.jpg", "Central dining room"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["moroccan-slow-dining-koh-phangan.html"] = L.page(
     "Concept &amp; Operating Model — Moroccan Slow Dining Koh Phangan",
     "Discover how Dar Mansour redefines hospitality in Koh Phangan through its Moroccan slow food concept. Reservations recommended, pre-ordered dinners, zero waste, cooked with care.",
@@ -240,9 +240,9 @@ menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
     "Book now via WhatsApp to reserve your table and pre-order your soulful Moroccan dinner.") + L.related(
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
-    ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/Preserved%20Lemons.jpg", "Jars of Moroccan preserved lemons"),
-    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/uploads/Romantic%20Dinner-Dar-Mansour-Koh%20Phangan.webp", "A candlelit table set for a romantic dinner at Dar Mansour"))
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
+    ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/moroccan-preserved-lemons-koh-phangan.jpg", "Jars of Moroccan preserved lemons"),
+    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/uploads/romantic-dinner-dar-mansour-koh-phangan.webp", "A candlelit table set for a romantic dinner at Dar Mansour"))
 pages["moroccan-menu-koh-phangan.html"] = L.page(
     "Moroccan Menu Koh Phangan — Tagines, Couscous &amp; Slow Food | Dar Mansour",
     "Explore Dar Mansour's menu in Koh Phangan: authentic Moroccan cuisine with tagines, couscous, tanjias and homemade bread. Cooked slow, served with soul.",
@@ -278,8 +278,8 @@ res_body = L.breadcrumb(("Reservation", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("I want to book a table &amp; pre-order",
     "Dinner only, Tuesday to Saturday. Reserve your evening and pre-order your slow-cooked Moroccan feast.") + L.related(
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Moroccan couscous"),
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Moroccan couscous"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("FAQ", "Good to Know", "faq.html", "assets/img/moroccan-pastries-mint-tea-koh-phangan.jpg", "Pastries and mint tea"))
 pages["moroccan-restaurant-reservation-koh-phangan.html"] = L.page(
     "Reservation at Dar Mansour — Moroccan Slow Food in Koh Phangan",
@@ -292,7 +292,7 @@ pages["moroccan-restaurant-reservation-koh-phangan.html"] = L.page(
 wine_body = L.breadcrumb(("Wine Pairing", None)) + L.subhero(
     "Wine Pairing Experience", "Crafted to enhance every bite — on the spiced path of Morocco",
     "Koh Phangan's only dedicated Moroccan wine pairing list — natural, characterful labels chosen to elevate the soul of our slow food.",
-    "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a Porto Maynard's tawny at Dar Mansour", tall=True, variant="portrait") + f'''
+    "assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", "Moroccan prune tajine paired with a Porto Maynard's tawny at Dar Mansour", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;">
     <p class="lead">At Dar Mansour, wine is more than a drink — it's a dialogue with the dish. Each label in our curated list is selected to elevate the complexity, warmth and aromatic depth of <a class="ilink" href="moroccan-slow-dining-koh-phangan.html">Moroccan slow food</a>.</p>
@@ -309,13 +309,13 @@ wine_body = L.breadcrumb(("Wine Pairing", None)) + L.subhero(
 ''' + L.cta_band("Book your dinner &amp; discover your perfect pairing",
     "Reserve your evening and let us match each dish to a wine that sings.") + L.related(
     ("The Bar", "Cocktails &amp; Classics", "moroccan-cocktails-koh-phangan.html", "assets/img/mansour-bar-cocktail-sand-koh-phangan.jpg", "Signature Mansour Bar cocktail"),
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Moroccan couscous"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Moroccan couscous"),
     ("Private Dining", "Celebrations", "private-dining-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table"))
 pages["moroccan-wine-pairing-koh-phangan.html"] = L.page(
     "Moroccan Wine Pairing — Slow Food &amp; Natural Wines Koh Phangan | Dar Mansour",
     "Discover Koh Phangan's only curated Moroccan wine pairing list. Wines selected to elevate each dish, from tagines to couscous, at Dar Mansour.",
     "moroccan-wine-pairing-koh-phangan.html", wine_body,
-    og_image="assets/uploads/Wine%20Pairing.jpg", body_class="page-wine")
+    og_image="assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", body_class="page-wine")
 
 
 # ============================================================ MANSOUR BAR / COCKTAILS
@@ -338,8 +338,8 @@ bar_body = L.breadcrumb(("The Mansour Bar", None)) + L.subhero(
   <p class="book__meta center" style="margin-top:2.2rem;">All prices in Thai Baht. A 3% surcharge applies to card payments. Please drink responsibly.</p>
 </div></section>
 ''' + L.cta_band("Toast to the moment", "Reserve your evening and sip Moroccan flavours under the stars.") + L.related(
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Moroccan couscous"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Moroccan couscous"),
     ("Private Dining", "Celebrations", "private-dining-koh-phangan.html", "assets/img/moroccan-round-table-koh-phangan.jpg", "Round table"))
 pages["moroccan-cocktails-koh-phangan.html"] = L.page(
     "The Mansour Bar — Moroccan-Inspired Cocktails in Koh Phangan | Dar Mansour",
@@ -352,7 +352,7 @@ pages["moroccan-cocktails-koh-phangan.html"] = L.page(
 art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
     "Artistic Direction &amp; Décor", "Art as identity",
     "A soulful space where Moroccan craftsmanship meets bold artistic vision — a living gallery of visual culture and culinary heritage.",
-    "assets/uploads/Stay%20Calm%20and%20Drink%20Berber%20Whisky.webp", "Stay Calm and Drink Berber Whisky — a playful artwork celebrating Moroccan mint tea at Dar Mansour", tall=True, variant="portrait") + f'''
+    "assets/uploads/berber-whisky-moroccan-mint-tea-dar-mansour-koh-phangan.webp", "Stay Calm and Drink Berber Whisky — a playful artwork celebrating Moroccan mint tea at Dar Mansour", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap prose reveal">
   <p class="lead">At Dar Mansour, art is not an afterthought — it's who we are. From ancestral Moroccan craft to striking contemporary works, the space is curated as a living gallery where visual culture and culinary heritage come together. Every detail tells a story; every corner speaks of identity.</p>
   <h2>Currently on display</h2>
@@ -370,9 +370,9 @@ art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Experience it in person",
     "The best way to feel our artistic direction is around a candlelit table. Reserve your evening at Dar Mansour.") + L.related(
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Spirit", "The Mansour Spirit", "moroccan-hospitality-values-koh-phangan.html", "assets/uploads/mansour-spirit-monk.webp", "A Buddhist monk arranging artwork — the spirit of hospitality and cultural respect"),
-    ("Experience", "The Experience", "index.html", "assets/uploads/Kamel%20Ghabte-%20women%20-men%20-rest%20room-%20dar%20mansour-koh%20phangan.webp", "Colourful Kamel Ghabte pop-art portraits at Dar Mansour, Koh Phangan"))
+    ("Experience", "The Experience", "index.html", "assets/uploads/kamel-ghabte-restroom-pop-art-dar-mansour-koh-phangan.webp", "Colourful Kamel Ghabte pop-art portraits at Dar Mansour, Koh Phangan"))
 pages["moroccan-interior-art-koh-phangan.html"] = L.page(
     "Moroccan Art &amp; Interior Design in Koh Phangan — Dar Mansour",
     "Step inside Dar Mansour — a soulful space where Moroccan craftsmanship and bold artistic vision meet. A celebration of identity, heritage and creative expression.",
@@ -384,14 +384,14 @@ pages["moroccan-interior-art-koh-phangan.html"] = L.page(
 reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
     "Recognition", "Featured by Golf du Maroc among the world's notable Moroccan restaurants",
     "As seen in Golf du Maroc magazine — a table carrying the Moroccan soul across continents.",
-    "assets/uploads/Dar%20Mansour%20Morocco%27s%20Kitchen%20Koh%20Phangan.jpg", "The illuminated Dar Mansour entrance sign with a Moroccan candle lantern at dusk in Koh Phangan", tall=True, focus="center 22%") + f'''
+    "assets/uploads/dar-mansour-moroccos-kitchen-koh-phangan.jpg", "The illuminated Dar Mansour entrance sign with a Moroccan candle lantern at dusk in Koh Phangan", tall=True, focus="center 22%") + f'''
 <section class="section"><div class="wrap prose reveal">
   <span class="eyebrow">Golf du Maroc Magazine · Gastronomy</span>
   <h2>"Morocco under different skies"</h2>
   <p>In an international gastronomy feature titled <em>Morocco Under Different Skies</em>, journalist Carole Belahrach set out, for <strong>Golf du Maroc</strong> magazine, to find the tables that carry Morocco's soul beyond its borders: <em>"When traveling abroad, you want to get away from it all and taste the local cuisine — just as you might want to discover the places that showcase Morocco and its gastronomy."</em> From Hamburg to New York and Los Angeles, the magazine's journey led — among a handful of chosen addresses — to a small tropical island in Thailand.</p>
   <figure class="tearsheet reveal">
-    <a href="assets/uploads/Golf%20du%20Maroc%20english%20version.jpg" target="_blank" rel="noopener">
-      <img src="assets/uploads/Golf%20du%20Maroc%20english%20version.jpg" alt="Dar Mansour featured in Golf du Maroc magazine among the world's notable Moroccan culinary destinations" loading="lazy">
+    <a href="assets/uploads/golf-du-maroc-feature-dar-mansour-koh-phangan.jpg" target="_blank" rel="noopener">
+      <img src="assets/uploads/golf-du-maroc-feature-dar-mansour-koh-phangan.jpg" alt="Dar Mansour featured in Golf du Maroc magazine among the world's notable Moroccan culinary destinations" loading="lazy">
     </a>
     <figcaption>As featured in Golf du Maroc Magazine</figcaption>
   </figure>
@@ -413,9 +413,9 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
   <h2>Read the full feature</h2>
   <p>The complete article — <em>Morocco Under Different Skies</em>, by Carole Belahrach, as published in Golf du Maroc magazine. Tap any page to read it in the viewer, then use the arrows to flip through.</p>
   <div class="pressgallery reveal">
-    <figure><a href="assets/uploads/Golf%20du%20Maroc1.jpg" target="_blank" rel="noopener"><img src="assets/uploads/Golf%20du%20Maroc1.jpg" alt="Golf du Maroc feature cover — Morocco Under Different Skies" loading="lazy"></a><figcaption>The cover</figcaption></figure>
-    <figure><a href="assets/uploads/golf%20du%20maroc%202.jpg" target="_blank" rel="noopener"><img src="assets/uploads/golf%20du%20maroc%202.jpg" alt="Magazine page featuring Dar Mansour (Thailand) and Piment (Germany)" loading="lazy"></a><figcaption>Dar Mansour &amp; Piment</figcaption></figure>
-    <figure><a href="assets/uploads/golf%20du%20Maroc%203.jpg" target="_blank" rel="noopener"><img src="assets/uploads/golf%20du%20Maroc%203.jpg" alt="Magazine page featuring Café Mogador, Zerza and Tagine Beverly Hills in the United States" loading="lazy"></a><figcaption>United States</figcaption></figure>
+    <figure><a href="assets/uploads/golf-du-maroc-press-dar-mansour-1-koh-phangan.jpg" target="_blank" rel="noopener"><img src="assets/uploads/golf-du-maroc-press-dar-mansour-1-koh-phangan.jpg" alt="Golf du Maroc feature cover — Morocco Under Different Skies" loading="lazy"></a><figcaption>The cover</figcaption></figure>
+    <figure><a href="assets/uploads/golf-du-maroc-press-dar-mansour-2-koh-phangan.jpg" target="_blank" rel="noopener"><img src="assets/uploads/golf-du-maroc-press-dar-mansour-2-koh-phangan.jpg" alt="Magazine page featuring Dar Mansour (Thailand) and Piment (Germany)" loading="lazy"></a><figcaption>Dar Mansour &amp; Piment</figcaption></figure>
+    <figure><a href="assets/uploads/golf-du-maroc-press-dar-mansour-3-koh-phangan.jpg" target="_blank" rel="noopener"><img src="assets/uploads/golf-du-maroc-press-dar-mansour-3-koh-phangan.jpg" alt="Magazine page featuring Café Mogador, Zerza and Tagine Beverly Hills in the United States" loading="lazy"></a><figcaption>United States</figcaption></figure>
   </div>
   <h2>A Moroccan table in Koh Phangan</h2>
   <p>This recognition came just two months after our opening. It honours not just our cuisine, but the values we hold dear:</p>
@@ -443,8 +443,8 @@ reco_body = L.breadcrumb(("Recognition", None)) + L.subhero(
 ''' + L.cta_band("Taste what the world is talking about",
     "Reserve your evening and discover the slow-cooked Moroccan cuisine that carries our soul across continents.") + L.related(
     ("Reviews", "What Guests Say", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior"),
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Couscous"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["best-moroccan-restaurant-world-press.html"] = L.page(
     "Dar Mansour — Featured by Golf du Maroc | Notable Moroccan Dining",
     "Featured in Golf du Maroc, Phanganist and Phangan Life, Dar Mansour is recognised among the world's notable Moroccan culinary destinations and celebrated on Koh Phangan for its slow-cooked Moroccan soul food.",
@@ -483,8 +483,8 @@ reviews_body = L.breadcrumb(("Reviews", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Come and write your own story", "Reserve your evening and discover the experience for yourself.") + L.related(
     ("Recognition", "In the Press", "best-moroccan-restaurant-world-press.html", "assets/img/dar-mansour-front-koh-phangan.jpeg", "Storefront"),
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Couscous"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["moroccan-restaurant-reviews-koh-phangan.html"] = L.page(
     "Reviews of Dar Mansour — Best Moroccan Restaurant in Koh Phangan",
     "Discover what guests say about Dar Mansour in Koh Phangan. A soulful Moroccan dining experience praised for its authenticity, atmosphere and heart.",
@@ -508,24 +508,24 @@ pantry_cards = "".join(f'''    <div class="pantry__item reveal"><h3>{n}</h3><p>{
 pantry_body = L.breadcrumb(("Moroccan Pantry", None)) + L.subhero(
     "Moroccan Pantry: Stories &amp; Staples", "Our culinary roots, one ingredient at a time",
     "From the red hills of Taliouine to the family kitchens of Rabat — a pantry of soul, taste and tradition.",
-    "assets/uploads/Ras%20El%20Hanout-2.jpg", "Ras el Hanout and Moroccan spices, the heart of the Dar Mansour pantry", tall=True, variant="portrait") + f'''
+    "assets/uploads/moroccan-ras-el-hanout-spice-blend-koh-phangan.jpg", "Ras el Hanout and Moroccan spices, the heart of the Dar Mansour pantry", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,3.5rem);">
     <p class="lead">At Dar Mansour, every ingredient carries a story. Our pantry is filled with traditions passed down by <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">generations of Moroccan women</a>. Here are some of the staples we love and use — with care and authenticity.</p>
   </div>
   <div class="dishes dishes--photos" style="margin-bottom:clamp(2.5rem,5vw,3.5rem);">
-    <article class="dish reveal"><img src="assets/uploads/Preserved%20Lemons.jpg" alt="Jars of Moroccan preserved lemons with fresh lemons" loading="lazy"><div class="dish__label"><h3>Preserved Lemons</h3></div></article>
-    <article class="dish reveal" data-delay="1"><img src="assets/uploads/Ras%20El%20Hanout-2.jpg" alt="Ras el Hanout Moroccan spice blend surrounded by bowls of spices" loading="lazy"><div class="dish__label"><h3>Ras el Hanout</h3></div></article>
-    <article class="dish reveal" data-delay="2"><img src="assets/uploads/Smen-2.jpg" alt="Smen, Moroccan fermented clarified butter in a painted bowl" loading="lazy"><div class="dish__label"><h3>Smen</h3></div></article>
+    <article class="dish reveal"><img src="assets/uploads/moroccan-preserved-lemons-koh-phangan.jpg" alt="Jars of Moroccan preserved lemons with fresh lemons" loading="lazy"><div class="dish__label"><h3>Preserved Lemons</h3></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/uploads/moroccan-ras-el-hanout-spice-blend-koh-phangan.jpg" alt="Ras el Hanout Moroccan spice blend surrounded by bowls of spices" loading="lazy"><div class="dish__label"><h3>Ras el Hanout</h3></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/uploads/moroccan-smen-fermented-butter-koh-phangan.jpg" alt="Smen, Moroccan fermented clarified butter in a painted bowl" loading="lazy"><div class="dish__label"><h3>Smen</h3></div></article>
   </div>
   <div class="pantry">
 {pantry_cards}
   </div>
 </div></section>
 ''' + L.cta_band("Want to taste it all?", "Discover how these staples come alive across our slow-cooked menu.") + L.related(
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
-    ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/uploads/Arty%20table-Dar-Mansour-%20Koh%20Phangan.webp", "Moroccan art books and candlelight on an arty table at Dar Mansour"))
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Couscous"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
+    ("Concept", "Slow Dining", "moroccan-slow-dining-koh-phangan.html", "assets/uploads/moroccan-arty-table-dar-mansour-koh-phangan.webp", "Moroccan art books and candlelight on an arty table at Dar Mansour"))
 pages["moroccan-pantry-koh-phangan.html"] = L.page(
     "Moroccan Pantry &amp; Ingredients — Dar Mansour Koh Phangan",
     "Discover the stories behind Moroccan ingredients like charmoula, saffron and preserved lemon. A pantry of soul, taste and tradition.",
@@ -554,9 +554,9 @@ spirit_body = L.breadcrumb(("Mansour Spirit", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Come and feel it",
     "Slow down, breathe, and savour the moment around a Moroccan table. Reserve your evening at Dar Mansour.") + L.related(
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
     ("Art", "Artistic Direction", "moroccan-interior-art-koh-phangan.html", "assets/img/maija-art-direction-koh-phangan.jpg", "Art direction"),
-    ("Experience", "The Experience", "index.html", "assets/uploads/amabiance-arty-dar%20mansour-koh%20phangan.webp", "Warm candlelit tables in the main room at Dar Mansour"))
+    ("Experience", "The Experience", "index.html", "assets/uploads/ambiance-arty-dar-mansour-koh-phangan.webp", "Warm candlelit tables in the main room at Dar Mansour"))
 pages["moroccan-hospitality-values-koh-phangan.html"] = L.page(
     "Mansour Spirit — Moroccan Hospitality &amp; Thai Values in Koh Phangan",
     "Dar Mansour is a peaceful oasis where Moroccan hospitality meets Thai cultural respect. Discover our values of harmony, gratitude and barefoot freedom in Koh Phangan.",
@@ -616,8 +616,8 @@ pd_body = L.breadcrumb(("Private Dining", None)) + L.subhero(
     eyebrow="Private Dining &amp; Celebrations",
     btn_label="Enquire via WhatsApp",
     wa_message="Hello Dar Mansour, I'd like to enquire about private dining. Here are a few details about my celebration:") + L.related(
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/Wine%20Pairing.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Couscous"),
+    ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Reviews", "What Guests Say", "moroccan-restaurant-reviews-koh-phangan.html", "assets/img/moroccan-garden-lounge-koh-phangan.jpg", "Interior"))
 pages["private-dining-koh-phangan.html"] = L.page(
     "Private Dining in Koh Phangan | Celebrate at Dar Mansour",
@@ -662,7 +662,7 @@ faq_body = L.breadcrumb(("FAQ", None)) + L.subhero(
   </div>
 </div></section>
 ''' + L.cta_band("Still have a question?", "Message us on WhatsApp — we usually respond within a few hours.") + L.related(
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Couscous"),
     ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/img/moroccan-arty-table-koh-phangan.jpg", "Candlelit table set for the evening at Dar Mansour"),
     ("Contact", "Find Us", "contact-dar-mansour-koh-phangan.html", "assets/img/dar-mansour-street-view-koh-phangan.jpeg", "Street view"))
 pages["faq.html"] = L.page(
@@ -767,9 +767,9 @@ blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
 </div></section>
 ''' + L.cta_band("Live the story, don't just read it",
     "The best chapters are written around the table. Reserve your evening at Dar Mansour.") + L.related(
-    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/Couscous.jpg", "Couscous"),
-    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/Founders%20-%20Our%20Story%20-Dar-Mansour-1.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
-    ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/Preserved%20Lemons.jpg", "Jars of Moroccan preserved lemons"))
+    ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Couscous"),
+    ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
+    ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/moroccan-preserved-lemons-koh-phangan.jpg", "Jars of Moroccan preserved lemons"))
 pages["blog.html"] = L.page(
     "Dar Mansour Journal — Stories of Morocco &amp; Koh Phangan",
     "A slow travel and culture journal where Koh Phangan's quieter side meets Morocco's timeless heritage — through cuisine, hospitality, art, music, traditions and craftsmanship.",
