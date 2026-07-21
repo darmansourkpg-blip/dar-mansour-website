@@ -65,6 +65,27 @@ These have high domain authority and "things to do / where to eat" listicles —
 | Traveler's Itch | https://travelersitch.com/koh-phangan-travel-guide-for-non-party-travelers/ | Non-party travellers = our audience |
 | La Favela Phangan (villa + blog) | https://lafavelaphangan.com/blog/things-to-do-koh-phangan | **Luxury 4-bedroom villa** in Haad Salad with a strong, AI-cited "things to do" blog — NOT a competitor. Ideal partner: their high-end guests want a refined romantic dinner = a natural Dar Mansour recommendation. Pitch a reciprocal local partnership (they list us in their guide / guest recommendations; we can recommend them as luxury accommodation). One of the warmest, highest-value local links available. |
 
+### Tier 2.5 — Luxury accommodation (reciprocal partnership, use Email C)
+Not competitors — their high-end guests are our ideal diners. Reciprocal local links are among the easiest and strongest to obtain. This works for ANY luxury villa/resort on the island, not just the ones below (search "luxury villa Koh Phangan" for more).
+
+| Property | URL | Area | Note |
+|----------|-----|------|------|
+| Villa La Favela | https://lafavelaphangan.com/ | Haad Salad | Has an AI-cited "things to do" blog → double win (partnership + listing) |
+| Bay Villas Koh Phangan | https://bayvillasphangan.com/ | Haad Salad | Infinity-pool villas, private-chef service → dining-minded guests |
+| High Life Villas | https://in.trip.com/hotels/koh-phangan-hotel-detail-102179284/high-life-villas/ | Haad Salad | Sea-view sunset villas |
+| Villa Exotic / Villa Tropical | https://www.inspiringvillas.com/luxury-villas/Villa-Exotic/Haad-Salad-Koh-Phangan-Thailand.html | Haad Salad / Haad Yao | Listed via InspiringVillas |
+| Haad Salad Villa | https://www.facebook.com/haadsaladvillakohphangan/ | Haad Salad | Established, TripAdvisor-reviewed |
+| Kupu Kupu Phangan Beach Villas & Spa | (search) | Naiwok Beach | Sets up romantic/honeymoon dinners → strong fit |
+| Anantara Rasananda | https://www.anantara.com/en/rasananda-koh-phangan | Thong Nai Pan Noi | 5-star, romance-focused (has in-house dining, but concierge may still refer) |
+| Santhiya Resort & Spa | https://kohphangan.santhiya.com/main | Thong Nai Pan | Large eco-luxury resort, honeymoon audience |
+
+### Business-blog listicles (F&B businesses ranking "best restaurants" content)
+Not direct competitors to Moroccan slow dining — worth a friendly Email A to be added to their list.
+
+| Site | URL | What it is |
+|------|-----|-----------|
+| Tiki Beach Koh Phangan | https://tikibeachkohphangan.com/best-restaurants-in-koh-phangan/ | Beachfront bar & restaurant (Baan Tai) with a "best restaurants" blog post |
+
 ### Tier 3 — Aggregators (lower value, often auto-generated)
 Only if time allows.
 - https://traveltriangle.com/blog/restaurants-in-koh-phangan/
@@ -151,4 +172,12 @@ Maïja & Bruno — Dar Mansour
 | On a Hammock |  |  |  |  |
 | Type1 Travelling |  |  |  |  |
 | Traveler's Itch |  |  |  |  |
-| La Favela Phangan |  |  |  |  |
+| Villa La Favela |  |  |  |  |
+| Bay Villas Koh Phangan |  |  |  |  |
+| High Life Villas |  |  |  |  |
+| Villa Exotic / Tropical |  |  |  |  |
+| Haad Salad Villa |  |  |  |  |
+| Kupu Kupu Phangan |  |  |  |  |
+| Anantara Rasananda |  |  |  |  |
+| Santhiya Resort & Spa |  |  |  |  |
+| Tiki Beach Koh Phangan |  |  |  |  |
