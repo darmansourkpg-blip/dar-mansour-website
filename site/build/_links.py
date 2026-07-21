@@ -17,7 +17,7 @@ WA = L.WA  # https://wa.me/66822767757
 GMAPS_DIR = "https://www.google.com/maps/dir/?api=1&destination=9.753356308284413,99.96873999581217"
 GMAPS_PLACE = "https://share.google/Rp8YllnPe9Z9E9Va0"
 INSTAGRAM = "https://instagram.com/darmansour.kohphangan"
-FACEBOOK = "https://www.facebook.com/people/Dar-Mansour/"
+FACEBOOK = "https://www.facebook.com/p/Dar-Mansour-Koh-Phangan-61574622040198/"
 
 # Small inline icons (currentColor, 24x24 viewBox).
 IC = {
