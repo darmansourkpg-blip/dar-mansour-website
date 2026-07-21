@@ -63,7 +63,7 @@ These have high domain authority and "things to do / where to eat" listicles —
 | On a Hammock | https://onahammock.com/en/blog/articles/guide/koh-phangan-attractions-what-to-do-see/ | Digital-nomad audience (dining-interested) |
 | Type1 Travelling | https://type1travelling.com/things-to-do-koh-phangan/ | "Without partying" angle = slow-dining fit |
 | Traveler's Itch | https://travelersitch.com/koh-phangan-travel-guide-for-non-party-travelers/ | Non-party travellers = our audience |
-| La Favela Phangan (blog) | https://lafavelaphangan.com/blog/things-to-do-koh-phangan | Local F&B business with a strong, AI-cited "things to do" blog. Note: they're a beach club (not a direct competitor to Moroccan slow dining) — worth a friendly local outreach to be included in their dining/things-to-do picks. |
+| La Favela Phangan (villa + blog) | https://lafavelaphangan.com/blog/things-to-do-koh-phangan | **Luxury 4-bedroom villa** in Haad Salad with a strong, AI-cited "things to do" blog — NOT a competitor. Ideal partner: their high-end guests want a refined romantic dinner = a natural Dar Mansour recommendation. Pitch a reciprocal local partnership (they list us in their guide / guest recommendations; we can recommend them as luxury accommodation). One of the warmest, highest-value local links available. |
 
 ### Tier 3 — Aggregators (lower value, often auto-generated)
 Only if time allows.
@@ -104,6 +104,25 @@ I'm reaching out from **Dar Mansour — Morocco's Kitchen**, near Sri Thanu. We'
 I thought there might be a story here for your readers: how a couple who spent nearly 30 years in Morocco brought authentic slow food (and a fully Moroccan-sourced interior) to Koh Phangan. We work strictly on pre-order to honour slow cooking and reduce waste.
 
 Would you be interested in featuring us, or coming for a tasting? We'd love to have you.
+
+More here: https://darmansour.com
+
+Warm regards,
+Maïja & Bruno — Dar Mansour
+
+---
+
+## ✉️ Email template C — Reciprocal local partnership (luxury villas / accommodation, e.g. La Favela)
+
+**Subject:** A dinner recommendation for your guests at [Villa / Property name]
+
+Hi [Name],
+
+Your villa looks beautiful — exactly the kind of stay where a memorable dinner completes the experience.
+
+We run **Dar Mansour — Morocco's Kitchen**, the island's only Moroccan slow-dining restaurant, near Sri Thanu and Hin Kong. Fire-cooked tajines, hand-rolled couscous and a candlelit, riad-style room — a natural fit for guests looking for a special or romantic evening.
+
+Would you consider recommending us to your guests, or including us in your "things to do" guide? In return we'd gladly recommend [Villa name] to guests looking for a high-end place to stay. Happy to arrange a tasting for you so you can experience it first-hand.
 
 More here: https://darmansour.com
 
