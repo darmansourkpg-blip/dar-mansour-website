@@ -42,7 +42,7 @@ DEFAULT_COVER = "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg"
 # schema on the home page. Add Wikidata / others here when created.
 SAME_AS = [
     "https://instagram.com/darmansour.kohphangan",
-    "https://www.facebook.com/people/Dar-Mansour/",
+    "https://www.facebook.com/p/Dar-Mansour-Koh-Phangan-61574622040198/",
     "https://share.google/Rp8YllnPe9Z9E9Va0",
     "https://www.tripadvisor.com/Restaurant_Review-d32851492",
     "https://www.wikidata.org/wiki/Q140585802",
