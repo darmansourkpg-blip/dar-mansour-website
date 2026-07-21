@@ -96,7 +96,7 @@ Rather than dramatic cliffs or crowded viewpoints, Hin Kong offers something qui
 
 Just steps from the beach, **L'Alcove** has long been one of Hin Kong's favourite sunset spots. Its relaxed beachfront setting makes it an ideal place to enjoy a glass of wine or an apéritif while the sky turns from gold to deep indigo before continuing your evening.
 
-For those planning dinner afterwards, Hin Kong is also home to Dar Mansour, where Moroccan slow dining extends the gentle rhythm of sunset with traditional dishes prepared over many hours.
+For those planning dinner afterwards, Hin Kong is also home to Dar Mansour, where Moroccan slow dining extends the gentle rhythm of sunset with traditional dishes prepared over many hours. For more options nearby, see our guides to [where to eat in Hin Kong](journal-where-to-eat-hin-kong.html) and the [best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html).
 
 <p class="getthere"><strong>Getting there</strong> — Along Hin Kong Road, on the west coast. <a href="https://www.google.com/maps/search/?api=1&amp;query=Hin+Kong+Beach+Koh+Phangan" target="_blank" rel="noopener">Beach on map ↗</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">L'Alcove on map ↗</a></p>
 

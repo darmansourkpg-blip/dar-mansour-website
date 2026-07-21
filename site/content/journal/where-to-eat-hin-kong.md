@@ -43,7 +43,7 @@ _A Local Guide to Hin Kong's Best Restaurants, Beach Bars & Sunset Dining (2026)
 
 With its laid-back atmosphere, west coast sunsets and a growing collection of independent restaurants, Hin Kong has quietly become one of Koh Phangan's most rewarding places to eat. Once known mainly for its peaceful bay and beachfront bars, the village is now home to some of the island's most creative chefs, honest local kitchens and distinctive dining rooms.
 
-What makes Hin Kong stand out is its range. Within a few kilometres you'll find authentic Thai family kitchens, Moroccan cuisine, contemporary tasting menus, beachfront seafood, a French bistro and some of the island's most original cocktail bars — enough for a casual lunch by the sea, a slow sunset dinner or an evening built around good food and drinks.
+What makes Hin Kong stand out is its range. Within a few kilometres you'll find authentic Thai family kitchens, Moroccan cuisine, contemporary tasting menus, beachfront seafood, a French bistro and some of the island's most original cocktail bars — enough for a casual lunch by the sea, a slow sunset dinner or an evening built around good food and drinks. If Thai food is what you're after, see our guide to the [best Thai restaurants in Koh Phangan](journal-best-thai-restaurants-koh-phangan.html).
 
 Better still, everything is close together. Most places are only a few minutes apart, so it's easy to explore several over a single stay. This guide brings together our favourite restaurants, bars and cafés — and for the wider island, it pairs with our [full guide to the best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html).
 

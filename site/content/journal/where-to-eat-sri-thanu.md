@@ -45,7 +45,7 @@ Sri Thanu is best known as Koh Phangan's wellness hub — home to internationall
 
 The village now has one of the island's most varied dining scenes, where authentic Thai restaurants, healthy cafés, specialty coffee shops and relaxed sunset bars all sit within a few minutes of each other — and many of the island's most talked-about restaurants are a short scooter ride away in neighbouring Hin Kong.
 
-This guide brings together the best places to eat in and around Sri Thanu — breakfast after yoga, authentic Thai food, sunset cocktails or a slow dinner. For the wider island, it pairs with our [full guide to the best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html).
+This guide brings together the best places to eat in and around Sri Thanu — breakfast after yoga, [authentic Thai food](journal-best-thai-restaurants-koh-phangan.html), sunset cocktails or a slow dinner. For the wider island, it pairs with our [full guide to the best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html).
 
 ## Why You Can Trust This Guide
 
