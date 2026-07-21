@@ -82,6 +82,14 @@ Toute image ajoutée au site (couverture d'article, photo de fiche, visuel de pa
 - `width`/`height`, `loading="lazy"` et `fetchpriority` sont gérés automatiquement par le template `_journal.py` — ne pas les retirer.
 → Si le client uploade une image via le CMS avec un mauvais nom (espaces/hash), la **renommer** et convertir avant de la référencer.
 
+**Checklist obligatoire avant de référencer une image (ne plus oublier) :**
+1. **Nom de fichier** kebab-case, sans espace/majuscule/apostrophe/`%`. Renommer TOUS les fichiers frères (`.jpg` **et** `.webp`) et repointer chaque référence (`build.py`, `_menu.py`, `_drinks.py`, front matter). Vérifier ensuite `grep` = 0 référence à l'ancien nom.
+2. **Poids** : couverture < ~200 Ko, autres visuels < ~250 Ko. Compresser (baisser la qualité, redimensionner si > 1700 px) avant commit.
+3. **Sibling WebP** : générer un `.webp` à côté de chaque `.jpg/.png` visible (uploads/img) — le template ne sert le WebP que si le frère existe sur le disque.
+4. **`alt` toujours rempli** (sauf image purement décorative en `aria-hidden`). Pour les **photos de plats/lieux**, suivre la **convention cross-média** (cohérence Wikimedia Commons / Google, renforce l'entité) :
+   `Dar Mansour - Morocco's Kitchen <plat/scène>, Koh Phangan, Thailand`.
+5. Les noms de **plats** dans le menu / wine pairing (`_menu.py`, `_drinks.py`) ne sont **pas** des noms de fichiers — ne pas les toucher lors d'un renommage d'image.
+
 ## Reste à faire
 - Intégrer de vraies photos de plats « propres » en haute résolution (sans cadre ni texte)
 - Écrire de vrais articles de blog (via le CMS `/admin` ou en Markdown dans `site/content/journal/`)
@@ -118,9 +126,14 @@ you're… », « it's not just X, it's Y », « a testament to », « seamlessly
 
 **SEO par article** : 1 mot-clé principal + variations naturelles (pas de bourrage) · 1 intention
 de recherche claire · `seo_title` ~50–60 car. · `description` ~145–160 car. · H2/H3 utiles et
-naturels · **≥ 3 liens internes** (anchor text descriptif, jamais « click here ») · FAQ (5–8 vraies
+naturels · **≥ 3 liens internes sortants** (anchor text descriptif, jamais « click here ») · FAQ (5–8 vraies
 questions, réponses 40–100 mots) sur les guides/piliers. La ligne « année » (…for 2026) seulement
 sur les guides restaurants (fraîcheur), **pas** sur les articles culture (intemporels).
+**Maillage entrant (OBLIGATOIRE)** : tout nouvel article doit recevoir **≥ 2 liens entrants** depuis
+d'autres articles topiquement proches (idéalement 3+). Après création, **mettre à jour les anciens
+articles** pour qu'ils pointent vers le nouveau (le maillage n'est jamais « forward-only »). Le build
+le vérifie : `build.py` affiche `⚠ [slug] only X other article(s) link to it` s'il en manque —
+corriger avant de publier.
 
 **Transparence Dar Mansour** : toujours divulguer que le guide est publié par le restaurant. DM
 apparaît naturellement (Moroccan dining, Hin Kong, romantique, occasion, cocktails) mais **ne gagne
