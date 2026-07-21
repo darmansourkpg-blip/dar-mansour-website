@@ -88,10 +88,10 @@ home_body = f'''
   </div>
   <div class="dishes dishes--photos">
     <article class="dish reveal"><img src="assets/uploads/Couscous.jpg" alt="Moroccan couscous with slow-cooked vegetables at Dar Mansour" loading="lazy"><div class="dish__label"><h3>Couscous</h3></div></article>
-    <article class="dish reveal" data-delay="1"><img src="assets/uploads/moroccan-lamb-tajine-prunes-almonds-koh-phangan.jpg" alt="Berber tajine with prunes, almonds and cinnamon" loading="lazy"><div class="dish__label"><h3>Berber's Tajine</h3></div></article>
-    <article class="dish reveal" data-delay="2"><img src="assets/uploads/moroccan-chicken-tajine-olives-preserved-lemon-koh-phangan.jpg" alt="Fez-style chicken tajine with olives and preserved lemon" loading="lazy"><div class="dish__label"><h3>Fez's Tajine</h3></div></article>
-    <article class="dish reveal"><img src="assets/uploads/moroccan-vegetable-tajine-courgette-carrot-koh-phangan.jpg" alt="Chefchaouen vegetable tajine with courgette and carrots" loading="lazy"><div class="dish__label"><h3>Chefchaouen's Tajine</h3></div></article>
-    <article class="dish reveal" data-delay="1"><img src="assets/uploads/moroccan-tanjia-marrakchia-charcoal-koh-phangan.jpg" alt="Tanjia Marrakchia slow-cooked in its clay urn over embers" loading="lazy"><div class="dish__label"><h3>Tanjia Marrakchia</h3></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/uploads/moroccan-lamb-tajine-prunes-almonds-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Berber's tajine — lamb, prunes and almonds, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Berber's Tajine</h3></div></article>
+    <article class="dish reveal" data-delay="2"><img src="assets/uploads/moroccan-chicken-tajine-olives-preserved-lemon-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Fez's tajine — chicken, preserved lemon and olives, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Fez's Tajine</h3></div></article>
+    <article class="dish reveal"><img src="assets/uploads/moroccan-vegetable-tajine-courgette-carrot-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Chefchaouen's tajine — seasonal vegetables, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Chefchaouen's Tajine</h3></div></article>
+    <article class="dish reveal" data-delay="1"><img src="assets/uploads/moroccan-tanjia-marrakchia-charcoal-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Tanjia Marrakchia — slow-cooked over embers, Koh Phangan, Thailand" loading="lazy"><div class="dish__label"><h3>Tanjia Marrakchia</h3></div></article>
     <article class="dish reveal" data-delay="2"><img src="assets/uploads/M%27semen.jpg" alt="Msemen, traditional Moroccan layered flatbread" loading="lazy"><div class="dish__label"><h3>M'semen</h3></div></article>
   </div>
   <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
@@ -225,7 +225,7 @@ pages["moroccan-slow-dining-koh-phangan.html"] = L.page(
 menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
     "Our Moroccan Menu", "A tribute to Moroccan roots &amp; soulful flavours",
     "From ancient Berber staples to the aromatic influences of Moorish, Andalusian, Jewish and sub-Saharan cultures — slow cooked, served with soul.",
-    "assets/uploads/moroccan-chicken-tajine-olives-preserved-lemon-koh-phangan.jpg", "A Fez-style chicken tajine with olives, herbs and preserved lemon at Dar Mansour", tall=True, variant="portrait") + f'''
+    "assets/uploads/moroccan-chicken-tajine-olives-preserved-lemon-koh-phangan.jpg", "Dar Mansour - Morocco's Kitchen Fez's tajine — chicken, preserved lemon and olives, Koh Phangan, Thailand", tall=True, variant="portrait") + f'''
 <section class="section"><div class="wrap">
   <div class="prose reveal" style="text-align:center;">
     <h2>A journey to the roots of Moroccan cuisine — inspired by the Dadas</h2>
