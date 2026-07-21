@@ -143,7 +143,7 @@ No single restaurant can represent Koh Phangan — and that's part of the island
 
 ### Traditional Thai Cuisine
 
-At the heart of Thai cuisine lies one idea: balance. Sweet meets spicy, fresh herbs soften rich curries, and every dish is layered with contrasting flavours and textures. Across Koh Phangan, family-run kitchens and long-established local restaurants keep those traditions alive with the same care and generosity that made Thai food famous.
+At the heart of Thai cuisine lies one idea: balance. Sweet meets spicy, fresh herbs soften rich curries, and every dish is layered with contrasting flavours and textures. Across Koh Phangan, family-run kitchens and long-established local restaurants keep those traditions alive with the same care and generosity that made Thai food famous. For a deeper look, see our guide to the [best Thai restaurants in Koh Phangan](journal-best-thai-restaurants-koh-phangan.html).
 
 #### Mama KOP
 
@@ -465,7 +465,7 @@ Some places are worth the trip for the food, others for the view — Salaad View
 
 ## Coffee Shops, Breakfast & Brunch in Koh Phangan
 
-A great day on Koh Phangan often starts with excellent coffee and a leisurely breakfast. From artisan bakeries and specialty roasters to healthy brunch cafés by the sea, the island has become one of southern Thailand's best places for slow mornings. After a perfectly brewed coffee, fluffy pancakes or a full brunch, these are the places worth waking up for.
+A great day on Koh Phangan often starts with excellent coffee and a leisurely breakfast. From artisan bakeries and specialty roasters to healthy brunch cafés by the sea, the island has become one of southern Thailand's best places for slow mornings. After a perfectly brewed coffee, fluffy pancakes or a full brunch, these are the places worth waking up for — and our guide to the [best breakfast and brunch in Koh Phangan](journal-best-breakfast-brunch-koh-phangan.html) covers many more.
 
 #### Indigo Specialty Coffee & Bakery
 
