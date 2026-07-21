@@ -13,6 +13,21 @@ Google rankings, especially for a young site.
 
 ---
 
+## 🤖 AI-visibility note (why we also target big travel guides)
+
+AI answer engines (ChatGPT, Perplexity, Google AI Overviews, Claude) cite sources
+that have (1) high domain authority, (2) structured "things to do / where to eat"
+listicles, and (3) many mentions of an entity across the web. For AI, being
+**mentioned by name** on these pages matters almost as much as a clickable link:
+repeated co-occurrence ("Dar Mansour" + "Moroccan restaurant" + "Koh Phangan")
+teaches the models the fact. So each listing/mention in a well-known guide is a
+double win — Google SEO **and** AI visibility. This is why Tier 1.5 below is worth
+pitching even when a dofollow link isn't guaranteed. (Our on-site foundations for
+this — Wikidata, schema, llms.txt, AI-crawler-friendly robots.txt — are already in
+place.)
+
+---
+
 ## 🎯 Target list (by priority)
 
 ### Tier 1 — Local island media (best effort/value ratio)
@@ -33,6 +48,22 @@ They have a personal "best restaurants" post they can edit to add us.
 | Tristan Balme | https://tristanbalme.com/best-places-to-eat-in-koh-phangan-must-try-dishes/ | Solo blogger, reachable |
 | Adventures of Jellie | https://www.adventuresofjellie.com/thailand/koh-phangan-where-to-eat | Personal blog |
 | Aritra Bose (Medium) | https://medium.com/@bosearitra44/koh-phangan-food-guide-where-to-eat-and-drink-on-the-island-dfaa84458c92 | Easy to contact on Medium |
+
+### Tier 1.5 — High-authority guides frequently cited by AI engines (ChatGPT, Perplexity, Google AI Overviews)
+These have high domain authority and "things to do / where to eat" listicles — exactly the format LLMs extract and cite. For AI visibility, being **mentioned** here matters almost as much as a clickable link (entity co-occurrence teaches AI that "Dar Mansour = Moroccan restaurant, Koh Phangan"). Hard to land, high value — pitch the story angle (Template B) and offer a tasting.
+
+| Site | URL | Why it matters |
+|------|-----|----------------|
+| Nomadic Matt | https://www.nomadicmatt.com/travel-guides/thailand-travel-tips/ko-phangan/ | One of the most AI-cited travel brands; a mention carries weight |
+| The Broke Backpacker | https://www.thebrokebackpacker.com/koh-phangan-nightlife-guide/ | Very high DA, heavily crawled |
+| Southeast Asia Backpacker | https://southeastasiabackpacker.com/destinations/thailand-2/the-islands/koh-phangan-3/ | Regional authority, often cited |
+| Hostelworld Blog | https://www.hostelworld.com/blog/solo-travel-thailand-koh-phangan/ | Huge DA platform |
+| Global Gallivanting | https://www.global-gallivanting.com/things-to-do-in-koh-phangan/ | Established Koh Phangan things-to-do post |
+| The Froggy Adventures | https://thefroggyadventures.com/things-to-do-in-koh-phangan/ | Detailed, well-ranked guide |
+| On a Hammock | https://onahammock.com/en/blog/articles/guide/koh-phangan-attractions-what-to-do-see/ | Digital-nomad audience (dining-interested) |
+| Type1 Travelling | https://type1travelling.com/things-to-do-koh-phangan/ | "Without partying" angle = slow-dining fit |
+| Traveler's Itch | https://travelersitch.com/koh-phangan-travel-guide-for-non-party-travelers/ | Non-party travellers = our audience |
+| La Favela Phangan (blog) | https://lafavelaphangan.com/blog/things-to-do-koh-phangan | Local F&B business with a strong, AI-cited "things to do" blog. Note: they're a beach club (not a direct competitor to Moroccan slow dining) — worth a friendly local outreach to be included in their dining/things-to-do picks. |
 
 ### Tier 3 — Aggregators (lower value, often auto-generated)
 Only if time allows.
@@ -92,3 +123,13 @@ Maïja & Bruno — Dar Mansour
 | Tristan Balme |  |  |  |  |
 | Adventures of Jellie |  |  |  |  |
 | Aritra Bose |  |  |  |  |
+| Nomadic Matt |  |  |  |  |
+| The Broke Backpacker |  |  |  |  |
+| Southeast Asia Backpacker |  |  |  |  |
+| Hostelworld Blog |  |  |  |  |
+| Global Gallivanting |  |  |  |  |
+| The Froggy Adventures |  |  |  |  |
+| On a Hammock |  |  |  |  |
+| Type1 Travelling |  |  |  |  |
+| Traveler's Itch |  |  |  |  |
+| La Favela Phangan |  |  |  |  |
