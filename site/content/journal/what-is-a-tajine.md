@@ -109,4 +109,4 @@ At Dar Mansour, our [tajines](moroccan-menu-koh-phangan.html) are prepared with 
 
 Rather than rushing the process, we allow time to do its work. Traditional spice blends, preserved lemons, olives and fresh herbs gradually develop their full flavour, creating dishes that reflect the generosity and [hospitality](moroccan-hospitality-values-koh-phangan.html) at the heart of Moroccan cuisine.
 
-For us, a tajine is more than a recipe. It is an invitation to slow down, share a meal and experience one of Morocco's most enduring culinary traditions.
+For us, a tajine is more than a recipe. It is an invitation to slow down, share a meal — often to the timeless rhythms of [Gnaoua](journal-gnaoua-music-morocco.html) — and experience one of Morocco's most enduring culinary traditions.
