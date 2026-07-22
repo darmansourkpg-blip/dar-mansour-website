@@ -66,6 +66,14 @@ written generically so they can be reused on another site — e.g. **Eden & Beyo
 
 - **Attribute distinctions, don't self-proclaim.** "Featured by X among…" not "one of the
   best". AI cites the attributed claim and distrusts bare superlatives.
+- **Superlative nuance — judge by the scope of the claim:**
+  - **Local + verifiable superlative = keep it** (good SEO, defensible for GEO). E.g. "Best
+    [category] in [small area]" when the brand is objectively the only/leading one there — it's
+    near-factual, AI can verify it, and it captures the "best [category] [area]" query. Google
+    does not penalise "best" in a title.
+  - **Broad + unverifiable superlative = attribute or remove.** E.g. "world's best", "one of
+    the world's best" — this is the real E-E-A-T risk. Lead the homepage with brand + keyword;
+    let dedicated pages carry the narrow "best [category] in [area]" phrasing.
 - **Build the entity graph**: create and cross-link official profiles — **Wikidata**,
   **Crunchbase**, **OpenStreetMap** (with `brand:wikidata` back-link), **Apple Maps**,
   **Bing Places** (stable ypid URL, never a session-token search URL), **Pinterest**

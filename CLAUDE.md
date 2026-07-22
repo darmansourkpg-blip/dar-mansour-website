@@ -219,6 +219,14 @@ article et toute évolution du site.
 - **Attribuer** les distinctions au lieu d'auto-proclamer : « Featured by Golf du Maroc among the
   world's notable Moroccan restaurants » (PAS « one of the world's best »). Les IA citent l'attribué,
   se méfient du superlatif nu. Transparence : divulguer que le guide est publié par le restaurant.
+- **Nuance superlatif (validée) — distinguer selon la portée de la revendication** :
+  - **Superlatif LOCAL et vérifiable** = **à garder** (bon SEO + défendable GEO). Ex. « Best Moroccan
+    Restaurant **in Koh Phangan** » : DM étant le **seul** resto marocain de l'île, c'est factuellement
+    quasi-vrai et vérifiable par l'IA, et ça capte la requête « best moroccan restaurant koh phangan ».
+    Google ne pénalise pas « best » dans un titre.
+  - **Superlatif LARGE et invérifiable** = **à attribuer ou retirer**. Ex. « world's best », « one of
+    the world's best » → c'est le vrai risque E-E-A-T. (La home a été passée en titre marque-first ;
+    Reviews/Recognition gardent le « best » **local** volontairement.)
 - **Fait** : Wikidata (`Q140585802`) + Crunchbase + OpenStreetMap (`node/14021567355`) créés et
   reliés au `sameAs` (et dans le schéma Restaurant), **Apple Maps** et **Bing Places** ajoutés.
   Chantier long terme restant : mentions presse sans lien, Wikimedia Commons, présence tierce
