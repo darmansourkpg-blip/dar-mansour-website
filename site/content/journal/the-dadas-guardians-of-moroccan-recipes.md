@@ -59,7 +59,7 @@ A pinch of cumin. A handful of coriander. The colour of caramelised onions. The 
 
 Much of Morocco's extraordinary culinary heritage survived because these women prepared the same dishes thousands of times throughout their lives.
 
-Every family had its own version of [a tajine](journal-what-is-a-tajine.html). Its own spice blend. Its own couscous. Its own celebrations.
+Every family had its own version of [a tajine](journal-what-is-a-tajine.html). Its own spice blend. Its own [couscous](journal-what-is-couscous.html). Its own celebrations.
 
 Rather than following precise measurements, the Dadas cooked by intuition. They tasted. Adjusted. Waited. Then tasted again. Cooking was never rushed, because flavour itself needs time.
 
