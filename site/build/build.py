@@ -364,6 +364,7 @@ art_body = L.breadcrumb(("Artistic Direction", None)) + L.subhero(
   <h2>Design as immersion</h2>
   <p>The design of Dar Mansour, signed by <strong>Eden &amp; Beyond</strong> (<a class="ilink" href="https://www.instagram.com/edenandbeyond.kpg/" target="_blank" rel="noopener">Maïja</a>'s interior and creative studio), blends the sensual warmth of Moroccan tradition with contemporary aesthetics. From handcrafted zellige mosaic fountains to earthen steps, from textured lime-washed walls to tables reimagined as sculptures — every material, light source and tactile element invites you to slow down and feel, with all your senses.</p>
   <p><strong>This is Moroccan design reinterpreted.</strong> Eden &amp; Beyond works with the raw authenticity of a "F*** the Box" mindset, revealing a universe of one-of-a-kind pieces: no two tables are alike, each one a unique art piece in a contemporary Moroccan idiom. Even the lamps have names — Kenzo, Kenza, Leïla — individual characters as much as light sources.</p>
+  <figure class="figc"><img src="assets/uploads/yto-amazigh-muse-dar-mansour-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Yto, an Amazigh muse in black, white and gold with a finger to her lips, artwork by Eden &amp; Beyond, Koh Phangan, Thailand" loading="lazy" width="1042" height="1200"><figcaption>Meet <strong>Yto</strong>, our muse — a finger to her lips, keeper of quiet secrets. An original artwork created by <a class="ilink" href="https://www.instagram.com/edenandbeyond.kpg/" target="_blank" rel="noopener">Eden &amp; Beyond</a>.</figcaption></figure>
   <h2>Music Direction</h2>
   <p>The soundtrack is part of the evening. <strong>Dar Mansour Groove — Volume I</strong> is our first official playlist — a cosmopolitan blend of North African heritage, European alternative culture and global rhythms, balancing vintage sensuality, desert mystique and underground elegance. <a class="ilink" href="https://open.spotify.com/playlist/5A0Qw5uEZiCyLNweh4nQ76" target="_blank" rel="noopener">Listen on Spotify ↗</a></p>
   <p>A second, more private set plays in an unexpected corner. Curated by <strong>DJ Mans</strong>, the restroom playlist is a fully old-school Moroccan selection — Berber vinyl classics, Gnawa rhythms and Casablanca beats from the '60s and '70s — turning a simple pause into a small detour of its own.</p>
@@ -732,9 +733,12 @@ blog_body = L.breadcrumb(("Journal", None)) + L.subhero(
     "assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg", "Aerial view of a turquoise bay and white-sand beach on the west coast of Koh Phangan") + f'''
 <section class="jmast reveal"><div class="wrap">
   <div class="jmast__rule"></div>
+  <figure style="margin:0 auto 1.5rem;max-width:190px;">
+    <img src="assets/uploads/yto-amazigh-muse-dar-mansour-koh-phangan.jpg" alt="Dar Mansour - Morocco's Kitchen Yto, the Amazigh muse of the Journal with a finger to her lips, artwork by Eden &amp; Beyond, Koh Phangan, Thailand" loading="lazy" width="1042" height="1200" style="width:100%;height:auto;display:block;">
+  </figure>
   <span class="jmast__kicker">The Journal</span>
   <p class="jmast__name">The Dar Mansour Journal</p>
-  <p class="jmast__sub">Exploring Koh Phangan beyond the obvious, and Morocco beyond the clichés — through thoughtful travel guides, cultural stories and timeless tradition.</p>
+  <p class="jmast__sub">Exploring Koh Phangan beyond the obvious, and Morocco beyond the clichés — through thoughtful travel guides, cultural stories and timeless tradition. Watching over our stories: <strong>Yto</strong>, our muse, imagined by <a class="ilink" href="https://www.instagram.com/edenandbeyond.kpg/" target="_blank" rel="noopener">Eden &amp; Beyond</a>.</p>
 </div></section>
 {journal_cards}
 {universe_nav}
