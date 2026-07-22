@@ -116,7 +116,7 @@ So instead of asking "what's the best restaurant in Koh Phangan?", it's more use
 
 **For your first night.** Choose a restaurant that gives you a sense of what the island's food is about. Dear Phangan combines refined contemporary Thai cooking with a beautiful garden setting. For something by the sea, Fisherman's Restaurant is a timeless favourite for fresh seafood, while L'Alcove pairs classic French cuisine with one of the island's finest sunsets — a good place to start exploring the island's food scene.
 
-**For families & groups.** El Barrio Koh Phangan is perfect for sharing tacos and bright Mexican flavours, while The Lakehouse offers a varied menu and lively atmosphere for larger groups. If everyone wants something different, Phantip Night Market in Thong Sala is an easy call, with dozens of street-food vendors under one roof. For a warm sit-down dinner built around sharing, Dar Mansour brings people together over generous tajines, couscous and colourful Moroccan dishes.
+**For families & groups.** El Barrio Koh Phangan is perfect for sharing tacos and bright Mexican flavours, while The Lakehouse offers a varied menu and lively atmosphere for larger groups. If everyone wants something different, Phantip Night Market in Thong Sala is an easy call, with dozens of street-food vendors under one roof. For a warm sit-down dinner built around sharing, Dar Mansour brings people together over generous tajines, [couscous](journal-what-is-couscous.html) and colourful Moroccan dishes.
 
 ## Best Restaurants in Koh Phangan by Experience
 

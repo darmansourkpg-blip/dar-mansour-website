@@ -106,6 +106,6 @@ At Dar Mansour, we believe Morocco is experienced through all the senses — thr
 
 Many of the sounds that shape the atmosphere at Dar Mansour draw inspiration from Morocco's rich musical heritage, including the timeless rhythms of Gnaoua. Together, they offer more than a dinner: a journey into Morocco's living culture, here in the heart of Hin Kong, Koh Phangan.
 
-Whether you come for a slow-cooked [tajine](journal-what-is-a-tajine.html), a Friday [couscous](moroccan-menu-koh-phangan.html) ritual, a glass of mint tea, or simply to immerse yourself in the sounds of Morocco, Dar Mansour invites you to discover a culture where music, craftsmanship, hospitality and cuisine have always belonged together.
+Whether you come for a slow-cooked [tajine](journal-what-is-a-tajine.html), a Friday [couscous](journal-what-is-couscous.html) ritual, a glass of mint tea, or simply to immerse yourself in the sounds of Morocco, Dar Mansour invites you to discover a culture where music, craftsmanship, hospitality and cuisine have always belonged together.
 
 Because Morocco is not only something you taste. It is something you feel.
