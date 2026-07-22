@@ -104,7 +104,7 @@ Few musical traditions have managed to remain so deeply authentic while embracin
 
 At Dar Mansour, we believe Morocco is experienced through all the senses — through family recipes passed down by generations of [Dadas](journal-the-dadas-guardians-of-moroccan-recipes.html), through handcrafted interiors inspired by Moroccan artisans, through traditional hospitality, and through the [music that accompanies every evening](moroccan-interior-art-koh-phangan.html).
 
-Many of the sounds that shape the atmosphere at Dar Mansour draw inspiration from Morocco's rich musical heritage, including the timeless rhythms of Gnaoua. Together, they offer more than a dinner: a journey into Morocco's living culture, here in the heart of Hin Kong, Koh Phangan.
+Many of the sounds that shape the atmosphere at Dar Mansour draw inspiration from Morocco's rich musical heritage, including the timeless rhythms of Gnaoua — a spirit you can hear in our own playlist, <a href="https://open.spotify.com/playlist/5A0Qw5uEZiCyLNweh4nQ76" target="_blank" rel="noopener">Dar Mansour Groove — Volume I</a>. Together, they offer more than a dinner: a journey into Morocco's living culture, here in the heart of Hin Kong, Koh Phangan.
 
 Whether you come for a slow-cooked [tajine](journal-what-is-a-tajine.html), a Friday [couscous](journal-what-is-couscous.html) ritual, a glass of mint tea, or simply to immerse yourself in the sounds of Morocco, Dar Mansour invites you to discover a culture where music, craftsmanship, hospitality and cuisine have always belonged together.
 
