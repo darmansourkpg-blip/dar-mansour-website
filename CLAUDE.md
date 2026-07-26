@@ -46,6 +46,15 @@ python3 -m http.server 8899
   `.github/workflows/deploy-pages.yml` **régénère le site** (`python3 site/build/build.py`) puis
   publie le dossier `site/`. → Pour mettre une modif en ligne : la faire arriver sur `main`.
 - **Après déploiement** : ping **IndexNow** automatique (Bing/Yandex re-crawlent en minutes).
+- **RÈGLE — demander la réindexation après CHAQUE modif d'article/page** : une fois la modif en ligne
+  sur `main`, toujours **fournir au client la liste des URLs modifiées** à soumettre manuellement :
+  - **Google Search Console** → « Inspect any URL » → **Request Indexing** (quota ~10-15/jour).
+  - **Bing Webmaster Tools** → **URL Submission** (quota généreux ; IndexNow l'a déjà pingé, mais la
+    soumission manuelle force un recrawl plus rapide).
+  - **Prioriser** : 🔴 vrais ajouts de contenu (nouvelle section/FAQ/spot) d'abord ; 🟡 réécritures
+    ensuite ; ⚪ ne PAS resoumettre une page non modifiée (ex. un article reverté).
+  - Format des URLs : `https://darmansour.com/journal-<slug>.html` (articles) ou `.../…-koh-phangan.html`
+    (pages). Toujours donner les URLs prêtes à copier-coller.
 - **Back-office articles (CMS)** : **Decap CMS** sur `/admin` (`site/admin/config.yml`). Le client
   écrit/publie ses articles depuis une interface web ; ça commite du Markdown dans
   `site/content/journal/` et le workflow le transforme en vraie page HTML SEO. Auth via un
