@@ -25,6 +25,8 @@ faq:
     answer: Amsterdam Bar is Koh Phangan's best-known sunset viewpoint, while Bluerama offers a quieter and more refined, adults-only alternative just beside it.
   - question: Which beach is best for a peaceful sunset?
     answer: Hin Kong Beach and Secret Beach are excellent choices if you're looking for a calmer atmosphere away from the larger crowds.
+  - question: Where can I find a quiet sunset drink away from the crowds?
+    answer: For a calmer sundowner, Bluerama offers an elegant, adults-only setting with an infinity pool beside Amsterdam Bar, while Mae Haad Tree House, up in the Ko Mae hills, stays surprisingly quiet even though it sits right beside the busy Three Sixty — a bean bag, a good cocktail and a wide-open sea view, usually with plenty of space.
   - question: Where should I have dinner after sunset?
     answer: The west coast offers several dining options. To extend the slow rhythm of the evening, Dar Mansour in Hin Kong welcomes guests with traditional Moroccan slow dining inspired by generations of hospitality.
 about: ''
