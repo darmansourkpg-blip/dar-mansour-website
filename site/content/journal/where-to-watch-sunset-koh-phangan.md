@@ -58,7 +58,7 @@ Short on time? Here are our favourite sunset spots at a glance.
 |---|---|---|
 | Zen Beach | Barefoot sunset ritual & drum circles | Sri Thanu |
 | Hin Kong Beach | Peaceful reflections and a wide open sky | Hin Kong |
-| Wave Sunset Restaurant & Bar | A drink right on the sand | West coast |
+| Wave Sunset Restaurant & Bar | Panoramic sunset views over the sea | West coast |
 | Amsterdam Bar | The island's most famous panoramic view | Hill between Wok Tum & Hin Kong |
 | Bluerama | An elegant, adults-only sunset drink | Nai Wok, Wok Tum |
 | Three Sixty Rooftop Bar | A 360° rooftop panorama | Above Koh Ma, north-west |
@@ -111,13 +111,11 @@ For those planning dinner afterwards, Hin Kong is also home to Dar Mansour, wher
 
 ### Wave Sunset Restaurant & Bar
 
-Located directly on the beach, Wave Sunset Restaurant & Bar has quietly become one of the west coast's favourite places to watch the sun disappear below the horizon. With uninterrupted sea views, relaxed service and a welcoming atmosphere, it's the kind of place where one drink easily turns into two.
+Set on Koh Phangan's west coast, Wave Sunset spreads across two levels — an elevated deck with a wide, panoramic view over the sea, and the beach itself just below. The kitchen mixes Thai and Western dishes with cocktails that are best enjoyed close to the water, and the pace stays relaxed throughout. With warm lighting and live music on some evenings, it settles easily into a long, unhurried sundown — good with friends or with someone you love.
 
-Whether you're stopping for a cocktail, fresh seafood or simply enjoying the changing colours of the sky, Wave offers one of the easiest sunset experiences on the island.
+<p class="getthere"><strong>Getting there</strong> — On the west coast; the main deck sits up high for the view, with the beach just below. <a href="https://www.google.com/maps/search/?api=1&amp;query=Wave+Sunset+Restaurant+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
-<p class="getthere"><strong>Getting there</strong> — On the west-coast beach strip. <a href="https://www.google.com/maps/search/?api=1&amp;query=Wave+Sunset+Restaurant+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
-
-<div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Beachfront</li><li>Cocktails</li><li>Food served</li><li>Easy access</li><li>Great for groups</li></ul></div>
+<div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Panoramic sea views</li><li>Elevated deck + beach below</li><li>Thai & Western menu</li><li>Cocktails</li><li>Live music some evenings</li><li>Great for groups</li></ul></div>
 
 ### Kupu Kupu
 
