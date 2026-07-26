@@ -23,6 +23,8 @@ faq:
     answer: Slow cooking allows flavours to develop naturally while keeping the meat and vegetables exceptionally tender. The conical lid also helps retain moisture throughout the cooking process.
   - question: Is a traditional tajine spicy?
     answer: Not usually. Moroccan cuisine is aromatic rather than hot. Spices such as cumin, ginger, turmeric, saffron and cinnamon add depth and fragrance rather than intense heat.
+  - question: How do you season a new tajine pot for the first time?
+    answer: A new clay tajine needs to be seasoned and cured before cooking. Soak the base and lid in cold water for about 24 hours, let them dry completely, brush every surface inside and out with vegetable or olive oil, then heat the empty pot gently over low heat or charcoal (often with a little oil and onion) to seal the clay and stop it from cracking.
   - question: Can you cook a tajine without a clay pot?
     answer: Yes. Many recipes can be prepared in a Dutch oven or casserole dish. However, the traditional clay tajine creates a unique style of gentle cooking that many Moroccan families still prefer.
   - question: What is the difference between a tajine and couscous?
@@ -52,6 +54,19 @@ It was designed centuries ago to cook efficiently using very little water. As th
 Traditionally, tajines are made from natural clay. Some are left unglazed for everyday family cooking, while others are beautifully decorated and used for serving at the table.
 
 In Morocco, the tajine is more than cookware. It is part of the meal itself, arriving directly from the fire to the centre of the table where everyone shares from the same dish.
+
+## How to Season and Cure a Tajine Pot
+
+A brand-new clay tajine can't go straight onto the heat. Unglazed earthenware is porous and prone to cracking, so it first has to be seasoned and cured. It's a simple process, but it's what separates a pot that lasts for years from one that splits the first time it's used.
+
+The traditional method follows four steps:
+
+1. **Soak.** Submerge the base and the lid in cold water for around 24 hours, letting the clay slowly draw in the moisture.
+2. **Dry.** Lift the pot out and leave it to air-dry completely.
+3. **Oil.** Brush every surface, inside and out, generously with vegetable or olive oil.
+4. **Cure over gentle heat.** Set the empty pot over very low heat or charcoal — often with a little oil and some onion inside — so the oil works into the clay and seals it.
+
+Once seasoned, the clay is stronger, less porous and ready for years of slow cooking. At Dar Mansour, every one of our tajine pots is cured this way before a single dish is ever cooked in it.
 
 ## How Is a Traditional Moroccan Tajine Prepared?
 
