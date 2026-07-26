@@ -74,18 +74,18 @@ Sri Thanu is known for yoga and wellness, but its restaurants have become just a
 
 #### Restaurant Sunshine
 
-One of the few places on the island where authentic Thai cooking and healthy eating sit side by side. Alongside fragrant curries and stir-fries, the kitchen does excellent southern Thai specialities, with their bold, aromatic flavours. Smoothie bowls, fresh juices and generous vegetarian dishes round out a menu that fits the relaxed, wellness-minded spirit of Sri Thanu.
+A Sri Thanu favourite where proper Thai cooking meets the village's wellness leanings. The kitchen's southern specialities carry real punch — bold, aromatic and generously spiced — while the curries and stir-fries keep things familiar. Smoothie bowls, cold-pressed juices and hearty vegetarian plates mean everyone at the table finds something, whatever their diet.
 
-**Why we love it —** Thai cooking, southern specialities and healthy dishes in one relaxed spot.<br>
+**Why we love it —** Punchy southern Thai alongside juices and vegetarian plates — a village all-rounder.<br>
 **Best for —** Breakfast · Lunch · Casual Thai dinner<br>
 **Price —** ฿<br>
 **Getting there —** On the main road between Thong Sala and Chaloklum, a few metres past Pum Pui Restaurant on the same side. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Restaurant+Sunshine+52%2F23+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### The Lakehouse | Restaurant & Pub
 
-Good pubs are about more than food — they bring people together. Inspired by the laid-back feel of Bali and modern Australia, The Lakehouse does exactly that beside the lake in Sri Thanu. Open-flame cooking is the heart of the kitchen: wood-fired bread, charcoal chicken and slow-cooked BBQ ribs alongside newer plates like stracciatella with pistachio pesto and grapes, or prawn tostadas with avocado and chipotle. Come for dinner, drinks or live music — one round tends to become the whole evening.
+Beside the lake in Sri Thanu, this Bali- and Australia-inspired pub is built around fire. The kitchen leans on wood and charcoal — fire-baked bread, charcoal chicken, slow BBQ ribs — with lighter modern plates like stracciatella with pistachio pesto and grapes, or prawn tostadas with avocado and chipotle. With live music on some nights, it's the kind of table where dinner slides easily into drinks.
 
-**Why we love it —** Bold open-flame cooking and one of Sri Thanu's most social tables.<br>
+**Why we love it —** Fire-led cooking by the lake, and one of the village's most sociable evenings.<br>
 **Best for —** Groups · Live music · Cocktails & dinner<br>
 **Price —** ฿฿<br>
 **Getting there —** Beside the lake in Sri Thanu, just off the main road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=The+Lakehouse+%7C+Restaurant+%26+Pub+84%2F32%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
@@ -110,7 +110,7 @@ A short walk from Zen Beach, Plantasia is a relaxed restaurant and lounge that c
 
 #### Dar Mansour – Morocco's Kitchen
 
-Dar Mansour brings Moroccan cooking to Koh Phangan through family recipes, warm hospitality and a room unlike any other on the island. Everything is made from scratch — traditional techniques, homemade spice blends, carefully chosen ingredients — from fragrant tajines and royal couscous to handmade pastilla, slow-cooked meats and delicate pastries. Handcrafted décor sourced across Morocco turns dinner into something closer to an evening in a riad, where food, design and music meet. *(This is our own restaurant — see the [menu](moroccan-menu-koh-phangan.html), [wine pairing](moroccan-wine-pairing-koh-phangan.html) or [private dining](private-dining-koh-phangan.html).)*
+Just up the road from Sri Thanu, Dar Mansour brings Morocco to the west coast — family recipes, slow cooking and a room dressed in décor gathered across Morocco. Everything is made from scratch, from fragrant tajines and royal couscous to handmade pastilla, slow-cooked meats and delicate pastries, with homemade spice blends at the heart of it. Dinner here feels closer to an evening in a riad, where food, design and music meet. *(This is our own restaurant — see the [menu](moroccan-menu-koh-phangan.html), [wine pairing](moroccan-wine-pairing-koh-phangan.html) or [private dining](private-dining-koh-phangan.html).)*
 
 **Why we love it —** It's our table: Moroccan food, hospitality and design built for slow, shared evenings.<br>
 **Best for —** Romantic dinners · Special occasions · Discovering Moroccan cuisine<br>
@@ -123,18 +123,18 @@ Sri Thanu has quietly become one of the island's best places to start the day, w
 
 #### Foxxy's Restaurant & Café
 
-One of Sri Thanu's most dependable all-day cafés, good for a slow breakfast, a relaxed lunch or just a proper coffee. The menu pulls together generous brunch plates, smoothie bowls, fresh salads and homemade cakes with quality specialty coffee, in a bright, welcoming room. Easy-going and consistent — a place you'll come back to through your stay.
+A dependable all-day café in the middle of Sri Thanu's café-and-yoga strip — the kind of place you drift back to through a stay. Breakfast runs long here: generous brunch plates, smoothie bowls, fresh salads and homemade cakes, with specialty coffee that holds up. Bright, friendly and easy, whether you're refuelling after a class or settling in with a laptop.
 
-**Why we love it —** Good coffee, generous brunches and one of Sri Thanu's warmest cafés.<br>
+**Why we love it —** A reliable all-day café for brunch, cake and a proper coffee.<br>
 **Best for —** Breakfast · Brunch · Digital nomads<br>
 **Price —** ฿฿<br>
 **Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga studios and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+%26+Caf%C3%A9+17%2F11+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### Deli Devi
 
-Part deli, part artisan café, and unlike anywhere else on the island. Deli Devi specialises in handmade plant-based products — vegan cheeses, raw desserts, ceremonial cacao, homemade cakes, smoothies and specialty coffee. Drop in for a healthy breakfast, pick up ingredients or just have cake with a coffee; everything shows real care and craft.
+Half deli, half artisan café, and a fixture of Sri Thanu's wellness scene. The specialty is handmade plant-based food — vegan cheeses, raw desserts, ceremonial cacao, cakes, smoothies and good coffee. Come for a healthy breakfast, take a few things away for later, or simply sit with cake and a coffee; the craft shows in every corner of the counter.
 
-**Why we love it —** Artisan plant-based products made with genuine attention to detail.<br>
+**Why we love it —** Handmade vegan cheeses, cacao and cakes from a true artisan deli.<br>
 **Best for —** Healthy treats · Vegan cheeses · Coffee & cake<br>
 **Price —** ฿฿<br>
 **Getting there —** On the main road between Thong Sala and Chaloklum. [View on map ↗](https://share.google/oG4H9AuIg8UKVFj1M)
@@ -154,18 +154,18 @@ When evening comes, Mama Market becomes one of the village's liveliest places to
 
 #### Mama Market Sri Thanu
 
-One of the west coast's favourite evening food courts, gathering local and international street food in a lively open-air setting — Thai dishes and grilled seafood through to wood-fired pizza, fresh noodles, vegan plates and homemade desserts. One standout stall is Oh My Burger, with its handcrafted burgers on local-bakery buns and grass-fed beef. Relaxed and affordable, and ideal for a group that can't agree on one cuisine.
+When the village winds down for the evening, Mama Market fills up. This open-air food court gathers stalls from across the map — Thai plates and grilled seafood, wood-fired pizza, fresh noodles, vegan dishes and homemade desserts — in one relaxed, affordable spot. It's the easy answer when nobody in the group wants the same thing, and the Oh My Burger stall alone is worth the trip.
 
-**Why we love it —** A lively food court with one of the widest street-food selections on the west coast.<br>
+**Why we love it —** The village's liveliest evening food court, with a stall for every craving.<br>
 **Best for —** Groups · Street food · Casual dinner · Budget-friendly<br>
 **Price —** ฿<br>
 **Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres. [View on map ↗](https://maps.app.goo.gl/MoRQn4QcJJZuknTz6)
 
 #### Oh My Burger
 
-The best burgers don't need a fancy dining room — just good ingredients. Tucked inside Mama Market in Sri Thanu, Oh My Burger keeps the focus on quality: fresh buns from a local bakery, grass-fed beef from a local butcher and homemade sauces, in burgers that are simple, juicy and full of flavour. Vegetarian options too, which makes it easy for mixed groups grazing the market stalls.
+A burger stall inside Mama Market that punches well above a food court. The focus is squarely on ingredients — buns from a local bakery, grass-fed beef from a local butcher, homemade sauces — in burgers that stay simple, juicy and full of flavour. There are vegetarian options too, handy when the group is grazing different stalls around the market.
 
-**Why we love it —** Handcrafted burgers made with excellent local ingredients, in one of the island's liveliest markets.<br>
+**Why we love it —** Juicy, well-sourced burgers from a standout Mama Market stall.<br>
 **Best for —** Burger lovers · Casual dinner · Families · Street food<br>
 **Price —** ฿฿<br>
 **Getting there —** Inside Mama Market Food Court, Sri Thanu. [View on map ↗](https://maps.app.goo.gl/AcMPZ9v8kLAjJc6i8)
@@ -216,9 +216,9 @@ Few places on Koh Phangan catch the sunset quite like Sri Thanu. As the afternoo
 
 #### Grasshopper Beach Bar
 
-Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Beach, Grasshopper comes alive each evening as travellers, locals and performers gather for the sunset. Tables sit right on the sand, cocktails flow and resident DJs set the mood as the sky turns. Fridays bring the Zen Beach Drum Circle just steps away.
+Sri Thanu's sunset gathering point, right on Zen Beach. As the afternoon cools, travellers, residents and performers drift down to the sand and Grasshopper picks up the mood — tables in the sand, cocktails and resident DJs as the light turns. Come Friday, the Zen Beach Drum Circle is just steps away. For more sunset tables across the island, see our [Koh Phangan sunset guide](journal-where-to-watch-sunset-koh-phangan.html).
 
-**Why we love it —** One of the island's liveliest sunset gatherings, with beach cocktails, DJs and the Zen Beach mood.<br>
+**Why we love it —** Zen Beach's liveliest sundown — sand, cocktails and DJs as the sky turns.<br>
 **Best for —** Sunset drinks · DJs · Meeting people · Zen Beach<br>
 **Price —** ฿฿<br>
 **Getting there —** Directly on Zen Beach, next to the Friday Drum Circle. [View on map ↗](https://maps.app.goo.gl/8KoN1Bc1rVXBgHV98)
@@ -238,9 +238,9 @@ One of the advantages of staying in Sri Thanu is that some of the island's fines
 
 #### Dear Phangan
 
-A garden of papaya, banana, tamarind and fresh herbs surrounds this quiet open-air restaurant, and every part of the evening feels considered. It's chef-led and firmly local: a blind menu that changes with the seasons, seafood in daily from the pier and produce from nearby farms. The cooking is quietly creative but rooted in Thai flavours — reason enough for the Michelin Guide to take notice.
+A few minutes from Sri Thanu, Dear Phangan sits in a garden of papaya, banana, tamarind and fresh herbs, and the whole evening feels considered. It's chef-led and firmly local — a blind menu that shifts with the seasons, seafood in daily from the pier, produce from farms nearby. Quietly creative but rooted in Thai flavour, it's earned a place in the Michelin Guide.
 
-**Why we love it —** A chef-led blind menu that changes with the seasons and the island itself.<br>
+**Why we love it —** A seasonal chef-led blind menu, rooted in local Thai flavour.<br>
 **Best for —** Food lovers · Special occasions · Contemporary Thai cuisine<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Reservations are essential. The chef prepares only the number of covers booked, and the blind menu follows the freshest ingredients of the day.<br>
@@ -248,18 +248,18 @@ A garden of papaya, banana, tamarind and fresh herbs surrounds this quiet open-a
 
 #### Thai Element
 
-Some kitchens honour Thai tradition by preserving it; Thai Element does it by reinterpreting it. Classic flavours meet modern technique and a few international touches, in refined dishes that feel familiar and contemporary at once, with careful sourcing and elegant plating. On a first visit, order the Massaman Heang — beef slow-braised in a rich Massaman curry with potatoes and roasted spices, reduced until thick and deeply flavoured.
+Almost opposite Dar Mansour on the Hin Kong–Sri Thanu road, Thai Element reinterprets Thai cooking rather than simply preserving it. Classic flavours meet modern technique and the odd international touch, with careful sourcing and elegant plating. First time here, order the Massaman Heang — beef slow-braised in a rich Massaman curry with potatoes and roasted spices, reduced until thick and deep.
 
-**Why we love it —** A refined, contemporary take on Thai cooking that stays true to its roots.<br>
+**Why we love it —** Contemporary Thai technique built on classic, well-sourced flavour.<br>
 **Best for —** Food lovers · Date nights · Contemporary Thai cuisine<br>
 **Price —** ฿฿<br>
 **Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Dar Mansour – Morocco's Kitchen. [View on map ↗](https://maps.app.goo.gl/Th29wHxKmtd1TKGq8)
 
 #### Mama KOP
 
-A family-run kitchen a few steps from Hin Kong Beach, and something of a west coast fixture. Fresh seafood, fragrant curries and classic stir-fries are cooked simply and well, with local ingredients and recipes that taste properly homemade. Come late afternoon and you can watch the bay change colour before dinner.
+A short ride from Sri Thanu, this family-run kitchen sits a few steps from Hin Kong Beach and has become a west coast regular. Fresh seafood, fragrant curries and classic stir-fries are cooked simply and well, from local ingredients, tasting properly homemade. Arrive late afternoon and the bay changes colour while you wait for dinner.
 
-**Why we love it —** Home-style Thai cooking on one of Hin Kong's most relaxed stretches of beach.<br>
+**Why we love it —** Family-run, home-style Thai a few steps from Hin Kong Beach.<br>
 **Best for —** Authentic Thai food · Beachfront lunch · Sunset dinner<br>
 **Price —** ฿<br>
 **Good to know —** There are two similarly named places in Hin Kong. This is Mama KOP, the beachfront one — not MamaKOP Restaurant, set further inland.<br>
@@ -267,9 +267,9 @@ A family-run kitchen a few steps from Hin Kong Beach, and something of a west co
 
 #### L'Alcove
 
-Run by Karine and Mélanie, L'Alcove has become a west coast fixture — tables almost on the sand at Hin Kong Beach, French cooking with a light Thai touch, and one of the island's deepest lists of French wine and Champagne. Expect duck confit, fresh salmon and a generous cheese platter. Come before the sun drops: on Fridays and Sundays, live musicians and fire performers take over the beach.
+A few minutes from Sri Thanu at Hin Kong Beach, L'Alcove — run by Karine and Mélanie — sets its tables almost on the sand. The cooking is French with a light Thai touch (duck confit, fresh salmon, a generous cheese platter), backed by one of the island's deepest lists of French wine and Champagne. Time it for sunset: Fridays and Sundays bring live musicians and fire performers to the beach.
 
-**Why we love it —** French cooking, a serious wine list and a table almost on the sand as the sun goes down.<br>
+**Why we love it —** Beachfront French cooking and a serious wine list, feet almost in the sand.<br>
 **Best for —** Sunset dinner · Romantic evenings · Wine lovers<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Arrive before sunset to get a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
@@ -277,9 +277,9 @@ Run by Karine and Mélanie, L'Alcove has become a west coast fixture — tables 
 
 #### CINTAMANI Bar
 
-Stepping into CINTAMANI feels like arriving somewhere else entirely. Inspired by the Silk Road, it mixes jungle-glam, Bedouin touches and maximalist design into one of the island's most striking rooms — set among tropical gardens right on Hin Kong Beach. The cocktails match the setting, alongside a considered wine list and Mediterranean-style tapas. Arrive before sunset and settle in as the sky changes over the Gulf.
+A short hop from Sri Thanu on Hin Kong Beach, CINTAMANI feels transporting. Silk Road inspiration runs through it — jungle-glam, Bedouin touches, maximalist design — set among tropical gardens by the sea. The cocktails live up to the room, with a considered wine list and Mediterranean-style tapas alongside. Arrive before sunset and settle in as the sky shifts over the Gulf.
 
-**Why we love it —** One of the island's most original cocktail bars, where inventive drinks meet striking design.<br>
+**Why we love it —** Inventive cocktails in one of the island's most transporting rooms.<br>
 **Best for —** Signature cocktails · Sunset drinks · Design lovers · Date nights<br>
 **Price —** ฿฿<br>
 **Getting there —** Directly on Hin Kong Beach, between L'Alcove and Kikekla Bar & Restaurant. [View on map ↗](https://maps.app.goo.gl/iZU8nHdSUvTf8y1R6)
