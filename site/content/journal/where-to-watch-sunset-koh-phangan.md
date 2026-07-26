@@ -25,6 +25,8 @@ faq:
     answer: Amsterdam Bar is Koh Phangan's best-known sunset viewpoint, while Bluerama offers a quieter and more refined, adults-only alternative just beside it.
   - question: Which beach is best for a peaceful sunset?
     answer: Hin Kong Beach and Secret Beach are excellent choices if you're looking for a calmer atmosphere away from the larger crowds.
+  - question: Where can I find a quiet sunset drink away from the crowds?
+    answer: For a calmer sundowner, Bluerama offers an elegant, adults-only setting with an infinity pool beside Amsterdam Bar, while Mae Haad Tree House, up in the Ko Mae hills, stays surprisingly quiet even though it sits right beside the busy Three Sixty — a bean bag, a good cocktail and a wide-open sea view, usually with plenty of space.
   - question: Where should I have dinner after sunset?
     answer: The west coast offers several dining options. To extend the slow rhythm of the evening, Dar Mansour in Hin Kong welcomes guests with traditional Moroccan slow dining inspired by generations of hospitality.
 about: ''
@@ -60,6 +62,7 @@ Short on time? Here are our favourite sunset spots at a glance.
 | Amsterdam Bar | The island's most famous panoramic view | Hill between Wok Tum & Hin Kong |
 | Bluerama | An elegant, adults-only sunset drink | Nai Wok, Wok Tum |
 | Three Sixty Rooftop Bar | A 360° rooftop panorama | Above Koh Ma, north-west |
+| Mae Haad Tree House | A quiet treehouse sunset by the pool | Ko Mae hills, north-west |
 | Secret Mountain | Jungle-meets-ocean and a slow afternoon | Baan Tai hills |
 | Leela Beach | A quiet beach for couples | South of Haad Rin |
 | Mae Haad & Koh Ma | Sunset over the sandbank (and snorkelling) | North-west, near Chaloklum |
@@ -70,7 +73,7 @@ Short on time? Here are our favourite sunset spots at a glance.
 
 The answer is wonderfully simple. Koh Phangan's western coastline faces directly towards the open Gulf of Thailand, offering uninterrupted views of the horizon. From **Sri Thanu** through **Hin Kong** and **Wok Tum**, there is nothing between you and the setting sun except the sea.
 
-Unlike the east coast — known for sunrise and the famous Full Moon Party — the west coast has developed a completely different personality. It feels calmer, slower and more residential, attracting travellers looking for beautiful beaches, cafés, yoga studios and relaxed evenings rather than late-night parties. It's here that many locals choose to finish their day.
+Unlike the east coast — known for sunrise and the famous Full Moon Party — the west coast has developed a completely different personality. It feels calmer, slower and more residential, attracting travellers looking for beautiful beaches, cafés, yoga studios and relaxed evenings rather than late-night parties. It's here that many locals choose to finish their day — and to begin it, over some of the island's [best breakfast and coffee spots](journal-best-breakfast-brunch-koh-phangan.html).
 
 ![People gathering at Zen Beach to watch the sunset in Koh Phangan](assets/uploads/where-to-watch-the-sunset-in-koh-phangan7.jpg "Zen Beach Sunset")
 
@@ -199,6 +202,16 @@ Located above Koh Ma in the island's north-west, Three Sixty Rooftop Bar offers 
 <p class="getthere"><strong>Getting there</strong> — Above Koh Ma; head towards Utopia Resort and turn at the sign. <a href="https://www.google.com/maps/search/?api=1&amp;query=Three+Sixty+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Easy access</li><li>Panoramic rooftop</li><li>Music</li><li>Cocktails</li><li>North-west views</li></ul></div>
+
+### Mae Haad Tree House — The Quiet Neighbour of the Crowds
+
+Just above Mae Haad in the Ko Mae hills, the Tree House sits a short ride from the busy Three Sixty — yet most visitors walk straight past it. That's the whole point. While the rooftop next door fills up, here you can settle into a bean bag by the swimming pool with the ocean opening up wide in front of you, often with the place almost to yourself. The setting does the work: rustic wooden platforms, easy music and an unobstructed horizon as the light shifts from gold to pink to deep purple over the water. The cocktails and ciders are genuinely good, and once you've found your spot, leaving becomes difficult. Rustic rather than polished — and better for it.
+
+<p class="getthere"><strong>Getting there</strong> — North-west, in the Ko Mae hills above Mae Haad, close to Three Sixty. <a href="https://maps.app.goo.gl/E36XTkWtDdUBhX7R7" target="_blank" rel="noopener">View on map ↗</a></p>
+
+<aside class="localtip"><span class="localtip__label">Local Tip</span><p>The road up is rough and steep — ride slowly, or park lower down and walk the final stretch. Arrive early to claim a good bean bag before sunset.</p></aside>
+
+<div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Swimming pool</li><li>Bean bags & lounge areas</li><li>Excellent cocktails & ciders</li><li>Wide-open sunset view</li><li>Much quieter than Three Sixty</li><li>Rustic setting</li></ul></div>
 
 ### Secret Mountain — Jungle Meets Ocean
 
