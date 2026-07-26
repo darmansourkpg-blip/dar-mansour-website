@@ -141,9 +141,9 @@ Half deli, half artisan café, and a fixture of Sri Thanu's wellness scene. The 
 
 #### Mimi's Café
 
-In the heart of Sri Thanu, Mimi's is a neighbourhood café where residents, remote workers and travellers gather over good Italian coffee, fresh breakfasts and homemade lunches. The kitchen leans on organic eggs and seasonal produce where it can, in a relaxed, friendly room — a natural stop between the beach and a yoga class.
+Right in the middle of the village, Mimi's is Sri Thanu's neighbourhood café — the kind of place regulars, remote workers and travellers keep drifting back to. Italian coffee, fresh breakfasts and homemade lunches come from a kitchen that uses organic eggs and seasonal produce where it can. Friendly and unfussy, and a natural pause between a swim and a yoga class.
 
-**Why we love it —** Good Italian coffee and homemade food in one of the village's friendliest cafés.<br>
+**Why we love it —** Sri Thanu's friendly neighbourhood café for Italian coffee and homemade food.<br>
 **Best for —** Breakfast · Specialty coffee · Digital nomads<br>
 **Price —** ฿<br>
 **Getting there —** In the heart of Sri Thanu village. [View on map ↗](https://share.google/G5qYinEf3NOsOqorM)
@@ -176,9 +176,9 @@ Sri Thanu's international wellness community has shaped one of the island's heal
 
 #### Eat.Co
 
-A favourite for plant-based food that satisfies everyone, not only vegans. Everything is made from scratch with good ingredients — colourful bowls, hearty mains and a few creative recipes — in a warm, relaxed room that draws yogis, remote workers, travellers and residents alike.
+One of Sri Thanu's warmest community tables, and proof that plant-based food can win over everyone, not just vegans. Everything's made from scratch — colourful bowls, hearty mains, a few inventive plates — in a relaxed room that fills with yogis, remote workers, travellers and residents. An easy, feel-good lunch in the middle of the village.
 
-**Why we love it —** Homemade vegan food with wide appeal, in one of Sri Thanu's warmest community spaces.<br>
+**Why we love it —** Crowd-pleasing homemade vegan food in a warm village room.<br>
 **Best for —** Vegan dining · Healthy lunch · Community<br>
 **Price —** ฿<br>
 **Getting there —** In Sri Thanu, at the heart of the wellness community. [View on map ↗](https://share.google/8YLBdPCuWG8C8vnKG)

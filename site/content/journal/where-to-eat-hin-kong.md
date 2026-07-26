@@ -97,9 +97,9 @@ Thai Element offers a refined take on Thai cooking, pairing authentic recipes wi
 
 #### Dar Mansour – Morocco's Kitchen
 
-Dar Mansour brings Moroccan cooking to Koh Phangan through family recipes, warm hospitality and a room unlike any other on the island. Everything is made from scratch — homemade spice blends, slow-cooked tajines, royal couscous, handmade pastilla and pastries — alongside signature cocktails built on Moroccan spices. Handcrafted décor sourced across Morocco turns dinner into something closer to an evening in a riad, where food, design and music meet. _(This is our own restaurant — see the_ [_menu_](moroccan-menu-koh-phangan.html)_,_ [_wine pairing_](moroccan-wine-pairing-koh-phangan.html) _or_ [_private dining_](private-dining-koh-phangan.html)_.)_
+This is our own table, right here on the Hin Kong road towards Sri Thanu. Dar Mansour brings Morocco to the west coast through family recipes, slow cooking and a room dressed in handcrafted décor gathered across Morocco. Everything's made from scratch — homemade spice blends, slow-cooked tajines, royal couscous, handmade pastilla and pastries — with signature cocktails built on the same Moroccan spices. Dinner feels closer to an evening in a riad, where food, design and music meet. _(This is our own restaurant — see the_ [_menu_](moroccan-menu-koh-phangan.html)_,_ [_wine pairing_](moroccan-wine-pairing-koh-phangan.html) _or_ [_private dining_](private-dining-koh-phangan.html)_.)_
 
-**Why we love it —** It's our table: Moroccan food, hospitality and design built for slow, shared evenings.<br>
+**Why we love it —** Our own Hin Kong table — Moroccan food, hospitality and design for slow evenings.<br>
 **Best for —** Romantic dinners · Special occasions · Discovering Moroccan cuisine<br>
 **Price —** ฿฿<br>
 **Good to know —** Order ahead on WhatsApp for tajines and couscous; reservations recommended in high season.<br>
@@ -121,9 +121,9 @@ A family-run kitchen a few steps from Hin Kong Beach, and a west coast fixture. 
 
 #### Happiness Restaurant
 
-Some of the best seafood here comes with nothing more than the sound of the waves. Set on Hin Kong Beach, a short walk from Mama KOP, this local favourite does Thai seafood from the daily catch. Live tanks let you pick prawns, crab, shellfish or fish before they're cooked to order, and the soft-shell crab is the dish to get.
+A Hin Kong Beach seafood favourite, a short walk from Mama KOP. The catch comes in daily, and the live tanks let you choose prawns, crab, shellfish or fish before they're cooked to order — the soft-shell crab is the one to get. Simple beachfront Thai seafood, with the waves for a soundtrack.
 
-**Why we love it —** Fresh Thai seafood and a calm beachfront setting where the sunsets match the food.<br>
+**Why we love it —** Daily-catch Thai seafood and a standout soft-shell crab, right on the sand.<br>
 **Best for —** Fresh seafood · Beachfront dining · Sunset dinner<br>
 **Price —** ฿฿<br>
 **Good to know —** Opens from 2:00 pm — good for a late lunch, sunset drinks or dinner by the sea.<br>
@@ -242,9 +242,9 @@ Part of what makes Hin Kong easy to stay in is neighbouring Sri Thanu, a few min
 
 #### Foxxy's Restaurant & Café
 
-One of Sri Thanu's most dependable all-day cafés, good for a slow breakfast, a relaxed lunch or a proper coffee. Generous brunch plates, smoothie bowls, fresh salads and homemade cakes with quality specialty coffee, in a bright, welcoming room.
+Technically just over in Sri Thanu, but only a few minutes from Hin Kong and well worth the short hop for breakfast or lunch. Foxxy's is a dependable all-day café — brunch plates, smoothie bowls, fresh salads and homemade cakes, with solid specialty coffee, in a bright and welcoming room.
 
-**Why we love it —** Good coffee, generous brunches and one of the west coast's warmest cafés.<br>
+**Why we love it —** A dependable all-day café a few minutes away in Sri Thanu.<br>
 **Best for —** Breakfast · Brunch · Digital nomads<br>
 **Price —** ฿฿<br>
 **Getting there —** On the main road in Sri Thanu, close to the village's cafés and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+%26+Caf%C3%A9+17%2F11+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
