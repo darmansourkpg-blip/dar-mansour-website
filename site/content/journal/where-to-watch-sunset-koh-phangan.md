@@ -60,6 +60,7 @@ Short on time? Here are our favourite sunset spots at a glance.
 | Amsterdam Bar | The island's most famous panoramic view | Hill between Wok Tum & Hin Kong |
 | Bluerama | An elegant, adults-only sunset drink | Nai Wok, Wok Tum |
 | Three Sixty Rooftop Bar | A 360° rooftop panorama | Above Koh Ma, north-west |
+| Mae Haad Tree House | A quiet treehouse sunset by the pool | Ko Mae hills, north-west |
 | Secret Mountain | Jungle-meets-ocean and a slow afternoon | Baan Tai hills |
 | Leela Beach | A quiet beach for couples | South of Haad Rin |
 | Mae Haad & Koh Ma | Sunset over the sandbank (and snorkelling) | North-west, near Chaloklum |
@@ -199,6 +200,16 @@ Located above Koh Ma in the island's north-west, Three Sixty Rooftop Bar offers 
 <p class="getthere"><strong>Getting there</strong> — Above Koh Ma; head towards Utopia Resort and turn at the sign. <a href="https://www.google.com/maps/search/?api=1&amp;query=Three+Sixty+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Easy access</li><li>Panoramic rooftop</li><li>Music</li><li>Cocktails</li><li>North-west views</li></ul></div>
+
+### Mae Haad Tree House — The Quiet Neighbour of the Crowds
+
+Just above Mae Haad in the Ko Mae hills, the Tree House sits a short ride from the busy Three Sixty — yet most visitors walk straight past it. That's the whole point. While the rooftop next door fills up, here you can settle into a bean bag by the swimming pool with the ocean opening up wide in front of you, often with the place almost to yourself. The setting does the work: rustic wooden platforms, easy music and an unobstructed horizon as the light shifts from gold to pink to deep purple over the water. The cocktails and ciders are genuinely good, and once you've found your spot, leaving becomes difficult. Rustic rather than polished — and better for it.
+
+<p class="getthere"><strong>Getting there</strong> — North-west, in the Ko Mae hills above Mae Haad, close to Three Sixty. <a href="https://maps.app.goo.gl/E36XTkWtDdUBhX7R7" target="_blank" rel="noopener">View on map ↗</a></p>
+
+<aside class="localtip"><span class="localtip__label">Local Tip</span><p>The road up is rough and steep — ride slowly, or park lower down and walk the final stretch. Arrive early to claim a good bean bag before sunset.</p></aside>
+
+<div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Swimming pool</li><li>Bean bags & lounge areas</li><li>Excellent cocktails & ciders</li><li>Wide-open sunset view</li><li>Much quieter than Three Sixty</li><li>Rustic setting</li></ul></div>
 
 ### Secret Mountain — Jungle Meets Ocean
 
