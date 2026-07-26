@@ -469,36 +469,36 @@ A great day on Koh Phangan often starts with excellent coffee and a leisurely br
 
 #### Indigo Specialty Coffee & Bakery
 
-The kind of café that becomes routine after one visit. Indigo has built its name on specialty coffee, pastries baked fresh each morning and an easy welcome. Whether it's a flat white, a flaky croissant or a slow brunch, everything's done with care and a steady hand — which is why locals, remote workers and travellers all end up here.
+An easy café to build a morning around. Indigo made its name on specialty coffee and pastries baked fresh each day, served with a genuine welcome. A flat white and a croissant, or a longer brunch — all handled with a steady hand, which is why locals, remote workers and travellers keep turning up.
 
-**Why we love it —** Specialty coffee and one of the island's best artisan bakeries.<br>
+**Why we love it —** Specialty coffee and a fresh-each-day bakery worth the routine.<br>
 **Best for —** Specialty coffee · Breakfast · Fresh pastries<br>
 **Price —** ฿฿<br>
 **Getting there —** On the main road between Hin Kong and Sri Thanu, just north of Sonolito Thai Food. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Indigo+Specialty+Coffee+%26+Bakery+7%2F24+Moo+6%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### SAGE Breakfast & More
 
-Long breakfasts are close to a way of life here, and SAGE leans right into them. Overlooking the sea in Ban Tai, this bright café serves one of the island's fullest all-day breakfast and brunch menus, drawing on European café culture — specialty coffee, smoothie bowls, pancakes, generous egg dishes and lighter options through the day. Vegan, vegetarian or classic, it's covered.
+Breakfast is close to a ritual here, and SAGE embraces it. Looking out over the sea in Ban Tai, the bright room draws on European café culture for one of the island's fullest all-day breakfast and brunch menus — specialty coffee, smoothie bowls, pancakes, generous egg dishes and lighter plates as the day runs on. Vegan, vegetarian or classic, it's all there.
 
-**Why we love it —** One of the island's best all-day breakfasts, with good coffee and a sea view.<br>
+**Why we love it —** A European-leaning all-day breakfast with a Ban Tai sea view.<br>
 **Best for —** Breakfast · Brunch · Specialty coffee · Sea views<br>
 **Price —** ฿฿<br>
 **Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SAGE+Breakfast+%26+More+128+Moo+1%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
 
 #### Foxxy's Restaurant & Café
 
-One of Sri Thanu's most dependable all-day cafés, good for a slow breakfast, a relaxed lunch or just a proper coffee. The menu pulls together generous brunch plates, smoothie bowls, fresh salads and homemade cakes with quality specialty coffee, in a bright, welcoming room. Easy-going and consistent — a place you'll come back to through your stay.
+A Sri Thanu all-rounder that earns its place among the island's cafés — the sort you return to across a whole trip. Slow breakfasts, relaxed lunches and proper coffee all work here, with generous brunch plates, smoothie bowls, fresh salads and homemade cakes in a bright, welcoming room. Easy-going and consistent, which is half the appeal.
 
-**Why we love it —** Good coffee, generous brunches and one of Sri Thanu's warmest cafés.<br>
+**Why we love it —** A consistent Sri Thanu café, good from breakfast through lunch.<br>
 **Best for —** Breakfast · Brunch · Digital nomads<br>
 **Price —** ฿฿<br>
 **Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga studios and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+%26+Caf%C3%A9+17%2F11+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### Chacha Coffee
 
-Coffee is taken seriously here. Chacha pairs carefully sourced beans with well-pulled espresso and an easy atmosphere that keeps locals and remote workers coming back. Alongside espresso, filter and iced drinks, the all-day breakfast carries a subtle thread of Moroccan spice that gives a few dishes their own twist. Community events like the Friday Run Club have made it a favourite morning meeting spot.
+At Chacha, the coffee leads — carefully sourced beans, well-pulled espresso and a laid-back room that keeps locals and remote workers loyal. Espresso, filter and iced drinks sit alongside an all-day breakfast threaded with a little Moroccan spice that gives some dishes their own twist. The Friday Run Club and other events have made it a real morning meeting spot.
 
-**Why we love it —** Excellent specialty coffee in one of the island's friendliest café communities.<br>
+**Why we love it —** Carefully sourced coffee and a spice-touched all-day breakfast, with a friendly crowd.<br>
 **Best for —** Specialty coffee · Breakfast · Digital nomads<br>
 **Price —** ฿<br>
 **Getting there —** On the west coast; open daily from 8 am. [View on map ↗](https://maps.app.goo.gl/CA1fP5D5tXQEoVdA9)
@@ -549,18 +549,18 @@ Plant-based cooking with real imagination. Pure Vegan Heaven reworks Thai food t
 
 #### Deli Devi
 
-Part deli, part artisan café, and unlike anywhere else on the island. Deli Devi specialises in handmade plant-based products — vegan cheeses, raw desserts, ceremonial cacao, homemade cakes, smoothies and specialty coffee. Drop in for a healthy breakfast, pick up ingredients or just have cake with a coffee; everything shows real care and craft.
+There's nothing else quite like Deli Devi on the island — a deli and artisan café in one. The counter is all handmade and plant-based: vegan cheeses, raw desserts, ceremonial cacao, cakes, smoothies and specialty coffee. Come for a healthy breakfast, pick up a few ingredients, or linger over cake and a coffee; the care behind it shows.
 
-**Why we love it —** Artisan plant-based products made with genuine attention to detail.<br>
+**Why we love it —** A one-of-a-kind plant-based deli-café, everything handmade.<br>
 **Best for —** Healthy treats · Vegan cheeses · Coffee & cake<br>
 **Price —** ฿฿<br>
 **Getting there —** In Sri Thanu, at the heart of the island's wellness community. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Deli+Devi+45+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
 #### Swiss Farmacy
 
-Tucked into the greenery of Madua Wan, Swiss Farmacy is the kind of place that quickly feels like home. The focus is wholesome homemade cooking, organic ingredients and a genuinely relaxed pace — fresh sandwiches, homemade kebabs, changing daily specials and good coffee, with a few resident animals wandering about. It has earned a loyal following without chasing trends.
+In the greenery of Madua Wan, Swiss Farmacy feels like home almost as soon as you arrive. The kitchen keeps it wholesome and homemade — fresh sandwiches, homemade kebabs, daily specials and good coffee, on organic ingredients — at an unhurried pace, resident animals included. It has built a loyal following without chasing trends.
 
-**Why we love it —** Wholesome homemade food in one of the island's most peaceful settings.<br>
+**Why we love it —** Wholesome homemade cooking at an easy pace, in a peaceful garden setting.<br>
 **Best for —** Healthy lunch · Homemade food · Families<br>
 **Price —** ฿฿<br>
 **Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://www.google.com/maps/search/?api=1&query=9.7348011,100.0081449)
