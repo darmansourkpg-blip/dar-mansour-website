@@ -153,7 +153,7 @@ CATEGORIES = {
         "hero": "assets/uploads/koh-phangan-day.webp",
         "hero_alt": "Turquoise bay and white-sand beach on the west coast of Koh Phangan",
         "url": "koh-phangan-guide.html",
-        "seo_title": "Koh Phangan Guide — Where to Eat, Beaches &amp; Secret Spots | Dar Mansour",
+        "seo_title": "Koh Phangan Guide — Where to Eat &amp; Secret Spots | Dar Mansour",
         "seo_desc": "An insider's guide to Koh Phangan by Dar Mansour: where to eat, the best beaches, sunset spots, local secrets and slow island living.",
         "hub": True,
     },
@@ -165,7 +165,7 @@ CATEGORIES = {
         "hero": "assets/uploads/moroccan-culture-card.webp",
         "hero_alt": "Moroccan culture and cuisine — Dar Mansour",
         "url": "moroccan-culture-cuisine.html",
-        "seo_title": "Moroccan Culture &amp; Cuisine — Stories, Traditions &amp; Food | Dar Mansour",
+        "seo_title": "Moroccan Culture &amp; Cuisine — Stories &amp; Traditions | Dar Mansour",
         "seo_desc": "Explore Moroccan culture and cuisine with Dar Mansour: tajines, spices, mint tea, riads, music and craftsmanship — the soul of Morocco beyond the plate.",
         "hub": True,
     },
@@ -585,6 +585,6 @@ def render_authors():
         ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"))
     return L.page(
         "The Dar Mansour Journal — Meet the Team (Maïja &amp; P'Jae)",
-        "Meet the team behind the Dar Mansour Journal: Maïja, co-founder and creative director, and P'Jae, head of kitchen — the people behind our Koh Phangan and Moroccan guides.",
+        "Meet the team behind the Dar Mansour Journal: Maïja, co-founder and creative director, and P'Jae, head of kitchen — our Koh Phangan and Moroccan guides.",
         AUTHORS_URL, body, og_image="assets/img/maija-art-direction-koh-phangan.jpg",
         extra_head=_authors_schema(), body_class="journal")
