@@ -1,7 +1,7 @@
 ---
 title: "Gnaoua Music: Morocco's Spiritual Musical Tradition and the Magic of Essaouira"
 seo_title: "Gnaoua Music: Morocco's Spiritual Sound & Essaouira"
-description: "Gnaoua (or Gnawa) is a centuries-old Moroccan spiritual music blending West African, Amazigh and Sufi roots — UNESCO-listed, and celebrated each summer in Essaouira."
+description: "Gnaoua (or Gnawa) is a centuries-old Moroccan spiritual music of West African, Amazigh and Sufi roots — UNESCO-listed, celebrated each summer in Essaouira."
 date: 2026-07-22
 author: The Dar Mansour Journal
 category: moroccan-culture
