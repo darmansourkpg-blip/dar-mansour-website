@@ -44,6 +44,16 @@ This guide brings together the island's most romantic places to eat, from candle
 
 We live and eat on the island year-round, so these are places we return to — chosen for atmosphere first, then food, service and setting. We've noted honestly what each one is best for, because the right romantic dinner depends on the couple. None of these picks paid to be here, and we've placed Dar Mansour among them, not above them.
 
+## Editor's Choice
+
+If we were planning one memorable evening for friends visiting Koh Phangan, these five would be the first we'd consider — each a different mood:
+
+- **Dar Mansour** — candlelit Moroccan slow dining
+- **Dear Phangan** — chef-led garden tasting
+- **L'Alcove** — French cooking on the beach
+- **Yukinoya** — teppanyaki theatre by the sea
+- **CINTAMANI** — striking design and cocktails
+
 ## Romantic Dinner Quick Picks
 
 Short on time? Here are our favourites at a glance.
@@ -62,12 +72,12 @@ Short on time? Here are our favourites at a glance.
 
 ### Dar Mansour — A Riad-Style Evening
 
-This is our own table, so take it as an honest invitation rather than a sales pitch. Dar Mansour is the only Moroccan restaurant on Koh Phangan, set on the road between Hin Kong and Sri Thanu. The room is candlelit and dressed with décor gathered across Morocco, closer to an evening in a riad than a night out. Slow-cooked [tajines](journal-what-is-a-tajine.html), tanjia and hand-rolled [couscous](journal-what-is-couscous.html) arrive unhurried, often to the quiet rhythms of Gnaoua music — a night built for lingering.
+This is our own table, so take it as an honest invitation rather than a sales pitch. Dar Mansour is the only Moroccan restaurant on Koh Phangan, set on the road between Hin Kong and Sri Thanu. One of the more intimate dining rooms in Koh Phangan, the space is candlelit and dressed with décor gathered across Morocco — closer to an evening in a riad than a night out. Slow-cooked [tajines](journal-what-is-a-tajine.html), tanjia and hand-rolled [couscous](journal-what-is-couscous.html) arrive unhurried, often to the quiet rhythms of Gnaoua music — a night built for lingering.
 
 **Best for —** Anniversaries, proposals, discovering Moroccan cuisine<br>
 **Price —** ฿฿<br>
-**Good to know —** We arrange [private Moroccan dinners](private-dining-koh-phangan.html) for special occasions, and slow-cooked mains are best [pre-ordered ahead](moroccan-restaurant-reservation-koh-phangan.html).<br>
-**Location —** Hin Kong Road, between Hin Kong and Sri Thanu. <a href="https://www.google.com/maps/search/?api=1&amp;query=Dar+Mansour+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
+**Good to know —** Dinner only; reservation recommended. We arrange [private Moroccan dinners](private-dining-koh-phangan.html) for special occasions, and slow-cooked mains are best [pre-ordered ahead](moroccan-restaurant-reservation-koh-phangan.html).<br>
+**Location —** West Coast · Hin Kong Road, between Hin Kong and Sri Thanu. <a href="https://www.google.com/maps/search/?api=1&amp;query=Dar+Mansour+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
 ## Best Chef's Table for Couples
 
@@ -77,8 +87,8 @@ A few minutes away in Wok Tum, Dear Phangan sits in a garden of papaya, banana a
 
 **Best for —** Food-lover couples, a romantic tasting<br>
 **Price —** ฿฿฿<br>
-**Good to know —** Reservations are essential; the chef prepares only the covers booked.<br>
-**Location —** Wok Tum, on the road towards Hin Kong. <a href="https://www.google.com/maps/search/?api=1&amp;query=Dear+Phangan+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
+**Good to know —** Reservations essential; the blind menu changes with the season and the chef prepares only the covers booked.<br>
+**Location —** West Coast · Wok Tum, on the road towards Hin Kong. <a href="https://www.google.com/maps/search/?api=1&amp;query=Dear+Phangan+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
 ## Sunset & Beachfront Romance
 
@@ -88,8 +98,8 @@ At Hin Kong Beach, L'Alcove sets its tables almost on the sand. The cooking is F
 
 **Best for —** Wine lovers, beachfront sunset dinners<br>
 **Price —** ฿฿฿<br>
-**Good to know —** Arrive before sunset for a beachfront table; live music some evenings.<br>
-**Location —** Hin Kong Beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
+**Good to know —** Beachfront tables are limited — arrive before sunset; live music some evenings.<br>
+**Location —** West Coast · Hin Kong Beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
 ### CINTAMANI — Striking Design & Cocktails
 
@@ -98,7 +108,7 @@ Also on Hin Kong Beach, CINTAMANI feels transporting — Silk Road inspiration, 
 **Best for —** A design-led aperitif and dinner<br>
 **Price —** ฿฿<br>
 **Good to know —** Come before sunset for the best of the light.<br>
-**Location —** Hin Kong Beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=CINTAMANI+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
+**Location —** West Coast · Hin Kong Beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=CINTAMANI+Bar+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
 ## A Sunset Drink Before Dinner
 
@@ -107,15 +117,22 @@ Also on Hin Kong Beach, CINTAMANI feels transporting — Silk Road inspiration, 
 Just before Amsterdam Bar in Nai Wok, Bluerama is designed around an adults-only infinity pool overlooking the Gulf — calm, refined and made for couples. It's not a full dinner spot, but it's one of the loveliest places for a sundowner before your table elsewhere.
 
 **Best for —** A quiet sunset drink, adults-only calm<br>
-**Good to know —** Reserve an upper-terrace table if you'd like to linger.<br>
-**Location —** Nai Wok Beach, Wok Tum. <a href="https://www.google.com/maps/search/?api=1&amp;query=Bluerama+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
+**Price —** ฿฿฿<br>
+**Good to know —** Adults only; reserve an upper-terrace table if you'd like to linger.<br>
+**Location —** West Coast · Nai Wok Beach, Wok Tum. <a href="https://www.google.com/maps/search/?api=1&amp;query=Bluerama+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
-## Best for a Honeymoon (East Coast)
+## Best for a Honeymoon
 
-For couples staying around Thong Nai Pan, you don't have to cross the island. **Yukinoya**, inside Anantara Rasananda, is Koh Phangan's only teppanyaki restaurant — dinner comes with a show as the chef grills in front of you, with a deep sake list and tables under the stars over the pool and sea. Nearby, **Santhiya** suits honeymooners with its secluded resort setting, and on the west coast **Kupu Kupu** creates beautiful private dinners.
+### Yukinoya at Anantara Rasananda — Teppanyaki by the Sea
 
-**Best for —** Honeymooners and east-coast stays<br>
-**Location —** Thong Nai Pan. <a href="https://www.google.com/maps/search/?api=1&amp;query=Yukinoya+Anantara+Rasananda+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
+For couples staying around Thong Nai Pan, you don't have to cross the island. Yukinoya, inside Anantara Rasananda, is Koh Phangan's only teppanyaki restaurant — dinner comes with a show as the chef grills A5 Wagyu and local seafood in front of you, with a deep sake list and tables under the stars over the pool and sea.
+
+**Best for —** Honeymooners, a special-occasion dinner<br>
+**Price —** ฿฿฿<br>
+**Good to know —** Inside Anantara Rasananda; reservation recommended.<br>
+**Location —** East Coast · Thong Nai Pan. <a href="https://www.google.com/maps/search/?api=1&amp;query=Yukinoya+Anantara+Rasananda+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
+
+Also worth knowing: **Santhiya** suits honeymooners with its secluded resort setting on the same coast, and on the west coast **Kupu Kupu** creates beautiful private dinners.
 
 ## Where to Watch the Sunset First
 
@@ -131,4 +148,4 @@ A romantic dinner is even better after the light show. Our [Koh Phangan sunset g
 
 ## Final Thoughts
 
-The most memorable dinners are rarely the most elaborate. They're the ones where the conversation lasts longer than the meal. On Koh Phangan, you'll find plenty of places where that happens naturally — book the table, arrive for the sunset, and let the night take its time.
+A romantic dinner isn't defined by candlelight alone. The most memorable ones are rarely the most elaborate — they're the evenings you remember years later because the conversation lasted longer than the meal. Koh Phangan has more of those places than most people realise; you simply need to know where to find them.
