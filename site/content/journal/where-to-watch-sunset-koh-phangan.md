@@ -263,6 +263,8 @@ On Koh Phangan's west coast, sunset naturally creates that same rhythm. As the l
 
 Just a few minutes from Hin Kong Beach, Dar Mansour continues the evening with [slow-cooked Moroccan dishes](moroccan-menu-koh-phangan.html) inspired by [generations of tradition](journal-the-dadas-guardians-of-moroccan-recipes.html). Tajines, tanjias and recipes patiently prepared over many hours invite guests to extend the calm of sunset around one table — the heart of our [slow-food philosophy](moroccan-slow-dining-koh-phangan.html). To hold onto that calm, we simply recommend [reserving your table and pre-ordering ahead](moroccan-restaurant-reservation-koh-phangan.html).
 
+Planning the evening around two? See our guide to a [romantic dinner in Koh Phangan](journal-romantic-dinner-koh-phangan.html) for the island's most intimate tables.
+
 Sometimes, the most memorable journeys begin after the sun has disappeared.
 
 ## Final Thoughts

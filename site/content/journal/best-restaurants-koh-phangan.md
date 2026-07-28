@@ -684,7 +684,7 @@ Hidden in the island's lush interior, home to a few destination restaurants that
 
 Planning a romantic dinner, celebrating something special or just after the perfect post-yoga brunch — here are our favourite picks by occasion.
 
-**Romantic date night.** Dear Phangan · Carte Blanche · DAO by Chef Nir Mesika · BUSTAN · Dar Mansour – Morocco's Kitchen.
+**Romantic date night.** Dear Phangan · Carte Blanche · DAO by Chef Nir Mesika · BUSTAN · Dar Mansour – Morocco's Kitchen. For more, see our guide to a [romantic dinner in Koh Phangan](journal-romantic-dinner-koh-phangan.html).
 
 **Anniversary & special celebrations.** Thai Element · Fisherman's Restaurant & Bar · Yukinoya · Art of Nature Restaurant.
 
