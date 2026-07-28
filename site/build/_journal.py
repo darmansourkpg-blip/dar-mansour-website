@@ -51,6 +51,7 @@ SAME_AS = [
     "https://maps.apple.com/place?place-id=I620A58D27664AA56&address=5%2F5+O+Bo+to+Ko+Pa-Ngan+Road%2C+Ko+Pha-Ngan%2C+Ko+Pha-Ngan+District%2C+Surat+Thani+84280%2C+Thailand&coordinate=9.753081%2C99.968740&name=Dar+Mansour+-+Morocco%27s+Kitchen&_provider=9902",
     "https://www.bing.com/maps?ss=ypid.YN8178x5570947916035674182",
     "https://www.pinterest.com/darmansourkohphangan/",
+    "https://www.linkedin.com/company/darmansour/",
 ]
 
 # Editorial signature appended to every article (playbook §19 "About the Journal").

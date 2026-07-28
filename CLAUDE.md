@@ -219,8 +219,8 @@ article et toute évolution du site.
   avec jeton de session, qui expire). Wikimedia Commons a 8 photos du restaurant sous ce même nom
   (dont une reliée en `image` P18 sur Wikidata) — pas de « profil » unique à ajouter au `sameAs`
   pour une galerie de fichiers, et **Pinterest** (`pinterest.com/darmansourkohphangan`, site
-  vérifié via la balise `p:domain_verify` — constante `PINTEREST_VERIFY` dans `_layout.py`).
-  **À ajouter quand créé** : LinkedIn.
+  vérifié via la balise `p:domain_verify` — constante `PINTEREST_VERIFY` dans `_layout.py`) et
+  **LinkedIn** (`linkedin.com/company/darmansour`).
 - **Ne jamais** inventer de `review`/`aggregateRating` (faux avis = risque). Les avis clients réels
   ne sont **jamais** réécrits (ni pour les mots bannis).
 
