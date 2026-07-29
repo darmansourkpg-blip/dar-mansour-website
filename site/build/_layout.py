@@ -2,6 +2,7 @@
 """Shared layout: head, header, footer, small helpers. Static-site partials."""
 
 import hashlib
+import json
 import os
 from urllib.parse import quote, unquote
 
@@ -187,14 +188,24 @@ def header():
 def breadcrumb(*crumbs):
     """crumbs: list of (label, href) ; last one is current (href None)."""
     items = ['<li><a href="index.html">Home</a></li>']
+    ld = [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE_URL}/"}]
+    pos = 2
     for label, href in crumbs:
         items.append('<li class="sep" aria-hidden="true">›</li>')
         if href:
             items.append(f'<li><a href="{href}">{label}</a></li>')
+            ld.append({"@type": "ListItem", "position": pos, "name": label,
+                       "item": f"{SITE_URL}/{href}"})
         else:
             items.append(f'<li aria-current="page">{label}</li>')
+            ld.append({"@type": "ListItem", "position": pos, "name": label})
+        pos += 1
+    crumbs_ld = {"@context": "https://schema.org", "@type": "BreadcrumbList",
+                 "itemListElement": ld}
+    script = ('<script type="application/ld+json">'
+              + json.dumps(crumbs_ld, ensure_ascii=False) + '</script>')
     return ('<nav class="wrap breadcrumb" aria-label="Breadcrumb"><ol>'
-            + "".join(items) + '</ol></nav>')
+            + "".join(items) + '</ol></nav>' + script)
 
 
 def subhero(eyebrow, h1, sub, image, alt, tall=False, focus=None, variant=None):

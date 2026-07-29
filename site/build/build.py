@@ -6,7 +6,7 @@ sys.path.insert(0, HERE)
 OUT = os.path.dirname(HERE)  # site/
 
 import _layout as L
-from _menu import render_menu, render_legend
+from _menu import render_menu, render_legend, menu_jsonld
 from _drinks import render_wine_feature, render_wine_groups, render_cocktails
 import _journal
 
@@ -242,7 +242,7 @@ menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
     "Book now via WhatsApp to reserve your table and pre-order your soulful Moroccan dinner.") + L.related(
     ("Wine", "Wine Pairing", "moroccan-wine-pairing-koh-phangan.html", "assets/uploads/moroccan-wine-pairing-dar-mansour-koh-phangan.jpg", "Moroccan prune tajine paired with a tawny port at Dar Mansour"),
     ("Pantry", "Moroccan Pantry", "moroccan-pantry-koh-phangan.html", "assets/uploads/moroccan-preserved-lemons-koh-phangan.jpg", "Jars of Moroccan preserved lemons"),
-    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/uploads/romantic-dinner-dar-mansour-koh-phangan.webp", "A candlelit table set for a romantic dinner at Dar Mansour"))
+    ("Reservation", "Reserve &amp; Pre-order", "moroccan-restaurant-reservation-koh-phangan.html", "assets/uploads/romantic-dinner-dar-mansour-koh-phangan.webp", "A candlelit table set for a romantic dinner at Dar Mansour")) + menu_jsonld()
 pages["moroccan-menu-koh-phangan.html"] = L.page(
     "Moroccan Menu Koh Phangan — Tagines &amp; Couscous | Dar Mansour",
     "Explore Dar Mansour's menu in Koh Phangan: authentic Moroccan cuisine with tagines, couscous, tanjias and homemade bread. Cooked slow, served with soul.",
