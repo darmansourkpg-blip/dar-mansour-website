@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 """Full menu data (verbatim from Menu Dar Mansour.pdf) + renderer."""
 
+import html as _html
+import json as _json
+import re as _re
+
 # tag codes -> (short label, full label)
 TAGS = {
     "VEG":     ("Veg", "Vegetarian"),
@@ -141,3 +145,37 @@ def render_menu():
 def render_legend():
     items = "".join(f'<span><span class="mtag">{TAGS[c][0]}</span> {TAGS[c][1]}</span>' for c in TAGS)
     return f'<div class="menu-legend reveal">{items}</div>'
+
+
+def _clean(text):
+    """Strip any HTML and unescape entities for use in JSON-LD."""
+    return _html.unescape(_re.sub(r"<[^>]+>", "", text or "")).strip()
+
+
+def menu_jsonld():
+    """Schema.org Menu / MenuSection / MenuItem built from the MENU data."""
+    sections = []
+    for _sid, title, intro, _hint, items in MENU:
+        menu_items = []
+        for it in items:
+            name = _clean(it[0])
+            price = it[1] if len(it) > 1 else ""
+            desc = _clean(it[2]) if len(it) > 2 else ""
+            mi = {"@type": "MenuItem", "name": name}
+            if desc:
+                mi["description"] = desc
+            m = _re.search(r"\d+", price or "")
+            if m:
+                mi["offers"] = {"@type": "Offer", "price": m.group(0),
+                                "priceCurrency": "THB"}
+            menu_items.append(mi)
+        sec = {"@type": "MenuSection", "name": _clean(title)}
+        if intro:
+            sec["description"] = _clean(intro)
+        sec["hasMenuItem"] = menu_items
+        sections.append(sec)
+    data = {"@context": "https://schema.org", "@type": "Menu",
+            "name": "Dar Mansour - Morocco's Kitchen Menu", "inLanguage": "en",
+            "hasMenuSection": sections}
+    return ('<script type="application/ld+json">'
+            + _json.dumps(data, ensure_ascii=False) + '</script>')
