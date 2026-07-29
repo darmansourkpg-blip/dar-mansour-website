@@ -136,3 +136,25 @@
   initLightbox('.pressgallery');
   initLightbox('.gallery');
 })();
+
+/* Conversion tracking — WhatsApp / phone / email clicks -> GA4.
+   Fires a single "contact_click" event with a contact_method parameter,
+   so it can be marked as a key event and broken down in GA4 reports. */
+(function () {
+  function track(method, url) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', 'contact_click', {
+      contact_method: method,
+      link_url: url || '',
+      page_location: location.href
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp') !== -1) track('whatsapp', href);
+    else if (href.indexOf('tel:') === 0) track('phone', href);
+    else if (href.indexOf('mailto:') === 0) track('email', href);
+  }, true);
+})();
