@@ -75,10 +75,21 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
     if PINTEREST_VERIFY:
         analytics += f'<meta name="p:domain_verify" content="{PINTEREST_VERIFY}">\n'
     if GA4_ID:
+        # GA4 is loaded lazily — the gtag stub queues calls into dataLayer
+        # immediately (so events fired early, e.g. contact_click, are kept),
+        # and the heavy gtag.js is fetched only on first user interaction or
+        # after a short timeout. This removes ~180 KB from the initial load
+        # (better mobile LCP/FCP) with virtually no measurement loss.
         analytics += (
-            f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script>\n'
             "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
-            f"gtag('js',new Date());gtag('config','{GA4_ID}');</script>\n"
+            f"gtag('js',new Date());gtag('config','{GA4_ID}');"
+            "(function(){var loaded=false;function load(){if(loaded)return;loaded=true;"
+            "var s=document.createElement('script');s.async=true;"
+            f"s.src='https://www.googletagmanager.com/gtag/js?id={GA4_ID}';"
+            "document.head.appendChild(s);}"
+            "['scroll','mousemove','touchstart','keydown','click'].forEach(function(e){"
+            "window.addEventListener(e,load,{once:true,passive:true});});"
+            "setTimeout(load,3500);})();</script>\n"
         )
     return f'''<!DOCTYPE html>
 <html lang="en">
