@@ -805,6 +805,10 @@ for _p in _journal.AUTHORS:
 pages["journal-authors.html"] = L.redirect_page(
     "authors/", "The Dar Mansour Journal — Editorial Team")
 
+# P'Jae's profile URL was shortened (han-pjae-min -> pjae); redirect the old one.
+pages["authors/han-pjae-min/index.html"] = L.redirect_page(
+    "authors/pjae/", "P'Jae — Dar Mansour Journal")
+
 
 # ============================================================ IMAGE DIMENSIONS
 # Add intrinsic width/height to every <img> that lacks them, by reading the real
