@@ -62,35 +62,142 @@ ABOUT_DEFAULT = (
     "traditions inspired by both worlds. Our articles are regularly reviewed to "
     "keep recommendations useful and up to date.")
 
-# Author / editorial team page (credibility + SEO / E-E-A-T). Bios are drawn
-# from existing verified site copy — do not invent biographical detail.
-AUTHORS_URL = "journal-authors.html"
+# Author / editorial team pages (credibility + SEO / E-E-A-T). Bios are drawn
+# from verified copy provided by the founders — do not invent biographical detail.
+# Each author has their own page at /authors/<slug>/ ; the hub is /authors/.
+AUTHORS_URL = "authors/"
+
+# Recipe (culinary) culture articles get an extra "Recipe reviewed by P'Jae"
+# credit; other culture articles (e.g. music) do not.
+RECIPE_SLUGS = {
+    "what-is-a-tajine", "what-is-couscous",
+    "the-dadas-guardians-of-moroccan-recipes",
+}
+
 AUTHORS = [
     {
-        "name": "Maïja",
-        "role": "Co-Founder & Creative Director",
+        "slug": "maija-disseau",
+        "name": "Maïja Disseau",
+        "short": "Maïja Disseau",
+        "role": "Co-Founder · Moroccan Culture &amp; Culinary Heritage Specialist",
+        "role_short": "Co-Founder · Moroccan Culture &amp; Culinary Heritage",
+        # She is the primary writer of the Moroccan-culture universe.
+        "category": "moroccan-culture",
+        "tagline": ("Some of the world's greatest recipes are never written down. "
+                    "They are passed from one generation to the next, around a family table."),
         "photo": "assets/img/maija-art-direction-koh-phangan.jpg",
-        "photo_alt": "Maïja, co-founder and creative director of Dar Mansour, Koh Phangan",
-        "bio": ("A creative spirit who has spent more than 30 years immersed in "
-                "Moroccan culture, Maïja co-founded Dar Mansour and shapes its "
-                "world of food, design and hospitality. Through her interior and "
-                "creative studio, Eden & Beyond, she designed the restaurant's "
-                "spaces — and it is the wisdom of the Dadas, the women who carried "
-                "Morocco's family recipes across generations, that guides the "
-                "kitchen's slow-cooked philosophy."),
+        "photo_alt": "Maïja Disseau, co-founder of Dar Mansour, and her Moroccan art direction, Koh Phangan",
+        "about": [
+            ("For more than thirty years, Maïja lived in Morocco, where she built a family "
+             "and immersed herself in the country's culture, traditions and way of life. "
+             "During those years she was welcomed into Moroccan homes, learned from families "
+             "across different regions and discovered that Morocco's greatest treasures are "
+             "often passed down through everyday gestures rather than written in books."),
+            ("Her understanding of Moroccan culture extends beyond its cuisine. It embraces "
+             "hospitality, craftsmanship, architecture, music, rituals and the countless "
+             "traditions that shape daily life — a rare perspective on Morocco, not simply as "
+             "a visitor, but as someone who experienced it from within."),
+            ("After studying psychotherapy and working for twelve years as a psychotherapist, "
+             "hypnotherapist and family constellation practitioner, Maïja developed a deep "
+             "appreciation for listening, observation and the human stories behind traditions. "
+             "These qualities continue to shape her writing, which explores not only what "
+             "Morocco is, but why its culture has remained so rich and enduring."),
+            ("In 2022, she and her partner Bruno founded Dar Mansour – Morocco's Kitchen in "
+             "Koh Phangan, Thailand, a restaurant inspired by the warmth of Moroccan family "
+             "hospitality and authentic regional cuisine. Alongside her work with Dar Mansour, "
+             "Maïja is the founder and creative force behind Eden &amp; Beyond, where she "
+             "creates furniture, lighting and mixed-media artworks inspired by memory, "
+             "craftsmanship and the invisible stories carried by objects."),
+            ("Today, through The Dar Mansour Journal, Maïja writes about Moroccan cuisine, "
+             "traditions, craftsmanship and the country's living heritage, drawing on more "
+             "than three decades of personal experience and lifelong curiosity."),
+        ],
+        "expertise": ["Moroccan Culture", "Family Traditions", "Culinary Heritage",
+                      "Craftsmanship", "Architecture &amp; Décor", "Rituals &amp; Storytelling"],
+        "philosophy": ("I don't write recipes to teach people how to cook. I write to preserve "
+                       "the stories, traditions and people behind Morocco's cuisine."),
     },
     {
-        "name": "P'Jae",
-        "role": "Head of Kitchen",
+        "slug": "han-pjae-min",
+        "name": "Han P'Jae Min",
+        "short": "P'Jae",
+        "role": "Partner · Head Chef · Koh Phangan &amp; Thailand Local Expert",
+        "role_short": "Partner · Head Chef · Koh Phangan Local Expert",
+        # She is the primary writer of the Koh Phangan guide universe.
+        "category": "koh-phangan-guide",
+        "tagline": ("The best recommendations come from people who truly live a place every day."),
         "photo": "assets/img/moroccan-couscous-koh-phangan.jpg",
-        "photo_alt": "Slow-cooked Moroccan couscous from the Dar Mansour kitchen led by P'Jae",
-        "bio": ("Dar Mansour's local partner and Head of Kitchen, P'Jae brings "
-                "daily hands-on expertise to the restaurant, translating Moroccan "
-                "traditions into refined, slow-cooked dishes prepared with patience "
-                "and care — rooted in respect for sacred cooking and island "
-                "hospitality."),
+        "photo_alt": "Slow-cooked Moroccan couscous from the Dar Mansour kitchen led by Head Chef P'Jae, Koh Phangan",
+        "about": [
+            ("Born and raised in Thailand, P'Jae has spent her career in hospitality, restaurant "
+             "management and professional kitchens before becoming Partner and Head Chef at "
+             "Dar Mansour."),
+            ("Living and working on Koh Phangan has given her an in-depth understanding of the "
+             "island, its food scene and its evolving community. Every week she explores new "
+             "restaurants, follows local producers, works with suppliers and welcomes travellers "
+             "from around the world."),
+            ("Although Dar Mansour celebrates Moroccan cuisine, her role goes far beyond the "
+             "kitchen. She helps visitors discover the island itself — its neighbourhoods, cafés, "
+             "beaches and restaurants — through first-hand local knowledge gained from daily life "
+             "on Koh Phangan."),
+            ("As Head Chef, she also works closely with Maïja to faithfully reproduce traditional "
+             "Moroccan recipes while adapting them to the realities of sourcing exceptional "
+             "ingredients in Thailand."),
+        ],
+        "expertise": ["Koh Phangan Restaurants", "Koh Phangan Travel", "Thai Hospitality",
+                      "Local Food Scene", "Restaurant Operations", "Sustainable Local Sourcing",
+                      "Thai Ingredients", "Slow Cooking", "Visitor Experience"],
+        "philosophy": ("The best travel advice doesn't come from a list — it comes from living "
+                       "somewhere every day. Every recommendation we publish is based on places "
+                       "we genuinely know, visit and trust."),
+    },
+    {
+        "slug": "bruno-potier",
+        "name": "Bruno Potier",
+        "short": "Bruno Potier",
+        "role": "Co-Founder · Editorial Director · Hospitality Brand Strategist",
+        "role_short": "Co-Founder · Editorial Director",
+        # Bruno is the editorial reviewer across the Journal (no primary byline category).
+        "category": None,
+        "tagline": ("Great hospitality doesn't end when the meal is over. It continues through "
+                    "every story people take home."),
+        "photo": "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg",
+        "photo_alt": "Bruno Potier, co-founder of Dar Mansour, with Maïja in Koh Phangan, Thailand",
+        "about": [
+            ("Bruno Potier is the Co-Founder and Editorial Director of Dar Mansour. For more than "
+             "twenty-five years he has built businesses, brands and hospitality concepts across "
+             "Europe, Asia and North Africa, combining entrepreneurship, strategy and storytelling "
+             "to create lasting customer experiences."),
+            ("His journey has taken him from launching one of Shanghai's most talked-about "
+             "underground music venues, Club dkd, and building an international events and "
+             "marketing agency, to leading marketing strategies across several European markets "
+             "before co-founding Dar Mansour in Koh Phangan, Thailand."),
+            ("He also spent twelve years living and working in Morocco, where he developed a deep "
+             "appreciation for the country's culture, hospitality and entrepreneurial spirit — an "
+             "immersion that helped shape the vision behind Dar Mansour: a brand dedicated to "
+             "sharing Moroccan family traditions, craftsmanship and art de vivre with the world."),
+            ("As Editorial Director of The Dar Mansour Journal, he oversees the publication's "
+             "editorial strategy, ensuring every guide and story combines first-hand experience, "
+             "careful research and genuine cultural authenticity. Working alongside Maïja and "
+             "P'Jae, he helps turn years of lived experience into content that informs, inspires "
+             "and earns readers' trust."),
+        ],
+        "expertise": ["Hospitality Brand Strategy", "Editorial Strategy &amp; Storytelling",
+                      "Customer Experience", "Restaurant Development", "Strategic Partnerships",
+                      "International Business Development", "Multicultural Leadership"],
+        "philosophy": ("The best travel and food stories don't persuade people to visit a place — "
+                       "they help them understand it. Our goal is to create articles that remain "
+                       "valuable long after they're published."),
     },
 ]
+
+# Quick lookup helpers.
+AUTHOR_BY_SLUG = {p["slug"]: p for p in AUTHORS}
+AUTHOR_BY_CATEGORY = {p["category"]: p for p in AUTHORS if p.get("category")}
+
+
+def _author_url(p):
+    return f"{AUTHORS_URL}{p['slug']}/"
 
 # --- Editorial linter -------------------------------------------------------
 # Non-blocking warnings printed at build time, enforcing the Editorial Playbook
@@ -428,7 +535,7 @@ def _about_section(a):
   <aside class="about-journal">
     <p class="about-journal__title">About the Dar Mansour Journal</p>
     <p>{a["about"]}</p>
-    <p style="margin-top:.6rem;"><a class="ilink" href="{AUTHORS_URL}">Meet the team behind the Journal — Maïja &amp; P'Jae {L.ARROW}</a></p>
+    <p style="margin-top:.6rem;"><a class="ilink" href="{AUTHORS_URL}">Meet our editorial team {L.ARROW}</a></p>
   </aside>
 </div></section>'''
 
@@ -450,6 +557,40 @@ def _related_cards(a, all_articles):
     return cards[:3]
 
 
+def byline(a):
+    """Rich editorial byline (writer + reviewers), reflecting the real team
+    workflow — a strong E-E-A-T / GEO signal. Writer is derived from the
+    article's category (Moroccan culture → Maïja, Koh Phangan → P'Jae), unless
+    a front-matter `author` name overrides the display."""
+    writer = AUTHOR_BY_CATEGORY.get(a["category"])
+    bruno = AUTHOR_BY_SLUG.get("bruno-potier")
+    pjae = AUTHOR_BY_SLUG.get("han-pjae-min")
+
+    def link(p):
+        return f'<a class="ilink" href="{_author_url(p)}">{p["short"]}</a>'
+
+    # Writer line. If no mapped author (generic journal post), fall back to the
+    # front-matter author name linking to the team hub.
+    if writer:
+        written = f'Written by {link(writer)} · <span class="byline__role">{writer["role_short"]}</span>'
+    else:
+        written = f'Written by <a class="ilink" href="{AUTHORS_URL}">{a["author"]}</a>'
+
+    creds = []
+    # Recipe review by P'Jae on culinary culture pieces (she is already the
+    # writer on Koh Phangan guides, so no double credit there).
+    if writer and writer["slug"] != "han-pjae-min" and a["slug"] in RECIPE_SLUGS and pjae:
+        creds.append(f'Recipe reviewed by {link(pjae)}')
+    # Editorial direction by Bruno across the Journal.
+    if writer and bruno:
+        creds.append(f'Editorial review by {link(bruno)}')
+    creds_html = (f'<p class="article__credits">{" · ".join(creds)}</p>' if creds else "")
+
+    return (f'<p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time>'
+            f' · {written} · <a class="ilink" href="{a["cat"]["url"]}">{a["cat"]["label"]}</a></p>'
+            + creds_html)
+
+
 def render_article(a, all_articles):
     cat = a["cat"]
     body = L.breadcrumb(("Journal", "blog.html"), (a["title"], None)) + L.subhero(
@@ -457,7 +598,7 @@ def render_article(a, all_articles):
         tall=(a.get("cover_fit") == "portrait"),
         variant=("portrait" if a.get("cover_fit") == "portrait" else None)) + f'''
 <section class="section"><div class="wrap prose reveal">
-  <p class="article__meta"><time datetime="{a["date_iso"]}">{a["date_disp"]}</time> · <a class="ilink" href="{AUTHORS_URL}">{a["author"]}</a> · <a class="ilink" href="{cat["url"]}">{cat["label"]}</a></p>
+  {byline(a)}
 {_quick_guide(a)}
 {a["body_html"]}
 </div></section>
@@ -541,51 +682,135 @@ def render_category(cat, arts):
                   cat["url"], body, og_image=cat["hero"], body_class="journal")
 
 
-def _authors_schema():
+def _strip(text):
+    """Plain text (no HTML entities) for JSON-LD descriptions."""
+    import html as _h
+    return _h.unescape(text)
+
+
+def _person_schema(p, all_articles=None):
     site = L.SITE_URL
-    people = [{
+    data = {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": p["name"],
-        "jobTitle": p["role"],
+        "jobTitle": _strip(p["role"]),
         "image": f'{site}/{p["photo"]}',
-        "description": p["bio"],
-        "url": f"{site}/{AUTHORS_URL}",
-        "worksFor": {"@type": "Organization", "name": "Dar Mansour - Morocco's Kitchen",
-                     "url": site + "/"},
-    } for p in AUTHORS]
-    return "\n".join('<script type="application/ld+json">' + json.dumps(p, ensure_ascii=False) + '</script>'
-                     for p in people)
+        "description": _strip(" ".join(p["about"])),
+        "url": f'{site}/{_author_url(p)}',
+        "knowsAbout": [_strip(x) for x in p["expertise"]],
+        "worksFor": {"@type": "Organization",
+                     "name": "Dar Mansour - Morocco's Kitchen", "url": site + "/"},
+        "sameAs": SAME_AS,
+    }
+    return data
 
 
-def render_authors():
-    """Editorial team / author page — credibility and E-E-A-T for the Journal."""
-    cards = "".join(f'''
-    <article class="author reveal">
+def _authors_hub_schema(all_articles):
+    return "\n".join(
+        '<script type="application/ld+json">'
+        + json.dumps(_person_schema(p, all_articles), ensure_ascii=False) + '</script>'
+        for p in AUTHORS)
+
+
+def _team_cards():
+    """Three linked cards for the editorial-team hub."""
+    return "".join(f'''
+    <a class="author author--card reveal" href="{_author_url(p)}">
       <div class="author__img"><img src="{L._webp(p["photo"])}" alt="{p["photo_alt"]}" loading="lazy"></div>
       <div class="author__body">
         <h2 class="author__name">{p["name"]}</h2>
         <p class="author__role">{p["role"]}</p>
-        <p>{p["bio"]}</p>
+        <p>{p["about"][0]}</p>
+        <span class="textlink">Read full profile {L.ARROW}</span>
       </div>
-    </article>''' for p in AUTHORS)
+    </a>''' for p in AUTHORS)
+
+
+def render_authors(all_articles):
+    """Editorial-team hub (/authors/) — credibility and E-E-A-T for the Journal."""
     intro = ("The Dar Mansour Journal is written by the team behind the restaurant, living "
-             "between Koh Phangan and Morocco. Our island guides and cultural stories are "
-             "shaped by real local knowledge and a lifelong connection to Moroccan cooking, "
-             "and reviewed regularly to stay useful and accurate.")
-    body = L.breadcrumb(("Journal", "blog.html"), ("Authors", None)) + L.subhero(
-        "The Dar Mansour Journal", "The team behind the Journal", intro,
+             "between Koh Phangan and Morocco. Every guide and story draws on real local "
+             "knowledge and a lifelong connection to Moroccan cooking — written by the person "
+             "closest to the subject and reviewed by the rest of the team to stay useful, "
+             "accurate and genuinely helpful.")
+    body = L.breadcrumb(("Journal", "blog.html"), ("Editorial Team", None)) + L.subhero(
+        "The Dar Mansour Journal", "Meet our editorial team", intro,
         "assets/img/maija-art-direction-koh-phangan.jpg",
         "Maïja's art direction and Moroccan décor at Dar Mansour, Koh Phangan") + f'''
-<section class="section"><div class="wrap authors">{cards}</div></section>
+<section class="section"><div class="wrap authors">{_team_cards()}</div></section>
 ''' + L.cta_band(
         "Taste the story around our table",
         "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
         ("Journal", "All Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
         ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, founders of Dar Mansour"),
         ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"))
-    return L.page(
-        "The Dar Mansour Journal — Meet the Team (Maïja &amp; P'Jae)",
-        "Meet the team behind the Dar Mansour Journal: Maïja, co-founder and creative director, and P'Jae, head of kitchen — our Koh Phangan and Moroccan guides.",
+    html = L.page(
+        "Meet Our Editorial Team — The Dar Mansour Journal",
+        "The editorial team behind the Dar Mansour Journal: Maïja Disseau (Moroccan culture), Han P'Jae Min (Koh Phangan local expert) and Bruno Potier (editorial director).",
         AUTHORS_URL, body, og_image="assets/img/maija-art-direction-koh-phangan.jpg",
-        extra_head=_authors_schema(), body_class="journal")
+        extra_head=_authors_hub_schema(all_articles), body_class="journal")
+    return L.to_root_relative(html)
+
+
+def _author_articles(p, all_articles):
+    """Articles this author is the primary writer of — only real, published ones
+    (never invent titles for pages that do not exist)."""
+    if not p.get("category"):
+        return []
+    return [a for a in all_articles if a["category"] == p["category"]]
+
+
+def render_author(p, all_articles):
+    """Individual author profile page (/authors/<slug>/)."""
+    about = "".join(f"<p>{para}</p>" for para in p["about"])
+    expertise = "".join(f"<li>{x}</li>" for x in p["expertise"])
+    arts = _author_articles(p, all_articles)
+    if arts:
+        art_items = "".join(
+            f'<li><a class="ilink" href="{a["url"]}">{a["title"]}</a></li>' for a in arts)
+        articles_block = f'''
+    <h2>Articles by {p["short"]}</h2>
+    <ul class="author__articles">{art_items}</ul>'''
+    elif p["slug"] == "bruno-potier":
+        articles_block = ('\n    <h2>At the Journal</h2>\n    <p>As Editorial Director, Bruno '
+                          'oversees the editorial direction and review of every guide and story '
+                          'in <a class="ilink" href="blog.html">The Dar Mansour Journal</a>, '
+                          'working alongside Maïja and P\'Jae.</p>')
+    else:
+        articles_block = ""
+
+    other = "".join(
+        f'<a class="ilink" href="{_author_url(o)}">{o["name"]}</a>'
+        + (" · " if i < len(AUTHORS) - 2 else "")
+        for i, o in enumerate([x for x in AUTHORS if x["slug"] != p["slug"]]))
+
+    body = L.breadcrumb(("Journal", "blog.html"), ("Editorial Team", AUTHORS_URL),
+                        (p["name"], None)) + L.subhero(
+        p["role"], p["name"], p["tagline"], p["photo"], p["photo_alt"]) + f'''
+<section class="section"><div class="wrap prose reveal">
+    <h2>About {p["short"]}</h2>
+    {about}
+    <h2>Areas of Expertise</h2>
+    <ul class="author__expertise">{expertise}</ul>
+    {articles_block}
+    <blockquote class="author__quote">“{p["philosophy"]}”</blockquote>
+    <p class="author__meet">Meet the rest of the team: {other} · <a class="ilink" href="{AUTHORS_URL}">Editorial Team</a></p>
+</div></section>
+''' + L.cta_band(
+        "Taste the story around our table",
+        "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
+        ("Journal", "All Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+        ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, founders of Dar Mansour"),
+        ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"))
+    seo_title = f'{p["name"]} — {_strip(p["role_short"])} · Dar Mansour Journal'
+    seo_desc = _strip(p["about"][0])
+    if len(seo_desc) > 158:
+        seo_desc = seo_desc[:155].rsplit(" ", 1)[0] + "…"
+    html = L.page(
+        seo_title[:70], seo_desc, _author_url(p), body,
+        og_image=p["photo"],
+        extra_head='<script type="application/ld+json">'
+                   + json.dumps(_person_schema(p, all_articles), ensure_ascii=False) + '</script>',
+        body_class="journal")
+    return L.to_root_relative(html)

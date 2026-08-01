@@ -794,8 +794,16 @@ for _a in ARTICLES:
 for _key, _cat, _arts in _journal.universe_hubs(ARTICLES):
     pages[_cat["url"]] = _journal.render_category(_cat, _arts)
 
-# Journal author / editorial-team page (credibility + E-E-A-T).
-pages["journal-authors.html"] = _journal.render_authors()
+# Journal editorial-team hub (/authors/) + one profile page per author
+# (/authors/<slug>/). Strong E-E-A-T / GEO signal: named, described experts.
+pages["authors/index.html"] = _journal.render_authors(ARTICLES)
+for _p in _journal.AUTHORS:
+    pages[f"authors/{_p['slug']}/index.html"] = _journal.render_author(_p, ARTICLES)
+
+# Keep the old (indexed) team URL alive: redirect it to the new hub so no link
+# equity or bookmark is lost.
+pages["journal-authors.html"] = L.redirect_page(
+    "authors/", "The Dar Mansour Journal — Editorial Team")
 
 
 # ============================================================ IMAGE DIMENSIONS
@@ -875,7 +883,9 @@ lint_static_pages(pages)
 
 # ============================================================ WRITE
 for fname, html in pages.items():
-    with open(os.path.join(OUT, fname), "w", encoding="utf-8") as f:
+    path = os.path.join(OUT, fname)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
         f.write(add_img_dims(html))
     print("wrote", fname)
 
@@ -906,7 +916,11 @@ if L.NOINDEX:
 else:
     today = date.today().isoformat()
     def _loc(fn):
-        return SITE + "/" if fn == "index.html" else f"{SITE}/{fn}"
+        if fn == "index.html":
+            return SITE + "/"
+        if fn.endswith("/index.html"):          # sub-directory page -> clean URL
+            return f"{SITE}/{fn[:-len('index.html')]}"
+        return f"{SITE}/{fn}"
     # Accurate <lastmod> per URL (freshness signal for Google, aligned with the
     # JSON-LD dateModified philosophy — never a blanket "today" on every deploy):
     #  - Journal article pages: the real git date of their markdown source
@@ -925,7 +939,8 @@ else:
         return _art_moddate.get(fn) or _gen_date
     _urls = "".join(
         f"  <url><loc>{_loc(fn)}</loc><lastmod>{_lastmod(fn)}</lastmod></url>\n"
-        for fn in pages)
+        for fn in pages
+        if 'name="robots" content="noindex' not in pages[fn])
     with open(sitemap_path, "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
