@@ -314,7 +314,7 @@ def footer():
         <p>A soulful Moroccan slow food sanctuary on the west coast of Koh Phangan. Rooted in tradition, slow cooked with care.</p>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h3>Explore</h3>
         <ul>
           <li><a href="index.html">The Experience</a></li>
           <li><a href="moroccan-slow-dining-koh-phangan.html">Concept</a></li>
@@ -325,7 +325,7 @@ def footer():
         </ul>
       </div>
       <div>
-        <h4>Discover</h4>
+        <h3>Discover</h3>
         <ul>
           <li><a href="dar-mansour-founders-vision.html">Founders &amp; Vision</a></li>
           <li><a href="moroccan-interior-art-koh-phangan.html">Artistic Direction</a></li>
@@ -339,7 +339,7 @@ def footer():
         </ul>
       </div>
       <div>
-        <h4>Visit &amp; Contact</h4>
+        <h3>Visit &amp; Contact</h3>
         <address>
           <p><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road, Sri Thanu area<br>Koh Phangan 84280, Thailand</a></p>
           <p>Tue – Sat · 7:00–10:30 PM<br>Closed Sun &amp; Mon</p>

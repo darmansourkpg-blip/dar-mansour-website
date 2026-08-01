@@ -370,7 +370,7 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 /* ---------- 18. Footer ---------- */
 .footer { background: var(--green-darker); color: var(--on-dark); padding-top: clamp(4rem, 8vw, 6rem); }
 .footer__grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 2.5rem 3rem; padding-bottom: 3.5rem; border-bottom: 1px solid rgba(244,239,228,.14); }
-.footer h4 { color: #fff; font-family: var(--sans); font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 1.3rem; font-weight: 700; }
+.footer h3 { color: #fff; font-family: var(--sans); font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 1.3rem; font-weight: 700; }
 .footer__brand .brand__name { color: #fff; font-size: 1.6rem; }
 .footer__brand .brand__sub { color: var(--green-tint-2); }
 .footer__logo { display: block; width: clamp(180px, 42%, 215px); height: auto; }
