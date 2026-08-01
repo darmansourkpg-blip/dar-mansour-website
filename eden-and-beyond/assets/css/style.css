@@ -502,6 +502,25 @@ body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 .artstrip__i--round { border-radius: 50%; }
 .artstrip__i img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
 .artstrip__i:hover img { transform: scale(1.05); }
+
+/* Individual piece page (Tables, Kenza/Kenzo…) — image + full caption */
+.piece { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.piece__media img { width: 100%; border-radius: 4px; display: block; }
+.piece__media--round img { border-radius: 50%; aspect-ratio: 1/1; object-fit: cover; }
+.piece__media--tall img { aspect-ratio: 3/4; object-fit: cover; }
+.piece__media .ph { aspect-ratio: 1/1; border-radius: 4px; }
+.piece__body h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); margin: .8rem 0 1.4rem; }
+.piece__caption p { font-size: clamp(1.12rem, 1.7vw, 1.4rem); line-height: 1.55; color: var(--ink); max-width: 48ch; }
+.piece__caption p + p { margin-top: 1.05rem; }
+.piece__sig { margin-top: 1.8rem; font-family: 'Anton', 'Arial Narrow', sans-serif; text-transform: uppercase; font-size: 1.3rem; letter-spacing: .01em; color: var(--ink); }
+.piece__sig .fbox__stars { color: var(--logo-red); font-size: .6em; transform: translateY(-.22em); display: inline-block; margin: 0 .04em; }
+.piece__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+@media (max-width: 820px) { .piece { grid-template-columns: 1fr; gap: 1.8rem; } .piece__media { max-width: 520px; } }
+/* Piece pages have no hero: make the breadcrumb static & dark (not the white overlay) */
+body.page-piece .breadcrumb { position: static; padding-top: calc(var(--header-h) + 1.2rem); padding-bottom: 0; }
+body.page-piece .breadcrumb ol, body.page-piece .breadcrumb a { color: var(--muted); }
+body.page-piece .breadcrumb a:hover { color: var(--accent); }
+body.page-piece .breadcrumb li[aria-current] { color: var(--ink); }
 @media (max-width: 720px) { .artstrip { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------- 20. Journal ---------- */

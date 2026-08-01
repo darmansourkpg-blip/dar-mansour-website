@@ -628,7 +628,9 @@ def piece(slug, title, medium, shape, tint, img=None):
         media = f'<img src="{src}" alt="{title} — {medium}, Eden &amp; Beyond" loading="lazy">'
     else:
         media = ph(title, tint)
-    return f'''<a class="{cls} reveal" href="contact.html" id="{slug}">
+    # a piece with its own caption page links to it; otherwise to the enquiry form
+    href = f"{slug}.html" if slug in CAPTION_SLUGS else "contact.html"
+    return f'''<a class="{cls} reveal" href="{href}" id="{slug}">
       <div class="art__media">{media}</div>
       <div class="art__cap"><span class="art__title">{title}</span>
       <span class="art__meta">{medium}</span></div>
@@ -653,9 +655,9 @@ COLLECTION = [
         ("ysl",                    "YSL",               "Limited-edition table", "",           "ph--teal",     "rue-yves-saint-laurent"),
      ]),
     ("lighting", "Lighting",
-     "Light as atmosphere — pieces where the object matters as much as the glow.", [
-        ("fez-lamp",       "Fez Lamp",      "Lighting · mixed-media object",  "art--tall",  "ph--poppy"),
-        ("tassel-light",   "Tassel Light",  "Lighting · bespoke commission",  "art--tall",  "ph--dark"),
+     "Light as atmosphere — pieces where the object matters as much as the glow. Kenza and Kenzo are a pair.", [
+        ("kenza",  "Kenza",  "Lighting · mixed-media lamp",  "art--tall",  "ph--poppy"),
+        ("kenzo",  "Kenzo",  "Lighting · mixed-media lamp",  "art--tall",  "ph--dark"),
      ]),
     ("objects", "Objects",
      "Transformed objects and decorative pieces — the small things that give a room its soul.", [
@@ -668,6 +670,164 @@ COLLECTION = [
         ("mural",          "Mural",         "Wall piece · bespoke commission", "",  "ph--magenta"),
      ]),
 ]
+
+
+# ---- Per-piece caption pages (Maija's texts, verbatim). Blank line = new stanza.
+CAPTIONS = {
+    "hubb": dict(title="Hubb", kicker="Limited-edition table", img="poppy-queen", shape="round",
+        lead="She looks soft. She isn't.", text="""She looks soft.
+She isn't.
+
+Crowned in silence, wrapped in beauty — but don't get too close.
+
+This piece lives in the tension: delicacy and danger, ritual and rebellion, a place where form becomes feeling.
+
+Not just a table. A presence."""),
+    "flash": dict(title="Flash", kicker="Limited-edition table", img="wondermint-camel", shape="",
+        lead="Extra fresh. Extra cool. Not what you think.", text="""Extra fresh.
+Extra cool.
+Not what you think.
+
+Minty perfection. Smooth attitude. Zero flaws. That's the promise.
+
+Reality? A little weirder. A little louder. A lot less obedient.
+
+Because perfection is boring. And boxes are meant to be chewed."""),
+    "babouche": dict(title="Babouche", kicker="Limited-edition table", img="babouche-mandala", shape="",
+        lead="Get closer. And then try to look away.", text="""Get closer.
+And then try to look away.
+
+A ritual of repetition. Colour. Pattern. Pulse.
+
+What seems controlled starts to move. What looks playful becomes obsessive.
+
+This is where order turns into trance — where beauty loops until it takes over.
+
+Not decoration. A frequency."""),
+    "qaf-in-the-oasis": dict(title="Qaf in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="round",
+        lead="Follow the line. And then — stop.", text="""Follow the line.
+And then — stop.
+
+A command in the middle of the journey. A break in the flow.
+
+But what if stopping is just another way of moving?
+
+Between desert and signal, tradition and interruption, this piece plays with direction — and refuses to obey it."""),
+    "mona": dict(title="Mona", kicker="Limited-edition table", img="mona-lisa-fez", shape="round",
+        lead="Perfect smile. Perfect pose. Perfect cage.", text="""Perfect smile.
+Perfect pose.
+Perfect cage.
+
+So what happens when she decides to move?
+
+A shift. A clash. A quiet rebellion.
+
+Not ruined. Because timeless doesn't mean untouchable. And beauty was never meant to behave."""),
+    "framed": dict(title="Framed", kicker="Limited-edition table", img="chefchaouen-framed", shape="",
+        lead="Put it in a frame and suddenly it matters.", text="""Put it in a frame and suddenly it matters.
+
+Gold edges. Perfect lines. Now you're supposed to admire it.
+
+But what really changed? The view — or the way you were told to see it?
+
+Because value is often just a story. And rules are just well-decorated limits."""),
+    "ysl": dict(title="YSL", kicker="Limited-edition table", img="rue-yves-saint-laurent", shape="",
+        lead="A real one. Rue Yves Saint Laurent.", text="""A real one. Rue Yves Saint Laurent.
+
+But even icons who built their legacy in gardens and walls don't get to own the story forever.
+
+Because places evolve. Meanings shift. And what was once sacred can be taken somewhere else entirely.
+
+Not imitation. A continuation — with attitude."""),
+    "divine-touch": dict(title="Divine Touch", kicker="Limited-edition table", img="creation-of-mint-tea", shape="round",
+        lead="An offering. Or a command.", text="""An offering.
+Or a command.
+
+Sweetness in one hand. Freshness in the other.
+
+Take it. Or wait to be allowed.
+
+A quiet game of control, where desire isn't rushed — it's held.
+
+Because the most powerful exchanges aren't given freely. They're felt, and surrendered to."""),
+    "a-tea-in-the-desert": dict(title="A Tea in the Desert", kicker="Limited-edition table", img="teapot-camel", shape="",
+        lead="You think you know the story. But look again.", text="""Or is it?
+
+Wrapped in colours, dressed in codes — you think you know the story.
+
+But look again.
+
+Because style isn't a costume. And identity isn't a trend. It's worn."""),
+    "kenza": dict(title="Kenza", kicker="Lighting · mixed-media lamp", img="kenza", shape="tall",
+        lead="Handle with care.", text="""Handle with care.
+
+She is stitched together from old stories, other people's expectations, stamps of approval, souvenirs of who she was supposed to be.
+
+Then she switched on.
+
+And suddenly, all that remained… was her light."""),
+    "kenzo": dict(title="Kenzo", kicker="Lighting · mixed-media lamp", img="kenzo", shape="tall",
+        lead="Some love stories don't need words. Just good lighting.", text="""Kenza switched on.
+He stayed.
+
+Not to save her. Not to lead. Just to burn at the same intensity.
+
+Some love stories don't need words.
+Just good lighting."""),
+}
+CAPTION_SLUGS = set(CAPTIONS)
+
+
+def _caption_html(text):
+    stanzas = text.split("\n\n")
+    out = []
+    for st in stanzas:
+        lines = "<br>".join(st.split("\n"))
+        out.append(f"<p>{lines}</p>")
+    return "\n".join(out)
+
+
+def build_piece_pages():
+    order = list(CAPTIONS.keys())
+    for i, slug in enumerate(order):
+        d = CAPTIONS[slug]
+        src = find_img(d["img"])
+        media = (f'<img src="{src}" alt="{d["title"]} — {d["kicker"]}, Eden &amp; Beyond by Maija" fetchpriority="high">'
+                 if src else ph(d["title"]))
+        media_cls = "piece__media" + (" piece__media--round" if d["shape"] == "round" else
+                                      " piece__media--tall" if d["shape"] == "tall" else "")
+        nxt = order[(i + 1) % len(order)]
+        nd = CAPTIONS[nxt]
+        body = f'''
+{L.breadcrumb(("Collection", "collection.html"), (d["title"], None))}
+<section class="section" style="padding-top:1.4rem;"><div class="wrap">
+  <div class="piece">
+    <div class="{media_cls} reveal">{media}</div>
+    <div class="piece__body reveal" data-delay="1">
+      <span class="eyebrow eyebrow--red">{d["kicker"]}</span>
+      <h1>{d["title"]}</h1>
+      <div class="piece__caption">{_caption_html(d["text"])}</div>
+      <p class="piece__sig">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> the Box</p>
+      <div class="piece__actions">
+        <a class="btn btn--primary" href="contact.html">Enquire About This Piece {A}</a>
+        <a class="btn btn--ghost" href="collection.html">Back to the Collection</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap center reveal">
+  <span class="eyebrow eyebrow--red">Next piece</span>
+  <h2 style="margin-top:.6rem;"><a href="{nxt}.html" style="color:inherit;">{nd["title"]} {A}</a></h2>
+</div></section>
+'''
+        pages[f"{slug}.html"] = L.page(
+            title=f'{d["title"]} — {d["kicker"]} | Eden & Beyond',
+            desc=f'{d["title"]} by Maija, {d["kicker"].lower()} from the Eden & Beyond collection. {d["lead"]}',
+            canonical=f"{slug}.html",
+            body=body,
+            body_class="page-collection page-piece",
+        )
 
 
 def collection_section(anchor, title, blurb, pieces):
@@ -892,7 +1052,7 @@ landing(
               "body": ("<p>An object should tell a story. Eden &amp; Beyond designs bespoke furniture, lighting and decorative objects — "
                        "either as part of a larger project or as standalone commissions. Each piece is designed with purpose, made to be "
                        "kept for a lifetime.</p>"
-                       '<p>Our <em>Fez Lamp</em> — a collaged bust crowned with a tasselled fez shade — is one example of how a single '
+                       '<p>Our <em>Kenza</em> lamp — a collaged bust crowned with a tasselled fez shade — is one example of how a single '
                        'object can carry a whole atmosphere. See it and other pieces in <a href="collection.html">the Collection</a>.</p>')},
     wwd_title="What we design",
     wwd_items=[
@@ -969,8 +1129,9 @@ SITEMAP_ORDER = [
 
 def write_sitemap():
     today = datetime.date.today().isoformat()
+    order = list(SITEMAP_ORDER) + [(f"{s}.html", "0.6") for s in CAPTIONS]
     urls = ""
-    for name, prio in SITEMAP_ORDER:
+    for name, prio in order:
         loc = f"{L.SITE_URL}/{'' if name == 'index.html' else name}"
         urls += (f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod>"
                  f"<priority>{prio}</priority></url>\n")
@@ -1028,6 +1189,7 @@ def write_llms():
 
 
 if __name__ == "__main__":
+    build_piece_pages()
     written = write_all()
     write_sitemap()
     write_robots()
