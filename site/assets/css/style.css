@@ -734,6 +734,9 @@ body.lb-open { overflow: hidden; }
 .related__card:hover img[src*="Dar-Mansour-1"] { transform: scale(1.36); transform-origin: center bottom; }
 .related__card span { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; opacity: .85; display: block; margin-bottom: .3rem; }
 .related__card h3 { color: #fff; font-size: 1.35rem; }
+/* On journal/author pages, body.journal h3 forces a dark ink colour — keep the
+   related-card titles white over their photo overlay. */
+body.journal .related__card h3 { color: #fff; }
 
 @media (max-width: 900px) {
   .steps { grid-template-columns: 1fr; }
