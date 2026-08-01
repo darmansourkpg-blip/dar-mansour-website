@@ -50,6 +50,29 @@ def _webp(path):
                 return base + ".webp"
     return path
 
+import re as _re
+
+# Pages that live in a sub-directory (e.g. /authors/maija-disseau/) cannot use the
+# site's relative asset/link paths — they would resolve against the sub-directory.
+# This rewrites in-page relative href/src/url() references to root-absolute (/…),
+# which work from any depth. Absolute URLs, anchors, mailto/tel and data URIs are
+# left untouched. Applied only to sub-directory pages.
+_ROOT_SKIP = ("http://", "https://", "//", "/", "#", "mailto:", "tel:", "data:")
+
+
+def _root_abs(u):
+    return u if u.startswith(_ROOT_SKIP) else "/" + u
+
+
+def to_root_relative(html):
+    html = _re.sub(r'\b(href|src)="([^"]*)"',
+                   lambda m: f'{m.group(1)}="{_root_abs(m.group(2))}"', html)
+    # subhero backdrop uses url(&quot;assets/…&quot;)
+    html = _re.sub(r'url\(&quot;([^&]*)&quot;\)',
+                   lambda m: f'url(&quot;{_root_abs(m.group(1))}&quot;)', html)
+    return html
+
+
 WA_ICON = ('<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 '
            '4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 '
            '0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.3.5-.5.7-.7 1-.2.2-.3.4-.1.7.2.3.9 1.5 '
@@ -311,6 +334,7 @@ def footer():
           <li><a href="best-moroccan-restaurant-world-press.html">Recognition</a></li>
           <li><a href="moroccan-restaurant-reviews-koh-phangan.html">Reviews</a></li>
           <li><a href="blog.html">Journal &amp; Stories</a></li>
+          <li><a href="authors/">Editorial Team</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
       </div>
@@ -343,3 +367,16 @@ def footer():
 
 def page(title, desc, canonical, body, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra_head="", body_class=""):
     return head(title, desc, canonical, og_image, extra_head, body_class) + header() + "\n<main id=\"top\">\n" + body + "\n</main>\n" + footer()
+
+
+def redirect_page(target, title="Dar Mansour"):
+    """Minimal client-side redirect stub for a URL that has moved. Points its
+    canonical at the new URL and links to it (so bots follow), stays out of the
+    sitemap logic by carrying noindex."""
+    url = f"{SITE_URL}/{target}"
+    return (f'<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
+            f'<title>{title}</title><meta name="robots" content="noindex,follow">'
+            f'<link rel="canonical" href="{url}">'
+            f'<meta http-equiv="refresh" content="0; url={url}">'
+            f'</head><body><p>This page has moved to '
+            f'<a href="{url}">{url}</a>.</p></body></html>')
