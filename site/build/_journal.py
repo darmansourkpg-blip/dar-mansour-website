@@ -550,7 +550,7 @@ def _related_cards(a, all_articles):
     fallbacks = [
         ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
         ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"),
-        ("Journal", "More Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+        ("Journal", "More Stories", "blog.html", "assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg", "Aerial view of a turquoise Koh Phangan bay — stories from The Dar Mansour Journal"),
     ]
     i = 0
     while len(cards) < 3 and i < len(fallbacks):
@@ -677,7 +677,7 @@ def render_category(cat, arts):
         arts, show_header=False) + L.cta_band(
         "Come and live the story",
         "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
-        ("Journal", "All Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+        ("Journal", "All Stories", "blog.html", "assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg", "Aerial view of a turquoise Koh Phangan bay — stories from The Dar Mansour Journal"),
         ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"),
         ("Experience", "The Experience", "index.html", "assets/img/moroccan-garden-dining-koh-phangan.jpg", "Garden dining"))
     return L.page(cat.get("seo_title") or cat["title"],
@@ -746,7 +746,7 @@ def render_authors(all_articles):
 ''' + L.cta_band(
         "Taste the story around our table",
         "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
-        ("Journal", "All Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+        ("Journal", "All Stories", "blog.html", "assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg", "Aerial view of a turquoise Koh Phangan bay — stories from The Dar Mansour Journal"),
         ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, founders of Dar Mansour"),
         ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"))
     html = L.page(
@@ -804,7 +804,7 @@ def render_author(p, all_articles):
 ''' + L.cta_band(
         "Taste the story around our table",
         "The best chapters are written over a slow Moroccan dinner. Reserve your evening at Dar Mansour.") + L.related(
-        ("Journal", "All Stories", "blog.html", "assets/img/moroccan-zellige-wall-art-koh-phangan.jpg", "Zellige wall art"),
+        ("Journal", "All Stories", "blog.html", "assets/uploads/where-to-watch-the-sunset-in-koh-phangan2.jpg", "Aerial view of a turquoise Koh Phangan bay — stories from The Dar Mansour Journal"),
         ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, founders of Dar Mansour"),
         ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/img/moroccan-couscous-koh-phangan.jpg", "Couscous"))
     seo_title = f'{p["name"]} — {_strip(p["role_short"])} · Dar Mansour Journal'
