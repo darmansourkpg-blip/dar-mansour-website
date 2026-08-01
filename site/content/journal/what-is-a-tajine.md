@@ -39,7 +39,7 @@ Few dishes are as closely associated with Morocco as the tajine.
 
 The word tajine refers to two things at once: the earthenware cooking vessel and the slow-cooked meal prepared inside it. For centuries, families across Morocco have used this simple clay pot to transform everyday ingredients into rich, deeply flavoured meals that are meant to be shared.
 
-Although every region has its own recipes, the philosophy remains the same: fresh ingredients, aromatic spices, patience and slow cooking.
+Although every region has its own recipes, the philosophy remains the same: fresh ingredients, aromatic spices, patience and slow cooking. The tajine is one chapter in a much larger story — our [complete guide to Moroccan cuisine](journal-moroccan-cuisine-guide.html) explores where it fits among the country's iconic dishes.
 
 Unlike many stews, a traditional tajine isn't about heavy sauces or complicated techniques. It relies on time. As the ingredients cook gently together, their flavours gradually blend into a dish that is both comforting and remarkably balanced.
 

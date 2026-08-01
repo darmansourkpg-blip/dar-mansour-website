@@ -63,7 +63,7 @@ Every family had its own version of [a tajine](journal-what-is-a-tajine.html). I
 
 Rather than following precise measurements, the Dadas cooked by intuition. They tasted. Adjusted. Waited. Then tasted again. Cooking was never rushed, because flavour itself needs time.
 
-Their influence can still be found throughout Moroccan cuisine today — not because they signed famous cookbooks, but because they quietly shaped the flavours that millions of Moroccans continue to recognise as home.
+Their influence can still be found throughout [Moroccan cuisine](journal-moroccan-cuisine-guide.html) today — not because they signed famous cookbooks, but because they quietly shaped the flavours that millions of Moroccans continue to recognise as home.
 
 <figure class="figc"><img src="assets/uploads/dada-cooking.webp" alt="A Dada preparing a Moroccan meal surrounded by tajines and fresh produce" loading="lazy"><figcaption>Cooking by instinct — a pinch, a taste, a patience no recipe can teach.</figcaption></figure>
 

@@ -39,7 +39,7 @@ Ask anyone to name Morocco's most famous dish and many will immediately think of
 
 For centuries, couscous has been at the heart of Moroccan homes. It marks the rhythm of the week, brings generations together around one table and accompanies both joyful celebrations and quieter family gatherings.
 
-Its origins date back many centuries to the Amazigh (Berber) peoples of North Africa, who developed the techniques of preparing and steaming semolina long before couscous became known around the world. Over time, every region of Morocco adopted the dish, enriching it with its own traditions, ingredients and family recipes.
+Its origins date back many centuries to the Amazigh (Berber) peoples of North Africa, who developed the techniques of preparing and steaming semolina long before couscous became known around the world — one of the founding traditions we trace in our [complete guide to Moroccan cuisine](journal-moroccan-cuisine-guide.html). Over time, every region of Morocco adopted the dish, enriching it with its own traditions, ingredients and family recipes.
 
 In Morocco, couscous is never simply a side dish. It is the meal itself — and, perhaps more importantly, a moment of sharing.
 
