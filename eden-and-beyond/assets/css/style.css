@@ -521,6 +521,17 @@ body.page-piece .breadcrumb { position: static; padding-top: calc(var(--header-h
 body.page-piece .breadcrumb ol, body.page-piece .breadcrumb a { color: var(--muted); }
 body.page-piece .breadcrumb a:hover { color: var(--accent); }
 body.page-piece .breadcrumb li[aria-current] { color: var(--ink); }
+/* safety: inline arrows inside headings must never blow up to full size */
+h1 svg, h2 svg, h3 svg, h4 svg { width: .78em; height: .78em; vertical-align: -.02em; }
+
+/* "Next piece" footer link on a piece page */
+.piece-next { display: inline-block; border-top: 1px solid var(--line); padding-top: 1.4rem; text-align: left; }
+.piece-next .eyebrow { display: block; margin-bottom: .5rem; }
+.piece-next__row { display: inline-flex; align-items: center; gap: .7rem; }
+.piece-next__title { font-family: var(--serif); font-weight: 600; font-size: clamp(1.6rem, 3vw, 2.4rem); letter-spacing: -.02em; color: var(--ink); transition: color .3s var(--ease); }
+.piece-next svg { width: 24px !important; height: 24px !important; color: var(--logo-red); transition: transform .3s var(--ease); }
+.piece-next:hover .piece-next__title { color: var(--logo-red); }
+.piece-next:hover svg { transform: translateX(6px); }
 @media (max-width: 720px) { .artstrip { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------- 20. Journal ---------- */

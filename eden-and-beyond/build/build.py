@@ -816,9 +816,11 @@ def build_piece_pages():
   </div>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap center reveal">
-  <span class="eyebrow eyebrow--red">Next piece</span>
-  <h2 style="margin-top:.6rem;"><a href="{nxt}.html" style="color:inherit;">{nd["title"]} {A}</a></h2>
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <a class="piece-next reveal" href="{nxt}.html">
+    <span class="eyebrow eyebrow--red">Next piece</span>
+    <span class="piece-next__row"><span class="piece-next__title">{nd["title"]}</span>{A}</span>
+  </a>
 </div></section>
 '''
         pages[f"{slug}.html"] = L.page(
