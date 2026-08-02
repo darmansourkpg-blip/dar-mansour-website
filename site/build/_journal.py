@@ -172,7 +172,7 @@ AUTHORS = [
             ("His journey has taken him from launching one of Shanghai's most talked-about "
              "underground music venues, Club dkd, to founding Jetlag Prod, a Shanghai-based "
              "events and marketing agency specialising in luxury brands, where he produced "
-             "events for international names such as Moët &amp; Chandon, Hennessy, Nike and Pepsi. "
+             "events for international names such as Moët &amp; Chandon, Hennessy, Dom Pérignon and Hilton Hotels. "
              "He later led marketing strategies across several European markets before "
              "co-founding Dar Mansour in Koh Phangan, Thailand."),
             ("He also spent twelve years living and working in Morocco, where he developed a deep "
