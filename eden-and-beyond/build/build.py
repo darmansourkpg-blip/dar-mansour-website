@@ -8,6 +8,7 @@ import datetime
 import os
 import re
 import sys
+from urllib.parse import quote
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -787,6 +788,15 @@ def _caption_html(text):
     return "\n".join(out)
 
 
+def _piece_mailto(title, kicker):
+    """Acquiring a Collection piece is a direct enquiry, not a project brief —
+    open a pre-filled email to the studio instead of the project form."""
+    subject = f"Collection enquiry — {title}"
+    body = (f'Hello Eden & Beyond,\n\nI would like to enquire about "{title}" ({kicker}) from your '
+            f'collection — availability, editions and price.\n\nThank you.')
+    return f"mailto:{L.EMAIL}?subject={quote(subject)}&body={quote(body)}"
+
+
 def build_piece_pages():
     order = list(CAPTIONS.keys())
     for i, slug in enumerate(order):
@@ -809,7 +819,7 @@ def build_piece_pages():
       <div class="piece__caption">{_caption_html(d["text"])}</div>
       <p class="piece__sig">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> the Box</p>
       <div class="piece__actions">
-        <a class="btn btn--primary" href="contact.html">Enquire About This Piece {A}</a>
+        <a class="btn btn--primary" href="{_piece_mailto(d["title"], d["kicker"])}">Enquire About This Piece {A}</a>
         <a class="btn btn--ghost" href="collection.html">Back to the Collection</a>
       </div>
     </div>
@@ -848,6 +858,9 @@ collection_nav = " · ".join(
     f'<a class="ilink" href="#{a}">{t}</a>' for a, t, _, _ in COLLECTION)
 collection_sections = "\n".join(collection_section(*c) for c in COLLECTION)
 _col_cls, _col_media = subhero_media("hero-collection")
+_col_mailto = ("mailto:" + L.EMAIL + "?subject=" + quote("Collection enquiry") + "&body="
+               + quote("Hello Eden & Beyond,\n\nI would like to enquire about a piece from your collection "
+                       "— availability, editions and price.\n\nThank you."))
 collection_body = f'''
 {L.breadcrumb(("Collection", None))}
 {L.subhero(
@@ -868,15 +881,20 @@ collection_body = f'''
 {collection_sections}
 
 <section class="section" style="padding-top:0;"><div class="wrap wrap--narrow center reveal">
-  <p style="color:var(--muted);font-size:.86rem;">Titles, media and dimensions are working placeholders — final photography and captions to
-  be added. For availability, editions, pricing or commissions, <a class="ilink" href="contact.html">get in touch</a>.</p>
+  <p style="color:var(--muted);font-size:.86rem;">Furniture, objects and wall pieces beyond the tables are shown on request.
+  Dimensions, editions and pricing are shared by email — <a class="ilink" href="{_col_mailto}">enquire about a piece</a>.</p>
 </div></section>
 
-{L.cta_band(
-    title="Found a piece you love — or want your own?",
-    text="Eden & Beyond creates bespoke furniture, lighting and objects for private collectors and hospitality projects. Tell us what you have in mind.",
-    btn_label="Enquire About a Piece",
-)}
+<section class="section book"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow eyebrow--red">The Collection</span>
+  <h2>Found a piece you love —<br>or want your own?</h2>
+  <p class="lead">Every piece is one-off or limited edition. Enquire for availability, editions and price —
+  or commission something made entirely for your space.</p>
+  <div class="book__actions">
+    <a class="btn btn--primary" href="{_col_mailto}">Enquire About a Piece {A}</a>
+    <a class="btn btn--ghost" href="contact.html">Start a Full Project</a>
+  </div>
+</div></section>
 '''
 pages["collection.html"] = L.page(
     title="The Collection — Bespoke Furniture, Lighting & Objects | Eden & Beyond",
