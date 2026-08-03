@@ -176,6 +176,11 @@ home_body = f'''
     <a class="reveal" data-delay="2" href="assets/img/moroccan-zellige-fountain-koh-phangan.webp"><img src="assets/img/moroccan-zellige-fountain-koh-phangan.webp" alt="Brass tap on a green zellige mosaic fountain at Dar Mansour" loading="lazy"></a>
   </div>
 </div></section>
+''' + _journal.render_index_cards(ARTICLES[:3], eyebrow="From the Journal",
+    heading="Stories &amp; island guides") + '''
+<section class="section" style="padding-top:0;"><div class="wrap center reveal">
+  <a class="textlink" href="blog.html">Explore the Journal ''' + A + '''</a>
+</div></section>
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
     "Reservations are highly recommended, with main dishes pre-ordered via WhatsApp — ideally 5 hours ahead of your booking. Tell us of any allergies or dietary needs — we'll do our best to adapt while staying true to our recipes.")
 
