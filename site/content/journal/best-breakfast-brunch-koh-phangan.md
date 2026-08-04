@@ -264,7 +264,7 @@ Bubba's Roastery · What's Cup!
 
 ### Breakfast in Thong Sala
 
-Bubba's Thong Sala · Nira's Home Bakery.
+Bubba's Thong Sala · Nira's Home Bakery · Croissant & Ko. More in our [Thong Sala food guide](journal-where-to-eat-thong-sala-koh-phangan.html).
 
 ### Breakfast in Chaloklum
 
