@@ -658,7 +658,7 @@ Just south of Hin Kong, peaceful coastal scenery with some of the island's most 
 The island's wellness hub, where healthy cafés, yoga studios and international restaurants make one of Koh Phangan's most lively food scenes. Great for breakfast, lunch or a relaxed dinner.<br>_Don't miss:_ Restaurant Sunshine · Sonolito Thai Food · Dar Mansour – Morocco's Kitchen · The Lakehouse · Grasshopper Beach Bar (Zen Beach) · Umami Ramen & Sushi.<br>→ Read our full guide: [Where to Eat in Sri Thanu](journal-where-to-eat-sri-thanu.html).
 
 ### Restaurants in Thong Sala
-The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food.<br>_Don't miss:_ DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.
+The main town, with the island's widest range — chef-led tasting menus, family-run kitchens, lively markets and casual street food.<br>_Don't miss:_ DAO by Chef Nir Mesika · La Ceviche's – Ceviche Bar · No Name Kitchen Phangan · Phantip Night Market · SnooZe Sinful Dining.<br>→ Full list in our [Thong Sala food guide](journal-where-to-eat-thong-sala-koh-phangan.html).
 
 ### Restaurants in Baan Tai
 South of Thong Sala, known for beachfront cafés, relaxed brunch spots and an easy-going feel.<br>_Don't miss:_ Fisherman's Restaurant & Bar · SAGE Breakfast & More · Seasalt & Sage · Ban Tai Night Market · Chacha Coffee.

@@ -191,7 +191,7 @@ Thai Element · Restaurant Sunshine · TORTALN Thai Isan Food. *(More in our [Sr
 Mama KOP. *(More in our [Hin Kong food guide](journal-where-to-eat-hin-kong.html).)*
 
 ### Thai Restaurants in Thong Sala
-Muai's Thai Traditional Cooking Academy & Restaurant · No Name Kitchen Phangan · At Chiang Mai.
+Muai's Thai Traditional Cooking Academy & Restaurant · No Name Kitchen Phangan · At Chiang Mai. See our full [Thong Sala food guide](journal-where-to-eat-thong-sala-koh-phangan.html) for cafés, seafood and more.
 
 ### Thai Restaurants in Baan Tai
 Auntie's Restaurant · Krua Thai.
