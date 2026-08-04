@@ -1,7 +1,7 @@
 ---
 title: "Moroccan Cuisine: The Complete Guide to Traditional Food & Culinary Heritage"
 seo_title: "Moroccan Cuisine: The Complete Guide to Traditional Food"
-description: "A complete guide to Moroccan cuisine: its history, regional traditions, iconic dishes like tagine and couscous, key spices and the hospitality behind every meal."
+description: "A complete guide to Moroccan cuisine: its history, regional traditions, iconic dishes like tagine and couscous, spices and the hospitality behind every meal."
 date: 2026-08-01
 author: The Dar Mansour Journal
 category: moroccan-culture
