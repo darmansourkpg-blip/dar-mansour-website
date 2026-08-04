@@ -179,6 +179,12 @@ home_body = f'''
 ''' + _journal.render_index_cards(ARTICLES[:3], eyebrow="From the Journal",
     heading="Stories &amp; island guides") + '''
 <section class="section" style="padding-top:0;"><div class="wrap center reveal">
+  <p style="margin-bottom:1rem;color:var(--muted);font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;">Popular guides</p>
+  <p class="lead" style="margin-bottom:1.4rem;">
+    <a class="ilink" href="journal-best-restaurants-koh-phangan.html">Best Restaurants in Koh Phangan</a> ·
+    <a class="ilink" href="journal-best-breakfast-brunch-koh-phangan.html">Best Breakfast &amp; Brunch</a> ·
+    <a class="ilink" href="journal-romantic-dinner-koh-phangan.html">Romantic Dinner in Koh Phangan</a>
+  </p>
   <a class="textlink" href="blog.html">Explore the Journal ''' + A + '''</a>
 </div></section>
 ''' + L.cta_band("Ready to taste Morocco in Koh Phangan?",
