@@ -1,12 +1,13 @@
 ---
 title: 'Best Restaurants in Koh Phangan: A Local Guide for 2026'
 date: 2026-07-11
+updated: 2026-08-04
 author: The Dar Mansour Journal
 category: koh-phangan-guide
 cover: assets/uploads/koh-phangan-day.webp
 cover_alt: Turquoise bay and white-sand beach on the west coast of Koh Phangan
 seo_title: Best Restaurants in Koh Phangan — Local Guide 2026
-description: Discover the best restaurants in Koh Phangan, from authentic Thai cuisine and beachfront seafood to brunch, specialty coffee and romantic dining.
+description: The best restaurants in Koh Phangan by cuisine, area and occasion — local picks from Dear Phangan and Mama KOP to seafood, sunset tables and romantic dining.
 quick_guide:
   - label: Best for
     value: Travellers and residents choosing where to eat, by cuisine and area
@@ -358,7 +359,7 @@ Travelling isn't only about new places — sometimes it's new flavours. thanaka 
 
 ### Moroccan
 
-Moroccan cuisine is inseparable from hospitality. Built around slow cooking, fragrant spices, preserved ingredients and dishes made to be shared, it turns every meal into a moment of generosity. From the imperial kitchens of Marrakech and Fez to Berber recipes from the Atlas Mountains and the flavours of the Atlantic coast, each region tells its own story. Discovering these flavours for the first time or returning to old favourites, Dar Mansour invites you to the warmth at the heart of Moroccan culture — a tradition kept alive by the [Dadas, the women who have guarded Moroccan family recipes](journal-the-dadas-guardians-of-moroccan-recipes.html) across generations.
+Moroccan cuisine is inseparable from hospitality. Built around slow cooking, fragrant spices, preserved ingredients and dishes made to be shared, it turns every meal into a moment of generosity. From the imperial kitchens of Marrakech and Fez to Berber recipes from the Atlas Mountains and the flavours of the Atlantic coast, each region tells its own story — our [complete guide to Moroccan cuisine](journal-moroccan-cuisine-guide.html) explores that heritage in depth. Discovering these flavours for the first time or returning to old favourites, Dar Mansour invites you to the warmth at the heart of Moroccan culture — a tradition kept alive by the [Dadas, the women who have guarded Moroccan family recipes](journal-the-dadas-guardians-of-moroccan-recipes.html) across generations.
 
 #### Dar Mansour – Morocco's Kitchen
 
