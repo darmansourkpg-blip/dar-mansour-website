@@ -469,9 +469,20 @@ def _blog_schema(a):
         "headline": a["title"],
         "description": a["description"],
         "image": f'{site}/{a["cover"]}',
-        "datePublished": a["date_iso"],
-        "dateModified": a["mod_iso"],
-        "author": {"@type": "Organization", "name": a["author"]},
+        # Full ISO 8601 with the local timezone (Thailand, +07:00) so Google
+        # doesn't flag a missing-timezone / invalid-datetime warning.
+        "datePublished": f'{a["date_iso"]}T09:00:00+07:00',
+        "dateModified": f'{a["mod_iso"]}T09:00:00+07:00',
+        # Attribute the article to the real writer (a Person with a profile URL)
+        # rather than a generic Organization — stronger E-E-A-T. Falls back to
+        # the Journal organisation for un-mapped categories.
+        "author": (
+            {"@type": "Person",
+             "name": AUTHOR_BY_CATEGORY[a["category"]]["name"],
+             "url": f'{site}/{_author_url(AUTHOR_BY_CATEGORY[a["category"]])}'}
+            if a["category"] in AUTHOR_BY_CATEGORY
+            else {"@type": "Organization", "name": a["author"], "url": f"{site}/"}
+        ),
         "publisher": {
             "@type": "Organization",
             "name": "Dar Mansour - Morocco's Kitchen",
