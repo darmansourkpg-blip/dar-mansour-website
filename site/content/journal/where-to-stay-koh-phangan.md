@@ -5,8 +5,8 @@ description: "Where to stay in Koh Phangan: the best areas, hotels, resorts and 
 date: 2026-08-04
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: assets/uploads/koh-phangan-day.webp
-cover_alt: Aerial view of a turquoise bay and beach on Koh Phangan, Thailand
+cover: assets/uploads/beachfront-resort-terrace-koh-phangan.jpg
+cover_alt: Beachfront resort terrace with sun loungers and yellow umbrellas looking onto a turquoise sea, Koh Phangan, Thailand
 quick_guide:
   - label: Choose by
     value: Area first, then the hotel — the area shapes your whole trip
