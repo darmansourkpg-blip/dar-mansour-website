@@ -73,9 +73,9 @@ Most guides tell you which hotel to book. We'd start one step earlier: on Koh Ph
 
 Our standout picks across the island, from the best-reviewed and best-located stays:
 
-- **Best overall —** Buri Rasa Village Phangan (Thong Nai Pan)
-- **Best value —** All At Sea Beach Resort (Baan Kai) · BOHO Boutique Bungalows (Baan Tai)
-- **Best luxury resort —** Santhiya · Anantara Rasananda (Thong Nai Pan) · Kupu Kupu (Nai Wok)
+- 🥇 **Best overall —** Buri Rasa Village Phangan (Thong Nai Pan)
+- 🥈 **Best value —** All At Sea Beach Resort (Baan Kai) · BOHO Boutique Bungalows (Baan Tai)
+- 🥉 **Best luxury resort —** Santhiya · Anantara Rasananda (Thong Nai Pan) · Kupu Kupu (Nai Wok)
 - **Best luxury villa —** Villa La Favela (Haad Salad) · Bliss Villas (Sri Thanu)
 - **Best for couples / adults-only —** Mångata · Kupu Kupu
 - **Best beach villas —** Joy Beach Villas (Hin Kong)
@@ -87,13 +87,13 @@ Our standout picks across the island, from the best-reviewed and best-located st
 
 | Area | Atmosphere | Best for |
 | --- | --- | --- |
-| Sri Thanu | Relaxed wellness village | Wellness & food |
-| Hin Kong / Nai Wok | Laid-back sunset coast | Sunsets & food |
-| Thong Sala / Baan Tai | Busy island hub | Convenience & Full Moon |
-| Thong Nai Pan | Quiet upscale bay | Quiet luxury |
-| Haad Rin | Lively party beach | Nightlife & Full Moon |
-| Haad Yao / Haad Salad | Easy-going beach holiday | Beaches & sunsets |
-| Chaloklum & the north | Sleepy fishing villages | Nature & seclusion |
+| Sri Thanu | Wellness & cafés | Wellness & food |
+| Hin Kong / Nai Wok | Sunset coast | Food lovers |
+| Thong Sala / Baan Tai | Island hub | Convenience & Full Moon |
+| Thong Nai Pan | Quiet luxury | Couples & relaxation |
+| Haad Rin | Party beach | Nightlife |
+| Haad Yao / Haad Salad | Beach holiday | Beaches & sunsets |
+| Chaloklum & the north | Sleepy & wild | Nature & seclusion |
 
 ## Quick Picks
 
@@ -131,7 +131,8 @@ Guest ratings across two sources (Agoda and Google, at the time of writing — t
 | Santhiya Koh Phangan Resort & Spa | Thong Nai Pan | Luxury resort | $$$ | 8.7 | 4.4 |
 | Bay Villas Koh Phangan | Haad Salad | Luxury private villas | $$$ | 8.4 | 4.4 |
 | Tiki Beach Koh Phangan | Baan Tai | Beach resort & club | $ | 8.4 | 4.4 |
-| Villa La Favela | Haad Salad | Luxury private villa | $$$ | Airbnb 4.9 | 5.0 |
+
+Villa La Favela, a private villa let through Airbnb rather than the hotel platforms, sits outside the table above — it rates **4.9 on Airbnb** and **5.0 on Google**.
 
 ## Where to Stay, Area by Area
 
@@ -163,7 +164,7 @@ A collection of three exclusive architect-designed beachfront villas combining c
 **If this were our trip —** we'd pick Sri Thanu for a slower, wellness-led stay: mornings in a café or a yoga studio, sunsets at Zen Beach, and easy dinners without needing to travel far. It's our top choice for a first, relaxed visit that still keeps you close to the best food.
 
 ### Hin Kong & Nai Wok — Sunsets & the Best Food
-Our own stretch of the west coast: relaxed, scenic and home to some of the island's best sunset restaurants — and just minutes from Dar Mansour.
+Our own stretch of the west coast: relaxed, scenic and home to some of the island's best sunset restaurants.
 
 #### Kupu Kupu Phangan Beach Villas & Spa by L'Occitane
 _Best Sunset Views · Romantic Escape · Wellness Retreat_
@@ -427,7 +428,7 @@ If we had to generalise: **choose west for food, sunsets and variety; choose eas
 
 Koh Phangan rewards travellers who choose their base with intention. Whether you want to wake up to yoga in Sri Thanu, watch the sun set over Hin Kong, retreat to a quiet Thong Nai Pan bay or dance through a Full Moon in Haad Rin, there's an area — and a place to stay — that fits. And wherever you end up, you're never far from a memorable meal.
 
-## Planning Your Trip?
+## Planning Your Trip to Koh Phangan?
 
 Explore our other Koh Phangan guides:
 
