@@ -233,8 +233,7 @@ Directly on Baan Tai Beach, this relaxed beachfront resort and beach club combin
 **Best for —** Solo travellers · Digital nomads · Groups of friends · A social beachfront stay<br>
 **Price —** $<br>
 **Guest ratings —** Agoda 8.4 · Google 4.4<br>
-**Location —** Baan Tai Beach. [View on map ↗](https://share.google/g7VPh6LQFnMSpHZKK)<br>
-**Website —** [tikibeachkohphangan.com ↗](https://tikibeachkohphangan.com/)
+**Location —** Baan Tai Beach. [View on map ↗](https://share.google/g7VPh6LQFnMSpHZKK)
 
 **Where to eat nearby →** browse our [Thong Sala food guide](journal-where-to-eat-thong-sala-koh-phangan.html).
 
@@ -328,7 +327,6 @@ Perched above Haad Salad Bay, this exclusive four-bedroom retreat blends bold Br
 **Price —** $$$<br>
 **Guest ratings —** Airbnb 4.9 · Google 5.0<br>
 **Location —** Haad Salad Bay. [View on map ↗](https://share.google/yHXvColUDnYHTAaLR)<br>
-**Website —** [lafavelaphangan.com ↗](https://lafavelaphangan.com/)<br>
 **Our take —** our favourite villa for a group or a special occasion: striking architecture, a huge infinity pool and total privacy above the bay. Rent it when you want the island to feel like it's yours alone.
 
 #### Bay Villas Koh Phangan
