@@ -359,6 +359,8 @@ In the peaceful fishing village of Chaloklum, Boonya Swiss Home offers modern on
 #### Coconut Beach Bungalows
 _Eco Choice · Great for Snorkelling · Off the Beaten Path_
 
+![Coconut Beach Bungalows, an eco-friendly beachfront retreat on Haad Khom, Koh Phangan](assets/uploads/coconut-beach-bungalows-haad-khom-koh-phangan.jpg "Coconut Beach Bungalows, Haad Khom")
+
 On the secluded shores of Haad Khom, Coconut Beach Bungalows is an eco-friendly beachfront retreat powered entirely by solar energy. Modern open-design bungalows, an organic farm, a beachfront restaurant, a massage pavilion and direct access to one of the island's best snorkelling spots make a peaceful escape far from the party scene. The property keeps a quiet atmosphere by limiting children and large groups.
 
 **Best for —** Couples · Snorkelling enthusiasts · Eco-conscious travellers wanting seclusion<br>
