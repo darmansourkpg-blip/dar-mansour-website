@@ -132,7 +132,7 @@ For couples staying around Thong Nai Pan, you don't have to cross the island. Yu
 **Good to know —** Inside Anantara Rasananda; reservation recommended.<br>
 **Location —** East Coast · Thong Nai Pan. <a href="https://www.google.com/maps/search/?api=1&amp;query=Yukinoya+Anantara+Rasananda+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
-Also worth knowing: **Santhiya** suits honeymooners with its secluded resort setting on the same coast, and on the west coast **Kupu Kupu** creates beautiful private dinners.
+Also worth knowing: **Santhiya** suits honeymooners with its secluded resort setting on the same coast, and on the west coast **Kupu Kupu** creates beautiful private dinners. For where to base yourselves for a romantic trip, see our guide to [where to stay in Koh Phangan](journal-where-to-stay-koh-phangan.html).
 
 ## Where to Watch the Sunset First
 
