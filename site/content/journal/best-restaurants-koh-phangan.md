@@ -709,7 +709,7 @@ Every destination has its habits, and Koh Phangan is no different. The restauran
 
 **Sunset isn't just a view — it's part of dinner.** On the west coast, dinner often begins before anyone orders. People arrive early, order a drink and watch the sun drop behind the Ang Thong islands. By the time the food arrives, the sky has usually turned from gold to pink to deep blue. If a restaurant overlooks the sea, don't arrive at sunset — arrive 30 to 45 minutes before.
 
-**The island is smaller than it looks.** Most of the best restaurants are less than twenty minutes apart by scooter. Thong Sala to Hin Kong takes only a few minutes; Sri Thanu is just beyond; even Chaloklum is an easy ride. Thong Nai Pan is further, but worth the trip. Some of the most memorable meals are worth leaving your neighbourhood for.
+**The island is smaller than it looks.** Most of the best restaurants are less than twenty minutes apart by scooter. Thong Sala to Hin Kong takes only a few minutes; Sri Thanu is just beyond; even Chaloklum is an easy ride. Thong Nai Pan is further, but worth the trip. Some of the most memorable meals are worth leaving your neighbourhood for — and if you're still deciding where to base yourself, our guide to [where to stay in Koh Phangan](journal-where-to-stay-koh-phangan.html) breaks down each area for food lovers.
 
 **Book ahead in high season.** The island still feels relaxed, but the best restaurants are often small — a handful of tables. Between December and April, reservations matter, especially for romantic dinners, chef's tables, sunset restaurants, Fridays and the Christmas–New Year period. A quick WhatsApp message earlier in the day usually does it.
 
