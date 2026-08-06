@@ -137,7 +137,7 @@ Run by Karine and Mélanie, L'Alcove has long been a west coast favourite for a 
 **Best for —** Sunset dinner · Romantic evenings · Wine lovers<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Arrive before sunset for a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
-**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+15+Hin+Kong+Beach%2C+Ko+Pha-ngan+84280)
+**Getting there —** Directly on Hin Kong Beach, next to Romanzo Tropicale. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+15+Hin+Kong+Beach%2C+Ko+Pha-ngan+84280)
 
 #### Kikekla Bar & Restaurant
 
@@ -146,7 +146,7 @@ Directly on Hin Kong Beach, Kikekla shifts easily through the day — a morning 
 **Why we love it —** A versatile beachfront spot where good food, creative cocktails and sunset come together from morning until late.<br>
 **Best for —** Beachfront dining · Sunset cocktails · Digital nomads<br>
 **Price —** ฿<br>
-**Getting there —** Directly on Hin Kong Beach, next to CINTAMANI Bar. [View on map ↗](https://maps.app.goo.gl/FUEJeTKCjhG7MpbW8)
+**Getting there —** Directly on Hin Kong Beach, not far from L'Alcove. [View on map ↗](https://maps.app.goo.gl/FUEJeTKCjhG7MpbW8)
 
 #### Romanzo Tropicale
 
@@ -155,7 +155,7 @@ Beside the sea in Hin Kong, Romanzo Tropicale brings traditional Italian cooking
 **Why we love it —** Traditional Italian cooking and homemade pasta in a beachfront sunset setting.<br>
 **Best for —** Homemade pasta · Couples · Beachfront dinner<br>
 **Price —** ฿฿<br>
-**Getting there —** Directly on Hin Kong Beach, next to CINTAMANI Bar [View on map ↗](https://maps.app.goo.gl/VX8UMpnrJGysB7kP9)
+**Getting there —** Directly on Hin Kong Beach, next to L'Alcove. [View on map ↗](https://maps.app.goo.gl/VX8UMpnrJGysB7kP9)
 
 ## Authentic Thai Restaurants in Hin Kong
 
