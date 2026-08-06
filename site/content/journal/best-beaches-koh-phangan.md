@@ -125,16 +125,18 @@ Although Koh Phangan is relatively small, each coastline has its own character. 
 
 Still not sure? Here's a quick comparison of some of the island's most popular beaches.
 
-| Beach | Swimming | Snorkelling | Sunsets | Restaurants | Families | Atmosphere | Access |
+| Beach | Swimming | Snorkelling | Sunsets | Restaurants | Families | Highlights | Access |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Haad Yao | Excellent | Very good | Very good | Excellent | Excellent | Relaxed | Easy |
-| Haad Salad | Excellent | Very good | Very good | Very good | Excellent | Quiet | Easy |
-| Mae Haad | Very good | Excellent | Very good | Good | Very good | Nature | Easy |
-| Secret Beach | Very good | Good | Excellent | Very good | Good | Relaxed | Easy |
-| Bottle Beach | Very good | Very good | Good | Limited | Good | Remote | Moderate |
-| Thong Nai Pan Noi | Excellent | Good | Good | Very good | Excellent | Luxury | Easy |
-| Chaloklum | Very good | Very good | Good | Very good | Very good | Local | Easy |
-| Haad Rin Nok | Very good | Limited | Very good | Excellent | Fair | Lively | Easy |
+| Hin Kong | Fair | Limited | Excellent | Excellent | Good | Sunset views · Great dining | Very easy |
+| Sri Thanu | Fair | Limited | Excellent | Very good | Good | Wellness · Cafés · Yoga | Easy |
+| Haad Yao | Excellent | Good | Very good | Excellent | Excellent | Swimming · Restaurants | Very easy |
+| Haad Salad | Excellent | Good | Very good | Very good | Excellent | Families · Relaxation | Easy |
+| Mae Haad | Very good | Excellent | Very good | Good | Very good | Koh Ma · Coral reef | Easy |
+| Secret Beach (Haad Son) | Very good | Good | Excellent | Very good | Good | Romantic cove | Easy |
+| Bottle Beach | Very good | Very good | Good | Limited | Good | Remote & secluded | Moderate |
+| Thong Nai Pan Noi | Excellent | Good | Good | Very good | Excellent | Luxury resorts | Easy |
+| Chaloklum | Very good | Very good | Good | Very good | Very good | Fishing village · Seafood | Very easy |
+| Haad Rin Nok | Very good | Limited | Good | Excellent | Fair | Full Moon Party | Easy |
 
 *Beach conditions naturally vary with tides, weather and season.*
 
@@ -188,7 +190,7 @@ _Wellness Beach · West Coast_
 Sri Thanu Beach reflects the village itself — peaceful, relaxed and closely tied to the island's wellness community. It offers calm views, beautiful sunsets and easy access to yoga studios, healthy cafés and some of the island's best restaurants. Swimming varies with the tides, but it's a fine place for a slow afternoon before dinner nearby.
 
 **Best for —** Wellness · Sunsets · Cafés<br>
-**Swimming —** Good · **Snorkelling —** Limited · **Sunset —** Excellent<br>
+**Swimming —** Fair · **Snorkelling —** Limited · **Sunset —** Excellent<br>
 **Facilities —** Cafés · Restaurants · Wellness centres<br>
 **Access —** Easy · **Crowds —** Moderate
 
@@ -252,7 +254,7 @@ _Classic White-Sand Beach · West Coast_
 Haad Yao is one of the island's best-known beaches, and for good reason. Its long ribbon of soft white sand, clear turquoise water and wide choice of beachfront cafés, restaurants and resorts make it one of the most complete beach destinations on Koh Phangan. Whether to swim, lunch by the sea or spend a relaxed afternoon, it consistently delivers the island's best all-round beach day.
 
 **Best for —** Swimming · Families · Couples<br>
-**Swimming —** Excellent · **Snorkelling —** Very good · **Sunset —** Very good<br>
+**Swimming —** Excellent · **Snorkelling —** Good · **Sunset —** Very good<br>
 **Facilities —** Restaurants · Cafés · Resorts · Massage · Water sports<br>
 **Access —** Very easy · **Crowds —** Moderate
 
@@ -268,7 +270,7 @@ _Family-Friendly Bay · West Coast_
 Sheltered by gently curving headlands, Haad Salad is calmer and more intimate than neighbouring Haad Yao. The protected bay, soft sand and gentle water make it especially popular with families, while the relaxed mood suits couples and anyone after a quieter beach day. Several beachfront restaurants and boutique resorts blend into the landscape without overwhelming it.
 
 **Best for —** Families · Swimming · Relaxation<br>
-**Swimming —** Excellent · **Snorkelling —** Very good · **Sunset —** Very good<br>
+**Swimming —** Excellent · **Snorkelling —** Good · **Sunset —** Very good<br>
 **Facilities —** Restaurants · Resorts · Massage · Parking<br>
 **Access —** Easy · **Crowds —** Moderate
 
@@ -304,7 +306,7 @@ _Fishing Village Beach · North Coast_
 Fringed by colourful fishing boats and backed by one of the island's oldest villages, Chaloklum offers a very different atmosphere from the more tourist-oriented shores. Its wide sandy bay, calm water and excellent seafood restaurants make it enjoyable for families and anyone curious about local life. Its charm comes from authenticity: mornings bring the boats back to harbour, while evenings stay peaceful even in the busiest months.
 
 **Best for —** Local culture · Seafood · Families<br>
-**Swimming —** Very good · **Snorkelling —** Good · **Sunset —** Good<br>
+**Swimming —** Very good · **Snorkelling —** Very good · **Sunset —** Good<br>
 **Facilities —** Restaurants · Cafés · Shops · Parking<br>
 **Access —** Very easy · **Crowds —** Quiet to moderate
 
@@ -372,7 +374,7 @@ _Jungle-Backed Bay · East Coast_
 Bottle Beach is one of the island's most iconic beaches and a favourite for anyone after a genuine tropical escape. Ringed by steep jungle hills and reachable only by boat or a challenging mountain road, it has kept a wonderfully secluded feel despite its fame. The wide crescent of soft white sand, calm turquoise water and peaceful surroundings make it a memorable destination and one of the island's most beautiful natural settings.
 
 **Best for —** Nature · Seclusion · Photography<br>
-**Swimming —** Very good · **Snorkelling —** Good · **Sunset —** Limited<br>
+**Swimming —** Very good · **Snorkelling —** Very good · **Sunset —** Good<br>
 **Facilities —** Beach restaurants · Limited accommodation<br>
 **Access —** Boat or challenging road · **Crowds —** Quiet to moderate
 
@@ -388,7 +390,7 @@ _Luxury Beach · East Coast_
 Thong Nai Pan Noi is widely regarded as one of the island's most elegant beaches. The sheltered bay pairs powder-soft sand and calm turquoise water with a collection of the island's finest luxury resorts, creating an atmosphere that's both refined and relaxed. Despite its upscale reputation, it stays welcoming to day visitors, with excellent restaurants, beach cafés and plenty of space to enjoy the sea.
 
 **Best for —** Luxury · Swimming · Couples<br>
-**Swimming —** Excellent · **Snorkelling —** Good · **Sunset —** Limited<br>
+**Swimming —** Excellent · **Snorkelling —** Good · **Sunset —** Good<br>
 **Facilities —** Restaurants · Luxury resorts · Spa · Shops<br>
 **Access —** Easy · **Crowds —** Moderate
 
