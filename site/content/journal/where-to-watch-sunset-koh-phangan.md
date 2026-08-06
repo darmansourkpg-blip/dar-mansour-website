@@ -99,15 +99,21 @@ If we had to choose one place that perfectly represents Koh Phangan's west coast
 
 Rather than dramatic cliffs or crowded viewpoints, Hin Kong offers something quieter. Space. Silence. And an ever-changing sky.
 
-Just steps from the beach, **L'Alcove** has long been one of Hin Kong's favourite sunset spots. Its relaxed beachfront setting makes it an ideal place to enjoy a glass of wine or an apéritif while the sky turns from gold to deep indigo before continuing your evening.
-
 For those planning dinner afterwards, Hin Kong is also home to Dar Mansour, where Moroccan slow dining extends the gentle rhythm of sunset with traditional dishes prepared over many hours. For more options nearby, see our guides to [where to eat in Hin Kong](journal-where-to-eat-hin-kong.html) and the [best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html).
 
-<p class="getthere"><strong>Getting there</strong> — Along Hin Kong Road, on the west coast. <a href="https://www.google.com/maps/search/?api=1&amp;query=Hin+Kong+Beach+Koh+Phangan" target="_blank" rel="noopener">Beach on map ↗</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">L'Alcove on map ↗</a></p>
+<p class="getthere"><strong>Getting there</strong> — Along Hin Kong Road, on the west coast. <a href="https://www.google.com/maps/search/?api=1&amp;query=Hin+Kong+Beach+Koh+Phangan" target="_blank" rel="noopener">Beach on map ↗</a></p>
 
 <aside class="localtip"><span class="localtip__label">Local Tip</span><p>Check the tide before you go. At low tide, the wet sand becomes a giant natural mirror — one of the most spectacular, photogenic sunsets on the island.</p></aside>
 
-<div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Perfect for couples</li><li>Excellent sunset photography</li><li>Easy parking</li><li>Beachfront wine at L'Alcove</li><li>Beautiful at low tide</li><li>One of the calmest sunset beaches</li></ul></div>
+<div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Perfect for couples</li><li>Excellent sunset photography</li><li>Easy parking</li><li>Beautiful at low tide</li><li>One of the calmest sunset beaches</li></ul></div>
+
+### L'Alcove — French Sunset Dining on the Sand
+
+Just steps from Hin Kong Beach, L'Alcove has long been one of the west coast's favourite places to watch the sun go down. Run by Karine and Mélanie, it pairs French cooking with a light Thai touch, one of the island's deepest lists of French wine and Champagne, and tables almost on the sand — an ideal spot for a glass of wine or an apéritif as the sky turns from gold to deep indigo, then a full sunset dinner. Arrive before the sun drops for a beachfront table.
+
+<p class="getthere"><strong>Getting there</strong> — Directly on Hin Kong Beach, on the west coast. <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
+
+<div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>French cuisine & sunset dinners</li><li>Deep French wine & Champagne list</li><li>Tables almost on the sand</li><li>Live music & fire shows some evenings (esp. Fri & Sun)</li><li>Arrive before sunset for a beachfront table</li></ul></div>
 
 ### Wave Sunset Restaurant & Bar
 
