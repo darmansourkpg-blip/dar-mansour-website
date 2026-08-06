@@ -82,15 +82,15 @@ There isn't one best beach in Koh Phangan — it depends on the experience you'r
 
 Not every beach offers the same experience. These stand out in their category and are worth planning your day around.
 
-- 🏖️ **Best overall beach —** Haad Yao
-- 🏊 **Best swimming beach —** Thong Nai Pan Noi
-- 🤿 **Best snorkelling beach —** Mae Haad
-- 🌅 **Best sunset beach —** Hin Kong
-- 🌴 **Best hidden beach —** Bottle Beach
-- 👨‍👩‍👧 **Best beach for families —** Haad Salad
-- 💑 **Best beach for couples —** Secret Beach
-- 🍽️ **Best beach restaurants —** Haad Yao
-- ✨ **Best luxury beach —** Thong Nai Pan Noi
+- **Best overall beach —** Haad Yao
+- **Best swimming beach —** Thong Nai Pan Noi
+- **Best snorkelling beach —** Mae Haad
+- **Best sunset beach —** Hin Kong
+- **Best hidden beach —** Bottle Beach
+- **Best beach for families —** Haad Salad
+- **Best beach for couples —** Secret Beach
+- **Best beach restaurants —** Haad Yao
+- **Best luxury beach —** Thong Nai Pan Noi
 
 ## Choose Your Beach First
 
@@ -251,6 +251,8 @@ Despite the name, Secret Beach is no longer much of a secret — but it remains 
 ### Haad Yao
 _Classic White-Sand Beach · West Coast_
 
+![Haad Yao's long white-sand beach and clear turquoise water, Koh Phangan, Thailand](assets/uploads/haad-yao-beach-koh-phangan.jpg "Haad Yao Beach, Koh Phangan")
+
 Haad Yao is one of the island's best-known beaches, and for good reason. Its long ribbon of soft white sand, clear turquoise water and wide choice of beachfront cafés, restaurants and resorts make it one of the most complete beach destinations on Koh Phangan. Whether to swim, lunch by the sea or spend a relaxed afternoon, it consistently delivers the island's best all-round beach day.
 
 **Best for —** Swimming · Families · Couples<br>
@@ -282,6 +284,8 @@ Sheltered by gently curving headlands, Haad Salad is calmer and more intimate th
 
 ### Mae Haad
 _Snorkelling Beach · West Coast_
+
+![Aerial view of the white sandbar linking Mae Haad to Koh Ma island, with coral reefs in turquoise water, Koh Phangan, Thailand](assets/uploads/koh-ma-sandbar-mae-haad-koh-phangan.jpg "Mae Haad and the Koh Ma sandbar, Koh Phangan")
 
 Mae Haad is one of the island's most distinctive beaches, thanks to the natural sandbar linking the mainland to the small island of Koh Ma. This creates one of Koh Phangan's best-known snorkelling spots, where coral reefs and marine life can often be explored straight from the beach. Even non-snorkellers come for the scenery and the chance to walk the sandbar when conditions allow.
 
@@ -370,6 +374,8 @@ The east coast holds some of the island's most spectacular scenery. Sheltered ba
 
 ### Bottle Beach (Haad Khuat)
 _Jungle-Backed Bay · East Coast_
+
+![A longtail boat named Bottle Beach moored on the sand below jungle hills, Koh Phangan, Thailand](assets/uploads/bottle-beach-longtail-boat-koh-phangan.jpg "Bottle Beach (Haad Khuat), Koh Phangan")
 
 Bottle Beach is one of the island's most iconic beaches and a favourite for anyone after a genuine tropical escape. Ringed by steep jungle hills and reachable only by boat or a challenging mountain road, it has kept a wonderfully secluded feel despite its fame. The wide crescent of soft white sand, calm turquoise water and peaceful surroundings make it a memorable destination and one of the island's most beautiful natural settings.
 
