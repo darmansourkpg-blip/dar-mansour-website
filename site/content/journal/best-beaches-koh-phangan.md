@@ -51,6 +51,16 @@ faq:
     answer: The west coast has the best sunsets, restaurants, cafés and wellness scene, making it ideal for first-time visitors. The east coast is quieter and more scenic, with several luxury resorts and sheltered bays — better for relaxation and reliable swimming.
   - question: Which beaches are best during the rainy season?
     answer: Sheltered bays such as Thong Nai Pan Noi, Thong Nai Pan Yai and Chaloklum often stay pleasant, though conditions depend on wind direction and rainfall. Check the local forecast before heading out.
+  - question: Which beaches are best at low tide?
+    answer: The north and east coasts hold their water best at low tide — Thong Nai Pan Noi, Bottle Beach, Haad Khom and Chaloklum stay swimmable. On the west coast, low tide turns beaches like Hin Kong and Sri Thanu into wide, shallow flats — beautiful for walking and reflections, but better for sunsets than swimming until the tide returns.
+  - question: Which beach has the whitest sand in Koh Phangan?
+    answer: Among the island's whitest, softest sand are Bottle Beach, Mae Haad, Haad Yao and Thong Nai Pan Noi. All four combine pale sand with clear water, which is part of why they're such popular swimming and photography spots.
+  - question: Which beaches offer natural shade?
+    answer: Beaches backed by coconut palms and trees offer the most natural shade — Haad Salad, Malibu Beach, Haad Khom and parts of Haad Yao among them. Bring a sarong or umbrella for open stretches, and note that shade shifts through the day.
+  - question: Can you kayak or paddleboard on Koh Phangan's beaches?
+    answer: Yes. The calmest, most sheltered bays — Thong Nai Pan, Chaloklum, Haad Yao and Haad Salad — are the most comfortable for kayaking and paddleboarding, especially in the morning before the afternoon breeze picks up. Many beachfront resorts and shops rent equipment.
+  - question: Are there lifeguards on Koh Phangan's beaches?
+    answer: Most of Koh Phangan's beaches do not have lifeguards, so swim within your limits, keep an eye on children, and take extra care at remote beaches and when the sea is rough. Conditions change with the tide and weather, so assess before you get in.
 ---
 
 Koh Phangan is home to some of Thailand's most beautiful beaches — but there is no single "best" one. Some are made for swimming in calm turquoise water. Others are known for their sunsets, lively beach cafés or coral reefs just offshore. Some suit families with young children; others reward anyone willing to travel a little further for complete quiet.
@@ -109,6 +119,8 @@ Most visitors ask, "Which is the best beach in Koh Phangan?" A better question i
 | Photography | Bottle Beach · Mae Haad · Thong Nai Pan |
 | Easy access | Haad Yao · Haad Salad · Hin Kong |
 
+<aside class="localtip"><span class="localtip__label">Editor's Tip</span><p>Don't try to visit Bottle Beach, Haad Rin and Thong Nai Pan on the same day. Koh Phangan looks small on a map, but its beaches sit on different coasts connected by hilly roads. Explore one coastline at a time and you'll spend far more of your day on the sand than on a scooter.</p></aside>
+
 ## Koh Phangan's Coastlines at a Glance
 
 Although Koh Phangan is relatively small, each coastline has its own character. Understanding the island's geography helps you choose the right beaches and spend less time on the road.
@@ -139,6 +151,25 @@ Still not sure? Here's a quick comparison of some of the island's most popular b
 | Haad Rin Nok | Very good | Limited | Good | Excellent | Fair | Full Moon Party | Easy |
 
 *Beach conditions naturally vary with tides, weather and season.*
+
+## Plan Your Beach Day at a Glance
+
+A quick planning table: where to stay near each beach, where to eat, whether it's a sunset spot, the best time to go, and how long to set aside.
+
+| Beach | Stay near | Eat nearby | Sunset | Best time | Time needed |
+| --- | --- | --- | --- | --- | --- |
+| Hin Kong | Sri Thanu / Hin Kong | Hin Kong | Excellent | Late afternoon | An evening |
+| Sri Thanu | Sri Thanu | Sri Thanu | Excellent | Late afternoon | Half day |
+| Haad Yao | Haad Yao / Sri Thanu | Sri Thanu | Very good | All day | Half day |
+| Haad Salad | Haad Salad | Sri Thanu | Very good | All day | Half day |
+| Mae Haad | Haad Salad | Chaloklum / island-wide | Very good | Morning | Half day |
+| Secret Beach | Sri Thanu | Sri Thanu | Excellent | Afternoon to sunset | Half day |
+| Bottle Beach | Day trip (or Thong Nai Pan) | Chaloklum | Good | Morning to midday | Full day |
+| Thong Nai Pan Noi | Thong Nai Pan | Island-wide | Good | All day | 1–2 nights |
+| Chaloklum | Chaloklum / north | Chaloklum | Good | Morning | Half day |
+| Haad Rin Nok | Haad Rin | Island-wide | Good | Evening | Half day |
+
+*"Best time" and "time needed" are our general guidance — swimming on the west coast is always best around high tide, so check the tide as well.*
 
 ## How We Selected These Beaches
 
@@ -508,6 +539,16 @@ Not every traveller wants the same beach. Here are our top picks by the kind of 
 
 **Best beaches with restaurants & cafés —** Hin Kong · Sri Thanu · Haad Yao · Haad Salad · Baan Tai
 
+## Best Beaches Near Each Area
+
+Already know where you're based? Here are the closest beaches to each of the island's main areas.
+
+- **Best beaches near Thong Sala —** Ao Nai Wok (the closest), Baan Tai and Hin Kong are all a short ride from the ferry piers. See our [Thong Sala food guide](journal-where-to-eat-thong-sala-koh-phangan.html) for lunch.
+- **Best beaches near Hin Kong —** Hin Kong Beach for sunsets, plus Sri Thanu and Secret Beach just up the coast. Pair with our [Hin Kong restaurants guide](journal-where-to-eat-hin-kong.html).
+- **Best beaches near Sri Thanu —** Sri Thanu Beach, Zen Beach, Haad Chao Phao and Secret Beach, with Haad Yao a little further north. See [where to eat in Sri Thanu](journal-where-to-eat-sri-thanu.html).
+- **Best beaches near Haad Rin —** Haad Rin Nok itself and the quieter Leela Beach, a short walk away over the peninsula.
+- **Best beaches near Chaloklum & the north —** Chaloklum Beach, Malibu Beach, Haad Khom and Mae Haad (Koh Ma) are all close together on the north coast.
+
 ## Understanding Tides in Koh Phangan
 
 One of the most important things to understand before choosing a beach is the tide. Unlike destinations where beaches look the same all day, several of the island's west-coast beaches change dramatically between high and low tide. At low tide the sea can retreat hundreds of metres, exposing sandbanks, coral and shallow lagoons — beautiful for walking and photography, but harder for swimming in some places.
@@ -552,6 +593,31 @@ A great beach day is often made better by a memorable meal. These guides cover t
 | Coffee & brunch | [Best breakfast & brunch](journal-best-breakfast-brunch-koh-phangan.html) |
 
 Between Hin Kong and Sri Thanu, our own [Dar Mansour – Morocco's Kitchen](moroccan-menu-koh-phangan.html) serves slow-cooked Moroccan dinners a few minutes from the west-coast beaches — a warm way to end a day by the sea.
+
+## One-Day Beach Itineraries
+
+Prefer a ready-made plan? Here's how we'd shape a full beach day on each coast, built around one coastline so you spend your time on the sand rather than on the road.
+
+### A Perfect West Coast Beach Day
+
+1. **Morning —** Breakfast at a café in [Sri Thanu](journal-where-to-eat-sri-thanu.html), then a swim at **Haad Yao** around high tide.
+2. **Midday —** Lunch on the sand at Haad Yao, then a short hop to **Secret Beach** for a quieter afternoon.
+3. **Late afternoon —** Move to **Hin Kong** for the island's best [sunset](journal-where-to-watch-sunset-koh-phangan.html).
+4. **Evening —** Dinner nearby — from [Hin Kong's restaurants](journal-where-to-eat-hin-kong.html) to a slow Moroccan dinner at Dar Mansour.
+
+### A Perfect North Coast Beach Day
+
+1. **Morning —** Coffee in **Chaloklum** village, then snorkelling at **Mae Haad** and the Koh Ma sandbar while the water is calmest.
+2. **Midday —** Relaxed swim and photos at **Malibu Beach**, just along the coast.
+3. **Afternoon —** Head to the quiet reef at **Haad Khom** for more snorkelling or a peaceful few hours.
+4. **Evening —** Fresh seafood back in Chaloklum, one of the [island's best spots](journal-best-restaurants-koh-phangan.html) for it.
+
+### A Perfect East Coast Beach Day
+
+1. **Morning —** A calm swim at **Thong Nai Pan Noi**, one of the island's most reliable swimming bays.
+2. **Midday —** Beachfront lunch, then a walk around the headland to the broader **Thong Nai Pan Yai**.
+3. **Afternoon —** For adventurers, a longtail boat to **Bottle Beach** (best as a full-day trip in its own right).
+4. **Evening —** A quiet dinner at your resort — the east coast is made for slowing down.
 
 ## Practical Tips for Visiting Koh Phangan's Beaches
 
