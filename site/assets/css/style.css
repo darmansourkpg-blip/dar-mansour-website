@@ -123,6 +123,7 @@ p { max-width: 62ch; }
 .wrap--narrow { max-width: var(--wrap-narrow); }
 .section { padding-block: var(--section); }
 .center { text-align: center; }
+.center p { margin-inline: auto; }
 .stack > * + * { margin-top: 1.25rem; }
 
 /* ---------- 5. Buttons ---------- */
