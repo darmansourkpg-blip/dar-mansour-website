@@ -640,11 +640,11 @@ body.lb-open { overflow: hidden; }
 .uni__title { font-family: var(--serif); font-size: 1.8rem; line-height: 1.05; }
 .uni__count { font-size: .78rem; color: rgba(255,255,255,.8); letter-spacing: .04em; }
 @media (max-width: 620px) { .unigrid { grid-template-columns: 1fr; } }
-.jcard__body { display: flex; flex-direction: column; gap: .55rem; padding: 1.4rem 1.5rem 1.6rem; }
+.jcard__body { display: flex; flex-direction: column; gap: .55rem; padding: 1.4rem 1.5rem 1.6rem; flex: 1 1 auto; }
 .jcard__date { font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--green); }
 .jcard__title { font-family: var(--serif); font-size: 1.5rem; line-height: 1.12; color: var(--green-deep); }
 .jcard__desc { font-size: .92rem; color: var(--ink-soft); line-height: 1.6; }
-.jcard .textlink { margin-top: .3rem; }
+.jcard .textlink { margin-top: auto; padding-top: .5rem; }
 .article__meta { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 1.6rem; }
 .article__meta .byline__role { font-weight: 600; opacity: .8; }
 .article__credits { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin: -1.1rem 0 1.6rem; }
