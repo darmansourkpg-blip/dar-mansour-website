@@ -165,7 +165,7 @@ A quick planning table: where to stay near each beach, where to eat, whether it'
 | Mae Haad | Haad Salad | Chaloklum / island-wide | Very good | Morning | Half day |
 | Secret Beach | Sri Thanu | Sri Thanu | Excellent | Afternoon to sunset | Half day |
 | Bottle Beach | Day trip (or Thong Nai Pan) | Chaloklum | Good | Morning to midday | Full day |
-| Thong Nai Pan Noi | Thong Nai Pan | Island-wide | Good | All day | 1–2 nights |
+| Thong Nai Pan Noi | Thong Nai Pan | Island-wide | Good | All day | Full day–1 night |
 | Chaloklum | Chaloklum / north | Chaloklum | Good | Morning | Half day |
 | Haad Rin Nok | Haad Rin | Island-wide | Good | Evening | Half day |
 
