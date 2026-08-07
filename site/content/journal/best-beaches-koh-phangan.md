@@ -211,7 +211,7 @@ Hin Kong is one of the island's most distinctive beaches. Rather than a classic 
 
 **Good to know —** Swimming depends heavily on the tide. Most people come for the atmosphere, the [sunsets](journal-where-to-watch-sunset-koh-phangan.html) and the dining rather than to swim.
 
-**Our take —** Few places capture the island's relaxed lifestyle better than Hin Kong. Come for dinner, stay for sunset.
+**Our take —** Few places capture the island's relaxed lifestyle better than Hin Kong. Come for sunset, stay for dinner.
 
 **Nearby —** Eat: [Best restaurants in Hin Kong](journal-where-to-eat-hin-kong.html) · Beaches: Sri Thanu · Ao Nai Wok · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Hin+Kong+Beach+Koh+Phangan)
 
