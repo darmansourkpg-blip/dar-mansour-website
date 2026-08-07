@@ -5,8 +5,8 @@ description: "Best beaches in Koh Phangan: Haad Yao for all-round days, Mae Haad
 date: 2026-08-05
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: assets/uploads/aerial-view-hin-kong-beach-koh-phangan.webp
-cover_alt: Aerial view of a long sandy beach and turquoise water on Koh Phangan's west coast, Thailand
+cover: assets/uploads/haad-yao-beach-koh-phangan.jpg
+cover_alt: Haad Yao's long white-sand beach and clear turquoise water, Koh Phangan, Thailand
 quick_guide:
   - label: Best overall
     value: Haad Yao — the island's best all-round beach
@@ -281,8 +281,6 @@ Despite the name, Secret Beach is no longer much of a secret — but it remains 
 
 ### Haad Yao
 _Classic White-Sand Beach · West Coast_
-
-![Haad Yao's long white-sand beach and clear turquoise water, Koh Phangan, Thailand](assets/uploads/haad-yao-beach-koh-phangan.jpg "Haad Yao Beach, Koh Phangan")
 
 Haad Yao is one of the island's best-known beaches, and for good reason. Its long ribbon of soft white sand, clear turquoise water and wide choice of beachfront cafés, restaurants and resorts make it one of the most complete beach destinations on Koh Phangan. Whether to swim, lunch by the sea or spend a relaxed afternoon, it consistently delivers the island's best all-round beach day.
 
