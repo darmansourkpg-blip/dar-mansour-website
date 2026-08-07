@@ -646,7 +646,7 @@ Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Be
 
 ## Where to Eat Around Koh Phangan
 
-Every part of Koh Phangan has its own atmosphere — and its own food scene. Staying on the west coast, exploring the fishing villages or relaxing on a quieter beach, these are the restaurants, cafés and bars worth seeking out in each area. Planning your days around the coast too? See our guide to the [best beaches in Koh Phangan](journal-best-beaches-koh-phangan.html).
+Every part of Koh Phangan has its own atmosphere — and its own food scene. Staying on the west coast, exploring the fishing villages or relaxing on a quieter beach, these are the restaurants, cafés and bars worth seeking out in each area. Planning your days around the coast too? See our guide to the [best beaches to plan your days around](journal-best-beaches-koh-phangan.html).
 
 ### Restaurants in Hin Kong
 Widely regarded as the island's culinary heart, and its leading dining destination. From authentic Thai cuisine and international restaurants to sunset bars, it's a place to spend a whole evening.<br>_Don't miss:_ Mama KOP · L'Alcove · CINTAMANI Bar · Happiness Restaurant · Thai Element.<br>→ Read our full guide: [Where to Eat in Hin Kong](journal-where-to-eat-hin-kong.html).
