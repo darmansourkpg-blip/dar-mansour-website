@@ -73,7 +73,7 @@ Short on time? Here are our favourite sunset spots at a glance.
 
 The answer is wonderfully simple. Koh Phangan's western coastline faces directly towards the open Gulf of Thailand, offering uninterrupted views of the horizon. From **Sri Thanu** through **Hin Kong** and **Wok Tum**, there is nothing between you and the setting sun except the sea.
 
-Unlike the east coast — known for sunrise and the famous Full Moon Party — the west coast has developed a completely different personality. It feels calmer, slower and more residential, attracting travellers looking for beautiful beaches, cafés, yoga studios and relaxed evenings rather than late-night parties. It's here that many locals choose to finish their day — and to begin it, over some of the island's [best breakfast and coffee spots](journal-best-breakfast-brunch-koh-phangan.html).
+Unlike the east coast — known for sunrise and the famous Full Moon Party — the west coast has developed a completely different personality. It feels calmer, slower and more residential, attracting travellers looking for beautiful beaches, cafés, yoga studios and relaxed evenings rather than late-night parties. It's here that many locals choose to finish their day — and to begin it, over some of the island's [best breakfast and coffee spots](journal-best-breakfast-brunch-koh-phangan.html). Many of these sunset spots sit on the island's finest west-coast beaches; for the full picture, see our guide to the [best beaches in Koh Phangan](journal-best-beaches-koh-phangan.html).
 
 ![People gathering at Zen Beach to watch the sunset in Koh Phangan](assets/uploads/where-to-watch-the-sunset-in-koh-phangan7.jpg "Zen Beach Sunset")
 
