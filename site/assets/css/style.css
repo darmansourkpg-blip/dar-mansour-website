@@ -119,7 +119,7 @@ p { max-width: 62ch; }
 .divider--light { color: var(--green-tint-2); }
 
 /* ---------- 4. Layout ---------- */
-.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
+.wrap { width: 100%; max-width: var(--wrap); margin-left: auto; margin-right: auto; margin-inline: auto; padding-left: var(--gutter); padding-right: var(--gutter); padding-inline: var(--gutter); }
 .wrap--narrow { max-width: var(--wrap-narrow); }
 .section { padding-block: var(--section); }
 .center { text-align: center; }
@@ -244,8 +244,8 @@ body.menu-open .mega__group:nth-child(2) a { transition-delay: .2s; }
 body.menu-open .mega__group:nth-child(3) a { transition-delay: .28s; }
 
 /* ---------- 7. Hero ---------- */
-.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; color: #fff; overflow: hidden; }
-.hero__media { position: absolute; inset: 0; z-index: -2; }
+.hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: flex-end; color: #fff; overflow: hidden; }
+.hero__media { position: absolute; top: 0; right: 0; bottom: 0; left: 0; inset: 0; z-index: -2; }
 .hero__media picture { display: contents; }
 .hero__media img, .hero__media video { width: 100%; height: 100%; object-fit: cover; }
 /* Desktop: nudge the entrance hero left & down so the metal roof on the right
@@ -875,3 +875,20 @@ body.journal .faq__item summary::after { color: var(--journal); }
 .prose table tbody tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
 /* Let the two descriptive tables (long sentences) wrap their last column instead of one giant line */
 .prose table td:last-child { white-space: normal; min-width: 15rem; }
+
+/* ============================================================
+   Legacy Safari (13 / 14) compatibility — no effect on modern browsers.
+   Fixes layout on Safari < 15 where aspect-ratio / margin-inline are unsupported.
+   ============================================================ */
+
+/* margin-inline:auto fallback (Safari < 14.1) */
+.center p { margin-left: auto; margin-right: auto; }
+
+/* aspect-ratio fallback (Safari < 15): padding-hack so the card image box keeps its height */
+@supports not (aspect-ratio: 1 / 1) {
+  .jcard__img { height: 0; padding-bottom: 66.667%; }           /* 3:2 */
+  .jcard__img img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .split__media img { height: auto; }                            /* show at natural ratio */
+  .dish img { height: auto; }
+  .author__img img { height: auto; }
+}
