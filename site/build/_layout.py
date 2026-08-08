@@ -89,8 +89,43 @@ NAV_ITEMS = [
     ("contact-dar-mansour-koh-phangan.html", "Contact"),
 ]
 
+# --- French (fr) UI labels for the bilingual build -------------------------
+# Phase 1: French pages live under /fr/ and reuse the same slugs. Only the
+# ~10 core "product" pages exist in French; links to not-yet-translated pages
+# fall back to their English URL (handled in fr_href()).
+NAV_ITEMS_FR = [
+    ("index.html", "L'Expérience"),
+    ("moroccan-menu-koh-phangan.html", "Menu"),
+    ("moroccan-wine-pairing-koh-phangan.html", "Vins"),
+    ("private-dining-koh-phangan.html", "Privatisation"),
+    ("moroccan-restaurant-reviews-koh-phangan.html", "Avis"),
+    ("contact-dar-mansour-koh-phangan.html", "Contact"),
+]
 
-def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra="", body_class=""):
+# Slugs that have a French version built under /fr/. Links to these get the /fr/
+# prefix on French pages; everything else falls back to the English URL.
+# Add a slug here only once its French page actually exists (avoids 404s).
+FR_PAGES = {
+    "index.html",
+}
+
+UI = {
+    "en": {"book": "Book", "menu": "Menu", "lang_other": "FR", "lang_other_full": "Français"},
+    "fr": {"book": "Réserver", "menu": "Menu", "lang_other": "EN", "lang_other_full": "English"},
+}
+
+
+def hreflang_links(en_url, fr_url):
+    """Reciprocal hreflang tags for a page that exists in both languages.
+    en_url / fr_url are site-relative (e.g. 'index.html', 'fr/index.html')."""
+    if not fr_url:
+        return ""
+    return (f'<link rel="alternate" hreflang="en" href="{SITE_URL}/{en_url}">\n'
+            f'<link rel="alternate" hreflang="fr" href="{SITE_URL}/{fr_url}">\n'
+            f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}/{en_url}">\n')
+
+
+def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra="", body_class="", lang="en", alt_hreflang=""):
     bodycls = f' class="{body_class}"' if body_class else ''
     analytics = ""
     if BING_VERIFY:
@@ -115,7 +150,7 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
             "setTimeout(load,3500);})();</script>\n"
         )
     return f'''<!DOCTYPE html>
-<html lang="en">
+<html lang="{lang}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,6 +158,7 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
 <meta name="description" content="{desc}">
 {'<meta name="robots" content="noindex, nofollow">' if NOINDEX else ''}
 <link rel="canonical" href="{SITE_URL}/{canonical}">
+{alt_hreflang}<meta property="og:locale" content="{'fr_FR' if lang == 'fr' else 'en_US'}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dar Mansour - Morocco's Kitchen">
 <meta property="og:title" content="{title}">
@@ -173,12 +209,24 @@ MEGA_GROUPS = [
 ]
 
 
-def header():
-    nav = "\n      ".join(f'<a href="{href}">{label}</a>' for href, label in NAV_ITEMS)
+def _lang_switch(lang, alt_url):
+    """Small EN/FR toggle pointing at the current page's other-language URL."""
+    if not alt_url:
+        return ""
+    label = UI[lang]["lang_other"]
+    full = UI[lang]["lang_other_full"]
+    return (f'<a class="lang-switch" href="{alt_url}" hreflang="{UI[lang]["lang_other"].lower()}" '
+            f'aria-label="{full}">{label}</a>')
+
+
+def header(lang="en", alt_url=""):
+    nav_items = NAV_ITEMS_FR if lang == "fr" else NAV_ITEMS
+    nav = "\n      ".join(f'<a href="{href}">{label}</a>' for href, label in nav_items)
     groups = ""
     for title, links in MEGA_GROUPS:
         items = "".join(f'<li><a href="{href}">{label}</a></li>' for href, label in links)
         groups += f'<div class="mega__group"><h4>{title}</h4><ul>{items}</ul></div>'
+    switch = _lang_switch(lang, alt_url)
     return f'''
 <header class="header" id="header">
   <div class="wrap header__inner">
@@ -190,10 +238,11 @@ def header():
       {nav}
     </nav>
     <div class="header__cta">
-      <a class="btn btn--light" href="{WA}" target="_blank" rel="noopener">Book</a>
+      {switch}
+      <a class="btn btn--light" href="{WA}" target="_blank" rel="noopener">{UI[lang]["book"]}</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open full menu" aria-expanded="false" aria-controls="mega">
         <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__label">{UI[lang]["menu"]}</span>
       </button>
     </div>
   </div>
@@ -266,10 +315,24 @@ def subhero(eyebrow, h1, sub, image, alt, tall=False, focus=None, variant=None):
 </section>'''
 
 
-def cta_band(title, text, eyebrow="Reservation &amp; Pre-order",
-             btn_label="Book &amp; Pre-order via WhatsApp", wa_message=None):
+_CTA_T = {
+    "en": {"eyebrow": "Reservation &amp; Pre-order",
+           "btn": "Book &amp; Pre-order via WhatsApp",
+           "directions": "Get Directions",
+           "meta": "Dinner only · Tuesday to Saturday · 7:00 PM – 10:30 PM · Closed Sunday &amp; Monday"},
+    "fr": {"eyebrow": "Réservation &amp; Pré-commande",
+           "btn": "Réserver &amp; pré-commander sur WhatsApp",
+           "directions": "Itinéraire",
+           "meta": "Dîner uniquement · du mardi au samedi · 19h00 – 22h30 · Fermé dimanche &amp; lundi"},
+}
+
+
+def cta_band(title, text, eyebrow=None, btn_label=None, wa_message=None, lang="en"):
     # Optional pre-filled WhatsApp message, so the guest lands on a ready-to-send
     # text (handy for enquiry-led pages like Private Dining).
+    t = _CTA_T[lang]
+    eyebrow = eyebrow if eyebrow is not None else t["eyebrow"]
+    btn_label = btn_label if btn_label is not None else t["btn"]
     href = f"{WA}?text={quote(wa_message)}" if wa_message else WA
     return f'''
 <section class="section book">
@@ -279,9 +342,9 @@ def cta_band(title, text, eyebrow="Reservation &amp; Pre-order",
     <p class="lead">{text}</p>
     <div class="book__actions">
       <a class="btn btn--primary" href="{href}" target="_blank" rel="noopener">{WA_ICON} {btn_label}</a>
-      <a class="btn btn--ghost" href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Get Directions</a>
+      <a class="btn btn--ghost" href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">{t["directions"]}</a>
     </div>
-    <p class="book__meta">Dinner only · Tuesday to Saturday · 7:00 PM – 10:30 PM · Closed Sunday &amp; Monday</p>
+    <p class="book__meta">{t["meta"]}</p>
   </div>
 </section>'''
 
@@ -303,7 +366,36 @@ def related(*cards):
 </section>'''
 
 
-def footer():
+_FOOTER_T = {
+    "en": {
+        "tagline": "A soulful Moroccan slow food sanctuary on the west coast of Koh Phangan. Rooted in tradition, slow cooked with care.",
+        "explore": "Explore", "discover": "Discover", "visit": "Visit &amp; Contact",
+        "experience": "The Experience", "concept": "Concept", "menu": "Menu",
+        "wine": "Wine Pairing", "bar": "The Mansour Bar", "private": "Private Dining",
+        "founders": "Founders &amp; Vision", "art": "Artistic Direction",
+        "pantry": "Moroccan Pantry", "spirit": "Mansour Spirit",
+        "recognition": "Recognition", "reviews": "Reviews", "journal": "Journal &amp; Stories",
+        "team": "Editorial Team", "faq": "FAQ",
+        "hours": "Tue – Sat · 7:00–10:30 PM<br>Closed Sun &amp; Mon",
+        "rights": "All content © Dar Mansour — 2026. No tracking, no ads — just food &amp; soul.",
+    },
+    "fr": {
+        "tagline": "Un sanctuaire de slow food marocain sur la côte ouest de Koh Phangan. Enraciné dans la tradition, mijoté avec soin.",
+        "explore": "Explorer", "discover": "Découvrir", "visit": "Visite &amp; Contact",
+        "experience": "L'Expérience", "concept": "Concept", "menu": "Menu",
+        "wine": "Accords mets &amp; vins", "bar": "Le Mansour Bar", "private": "Privatisation",
+        "founders": "Fondateurs &amp; Vision", "art": "Direction artistique",
+        "pantry": "Le Garde-manger marocain", "spirit": "L'Esprit Mansour",
+        "recognition": "Reconnaissance", "reviews": "Avis", "journal": "Journal &amp; Récits",
+        "team": "Équipe éditoriale", "faq": "FAQ",
+        "hours": "Mar – Sam · 19h00–22h30<br>Fermé dim. &amp; lun.",
+        "rights": "Tout le contenu © Dar Mansour — 2026. Aucun tracking, aucune pub — juste de la cuisine &amp; de l'âme.",
+    },
+}
+
+
+def footer(lang="en"):
+    t = _FOOTER_T[lang]
     return f'''
 <footer class="footer" id="contact">
   <div class="wrap">
@@ -311,45 +403,45 @@ def footer():
       <div class="footer__brand">
         <img class="footer__logo" src="assets/logo/dar-mansour-logo-white.png" alt="Dar Mansour - Morocco's Kitchen" width="1622" height="876">
         <p class="footer__brand-sub">Koh Phangan · Thailand</p>
-        <p>A soulful Moroccan slow food sanctuary on the west coast of Koh Phangan. Rooted in tradition, slow cooked with care.</p>
+        <p>{t["tagline"]}</p>
       </div>
       <div>
-        <h3>Explore</h3>
+        <h3>{t["explore"]}</h3>
         <ul>
-          <li><a href="index.html">The Experience</a></li>
-          <li><a href="moroccan-slow-dining-koh-phangan.html">Concept</a></li>
-          <li><a href="moroccan-menu-koh-phangan.html">Menu</a></li>
-          <li><a href="moroccan-wine-pairing-koh-phangan.html">Wine Pairing</a></li>
-          <li><a href="moroccan-cocktails-koh-phangan.html">The Mansour Bar</a></li>
-          <li><a href="private-dining-koh-phangan.html">Private Dining</a></li>
+          <li><a href="index.html">{t["experience"]}</a></li>
+          <li><a href="moroccan-slow-dining-koh-phangan.html">{t["concept"]}</a></li>
+          <li><a href="moroccan-menu-koh-phangan.html">{t["menu"]}</a></li>
+          <li><a href="moroccan-wine-pairing-koh-phangan.html">{t["wine"]}</a></li>
+          <li><a href="moroccan-cocktails-koh-phangan.html">{t["bar"]}</a></li>
+          <li><a href="private-dining-koh-phangan.html">{t["private"]}</a></li>
         </ul>
       </div>
       <div>
-        <h3>Discover</h3>
+        <h3>{t["discover"]}</h3>
         <ul>
-          <li><a href="dar-mansour-founders-vision.html">Founders &amp; Vision</a></li>
-          <li><a href="moroccan-interior-art-koh-phangan.html">Artistic Direction</a></li>
-          <li><a href="moroccan-pantry-koh-phangan.html">Moroccan Pantry</a></li>
-          <li><a href="moroccan-hospitality-values-koh-phangan.html">Mansour Spirit</a></li>
-          <li><a href="best-moroccan-restaurant-world-press.html">Recognition</a></li>
-          <li><a href="moroccan-restaurant-reviews-koh-phangan.html">Reviews</a></li>
-          <li><a href="blog.html">Journal &amp; Stories</a></li>
-          <li><a href="authors/">Editorial Team</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="dar-mansour-founders-vision.html">{t["founders"]}</a></li>
+          <li><a href="moroccan-interior-art-koh-phangan.html">{t["art"]}</a></li>
+          <li><a href="moroccan-pantry-koh-phangan.html">{t["pantry"]}</a></li>
+          <li><a href="moroccan-hospitality-values-koh-phangan.html">{t["spirit"]}</a></li>
+          <li><a href="best-moroccan-restaurant-world-press.html">{t["recognition"]}</a></li>
+          <li><a href="moroccan-restaurant-reviews-koh-phangan.html">{t["reviews"]}</a></li>
+          <li><a href="blog.html">{t["journal"]}</a></li>
+          <li><a href="authors/">{t["team"]}</a></li>
+          <li><a href="faq.html">{t["faq"]}</a></li>
         </ul>
       </div>
       <div>
-        <h3>Visit &amp; Contact</h3>
+        <h3>{t["visit"]}</h3>
         <address>
           <p><a href="https://share.google/Rp8YllnPe9Z9E9Va0" target="_blank" rel="noopener">Hin Kong Road, Sri Thanu area<br>Koh Phangan 84280, Thailand</a></p>
-          <p>Tue – Sat · 7:00–10:30 PM<br>Closed Sun &amp; Mon</p>
+          <p>{t["hours"]}</p>
           <p><a href="{WA}" target="_blank" rel="noopener">WhatsApp · +66 82 276 7757</a></p>
           <p><a href="mailto:hello@darmansour.com">hello@darmansour.com</a></p>
         </address>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>All content © Dar Mansour — 2026. No tracking, no ads — just food &amp; soul.</span>
+      <span>{t["rights"]}</span>
       <div class="footer__social">
         <a href="https://instagram.com/darmansour.kohphangan" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/p/Dar-Mansour-Koh-Phangan-61574622040198/" target="_blank" rel="noopener">Facebook</a>
@@ -365,8 +457,34 @@ def footer():
 </html>'''
 
 
-def page(title, desc, canonical, body, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg", extra_head="", body_class=""):
-    return head(title, desc, canonical, og_image, extra_head, body_class) + header() + "\n<main id=\"top\">\n" + body + "\n</main>\n" + footer()
+def _fr_localize(html):
+    """Rewrite relative asset/page URLs to work from the /fr/ sub-directory.
+    Page slugs that have a French version get the /fr/ prefix; others stay English."""
+    def repl(m):
+        attr, u = m.group(1), m.group(2)
+        if u.startswith(_ROOT_SKIP):
+            return f'{attr}="{u}"'
+        if u.startswith("assets/"):
+            return f'{attr}="/{u}"'
+        base = u.split("#")[0].split("?")[0]
+        if base in FR_PAGES:
+            return f'{attr}="/fr/{u}"'
+        return f'{attr}="/{u}"'
+    html = _re.sub(r'\b(href|src)="([^"]*)"', repl, html)
+    html = _re.sub(r'url\(&quot;([^&)]*)&quot;\)',
+                   lambda m: (m.group(0) if m.group(1).startswith(_ROOT_SKIP)
+                              else f'url(&quot;/{m.group(1)}&quot;)'), html)
+    return html
+
+
+def page(title, desc, canonical, body, og_image="assets/img/moroccan-garden-dining-koh-phangan.jpg",
+         extra_head="", body_class="", lang="en", alt_url="", en_url=None, fr_url=None):
+    hl = hreflang_links(en_url, fr_url) if (fr_url is not None and en_url is not None) else ""
+    html = (head(title, desc, canonical, og_image, extra_head, body_class, lang, hl)
+            + header(lang, alt_url) + "\n<main id=\"top\">\n" + body + "\n</main>\n" + footer(lang))
+    if lang == "fr":
+        html = _fr_localize(html)
+    return html
 
 
 def redirect_page(target, title="Dar Mansour"):

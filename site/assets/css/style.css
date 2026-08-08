@@ -892,3 +892,8 @@ body.journal .faq__item summary::after { color: var(--journal); }
   .dish img { height: auto; }
   .author__img img { height: auto; }
 }
+
+/* Language switcher (EN/FR) in the header */
+.lang-switch { font-family: var(--sans); font-weight: 700; font-size: .8rem; letter-spacing: .08em; color: var(--ink); text-decoration: none; padding: .35rem .5rem; border: 1px solid var(--line); border-radius: 3px; line-height: 1; align-self: center; transition: color .2s, border-color .2s; }
+.lang-switch:hover { color: var(--journal, #00837d); border-color: var(--journal, #00837d); }
+.hero ~ * .lang-switch, .header .lang-switch { color: inherit; }
