@@ -54,24 +54,17 @@ JS_V = _asset_v("js/main.js")
 ARROW = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'
          '<path d="M5 12h14M13 6l6 6-6 6"/></svg>')
 
-# Primary top nav (desktop) — kept short and premium.
+# Primary top nav (desktop) — Collection first (selling pieces is the priority).
 NAV_ITEMS = [
+    ("collection.html", "Collection"),
     ("studio.html", "Studio"),
     ("projects.html", "Projects"),
-    ("collection.html", "Collection"),
     ("journal.html", "Journal"),
     ("contact.html", "Contact"),
 ]
 
-# Full-screen menu, grouped by cluster.
+# Full-screen menu, grouped by cluster — Collection first.
 MEGA_GROUPS = [
-    ("The Studio", [
-        ("index.html", "Home"),
-        ("studio.html", "Studio &amp; Maija"),
-        ("projects.html", "Projects"),
-        ("journal.html", "Journal"),
-        ("contact.html", "Contact"),
-    ]),
     ("The Collection", [
         ("collection.html", "All Pieces"),
         ("collection.html#tables", "Tables"),
@@ -79,7 +72,14 @@ MEGA_GROUPS = [
         ("collection.html#objects", "Objects"),
         ("collection.html#walls", "Walls"),
     ]),
-    ("What We Do", [
+    ("The Studio", [
+        ("index.html", "Home"),
+        ("studio.html", "Studio &amp; Maija"),
+        ("projects.html", "Projects"),
+        ("journal.html", "Journal"),
+        ("contact.html", "Contact"),
+    ]),
+    ("Design Services", [
         ("hospitality-design.html", "Hospitality Design"),
         ("restaurant-design.html", "Restaurant Design"),
         ("residential-design.html", "Residential Design"),

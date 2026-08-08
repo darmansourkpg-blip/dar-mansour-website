@@ -53,6 +53,18 @@ def subhero_media(slug):
     return "subhero__media--placeholder", ""
 
 
+def feat_tile(page, img_slug, title, rnd=False, meta="Limited-edition table"):
+    """A featured Collection tile for the home page (links to the piece page)."""
+    cls = "art art--round" if rnd else "art"
+    src = find_img(img_slug)
+    media = (f'<img src="{src}" alt="{title} — {meta} by Maija, Eden &amp; Beyond" loading="lazy">'
+             if src else ph(title))
+    return (f'<a class="{cls} reveal" href="{page}.html">'
+            f'<div class="art__media">{media}</div>'
+            f'<div class="art__cap"><span class="art__title">{title}</span>'
+            f'<span class="art__meta">{meta}</span></div></a>')
+
+
 def jcard(cat, title, desc):
     return f'''<article class="jcard reveal">
       <a class="jcard__img" href="journal.html"><span class="jcard__cat">{cat}</span>{ph(title)}</a>
@@ -73,66 +85,86 @@ def wwd_item(title, desc):
 _home_hero_cls, _home_hero_media = hero_media("hero-home", "Eden & Beyond creative studio")
 home_body = f'''
 {L.hero(
-    eyebrow="Creative Studio · Hospitality · Living · Lifestyle",
+    eyebrow="Collectible Design · Hand-Collaged in Thailand",
     h1_html='<span class="fbox">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> The Box</span>',
-    sub=("A creative studio designing unforgettable places, objects &amp; experiences. "
-         "From boutique hotels and restaurants to private villas and bespoke objects, "
-         "we create projects with soul — where design, storytelling and craftsmanship "
-         "come together to create lasting memories."),
+    sub=("Collectible tables, lighting, objects and dressed walls — hand-collaged by Maija, one-off and "
+         "limited edition. And a creative studio that designs the spaces they belong in."),
     actions_html=(
-        f'<a class="btn btn--primary" href="{L.wa("Hi Eden &amp; Beyond, I would like to talk about a project.")}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>'
-        '<a class="btn btn--light" href="projects.html">Explore Our Work</a>'),
+        f'<a class="btn btn--primary" href="collection.html">Explore the Collection</a>'
+        '<a class="btn btn--light" href="studio.html">Meet the Studio</a>'),
     media_class=_home_hero_cls,
     media_html=_home_hero_media,
 )}
 
 <div class="trust"><div class="wrap trust__inner">
-  <span class="trust__item"><strong>Hospitality</strong></span>
-  <span class="trust__item"><strong>Residential</strong></span>
-  <span class="trust__item"><strong>Furniture &amp; Objects</strong></span>
-  <span class="trust__item"><strong>Creative Direction</strong></span>
-  <span class="trust__item">Working <strong>Internationally</strong></span>
+  <span class="trust__item"><strong>Tables</strong></span>
+  <span class="trust__item"><strong>Lighting</strong></span>
+  <span class="trust__item"><strong>Objects</strong></span>
+  <span class="trust__item"><strong>Walls</strong></span>
+  <span class="trust__item"><strong>Limited Editions</strong></span>
 </div></div>
 
 <section class="section"><div class="wrap">
-  <div class="center reveal" style="max-width:760px;margin-inline:auto;">
-    <span class="eyebrow">Beyond Design</span>
-    <h2 style="margin:1.2rem 0 1.6rem;">Great projects aren't built<br>around trends. They're built around stories.</h2>
-    <p class="lead" style="margin-inline:auto;">At Eden &amp; Beyond, we believe every place, every object and every
-    experience deserves its own identity. That's why we don't start with a style. We start by listening.
-    Understanding. Questioning. Only then do we begin to create — and the result is never just beautiful. It's meaningful.</p>
+  <div class="split" style="align-items:center;">
+    <div class="split__text reveal">
+      <span class="eyebrow eyebrow--red">The Collection</span>
+      <h2 style="margin:1rem 0 1.2rem;">Own a piece,<br>no project required.</h2>
+      <p class="lead">Every piece is one-off or limited edition — a familiar form dressed in paper, paint and layered
+      collage until it reveals the invisible life it carries. Discover, commission or acquire a single piece.</p>
+      <a class="btn btn--primary" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
+    </div>
+    <div class="split__media reveal" data-delay="1">
+      <a href="hubb.html">{('<img src="'+find_img('poppy-queen')+'" alt="Hubb — limited-edition table by Maija">') if find_img('poppy-queen') else ph('Hubb — table')}</a>
+      <span class="tag">Hubb · Limited-edition table</span>
+    </div>
   </div>
 </div></section>
 
-<section class="section section--sand"><div class="wrap">
+<section class="section section--sand" id="featured"><div class="wrap">
+  <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
+    <span class="eyebrow eyebrow--red">Featured Pieces</span>
+    <h2 style="margin-top:1rem;">Tables that break the frame</h2>
+  </div>
+  <div class="artgrid">
+    {feat_tile('flash', 'wondermint-camel', 'Flash')}
+    {feat_tile('mona', 'mona-lisa-fez', 'Mona', rnd=True)}
+    {feat_tile('divine-touch', 'creation-of-mint-tea', 'Divine Touch', rnd=True)}
+    {feat_tile('babouche', 'babouche-mandala', 'Babouche')}
+    {feat_tile('a-tea-in-the-desert', 'teapot-camel', 'A Tea in the Desert')}
+    {feat_tile('kenza', 'kenza', 'Kenza', meta='Lighting · mixed-media lamp')}
+  </div>
+  <div class="center reveal" style="margin-top:2.6rem;"><a class="btn btn--primary" href="collection.html">Explore the Full Collection {A}</a></div>
+</div></section>
+
+<section class="section"><div class="wrap">
   <div class="center reveal" style="max-width:660px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
-    <span class="eyebrow">Two ways to experience Eden &amp; Beyond</span>
-    <h2 style="margin-top:1rem;">Commission a project,<br>or own a piece.</h2>
+    <span class="eyebrow">Two ways to work with Eden &amp; Beyond</span>
+    <h2 style="margin-top:1rem;">Own a piece,<br>or commission a project.</h2>
   </div>
   <div class="duo">
-    <div class="duo__card reveal">
+    <div class="duo__card duo__card--red reveal">
       <div class="duo__body">
-        <span class="eyebrow">01 — Creative Studio</span>
+        <span class="eyebrow">01 — Design Collection</span>
+        <h3>Bring a piece of Eden &amp; Beyond into your home.</h3>
+        <p>Collectible tables, lighting, objects and dressed walls — available on their own, no project required.</p>
+        <a class="btn btn--light" href="collection.html">Explore the Collection {A}</a>
+      </div>
+    </div>
+    <div class="duo__card reveal" data-delay="1">
+      <div class="duo__body">
+        <span class="eyebrow">02 — Creative Studio</span>
         <h3>Designing unforgettable places, objects &amp; experiences.</h3>
         <p>High-end creative direction and design for hotels, restaurants, bars, villas and commercial spaces.</p>
         <a class="btn btn--light" href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>
       </div>
     </div>
-    <div class="duo__card duo__card--red reveal" data-delay="1">
-      <div class="duo__body">
-        <span class="eyebrow">02 — Design Collection</span>
-        <h3>Bring a piece of Eden &amp; Beyond into your home.</h3>
-        <p>A curated collection of bespoke furniture, lighting and objects — available on their own, no project required.</p>
-        <a class="btn btn--light" href="collection.html">Explore the Collection {A}</a>
-      </div>
-    </div>
   </div>
 </div></section>
 
-<section class="section"><div class="wrap">
+<section class="section section--sand"><div class="wrap">
   <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
-    <span class="eyebrow">Creative Studio · What We Do</span>
-    <h2 style="margin-top:1.1rem;">Four disciplines,<br>one way of thinking.</h2>
+    <span class="eyebrow">The Studio · Design Services</span>
+    <h2 style="margin-top:1.1rem;">We also design the spaces,<br>from concept to completion.</h2>
   </div>
   <div class="disc-lite">
     <a class="disc-lite__item reveal" href="hospitality-design.html">
@@ -177,24 +209,6 @@ home_body = f'''
 </div></section>
 
 <section class="section section--sand"><div class="wrap">
-  <div class="split" style="align-items:flex-end;margin-bottom:clamp(2rem,5vw,3rem);">
-    <div class="split__text reveal">
-      <span class="eyebrow eyebrow--red">The Collection</span>
-      <h2 style="margin:1rem 0 1.2rem;">Where the studio<br>gets loud.</h2>
-      <p class="lead">Maija's collages, objects and limited editions collide Moroccan craft with a wink at Western art —
-      fez and Mona Lisa, mint tea and Michelangelo. Each piece can be commissioned or acquired on its own.</p>
-      <a class="textlink" href="collection.html" style="margin-top:1.4rem;">Explore the Collection {A}</a>
-    </div>
-  </div>
-  <div class="artstrip reveal">
-    <a class="artstrip__i artstrip__i--round" href="collection.html#tables"><img src="{find_img('poppy-queen')}" alt="Hubb — limited-edition table by Maija" loading="lazy"></a>
-    <a class="artstrip__i" href="collection.html#tables"><img src="{find_img('wondermint-camel')}" alt="Flash — limited-edition table by Maija" loading="lazy"></a>
-    <a class="artstrip__i artstrip__i--round" href="collection.html#tables"><img src="{find_img('mona-lisa-fez')}" alt="Mona — limited-edition table by Maija" loading="lazy"></a>
-    <a class="artstrip__i" href="collection.html#tables"><img src="{find_img('babouche-mandala')}" alt="Babouche — limited-edition table by Maija" loading="lazy"></a>
-  </div>
-</div></section>
-
-<section class="section" style="padding-top:0;"><div class="wrap">
   <div class="center reveal" style="margin-bottom:clamp(2.5rem,6vw,3.5rem);">
     <span class="eyebrow">Journal</span>
     <h2 style="margin-top:1rem;">Ideas that inspire our work</h2>
@@ -210,17 +224,22 @@ home_body = f'''
   <div class="center reveal" style="margin-top:2.6rem;"><a class="textlink" href="journal.html">Explore the Journal {A}</a></div>
 </div></section>
 
-{L.cta_band(
-    title="Let's create something unforgettable.",
-    text=("Whether you're developing a boutique hotel, designing a restaurant, building a private villa "
-          "or imagining something entirely new, we'd love to hear your story."),
-)}
+<section class="section book"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow eyebrow--red">The Collection</span>
+  <h2>Bring a piece of Eden &amp; Beyond<br>into your home.</h2>
+  <p class="lead">One-off and limited-edition tables, lighting, objects and dressed walls — hand-collaged by Maija.
+  Message the studio for availability, editions and price.</p>
+  <div class="book__actions">
+    <a class="btn btn--primary" href="collection.html">Explore the Collection {A}</a>
+    <a class="btn btn--ghost" href="{L.wa('Hi Eden &amp; Beyond, I would like to enquire about a piece from your collection.')}" target="_blank" rel="noopener">{L.WA_ICON} Enquire on WhatsApp</a>
+  </div>
+</div></section>
 '''
 
 pages["index.html"] = L.page(
-    title="Eden & Beyond — Creative Studio for Hospitality, Living & Lifestyle",
-    desc=("Eden & Beyond is a multidisciplinary creative studio designing places, objects and experiences — "
-          "boutique hotels, restaurants, private villas, bespoke furniture and creative direction. Based in Thailand, working internationally."),
+    title="Eden & Beyond — Collectible Tables, Lighting & Objects by Maija",
+    desc=("Collectible, hand-collaged tables, lighting, objects and dressed walls by Maija — one-off and limited "
+          "edition. Plus a creative studio for hospitality, residential and commercial projects. Based in Thailand."),
     canonical="index.html",
     body=home_body,
 )
