@@ -18,6 +18,18 @@ NOINDEX = True
 EMAIL = "hello@edenandbeyond.studio"
 INSTAGRAM = "https://instagram.com/edenandbeyond.kpg"
 INSTAGRAM_HANDLE = "@edenandbeyond.kpg"
+# WhatsApp is the primary contact channel (like Dar Mansour). Maija's number.
+WHATSAPP_NUMBER = "66923651604"
+WHATSAPP_DISPLAY = "+66 92 365 1604"
+WA = f"https://wa.me/{WHATSAPP_NUMBER}"
+WA_ICON = ('<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 '
+           '4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 '
+           '0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.3.5-.5.7-.7 1-.2.2-.3.4-.1.7.2.3.9 1.5 '
+           '2 2.4 1.4 1.2 2.5 1.5 2.8 1.7.3.1.5.1.6-.1.2-.2.7-.9.9-1.2.2-.3.4-.2.6-.1.3.1 1.6.8 1.9.9.3.2.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>')
+
+
+def wa(message=None):
+    return f"{WA}?text={quote(message)}" if message else WA
 
 # --- SEO / Analytics integrations (leave empty to disable) ---
 GA4_ID = ""          # Google Analytics 4 Measurement ID (add at launch)
@@ -210,7 +222,7 @@ def header():
       {nav}
     </nav>
     <div class="header__cta">
-      <a class="btn btn--primary" href="contact.html">Start a Project</a>
+      <a class="btn btn--primary" href="{wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{WA_ICON} Start a Project</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open full menu" aria-expanded="false" aria-controls="mega">
         <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="menu-toggle__label">Menu</span>
@@ -223,16 +235,16 @@ def header():
     <div class="mega__groups">{groups}</div>
     <div class="mega__foot">
       <div>
-        <span class="eyebrow">Start a Project</span>
-        <p><a href="mailto:{EMAIL}">{EMAIL}</a><br>
-        <span class="mega__note">Hospitality, residential, furniture &amp; creative direction enquiries.</span></p>
+        <span class="eyebrow">Talk to us</span>
+        <p><a href="{wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">WhatsApp · {WHATSAPP_DISPLAY}</a><br>
+        <span class="mega__note">The fastest way to reach the studio — projects &amp; collection.</span></p>
       </div>
       <div>
         <span class="eyebrow">Studio</span>
         <p>Working internationally<br>Based in Thailand<br>
         <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram · {INSTAGRAM_HANDLE}</a></p>
       </div>
-      <a class="btn btn--primary" href="contact.html">Start a Project {ARROW}</a>
+      <a class="btn btn--primary" href="{wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{WA_ICON} Start a Project</a>
     </div>
   </div>
 </div>'''
@@ -284,7 +296,8 @@ def subhero(eyebrow, h1, sub, media_class="subhero__media--placeholder",
 </section>'''
 
 
-def cta_band(title, text, eyebrow="Start a Project", btn_label="Start a Project"):
+def cta_band(title, text, eyebrow="Start a Project", btn_label="Start a Project", wa_message=None):
+    href = wa(wa_message or "Hi Eden &amp; Beyond, I would like to talk about a project.")
     return f'''
 <section class="section book">
   <div class="wrap wrap--narrow reveal">
@@ -292,7 +305,7 @@ def cta_band(title, text, eyebrow="Start a Project", btn_label="Start a Project"
     <h2>{title}</h2>
     <p class="lead">{text}</p>
     <div class="book__actions">
-      <a class="btn btn--primary" href="contact.html">{btn_label} {ARROW}</a>
+      <a class="btn btn--primary" href="{href}" target="_blank" rel="noopener">{WA_ICON} {btn_label}</a>
       <a class="btn btn--ghost" href="projects.html">Explore Our Work</a>
     </div>
   </div>
@@ -352,20 +365,23 @@ def footer():
         <h4>Connect</h4>
         <address>
           <p>Working internationally<br>Based in Thailand</p>
-          <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
+          <p><a href="{wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">WhatsApp · {WHATSAPP_DISPLAY}</a></p>
           <p><a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram · {INSTAGRAM_HANDLE}</a></p>
+          <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
         </address>
       </div>
     </div>
     <div class="footer__bottom">
       <span>&copy; Eden &amp; Beyond — 2026. Designing places, objects &amp; experiences.</span>
       <div class="footer__social">
+        <a href="{wa()}" target="_blank" rel="noopener">WhatsApp</a>
         <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram</a>
         <a href="mailto:{EMAIL}">Email</a>
       </div>
     </div>
   </div>
 </footer>
+<a class="wa-float" href="{wa()}" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">{WA_ICON}</a>
 <script src="assets/js/main.js?v={JS_V}"></script>
 </body>
 </html>'''

@@ -80,7 +80,7 @@ home_body = f'''
          "we create projects with soul — where design, storytelling and craftsmanship "
          "come together to create lasting memories."),
     actions_html=(
-        '<a class="btn btn--primary" href="contact.html">Start a Project</a>'
+        f'<a class="btn btn--primary" href="{L.wa("Hi Eden &amp; Beyond, I would like to talk about a project.")}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>'
         '<a class="btn btn--light" href="projects.html">Explore Our Work</a>'),
     media_class=_home_hero_cls,
     media_html=_home_hero_media,
@@ -115,7 +115,7 @@ home_body = f'''
         <span class="eyebrow">01 — Creative Studio</span>
         <h3>Designing unforgettable places, objects &amp; experiences.</h3>
         <p>High-end creative direction and design for hotels, restaurants, bars, villas and commercial spaces.</p>
-        <a class="btn btn--light" href="contact.html">Start a Project {A}</a>
+        <a class="btn btn--light" href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>
       </div>
     </div>
     <div class="duo__card duo__card--red reveal" data-delay="1">
@@ -540,41 +540,25 @@ contact_body = f'''
   <div class="contact-grid">
     <div class="contact-info reveal">
       <span class="eyebrow">Start the Conversation</span>
-      <h2 style="margin:1rem 0 1.4rem;">Every project begins<br>with a conversation.</h2>
-      <p style="margin-bottom:2rem;">Tell us about your vision, your ambitions and your project. We'll take it from there.</p>
+      <h2 style="margin:1rem 0 1.4rem;">The best projects begin<br>with a message.</h2>
+      <p style="margin-bottom:2rem;">Tell us about your vision — a project, a bespoke commission or a piece from the
+      collection. WhatsApp is the fastest way to reach the studio.</p>
       <dl>
-        <div><dt>Email</dt><dd><a href="mailto:{L.EMAIL}">{L.EMAIL}</a></dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{L.WHATSAPP_DISPLAY}</a><span class="contact-note">Maija — the fastest response.</span></dd></div>
         <div><dt>Instagram</dt><dd><a href="{L.INSTAGRAM}" target="_blank" rel="noopener">{L.INSTAGRAM_HANDLE}</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:{L.EMAIL}">{L.EMAIL}</a></dd></div>
         <div><dt>Location</dt><dd>Working internationally.<span class="contact-note">Based in Thailand.</span></dd></div>
       </dl>
     </div>
 
-    <form class="enquiry reveal" data-delay="1" action="#" method="post" aria-label="Project enquiry">
-      <span class="eyebrow" style="margin-bottom:1.2rem;">Project Enquiry</span>
-      <div class="field--row">
-        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
-        <div class="field"><label for="company">Company</label><input id="company" name="company" type="text"></div>
-      </div>
-      <div class="field--row">
-        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
-        <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel"></div>
-      </div>
-      <div class="field--row">
-        <div class="field"><label for="location">Location</label><input id="location" name="location" type="text"></div>
-        <div class="field"><label for="type">Project Type</label>
-          <select id="type" name="type">
-            <option>Hospitality</option><option>Residential</option>
-            <option>Furniture &amp; Objects</option><option>Creative Direction</option><option>Other</option>
-          </select></div>
-      </div>
-      <div class="field--row">
-        <div class="field"><label for="timeline">Estimated Timeline</label><input id="timeline" name="timeline" type="text"></div>
-        <div class="field"><label for="budget">Estimated Budget (optional)</label><input id="budget" name="budget" type="text"></div>
-      </div>
-      <div class="field"><label for="message">Tell us about your project</label><textarea id="message" name="message"></textarea></div>
-      <button class="btn btn--primary" type="submit">Send Enquiry {A}</button>
-      <p class="enquiry__note">Form handling to be connected (e.g. Formspree / Web3Forms) at launch.</p>
-    </form>
+    <div class="enquiry reveal" data-delay="1" style="text-align:center;align-self:start;">
+      <span class="eyebrow" style="margin-bottom:1rem;">Talk to the studio</span>
+      <h3 style="margin-bottom:.8rem;">Message us on WhatsApp</h3>
+      <p style="max-width:none;margin-bottom:1.7rem;color:var(--ink-soft);">Share your project, ask about a piece from
+      the collection, or just say hello. We'll take it from there.</p>
+      <a class="btn btn--primary" href="{L.wa('Hi Eden &amp; Beyond, I found you through your website and would love to talk.')}" target="_blank" rel="noopener" style="width:100%;justify-content:center;">{L.WA_ICON} Chat on WhatsApp</a>
+      <p class="enquiry__note">Opens WhatsApp with a message ready to send.</p>
+    </div>
   </div>
 </div></section>
 
@@ -629,8 +613,9 @@ def piece(slug, title, medium, shape, tint, img=None):
         media = f'<img src="{src}" alt="{title} — {medium}, Eden &amp; Beyond" loading="lazy">'
     else:
         media = ph(title, tint)
-    # a piece with its own caption page links to it; otherwise to the enquiry form
-    href = f"{slug}.html" if slug in CAPTION_SLUGS else "contact.html"
+    # a piece with its own caption page links to it; placeholders open a WhatsApp enquiry
+    href = f"{slug}.html" if slug in CAPTION_SLUGS else L.wa(
+        f'Hi Eden &amp; Beyond, I would like to enquire about "{title}" from your collection.')
     return f'''<a class="{cls} reveal" href="{href}" id="{slug}">
       <div class="art__media">{media}</div>
       <div class="art__cap"><span class="art__title">{title}</span>
@@ -788,13 +773,10 @@ def _caption_html(text):
     return "\n".join(out)
 
 
-def _piece_mailto(title, kicker):
-    """Acquiring a Collection piece is a direct enquiry, not a project brief —
-    open a pre-filled email to the studio instead of the project form."""
-    subject = f"Collection enquiry — {title}"
-    body = (f'Hello Eden & Beyond,\n\nI would like to enquire about "{title}" ({kicker}) from your '
-            f'collection — availability, editions and price.\n\nThank you.')
-    return f"mailto:{L.EMAIL}?subject={quote(subject)}&body={quote(body)}"
+def _piece_wa(title, kicker):
+    """Acquiring a Collection piece is a direct WhatsApp enquiry, not a project brief."""
+    return L.wa(f'Hi Eden &amp; Beyond, I would like to enquire about "{title}" ({kicker}) from your '
+                f'collection — availability, editions and price.')
 
 
 def build_piece_pages():
@@ -819,7 +801,7 @@ def build_piece_pages():
       <div class="piece__caption">{_caption_html(d["text"])}</div>
       <p class="piece__sig">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> the Box</p>
       <div class="piece__actions">
-        <a class="btn btn--primary" href="{_piece_mailto(d["title"], d["kicker"])}">Enquire About This Piece {A}</a>
+        <a class="btn btn--primary" href="{_piece_wa(d["title"], d["kicker"])}" target="_blank" rel="noopener">{L.WA_ICON} Enquire on WhatsApp</a>
         <a class="btn btn--ghost" href="collection.html">Back to the Collection</a>
       </div>
     </div>
@@ -858,9 +840,8 @@ collection_nav = " · ".join(
     f'<a class="ilink" href="#{a}">{t}</a>' for a, t, _, _ in COLLECTION)
 collection_sections = "\n".join(collection_section(*c) for c in COLLECTION)
 _col_cls, _col_media = subhero_media("hero-collection")
-_col_mailto = ("mailto:" + L.EMAIL + "?subject=" + quote("Collection enquiry") + "&body="
-               + quote("Hello Eden & Beyond,\n\nI would like to enquire about a piece from your collection "
-                       "— availability, editions and price.\n\nThank you."))
+_col_wa = L.wa("Hi Eden &amp; Beyond, I would like to enquire about a piece from your collection "
+               "— availability, editions and price.")
 collection_body = f'''
 {L.breadcrumb(("Collection", None))}
 {L.subhero(
@@ -882,17 +863,17 @@ collection_body = f'''
 
 <section class="section" style="padding-top:0;"><div class="wrap wrap--narrow center reveal">
   <p style="color:var(--muted);font-size:.86rem;">Furniture, objects and wall pieces beyond the tables are shown on request.
-  Dimensions, editions and pricing are shared by email — <a class="ilink" href="{_col_mailto}">enquire about a piece</a>.</p>
+  Dimensions, editions and pricing are shared over WhatsApp — <a class="ilink" href="{_col_wa}" target="_blank" rel="noopener">enquire about a piece</a>.</p>
 </div></section>
 
 <section class="section book"><div class="wrap wrap--narrow reveal">
   <span class="eyebrow eyebrow--red">The Collection</span>
   <h2>Found a piece you love —<br>or want your own?</h2>
-  <p class="lead">Every piece is one-off or limited edition. Enquire for availability, editions and price —
+  <p class="lead">Every piece is one-off or limited edition. Message the studio for availability, editions and price —
   or commission something made entirely for your space.</p>
   <div class="book__actions">
-    <a class="btn btn--primary" href="{_col_mailto}">Enquire About a Piece {A}</a>
-    <a class="btn btn--ghost" href="contact.html">Start a Full Project</a>
+    <a class="btn btn--primary" href="{_col_wa}" target="_blank" rel="noopener">{L.WA_ICON} Enquire on WhatsApp</a>
+    <a class="btn btn--ghost" href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">Start a Full Project</a>
   </div>
 </div></section>
 '''
@@ -1059,7 +1040,7 @@ landing(
     approach={"h2": "Designed for years, not for seasons",
               "body": ("<p>We design homes that age beautifully — with natural materials, human craftsmanship and details chosen to "
                        "last. Every project begins by understanding how you actually want to live.</p>"
-                       '<p>Explore our <a href="studio.html">full range of services</a> or <a href="contact.html">start a '
+                       '<p>Explore our <a href="studio.html">full range of services</a> or <a href="https://wa.me/66923651604" target="_blank" rel="noopener">start a '
                        'conversation</a> about your home.</p>')},
 )
 
@@ -1113,7 +1094,7 @@ landing(
     approach={"h2": "Design should communicate",
               "body": ("<p>Our role isn't to impose a style — it's to reveal an identity. We question assumptions, challenge conventions "
                        "and explore beyond expectations, so the final project feels authentic and entirely its own.</p>"
-                       '<p>Learn more <a href="studio.html">about the studio</a> or <a href="contact.html">start a project</a>.</p>')},
+                       '<p>Learn more <a href="studio.html">about the studio</a> or <a href="https://wa.me/66923651604" target="_blank" rel="noopener">start a project</a>.</p>')},
     why_title="Why It Matters",
     why={"h2": "People remember how a place made them feel",
          "body": "Creative direction is what makes a project coherent — from the first impression to the smallest object — so it leaves a lasting impression rather than a forgettable one."},
