@@ -85,10 +85,10 @@ def wwd_item(title, desc):
 _home_hero_cls, _home_hero_media = hero_media("hero-home", "Eden & Beyond creative studio")
 home_body = f'''
 {L.hero(
-    eyebrow="Collectible Design · Hand-Collaged in Thailand",
+    eyebrow="Objects That Reveal the Invisible · Spaces That Reveal the Unexpected",
     h1_html='<span class="fbox">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> The Box</span>',
-    sub=("Collectible tables, lighting, objects and dressed walls — hand-collaged by Maija, one-off and "
-         "limited edition. And a creative studio that designs the spaces they belong in."),
+    sub=("Collectible furniture, lighting, objects and dressed walls — one-of-a-kind and limited editions.<br>"
+         "Creative direction for hospitality, private living and unconventional projects."),
     actions_html=(
         f'<a class="btn btn--primary" href="collection.html">Explore the Collection</a>'
         '<a class="btn btn--light" href="studio.html">Meet the Studio</a>'),
@@ -108,9 +108,10 @@ home_body = f'''
   <div class="split" style="align-items:center;">
     <div class="split__text reveal">
       <span class="eyebrow eyebrow--red">The Collection</span>
-      <h2 style="margin:1rem 0 1.2rem;">Own a piece,<br>no project required.</h2>
-      <p class="lead">Every piece is one-off or limited edition — a familiar form dressed in paper, paint and layered
-      collage until it reveals the invisible life it carries. Discover, commission or acquire a single piece.</p>
+      <h2 style="margin:1rem 0 1.2rem;">Some ideas become spaces.<br>Others become objects.</h2>
+      <p class="lead">Each piece is one-of-a-kind or part of a limited edition — transforming familiar forms into
+      unexpected objects with character, contradiction and a life of their own.</p>
+      <p style="margin-top:1rem;">Discover the collection, or commission a piece created for you.</p>
       <a class="btn btn--primary" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
     </div>
     <div class="split__media reveal" data-delay="1">
@@ -144,17 +145,17 @@ home_body = f'''
   <div class="duo">
     <div class="duo__card duo__card--red reveal">
       <div class="duo__body">
-        <span class="eyebrow">01 — Design Collection</span>
-        <h3>Bring a piece of Eden &amp; Beyond into your home.</h3>
-        <p>Collectible tables, lighting, objects and dressed walls — available on their own, no project required.</p>
+        <span class="eyebrow">01 — The Collection</span>
+        <h3>Some pieces are meant to find you.</h3>
+        <p>One-of-a-kind and limited-edition furniture, lighting, objects and dressed walls. Created to stand on their own. Made to be lived with.</p>
         <a class="btn btn--light" href="collection.html">Explore the Collection {A}</a>
       </div>
     </div>
     <div class="duo__card reveal" data-delay="1">
       <div class="duo__body">
-        <span class="eyebrow">02 — Creative Studio</span>
-        <h3>Designing unforgettable places, objects &amp; experiences.</h3>
-        <p>High-end creative direction and design for hotels, restaurants, bars, villas and commercial spaces.</p>
+        <span class="eyebrow">02 — The Studio</span>
+        <h3>Ordinary was never the brief.</h3>
+        <p>Creative direction and design for hospitality, residential and commercial projects. From a first idea to a complete world.</p>
         <a class="btn btn--light" href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>
       </div>
     </div>
@@ -162,30 +163,32 @@ home_body = f'''
 </div></section>
 
 <section class="section section--sand"><div class="wrap">
-  <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
+  <div class="center reveal" style="max-width:680px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
     <span class="eyebrow">The Studio · Design Services</span>
-    <h2 style="margin-top:1.1rem;">We also design the spaces,<br>from concept to completion.</h2>
+    <h2 style="margin:1.1rem 0 1.1rem;">From first idea<br>to complete world.</h2>
+    <p class="lead" style="margin-inline:auto;">Hospitality, residential, bespoke pieces and creative direction —
+    shaped by one vision, down to the last detail.</p>
   </div>
   <div class="disc-lite">
     <a class="disc-lite__item reveal" href="hospitality-design.html">
       <h3>Hospitality</h3>
-      <p>Memorable destinations through thoughtful design and storytelling.</p>
+      <p>Places people remember.</p>
       <span class="disc-lite__tags">Hotels · Restaurants · Bars · Beach Clubs · Cafés · Wellness</span>
       <span class="disc-lite__more">Explore {A}</span></a>
     <a class="disc-lite__item reveal" data-delay="1" href="residential-design.html">
       <h3>Residential</h3>
-      <p>Homes with personality, warmth and timeless character.</p>
+      <p>Homes with character. Never someone else's idea of beautiful.</p>
       <span class="disc-lite__tags">Private Villas · Luxury Residences · Holiday Homes</span>
       <span class="disc-lite__more">Explore {A}</span></a>
     <a class="disc-lite__item reveal" data-delay="2" href="furniture-object-design.html">
       <h3>Objects &amp; Furniture</h3>
-      <p>Bespoke pieces that give every project its own identity.</p>
+      <p>Bespoke pieces created for a particular place and purpose.</p>
       <span class="disc-lite__tags">Furniture · Lighting · Objects · Art Curation</span>
       <span class="disc-lite__more">Explore {A}</span></a>
     <a class="disc-lite__item reveal" data-delay="3" href="creative-direction.html">
       <h3>Creative Direction</h3>
-      <p>Concept, storytelling and brand experiences from first idea to last detail.</p>
-      <span class="disc-lite__tags">Concept · Brand Identity · Art Direction · Styling</span>
+      <p>The idea behind everything.</p>
+      <span class="disc-lite__tags">Concept · Storytelling · Brand Identity · Art Direction · Styling</span>
       <span class="disc-lite__more">Explore {A}</span></a>
   </div>
 </div></section>
