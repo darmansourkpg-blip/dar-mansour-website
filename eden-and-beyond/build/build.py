@@ -53,13 +53,15 @@ def subhero_media(slug):
     return "subhero__media--placeholder", ""
 
 
-def feat_tile(page, img_slug, title, rnd=False, meta="Limited-edition table"):
-    """A featured Collection tile for the home page (links to the piece page)."""
+def feat_tile(page, img_slug, title, rnd=False, meta="Limited-edition table", href=None):
+    """A featured Collection tile for the home page (links to the piece page,
+    or a custom href for pieces without their own page — e.g. walls)."""
     cls = "art art--round" if rnd else "art"
     src = find_img(img_slug)
     media = (f'<img src="{src}" alt="{title} — {meta} by Maija, Eden &amp; Beyond" loading="lazy">'
              if src else ph(title))
-    return (f'<a class="{cls} reveal" href="{page}.html">'
+    link = href or f"{page}.html"
+    return (f'<a class="{cls} reveal" href="{link}">'
             f'<div class="art__media">{media}</div>'
             f'<div class="art__cap"><span class="art__title">{title}</span>'
             f'<span class="art__meta">{meta}</span></div></a>')
@@ -124,15 +126,15 @@ home_body = f'''
 <section class="section section--sand" id="featured"><div class="wrap">
   <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
     <span class="eyebrow eyebrow--red">Featured Pieces</span>
-    <h2 style="margin-top:1rem;">Tables that break the frame</h2>
+    <h2 style="margin-top:1rem;">Pieces that break the frame</h2>
   </div>
   <div class="artgrid">
     {feat_tile('flash', 'wondermint-camel', 'Flash')}
     {feat_tile('mona', 'mona-lisa-fez', 'Mona', rnd=True)}
     {feat_tile('divine-touch', 'creation-of-mint-tea', 'Divine Touch', rnd=True)}
     {feat_tile('babouche', 'babouche-mandala', 'Babouche')}
-    {feat_tile('a-tea-in-the-desert', 'teapot-camel', 'A Tea in the Desert')}
     {feat_tile('kenza', 'kenza', 'Kenza', meta='Lighting · mixed-media lamp')}
+    {feat_tile('', 'fountain-wall', 'Fountain Wall', meta='Hand-stencilled wall', href='collection.html#walls')}
   </div>
   <div class="center reveal" style="margin-top:2.6rem;"><a class="btn btn--primary" href="collection.html">Explore the Full Collection {A}</a></div>
 </div></section>
@@ -674,9 +676,12 @@ COLLECTION = [
         ("sculptural-vessel","Sculptural Vessel","Object · limited edition",    "",  "ph--sun"),
      ]),
     ("walls", "Walls",
-     "Dressed walls — bespoke panels and murals that turn a surface into a story.", [
-        ("dressed-wall",   "Dressed Wall",  "Wall piece · bespoke commission", "",  "ph--dark"),
-        ("mural",          "Mural",         "Wall piece · bespoke commission", "",  "ph--magenta"),
+     "Hand-stencilled walls and murals — site-specific commissions that turn a surface into a story. "
+     "Zellige geometry and floral damask, plastered and painted by hand onto raw earth walls.", [
+        ("fountain-wall",  "Fountain Wall",  "Hand-stencilled wall · commission", "",  "ph--dark"),
+        ("entrance-wall",  "Entrance Wall",  "Hand-stencilled wall · commission", "",  "ph--teal"),
+        ("star-wall",      "Star Wall",      "Hand-stencilled wall · commission", "",  "ph--sun"),
+        ("floral-wall",    "Floral Wall",    "Hand-stencilled wall · commission", "",  "ph--magenta"),
      ]),
 ]
 
