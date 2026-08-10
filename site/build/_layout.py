@@ -107,6 +107,15 @@ NAV_ITEMS_FR = [
 # Add a slug here only once its French page actually exists (avoids 404s).
 FR_PAGES = {
     "index.html",
+    "moroccan-slow-dining-koh-phangan.html",
+    "moroccan-menu-koh-phangan.html",
+    "moroccan-restaurant-reservation-koh-phangan.html",
+    "moroccan-wine-pairing-koh-phangan.html",
+    "moroccan-cocktails-koh-phangan.html",
+    "moroccan-restaurant-reviews-koh-phangan.html",
+    "private-dining-koh-phangan.html",
+    "faq.html",
+    "contact-dar-mansour-koh-phangan.html",
 }
 
 UI = {
@@ -269,10 +278,11 @@ def header(lang="en", alt_url=""):
 </div>'''
 
 
-def breadcrumb(*crumbs):
+def breadcrumb(*crumbs, lang="en"):
     """crumbs: list of (label, href) ; last one is current (href None)."""
-    items = ['<li><a href="index.html">Home</a></li>']
-    ld = [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE_URL}/"}]
+    home_label = "Accueil" if lang == "fr" else "Home"
+    items = [f'<li><a href="index.html">{home_label}</a></li>']
+    ld = [{"@type": "ListItem", "position": 1, "name": home_label, "item": f"{SITE_URL}/"}]
     pos = 2
     for label, href in crumbs:
         items.append('<li class="sep" aria-hidden="true">›</li>')
@@ -349,8 +359,9 @@ def cta_band(title, text, eyebrow=None, btn_label=None, wa_message=None, lang="e
 </section>'''
 
 
-def related(*cards):
+def related(*cards, lang="en"):
     """cards: (eyebrow, title, href, image, alt)"""
+    heading = "Poursuivez le voyage" if lang == "fr" else "Continue the journey"
     inner = "".join(
         f'''<a class="related__card reveal" href="{href}">
           <img src="{_webp(img)}" alt="{alt}" loading="lazy">
@@ -360,7 +371,7 @@ def related(*cards):
 <section class="section" style="padding-top:0;">
   <div class="wrap">
     <div class="center reveal" style="margin-bottom:2.2rem;"><div class="divider"><span>◇◇◇</span></div>
-    <h2 style="margin-top:1.3rem;">Continue the journey</h2></div>
+    <h2 style="margin-top:1.3rem;">{heading}</h2></div>
     <div class="related">{inner}</div>
   </div>
 </section>'''
