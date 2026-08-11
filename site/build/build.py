@@ -212,7 +212,7 @@ home_body_fr = f'''
   <div class="wrap hero__inner">
     <span class="eyebrow">Slow Food · Côte Ouest, Koh Phangan</span>
     <h1 class="display hero__title">Restaurant Marocain<br>à Koh Phangan</h1>
-    <p class="hero__sub">Un restaurant marocain de slow-dining, près de Sri Thanu &amp; Hin Kong — tajines cuits au feu, tanjias longuement mijotées et dîners au jardin à la lueur des bougies, enracinés dans la tradition et mijotés avec soin.</p>
+    <p class="hero__sub">Une adresse marocaine confidentielle près de Sri Thanu et Hin Kong — tajines cuits lentement sur le charbon, tanjias mijotées pendant des heures et dîners aux chandelles dans le jardin, ancrés dans la tradition et préparés avec patience.</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="{WA}" target="_blank" rel="noopener">{WI} Réservez votre soirée</a>
       <a class="btn btn--light" href="moroccan-menu-koh-phangan.html">Découvrir le menu</a>
@@ -223,18 +223,19 @@ home_body_fr = f'''
 
 <div class="trust"><div class="wrap trust__inner">
   <span class="trust__item"><strong>Sur réservation</strong></span>
-  <span class="trust__item">Philosophie <strong>pré-commande</strong></span>
-  <span class="trust__item"><strong>Slow cooked</strong> · Zéro gaspillage</span>
-  <span class="trust__item">Limité à <strong>40 convives</strong> par soir</span>
+  <span class="trust__item"><strong>Précommande</strong></span>
+  <span class="trust__item">Philosophie <strong>Slow Food</strong> · Zéro gaspillage</span>
+  <span class="trust__item">Seulement <strong>40 convives</strong> par soir</span>
   <span class="trust__item">Accords <strong>mets &amp; vins</strong></span>
 </div></div>
 
 <section class="section" id="experience"><div class="wrap"><div class="split">
   <div class="split__text reveal">
     <span class="eyebrow">L'Expérience</span>
-    <h2>Arrivez en invité,<br>repartez en famille.</h2>
-    <p class="lead">Niché près de Sri Thanu et Hin Kong — à quelques minutes de The Alcove, du Orion Healing Center et de Bliss Villas — Dar Mansour est une expérience culinaire immersive et pleine d'âme, sur la côte ouest de Koh Phangan.</p>
-    <p style="margin-top:1.2rem;">Puisant dans la sagesse des Dadas, notre cuisine mêle les influences berbères, andalouses, juives et sahariennes — là où le sucré rencontre le salé, et où les légumes sont rôtis avec patience. Chaque détail, des zelliges faits main aux tables aux chandelles, invite à ralentir et à se sentir chez soi.</p>
+    <h2>Venez comme un invité,<br>repartez comme un membre de la famille.</h2>
+    <p class="lead">Niché entre Sri Thanu et Hin Kong, sur la côte ouest de Koh Phangan, Dar Mansour vous invite à découvrir une expérience marocaine chaleureuse et intimiste, où cuisine, hospitalité et art de vivre se rencontrent.</p>
+    <p style="margin-top:1.2rem;">Inspirée par le savoir-faire des Dadas marocaines, notre cuisine puise dans un héritage riche d'influences berbères, andalouses, juives et sahariennes. Des recettes généreuses, des épices soigneusement dosées et des cuissons lentes qui laissent à chaque ingrédient le temps de révéler ses saveurs.</p>
+    <p style="margin-top:1.2rem;">Des carreaux artisanaux aux tables éclairées à la bougie, de la musique aux objets chinés et rapportés du Maroc, chaque détail participe à créer un lieu vivant, chaleureux et profondément personnel. Ici, on vient dîner. Mais surtout, on prend le temps de partager.</p>
     <a class="textlink" href="dar-mansour-founders-vision.html">Découvrir notre histoire {A}</a>
   </div>
   <div class="split__media reveal" data-delay="1">
@@ -251,9 +252,9 @@ home_body_fr = f'''
 
 <section class="section" id="concept"><div class="wrap">
   <div class="center reveal" style="max-width:720px;margin-inline:auto;">
-    <span class="eyebrow">Concept &amp; Fonctionnement</span>
-    <h2 style="margin:1.2rem 0 1.3rem;">L'art de recevoir, repensé</h2>
-    <p class="lead" style="margin-inline:auto;">Chez Dar Mansour, l'expérience commence bien avant votre arrivée. Comme l'un des seuls restaurants marocains slow food de Koh Phangan, chaque plat est préparé à la commande, au rythme de la cuisine traditionnelle. La réservation est vivement recommandée et nos plats signature sont disponibles en pré-commande — idéalement 5 heures à l'avance — car des plats comme la tanjia marrakchia et les tajines cuits au feu ont besoin de temps, d'amour et de patience pour révéler toute leur âme.</p>
+    <span class="eyebrow">L'art de recevoir</span>
+    <h2 style="margin:1.2rem 0 1.3rem;">L'art de recevoir, à la marocaine.</h2>
+    <p class="lead" style="margin-inline:auto;">Au Maroc, l'hospitalité va bien au-delà du repas. C'est une manière de recevoir, de partager et de prendre soin de ceux qui passent votre porte. C'est cet esprit que nous avons voulu faire vivre chez Dar Mansour. Avec seulement 40 convives par soir, nous préservons une atmosphère intime, un service attentionné et le temps nécessaire pour accueillir chacun comme il se doit. Installez-vous. Partagez. Prenez votre temps. Bienvenue chez Dar Mansour.</p>
   </div>
   <div class="features" style="margin-top:clamp(3rem,6vw,4.5rem);">
     <div class="feature reveal"><span class="feature__num">01</span><h3>Sur réservation</h3><p>La réservation à l'avance via WhatsApp nous permet d'accueillir chaque convive avec le temps, le soin et l'hospitalité qui définissent l'expérience Dar Mansour.</p></div>
@@ -266,9 +267,9 @@ home_body_fr = f'''
 
 <section class="section" id="cuisine" style="background:var(--sand);"><div class="wrap">
   <div class="center reveal" style="max-width:680px;margin:0 auto clamp(2.5rem,5vw,3.5rem);">
-    <span class="eyebrow">Notre menu marocain</span>
-    <h2 style="margin:1.2rem 0;">Un voyage aux racines de la cuisine marocaine</h2>
-    <p class="lead" style="margin-inline:auto;">Inspirée par les Dadas — les gardiennes silencieuses des recettes de famille marocaines — notre cuisine célèbre l'essence authentique du Maroc : des plats mijotés, pleins de générosité, de profondeur et d'âme.</p>
+    <span class="eyebrow">Notre cuisine</span>
+    <h2 style="margin:1.2rem 0;">Le temps révèle les saveurs.</h2>
+    <p class="lead" style="margin-inline:auto;">Chez Dar Mansour, le temps fait partie de la recette. Nos tajines cuisent lentement sur le charbon, notre Tanjia Marrakchia mijote pendant plus de cinq heures et notre couscous est préparé selon les gestes et les traditions de la cuisine marocaine. Une cuisine généreuse, faite maison, où les épices accompagnent les ingrédients sans jamais les masquer, et où chaque plat prend le temps nécessaire pour développer toute sa profondeur.</p>
   </div>
   <div class="dishes dishes--photos">
     <article class="dish reveal"><img src="assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg" alt="Couscous marocain aux légumes mijotés chez Dar Mansour" loading="lazy"><div class="dish__label"><h3>Couscous</h3></div></article>
@@ -279,8 +280,8 @@ home_body_fr = f'''
     <article class="dish reveal" data-delay="2"><img src="assets/uploads/moroccan-msemen-flatbread-koh-phangan.jpg" alt="Msemen, pain feuilleté traditionnel marocain" loading="lazy"><div class="dish__label"><h3>M'semen</h3></div></article>
   </div>
   <div class="center reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
-    <a class="btn btn--primary" href="moroccan-menu-koh-phangan.html">Voir le menu complet</a>
-    <p class="book__meta">Chaque plat principal est préparé individuellement, à la commande, pour honorer la tradition et limiter le gaspillage.</p>
+    <a class="btn btn--primary" href="moroccan-menu-koh-phangan.html">Découvrir notre menu</a>
+    <p class="book__meta">Certains de nos plats demandent plusieurs heures de préparation et doivent donc être précommandés. Parce que certaines choses ne peuvent tout simplement pas être précipitées.</p>
   </div>
 </div></section>
 
@@ -288,8 +289,8 @@ home_body_fr = f'''
   <div class="split__text reveal">
     <span class="eyebrow">Fondateurs &amp; Vision</span>
     <h2>Une histoire d'amour — et une vision de l'hospitalité marocaine</h2>
-    <p class="lead">Dar Mansour est la vision de <a class="ilink" href="dar-mansour-founders-vision.html">Maïja</a> — une âme créative qui a passé plus de 30 ans immergée dans la culture marocaine — et de Bruno, un entrepreneur français tombé amoureux non seulement du Maroc, mais de sa plus inspirée des ambassadrices.</p>
-    <p style="margin-top:1.2rem;">Ensemble, ils ont imaginé un lieu où chaque repas est une histoire, chaque convive accueilli comme en famille, et chaque détail — des épices à la musique — porte l'âme de l'hospitalité marocaine.</p>
+    <p class="lead">Dar Mansour est né de la vision de <a class="ilink" href="dar-mansour-founders-vision.html">Maïja</a> — une âme créative immergée depuis plus de 30 ans dans la culture marocaine — et de Bruno, entrepreneur français tombé amoureux non seulement du Maroc, mais aussi de sa plus inspirante ambassadrice.</p>
+    <p style="margin-top:1.2rem;">Ensemble, ils ont imaginé un lieu où chaque repas raconte une histoire, où chaque convive est accueilli comme un membre de la famille et où chaque détail — des épices à la musique — porte en lui l'âme de l'hospitalité marocaine.</p>
     <a class="textlink" href="dar-mansour-founders-vision.html">Rencontrer les fondateurs {A}</a>
   </div>
   <div class="split__media reveal" data-delay="1">
@@ -303,8 +304,8 @@ home_body_fr = f'''
   <div class="wrap"><div class="reveal" style="max-width:560px;">
     <span class="eyebrow">Privatisation &amp; Célébrations</span>
     <h2 style="margin:1.2rem 0 1.3rem;">Célébrez les plus beaux moments de la vie autour d'une table marocaine</h2>
-    <p class="lead" style="color:var(--on-dark-soft);">Certaines soirées méritent plus qu'un restaurant. Anniversaires, fêtes, demandes en mariage, lunes de miel ou réunions intimes — orchestrés avec soin dans notre paisible jardin aux chandelles, entre Sri Thanu et Hin Kong.</p>
-    <ul class="pd__tags"><li>Anniversaires</li><li>Fêtes</li><li>Demandes en mariage</li><li>Lunes de miel</li><li>Réunions de famille</li><li>Retraites bien-être</li></ul>
+    <p class="lead" style="color:var(--on-dark-soft);">Certaines soirées méritent plus qu'un simple restaurant. Anniversaires, demandes en mariage, lunes de miel ou réunions intimistes — nous imaginons avec vous des moments uniques dans notre paisible jardin éclairé aux chandelles, entre Sri Thanu et Hin Kong.</p>
+    <ul class="pd__tags"><li>Anniversaires</li><li>Anniversaires de mariage</li><li>Demandes en mariage</li><li>Lunes de miel</li><li>Réunions de famille</li><li>Retraites bien-être</li></ul>
     <a class="btn btn--light" href="private-dining-koh-phangan.html">Organiser votre célébration</a>
   </div></div>
 </section>
@@ -315,11 +316,11 @@ home_body_fr = f'''
     <span class="tag">Accords mets &amp; vins</span>
   </div>
   <div class="split__text reveal" data-delay="1">
-    <span class="eyebrow">Accords mets &amp; vins &amp; Le Mansour Bar</span>
-    <h2>Sur le chemin épicé du Maroc</h2>
-    <p class="lead">Ici, le vin est plus qu'une boisson — c'est un dialogue avec le plat. Nous sommes fiers de proposer la seule carte d'accords mets &amp; vins marocains de Koh Phangan, chaque cuvée choisie pour sublimer la chaleur et la profondeur aromatique de notre slow food.</p>
-    <p style="margin-top:1.2rem;">Au Mansour Bar, les cocktails sont une histoire, un parfum, une étincelle de mémoire — du <em>Rock the Casbah</em> au sirop de Ras El Hanout à la fameuse Mansour's Jasminade.</p>
-    <a class="textlink" href="moroccan-wine-pairing-koh-phangan.html">Explorer vins &amp; cocktails {A}</a>
+    <span class="eyebrow">Accords mets &amp; vins · The Mansour Bar</span>
+    <h2>Sur la route des épices du Maroc</h2>
+    <p class="lead">Ici, le vin est bien plus qu'une boisson — c'est un dialogue avec le plat. Nous sommes fiers de proposer le seul menu d'accords mets &amp; vins dédié à la cuisine marocaine de Koh Phangan, avec une sélection pensée pour accompagner la chaleur des épices et la profondeur aromatique de notre cuisine.</p>
+    <p style="margin-top:1.2rem;">Au Mansour Bar, chaque cocktail raconte une histoire, évoque un parfum, réveille un souvenir — du <em>Rock the Casbah</em>, avec son sirop maison au Ras El Hanout, à l'incontournable Mansour's Jasminade.</p>
+    <a class="textlink" href="moroccan-wine-pairing-koh-phangan.html">Découvrir nos vins &amp; cocktails {A}</a>
   </div>
 </div></div></section>
 
@@ -327,7 +328,7 @@ home_body_fr = f'''
   <div class="reviews__head reveal">
     <span class="eyebrow">Ce que disent nos convives</span>
     <h2 style="margin-top:1.1rem;">Plus qu'un restaurant — une expérience marocaine immersive</h2>
-    <div class="rating rating--hero"><span class="rating__stars rating__stars--gold">★★★★★</span><span class="rating__score">4.9</span><span>Aimé par des convives du monde entier</span></div>
+    <div class="rating rating--hero"><span class="rating__stars rating__stars--gold">★★★★★</span><span class="rating__score">4.9</span><span>Apprécié par des voyageurs du monde entier</span></div>
   </div>
   <div class="reviews__grid">
     <figure class="review reveal"><p>« As half Moroccan… I was eating and crying, crying and eating. You can feel the love in every bite. »</p><footer><span class="avatar">O</span><cite>Oren</cite></footer></figure>
@@ -360,8 +361,8 @@ home_body_fr = f'''
     <a class="reveal" data-delay="2" href="assets/img/moroccan-zellige-fountain-koh-phangan.webp"><img src="assets/img/moroccan-zellige-fountain-koh-phangan.webp" alt="Robinet en laiton sur une fontaine en zellige vert chez Dar Mansour" loading="lazy"></a>
   </div>
 </div></section>
-''' + _journal.render_index_cards(ARTICLES[:3], eyebrow="Le Journal",
-    heading="Récits &amp; guides de l'île") + f'''
+''' + _journal.render_index_cards(ARTICLES[:3], eyebrow="Le Journal de Dar Mansour",
+    heading="Histoires du Maroc, de sa cuisine et de sa culture") + f'''
 <section class="section" style="padding-top:0;"><div class="wrap center reveal">
   <p style="margin-bottom:1rem;color:var(--muted);font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;">Guides populaires</p>
   <p class="lead" style="margin-bottom:1.4rem;">
@@ -371,8 +372,8 @@ home_body_fr = f'''
   </p>
   <a class="textlink" href="blog.html">Explorer le Journal {A}</a>
 </div></section>
-''' + L.cta_band("Envie de goûter le Maroc à Koh Phangan ?",
-    "La réservation est vivement recommandée, les plats principaux se pré-commandent via WhatsApp — idéalement 5 heures avant votre venue. Signalez-nous toute allergie ou besoin alimentaire : nous ferons de notre mieux pour nous adapter tout en restant fidèles à nos recettes.",
+''' + L.cta_band("Votre table vous attend.",
+    "Réservez votre soirée chez Dar Mansour et laissez-nous nous occuper du reste. Pour certains de nos plats à cuisson lente, pensez à précommander lors de votre réservation afin que tout soit prêt pour votre arrivée.",
     lang="fr")
 
 pages["fr/index.html"] = L.page(
