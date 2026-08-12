@@ -671,7 +671,7 @@ COLLECTION = [
         ("qif",                 "Qif",                   "Limited-edition table", "",           "ph--electric", "qif-stop-sign"),
         ("qif-in-the-oasis",    "Qif in the Oasis",      "Limited-edition table", "",           "ph--magenta",  "desert-caravan-neon"),
         ("taxi-superlux",       "Taxi Superlux",         "Limited-edition table", "",           "ph--electric", "taxi-superlux"),
-        ("poppy-hobb",          "Poppy Hobb",            "Limited-edition table", "",           "ph--poppy",    "poppy-queen"),
+        ("poppy-hobb",          "Poppy Hobb",            "Limited-edition table", "art--round", "ph--poppy",    "poppy-queen"),
         ("mouna-lisa",          "Mouna Lisa",            "Limited-edition table", "art--round", "ph--teal",     "mona-lisa-fez"),
      ]),
     ("lighting", "Lighting",
@@ -697,7 +697,7 @@ COLLECTION = [
 
 # ---- Per-piece caption pages (Maija's texts, verbatim). Blank line = new stanza.
 CAPTIONS = {
-    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="",
+    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="round",
         lead="She looks soft. She isn't.", text="""She looks soft.
 She isn't.
 
