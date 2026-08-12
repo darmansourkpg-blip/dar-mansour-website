@@ -117,8 +117,8 @@ home_body = f'''
       <a class="btn btn--primary" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
     </div>
     <div class="split__media reveal" data-delay="1">
-      <a href="hubb.html">{('<img src="'+find_img('poppy-queen')+'" alt="Hubb — limited-edition table by Maija">') if find_img('poppy-queen') else ph('Hubb — table')}</a>
-      <span class="tag">Hubb · Limited-edition table</span>
+      <a href="poppy-hobb.html">{('<img src="'+find_img('poppy-queen')+'" alt="Poppy Hobb — limited-edition table by Maija">') if find_img('poppy-queen') else ph('Poppy Hobb — table')}</a>
+      <span class="tag">Poppy Hobb · Limited-edition table</span>
     </div>
   </div>
 </div></section>
@@ -130,8 +130,8 @@ home_body = f'''
   </div>
   <div class="artgrid">
     {feat_tile('flash', 'wondermint-camel', 'Flash')}
-    {feat_tile('mona', 'mona-lisa-fez', 'Mona', rnd=True)}
-    {feat_tile('divine-touch', 'creation-of-mint-tea', 'Divine Touch', rnd=True)}
+    {feat_tile('mouna-lisa', 'mona-lisa-fez', 'Mouna Lisa', rnd=True)}
+    {feat_tile('and-man-created-atay', 'creation-of-mint-tea', 'And Man Created Atay', rnd=True)}
     {feat_tile('babouche', 'babouche-mandala', 'Babouche')}
     {feat_tile('kenza', 'kenza', 'Kenza', meta='Lighting · mixed-media lamp')}
     {feat_tile('', 'fountain-wall', 'Fountain Wall', meta='Hand-stencilled wall', href='collection.html#walls')}
@@ -655,15 +655,24 @@ COLLECTION = [
     ("tables", "Tables",
      "Each table is a one-off — a familiar form dressed in paper, paint and layered collage until it reveals the "
      "invisible life it carries. Moroccan icons collided with Western art. Numbered, collectible, made to be lived with.", [
-        ("hubb",                   "Hubb",              "Limited-edition table", "art--round", "ph--poppy",    "poppy-queen"),
-        ("flash",                  "Flash",             "Limited-edition table", "",           "ph--electric", "wondermint-camel"),
-        ("mona",                   "Mona",              "Limited-edition table", "art--round", "ph--teal",     "mona-lisa-fez"),
-        ("babouche",               "Babouche",          "Limited-edition table", "",           "ph--magenta",  "babouche-mandala"),
-        ("divine-touch",           "Divine Touch",      "Limited-edition table", "art--round", "ph--teal",     "creation-of-mint-tea"),
-        ("framed",                 "Framed",            "Limited-edition table", "",           "ph--electric", "chefchaouen-framed"),
-        ("qaf-in-the-oasis",       "Qaf in the Oasis",  "Limited-edition table", "art--round", "ph--magenta",  "desert-caravan-neon"),
-        ("a-tea-in-the-desert",    "A Tea in the Desert","Limited-edition table","",           "ph--sun",      "teapot-camel"),
-        ("ysl",                    "YSL",               "Limited-edition table", "",           "ph--teal",     "rue-yves-saint-laurent"),
+        # Maija's collection order (1–16). Slug = its own page when a caption exists,
+        # otherwise the tile opens a WhatsApp enquiry. img = webp file stem in assets/img/.
+        ("saint-exupery",       "Saint-Exupéry",         "Limited-edition table", "",           "ph--teal",     "saint-exupery-camel"),
+        ("qaftan",              "Qaftan",                "Limited-edition table", "",           "ph--sun",      "qaftan-silk-drape"),
+        ("chaouen",             "Chaouen",               "Limited-edition table", "",           "ph--electric", "chefchaouen-framed"),
+        ("tanja",               "Tanja",                 "Limited-edition table", "",           "ph--teal",     "tanja-calligraphy"),
+        ("and-man-created-atay","And Man Created Atay",  "Limited-edition table", "art--round", "ph--teal",     "creation-of-mint-tea"),
+        ("ysl",                 "YSL",                   "Limited-edition table", "",           "ph--teal",     "rue-yves-saint-laurent"),
+        ("zaynab",              "Zaynab",                "Limited-edition table", "",           "ph--sun",      "zaynab-jewels"),
+        ("tiziri",              "Tiziri",                "Limited-edition table", "",           "ph--magenta",  "tiziri-portrait"),
+        ("al-kass-hlou",        "Al Kass Hlou",          "Limited-edition table", "art--round", "ph--sun",      "teapot-camel"),
+        ("flash",               "Flash",                 "Limited-edition table", "",           "ph--electric", "wondermint-camel"),
+        ("babouche",            "Babouche",              "Limited-edition table", "",           "ph--magenta",  "babouche-mandala"),
+        ("qif",                 "Qif",                   "Limited-edition table", "",           "ph--electric", "qif-stop-sign"),
+        ("qif-in-the-oasis",    "Qif in the Oasis",      "Limited-edition table", "",           "ph--magenta",  "desert-caravan-neon"),
+        ("taxi-superlux",       "Taxi Superlux",         "Limited-edition table", "",           "ph--electric", "taxi-superlux"),
+        ("poppy-hobb",          "Poppy Hobb",            "Limited-edition table", "",           "ph--poppy",    "poppy-queen"),
+        ("mouna-lisa",          "Mouna Lisa",            "Limited-edition table", "art--round", "ph--teal",     "mona-lisa-fez"),
      ]),
     ("lighting", "Lighting",
      "Light as atmosphere — pieces where the object matters as much as the glow. Kenza and Kenzo are a pair.", [
@@ -688,7 +697,7 @@ COLLECTION = [
 
 # ---- Per-piece caption pages (Maija's texts, verbatim). Blank line = new stanza.
 CAPTIONS = {
-    "hubb": dict(title="Hubb", kicker="Limited-edition table", img="poppy-queen", shape="round",
+    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="",
         lead="She looks soft. She isn't.", text="""She looks soft.
 She isn't.
 
@@ -718,7 +727,7 @@ What seems controlled starts to move. What looks playful becomes obsessive.
 This is where order turns into trance — where beauty loops until it takes over.
 
 Not decoration. A frequency."""),
-    "qaf-in-the-oasis": dict(title="Qaf in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="round",
+    "qif-in-the-oasis": dict(title="Qif in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="",
         lead="Follow the line. And then — stop.", text="""Follow the line.
 And then — stop.
 
@@ -727,7 +736,7 @@ A command in the middle of the journey. A break in the flow.
 But what if stopping is just another way of moving?
 
 Between desert and signal, tradition and interruption, this piece plays with direction — and refuses to obey it."""),
-    "mona": dict(title="Mona", kicker="Limited-edition table", img="mona-lisa-fez", shape="round",
+    "mouna-lisa": dict(title="Mouna Lisa", kicker="Limited-edition table", img="mona-lisa-fez", shape="round",
         lead="Perfect smile. Perfect pose. Perfect cage.", text="""Perfect smile.
 Perfect pose.
 Perfect cage.
@@ -737,7 +746,7 @@ So what happens when she decides to move?
 A shift. A clash. A quiet rebellion.
 
 Not ruined. Because timeless doesn't mean untouchable. And beauty was never meant to behave."""),
-    "framed": dict(title="Framed", kicker="Limited-edition table", img="chefchaouen-framed", shape="",
+    "chaouen": dict(title="Chaouen", kicker="Limited-edition table", img="chefchaouen-framed", shape="",
         lead="Put it in a frame and suddenly it matters.", text="""Put it in a frame and suddenly it matters.
 
 Gold edges. Perfect lines. Now you're supposed to admire it.
@@ -753,7 +762,7 @@ But even icons who built their legacy in gardens and walls don't get to own the 
 Because places evolve. Meanings shift. And what was once sacred can be taken somewhere else entirely.
 
 Not imitation. A continuation — with attitude."""),
-    "divine-touch": dict(title="Divine Touch", kicker="Limited-edition table", img="creation-of-mint-tea", shape="round",
+    "and-man-created-atay": dict(title="And Man Created Atay", kicker="Limited-edition table", img="creation-of-mint-tea", shape="round",
         lead="An offering. Or a command.", text="""An offering.
 Or a command.
 
@@ -764,7 +773,7 @@ Take it. Or wait to be allowed.
 A quiet game of control, where desire isn't rushed — it's held.
 
 Because the most powerful exchanges aren't given freely. They're felt, and surrendered to."""),
-    "a-tea-in-the-desert": dict(title="A Tea in the Desert", kicker="Limited-edition table", img="teapot-camel", shape="",
+    "al-kass-hlou": dict(title="Al Kass Hlou", kicker="Limited-edition table", img="teapot-camel", shape="round",
         lead="You think you know the story. But look again.", text="""Or is it?
 
 Wrapped in colours, dressed in codes — you think you know the story.
