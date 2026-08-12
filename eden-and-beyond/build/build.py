@@ -697,90 +697,149 @@ COLLECTION = [
 
 # ---- Per-piece caption pages (Maija's texts, verbatim). Blank line = new stanza.
 CAPTIONS = {
-    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="",
-        lead="She looks soft. She isn't.", text="""She looks soft.
-She isn't.
+    "saint-exupery": dict(title="Saint-Exupéry", kicker="Limited-edition table", img="saint-exupery-camel", shape="",
+        lead="Exotic. Cool. Expected. Or is it?", text="""Exotic.
+Cool.
+Expected.
 
-Crowned in silence, wrapped in beauty — but don't get too close.
+Or is it?
 
-This piece lives in the tension: delicacy and danger, ritual and rebellion, a place where form becomes feeling.
+Wrapped in colors, dressed in codes—
+you think you know the story.
+But look again.
 
-Not just a table. A presence."""),
-    "flash": dict(title="Flash", kicker="Limited-edition table", img="wondermint-camel", shape="",
-        lead="Extra fresh. Extra cool. Not what you think.", text="""Extra fresh.
-Extra cool.
-Not what you think.
+Because style isn't a costume.
+And identity isn't a trend.
 
-Minty perfection. Smooth attitude. Zero flaws. That's the promise.
-
-Reality? A little weirder. A little louder. A lot less obedient.
-
-Because perfection is boring. And boxes are meant to be chewed."""),
-    "babouche": dict(title="Babouche", kicker="Limited-edition table", img="babouche-mandala", shape="",
-        lead="Get closer. And then try to look away.", text="""Get closer.
-And then try to look away.
-
-A ritual of repetition. Colour. Pattern. Pulse.
-
-What seems controlled starts to move. What looks playful becomes obsessive.
-
-This is where order turns into trance — where beauty loops until it takes over.
-
-Not decoration. A frequency."""),
-    "qif-in-the-oasis": dict(title="Qif in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="",
-        lead="Follow the line. And then — stop.", text="""Follow the line.
-And then — stop.
-
-A command in the middle of the journey. A break in the flow.
-
-But what if stopping is just another way of moving?
-
-Between desert and signal, tradition and interruption, this piece plays with direction — and refuses to obey it."""),
-    "mouna-lisa": dict(title="Mouna Lisa", kicker="Limited-edition table", img="mona-lisa-fez", shape="round",
-        lead="Perfect smile. Perfect pose. Perfect cage.", text="""Perfect smile.
-Perfect pose.
-Perfect cage.
-
-So what happens when she decides to move?
-
-A shift. A clash. A quiet rebellion.
-
-Not ruined. Because timeless doesn't mean untouchable. And beauty was never meant to behave."""),
+It's worn.
+Owned.
+Rewritten."""),
     "chaouen": dict(title="Chaouen", kicker="Limited-edition table", img="chefchaouen-framed", shape="",
-        lead="Put it in a frame and suddenly it matters.", text="""Put it in a frame and suddenly it matters.
+        lead="Put it in a frame… and suddenly it matters.", text="""Put it in a frame…
+and suddenly it matters.
 
-Gold edges. Perfect lines. Now you're supposed to admire it.
+Gold edges. Perfect lines.
+Now you're supposed to admire it.
 
-But what really changed? The view — or the way you were told to see it?
+But what really changed?
+The view…
+or the way you were told to see it?
 
-Because value is often just a story. And rules are just well-decorated limits."""),
-    "ysl": dict(title="YSL", kicker="Limited-edition table", img="rue-yves-saint-laurent", shape="",
-        lead="A real one. Rue Yves Saint Laurent.", text="""A real one. Rue Yves Saint Laurent.
-
-But even icons who built their legacy in gardens and walls don't get to own the story forever.
-
-Because places evolve. Meanings shift. And what was once sacred can be taken somewhere else entirely.
-
-Not imitation. A continuation — with attitude."""),
+Because value is often just a story.
+And rules are just well-decorated limits."""),
     "and-man-created-atay": dict(title="And Man Created Atay", kicker="Limited-edition table", img="creation-of-mint-tea", shape="round",
         lead="An offering. Or a command.", text="""An offering.
 Or a command.
 
-Sweetness in one hand. Freshness in the other.
+Sweetness in one hand.
+Freshness in the other.
 
-Take it. Or wait to be allowed.
+Take it.
+Or wait to be allowed.
 
-A quiet game of control, where desire isn't rushed — it's held.
+A quiet game of control—
+where desire isn't rushed,
+it's held.
+Stretched.
 
-Because the most powerful exchanges aren't given freely. They're felt, and surrendered to."""),
-    "al-kass-hlou": dict(title="Al Kass Hlou", kicker="Limited-edition table", img="teapot-camel", shape="round",
-        lead="You think you know the story. But look again.", text="""Or is it?
+Because the most powerful exchanges
+aren't given freely.
 
-Wrapped in colours, dressed in codes — you think you know the story.
+They're felt…
+and surrendered to."""),
+    "ysl": dict(title="YSL", kicker="Limited-edition table", img="rue-yves-saint-laurent", shape="",
+        lead="Luxury had an address. A real one.", text="""Luxury had an address.
+A real one.
+Rue Yves Saint Laurent,
+Marrakech.
 
-But look again.
+But even icons who built their legacy
+in gardens and walls…
+don't get to own the story forever.
 
-Because style isn't a costume. And identity isn't a trend. It's worn."""),
+Because places evolve.
+Meanings shift.
+
+And what was once sacred
+can be taken somewhere else entirely.
+
+Not imitation.
+A continuation—with attitude."""),
+    "flash": dict(title="Flash", kicker="Limited-edition table", img="wondermint-camel", shape="",
+        lead="Extra fresh. Extra cool. Extra… not what you think.", text="""Extra fresh.
+Extra cool.
+Extra… not what you think.
+
+Minty perfection. Smooth attitude. Zero flaws.
+That's the promise.
+
+Reality?
+A little weirder. A little louder.
+A lot less obedient.
+
+Because perfection is boring.
+And boxes are meant to be chewed."""),
+    "babouche": dict(title="Babouche", kicker="Limited-edition table", img="babouche-mandala", shape="",
+        lead="Get closer. And then try to look away.", text="""Get closer.
+And then try to look away.
+
+A ritual of repetition.
+Color. Pattern. Pulse.
+
+What seems controlled… starts to move.
+What looks playful… becomes obsessive.
+
+This is where order turns into trance.
+Where beauty loops until it takes over.
+
+Not decoration.
+A frequency."""),
+    "qif-in-the-oasis": dict(title="Qif in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="",
+        lead="Move. Travel. Follow the line. And then — stop.", text="""Move.
+Travel.
+Follow the line.
+And then—
+stop.
+
+A command in the middle of the journey.
+A break in the flow.
+
+But what if stopping…
+is just another way of moving?
+
+Between desert and signal,
+tradition and interruption,
+this piece plays with direction — and refuses to obey it."""),
+    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="",
+        lead="She looks soft. She isn't.", text="""She looks soft.
+She isn't.
+
+Crowned in silence, wrapped in beauty —
+but don't get too close.
+
+This piece lives in the tension:
+delicacy and danger,
+ritual and rebellion,
+a place where form becomes feeling.
+
+Not just a table.
+A presence."""),
+    "mouna-lisa": dict(title="Mouna Lisa", kicker="Limited-edition table", img="mona-lisa-fez", shape="round",
+        lead="Even icons get bored.", text="""Even icons get bored.
+
+Perfect smile. Perfect pose.
+Perfect… cage.
+
+So what happens
+when she decides to move?
+
+A shift. A clash. A quiet rebellion.
+
+Not ruined.
+Reclaimed.
+
+Because timeless doesn't mean untouchable.
+And beauty was never meant to behave."""),
     "kenza": dict(title="Kenza", kicker="Lighting · mixed-media lamp", img="kenza", shape="tall",
         lead="Handle with care.", text="""Handle with care.
 
