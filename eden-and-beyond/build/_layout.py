@@ -72,8 +72,8 @@ MEGA_GROUPS = [
         ("collection.html", "All Pieces"),
         ("collection.html#tables", "Tables"),
         ("collection.html#lighting", "Lighting"),
-        ("collection.html#objects", "Objects"),
-        ("collection.html#walls", "Walls"),
+        ("collection.html#artworks", "Artworks"),
+        ("collection.html#walls", "Dressed Walls"),
     ]),
     ("The Studio", [
         ("index.html", "Home"),
@@ -86,7 +86,7 @@ MEGA_GROUPS = [
         ("hospitality-design.html", "Hospitality Design"),
         ("restaurant-design.html", "Restaurant Design"),
         ("residential-design.html", "Residential Design"),
-        ("furniture-object-design.html", "Furniture &amp; Objects"),
+        ("furniture-object-design.html", "Bespoke Furniture &amp; Pieces"),
         ("creative-direction.html", "Creative Direction"),
     ]),
 ]
@@ -113,12 +113,13 @@ def org_schema():
         "name": "Eden & Beyond",
         "url": f"{SITE_URL}/",
         "logo": f"{SITE_URL}/assets/img/eden-and-beyond-logo.png",
-        "description": ("Independent creative studio and design brand — hospitality, residential and commercial "
-                        "design, creative direction, and a collection of bespoke furniture, lighting and objects."),
-        "founder": {"@type": "Person", "name": "Maija"},
+        "description": ("Independent multidisciplinary creative studio and collectible design brand based in Koh "
+                        "Phangan, Thailand. Creates collectible tables, lighting, artworks and dressed walls, "
+                        "alongside creative direction and design for hospitality, residential and commercial projects."),
+        "founder": {"@type": "Person", "name": "Maija Disseau"},
         "email": EMAIL,
         "areaServed": "Worldwide",
-        "address": {"@type": "PostalAddress", "addressCountry": "TH"},
+        "address": {"@type": "PostalAddress", "addressLocality": "Koh Phangan", "addressRegion": "Surat Thani", "addressCountry": "TH"},
         "sameAs": SAME_AS,
     }
     website = {
@@ -339,20 +340,8 @@ def footer():
     <div class="footer__grid">
       <div class="footer__brand">
         <span class="brand__name">Eden &amp; Beyond</span>
-        <p class="footer__brand-sub">Creative Studio · Thailand</p>
-        <p>A multidisciplinary creative studio designing places, objects &amp; experiences with identity, purpose and lasting impact.</p>
-      </div>
-      <div>
-        <h4>Studio</h4>
-        <ul>
-          <li><a href="studio.html">Studio</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="journal.html">Journal</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="hospitality-design.html">Hospitality Design</a></li>
-          <li><a href="residential-design.html">Residential Design</a></li>
-          <li><a href="creative-direction.html">Creative Direction</a></li>
-        </ul>
+        <p class="footer__brand-sub">Creative Studio &amp; Collectible Design · Koh Phangan, Thailand</p>
+        <p>Independent creative studio and collectible design brand creating distinctive spaces, tables, lighting, artworks and dressed walls.</p>
       </div>
       <div>
         <h4>The Collection</h4>
@@ -360,14 +349,29 @@ def footer():
           <li><a href="collection.html">All Pieces</a></li>
           <li><a href="collection.html#tables">Tables</a></li>
           <li><a href="collection.html#lighting">Lighting</a></li>
-          <li><a href="collection.html#objects">Objects</a></li>
-          <li><a href="collection.html#walls">Walls</a></li>
+          <li><a href="collection.html#artworks">Artworks</a></li>
+          <li><a href="collection.html#walls">Dressed Walls</a></li>
         </ul>
       </div>
       <div>
-        <h4>Connect</h4>
+        <h4>The Studio</h4>
+        <ul>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="hospitality-design.html">Hospitality Design</a></li>
+          <li><a href="restaurant-design.html">Restaurant Design</a></li>
+          <li><a href="residential-design.html">Residential Design</a></li>
+          <li><a href="furniture-object-design.html">Bespoke Furniture &amp; Pieces</a></li>
+          <li><a href="creative-direction.html">Creative Direction</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
         <address>
-          <p>Working internationally<br>Based in Thailand</p>
           <p><a href="{wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">WhatsApp · {WHATSAPP_DISPLAY}</a></p>
           <p><a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram · {INSTAGRAM_HANDLE}</a></p>
           <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
@@ -375,7 +379,7 @@ def footer():
       </div>
     </div>
     <div class="footer__bottom">
-      <span>&copy; Eden &amp; Beyond — 2026. Designing places, objects &amp; experiences.</span>
+      <span>&copy; Eden &amp; Beyond — 2026. Based in Koh Phangan, Thailand. Working internationally.</span>
       <div class="footer__social">
         <a href="{wa()}" target="_blank" rel="noopener">WhatsApp</a>
         <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram</a>

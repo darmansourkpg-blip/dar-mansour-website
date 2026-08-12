@@ -89,8 +89,8 @@ home_body = f'''
 {L.hero(
     eyebrow="Objects That Reveal the Invisible · Spaces That Reveal the Unexpected",
     h1_html='<span class="fbox">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> The Box</span>',
-    sub=("Collectible furniture, lighting, objects and dressed walls — one-of-a-kind and limited editions.<br>"
-         "Creative direction for hospitality, private living and unconventional projects."),
+    sub=("Collectible tables, lighting, artworks and dressed walls — one-of-a-kind and limited editions.<br>"
+         "Creative direction and design for hospitality, residential and commercial projects."),
     actions_html=(
         f'<a class="btn btn--primary" href="collection.html">Explore the Collection</a>'
         '<a class="btn btn--light" href="studio.html">Meet the Studio</a>'),
@@ -101,9 +101,8 @@ home_body = f'''
 <div class="trust"><div class="wrap trust__inner">
   <span class="trust__item"><strong>Tables</strong></span>
   <span class="trust__item"><strong>Lighting</strong></span>
-  <span class="trust__item"><strong>Objects</strong></span>
-  <span class="trust__item"><strong>Walls</strong></span>
-  <span class="trust__item"><strong>Limited Editions</strong></span>
+  <span class="trust__item"><strong>Artworks</strong></span>
+  <span class="trust__item"><strong>Dressed Walls</strong></span>
 </div></div>
 
 <section class="section"><div class="wrap">
@@ -112,7 +111,7 @@ home_body = f'''
       <span class="eyebrow eyebrow--red">The Collection</span>
       <h2 style="margin:1rem 0 1.2rem;">Some ideas become spaces.<br>Others become objects.</h2>
       <p class="lead">Each piece is one-of-a-kind or part of a limited edition — transforming familiar forms into
-      unexpected objects with character, contradiction and a life of their own.</p>
+      something unexpected, with character, contradiction and a life of their own.</p>
       <p style="margin-top:1rem;">Discover the collection, or commission a piece created for you.</p>
       <a class="btn btn--primary" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
     </div>
@@ -133,8 +132,8 @@ home_body = f'''
     {feat_tile('mouna-lisa', 'mona-lisa-fez', 'Mouna Lisa', rnd=True)}
     {feat_tile('and-man-created-atay', 'creation-of-mint-tea', 'And Man Created Atay', rnd=True)}
     {feat_tile('babouche', 'babouche-mandala', 'Babouche')}
-    {feat_tile('kenza', 'kenza', 'Kenza', meta='Lighting · mixed-media lamp')}
-    {feat_tile('', 'fountain-wall', 'Fountain Wall', meta='Hand-stencilled wall', href='collection.html#walls')}
+    {feat_tile('kenza', 'kenza', 'Kenza', meta='Lighting · One-of-a-kind')}
+    {feat_tile('', 'fountain-wall', 'Fountain Wall', meta='Dressed wall', href='collection.html#walls')}
   </div>
   <div class="center reveal" style="margin-top:2.6rem;"><a class="btn btn--primary" href="collection.html">Explore the Full Collection {A}</a></div>
 </div></section>
@@ -149,7 +148,7 @@ home_body = f'''
       <div class="duo__body">
         <span class="eyebrow">01 — The Collection</span>
         <h3>Some pieces are meant to find you.</h3>
-        <p>One-of-a-kind and limited-edition furniture, lighting, objects and dressed walls. Created to stand on their own. Made to be lived with.</p>
+        <p>One-of-a-kind and limited-edition tables, lighting, artworks and dressed walls. Created to stand on their own. Made to be lived with.</p>
         <a class="btn btn--light" href="collection.html">Explore the Collection {A}</a>
       </div>
     </div>
@@ -183,9 +182,9 @@ home_body = f'''
       <span class="disc-lite__tags">Private Villas · Luxury Residences · Holiday Homes</span>
       <span class="disc-lite__more">Explore {A}</span></a>
     <a class="disc-lite__item reveal" data-delay="2" href="furniture-object-design.html">
-      <h3>Objects &amp; Furniture</h3>
-      <p>Bespoke pieces created for a particular place and purpose.</p>
-      <span class="disc-lite__tags">Furniture · Lighting · Objects · Art Curation</span>
+      <h3>Bespoke Furniture &amp; Pieces</h3>
+      <p>Made for a particular place, person or purpose.</p>
+      <span class="disc-lite__tags">Furniture · Lighting · Artworks · Site-Specific Pieces</span>
       <span class="disc-lite__more">Explore {A}</span></a>
     <a class="disc-lite__item reveal" data-delay="3" href="creative-direction.html">
       <h3>Creative Direction</h3>
@@ -202,7 +201,7 @@ home_body = f'''
     <p class="feat__place">Morocco's Kitchen · Koh Phangan, Thailand</p>
     <p>A contemporary interpretation of Moroccan hospitality, where architecture, craftsmanship,
     objects and storytelling come together to create an immersive dining experience.</p>
-    <div style="margin-top:1.8rem;"><a class="btn btn--light" href="projects.html">Discover the Project {A}</a></div>
+    <div style="margin-top:1.8rem;"><a class="btn btn--light" href="projects.html">View the Project {A}</a></div>
   </div>
 </section>
 
@@ -230,22 +229,20 @@ home_body = f'''
   <div class="center reveal" style="margin-top:2.6rem;"><a class="textlink" href="journal.html">Explore the Journal {A}</a></div>
 </div></section>
 
-<section class="section book"><div class="wrap wrap--narrow reveal">
-  <span class="eyebrow eyebrow--red">The Collection</span>
-  <h2>Bring a piece of Eden &amp; Beyond<br>into your home.</h2>
-  <p class="lead">One-off and limited-edition tables, lighting, objects and dressed walls — hand-collaged by Maija.
-  Message the studio for availability, editions and price.</p>
-  <div class="book__actions">
+<section class="section book"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow eyebrow--red">Two ways in</span>
+  <h2>One piece.<br>Or a whole new world.</h2>
+  <div class="book__actions" style="justify-content:center;">
     <a class="btn btn--primary" href="collection.html">Explore the Collection {A}</a>
-    <a class="btn btn--ghost" href="{L.wa('Hi Eden &amp; Beyond, I would like to enquire about a piece from your collection.')}" target="_blank" rel="noopener">{L.WA_ICON} Enquire on WhatsApp</a>
+    <a class="btn btn--ghost" href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>
   </div>
 </div></section>
 '''
 
 pages["index.html"] = L.page(
-    title="Eden & Beyond — Collectible Tables, Lighting & Objects by Maija",
-    desc=("Collectible, hand-collaged tables, lighting, objects and dressed walls by Maija — one-off and limited "
-          "edition. Plus a creative studio for hospitality, residential and commercial projects. Based in Thailand."),
+    title="Eden & Beyond | Creative Studio & Collectible Design · Thailand",
+    desc=("Eden & Beyond is a creative studio and collectible design brand in Koh Phangan, Thailand, creating "
+          "distinctive spaces, tables, lighting, artworks and dressed walls."),
     canonical="index.html",
     body=home_body,
 )
