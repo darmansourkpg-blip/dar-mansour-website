@@ -3,6 +3,7 @@
 Static-site partials (no framework, no build step beyond this generator)."""
 
 import hashlib
+import html
 import json
 import os
 from urllib.parse import quote
@@ -29,7 +30,9 @@ WA_ICON = ('<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><pat
 
 
 def wa(message=None):
-    return f"{WA}?text={quote(message)}" if message else WA
+    # Callers pass HTML-escaped text (e.g. "Eden &amp; Beyond") since these strings
+    # live in HTML attributes; unescape so the WhatsApp message reads "Eden & Beyond".
+    return f"{WA}?text={quote(html.unescape(message))}" if message else WA
 
 # --- SEO / Analytics integrations (leave empty to disable) ---
 GA4_ID = ""          # Google Analytics 4 Measurement ID (add at launch)
