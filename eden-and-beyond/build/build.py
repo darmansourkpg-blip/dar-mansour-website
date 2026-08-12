@@ -668,10 +668,10 @@ COLLECTION = [
         ("al-kass-hlou",        "Al Kass Hlou",          "Limited-edition table", "art--round", "ph--sun",      "teapot-camel"),
         ("flash",               "Flash",                 "Limited-edition table", "",           "ph--electric", "wondermint-camel"),
         ("babouche",            "Babouche",              "Limited-edition table", "",           "ph--magenta",  "babouche-mandala"),
-        ("qif",                 "Qif",                   "Limited-edition table", "art--round", "ph--electric", "qif-stop-sign"),
-        ("qif-in-the-oasis",    "Qif in the Oasis",      "Limited-edition table", "art--round", "ph--magenta",  "desert-caravan-neon"),
+        ("qif",                 "Qif",                   "Limited-edition table", "",           "ph--electric", "qif-stop-sign"),
+        ("qif-in-the-oasis",    "Qif in the Oasis",      "Limited-edition table", "",           "ph--magenta",  "desert-caravan-neon"),
         ("taxi-superlux",       "Taxi Superlux",         "Limited-edition table", "",           "ph--electric", "taxi-superlux"),
-        ("poppy-hobb",          "Poppy Hobb",            "Limited-edition table", "art--round", "ph--poppy",    "poppy-queen"),
+        ("poppy-hobb",          "Poppy Hobb",            "Limited-edition table", "",           "ph--poppy",    "poppy-queen"),
         ("mouna-lisa",          "Mouna Lisa",            "Limited-edition table", "art--round", "ph--teal",     "mona-lisa-fez"),
      ]),
     ("lighting", "Lighting",
@@ -697,7 +697,7 @@ COLLECTION = [
 
 # ---- Per-piece caption pages (Maija's texts, verbatim). Blank line = new stanza.
 CAPTIONS = {
-    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="round",
+    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="",
         lead="She looks soft. She isn't.", text="""She looks soft.
 She isn't.
 
@@ -727,7 +727,7 @@ What seems controlled starts to move. What looks playful becomes obsessive.
 This is where order turns into trance — where beauty loops until it takes over.
 
 Not decoration. A frequency."""),
-    "qif-in-the-oasis": dict(title="Qif in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="round",
+    "qif-in-the-oasis": dict(title="Qif in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="",
         lead="Follow the line. And then — stop.", text="""Follow the line.
 And then — stop.
 
