@@ -637,3 +637,22 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
   .brand__name { font-size: 1.2rem; }
   .header__inner { gap: 1rem; }
 }
+
+/* --- Piece: practical details block (V2) --- */
+.piece-specs { margin-top: 2.2rem; border-top: 1px solid var(--line); }
+.piece-specs > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+.piece-specs dt { font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.piece-specs dd { margin: 0; font-size: .92rem; color: var(--ink); text-align: right; }
+.piece__pair { margin-top: 1.1rem; font-size: .9rem; color: var(--ink-soft); }
+.piece__pair a { color: var(--logo-red); }
+
+/* --- Piece: previous / next nav (V2) --- */
+.piece-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.4rem; }
+.piece-nav__link { display: inline-block; border-top: 1px solid var(--line); padding-top: 1.4rem; }
+.piece-nav__link .eyebrow { display: block; margin-bottom: .5rem; }
+.piece-nav__next { text-align: right; margin-left: auto; }
+.piece-nav__row { display: inline-flex; align-items: center; gap: .7rem; }
+.piece-nav__title { font-family: var(--serif); font-weight: 600; font-size: clamp(1.4rem, 2.6vw, 2rem); letter-spacing: -.02em; color: var(--ink); transition: color .3s var(--ease); }
+.piece-nav__link svg { width: 22px !important; height: 22px !important; color: var(--logo-red); transition: transform .3s var(--ease); }
+.piece-nav__prev svg { transform: rotate(180deg); }
+.piece-nav__link:hover .piece-nav__title { color: var(--logo-red); }

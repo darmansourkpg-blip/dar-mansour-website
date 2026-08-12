@@ -53,7 +53,7 @@ def subhero_media(slug):
     return "subhero__media--placeholder", ""
 
 
-def feat_tile(page, img_slug, title, rnd=False, meta="Limited-edition table", href=None):
+def feat_tile(page, img_slug, title, rnd=False, meta="Table · One-of-a-kind", href=None):
     """A featured Collection tile for the home page (links to the piece page,
     or a custom href for pieces without their own page — e.g. walls)."""
     cls = "art art--round" if rnd else "art"
@@ -654,47 +654,42 @@ COLLECTION = [
      "invisible life it carries. Moroccan icons collided with Western art. Numbered, collectible, made to be lived with.", [
         # Maija's collection order (1–16). Slug = its own page when a caption exists,
         # otherwise the tile opens a WhatsApp enquiry. img = webp file stem in assets/img/.
-        ("saint-exupery",       "Saint-Exupéry",         "Limited-edition table", "",           "ph--teal",     "saint-exupery-camel"),
-        ("qaftan",              "Qaftan",                "Limited-edition table", "",           "ph--sun",      "qaftan-silk-drape"),
-        ("chaouen",             "Chaouen",               "Limited-edition table", "",           "ph--electric", "chefchaouen-framed"),
-        ("tanja",               "Tanja",                 "Limited-edition table", "",           "ph--teal",     "tanja-calligraphy"),
-        ("and-man-created-atay","And Man Created Atay",  "Limited-edition table", "art--round", "ph--teal",     "creation-of-mint-tea"),
-        ("ysl",                 "YSL",                   "Limited-edition table", "",           "ph--teal",     "rue-yves-saint-laurent"),
-        ("zaynab",              "Zaynab",                "Limited-edition table", "",           "ph--sun",      "zaynab-jewels"),
-        ("tiziri",              "Tiziri",                "Limited-edition table", "",           "ph--magenta",  "tiziri-portrait"),
-        ("al-kass-hlou",        "Al Kass Hlou",          "Limited-edition table", "art--round", "ph--sun",      "teapot-camel"),
-        ("flash",               "Flash",                 "Limited-edition table", "",           "ph--electric", "wondermint-camel"),
-        ("babouche",            "Babouche",              "Limited-edition table", "",           "ph--magenta",  "babouche-mandala"),
-        ("qif",                 "Qif",                   "Limited-edition table", "",           "ph--electric", "qif-stop-sign"),
-        ("qif-in-the-oasis",    "Qif in the Oasis",      "Limited-edition table", "",           "ph--magenta",  "desert-caravan-neon"),
-        ("taxi-superlux",       "Taxi Superlux",         "Limited-edition table", "",           "ph--electric", "taxi-superlux"),
-        ("poppy-hobb",          "Poppy Hobb",            "Limited-edition table", "",           "ph--poppy",    "poppy-queen"),
-        ("mouna-lisa",          "Mouna Lisa",            "Limited-edition table", "art--round", "ph--teal",     "mona-lisa-fez"),
+        ("saint-exupery",       "Saint-Exupéry",         "Table · One-of-a-kind", "",           "ph--teal",     "saint-exupery-camel"),
+        ("qaftan",              "Qaftan",                "Table · One-of-a-kind", "",           "ph--sun",      "qaftan-silk-drape"),
+        ("chaouen",             "Chaouen",               "Table · One-of-a-kind", "",           "ph--electric", "chefchaouen-framed"),
+        ("tanja",               "Tanja",                 "Table · One-of-a-kind", "",           "ph--teal",     "tanja-calligraphy"),
+        ("and-man-created-atay","And Man Created Atay",  "Table · One-of-a-kind", "art--round", "ph--teal",     "creation-of-mint-tea"),
+        ("ysl",                 "YSL",                   "Table · One-of-a-kind", "",           "ph--teal",     "rue-yves-saint-laurent"),
+        ("zaynab",              "Zaynab",                "Table · One-of-a-kind", "",           "ph--sun",      "zaynab-jewels"),
+        ("tiziri",              "Tiziri",                "Table · One-of-a-kind", "",           "ph--magenta",  "tiziri-portrait"),
+        ("al-kass-hlou",        "Al Kass Hlou",          "Table · One-of-a-kind", "art--round", "ph--sun",      "teapot-camel"),
+        ("flash",               "Flash",                 "Table · One-of-a-kind", "",           "ph--electric", "wondermint-camel"),
+        ("babouche",            "Babouche",              "Table · One-of-a-kind", "",           "ph--magenta",  "babouche-mandala"),
+        ("qif",                 "Qif",                   "Table · One-of-a-kind", "",           "ph--electric", "qif-stop-sign"),
+        ("qif-in-the-oasis",    "Qif in the Oasis",      "Table · One-of-a-kind", "",           "ph--magenta",  "desert-caravan-neon"),
+        ("taxi-superlux",       "Taxi Superlux",         "Table · One-of-a-kind", "",           "ph--electric", "taxi-superlux"),
+        ("poppy-hobb",          "Poppy Hobb",            "Table · One-of-a-kind", "",           "ph--poppy",    "poppy-queen"),
+        ("mouna-lisa",          "Mouna Lisa",            "Table · One-of-a-kind", "art--round", "ph--teal",     "mona-lisa-fez"),
      ]),
     ("lighting", "Lighting",
      "Light as atmosphere — pieces where the object matters as much as the glow. Kenza and Kenzo are a pair.", [
-        ("kenza",  "Kenza",  "Lighting · mixed-media lamp",  "art--tall",  "ph--poppy"),
-        ("kenzo",  "Kenzo",  "Lighting · mixed-media lamp",  "art--tall",  "ph--dark"),
-     ]),
-    ("objects", "Objects",
-     "Transformed objects and decorative pieces — the small things that give a room its soul.", [
-        ("zellige-mirror",   "Zellige Mirror",   "Object · bespoke commission", "",  "ph--teal"),
-        ("sculptural-vessel","Sculptural Vessel","Object · limited edition",    "",  "ph--sun"),
+        ("kenza",  "Kenza",  "Lighting · One-of-a-kind",  "art--tall",  "ph--poppy"),
+        ("kenzo",  "Kenzo",  "Lighting · One-of-a-kind",  "art--tall",  "ph--dark"),
      ]),
     ("walls", "Walls",
      "Hand-stencilled walls and murals — site-specific commissions that turn a surface into a story. "
      "Zellige geometry and floral damask, plastered and painted by hand onto raw earth walls.", [
-        ("fountain-wall",  "Fountain Wall",  "Hand-stencilled wall · commission", "",  "ph--dark"),
-        ("entrance-wall",  "Entrance Wall",  "Hand-stencilled wall · commission", "",  "ph--teal"),
-        ("star-wall",      "Star Wall",      "Hand-stencilled wall · commission", "",  "ph--sun"),
-        ("floral-wall",    "Floral Wall",    "Hand-stencilled wall · commission", "",  "ph--magenta"),
+        ("fountain-wall",  "Fountain Wall",  "Dressed wall · Site-specific", "",  "ph--dark"),
+        ("entrance-wall",  "Entrance Wall",  "Dressed wall · Site-specific", "",  "ph--teal"),
+        ("star-wall",      "Star Wall",      "Dressed wall · Site-specific", "",  "ph--sun"),
+        ("floral-wall",    "Floral Wall",    "Dressed wall · Site-specific", "",  "ph--magenta"),
      ]),
 ]
 
 
 # ---- Per-piece caption pages (Maija's texts, verbatim). Blank line = new stanza.
 CAPTIONS = {
-    "saint-exupery": dict(title="Saint-Exupéry", kicker="Limited-edition table", img="saint-exupery-camel", shape="",
+    "saint-exupery": dict(title="Saint-Exupéry", kicker="Table · One-of-a-kind", img="saint-exupery-camel", shape="",
         lead="Exotic. Cool. Expected. Or is it?", text="""Exotic.
 Cool.
 Expected.
@@ -711,7 +706,7 @@ And identity isn't a trend.
 It's worn.
 Owned.
 Rewritten."""),
-    "chaouen": dict(title="Chaouen", kicker="Limited-edition table", img="chefchaouen-framed", shape="",
+    "chaouen": dict(title="Chaouen", kicker="Table · One-of-a-kind", img="chefchaouen-framed", shape="",
         lead="Put it in a frame… and suddenly it matters.", text="""Put it in a frame…
 and suddenly it matters.
 
@@ -724,7 +719,7 @@ or the way you were told to see it?
 
 Because value is often just a story.
 And rules are just well-decorated limits."""),
-    "and-man-created-atay": dict(title="And Man Created Atay", kicker="Limited-edition table", img="creation-of-mint-tea", shape="round",
+    "and-man-created-atay": dict(title="And Man Created Atay", kicker="Table · One-of-a-kind", img="creation-of-mint-tea", shape="round",
         lead="An offering. Or a command.", text="""An offering.
 Or a command.
 
@@ -744,7 +739,7 @@ aren't given freely.
 
 They're felt…
 and surrendered to."""),
-    "ysl": dict(title="YSL", kicker="Limited-edition table", img="rue-yves-saint-laurent", shape="",
+    "ysl": dict(title="YSL", kicker="Table · One-of-a-kind", img="rue-yves-saint-laurent", shape="",
         lead="Luxury had an address. A real one.", text="""Luxury had an address.
 A real one.
 Rue Yves Saint Laurent,
@@ -762,7 +757,7 @@ can be taken somewhere else entirely.
 
 Not imitation.
 A continuation—with attitude."""),
-    "flash": dict(title="Flash", kicker="Limited-edition table", img="wondermint-camel", shape="",
+    "flash": dict(title="Flash", kicker="Table · One-of-a-kind", img="wondermint-camel", shape="",
         lead="Extra fresh. Extra cool. Extra… not what you think.", text="""Extra fresh.
 Extra cool.
 Extra… not what you think.
@@ -776,7 +771,7 @@ A lot less obedient.
 
 Because perfection is boring.
 And boxes are meant to be chewed."""),
-    "babouche": dict(title="Babouche", kicker="Limited-edition table", img="babouche-mandala", shape="",
+    "babouche": dict(title="Babouche", kicker="Table · One-of-a-kind", img="babouche-mandala", shape="",
         lead="Get closer. And then try to look away.", text="""Get closer.
 And then try to look away.
 
@@ -791,7 +786,7 @@ Where beauty loops until it takes over.
 
 Not decoration.
 A frequency."""),
-    "qif-in-the-oasis": dict(title="Qif in the Oasis", kicker="Limited-edition table", img="desert-caravan-neon", shape="",
+    "qif-in-the-oasis": dict(title="Qif in the Oasis", kicker="Table · One-of-a-kind", img="desert-caravan-neon", shape="",
         lead="Move. Travel. Follow the line. And then — stop.", text="""Move.
 Travel.
 Follow the line.
@@ -807,7 +802,7 @@ is just another way of moving?
 Between desert and signal,
 tradition and interruption,
 this piece plays with direction — and refuses to obey it."""),
-    "poppy-hobb": dict(title="Poppy Hobb", kicker="Limited-edition table", img="poppy-queen", shape="",
+    "poppy-hobb": dict(title="Poppy Hobb", kicker="Table · One-of-a-kind", img="poppy-queen", shape="",
         lead="She looks soft. She isn't.", text="""She looks soft.
 She isn't.
 
@@ -821,7 +816,7 @@ a place where form becomes feeling.
 
 Not just a table.
 A presence."""),
-    "mouna-lisa": dict(title="Mouna Lisa", kicker="Limited-edition table", img="mona-lisa-fez", shape="round",
+    "mouna-lisa": dict(title="Mouna Lisa", kicker="Table · One-of-a-kind", img="mona-lisa-fez", shape="round",
         lead="Even icons get bored.", text="""Even icons get bored.
 
 Perfect smile. Perfect pose.
@@ -837,7 +832,7 @@ Reclaimed.
 
 Because timeless doesn't mean untouchable.
 And beauty was never meant to behave."""),
-    "kenza": dict(title="Kenza", kicker="Lighting · mixed-media lamp", img="kenza", shape="tall",
+    "kenza": dict(title="Kenza", kicker="Lighting · One-of-a-kind", img="kenza", shape="tall",
         lead="Handle with care.", text="""Handle with care.
 
 She is stitched together from old stories, other people's expectations, stamps of approval, souvenirs of who she was supposed to be.
@@ -845,7 +840,7 @@ She is stitched together from old stories, other people's expectations, stamps o
 Then she switched on.
 
 And suddenly, all that remained… was her light."""),
-    "kenzo": dict(title="Kenzo", kicker="Lighting · mixed-media lamp", img="kenzo", shape="tall",
+    "kenzo": dict(title="Kenzo", kicker="Lighting · One-of-a-kind", img="kenzo", shape="tall",
         lead="Some love stories don't need words. Just good lighting.", text="""Kenza switched on.
 He stayed.
 
@@ -882,7 +877,23 @@ def build_piece_pages():
         media_cls = "piece__media" + (" piece__media--round" if d["shape"] == "round" else
                                       " piece__media--tall" if d["shape"] == "tall" else "")
         nxt = order[(i + 1) % len(order)]
+        prv = order[(i - 1) % len(order)]
         nd = CAPTIONS[nxt]
+        pd = CAPTIONS[prv]
+        # Practical layer — factual fields Maija confirms later show "On request".
+        edition = "One-of-a-kind" if "One-of-a-kind" in d["kicker"] else d["kicker"].split("·")[-1].strip()
+        specs = [
+            ("Dimensions", "On request"),
+            ("Materials", "On request"),
+            ("Technique", "Mixed media"),
+            ("Edition", edition),
+            ("Created", "Koh Phangan, Thailand"),
+            ("Availability", "Available on enquiry"),
+        ]
+        specs_html = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in specs)
+        pair = ('\n      <p class="piece__pair">Part of the Kenza &amp; Kenzo pair · '
+                f'<a href="{("kenzo" if slug=="kenza" else "kenza")}.html">Discover '
+                f'{("Kenzo" if slug=="kenza" else "Kenza")}</a></p>') if slug in ("kenza", "kenzo") else ""
         body = f'''
 {L.breadcrumb(("Collection", "collection.html"), (d["title"], None))}
 <section class="section" style="padding-top:1.4rem;"><div class="wrap">
@@ -892,20 +903,27 @@ def build_piece_pages():
       <span class="eyebrow eyebrow--red">{d["kicker"]}</span>
       <h1>{d["title"]}</h1>
       <div class="piece__caption">{_caption_html(d["text"])}</div>
-      <p class="piece__sig">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> the Box</p>
+      <p class="piece__sig">F<span class="fbox__stars">&#9733;&#9733;&#9733;</span> the Box</p>{pair}
       <div class="piece__actions">
-        <a class="btn btn--primary" href="{_piece_wa(d["title"], d["kicker"])}" target="_blank" rel="noopener">{L.WA_ICON} Enquire on WhatsApp</a>
+        <a class="btn btn--primary" href="{_piece_wa(d["title"], d["kicker"])}" target="_blank" rel="noopener">{L.WA_ICON} Enquire about this piece</a>
         <a class="btn btn--ghost" href="collection.html">Back to the Collection</a>
       </div>
+      <dl class="piece-specs">{specs_html}</dl>
     </div>
   </div>
 </div></section>
 
 <section class="section" style="padding-top:0;"><div class="wrap">
-  <a class="piece-next reveal" href="{nxt}.html">
-    <span class="eyebrow eyebrow--red">Next piece</span>
-    <span class="piece-next__row"><span class="piece-next__title">{nd["title"]}</span>{A}</span>
-  </a>
+  <div class="piece-nav">
+    <a class="piece-nav__link piece-nav__prev reveal" href="{prv}.html">
+      <span class="eyebrow eyebrow--red">Previous piece</span>
+      <span class="piece-nav__row">{A}<span class="piece-nav__title">{pd["title"]}</span></span>
+    </a>
+    <a class="piece-nav__link piece-nav__next reveal" href="{nxt}.html">
+      <span class="eyebrow eyebrow--red">Next piece</span>
+      <span class="piece-nav__row"><span class="piece-nav__title">{nd["title"]}</span>{A}</span>
+    </a>
+  </div>
 </div></section>
 '''
         pages[f"{slug}.html"] = L.page(
