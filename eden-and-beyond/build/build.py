@@ -249,63 +249,165 @@ pages["index.html"] = L.page(
 
 
 # ============================================================ STUDIO (was About + Services)
+_studio_wa = L.wa("Hi Eden &amp; Beyond, I would like to talk about a project.")
 about_body = f'''
 {L.subhero(
-    eyebrow="The Studio · Creative Services",
+    eyebrow="The Studio",
     h1="We don't follow trends.<br>We create stories.",
-    sub=("Eden & Beyond is an independent creative studio designing places, objects and experiences for "
-         "hospitality, residential and commercial projects — and a design brand with its own collection."),
+    sub=("Eden & Beyond is an independent creative studio based in Koh Phangan, Thailand, creating distinctive "
+         "spaces and bespoke pieces for hospitality, residential and commercial projects."),
 )}
 
-<section class="section"><div class="wrap">
-  <div class="split">
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <p class="lead">No signature style. No ready-made formula.<br>Every project begins with its own identity.</p>
+  <div style="margin-top:1.8rem;"><a class="btn btn--primary" href="{_studio_wa}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a></div>
+</div></section>
+
+<section class="section band-dark"><div class="wrap">
+  <div class="split" style="align-items:center;">
     <div class="split__text reveal">
-      <span class="eyebrow">Our Story</span>
-      <h2>Design should make<br>people feel something.</h2>
-      <p class="lead">Eden &amp; Beyond was born from a simple belief. After years of travelling, discovering
-      cultures, meeting artisans and creating places across different worlds, Maija founded the studio to
-      bring together everything she loves most.</p>
-      <p style="margin-top:1.1rem;">Design. Art. Craftsmanship. Storytelling. Human connection. Today, Eden &amp; Beyond
-      collaborates with homeowners, hospitality entrepreneurs and visionary brands to create spaces, objects and
-      experiences that leave a lasting impression.</p>
+      <span class="eyebrow">Our Approach</span>
+      <h2>Start with the story.<br>Not the style.</h2>
+      <p class="lead">We don't begin by deciding what a project should look like. We begin with the people, the place,
+      the culture and the story behind it.</p>
+      <p style="margin-top:1.1rem;">Then we build a world around them — from the atmosphere and spatial identity to
+      furniture, lighting, artworks and the details that make it impossible to confuse with somewhere else.</p>
     </div>
-    <div class="split__media reveal" data-delay="1">
-      {ph('Studio / Maija at work')}
-      <span class="tag">The Studio</span>
-    </div>
+    <div class="split__media reveal" data-delay="1">{ph('Studio / Maija at work', 'ph--dark')}<span class="tag">The Studio</span></div>
   </div>
 </div></section>
 
-<section class="section band-dark"><div class="wrap manifesto reveal">
-  <span class="eyebrow" style="display:block;text-align:center;margin-bottom:1.4rem;">Our Philosophy</span>
-  <p>We don't arrive with a catalogue of styles. We arrive with <span class="em">curiosity</span>.
-  We observe. We listen. We ask questions. Every place already has its own soul —
-  our role is simply to reveal it.</p>
+<section class="section"><div class="wrap">
+  <div class="center reveal" style="max-width:660px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
+    <span class="eyebrow">What We Do</span>
+    <h2 style="margin-top:1rem;">Different briefs.<br>Same refusal to be ordinary.</h2>
+  </div>
+  <div class="disc-lite">
+    <a class="disc-lite__item reveal" href="hospitality-design.html">
+      <h3>Hospitality</h3><p>Places people remember.</p>
+      <span class="disc-lite__tags">Hotels · Restaurants · Bars · Beach Clubs · Cafés · Wellness</span>
+      <span class="disc-lite__more">Explore Hospitality {A}</span></a>
+    <a class="disc-lite__item reveal" data-delay="1" href="residential-design.html">
+      <h3>Residential</h3><p>Homes with a point of view.</p>
+      <span class="disc-lite__tags">Private Villas · Residences · Holiday Homes</span>
+      <span class="disc-lite__more">Explore Residential {A}</span></a>
+    <a class="disc-lite__item reveal" data-delay="2" href="furniture-object-design.html">
+      <h3>Bespoke Furniture &amp; Pieces</h3><p>Made for a particular place, person or purpose.</p>
+      <span class="disc-lite__tags">Furniture · Lighting · Artworks · Site-Specific Pieces</span>
+      <span class="disc-lite__more">Explore {A}</span></a>
+    <a class="disc-lite__item reveal" data-delay="3" href="creative-direction.html">
+      <h3>Creative Direction</h3><p>The idea behind everything.</p>
+      <span class="disc-lite__tags">Concept · Storytelling · Brand Identity · Art Direction · Styling</span>
+      <span class="disc-lite__more">Explore {A}</span></a>
+  </div>
 </div></section>
+
+<section class="feat">{ph('Dar Mansour — Koh Phangan (selected project)', 'ph--dark')}
+  <div class="wrap feat__inner reveal">
+    <span class="eyebrow">Selected Project</span>
+    <h2>Dar Mansour</h2>
+    <p class="feat__place">One place. A complete world.</p>
+    <p>For Dar Mansour in Koh Phangan, Eden &amp; Beyond shaped the creative world of the restaurant across interiors,
+    furniture, lighting, dressed walls, artworks and atmosphere — a project where every element belongs to the same story.</p>
+    <div style="margin-top:1.8rem;"><a class="btn btn--light" href="projects.html">Discover Dar Mansour {A}</a></div>
+  </div>
+</section>
 
 <section class="section"><div class="wrap">
   <div class="split split--reverse" style="align-items:center;">
     <div class="split__text reveal">
-      <span class="eyebrow">Meet Maija</span>
-      <h2>Founder &amp; Creative Director</h2>
-      <p class="lead" style="font-style:italic;">&ldquo;I don't create objects for people. I reveal people through objects.&rdquo;</p>
-      <p style="margin-top:1.1rem;">I have always been a creator — but I spent much of my life following conventional
-      paths rather than acting on it. There is a world inside me that has never been fully revealed, one that has
-      relentlessly knocked at the door of my mind, asking to be released and allowed to exist. Eden &amp; Beyond is the
-      key to that door.</p>
+      <span class="eyebrow eyebrow--red">Behind Eden &amp; Beyond</span>
+      <h2 style="margin:1rem 0 .4rem;">Maïja Disseau</h2>
+      <p class="feat__place" style="margin-bottom:1.2rem;">Founder &amp; Creative Troublemaker</p>
+      <p>Born in Italy to French parents, shaped by more than thirty years in Morocco and now creating from Thailand,
+      Maïja has spent her life moving between cultures, languages and ways of seeing.</p>
+      <p style="margin-top:1rem;">Before Eden &amp; Beyond, twelve years as a psychotherapist, hypnotherapist and family
+      constellation practitioner taught her to look beyond appearances — at character, symbols and what often remains unspoken.</p>
+      <p style="margin-top:1rem;">Today, she translates that instinct into spaces, furniture, lighting, artworks and walls.</p>
+      <p class="lead" style="font-style:italic;margin-top:1.2rem;">&ldquo;I don't create objects for people. I reveal people through objects.&rdquo;</p>
+      <div style="margin-top:1.6rem;"><a class="btn btn--ghost" href="about-maija.html">Discover Maïja's Story {A}</a></div>
     </div>
     <div class="split__media reveal" data-delay="1">
-      {('<img src="'+find_img('maija')+'" alt="Maija, founder and creative director of Eden &amp; Beyond">') if find_img('maija') else ph('Portrait — Maija')}
-      <span class="tag">Maija · Founder</span>
+      {('<img src="'+find_img('maija')+'" alt="Maïja Disseau, founder of Eden &amp; Beyond">') if find_img('maija') else ph('Portrait — Maïja')}
+      <span class="tag">Maïja · Founder</span>
     </div>
   </div>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap prose reveal">
-  <p>I create furniture and lighting, transform objects and dress walls — through unique pieces and limited editions.
-  Using paper, paint, stencils and layered collage, I take familiar forms and let them reveal the invisible life they carry within.</p>
+<section class="section band-dark"><div class="wrap">
+  <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2.5rem,6vw,3.5rem);">
+    <span class="eyebrow">How We Work</span>
+    <h2 style="margin-top:1rem;">No formula.<br>But there is a process.</h2>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><span class="step__num">01</span><h3>Discover</h3><p>We listen, observe and understand the people, place and ambition behind the project.</p></div>
+    <div class="step reveal" data-delay="1"><span class="step__num">02</span><h3>Imagine</h3><p>We shape the concept, creative direction and world the project will inhabit.</p></div>
+    <div class="step reveal" data-delay="2"><span class="step__num">03</span><h3>Create</h3><p>Space, furniture, lighting, artworks and details begin to take form.</p></div>
+    <div class="step reveal" data-delay="3"><span class="step__num">04</span><h3>Bring It to Life</h3><p>We work across disciplines to keep the original idea alive through every detail.</p></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="center reveal" style="max-width:640px;margin-inline:auto;">
+    <span class="eyebrow">Who We Work With</span>
+    <h2 style="margin:1rem 0 1.6rem;">Visionaries with a story to tell</h2>
+    <ul class="tags reveal">
+      <li>Hotels</li><li>Restaurants</li><li>Bars</li><li>Developers</li>
+      <li>Private Villas</li><li>Residences</li><li>Independent Brands</li>
+    </ul>
+    <p style="margin-top:1.4rem;color:var(--muted);">Thailand &amp; international projects.</p>
+  </div>
+</div></section>
+
+<section class="section band-dark"><div class="wrap">
+  <div class="split" style="align-items:center;">
+    <div class="split__text reveal">
+      <span class="eyebrow eyebrow--red">The Collection</span>
+      <h2 style="margin:1rem 0 1.2rem;">Not every idea<br>needs a whole project.</h2>
+      <p class="lead">Discover one-of-a-kind and limited-edition tables, lighting, artworks and dressed walls —
+      available independently from our studio projects.</p>
+      <a class="btn btn--light" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
+    </div>
+    <div class="split__media reveal" data-delay="1">{('<img src="'+find_img('mona-lisa-fez')+'" alt="Mouna Lisa — collectible table by Eden &amp; Beyond">') if find_img('mona-lisa-fez') else ph('The Collection', 'ph--teal')}<span class="tag">The Collection</span></div>
+  </div>
+</div></section>
+
+<section class="section book"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow">Have a project in mind?</span>
+  <h2>Bring us the idea.<br>We'll take it beyond.</h2>
+  <div class="book__actions" style="justify-content:center;">
+    <a class="btn btn--primary" href="{_studio_wa}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>
+  </div>
+</div></section>
+'''
+pages["studio.html"] = L.page(
+    title="Creative Design Studio Thailand | Eden & Beyond",
+    desc=("Eden & Beyond is an independent creative studio in Koh Phangan, Thailand, creating hospitality, "
+          "residential and commercial spaces, bespoke furniture, lighting and artworks."),
+    canonical="studio.html",
+    body=about_body,
+)
+
+
+# ============================================================ ABOUT · MAÏJA
+_about_wa = L.wa("Hi Eden &amp; Beyond, I found you through Maïja's story and would love to talk.")
+maija_body = f'''
+{L.subhero(
+    eyebrow="Behind Eden & Beyond",
+    h1="Maïja Disseau",
+    sub="Founder &amp; Creative Troublemaker · Eden &amp; Beyond",
+)}
+
+<section class="section"><div class="wrap wrap--narrow prose reveal">
+  <p class="lead" style="font-style:italic;">&ldquo;I don't create objects for people. I reveal people through objects.&rdquo;</p>
+  <p>I have always been a creator — but I spent much of my life following conventional paths rather than acting on it.
+  There is a world inside me that has never been fully revealed, one that has relentlessly knocked at the door of my mind,
+  asking to be released and allowed to exist. Eden &amp; Beyond is the key to that door.</p>
+  <p>I create furniture and lighting, transform familiar forms and dress walls — through one-of-a-kind pieces and limited
+  editions. Using paper, paint, stencils and layered collage, I take familiar forms and let them reveal the invisible life
+  they carry within.</p>
   <p>For commissioned pieces, the process becomes deeply personal. I don't simply design something for someone. I observe,
-  sense and interpret what lives beneath the surface — then reveal it through the object. Each creation becomes a mirror:
+  sense and interpret what lives beneath the surface — then reveal it through the piece. Each creation becomes a mirror:
   not a literal portrait, but a material expression of the person who inspired it.</p>
 
   <h3>Before objects, the invisible</h3>
@@ -315,108 +417,36 @@ about_body = f'''
 
   <h3>Several worlds, on purpose</h3>
   <p>Born in Italy to French parents, raised within the Montessori system, shaped by thirty years in Morocco and now living
-  in Thailand, I carry several worlds within me. I am not interested in choosing between them, or in making them behave.
-  I let them collide, spark and come alive.</p>
+  in Thailand, I carry several worlds — and several languages — within me. I am not interested in choosing between them, or
+  in making them behave. I let them collide, spark and come alive.</p>
 
   <h3>Where the name came from</h3>
   <p>Eden &amp; Beyond was born from <em>Eden</em>, Koh Phangan's iconic dance floor — the place that first made me want to
   live on this island. <em>Beyond</em> stands for everything that came after, and for the infinite possibilities that begin
   when we stop accepting the limits handed to us.</p>
   <p>I have no interest in conventional good taste. I am interested in character, contradiction, instinct and life. Some
-  pieces are created freely; others are commissioned for private spaces, restaurants, hotels — places that refuse to look
+  pieces are created freely; others are commissioned for private spaces, restaurants and hotels — places that refuse to look
   like anywhere else. All are made to provoke something: curiosity, desire, recognition, discomfort, fascination —
   sometimes all at once.</p>
 
   <blockquote>F*** the Box is my manifesto, my philosophy of life. Because the Box was never the problem — believing we had to live inside it was.</blockquote>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:clamp(2.5rem,6vw,3.5rem);">
-    <span class="eyebrow">Our Values</span>
-    <h2 style="margin-top:1rem;">What drives every project</h2>
-  </div>
-  <div class="vals">
-    <div class="val reveal"><h3>Identity</h3><p>Every project is unique. Never copied. Never repeated.</p></div>
-    <div class="val reveal" data-delay="1"><h3>Curiosity</h3><p>The best ideas come from exploring beyond our own world — travel, culture, craftsmanship, art.</p></div>
-    <div class="val reveal" data-delay="2"><h3>Craftsmanship</h3><p>Human hands create timeless beauty.</p></div>
-    <div class="val reveal"><h3>Meaning</h3><p>Every material, every object, every detail should have a purpose.</p></div>
-    <div class="val reveal" data-delay="1"><h3>Longevity</h3><p>We design for years, not for seasons.</p></div>
-    <div class="val reveal" data-delay="2"><h3>Emotion</h3><p>People don't remember decoration. They remember how a place made them feel.</p></div>
+<section class="section book"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow eyebrow--red">Work with Maïja</span>
+  <h2>Own a piece,<br>or commission a project.</h2>
+  <div class="book__actions" style="justify-content:center;">
+    <a class="btn btn--primary" href="collection.html">Explore the Collection {A}</a>
+    <a class="btn btn--ghost" href="{_about_wa}" target="_blank" rel="noopener">{L.WA_ICON} Start a Conversation</a>
   </div>
 </div></section>
-
-<section class="section band-dark"><div class="wrap">
-  <div class="center reveal" style="max-width:640px;margin-inline:auto;">
-    <span class="eyebrow">Who We Work With</span>
-    <h2 style="margin:1rem 0 2rem;">Visionaries with a story to tell</h2>
-    <ul class="tags reveal">
-      <li>Boutique Hotels</li><li>Restaurants &amp; Bars</li><li>Private Villas</li>
-      <li>Developers</li><li>Commercial Spaces</li><li>Lifestyle Brands</li>
-      <li>Visionary Entrepreneurs</li><li>Private Clients</li>
-    </ul>
-  </div>
-</div></section>
-
-<section class="section" style="padding-top:0;"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:clamp(2.5rem,6vw,3.5rem);">
-    <span class="eyebrow">Creative Services</span>
-    <h2 style="margin-top:1rem;">Four disciplines,<br>one way of thinking.</h2>
-  </div>
-  <div class="disc">
-    <a class="disc__card reveal" href="hospitality-design.html">{ph('Hospitality design', 'ph--dark')}
-      <div class="disc__body"><h3>Hospitality Design</h3>
-      <p>Hotels, restaurants, cafés, bars, beach clubs and wellness spaces designed to create memorable guest experiences.</p></div></a>
-    <a class="disc__card reveal" data-delay="1" href="residential-design.html">{ph('Residential design', 'ph--dark')}
-      <div class="disc__body"><h3>Residential Design</h3>
-      <p>Luxury villas, private residences and holiday homes designed around the people who live in them.</p></div></a>
-    <a class="disc__card reveal" href="furniture-object-design.html">{ph('Furniture &amp; object design', 'ph--dark')}
-      <div class="disc__body"><h3>Furniture &amp; Object Design</h3>
-      <p>Bespoke furniture, lighting and custom objects — for a project, or as part of our <a href="collection.html" style="color:inherit;text-decoration:underline;">Collection</a>.</p></div></a>
-    <a class="disc__card reveal" data-delay="1" href="creative-direction.html">{ph('Creative direction', 'ph--dark')}
-      <div class="disc__body"><h3>Creative Direction</h3>
-      <p>Concept development, storytelling, styling and creative vision for hospitality, residential and commercial projects.</p></div></a>
-  </div>
-</div></section>
-
-<section class="section band-dark"><div class="wrap">
-  <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2.5rem,6vw,3.5rem);">
-    <span class="eyebrow">Our Process</span>
-    <h2 style="margin-top:1rem;">Every project follows<br>the same philosophy.</h2>
-    <p class="lead" style="margin-inline:auto;margin-top:1.2rem;">No formulas. No signature style. Every project is built around its own story.</p>
-  </div>
-  <div class="steps">
-    <div class="step reveal"><span class="step__num">01</span><h3>Discover</h3><p>Understanding people before spaces. Listening before designing.</p></div>
-    <div class="step reveal" data-delay="1"><span class="step__num">02</span><h3>Define</h3><p>Finding the story before drawing the first line.</p></div>
-    <div class="step reveal" data-delay="2"><span class="step__num">03</span><h3>Design</h3><p>Every material, object and light with purpose.</p></div>
-    <div class="step reveal"><span class="step__num">04</span><h3>Curate</h3><p>Furniture, objects and details, chosen with intention.</p></div>
-    <div class="step reveal" data-delay="1"><span class="step__num">05</span><h3>Deliver</h3><p>A finished project that feels unforgettable.</p></div>
-  </div>
-</div></section>
-
-<section class="section"><div class="wrap">
-  <div class="split" style="align-items:center;">
-    <div class="split__text reveal">
-      <span class="eyebrow">The Design Collection</span>
-      <h2 style="margin:1rem 0 1.2rem;">Own a piece,<br>no project required.</h2>
-      <p class="lead">Beyond commissioned projects, Eden &amp; Beyond is a design brand in its own right — a curated
-      collection of bespoke furniture, lighting and objects you can discover, commission or acquire on their own.</p>
-      <a class="btn btn--primary" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
-    </div>
-    <div class="split__media reveal" data-delay="1">{ph('Collection — signature object', 'ph--dark')}<span class="tag">The Collection</span></div>
-  </div>
-</div></section>
-
-{L.cta_band(
-    title="Looking for more than a beautiful space?",
-    text="Let's create something people will remember.",
-)}
 '''
-pages["studio.html"] = L.page(
-    title="Studio — Eden & Beyond Creative Studio & Design Brand | Maija",
-    desc=("Eden & Beyond is an independent creative studio and design brand founded by Maija — hospitality, "
-          "residential and commercial design, creative direction, and a collection of bespoke furniture and objects. Based in Thailand."),
-    canonical="studio.html",
-    body=about_body,
+pages["about-maija.html"] = L.page(
+    title="Maïja Disseau — Founder | Eden & Beyond",
+    desc=("Maïja Disseau is the founder and creative director of Eden & Beyond in Koh Phangan, Thailand — artist and "
+          "designer of collectible tables, lighting, artworks and dressed walls, and former psychotherapist."),
+    canonical="about-maija.html",
+    body=maija_body,
     extra_head=L.person_maija_schema(),
 )
 
@@ -1234,6 +1264,7 @@ SITEMAP_ORDER = [
     ("furniture-object-design.html", "0.8"),
     ("creative-direction.html", "0.8"),
     ("projects.html", "0.8"),
+    ("about-maija.html", "0.7"),
     ("journal.html", "0.7"),
     ("contact.html", "0.7"),
 ]

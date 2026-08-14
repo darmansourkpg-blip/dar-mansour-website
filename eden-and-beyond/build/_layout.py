@@ -63,6 +63,7 @@ NAV_ITEMS = [
     ("studio.html", "Studio"),
     ("projects.html", "Projects"),
     ("journal.html", "Journal"),
+    ("about-maija.html", "About"),
     ("contact.html", "Contact"),
 ]
 
@@ -77,7 +78,8 @@ MEGA_GROUPS = [
     ]),
     ("The Studio", [
         ("index.html", "Home"),
-        ("studio.html", "Studio &amp; Maija"),
+        ("studio.html", "Studio"),
+        ("about-maija.html", "About Maïja"),
         ("projects.html", "Projects"),
         ("journal.html", "Journal"),
         ("contact.html", "Contact"),
@@ -116,7 +118,7 @@ def org_schema():
         "description": ("Independent multidisciplinary creative studio and collectible design brand based in Koh "
                         "Phangan, Thailand. Creates collectible tables, lighting, artworks and dressed walls, "
                         "alongside creative direction and design for hospitality, residential and commercial projects."),
-        "founder": {"@type": "Person", "name": "Maija Disseau"},
+        "founder": {"@id": f"{SITE_URL}/#maija"},
         "email": EMAIL,
         "areaServed": "Worldwide",
         "address": {"@type": "PostalAddress", "addressLocality": "Koh Phangan", "addressRegion": "Surat Thani", "addressCountry": "TH"},
@@ -137,11 +139,13 @@ def person_maija_schema():
     return _jsonld({
         "@context": "https://schema.org",
         "@type": "Person",
-        "@id": f"{SITE_URL}/studio.html#maija",
-        "name": "Maija",
+        "@id": f"{SITE_URL}/#maija",
+        "name": "Maïja Disseau",
         "jobTitle": "Founder & Creative Director",
         "worksFor": {"@id": f"{SITE_URL}/#organization"},
-        "url": f"{SITE_URL}/studio.html",
+        "url": f"{SITE_URL}/about-maija.html",
+        "knowsAbout": ["Creative direction", "Collectible design", "Furniture", "Lighting",
+                       "Art", "Hospitality design", "Residential design"],
     })
 
 
