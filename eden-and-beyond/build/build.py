@@ -715,8 +715,7 @@ def piece(slug, title, medium, shape, tint, img=None):
 # TABLES — furniture, not wall art.
 COLLECTION = [
     ("tables", "Tables",
-     "Each table is a one-off — a familiar form dressed in paper, paint and layered collage until it reveals the "
-     "invisible life it carries. Moroccan icons collided with Western art. Numbered, collectible, made to be lived with.", [
+     "Not just somewhere to put things.", [
         # Maija's collection order (1–16). Slug = its own page when a caption exists,
         # otherwise the tile opens a WhatsApp enquiry. img = webp file stem in assets/img/.
         ("saint-exupery",       "Saint-Exupéry",         "Table · One-of-a-kind", "",           "ph--teal",     "saint-exupery-camel"),
@@ -737,13 +736,14 @@ COLLECTION = [
         ("mouna-lisa",          "Mouna Lisa",            "Table · One-of-a-kind", "art--round", "ph--teal",     "mona-lisa-fez"),
      ]),
     ("lighting", "Lighting",
-     "Light as atmosphere — pieces where the object matters as much as the glow. Kenza and Kenzo are a pair.", [
+     "Some stories look better after dark.", [
         ("kenza",  "Kenza",  "Lighting · One-of-a-kind",  "art--tall",  "ph--poppy"),
         ("kenzo",  "Kenzo",  "Lighting · One-of-a-kind",  "art--tall",  "ph--dark"),
      ]),
-    ("walls", "Walls",
-     "Hand-stencilled walls and murals — site-specific commissions that turn a surface into a story. "
-     "Zellige geometry and floral damask, plastered and painted by hand onto raw earth walls.", [
+    ("artworks", "Artworks",
+     "Some stories refuse to stay on the table.", []),
+    ("walls", "Dressed Walls",
+     "Because walls don't have to behave either.", [
         ("fountain-wall",  "Fountain Wall",  "Dressed wall · Site-specific", "",  "ph--dark"),
         ("entrance-wall",  "Entrance Wall",  "Dressed wall · Site-specific", "",  "ph--teal"),
         ("star-wall",      "Star Wall",      "Dressed wall · Site-specific", "",  "ph--sun"),
@@ -1000,15 +1000,30 @@ def build_piece_pages():
         )
 
 
+_wa_wall = L.wa("Hi Eden &amp; Beyond, I would like to commission a dressed wall for my space.")
+_col_enquire = L.wa("Hi Eden &amp; Beyond, I would like to enquire about a piece from your collection "
+                    "— availability, dimensions and price.")
+_col_commission = L.wa("Hi Eden &amp; Beyond, I would like to commission my own piece.")
+
+
 def collection_section(anchor, title, blurb, pieces):
-    grid = "\n    ".join(piece(*p) for p in pieces)
+    if pieces:
+        grid = "\n    ".join(piece(*p) for p in pieces)
+        content = f'<div class="artgrid">{grid}</div>'
+    else:
+        content = ('<p class="lead" style="max-width:56ch;color:var(--muted);">Maïja\'s artworks are being added to the '
+                   'Collection. Ask the studio what is available today.</p>')
+    cta = ''
+    if anchor == "walls":
+        cta = (f'<div style="margin-top:1.8rem;"><a class="btn btn--ghost" href="{_wa_wall}" target="_blank" '
+               f'rel="noopener">{L.WA_ICON} Commission a Wall</a></div>')
     return f'''
 <section class="section" id="{anchor}" style="padding-top:0;"><div class="wrap">
   <div class="reveal" style="margin-bottom:clamp(1.6rem,4vw,2.4rem);">
-    <span class="eyebrow">{title}</span>
-    <p class="lead" style="margin-top:.6rem;max-width:60ch;">{blurb}</p>
+    <span class="eyebrow eyebrow--red">{title}</span>
+    <h2 style="margin-top:.5rem;">{blurb}</h2>
   </div>
-  <div class="artgrid">{grid}</div>
+  {content}{cta}
 </div></section>'''
 
 
@@ -1016,47 +1031,67 @@ collection_nav = " · ".join(
     f'<a class="ilink" href="#{a}">{t}</a>' for a, t, _, _ in COLLECTION)
 collection_sections = "\n".join(collection_section(*c) for c in COLLECTION)
 _col_cls, _col_media = subhero_media("hero-collection")
-_col_wa = L.wa("Hi Eden &amp; Beyond, I would like to enquire about a piece from your collection "
-               "— availability, editions and price.")
 collection_body = f'''
 {L.breadcrumb(("Collection", None))}
 {L.subhero(
-    eyebrow="The Design Collection",
-    h1="Bring a piece of Eden &amp; Beyond into your home.",
-    sub=("Limited-edition tables, lighting, transformed objects and dressed walls — collaged by hand, designed by the "
-         "studio, available on their own. Discover, commission or acquire a single piece, no project required."),
+    eyebrow="The Collection",
+    h1="Pieces with a life<br>of their own.",
+    sub=("One-of-a-kind and limited-edition tables, lighting, artworks and dressed walls. "
+         "Created to be lived with, not simply looked at."),
     media_class=_col_cls,
     media_html=_col_media,
 )}
 
 <section class="section"><div class="wrap wrap--narrow center reveal">
-  <p class="lead">Every piece begins the way our projects do — with a story, a material, a wink. Some are born inside a
-  commission and released as editions; others exist purely as objects. None are mass-produced.</p>
+  <h2 style="margin-bottom:1rem;">No two stories<br>should look the same.</h2>
+  <p class="lead">Each piece begins with its own character, references and contradictions — then takes a form entirely its own.
+  Some are one-of-a-kind. Others exist as limited editions. And some begin with you.</p>
   <p style="margin-top:1.2rem;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);">{collection_nav}</p>
 </div></section>
 
 {collection_sections}
 
-<section class="section" style="padding-top:0;"><div class="wrap wrap--narrow center reveal">
-  <p style="color:var(--muted);font-size:.86rem;">Furniture, objects and wall pieces beyond the tables are shown on request.
-  Dimensions, editions and pricing are shared over WhatsApp — <a class="ilink" href="{_col_wa}" target="_blank" rel="noopener">enquire about a piece</a>.</p>
+<section class="section band-dark"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow">Commissions</span>
+  <h2 style="margin-top:1rem;">Made for you.<br>Not made to match.</h2>
+  <p class="lead" style="margin-inline:auto;color:var(--on-dark-soft);">A commissioned piece begins with you — your story, your
+  space, your contradictions, your way of seeing things. The result isn't a variation of something that already exists.
+  It's a piece with an identity of its own.</p>
+  <div style="margin-top:1.6rem;"><a class="btn btn--light" href="{_col_commission}" target="_blank" rel="noopener">{L.WA_ICON} Commission a Piece</a></div>
 </div></section>
 
-<section class="section book"><div class="wrap wrap--narrow reveal">
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <span class="eyebrow">About the Work</span>
+  <h2 style="margin-top:1rem;">The familiar,<br>seen differently.</h2>
+  <p class="lead">Tables, lamps, walls and artworks become surfaces for another way of seeing — bringing together
+  references, memories, symbols, humour and instinct. The form may be familiar. What it becomes isn't.</p>
+</div></section>
+
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="split" style="align-items:center;">
+    <div class="split__text reveal">
+      <span class="eyebrow">The Studio</span>
+      <h2 style="margin:1rem 0 1.2rem;">Sometimes one piece<br>becomes a whole world.</h2>
+      <p class="lead">Eden &amp; Beyond also creates complete spaces for hospitality, residential and commercial projects.</p>
+      <a class="btn btn--ghost" href="studio.html" style="margin-top:1.6rem;">Discover the Studio {A}</a>
+    </div>
+    <div class="split__media reveal" data-delay="1">{('<img src="'+find_img('wondermint-camel')+'" alt="Flash — collectible table by Eden &amp; Beyond">') if find_img('wondermint-camel') else ph('The Studio', 'ph--electric')}<span class="tag">The Studio</span></div>
+  </div>
+</div></section>
+
+<section class="section book"><div class="wrap wrap--narrow reveal center">
   <span class="eyebrow eyebrow--red">The Collection</span>
-  <h2>Found a piece you love —<br>or want your own?</h2>
-  <p class="lead">Every piece is one-off or limited edition. Message the studio for availability, editions and price —
-  or commission something made entirely for your space.</p>
-  <div class="book__actions">
-    <a class="btn btn--primary" href="{_col_wa}" target="_blank" rel="noopener">{L.WA_ICON} Enquire on WhatsApp</a>
-    <a class="btn btn--ghost" href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">Start a Full Project</a>
+  <h2>Found something<br>you can't forget?</h2>
+  <div class="book__actions" style="justify-content:center;">
+    <a class="btn btn--primary" href="{_col_enquire}" target="_blank" rel="noopener">{L.WA_ICON} Enquire about a piece</a>
+    <a class="btn btn--ghost" href="{_col_commission}" target="_blank" rel="noopener">Commission your own</a>
   </div>
 </div></section>
 '''
 pages["collection.html"] = L.page(
-    title="The Collection — Bespoke Furniture, Lighting & Objects | Eden & Beyond",
-    desc=("The Eden & Beyond design collection — bespoke furniture, lighting, decorative objects and limited-edition "
-          "collages by Maija. Collectible pieces available on their own, no project required. Based in Thailand."),
+    title="Collectible Furniture, Lighting & Art | Eden & Beyond",
+    desc=("Discover Eden & Beyond's collection of one-of-a-kind and limited-edition tables, lighting, artworks and "
+          "dressed walls, created in Koh Phangan, Thailand."),
     canonical="collection.html",
     body=collection_body,
     body_class="page-collection",
@@ -1402,24 +1437,26 @@ def write_llms():
     lines = [
         "# Eden & Beyond",
         "",
-        "> Eden & Beyond is an independent creative studio and design brand founded by Maija. Two activities: "
-        "(1) a creative studio designing hospitality, residential and commercial projects (hotels, restaurants, "
-        "bars, villas) with creative direction; and (2) a design collection of bespoke furniture, lighting, objects "
-        "and limited editions available on their own. Based in Thailand, working internationally.",
+        "> Eden & Beyond is an independent multidisciplinary creative studio and collectible design brand founded by "
+        "Maïja Disseau, based in Koh Phangan, Thailand. Two complementary sides: (1) The Collection — one-of-a-kind and "
+        "limited-edition tables, lighting, artworks and dressed walls, available independently; and (2) The Studio — "
+        "creative direction and design for hospitality, residential and commercial projects. Working in Thailand and "
+        "internationally. Selected project: Dar Mansour, a Moroccan restaurant in Koh Phangan.",
         "",
         "## Key pages",
-        f"- [Home]({L.SITE_URL}/): Studio & design brand overview",
-        f"- [Studio]({L.SITE_URL}/studio.html): The studio, founder Maija & creative services",
-        f"- [Collection]({L.SITE_URL}/collection.html): Bespoke furniture, lighting, objects & limited editions",
-        f"- [Projects]({L.SITE_URL}/projects.html): Selected work, including Dar Mansour",
-        f"- [Journal]({L.SITE_URL}/journal.html): Editorial on design & hospitality",
-        f"- [Contact]({L.SITE_URL}/contact.html): Start a project or enquire about a piece",
+        f"- [Home]({L.SITE_URL}/): Collection & studio overview",
+        f"- [Collection]({L.SITE_URL}/collection.html): One-of-a-kind & limited-edition tables, lighting, artworks & dressed walls",
+        f"- [Studio]({L.SITE_URL}/studio.html): The creative studio & how it works",
+        f"- [About Maïja]({L.SITE_URL}/about-maija.html): Founder & creative director Maïja Disseau",
+        f"- [Projects]({L.SITE_URL}/projects.html): Dar Mansour case study",
+        f"- [Journal]({L.SITE_URL}/journal.html): Ideas on design, art, hospitality & culture",
+        f"- [Contact]({L.SITE_URL}/contact.html): Start a project or commission a piece",
         "",
-        "## Disciplines",
+        "## Studio services",
         f"- [Hospitality Design]({L.SITE_URL}/hospitality-design.html)",
         f"- [Restaurant Design]({L.SITE_URL}/restaurant-design.html)",
         f"- [Residential Design]({L.SITE_URL}/residential-design.html)",
-        f"- [Furniture & Object Design]({L.SITE_URL}/furniture-object-design.html)",
+        f"- [Bespoke Furniture & Pieces]({L.SITE_URL}/furniture-object-design.html)",
         f"- [Creative Direction]({L.SITE_URL}/creative-direction.html)",
         "",
     ]
