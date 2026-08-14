@@ -1028,218 +1028,279 @@ pages["collection.html"] = L.page(
 )
 
 
-# ============================================================ SEO LANDING PAGES
-def landing(slug, eyebrow, h1, sub, overview, wwd_title, wwd_items, services,
-            approach_title, approach, why_title=None, why=None, crumb_label=None):
-    wwd_html = "".join(wwd_item(t, d) for t, d in wwd_items)
-    svc_html = "".join(f'<li>{s}</li>' for s in services)
-    why_block = ""
-    if why:
-        why_block = f'''
-<section class="section band-dark"><div class="wrap wrap--narrow reveal">
-  <span class="eyebrow">{why_title}</span>
-  <h2 style="margin:1rem 0 1.4rem;">{why['h2']}</h2>
-  <p class="lead" style="color:var(--on-dark-soft);">{why['body']}</p>
+# ============================================================ SERVICE PAGES (V2)
+def _chips(items, start=True):
+    align = "flex-start" if start else "center"
+    lis = "".join(f"<li>{i}</li>" for i in items)
+    return f'<ul class="tags reveal" style="justify-content:{align};">{lis}</ul>'
+
+
+def _cap_block(eyebrow, title_html, items):
+    return f'''<section class="section band-dark"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow">{eyebrow}</span>
+  <h2 style="margin:1rem 0 1.4rem;">{title_html}</h2>
+  {_chips(items)}
 </div></section>'''
-    body = f'''
-{L.breadcrumb((crumb_label or h1, None))}
-{L.subhero(eyebrow=eyebrow, h1=h1, sub=sub)}
 
-<section class="section"><div class="wrap wrap--narrow prose reveal">
-  <span class="eyebrow">Overview</span>
-  <h2 style="margin-top:.8rem;">{overview['h2']}</h2>
-  {overview['body']}
-</div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:clamp(2rem,5vw,3rem);">
-    <span class="eyebrow">What We Design</span>
-    <h2 style="margin-top:1rem;">{wwd_title}</h2>
+def _dar_feat(eyebrow, h2, place, body, label="Discover the Project"):
+    return f'''<section class="feat">{ph('Dar Mansour — Koh Phangan', 'ph--dark')}
+  <div class="wrap feat__inner reveal">
+    <span class="eyebrow">{eyebrow}</span>
+    <h2>{h2}</h2>
+    <p class="feat__place">{place}</p>
+    <p>{body}</p>
+    <div style="margin-top:1.8rem;"><a class="btn btn--light" href="projects.html">{label} {A}</a></div>
   </div>
-  <div class="wwd">{wwd_html}</div>
-</div></section>
+</section>'''
 
-<section class="section band-dark"><div class="wrap wrap--narrow reveal">
-  <span class="eyebrow">Services</span>
-  <h2 style="margin:1rem 0 1.4rem;">What's included</h2>
-  <ul class="tags" style="justify-content:flex-start;">{svc_html}</ul>
-</div></section>
 
-<section class="section"><div class="wrap wrap--narrow prose reveal">
-  <span class="eyebrow">{approach_title}</span>
-  <h2 style="margin-top:.8rem;">{approach['h2']}</h2>
-  {approach['body']}
+def _svc_collection(title_html, body):
+    return f'''<section class="section"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow eyebrow--red">The Collection</span>
+  <h2 style="margin-top:1rem;">{title_html}</h2>
+  <p class="lead" style="margin-inline:auto;">{body}</p>
+  <div style="margin-top:1.6rem;"><a class="btn btn--primary" href="collection.html">Explore the Collection {A}</a></div>
+</div></section>'''
+
+
+def _svc_final(eyebrow, title_html, wa_msg, label):
+    return f'''<section class="section book"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow">{eyebrow}</span>
+  <h2>{title_html}</h2>
+  <div class="book__actions" style="justify-content:center;">
+    <a class="btn btn--primary" href="{L.wa(wa_msg)}" target="_blank" rel="noopener">{L.WA_ICON} {label}</a>
+  </div>
+</div></section>'''
+
+
+def _svc_point(eyebrow, title_html, body_html):
+    return f'''<section class="section"><div class="wrap wrap--narrow prose reveal">
+  <span class="eyebrow">{eyebrow}</span>
+  <h2 style="margin:.6rem 0 1rem;">{title_html}</h2>
+  {body_html}
+</div></section>'''
+
+
+def _svc_bespoke(title_html, body, label="Discover Bespoke Furniture &amp; Pieces"):
+    return f'''<section class="section band-dark"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow">Bespoke Pieces</span>
+  <h2 style="margin-top:1rem;">{title_html}</h2>
+  <p class="lead" style="margin-inline:auto;color:var(--on-dark-soft);">{body}</p>
+  <div style="margin-top:1.6rem;"><a class="btn btn--light" href="furniture-object-design.html">{label} {A}</a></div>
+</div></section>'''
+
+
+# ---- 15 · HOSPITALITY -------------------------------------------------------
+_wa_hosp = "Hi Eden &amp; Beyond, I would like to talk about a hospitality project."
+hospitality_body = f'''
+{L.breadcrumb(("Hospitality Design", None))}
+{L.subhero(eyebrow="Hospitality Design", h1="Places people remember.",
+    sub="Creative direction and design for hotels, restaurants, bars, beach clubs, cafés and wellness spaces — built around character, atmosphere and a story of their own.")}
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <div style="margin-bottom:.4rem;"><a class="btn btn--primary" href="{L.wa(_wa_hosp)}" target="_blank" rel="noopener">{L.WA_ICON} Start a Hospitality Project</a></div>
 </div></section>
-{why_block}
-{L.cta_band(title="Let's create something people will remember.",
-            text="Tell us about your project — we'd love to hear your story.")}
+{_svc_point("Positioning", "Beautiful isn't enough.",
+  "<p>A hospitality space has to do more than look good. It has to make people want to enter, stay, come back — and remember where they were.</p><p>We create places with an identity of their own, where space, furniture, lighting, art and atmosphere work together as one complete experience.</p>")}
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:clamp(1.6rem,4vw,2.4rem);"><span class="eyebrow">What We Design</span><h2 style="margin-top:1rem;">Hospitality spaces with a point of view</h2></div>
+  {_chips(["Boutique Hotels","Restaurants","Bars","Beach Clubs","Cafés","Wellness &amp; Spa","Hospitality Concepts"], start=False)}
+</div></section>
+{_cap_block("What We Do", "From the big idea<br>to the smallest detail.",
+  ["Creative Concept &amp; Direction","Spatial Identity &amp; Interior Design","Furniture &amp; Lighting","Artworks &amp; Dressed Walls","Materials &amp; Finishes","Styling &amp; Atmosphere","Brand &amp; Guest Experience"])}
+{_svc_point("How We Think About Hospitality", "People don't remember floor plans.",
+  "<p>They remember how a place made them feel. The table they wanted to sit at. The light at dinner. The music. The wall they photographed. The detail they told someone about the next day.</p><p>That's where hospitality becomes memorable — and it's designed on purpose.</p>")}
+{_dar_feat("Hospitality in Practice", "Dar Mansour", "A restaurant designed as a complete world.",
+  "For Dar Mansour in Koh Phangan, Eden &amp; Beyond shaped the restaurant across interiors, furniture, lighting, dressed walls, artworks and atmosphere. Nothing was treated as an isolated design decision — every element contributes to the same experience.")}
+{_svc_bespoke("Sometimes the space needs something that doesn't exist yet.",
+  "Furniture, lighting, artworks and site-specific pieces can be created as part of the project — giving the space details that belong nowhere else.")}
+<section class="section"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow">Who We Work With</span>
+  <h2 style="margin:1rem 0 1.4rem;">Independent, boutique, unmistakable</h2>
+  {_chips(["Independent Hotels","Boutique Resorts","Restaurants &amp; Bars","Beach Clubs","Wellness Concepts","Property Developers","Hospitality Entrepreneurs"])}
+  <p style="margin-top:1.6rem;color:var(--muted);">Based in Koh Phangan, Thailand. Working with hospitality clients in Thailand and internationally. See also our <a class="ilink" href="restaurant-design.html">restaurant design</a> and <a class="ilink" href="creative-direction.html">creative direction</a>.</p>
+</div></section>
+{_svc_collection("Not planning a complete project?", "Discover one-of-a-kind and limited-edition tables, lighting, artworks and dressed walls from the Eden &amp; Beyond Collection.")}
+{_svc_final("Ready when you are", "Planning a place<br>people won't forget?", _wa_hosp, "Start a Hospitality Project")}
 '''
-    pages[slug] = L.page(title=h1_meta[slug], desc=desc_meta[slug], canonical=slug,
-                         body=body)
+pages["hospitality-design.html"] = L.page(
+    title="Hospitality Design Studio Thailand | Eden & Beyond",
+    desc="Hospitality design and creative direction for boutique hotels, restaurants, bars, resorts and wellness spaces in Thailand and internationally.",
+    canonical="hospitality-design.html", body=hospitality_body)
 
 
-# Meta titles/descriptions for landing pages (SEO — geo-anchored to Thailand)
-h1_meta = {
-    "hospitality-design.html": "Hospitality Design Studio — Hotels, Restaurants & Bars | Eden & Beyond, Thailand",
-    "restaurant-design.html": "Restaurant Design & Interior Concepts | Eden & Beyond, Thailand",
-    "residential-design.html": "Villa & Residential Interior Design | Eden & Beyond, Thailand",
-    "furniture-object-design.html": "Bespoke Furniture & Object Design | Eden & Beyond",
-    "creative-direction.html": "Creative Direction & Brand Experience for Hospitality | Eden & Beyond",
-}
-desc_meta = {
-    "hospitality-design.html": ("Hospitality design studio for boutique hotels, restaurants, bars, beach clubs and wellness "
-                                "spaces. Eden & Beyond designs memorable guest experiences — based in Thailand, working internationally."),
-    "restaurant-design.html": ("Restaurant interior design and concept development by Eden & Beyond — dining spaces built around "
-                               "story, atmosphere and craft. Based in Thailand, working internationally."),
-    "residential-design.html": ("Villa and residential interior design by Eden & Beyond — private homes and luxury residences "
-                                "designed around the people who live in them. Based in Thailand, working internationally."),
-    "furniture-object-design.html": ("Bespoke furniture, lighting and object design by Eden & Beyond — custom pieces that give each "
-                                     "project its own identity."),
-    "creative-direction.html": ("Creative direction, concept development, storytelling and styling for hospitality, residential and "
-                                "lifestyle brands by Eden & Beyond."),
-}
+# ---- 16 · RESTAURANT --------------------------------------------------------
+_wa_rest = "Hi Eden &amp; Beyond, I would like to talk about a restaurant project."
+restaurant_body = f'''
+{L.breadcrumb(("Restaurant Design", None))}
+{L.subhero(eyebrow="Restaurant Design", h1="A restaurant should<br>have a point of view.",
+    sub="Creative direction and design for restaurants, bars and dining concepts — from the first idea to the atmosphere guests remember.")}
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <div><a class="btn btn--primary" href="{L.wa(_wa_rest)}" target="_blank" rel="noopener">{L.WA_ICON} Start a Restaurant Project</a></div>
+</div></section>
+{_svc_point("Positioning", "More than a place to eat.",
+  "<p>The best restaurants create a world around the food. The light, the furniture, the walls, the music, the objects, the way a table feels at night — every detail contributes to the experience.</p><p>We bring those elements together around one clear identity.</p>")}
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:clamp(1.6rem,4vw,2.4rem);"><span class="eyebrow">What We Create</span><h2 style="margin-top:1rem;">Rooms built around a story</h2></div>
+  {_chips(["Restaurants","Bars","Cafés","Dining Concepts","Restaurant &amp; Bar Areas within Hotels"], start=False)}
+</div></section>
+{_cap_block("From Concept to Experience", "From concept<br>to last detail.",
+  ["Creative Concept &amp; Direction","Restaurant Identity &amp; Storytelling","Interior &amp; Spatial Design","Furniture &amp; Lighting","Artworks &amp; Dressed Walls","Materials &amp; Finishes","Styling &amp; Atmosphere","Brand Experience"])}
+{_svc_point("The Restaurant Point of View", "The food isn't the whole story.",
+  "<p>People remember where they sat. How the room changed after dark. The table they photographed before dinner arrived. The music. The light. The feeling that, for a few hours, they had stepped somewhere else.</p><p><strong>A great restaurant gives the food a world to belong to.</strong></p>")}
+{_dar_feat("Selected Restaurant Project", "Dar Mansour — Morocco's Kitchen", "From a restaurant to a world of its own.",
+  "Dar Mansour began with a simple ambition: to create a restaurant in Koh Phangan that felt genuinely rooted in Morocco without becoming a reproduction of it. Eden &amp; Beyond shaped the creative world around that idea — interiors, furniture, lighting, dressed walls, artworks and atmosphere, in one coherent experience.",
+  label="Discover Dar Mansour")}
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:2rem;"><span class="eyebrow">Project Depth</span><h2 style="margin-top:1rem;">One idea, every detail</h2></div>
+  {_chips(["The Space","The Tables","The Lighting","The Walls","The Art","The Details"], start=False)}
+</div></section>
+{_svc_bespoke("Some details shouldn't exist anywhere else.",
+  "Tables, lighting, artworks and site-specific pieces can be created especially for the restaurant — making the identity tangible in the things guests see, touch and remember.")}
+{_svc_point("Creative Direction", "Before the space, there's the idea.",
+  "<p>For new restaurant concepts, Eden &amp; Beyond can help shape the creative direction from the beginning — defining the story, personality, visual language and atmosphere that guide the entire project. Explore our <a href='creative-direction.html'>creative direction</a> work.</p>")}
+<section class="section band-dark"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow">Who We Work With</span>
+  <h2 style="margin:1rem 0 1.4rem;">New concept, or a new chapter.</h2>
+  {_chips(["Independent Restaurants","Restaurant Groups","Hotels &amp; Resorts","Chefs &amp; Founders","Property Developers","Hospitality Entrepreneurs"])}
+  <p style="margin-top:1.4rem;color:var(--on-dark-soft);">From restaurants created from the ground up to existing places ready for a new identity. Based in Koh Phangan, Thailand — working in Thailand and internationally.</p>
+</div></section>
+{_svc_collection("Don't need the whole studio?", "A single piece can change a room. Discover one-of-a-kind and limited-edition tables, lighting and artworks from the Eden &amp; Beyond Collection.")}
+{_svc_final("Opening a restaurant?", "Let's give the food<br>a world to belong to.", _wa_rest, "Start a Restaurant Project")}
+'''
+pages["restaurant-design.html"] = L.page(
+    title="Restaurant Design Studio Thailand | Eden & Beyond",
+    desc="Restaurant design and creative direction in Thailand and internationally, creating distinctive interiors, furniture, lighting, artworks and dining experiences.",
+    canonical="restaurant-design.html", body=restaurant_body)
 
-landing(
-    "hospitality-design.html",
-    eyebrow="Hospitality Design", crumb_label="Hospitality Design",
-    h1="Hospitality Design",
-    sub="Hotels, restaurants, bars, beach clubs, cafés and wellness spaces designed to create memorable guest experiences.",
-    overview={"h2": "Design that turns a space into a destination",
-              "body": ("<p>A hotel should become a destination. A restaurant should become a memory. Eden &amp; Beyond designs "
-                       "hospitality spaces where architecture, interiors, objects and storytelling work together — so guests feel "
-                       "something the moment they arrive, and remember it long after they leave.</p>"
-                       "<p>We work internationally from our base in Thailand, with hospitality entrepreneurs, boutique hotel owners "
-                       "and restaurateurs who want more than a beautiful room.</p>")},
-    wwd_title="Hospitality spaces we design",
-    wwd_items=[
-        ("Boutique Hotels", "Immersive properties with a clear identity, from concept to guest experience."),
-        ("Restaurants &amp; Cafés", "Dining rooms built around atmosphere, service flow and story."),
-        ("Bars &amp; Beach Clubs", "Social spaces with energy, character and a strong sense of place."),
-        ("Wellness Spaces", "Calm, considered environments designed around how people want to feel."),
-    ],
-    services=["Concept &amp; Storytelling", "Interior Design", "Space Planning", "Material &amp; Finish Selection",
-              "Furniture &amp; Lighting", "Art &amp; Object Curation", "Styling", "Creative Direction"],
-    approach_title="Approach",
-    approach={"h2": "We begin with understanding, not aesthetics",
-              "body": ("<p>Every hospitality project starts with the people, the place, the culture and the ambition. Only then do we "
-                       "design. The result is coherent from the first impression to the smallest detail — a space with its own identity "
-                       "rather than a borrowed trend.</p>"
-                       '<p>See how this shaped <a href="projects.html">Dar Mansour</a>, our Moroccan hospitality project in Koh Phangan, '
-                       'or read more about our <a href="studio.html">creative process</a>.</p>')},
-    why_title="Why It Matters",
-    why={"h2": "Memorable hospitality is designed on purpose",
-         "body": "Guests don't remember decoration. They remember how a place made them feel — and that feeling is the outcome of hundreds of intentional decisions."},
-)
 
-landing(
-    "restaurant-design.html",
-    eyebrow="Restaurant Design", crumb_label="Restaurant Design",
-    h1="Restaurant Design",
-    sub="Dining spaces built around story, atmosphere and craft — from first concept to the final detail.",
-    overview={"h2": "A restaurant should become a memory",
-              "body": ("<p>The most memorable restaurants aren't defined by their menu alone. They're defined by how it feels to be "
-                       "there. Eden &amp; Beyond designs restaurants where interiors, lighting, objects and narrative come together into "
-                       "one coherent experience.</p>"
-                       "<p>We work with restaurateurs and hospitality groups internationally, from our base in Thailand.</p>")},
-    wwd_title="What we design for restaurants",
-    wwd_items=[
-        ("Concept &amp; Identity", "The story and atmosphere that make a restaurant unmistakably itself."),
-        ("Interiors &amp; Layout", "Dining rooms designed around service, comfort and mood."),
-        ("Lighting &amp; Materials", "The finishes and light that set the tone from day to night."),
-        ("Bespoke Details", "Custom furniture, tableware direction and objects with meaning."),
-    ],
-    services=["Restaurant Concept", "Interior Design", "Space &amp; Seating Planning", "Lighting Design",
-              "Material Selection", "Bespoke Furniture", "Styling", "Creative Direction"],
-    approach_title="Philosophy",
-    approach={"h2": "Every great restaurant begins with a story",
-              "body": ("<p>We don't repeat a signature look from one project to the next. Each restaurant begins with a blank page and "
-                       "its own story — its cuisine, its place, its people.</p>"
-                       '<p>Our Moroccan project <a href="projects.html">Dar Mansour</a> in Koh Phangan is one example of this approach '
-                       'in practice. Learn more about our <a href="hospitality-design.html">hospitality design</a> work.</p>')},
-)
+# ---- 17 · RESIDENTIAL -------------------------------------------------------
+_wa_resi = "Hi Eden &amp; Beyond, I would like to talk about a residential project."
+residential_body = f'''
+{L.breadcrumb(("Residential Design", None))}
+{L.subhero(eyebrow="Residential Design", h1="Homes with character.<br>Never someone else's idea of beautiful.",
+    sub="Creative direction and design for private villas, residences and holiday homes — shaped around the people who live in them, not a predefined style.")}
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <div><a class="btn btn--primary" href="{L.wa(_wa_resi)}" target="_blank" rel="noopener">{L.WA_ICON} Start a Residential Project</a></div>
+</div></section>
+{_svc_point("Positioning", "Your home shouldn't<br>look like anyone else's.",
+  "<p>A home is personal. It carries the people who live there — their histories, contradictions, travels, habits and the things they choose to surround themselves with.</p><p>We don't bring a signature look into your home. We create one around you.</p>")}
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:clamp(1.6rem,4vw,2.4rem);"><span class="eyebrow">What We Design</span><h2 style="margin-top:1rem;">From a whole villa to a single room</h2></div>
+  {_chips(["Private Villas","Residences","Holiday Homes","Residential Developments","Selected Rooms &amp; Spaces"], start=False)}
+</div></section>
+{_cap_block("What We Do", "From the way you live<br>to the things you live with.",
+  ["Creative Direction","Interior &amp; Spatial Design","Furniture &amp; Lighting","Artworks &amp; Dressed Walls","Materials &amp; Finishes","Styling &amp; Curation","Bespoke Pieces"])}
+{_svc_point("The Residential Point of View", "A home isn't a showroom.",
+  "<p>It has to live. It changes with the light, collects memories, gets imperfect, fills with people and becomes more personal with time.</p><p>We create homes with enough character to be remembered — and enough freedom to become yours.</p>")}
+{_svc_point("Our Approach", "It starts with you.",
+  "<p>Before we think about colours, furniture or finishes, we want to understand who we're creating for. How you live. What you love. What you keep. What you reject. Where you've been. What feels like home to you.</p><p>Those things become part of the creative direction.</p>")}
+{_svc_bespoke("Sometimes a home only needs one thing.",
+  "A table. A light. An artwork. A wall. Eden &amp; Beyond can create a bespoke piece for your home without turning it into a complete design project.",
+  label="Commission a Piece")}
+{_svc_collection("Or maybe it already exists.", "Discover one-of-a-kind and limited-edition tables, lighting and artworks from the Eden &amp; Beyond Collection.")}
+<section class="section band-dark"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow eyebrow--red">For Developers</span>
+  <h2 style="margin:1rem 0 1.2rem;">Not another<br>copy-paste villa.</h2>
+  <p class="lead" style="color:var(--on-dark-soft);">For boutique residential developments, Eden &amp; Beyond can shape a distinctive creative identity across interiors, furniture, lighting and art — while allowing each residence to retain its own character.</p>
+  <div style="margin-top:1.6rem;"><a class="btn btn--light" href="{L.wa('Hi Eden &amp; Beyond, I would like to discuss a residential development.')}" target="_blank" rel="noopener">{L.WA_ICON} Discuss a Development</a></div>
+</div></section>
+<section class="section"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow">Who We Work With</span>
+  <h2 style="margin:1rem 0 1.4rem;">Already have an architect? Good.</h2>
+  {_chips(["Villa Owners","Private Clients","Homeowners","Property Developers","Boutique Residential Projects","Architects &amp; Creative Partners"])}
+  <p style="margin-top:1.4rem;color:var(--muted);">Eden &amp; Beyond can work alongside architects, developers and existing project teams. Based in Koh Phangan, Thailand — creating in Thailand and internationally.</p>
+</div></section>
+{_svc_final("Creating a home that should feel like yours?", "Let's make sure it does.", _wa_resi, "Start a Residential Project")}
+'''
+pages["residential-design.html"] = L.page(
+    title="Residential & Villa Design Thailand | Eden & Beyond",
+    desc="Residential design and creative direction for private villas, residences and holiday homes in Thailand and internationally, by Eden & Beyond.",
+    canonical="residential-design.html", body=residential_body)
 
-landing(
-    "residential-design.html",
-    eyebrow="Residential Design", crumb_label="Residential Design",
-    h1="Residential Design",
-    sub="Private villas, luxury residences and holiday homes designed around the people who live in them.",
-    overview={"h2": "A villa should become a sanctuary",
-              "body": ("<p>A home is more than a beautiful interior — it's a reflection of the people who live in it. Eden &amp; Beyond "
-                       "designs private residences with personality, warmth and timeless character, from the architecture of a space to "
-                       "the objects that fill it.</p>"
-                       "<p>We work with private clients and developers internationally, from our base in Thailand.</p>")},
-    wwd_title="Residential projects we design",
-    wwd_items=[
-        ("Private Villas", "Distinctive homes designed around a way of living, not a trend."),
-        ("Luxury Residences", "Refined interiors with warmth, texture and lasting character."),
-        ("Holiday Homes", "Restful retreats with a strong sense of place."),
-        ("Interiors &amp; Styling", "Furniture, lighting and objects curated with intention."),
-    ],
-    services=["Interior Design", "Space Planning", "Material &amp; Finish Selection", "Bespoke Furniture",
-              "Lighting Design", "Art &amp; Object Curation", "Styling", "Creative Direction"],
-    approach_title="Approach",
-    approach={"h2": "Designed for years, not for seasons",
-              "body": ("<p>We design homes that age beautifully — with natural materials, human craftsmanship and details chosen to "
-                       "last. Every project begins by understanding how you actually want to live.</p>"
-                       '<p>Explore our <a href="studio.html">full range of services</a> or <a href="https://wa.me/66923651604" target="_blank" rel="noopener">start a '
-                       'conversation</a> about your home.</p>')},
-)
 
-landing(
-    "furniture-object-design.html",
-    eyebrow="Furniture & Objects", crumb_label="Furniture & Objects",
-    h1="Furniture &amp; Object Design",
-    sub="Bespoke furniture, lighting and custom objects that give every project its own identity.",
-    overview={"h2": "Objects that tell a story",
-              "body": ("<p>An object should tell a story. Eden &amp; Beyond designs bespoke furniture, lighting and decorative objects — "
-                       "either as part of a larger project or as standalone commissions. Each piece is designed with purpose, made to be "
-                       "kept for a lifetime.</p>"
-                       '<p>Our <em>Kenza</em> lamp — a collaged bust crowned with a tasselled fez shade — is one example of how a single '
-                       'object can carry a whole atmosphere. See it and other pieces in <a href="collection.html">the Collection</a>.</p>')},
-    wwd_title="What we design",
-    wwd_items=[
-        ("Bespoke Furniture", "Custom pieces designed for a specific space and story."),
-        ("Lighting", "Fixtures that shape atmosphere as much as they provide light."),
-        ("Decorative Objects", "Considered details that give a space its character."),
-        ("Art &amp; Curation", "Sourcing and curating pieces that complete a project."),
-    ],
-    services=["Custom Furniture Design", "Lighting Design", "Material Selection", "Prototyping &amp; Maker Liaison",
-              "Object &amp; Art Curation", "Collections"],
-    approach_title="Philosophy",
-    approach={"h2": "Human hands create timeless beauty",
-              "body": ("<p>We work closely with artisans and makers, because craftsmanship is what turns a good idea into a lasting "
-                       "object. Every material has a voice; every detail has a purpose.</p>"
-                       '<p>See how bespoke objects shaped <a href="projects.html">Dar Mansour</a>, or read about our '
-                       '<a href="creative-direction.html">creative direction</a> work.</p>')},
-)
+# ---- 18 · BESPOKE FURNITURE & PIECES ---------------------------------------
+_wa_besp = 'Hi Eden &amp; Beyond, I would like to commission a bespoke piece.'
+bespoke_body = f'''
+{L.breadcrumb(("Bespoke Furniture &amp; Pieces", None))}
+{L.subhero(eyebrow="Bespoke Furniture &amp; Pieces", h1="Made for a particular<br>place, person or purpose.",
+    sub="Commissioned tables, lighting, artworks and site-specific pieces — created individually for private homes, hospitality spaces and commercial projects.")}
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <div><a class="btn btn--primary" href="{L.wa(_wa_besp)}" target="_blank" rel="noopener">{L.WA_ICON} Commission a Piece</a></div>
+</div></section>
+{_svc_point("Positioning", "Not customised.<br>Created for you.",
+  "<p>A commission isn't about taking an existing piece and changing the colour, size or finish. It begins from somewhere else — a person, a place, a story, a feeling, sometimes a contradiction.</p><p>From there, something new takes form.</p>")}
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="center reveal" style="margin-bottom:clamp(1.6rem,4vw,2.4rem);"><span class="eyebrow">What Can Be Commissioned</span><h2 style="margin-top:1rem;">A new creation, not a variation</h2></div>
+  {_chips(["Tables","Lighting","Artworks","Dressed Walls","Site-Specific Pieces"], start=False)}
+</div></section>
+{_svc_point("For a Person", "Some pieces<br>begin with a person.",
+  "<p>For private commissions, the starting point can be deeply personal. Maïja observes, listens and interprets what lies beneath the obvious — memories, references, contradictions, symbols and fragments of a life.</p><p>The result isn't a portrait. It's a piece that could only have begun with you.</p>")}
+{_svc_point("For a Place", "Others begin<br>with a place.",
+  "<p>For restaurants, hotels, villas and commercial spaces, a bespoke piece can grow directly from the identity of the project. A table, a light, an artwork or a wall becomes part of the world around it — rather than something added afterwards.</p>")}
+<section class="section band-dark"><div class="wrap">
+  <div class="center reveal" style="max-width:660px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);"><span class="eyebrow">How a Commission Begins</span><h2 style="margin-top:1rem;">Four steps, one creation.</h2></div>
+  <div class="steps">
+    <div class="step reveal"><span class="step__num">01</span><h3>Conversation</h3><p>Tell us about you — or the place. The starting point might be a story, a space, a need or an obsession.</p></div>
+    <div class="step reveal" data-delay="1"><span class="step__num">02</span><h3>Interpretation</h3><p>Maïja takes it from there. References, materials, forms and ideas collide until a direction emerges.</p></div>
+    <div class="step reveal" data-delay="2"><span class="step__num">03</span><h3>Creation</h3><p>The piece takes form — developed as an individual creation, not a variation of an existing design.</p></div>
+    <div class="step reveal" data-delay="3"><span class="step__num">04</span><h3>Delivery</h3><p>From our world to yours. Delivery and installation are arranged according to the piece and its destination.</p></div>
+  </div>
+</div></section>
+{_svc_point("Creative Freedom", "A commission<br>needs a little trust.",
+  "<p>You bring the starting point. Maïja brings the interpretation. That's where the interesting part begins.</p>")}
+{_svc_collection("Found it already?", "Not every piece needs to begin from scratch. Explore the Eden &amp; Beyond Collection for existing one-of-a-kind and limited-edition tables, lighting and artworks.")}
+<section class="section"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow">For Hospitality &amp; Developers</span>
+  <h2 style="margin-top:1rem;">One piece.<br>Or fifty details.</h2>
+  <p class="lead" style="margin-inline:auto;">For hospitality and development projects, Eden &amp; Beyond can create bespoke furniture, lighting, artworks and site-specific pieces as part of a wider creative direction. Individual pieces can also be commissioned independently.</p>
+  <p style="margin-top:1.2rem;color:var(--muted);">Based in Koh Phangan. Commissioned for Thailand and international destinations, subject to scale, installation and shipping.</p>
+</div></section>
+{_svc_final("What should exist that doesn't yet?", "Let's find out<br>together.", _wa_besp, "Commission a Piece")}
+'''
+pages["furniture-object-design.html"] = L.page(
+    title="Bespoke Furniture & Art Commissions Thailand | Eden & Beyond",
+    desc="Commission bespoke tables, lighting, artworks and site-specific pieces from Eden & Beyond in Thailand, for private homes, hospitality and commercial spaces.",
+    canonical="furniture-object-design.html", body=bespoke_body)
 
-landing(
-    "creative-direction.html",
-    eyebrow="Creative Direction", crumb_label="Creative Direction",
-    h1="Creative Direction",
-    sub="Concept development, storytelling, styling and creative vision for hospitality, residential and lifestyle brands.",
-    overview={"h2": "The story behind the space",
-              "body": ("<p>Beauty alone is never enough. Eden &amp; Beyond provides creative direction that gives a project — or a brand — "
-                       "a coherent identity: the concept, the story, the atmosphere and the details that make it unmistakable.</p>"
-                       "<p>We work with hospitality brands, developers and creative entrepreneurs internationally.</p>")},
-    wwd_title="What we do",
-    wwd_items=[
-        ("Concept Development", "The founding idea and story a project is built around."),
-        ("Brand Identity", "A coherent visual and spatial language across every touchpoint."),
-        ("Spatial Storytelling", "Designing how a space is experienced, not just how it looks."),
-        ("Styling &amp; Art Direction", "The final layer that makes a project feel complete."),
-    ],
-    services=["Concept Creation", "Brand Identity", "Storytelling", "Spatial Storytelling",
-              "Art Direction", "Styling", "Creative Consulting", "Experience Design"],
-    approach_title="Approach",
-    approach={"h2": "Design should communicate",
-              "body": ("<p>Our role isn't to impose a style — it's to reveal an identity. We question assumptions, challenge conventions "
-                       "and explore beyond expectations, so the final project feels authentic and entirely its own.</p>"
-                       '<p>Learn more <a href="studio.html">about the studio</a> or <a href="https://wa.me/66923651604" target="_blank" rel="noopener">start a project</a>.</p>')},
-    why_title="Why It Matters",
-    why={"h2": "People remember how a place made them feel",
-         "body": "Creative direction is what makes a project coherent — from the first impression to the smallest object — so it leaves a lasting impression rather than a forgettable one."},
-)
+
+# ---- 19 · CREATIVE DIRECTION ------------------------------------------------
+_wa_cd = "Hi Eden &amp; Beyond, I would like to discuss creative direction for a project."
+creative_body = f'''
+{L.breadcrumb(("Creative Direction", None))}
+{L.subhero(eyebrow="Creative Direction", h1="The idea<br>behind everything.",
+    sub="Creative direction for hospitality, residential and commercial projects — shaping the concept, identity and visual world before the details take over.")}
+<section class="section"><div class="wrap wrap--narrow center reveal">
+  <div><a class="btn btn--primary" href="{L.wa(_wa_cd)}" target="_blank" rel="noopener">{L.WA_ICON} Discuss a Project</a></div>
+</div></section>
+{_svc_point("Positioning", "Before you design the place,<br>you need to know what it is.",
+  "<p>A beautiful interior can't rescue an idea that was never clear. We help define what a project should feel like, what makes it different and the creative language that will hold everything together.</p><p>Then every decision has somewhere to come from.</p>")}
+{_cap_block("What We Can Shape", "One idea.<br>A thousand decisions.",
+  ["Concept &amp; Positioning","Story &amp; Identity","Visual Language","Interior Direction","Furniture &amp; Lighting Direction","Art &amp; Styling","Guest / Customer Experience","Creative Guidelines"])}
+{_svc_point("When to Involve Us", "The earlier, the better.",
+  "<p>Creative direction has the greatest impact when it begins before the answers have already been decided. A new restaurant. A boutique hotel. A villa development. A bar. A hospitality concept. An existing place ready to become something else.</p><p><strong>Bring us the ambition before you bring us the moodboard.</strong></p>")}
+{_svc_point("Existing Projects", "Sometimes the place exists.<br>The idea doesn't.",
+  "<p>Creative direction can also give an existing business a new chapter — clarifying its identity, atmosphere and visual language without necessarily starting again from zero.</p>")}
+<section class="section band-dark"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow">Collaboration</span>
+  <h2 style="margin-top:1rem;">Already have a team? Good.</h2>
+  <p class="lead" style="margin-inline:auto;color:var(--on-dark-soft);">Eden &amp; Beyond can work alongside architects, interior designers, brand teams, developers and other creative partners — establishing the creative direction and keeping the original idea coherent as different disciplines bring it to life.</p>
+</div></section>
+{_dar_feat("Creative Direction in Practice", "Dar Mansour", "One identity. Many expressions.",
+  "At Dar Mansour, the creative direction became the thread connecting the space, furniture, lighting, walls, art and atmosphere. Different elements, but one unmistakable world.")}
+<section class="section"><div class="wrap wrap--narrow reveal">
+  <span class="eyebrow">Direction, or the Whole World</span>
+  <h2 style="margin:1rem 0 1rem;">Two ways to work with us</h2>
+  <p class="lead">Some clients need Eden &amp; Beyond to establish the creative direction and collaborate with their existing team. Others want us to carry that direction into the space, furniture, lighting, artworks and details.</p>
+  <p style="margin-top:1rem;">Both can begin with the same conversation. Learn more <a href="studio.html">about the studio</a>.</p>
+</div></section>
+{_svc_final("Have the project but not yet the world around it?", "That's a good<br>place to start.", _wa_cd, "Discuss Creative Direction")}
+'''
+pages["creative-direction.html"] = L.page(
+    title="Creative Direction Studio Thailand | Eden & Beyond",
+    desc="Creative direction for hospitality, residential and commercial projects in Thailand and internationally — concept, identity, visual language and experience.",
+    canonical="creative-direction.html", body=creative_body)
+
 
 
 # ============================================================ SITEMAP / ROBOTS / LLMS
