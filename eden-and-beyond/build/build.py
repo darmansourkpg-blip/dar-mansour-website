@@ -213,22 +213,6 @@ home_body = f'''
   <p style="max-width:56ch;margin:1rem auto 0;text-align:center;font-style:italic;color:var(--ink-soft);">Because beauty was never meant to behave.</p>
 </div></section>
 
-<section class="section section--sand"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:clamp(2.5rem,6vw,3.5rem);">
-    <span class="eyebrow">Journal</span>
-    <h2 style="margin-top:1rem;">Ideas that inspire our work</h2>
-  </div>
-  <div class="jgrid">
-    {jcard('Design', 'Why Every Great Restaurant Begins With a Story',
-           'The most memorable restaurants are not defined by their menu alone. How storytelling shapes unforgettable dining.')}
-    {jcard('Hospitality', 'Designing Boutique Hotels People Return To',
-           'What transforms a hotel into a destination? The principles behind memorable hospitality design.')}
-    {jcard('Objects', 'Objects That Give Spaces Their Soul',
-           'Why the smallest details often leave the biggest impression.')}
-  </div>
-  <div class="center reveal" style="margin-top:2.6rem;"><a class="textlink" href="journal.html">Explore the Journal {A}</a></div>
-</div></section>
-
 <section class="section book"><div class="wrap wrap--narrow reveal center">
   <span class="eyebrow eyebrow--red">Two ways in</span>
   <h2>One piece.<br>Or a whole new world.</h2>
@@ -452,203 +436,254 @@ pages["about-maija.html"] = L.page(
 
 
 # ============================================================ PROJECTS
+def _chapter(num, kicker, title_html, body, media):
+    return f'''<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="split{' split--reverse' if int(num)%2==0 else ''}" style="align-items:center;">
+    <div class="split__text reveal">
+      <span class="eyebrow eyebrow--red">{num} · {kicker}</span>
+      <h2 style="margin:.7rem 0 1rem;">{title_html}</h2>
+      <p class="lead">{body}</p>
+    </div>
+    <div class="split__media reveal" data-delay="1">{media}</div>
+  </div>
+</div></section>'''
+
+
+_pt_tables = "".join(
+    feat_tile(s, img, t, rnd=r) for s, img, t, r in [
+        ("poppy-hobb", "poppy-queen", "Poppy Hobb", True),
+        ("mouna-lisa", "mona-lisa-fez", "Mouna Lisa", True),
+        ("and-man-created-atay", "creation-of-mint-tea", "And Man Created Atay", True)])
+_pt_walls = ((f'<img src="{find_img("fountain-wall")}" alt="Dressed wall at Dar Mansour by Eden &amp; Beyond">')
+             if find_img("fountain-wall") else ph("Dressed wall — Dar Mansour"))
 projects_body = f'''
+{L.breadcrumb(("Projects", None))}
 {L.subhero(
     eyebrow="Projects",
-    h1="One remarkable project says more than a hundred ordinary ones.",
-    sub="Every project is an opportunity to create something entirely unique.",
+    h1="One remarkable project<br>says more than a hundred ordinary ones.",
+    sub="We don't measure our work by how many projects fill a portfolio. We care about how deeply an idea can be carried — through a space, its furniture, lighting, walls, art and atmosphere.",
 )}
 
-<section class="feat" style="min-height:70vh;">{ph('Dar Mansour — Koh Phangan', 'ph--dark')}
+<section class="feat" style="min-height:72vh;">{ph('Dar Mansour — Koh Phangan', 'ph--dark')}
   <div class="wrap feat__inner reveal">
-    <span class="eyebrow">Featured Project</span>
+    <span class="eyebrow">01 · Restaurant · Koh Phangan, Thailand</span>
     <h2>Dar Mansour</h2>
-    <p class="feat__place">Morocco's Kitchen · Koh Phangan, Thailand</p>
-    <p>A contemporary interpretation of Moroccan hospitality, where architecture, craftsmanship, objects and
-    storytelling come together to create an immersive dining experience.</p>
-    <div style="margin-top:1.8rem;"><a class="btn btn--light" href="https://darmansour.com" target="_blank" rel="noopener">Visit darmansour.com {A}</a></div>
+    <p class="feat__place">A little Morocco. Without pretending to be Morocco.</p>
+    <p>Dar Mansour began with a question: how do you create a restaurant rooted in Morocco, on a tropical island in
+    Thailand, without turning either place into a cliché? The answer wasn't to reproduce Morocco. It was to interpret it.</p>
   </div>
 </section>
 
-<section class="section"><div class="wrap">
-  <div class="split">
-    <div class="split__text reveal">
-      <span class="eyebrow">Our Approach</span>
-      <h2>We don't build a portfolio.<br>We build lasting projects.</h2>
-      <p class="lead">Rather than repeating the same style, every commission begins with a blank page and a different story.</p>
-      <p style="margin-top:1.1rem;">That's why no two Eden &amp; Beyond projects will ever look the same.</p>
-    </div>
-    <div class="split__media reveal" data-delay="1">{ph('Dar Mansour — interior detail')}<span class="tag">Dar Mansour · Detail</span></div>
-  </div>
+<section class="section"><div class="wrap wrap--narrow prose reveal">
+  <span class="eyebrow">The Brief</span>
+  <h2 style="margin:.6rem 0 1rem;">Create somewhere that couldn't exist anywhere else.</h2>
+  <p>Dar Mansour was conceived as an intimate Moroccan restaurant in Koh Phangan — warm, generous, unexpected and deeply
+  connected to the culture behind its food. The creative challenge was to bring that identity into the space without
+  reproducing a traditional Moroccan interior.</p>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap">
-  <div class="note reveal" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.4rem;">
-    <div>
-      <span class="eyebrow" style="margin-bottom:.5rem;">Inspired by this project?</span>
-      <p style="max-width:52ch;">Several furniture pieces, lighting fixtures and objects created for Dar Mansour are available as
-      bespoke commissions or limited editions.</p>
-    </div>
-    <a class="btn btn--primary" href="collection.html">Explore the Collection {A}</a>
-  </div>
+<section class="section band-dark" style="padding-block:clamp(3rem,7vw,5rem);"><div class="wrap wrap--narrow prose reveal">
+  <span class="eyebrow">The Idea</span>
+  <h2 style="margin:.6rem 0 1rem;">Not Morocco recreated.<br>Morocco remembered.</h2>
+  <p style="color:var(--on-dark-soft);">References to Morocco appear throughout the restaurant, but rarely in the way you
+  expect them to. Colours, patterns, familiar forms, found references and cultural fragments are taken apart, reinterpreted
+  and allowed to become something new in Thailand.</p>
+  <p style="color:var(--on-dark-soft);">The result belongs to neither place entirely. It belongs to Dar Mansour.</p>
 </div></section>
+
+<section class="section"><div class="wrap center reveal" style="margin-bottom:.5rem;">
+  <span class="eyebrow">The Complete World</span>
+  <h2 style="margin-top:1rem;">One idea. Every detail.</h2>
+</div></section>
+
+{_chapter("01", "The Space", "An intimate world", "Built around warmth, colour, conversation and the ritual of sharing food.", ph('Dar Mansour — the space', 'ph--dark'))}
+<section class="section" style="padding-top:0;"><div class="wrap">
+  <div class="reveal" style="margin-bottom:1.4rem;"><span class="eyebrow eyebrow--red">02 · The Tables</span>
+  <h2 style="margin:.7rem 0 .4rem;">Not furniture added to the restaurant.</h2>
+  <p class="lead">Pieces of the restaurant itself — several now live beyond it, in the Collection.</p></div>
+  <div class="artgrid">{_pt_tables}</div>
+</div></section>
+{_chapter("03", "The Lighting", "When the sun goes down,<br>the restaurant becomes another place.", "Light does as much as any wall — turning the room into somewhere else after dark.", ph('Dar Mansour — lighting at night', 'ph--dark'))}
+{_chapter("04", "The Walls", "The architecture ends.<br>The story keeps going.", "Dressed walls carry the identity onto the surfaces themselves.", _pt_walls)}
+{_chapter("05", "The Art", "Not decoration.<br>Part of the conversation.", "Artworks belong to the same world as the food and the room.", ph('Dar Mansour — artworks', 'ph--dark'))}
+{_chapter("06", "The Details", "The things you notice.<br>And the things you only feel.", "Objects, materials and small gestures that make the room impossible to confuse with anywhere else.", ph('Dar Mansour — details', 'ph--dark'))}
 
 <section class="section band-dark"><div class="wrap">
-  <div class="center reveal" style="max-width:640px;margin-inline:auto;">
-    <span class="eyebrow">Coming Next</span>
-    <h2 style="margin:1rem 0 1.4rem;">New stories, unfolding.</h2>
-    <p class="lead" style="margin-inline:auto;">We're currently working on new hospitality, residential and object design projects.
-    As each story unfolds, it will find its place here.</p>
+  <div class="split" style="align-items:start;gap:clamp(2rem,5vw,4rem);">
+    <div class="reveal">
+      <span class="eyebrow">Project</span>
+      <h2 style="margin:.6rem 0 1.4rem;">Dar Mansour — Morocco's Kitchen</h2>
+      <dl class="piece-specs" style="border-color:rgba(244,239,230,.18);">
+        <div style="border-color:rgba(244,239,230,.18);"><dt>Location</dt><dd style="color:var(--on-dark);">Koh Phangan, Thailand</dd></div>
+        <div style="border-color:rgba(244,239,230,.18);"><dt>Type</dt><dd style="color:var(--on-dark);">Restaurant</dd></div>
+        <div style="border-color:rgba(244,239,230,.18);"><dt>Status</dt><dd style="color:var(--on-dark);">Completed</dd></div>
+        <div style="border-color:rgba(244,239,230,.18);"><dt>Website</dt><dd style="color:var(--on-dark);"><a href="https://darmansour.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">darmansour.com</a></dd></div>
+      </dl>
+    </div>
+    <div class="reveal" data-delay="1">
+      <span class="eyebrow">Eden &amp; Beyond Scope</span>
+      <ul class="tags" style="justify-content:flex-start;margin-top:1rem;">
+        <li>Creative Direction</li><li>Interior &amp; Spatial Design</li><li>Furniture</li>
+        <li>Lighting</li><li>Artworks</li><li>Dressed Walls</li><li>Styling &amp; Atmosphere</li>
+      </ul>
+      <p style="margin-top:1.2rem;color:var(--on-dark-soft);font-size:.9rem;">Full project credits available on request.</p>
+    </div>
   </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="center reveal" style="max-width:640px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
+    <span class="eyebrow eyebrow--red">From the Restaurant to the Collection</span>
+    <h2 style="margin-top:1rem;">Some pieces live<br>beyond the restaurant.</h2>
+    <p class="lead" style="margin-inline:auto;">Discover tables, lighting and artworks from the Eden &amp; Beyond Collection.</p>
+  </div>
+  <div class="artgrid">{_pt_tables}</div>
+  <div class="center reveal" style="margin-top:2.6rem;"><a class="btn btn--primary" href="collection.html">Explore the Collection {A}</a></div>
+</div></section>
+
+<section class="section band-dark"><div class="wrap wrap--narrow reveal center">
+  <span class="eyebrow">Every place deserves its own world</span>
+  <h2 style="margin-top:1rem;">The next project<br>shouldn't look like it.</h2>
+  <p class="lead" style="margin-inline:auto;color:var(--on-dark-soft);">Dar Mansour looks like Dar Mansour because its story belongs to Dar Mansour. That's the point — we don't bring a signature style to the next one.</p>
 </div></section>
 
 {L.cta_band(
-    title="Every project starts with a conversation.",
-    text=("Whether you're creating a boutique hotel, a restaurant, a private villa or something entirely new, "
-          "we'd love to hear your vision."),
-    btn_label="Start Your Story",
+    title="What should the next one be?",
+    text="Bring us the ambition. We'll build the world around it.",
+    eyebrow="Start a Project", btn_label="Start a Project",
 )}
 '''
 pages["projects.html"] = L.page(
-    title="Projects — Eden & Beyond Creative Studio",
-    desc=("Selected projects by Eden & Beyond, including Dar Mansour — Morocco's Kitchen in Koh Phangan, Thailand. "
-          "Hospitality, residential and object design built around each project's own story."),
+    title="Dar Mansour Restaurant Design | Eden & Beyond Thailand",
+    desc=("Discover Eden & Beyond's creative direction and design for Dar Mansour, a Moroccan restaurant in Koh Phangan, "
+          "Thailand — from interiors to furniture, lighting, art and dressed walls."),
     canonical="projects.html",
     body=projects_body,
     extra_head=L.project_schema(
         "Dar Mansour — Morocco's Kitchen",
-        "A contemporary interpretation of Moroccan hospitality by Eden & Beyond — architecture, craftsmanship, objects and storytelling.",
+        "Creative direction and design by Eden & Beyond for Dar Mansour, a Moroccan restaurant in Koh Phangan, Thailand — interiors, furniture, lighting, artworks and dressed walls.",
         "https://darmansour.com",
         "Koh Phangan, Thailand"),
 )
 
 
 # ============================================================ JOURNAL
+_journal_soon = [
+    ("Hospitality", "Why the restaurants we remember are never just about the food"),
+    ("Places &amp; Culture", "Morocco was never beige"),
+    ("Behind the Work", "I have no interest in good taste"),
+    ("Objects &amp; Art", "Why we surround ourselves with the things we do"),
+    ("Design", "Not Morocco recreated. Morocco remembered — the story behind Dar Mansour"),
+    ("Places &amp; Culture", "What an island teaches you about space"),
+]
+_soon_html = "".join(
+    f'<li class="jsoon reveal"><span class="jsoon__cat">{c}</span><span class="jsoon__title">{t}</span></li>'
+    for c, t in _journal_soon)
 journal_body = f'''
+{L.breadcrumb(("Journal", None))}
 {L.subhero(
     eyebrow="Journal",
-    h1="Ideas, stories and perspectives.",
-    sub="The ideas, materials, places, people and craftsmanship that shape the way we design.",
+    h1="Ideas, places,<br>people &amp; beautiful trouble.",
+    sub="Stories and perspectives on design, art, hospitality, culture and the things that inspire Eden & Beyond.",
 )}
 
 <section class="section"><div class="wrap wrap--narrow center reveal">
-  <p class="lead">Our work doesn't begin with a floor plan. It begins with curiosity. The Journal is where we share
-  the ideas, materials, places, people and craftsmanship that inspire every project — part editorial, part travel diary,
-  part design journal.</p>
+  <h2 style="margin-bottom:1rem;">Not everything belongs<br>in a portfolio.</h2>
+  <p class="lead">Some things deserve a conversation. The Journal is where Eden &amp; Beyond thinks out loud — about design,
+  Morocco, Thailand, objects, art and the ideas behind the work.</p>
 </div></section>
 
-<section class="section" style="padding-top:0;"><div class="wrap">
-  <div class="center reveal" style="margin-bottom:clamp(2rem,5vw,3rem);">
-    <span class="eyebrow">Featured</span>
-    <h2 style="margin-top:1rem;">From the Journal</h2>
-  </div>
-  <div class="jgrid">
-    {jcard('Design', 'Why Every Great Restaurant Begins With a Story',
-           'The most memorable restaurants are not defined by their menu alone. How storytelling shapes unforgettable dining experiences.')}
-    {jcard('Hospitality', 'Designing Boutique Hotels People Return To',
-           'What transforms a hotel into a destination? The principles behind memorable hospitality design.')}
-    {jcard('Objects', 'Objects That Give Spaces Their Soul',
-           'Why the smallest details often leave the biggest impression.')}
-    {jcard('Craftsmanship', 'The Beauty of Moroccan Craftsmanship',
-           'Zellige, carved plaster, hand-worked brass — the human hands behind timeless materials.')}
-    {jcard('Residential', 'Creating Homes With Soul',
-           'How a house becomes a home — designed around the people who live in it.')}
-    {jcard('Materials', 'Materials That Age Beautifully',
-           'The finishes and textures that only get better with time.')}
-  </div>
+<section class="section" style="padding-top:0;"><div class="wrap wrap--narrow center reveal">
+  <p style="font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);">
+  Design · Hospitality · Objects &amp; Art · Places &amp; Culture · Behind the Work</p>
 </div></section>
 
-<section class="section band-dark"><div class="wrap wrap--narrow center reveal">
-  <span class="eyebrow">Why We Write</span>
-  <h2 style="margin:1rem 0 1.4rem;">Good design starts long<br>before construction begins.</h2>
-  <p class="lead" style="margin-inline:auto;">By sharing our ideas, inspirations and process, we hope to inspire better
-  conversations — and better projects.</p>
+<section class="section band-dark"><div class="wrap wrap--narrow reveal">
+  <div class="center" style="margin-bottom:clamp(2rem,5vw,3rem);">
+    <span class="eyebrow eyebrow--red">In the works</span>
+    <h2 style="margin-top:1rem;">The first stories<br>are being written.</h2>
+  </div>
+  <ul class="jsoon-list">{_soon_html}</ul>
+  <p class="center" style="margin-top:2rem;color:var(--on-dark-soft);">Quality over cadence — a few strong stories, not filler.</p>
 </div></section>
 
 {L.cta_band(
-    title="Have a project in mind?",
-    text="Let's start the conversation.",
+    title="While the first stories take shape,",
+    text="explore the pieces and the project that started it all.",
+    eyebrow="Meanwhile", btn_label="Start a Project",
 )}
 '''
 pages["journal.html"] = L.page(
-    title="Journal — Design, Hospitality & Craftsmanship | Eden & Beyond",
-    desc=("The Eden & Beyond Journal: editorial stories on design, hospitality, craftsmanship, materials and "
-          "creative direction — the ideas that shape the way we design."),
+    title="Design, Art & Hospitality Journal | Eden & Beyond",
+    desc=("The Eden & Beyond Journal explores design, art, hospitality, culture, Morocco, Thailand and the ideas "
+          "behind spaces and pieces with character."),
     canonical="journal.html",
     body=journal_body,
 )
 
 
 # ============================================================ CONTACT
+_c_project = L.wa("Hi Eden &amp; Beyond, I would like to start a project. Here is what I'm working on:")
+_c_commission = L.wa("Hi Eden &amp; Beyond, I would like to commission a piece. Here is what I have in mind:")
 contact_body = f'''
+{L.breadcrumb(("Contact", None))}
 {L.subhero(
     eyebrow="Contact",
-    h1="Let's create something extraordinary.",
-    sub=("Whether you're developing a boutique hotel, opening a restaurant, designing a private villa or creating "
-         "something entirely new, we'd love to hear from you."),
+    h1="Let's make something<br>worth remembering.",
+    sub="A space. A piece. An idea that hasn't quite found its form yet. Tell us where you'd like to begin.",
 )}
 
 <section class="section"><div class="wrap">
-  <div class="contact-grid">
-    <div class="contact-info reveal">
-      <span class="eyebrow">Start the Conversation</span>
-      <h2 style="margin:1rem 0 1.4rem;">The best projects begin<br>with a message.</h2>
-      <p style="margin-bottom:2rem;">Tell us about your vision — a project, a bespoke commission or a piece from the
-      collection. WhatsApp is the fastest way to reach the studio.</p>
-      <dl>
-        <div><dt>WhatsApp</dt><dd><a href="{L.wa('Hi Eden &amp; Beyond, I would like to talk about a project.')}" target="_blank" rel="noopener">{L.WHATSAPP_DISPLAY}</a><span class="contact-note">Maija — the fastest response.</span></dd></div>
-        <div><dt>Instagram</dt><dd><a href="{L.INSTAGRAM}" target="_blank" rel="noopener">{L.INSTAGRAM_HANDLE}</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:{L.EMAIL}">{L.EMAIL}</a></dd></div>
-        <div><dt>Location</dt><dd>Working internationally.<span class="contact-note">Based in Thailand.</span></dd></div>
-      </dl>
+  <div class="duo">
+    <div class="duo__card reveal">
+      <div class="duo__body">
+        <span class="eyebrow">01 — A Project</span>
+        <h3>Start a Project</h3>
+        <p>Restaurant, hotel, villa, commercial space or creative direction. Tell us what you're working on.</p>
+        <a class="btn btn--light" href="{_c_project}" target="_blank" rel="noopener">{L.WA_ICON} Start a Project</a>
+      </div>
     </div>
-
-    <div class="enquiry reveal" data-delay="1" style="text-align:center;align-self:start;">
-      <span class="eyebrow" style="margin-bottom:1rem;">Talk to the studio</span>
-      <h3 style="margin-bottom:.8rem;">Message us on WhatsApp</h3>
-      <p style="max-width:none;margin-bottom:1.7rem;color:var(--ink-soft);">Share your project, ask about a piece from
-      the collection, or just say hello. We'll take it from there.</p>
-      <a class="btn btn--primary" href="{L.wa('Hi Eden &amp; Beyond, I found you through your website and would love to talk.')}" target="_blank" rel="noopener" style="width:100%;justify-content:center;">{L.WA_ICON} Chat on WhatsApp</a>
-      <p class="enquiry__note">Opens WhatsApp with a message ready to send.</p>
+    <div class="duo__card duo__card--red reveal" data-delay="1">
+      <div class="duo__body">
+        <span class="eyebrow">02 — A Piece</span>
+        <h3>Commission a Piece</h3>
+        <p>A table, light, artwork, dressed wall or something created specifically for you or your space.</p>
+        <a class="btn btn--light" href="{_c_commission}" target="_blank" rel="noopener">{L.WA_ICON} Commission a Piece</a>
+      </div>
     </div>
+  </div>
+  <div class="center reveal" style="margin-top:2.2rem;">
+    <p style="color:var(--muted);">Looking for a piece you've already seen? <a class="ilink" href="collection.html">Explore the Collection {A}</a></p>
   </div>
 </div></section>
 
 <section class="section band-dark"><div class="wrap">
-  <div class="center reveal" style="max-width:720px;margin-inline:auto;margin-bottom:clamp(2rem,5vw,3rem);">
-    <span class="eyebrow">Frequently Asked Questions</span>
-    <h2 style="margin-top:1rem;">Good to know</h2>
-  </div>
-  <div class="faq" style="color:var(--on-dark);">
-    <details class="faq__item" style="border-color:rgba(244,239,230,.18);"><summary style="color:#fff;">Where do you work?</summary>
-      <div class="faq__answer" style="color:var(--on-dark-soft);"><p>We collaborate with clients worldwide. The studio is based in Thailand and works internationally.</p></div></details>
-    <details class="faq__item" style="border-color:rgba(244,239,230,.18);"><summary style="color:#fff;">Can you work remotely?</summary>
-      <div class="faq__answer" style="color:var(--on-dark-soft);"><p>Yes. Many projects begin remotely before moving on site.</p></div></details>
-    <details class="faq__item" style="border-color:rgba(244,239,230,.18);"><summary style="color:#fff;">Do you work with architects and developers?</summary>
-      <div class="faq__answer" style="color:var(--on-dark-soft);"><p>Absolutely. We regularly collaborate with architects, developers, consultants and contractors.</p></div></details>
-    <details class="faq__item" style="border-color:rgba(244,239,230,.18);"><summary style="color:#fff;">Do you only work on large projects?</summary>
-      <div class="faq__answer" style="color:var(--on-dark-soft);"><p>No. Whether it's a complete hospitality concept, a private villa or a bespoke furniture commission, every project receives the same attention to detail.</p></div></details>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Direct</span>
+      <h2 style="margin:1rem 0 1.4rem;color:#fff;">Prefer to talk?</h2>
+      <p style="margin-bottom:2rem;color:var(--on-dark-soft);">WhatsApp is the fastest way to reach the studio — it opens with a message ready to send. For a fuller brief, email works too.</p>
+      <dl style="color:var(--on-dark);">
+        <div><dt>WhatsApp</dt><dd><a href="{L.wa('Hi Eden &amp; Beyond, I found you through your website and would love to talk.')}" target="_blank" rel="noopener" style="color:#fff;">{L.WHATSAPP_DISPLAY}</a><span class="contact-note" style="color:var(--on-dark-soft);">Maïja — the fastest response.</span></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:{L.EMAIL}" style="color:#fff;">{L.EMAIL}</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="{L.INSTAGRAM}" target="_blank" rel="noopener" style="color:#fff;">{L.INSTAGRAM_HANDLE}</a></dd></div>
+      </dl>
+    </div>
+    <div class="contact-info reveal" data-delay="1">
+      <span class="eyebrow">Studio</span>
+      <h2 style="margin:1rem 0 1.4rem;color:#fff;">Based on an island.<br>Not limited by it.</h2>
+      <p style="color:var(--on-dark-soft);">Eden &amp; Beyond is based in Koh Phangan, Thailand, and works with private and professional clients in Thailand and internationally.</p>
+      <p style="margin-top:1.2rem;color:var(--on-dark-soft);">Meetings and viewings are available by appointment. International enquiries welcome — feasibility, shipping and installation are discussed individually.</p>
+    </div>
   </div>
 </div></section>
 '''
-CONTACT_FAQS = [
-    ("Where do you work?",
-     "We collaborate with clients worldwide. The studio is based in Thailand and works internationally."),
-    ("Can you work remotely?",
-     "Yes. Many projects begin remotely before moving on site."),
-    ("Do you work with architects and developers?",
-     "Absolutely. We regularly collaborate with architects, developers, consultants and contractors."),
-    ("Do you only work on large projects?",
-     "No. Whether it's a complete hospitality concept, a private villa or a bespoke furniture commission, "
-     "every project receives the same attention to detail."),
-]
 pages["contact.html"] = L.page(
-    title="Contact — Start a Project | Eden & Beyond Creative Studio",
-    desc=("Start a project with Eden & Beyond. Boutique hotels, restaurants, private villas, bespoke furniture and "
-          "creative direction. Working internationally, based in Thailand. hello@edenandbeyond.studio"),
+    title="Contact Eden & Beyond | Creative Studio Thailand",
+    desc=("Contact Eden & Beyond in Koh Phangan, Thailand, for hospitality, residential and commercial design projects "
+          "or bespoke furniture, lighting and art commissions."),
     canonical="contact.html",
     body=contact_body,
-    extra_head=L.faq_schema(CONTACT_FAQS),
 )
 
 

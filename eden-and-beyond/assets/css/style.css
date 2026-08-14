@@ -656,3 +656,9 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .piece-nav__link svg { width: 22px !important; height: 22px !important; color: var(--logo-red); transition: transform .3s var(--ease); }
 .piece-nav__prev svg { transform: rotate(180deg); }
 .piece-nav__link:hover .piece-nav__title { color: var(--logo-red); }
+
+/* --- Journal: 'in the works' list (V2, pre-launch) --- */
+.jsoon-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(244,239,230,.18); }
+.jsoon { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem 1.4rem; padding: 1.1rem 0; border-bottom: 1px solid rgba(244,239,230,.18); }
+.jsoon__cat { flex: 0 0 auto; font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--logo-red); min-width: 12ch; }
+.jsoon__title { font-family: var(--serif); font-size: clamp(1.15rem, 2.2vw, 1.6rem); color: var(--on-dark); letter-spacing: -.01em; }
