@@ -117,7 +117,7 @@ home_body = f'''
     </div>
     <div class="split__media reveal" data-delay="1">
       <a href="poppy-hobb.html">{('<img src="'+find_img('poppy-queen')+'" alt="Poppy Hobb — limited-edition table by Maija">') if find_img('poppy-queen') else ph('Poppy Hobb — table')}</a>
-      <span class="tag">Poppy Hobb · Limited-edition table</span>
+      <span class="tag">Poppy Hobb · One-of-a-kind</span>
     </div>
   </div>
 </div></section>
@@ -991,12 +991,18 @@ def build_piece_pages():
   </div>
 </div></section>
 '''
+        og = src if src else "assets/img/eden-and-beyond-studio.jpg"
+        desc = (f'Discover {d["title"]} by Maïja, a {d["kicker"].lower()} from the Eden & Beyond collection, '
+                f'created in Koh Phangan, Thailand. {d["lead"]}')
+        cat = "Lighting" if "Lighting" in d["kicker"] else "Table"
         pages[f"{slug}.html"] = L.page(
-            title=f'{d["title"]} — {d["kicker"]} | Eden & Beyond',
-            desc=f'{d["title"]} by Maija, {d["kicker"].lower()} from the Eden & Beyond collection. {d["lead"]}',
+            title=f'{d["title"]} | Collectible {cat} by Eden & Beyond',
+            desc=desc,
             canonical=f"{slug}.html",
             body=body,
+            og_image=og,
             body_class="page-collection page-piece",
+            extra_head=L.piece_schema(d["title"], desc, f'{L.SITE_URL}/{og}', cat),
         )
 
 
@@ -1371,6 +1377,26 @@ pages["creative-direction.html"] = L.page(
     desc="Creative direction for hospitality, residential and commercial projects in Thailand and internationally — concept, identity, visual language and experience.",
     canonical="creative-direction.html", body=creative_body)
 
+
+
+# ============================================================ 404
+pages["404.html"] = L.page(
+    title="Page Not Found | Eden & Beyond",
+    desc="The page you were looking for isn't here. Explore the Eden & Beyond collection or head back home.",
+    canonical="404.html",
+    body=f'''
+<section class="section" style="min-height:60vh;display:flex;align-items:center;">
+  <div class="wrap wrap--narrow center reveal">
+    <span class="eyebrow eyebrow--red">404</span>
+    <h1 style="margin:1rem 0 1rem;">Wrong turn.</h1>
+    <p class="lead" style="margin-inline:auto;">Whatever you were looking for, it isn't here.</p>
+    <div class="book__actions" style="justify-content:center;margin-top:2rem;">
+      <a class="btn btn--primary" href="index.html">Back Home</a>
+      <a class="btn btn--ghost" href="collection.html">Explore the Collection {A}</a>
+    </div>
+  </div>
+</section>''',
+)
 
 
 # ============================================================ SITEMAP / ROBOTS / LLMS

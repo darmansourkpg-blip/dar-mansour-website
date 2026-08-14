@@ -259,16 +259,40 @@ def header():
 
 
 def breadcrumb(*crumbs):
-    """crumbs: list of (label, href) ; last one is current (href None)."""
+    """crumbs: list of (label, href) ; last one is current (href None).
+    Emits the visible nav plus a BreadcrumbList JSON-LD for search/AI."""
     items = ['<li><a href="index.html">Home</a></li>']
-    for label, href in crumbs:
+    ld = [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE_URL}/"}]
+    for i, (label, href) in enumerate(crumbs, start=2):
         items.append('<li class="sep" aria-hidden="true">›</li>')
         if href:
             items.append(f'<li><a href="{href}">{label}</a></li>')
         else:
             items.append(f'<li aria-current="page">{label}</li>')
+        node = {"@type": "ListItem", "position": i, "name": html.unescape(label)}
+        if href:
+            node["item"] = f"{SITE_URL}/{href}"
+        ld.append(node)
+    schema = _jsonld({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": ld})
     return ('<nav class="wrap breadcrumb" aria-label="Breadcrumb"><ol>'
-            + "".join(items) + '</ol></nav>')
+            + "".join(items) + '</ol></nav>' + schema)
+
+
+def piece_schema(name, description, image_url, category, medium="Mixed media"):
+    """Product schema for a collectible piece — brand + creator linked to the
+    entity graph. No offers/availability is asserted (pieces are enquire-to-acquire),
+    so search engines are never told an unavailable piece is in stock."""
+    return _jsonld({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": name,
+        "description": description,
+        "image": image_url,
+        "category": category,
+        "material": medium,
+        "brand": {"@id": f"{SITE_URL}/#organization"},
+        "creator": {"@id": f"{SITE_URL}/#maija"},
+    })
 
 
 def hero(eyebrow, h1_html, sub, actions_html, media_class="hero__media--placeholder",
