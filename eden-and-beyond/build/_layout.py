@@ -175,7 +175,7 @@ def project_schema(name, description, url, location=None):
     return _jsonld(obj)
 
 
-def head(title, desc, canonical, og_image="assets/img/eden-and-beyond-studio.jpg",
+def head(title, desc, canonical, og_image="assets/img/dar-mansour-central-room.webp",
          extra="", body_class=""):
     bodycls = f' class="{body_class}"' if body_class else ''
     analytics = ""
@@ -314,7 +314,10 @@ def hero(eyebrow, h1_html, sub, actions_html, media_class="hero__media--placehol
 
 
 def subhero(eyebrow, h1, sub, media_class="subhero__media--placeholder",
-            media_html="", tall=False):
+            media_html="", tall=False, hero_src=None):
+    if hero_src:
+        media_class = ""
+        media_html = f'<img src="{hero_src}" alt="" fetchpriority="high">'
     cls = "subhero subhero--tall" if tall else "subhero"
     media = media_html or ''
     return f'''
@@ -423,6 +426,6 @@ def footer():
 
 
 def page(title, desc, canonical, body,
-         og_image="assets/img/eden-and-beyond-studio.jpg", extra_head="", body_class=""):
+         og_image="assets/img/dar-mansour-central-room.webp", extra_head="", body_class=""):
     return (head(title, desc, canonical, og_image, extra_head, body_class)
             + header() + "\n<main id=\"top\">\n" + body + "\n</main>\n" + footer())

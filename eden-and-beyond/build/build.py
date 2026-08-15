@@ -26,6 +26,12 @@ def ph(label, cls="", extra=""):
     return f'<div class="{c}" data-label="{label}"{extra}></div>'
 
 
+def _featbg(stem, alt):
+    """Full-bleed photo behind a .feat band (dark gradient overlay is in CSS)."""
+    src = find_img(stem)
+    return f'<img class="feat__bg" src="{src}" alt="{alt}">' if src else ph(alt, "ph--dark")
+
+
 IMG_DIR = os.path.join(OUT, "assets", "img")
 
 
@@ -194,7 +200,7 @@ home_body = f'''
   </div>
 </div></section>
 
-<section class="feat">{ph('Dar Mansour — Koh Phangan (featured project)', 'ph--dark')}
+<section class="feat">{_featbg('dar-mansour-central-room', 'Dar Mansour dining room — Koh Phangan, Thailand')}
   <div class="wrap feat__inner reveal">
     <span class="eyebrow">Selected Project</span>
     <h2>Dar Mansour</h2>
@@ -236,6 +242,7 @@ pages["index.html"] = L.page(
 _studio_wa = L.wa("Hi Eden &amp; Beyond, I would like to talk about a project.")
 about_body = f'''
 {L.subhero(
+    hero_src=find_img("maija"),
     eyebrow="The Studio",
     h1="We don't follow trends.<br>We create stories.",
     sub=("Eden & Beyond is an independent creative studio based in Koh Phangan, Thailand, creating distinctive "
@@ -286,7 +293,7 @@ about_body = f'''
   </div>
 </div></section>
 
-<section class="feat">{ph('Dar Mansour — Koh Phangan (selected project)', 'ph--dark')}
+<section class="feat">{_featbg('dar-mansour-central-room', 'Dar Mansour dining room — Koh Phangan, Thailand')}
   <div class="wrap feat__inner reveal">
     <span class="eyebrow">Selected Project</span>
     <h2>Dar Mansour</h2>
@@ -377,6 +384,7 @@ pages["studio.html"] = L.page(
 _about_wa = L.wa("Hi Eden &amp; Beyond, I found you through Maïja's story and would love to talk.")
 maija_body = f'''
 {L.subhero(
+    hero_src=find_img("maija"),
     eyebrow="Behind Eden & Beyond",
     h1="Maïja Disseau",
     sub="Founder &amp; Creative Troublemaker · Eden &amp; Beyond",
@@ -436,6 +444,11 @@ pages["about-maija.html"] = L.page(
 
 
 # ============================================================ PROJECTS
+def _cimg(stem, alt):
+    src = find_img(stem)
+    return f'<img src="{src}" alt="{alt}">' if src else ph(alt, "ph--dark")
+
+
 def _chapter(num, kicker, title_html, body, media):
     return f'''<section class="section" style="padding-top:0;"><div class="wrap">
   <div class="split{' split--reverse' if int(num)%2==0 else ''}" style="align-items:center;">
@@ -454,17 +467,18 @@ _pt_tables = "".join(
         ("poppy-hobb", "poppy-queen", "Poppy Hobb", True),
         ("mouna-lisa", "mona-lisa-fez", "Mouna Lisa", True),
         ("and-man-created-atay", "creation-of-mint-tea", "And Man Created Atay", True)])
-_pt_walls = ((f'<img src="{find_img("fountain-wall")}" alt="Dressed wall at Dar Mansour by Eden &amp; Beyond">')
-             if find_img("fountain-wall") else ph("Dressed wall — Dar Mansour"))
+_pt_walls = ((f'<img src="{find_img("dar-mansour-dressed-wall")}" alt="Hand-stencilled dressed wall at Dar Mansour, Koh Phangan">')
+             if find_img("dar-mansour-dressed-wall") else ph("Dressed wall — Dar Mansour"))
 projects_body = f'''
 {L.breadcrumb(("Projects", None))}
 {L.subhero(
+    hero_src=find_img("dar-mansour-exterior"),
     eyebrow="Projects",
     h1="One remarkable project<br>says more than a hundred ordinary ones.",
     sub="We don't measure our work by how many projects fill a portfolio. We care about how deeply an idea can be carried — through a space, its furniture, lighting, walls, art and atmosphere.",
 )}
 
-<section class="feat" style="min-height:72vh;">{ph('Dar Mansour — Koh Phangan', 'ph--dark')}
+<section class="feat" style="min-height:72vh;">{_featbg('dar-mansour-central-room', 'Dar Mansour — Koh Phangan, Thailand')}
   <div class="wrap feat__inner reveal">
     <span class="eyebrow">01 · Restaurant · Koh Phangan, Thailand</span>
     <h2>Dar Mansour</h2>
@@ -496,17 +510,17 @@ projects_body = f'''
   <h2 style="margin-top:1rem;">One idea. Every detail.</h2>
 </div></section>
 
-{_chapter("01", "The Space", "An intimate world", "Built around warmth, colour, conversation and the ritual of sharing food.", ph('Dar Mansour — the space', 'ph--dark'))}
+{_chapter("01", "The Space", "An intimate world", "Built around warmth, colour, conversation and the ritual of sharing food.", _cimg('dar-mansour-central-room', 'Dar Mansour dining room at night, Koh Phangan'))}
 <section class="section" style="padding-top:0;"><div class="wrap">
   <div class="reveal" style="margin-bottom:1.4rem;"><span class="eyebrow eyebrow--red">02 · The Tables</span>
   <h2 style="margin:.7rem 0 .4rem;">Not furniture added to the restaurant.</h2>
   <p class="lead">Pieces of the restaurant itself — several now live beyond it, in the Collection.</p></div>
   <div class="artgrid">{_pt_tables}</div>
 </div></section>
-{_chapter("03", "The Lighting", "When the sun goes down,<br>the restaurant becomes another place.", "Light does as much as any wall — turning the room into somewhere else after dark.", ph('Dar Mansour — lighting at night', 'ph--dark'))}
+{_chapter("03", "The Lighting", "When the sun goes down,<br>the restaurant becomes another place.", "Light does as much as any wall — turning the room into somewhere else after dark.", _cimg('dar-mansour-reception', 'Dar Mansour lit with lanterns after dark, Koh Phangan'))}
 {_chapter("04", "The Walls", "The architecture ends.<br>The story keeps going.", "Dressed walls carry the identity onto the surfaces themselves.", _pt_walls)}
-{_chapter("05", "The Art", "Not decoration.<br>Part of the conversation.", "Artworks belong to the same world as the food and the room.", ph('Dar Mansour — artworks', 'ph--dark'))}
-{_chapter("06", "The Details", "The things you notice.<br>And the things you only feel.", "Objects, materials and small gestures that make the room impossible to confuse with anywhere else.", ph('Dar Mansour — details', 'ph--dark'))}
+{_chapter("05", "The Art", "Not decoration.<br>Part of the conversation.", "Artworks belong to the same world as the food and the room.", _cimg('dar-mansour-qif-table', 'A Qif table and framed art at Dar Mansour'))}
+{_chapter("06", "The Details", "The things you notice.<br>And the things you only feel.", "Objects, materials and small gestures that make the room impossible to confuse with anywhere else.", _cimg('dar-mansour-exterior', 'Lantern and candles at the entrance of Dar Mansour, Koh Phangan'))}
 
 <section class="section band-dark"><div class="wrap">
   <div class="split" style="align-items:start;gap:clamp(2rem,5vw,4rem);">
@@ -582,6 +596,7 @@ _soon_html = "".join(
 journal_body = f'''
 {L.breadcrumb(("Journal", None))}
 {L.subhero(
+    hero_src=find_img("dar-mansour-reception"),
     eyebrow="Journal",
     h1="Ideas, places,<br>people &amp; beautiful trouble.",
     sub="Stories and perspectives on design, art, hospitality, culture and the things that inspire Eden & Beyond.",
@@ -628,6 +643,7 @@ _c_commission = L.wa("Hi Eden &amp; Beyond, I would like to commission a piece. 
 contact_body = f'''
 {L.breadcrumb(("Contact", None))}
 {L.subhero(
+    hero_src=find_img("dar-mansour-exterior"),
     eyebrow="Contact",
     h1="Let's make something<br>worth remembering.",
     sub="A space. A piece. An idea that hasn't quite found its form yet. Tell us where you'd like to begin.",
@@ -1124,7 +1140,7 @@ def _cap_block(eyebrow, title_html, items):
 
 
 def _dar_feat(eyebrow, h2, place, body, label="Discover the Project"):
-    return f'''<section class="feat">{ph('Dar Mansour — Koh Phangan', 'ph--dark')}
+    return f'''<section class="feat">{_featbg('dar-mansour-central-room', 'Dar Mansour — Koh Phangan, Thailand')}
   <div class="wrap feat__inner reveal">
     <span class="eyebrow">{eyebrow}</span>
     <h2>{h2}</h2>
@@ -1175,7 +1191,7 @@ def _svc_bespoke(title_html, body, label="Discover Bespoke Furniture &amp; Piece
 _wa_hosp = "Hi Eden &amp; Beyond, I would like to talk about a hospitality project."
 hospitality_body = f'''
 {L.breadcrumb(("Hospitality Design", None))}
-{L.subhero(eyebrow="Hospitality Design", h1="Places people remember.",
+{L.subhero(hero_src=find_img("dar-mansour-central-room"), eyebrow="Hospitality Design", h1="Places people remember.",
     sub="Creative direction and design for hotels, restaurants, bars, beach clubs, cafés and wellness spaces — built around character, atmosphere and a story of their own.")}
 <section class="section"><div class="wrap wrap--narrow center reveal">
   <div style="margin-bottom:.4rem;"><a class="btn btn--primary" href="{L.wa(_wa_hosp)}" target="_blank" rel="noopener">{L.WA_ICON} Start a Hospitality Project</a></div>
@@ -1213,7 +1229,7 @@ pages["hospitality-design.html"] = L.page(
 _wa_rest = "Hi Eden &amp; Beyond, I would like to talk about a restaurant project."
 restaurant_body = f'''
 {L.breadcrumb(("Restaurant Design", None))}
-{L.subhero(eyebrow="Restaurant Design", h1="A restaurant should<br>have a point of view.",
+{L.subhero(hero_src=find_img("dar-mansour-reception"), eyebrow="Restaurant Design", h1="A restaurant should<br>have a point of view.",
     sub="Creative direction and design for restaurants, bars and dining concepts — from the first idea to the atmosphere guests remember.")}
 <section class="section"><div class="wrap wrap--narrow center reveal">
   <div><a class="btn btn--primary" href="{L.wa(_wa_rest)}" target="_blank" rel="noopener">{L.WA_ICON} Start a Restaurant Project</a></div>
@@ -1258,7 +1274,7 @@ pages["restaurant-design.html"] = L.page(
 _wa_resi = "Hi Eden &amp; Beyond, I would like to talk about a residential project."
 residential_body = f'''
 {L.breadcrumb(("Residential Design", None))}
-{L.subhero(eyebrow="Residential Design", h1="Homes with character.<br>Never someone else's idea of beautiful.",
+{L.subhero(hero_src=find_img("dar-mansour-central-room"), eyebrow="Residential Design", h1="Homes with character.<br>Never someone else's idea of beautiful.",
     sub="Creative direction and design for private villas, residences and holiday homes — shaped around the people who live in them, not a predefined style.")}
 <section class="section"><div class="wrap wrap--narrow center reveal">
   <div><a class="btn btn--primary" href="{L.wa(_wa_resi)}" target="_blank" rel="noopener">{L.WA_ICON} Start a Residential Project</a></div>
@@ -1303,7 +1319,7 @@ pages["residential-design.html"] = L.page(
 _wa_besp = 'Hi Eden &amp; Beyond, I would like to commission a bespoke piece.'
 bespoke_body = f'''
 {L.breadcrumb(("Bespoke Furniture &amp; Pieces", None))}
-{L.subhero(eyebrow="Bespoke Furniture &amp; Pieces", h1="Made for a particular<br>place, person or purpose.",
+{L.subhero(hero_src=find_img("dar-mansour-qif-table"), eyebrow="Bespoke Furniture &amp; Pieces", h1="Made for a particular<br>place, person or purpose.",
     sub="Commissioned tables, lighting, artworks and site-specific pieces — created individually for private homes, hospitality spaces and commercial projects.")}
 <section class="section"><div class="wrap wrap--narrow center reveal">
   <div><a class="btn btn--primary" href="{L.wa(_wa_besp)}" target="_blank" rel="noopener">{L.WA_ICON} Commission a Piece</a></div>
@@ -1348,7 +1364,7 @@ pages["furniture-object-design.html"] = L.page(
 _wa_cd = "Hi Eden &amp; Beyond, I would like to discuss creative direction for a project."
 creative_body = f'''
 {L.breadcrumb(("Creative Direction", None))}
-{L.subhero(eyebrow="Creative Direction", h1="The idea<br>behind everything.",
+{L.subhero(hero_src=find_img("dar-mansour-dressed-wall"), eyebrow="Creative Direction", h1="The idea<br>behind everything.",
     sub="Creative direction for hospitality, residential and commercial projects — shaping the concept, identity and visual world before the details take over.")}
 <section class="section"><div class="wrap wrap--narrow center reveal">
   <div><a class="btn btn--primary" href="{L.wa(_wa_cd)}" target="_blank" rel="noopener">{L.WA_ICON} Discuss a Project</a></div>
