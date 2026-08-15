@@ -701,12 +701,15 @@ def piece(slug, title, medium, shape, tint, img=None):
     else:
         media = ph(title, tint)
     # a piece with its own caption page links to it; placeholders open a WhatsApp enquiry
-    href = f"{slug}.html" if slug in CAPTION_SLUGS else L.wa(
+    is_page = slug in CAPTION_SLUGS
+    href = f"{slug}.html" if is_page else L.wa(
         f'Hi Eden &amp; Beyond, I would like to enquire about "{title}" from your collection.')
+    go = "Discover" if is_page else "Enquire"
     return f'''<a class="{cls} reveal" href="{href}" id="{slug}">
       <div class="art__media">{media}</div>
       <div class="art__cap"><span class="art__title">{title}</span>
-      <span class="art__meta">{medium}</span></div>
+      <span class="art__meta">{medium}</span>
+      <span class="art__go">{go} {A}</span></div>
     </a>'''
 
 
@@ -1082,7 +1085,7 @@ collection_body = f'''
       <p class="lead">Eden &amp; Beyond also creates complete spaces for hospitality, residential and commercial projects.</p>
       <a class="btn btn--ghost" href="studio.html" style="margin-top:1.6rem;">Discover the Studio {A}</a>
     </div>
-    <div class="split__media reveal" data-delay="1">{('<img src="'+find_img('wondermint-camel')+'" alt="Flash — collectible table by Eden &amp; Beyond">') if find_img('wondermint-camel') else ph('The Studio', 'ph--electric')}<span class="tag">The Studio</span></div>
+    <div class="split__media reveal" data-delay="1">{('<img src="'+find_img('fountain-wall')+'" alt="Dressed wall at Dar Mansour by Eden &amp; Beyond">') if find_img('fountain-wall') else ph('The Studio', 'ph--electric')}<span class="tag">The Studio</span></div>
   </div>
 </div></section>
 
