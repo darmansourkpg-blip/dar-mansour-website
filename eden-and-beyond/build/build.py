@@ -1085,7 +1085,7 @@ collection_body = f'''
       <p class="lead">Eden &amp; Beyond also creates complete spaces for hospitality, residential and commercial projects.</p>
       <a class="btn btn--ghost" href="studio.html" style="margin-top:1.6rem;">Discover the Studio {A}</a>
     </div>
-    <div class="split__media reveal" data-delay="1">{('<img src="'+find_img('fountain-wall')+'" alt="Dressed wall at Dar Mansour by Eden &amp; Beyond">') if find_img('fountain-wall') else ph('The Studio', 'ph--electric')}<span class="tag">The Studio</span></div>
+    <div class="split__media split__media--square reveal" data-delay="1">{('<img src="'+find_img('wondermint-camel')+'" alt="Flash — collectible table by Eden &amp; Beyond">') if find_img('wondermint-camel') else ph('The Studio', 'ph--electric')}<span class="tag">The Studio</span></div>
   </div>
 </div></section>
 

@@ -674,3 +674,6 @@ body.menu-open .header__cta .btn--light { border-color: var(--line); color: var(
 .art__go svg { width: 15px !important; height: 15px !important; }
 .art:hover .art__go, .art:focus-visible .art__go { opacity: 1; transform: none; }
 @media (hover: none) { .art__go { opacity: .8; transform: none; } }
+
+/* --- Split media forced square (square artwork shows in full, no crop) --- */
+.split__media--square img, .split__media--square .ph { aspect-ratio: 1 / 1 !important; }
