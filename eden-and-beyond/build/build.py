@@ -744,10 +744,11 @@ COLLECTION = [
      "Some stories refuse to stay on the table.", []),
     ("walls", "Dressed Walls",
      "Because walls don't have to behave either.", [
-        ("fountain-wall",  "Fountain Wall",  "Dressed wall · Site-specific", "",  "ph--dark"),
-        ("entrance-wall",  "Entrance Wall",  "Dressed wall · Site-specific", "",  "ph--teal"),
-        ("star-wall",      "Star Wall",      "Dressed wall · Site-specific", "",  "ph--sun"),
-        ("floral-wall",    "Floral Wall",    "Dressed wall · Site-specific", "",  "ph--magenta"),
+        ("fountain-wall",       "Fountain Wall",             "Dressed wall · Site-specific", "",  "ph--dark"),
+        ("zellige-wall",        "Zellige Wall",              "Dressed wall · Site-specific", "",  "ph--teal"),
+        ("zellige-wall-making", "Zellige Wall · Making of",  "Dressed wall · Work in progress", "",  "ph--sun"),
+        ("star-wall",           "Star Wall",                 "Dressed wall · Site-specific", "",  "ph--sun"),
+        ("floral-wall",         "Floral Wall",               "Dressed wall · Site-specific", "",  "ph--magenta"),
      ]),
 ]
 
