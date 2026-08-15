@@ -115,8 +115,8 @@ home_body = f'''
       <p style="margin-top:1rem;">Discover the collection, or commission a piece created for you.</p>
       <a class="btn btn--primary" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
     </div>
-    <div class="split__media reveal" data-delay="1">
-      <a href="poppy-hobb.html">{('<img src="'+find_img('poppy-queen')+'" alt="Poppy Hobb — limited-edition table by Maija">') if find_img('poppy-queen') else ph('Poppy Hobb — table')}</a>
+    <div class="split__media split__media--round reveal" data-delay="1">
+      <a href="poppy-hobb.html">{('<img src="'+find_img('poppy-queen')+'" alt="Poppy Hobb — one-of-a-kind table by Maïja">') if find_img('poppy-queen') else ph('Poppy Hobb — table')}</a>
       <span class="tag">Poppy Hobb · One-of-a-kind</span>
     </div>
   </div>
@@ -352,7 +352,7 @@ about_body = f'''
       available independently from our studio projects.</p>
       <a class="btn btn--light" href="collection.html" style="margin-top:1.6rem;">Explore the Collection {A}</a>
     </div>
-    <div class="split__media reveal" data-delay="1">{('<img src="'+find_img('mona-lisa-fez')+'" alt="Mouna Lisa — collectible table by Eden &amp; Beyond">') if find_img('mona-lisa-fez') else ph('The Collection', 'ph--teal')}<span class="tag">The Collection</span></div>
+    <div class="split__media split__media--round reveal" data-delay="1">{('<img src="'+find_img('mona-lisa-fez')+'" alt="Mouna Lisa — collectible table by Eden &amp; Beyond">') if find_img('mona-lisa-fez') else ph('The Collection', 'ph--teal')}<span class="tag">The Collection</span></div>
   </div>
 </div></section>
 
