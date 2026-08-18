@@ -243,12 +243,16 @@ def breadcrumb(*crumbs):
             + "".join(items) + '</ol></nav>' + script)
 
 
-def subhero(eyebrow, h1, sub, image, alt, tall=False, focus=None, variant=None):
+def subhero(eyebrow, h1, sub, image, alt, tall=False, focus=None, variant=None, scrim=None):
     cls = "subhero subhero--tall" if tall else "subhero"
     # focus lets a page steer the crop (object-position) — handy for portrait
     # photos whose subject sits away from the centre.
     if variant:
         cls += f" subhero--{variant}"
+    # scrim lets a page soften the dark overlay — for bright, pastel photos that
+    # would otherwise read muddy under the default legibility scrim.
+    if scrim:
+        cls += f" subhero--scrim-{scrim}"
     style = f' style="object-position:{focus}"' if focus else ''
     src = _webp(image)
     # A "portrait" variant keeps the mobile cover crop but, on desktop, shows the

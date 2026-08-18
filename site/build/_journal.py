@@ -448,6 +448,7 @@ def load_articles():
             "cover": cover,
             "cover_alt": meta.get("cover_alt") or title,
             "cover_fit": (meta.get("cover_fit") or "").strip(),
+            "hero_scrim": (meta.get("hero_scrim") or "").strip(),
             "quick_guide": _parse_quick_guide(meta.get("quick_guide")),
             "faq": _parse_faq(meta.get("faq")),
             "about": (meta.get("about") or ABOUT_DEFAULT).strip(),
@@ -610,7 +611,8 @@ def render_article(a, all_articles):
     body = L.breadcrumb(("Journal", "blog.html"), (a["title"], None)) + L.subhero(
         cat["label"], a["title"], a["description"], a["cover"], a["cover_alt"],
         tall=(a.get("cover_fit") == "portrait"),
-        variant=("portrait" if a.get("cover_fit") == "portrait" else None)) + f'''
+        variant=("portrait" if a.get("cover_fit") == "portrait" else None),
+        scrim=a.get("hero_scrim")) + f'''
 <section class="section"><div class="wrap prose reveal">
   {byline(a)}
 {_quick_guide(a)}

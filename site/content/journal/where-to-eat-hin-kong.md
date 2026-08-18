@@ -238,7 +238,7 @@ Directly on Hin Kong Beach, Charlie's is the kind of relaxed spot where an after
 
 ## Great Restaurants Just Minutes from Hin Kong
 
-Part of what makes Hin Kong easy to stay in is neighbouring Sri Thanu, a few minutes away, where a different scene awaits — healthy cafés, specialty coffee, Japanese comfort food and one of the island's favourite evening food markets. A few worth adding to your itinerary, with more in our [Sri Thanu food guide](journal-where-to-eat-sri-thanu.html).
+Part of what makes Hin Kong easy to stay in is neighbouring Sri Thanu, a few minutes away, where a different scene awaits — healthy cafés, some of [Koh Phangan's best coffee spots](journal-best-cafes-koh-phangan.html), Japanese comfort food and one of the island's favourite evening food markets. A few worth adding to your itinerary, with more in our [Sri Thanu food guide](journal-where-to-eat-sri-thanu.html).
 
 #### Foxxy's Restaurant & Café
 

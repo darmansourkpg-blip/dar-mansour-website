@@ -793,6 +793,12 @@ body.journal .subhero__sub { text-shadow: 0 1px 16px rgba(7,43,41,.5); }
 body.journal .subhero::after {
   background: linear-gradient(180deg, rgba(7,43,41,.62) 0%, rgba(7,43,41,.34) 42%, rgba(7,43,41,.82) 100%);
 }
+/* lighter scrim opt-in (hero_scrim: light) for bright, pastel covers that
+   would read muddy under the default overlay — keeps the photo punchy while
+   preserving white-type legibility via the text-shadow on h1/sub */
+body.journal .subhero.subhero--scrim-light::after {
+  background: linear-gradient(180deg, rgba(7,43,41,.34) 0%, rgba(7,43,41,.12) 45%, rgba(7,43,41,.60) 100%);
+}
 /* editorial coral accents */
 body.journal .eyebrow, body.journal .subhero .eyebrow,
 body.journal .article__meta, body.journal .jcard__date,
