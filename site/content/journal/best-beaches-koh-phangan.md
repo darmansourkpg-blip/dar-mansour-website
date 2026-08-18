@@ -1,7 +1,7 @@
 ---
 title: "Best Beaches in Koh Phangan (2026): Swimming, Snorkelling, Sunsets & Hidden Bays"
 seo_title: "Best Beaches in Koh Phangan 2026 — The Complete Guide"
-description: "Best beaches in Koh Phangan: Haad Yao for all-round days, Mae Haad for snorkelling, Hin Kong for sunsets, Thong Nai Pan for swimming, Bottle Beach for seclusion."
+description: "The best beaches in Koh Phangan: Haad Yao for all-round days, Mae Haad for snorkelling, Hin Kong for sunsets and Bottle Beach for seclusion."
 date: 2026-08-05
 author: The Dar Mansour Journal
 category: koh-phangan-guide
