@@ -204,7 +204,7 @@ Tucked into the greenery of Madua Wan, Swiss Farmacy is the kind of place that q
 **Why we love it —** Wholesome homemade food in one of the island's most peaceful settings.<br>
 **Best for —** Healthy brunch · Homemade food · Families<br>
 **Price —** ฿฿<br>
-**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://www.google.com/maps/search/?api=1&query=9.7348011,100.0081449)
+**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://maps.app.goo.gl/GiaEd6CVm2mLZMGC7)
 
 #### Seasalt & Sage
 
