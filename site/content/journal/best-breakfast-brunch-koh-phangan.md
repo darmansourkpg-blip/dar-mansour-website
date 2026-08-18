@@ -110,7 +110,7 @@ In the heart of Sri Thanu, Mimi's is a neighbourhood café where residents, remo
 
 ## Best Specialty Coffee in Koh Phangan
 
-For travellers who care as much about the coffee as the food.
+For travellers who care as much about the coffee as the food. If coffee is the main event, our dedicated guide to the [best cafés in Koh Phangan](journal-best-cafes-koh-phangan.html) goes deeper into the island's roasters and café culture.
 
 #### Indigo Specialty Coffee & Bakery
 
