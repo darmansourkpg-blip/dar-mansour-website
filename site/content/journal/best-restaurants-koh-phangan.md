@@ -205,7 +205,7 @@ A garden of papaya, banana, tamarind and fresh herbs surrounds this quiet open-a
 **Best for —** Food lovers · Special occasions · Contemporary Thai cuisine<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Reservations are essential. The chef prepares only the number of covers booked, and the blind menu follows the freshest ingredients of the day.<br>
-**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+13%2F9+Moo+4%2C+Wok+Tum%2C+Ko+Pha-ngan+84280)
+**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://maps.app.goo.gl/hfq3zDUmu5dGif7Q6)
 
 #### Thai Element
 
@@ -245,7 +245,7 @@ There aren't many places where your seafood travels only a few metres to the pla
 **Why we love it —** A market-to-table experience unlike anywhere else on the island.<br>
 **Best for —** Lunch · Seafood lovers · Food explorers<br>
 **Price —** ฿฿<br>
-**Getting there —** Inside Thong Sala Fresh Market. [View on map ↗](https://www.google.com/maps/search/?api=1&query=La+Ceviche%27s+%E2%80%93+Ceviche+Bar+Thong+Sala+Fresh+Market%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
+**Getting there —** Inside Thong Sala Fresh Market. [View on map ↗](https://maps.app.goo.gl/JvBhZwFsZpH75oMZ6)
 
 #### Happiness Restaurant (ทะเลถัง)
 
@@ -300,7 +300,7 @@ Some chefs follow recipes; Dodo, the French owner here, follows inspiration. Thi
 **Best for —** Food lovers · Date nights · Creative cuisine<br>
 **Price —** ฿฿฿<br>
 **Good to know —** The menu changes often with the season and the chef's mood — check the blackboard for the day's dishes.<br>
-**Getting there —** In Haad Yao, a few minutes from Haad Yao Beach. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Carte+Blanche+57%2F7+Moo+8%2C+Haad+Yao%2C+Ko+Pha-ngan+84280)
+**Getting there —** In Haad Yao, a few minutes from Haad Yao Beach. [View on map ↗](https://maps.app.goo.gl/1tqzhYQ9aj5Ldxny9)
 
 #### L'Alcove
 
@@ -310,7 +310,7 @@ Run by Karine and Mélanie, L'Alcove has become a west coast fixture — tables 
 **Best for —** Sunset dinner · Romantic evenings · Wine lovers<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Arrive before sunset to get a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
-**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+15+Hin+Kong+Beach%2C+Ko+Pha-ngan+84280)
+**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://maps.app.goo.gl/1YzdW6KWDJVomPjX8)
 
 ### Japanese
 
@@ -355,7 +355,7 @@ Travelling isn't only about new places — sometimes it's new flavours. thanaka 
 **Why we love it —** A real taste of Myanmar, served with heartfelt family hospitality.<br>
 **Best for —** Discovering Burmese cuisine · Casual dinner · Food lovers<br>
 **Price —** ฿<br>
-**Getting there —** In Thong Sala, close to the town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=thanaka+134%2F47%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
+**Getting there —** In Thong Sala, close to the town centre. [View on map ↗](https://maps.app.goo.gl/r8j7V3ziEo813Qui9)
 
 ### Moroccan
 
@@ -453,7 +453,7 @@ Set high above Ban Kai within the adults-only Art of Nature Resort, this open-ai
 **Why we love it —** A hilltop setting where fresh cooking meets a wide-open sunset over the Gulf.<br>
 **Best for —** Sunset dining · Romantic dinners · Adults-only escape<br>
 **Price —** ฿฿฿<br>
-**Getting there —** Within Art of Nature Resort, on the Ban Kai hillside overlooking the Gulf of Thailand. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Art+of+Nature+Restaurant+%28Adults+Only%29+32%2F9+Moo+4%2C+Ban+Kai%2C+Ko+Pha-ngan+84280)
+**Getting there —** Within Art of Nature Resort, on the Ban Kai hillside overlooking the Gulf of Thailand. [View on map ↗](https://maps.app.goo.gl/whwqXoHWkytcbMYi6)
 
 #### Salaad View Restaurant
 
@@ -484,7 +484,7 @@ Breakfast is close to a ritual here, and SAGE embraces it. Looking out over the 
 **Why we love it —** A European-leaning all-day breakfast with a Ban Tai sea view.<br>
 **Best for —** Breakfast · Brunch · Specialty coffee · Sea views<br>
 **Price —** ฿฿<br>
-**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SAGE+Breakfast+%26+More+128+Moo+1%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
+**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://maps.app.goo.gl/oWYRpPScSTNEep53A)
 
 #### Foxxy's Restaurant & Café
 
@@ -511,7 +511,7 @@ Some breakfasts deserve a sea view. Seasalt & Sage pairs fresh, wholesome food w
 **Why we love it —** Relaxed beachfront brunches, good coffee and fresh, healthy dishes.<br>
 **Best for —** Beachfront breakfast · Brunch · Healthy food<br>
 **Price —** ฿฿<br>
-**Getting there —** On the Ban Tai beachfront, a few minutes south of Thong Sala. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Seasalt+%26+Sage+11+Moo+2%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
+**Getting there —** On the Ban Tai beachfront, a few minutes south of Thong Sala. [View on map ↗](https://maps.app.goo.gl/EibCGnJn2euAtMtUA)
 
 ## Best Burgers in Koh Phangan
 
@@ -564,7 +564,7 @@ In the greenery of Madua Wan, Swiss Farmacy feels like home almost as soon as yo
 **Why we love it —** Wholesome homemade cooking at an easy pace, in a peaceful garden setting.<br>
 **Best for —** Healthy lunch · Homemade food · Families<br>
 **Price —** ฿฿<br>
-**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://www.google.com/maps/search/?api=1&query=9.7348011,100.0081449)
+**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://maps.app.goo.gl/UrNuuN5bgvmMeosf9)
 
 ## Night Markets & Food Courts in Koh Phangan
 
@@ -575,14 +575,14 @@ Some of the island's best meals aren't found in restaurants at all. Every evenin
 The island's best-known night market, in the heart of Thong Sala. Dozens of vendors cover everything from Thai street food and freshly grilled seafood to sushi, Indian curries, vegan dishes, fruit shakes and homemade desserts. The lively atmosphere, communal seating and low prices make it one of the easiest ways to try a lot in one evening.
 
 **Why we love it —** The whole island's street food in one place, at everyday prices.<br>
-**Getting there —** In the heart of Thong Sala, a short walk from the ferry pier and town centre. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Phantip+Night+Market+Thong+Sala+Koh+Phangan)
+**Getting there —** In the heart of Thong Sala, a short walk from the ferry pier and town centre. [View on map ↗](https://maps.app.goo.gl/SVcdfWXz5PDQNw4N8)
 
 #### Ban Tai Night Market
 
 Smaller and more local than Phantip, the Ban Tai market has a relaxed feel — residents and visitors gathering for affordable Thai food, grilled meats, seafood, fresh fruit and homemade snacks. A good place to find local flavours away from the busier spots, with live music on some nights.
 
 **Why we love it —** A genuine local market with good Thai food at local prices.<br>
-**Getting there —** In Ban Tai, on the main road between Thong Sala and Haad Rin. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Ban+Tai+Night+Market+Koh+Phangan)
+**Getting there —** In Ban Tai, on the main road between Thong Sala and Haad Rin. [View on map ↗](https://maps.app.goo.gl/XmCqAaPtiXqB8kAE7)
 
 #### Mama Market Sri Thanu
 
@@ -596,21 +596,21 @@ One of the west coast's favourite evening food courts, gathering local and inter
 Sometimes the simplest places become local favourites. Phangan Food Court is one of Thong Sala's busiest everyday spots, gathering Thai and international kitchens under one roof — Thai dishes, Japanese, burgers, grilled meats, seafood or vegetarian, an easy call when everyone wants something different. Casual, affordable and reliable at almost any time of day.
 
 **Why we love it —** An easy, affordable place to eat across many cuisines in one spot.<br>
-**Getting there —** On the main road between Thong Sala and Ban Tai, just before No Name Kitchen Phangan. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Phangan+Food+Court+Thong+Sala+Koh+Phangan)
+**Getting there —** On the main road between Thong Sala and Ban Tai, just before No Name Kitchen Phangan. [View on map ↗](https://maps.app.goo.gl/DKgCpL4bXtig9s5S8)
 
 #### Thong Sala Saturday Night Market
 
 Every Saturday, Thong Sala's Walking Street turns the town centre into one of the island's liveliest weekly events. Local food vendors, artisan stalls and small producers line the street with Thai street food, grilled seafood, homemade desserts, tropical fruit, cocktails and crafts. As good for an evening stroll as for dinner.
 
 **Why we love it —** A lively weekly celebration of Koh Phangan's street food and local culture.<br>
-**Getting there —** Along Thong Sala Walking Street, in the town centre, a short walk from the ferry pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Thong+Sala+Walking+Street+Saturday+Market+Koh+Phangan)
+**Getting there —** Along Thong Sala Walking Street, in the town centre, a short walk from the ferry pier. [View on map ↗](https://maps.app.goo.gl/CeyTnMGAjNGsChyn7)
 
 #### Chaloklum Sunday Night Market
 
 Every Sunday, the fishing village of Chaloklum becomes one of the island's most characterful weekly markets. Local restaurants, fishermen, artisans and vendors line the streets with freshly grilled seafood, southern Thai specialities, homemade desserts, tropical fruit and international dishes. Smaller than the Thong Sala markets but full of character.
 
 **Why we love it —** Local food and community spirit in one of the island's prettiest villages.<br>
-**Getting there —** In Chaloklum village, on the north coast. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Chaloklum+Sunday+Night+Market+Koh+Phangan)
+**Getting there —** In Chaloklum village, on the north coast. [View on map ↗](https://maps.app.goo.gl/3E8v8ZoizVYfDvNh8)
 
 ## Cocktail & Sunset Bars in Koh Phangan
 
