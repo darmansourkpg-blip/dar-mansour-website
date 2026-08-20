@@ -77,6 +77,12 @@ Unlike the east coast — known for sunrise and the famous Full Moon Party — t
 
 ![People gathering at Zen Beach to watch the sunset in Koh Phangan](assets/uploads/where-to-watch-the-sunset-in-koh-phangan7.jpg "Zen Beach Sunset")
 
+## What Time Is Sunset in Koh Phangan?
+
+What time is sunset in Koh Phangan? Sunset in Koh Phangan is generally between around 6:00 pm and 6:45 pm throughout the year, with earlier sunsets around November–December and later sunsets around June–July. Exact times change slightly each day, so check the local sunset time for your date.
+
+For the best experience, arrive 30–45 minutes before sunset, especially at popular west-coast viewpoints and beach bars. This gives you time to find a good spot and enjoy the changing light before the sun reaches the horizon.
+
 ## Sunset on the Beach
 
 ### Zen Beach — Koh Phangan's Sunset Ritual
