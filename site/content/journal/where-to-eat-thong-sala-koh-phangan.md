@@ -43,7 +43,7 @@ That's a mistake. Thong Sala isn't simply the island's transport hub — it's wh
 
 Before sunrise, fishing boats unload their catch while cafés welcome early risers with fresh coffee and warm pastries. By lunchtime, local workers fill family-run restaurants, the Fresh Market buzzes with traders and chefs choosing the day's ingredients, and by evening the streets fill with the aromas of grilled seafood, fragrant curries and tropical desserts.
 
-Nowhere else on Koh Phangan offers such a range of dining within walking distance. Whether you're looking for authentic Thai food, a memorable chef's table, freshly landed seafood, Korean barbecue, artisan coffee, homemade pastries or one of the island's liveliest night markets, Thong Sala has something for every taste and budget.
+Nowhere else on Koh Phangan offers such a range of dining within walking distance. Whether you're looking for authentic Thai food, a memorable chef's table, freshly landed seafood, Korean barbecue, [artisan coffee](journal-best-cafes-koh-phangan.html), homemade pastries or one of the island's liveliest night markets, Thong Sala has something for every taste and budget.
 
 Unlike the quieter villages of Hin Kong or Sri Thanu, Thong Sala feels unmistakably local. It's where residents shop, families gather for dinner, travellers from across the island cross paths, and many of Koh Phangan's best chefs choose to open their restaurants. For food lovers, it's one of the island's essential destinations.
 
