@@ -294,19 +294,19 @@ Street food is one of the great pleasures of eating in Thong Sala. Unlike much o
 Open every evening, Phantip is the island's best everyday street-food destination. Dozens of stalls prepare grilled seafood, Pad Thai, curries, satay, fresh fruit shakes, Thai desserts and international dishes in a lively open-air food court where visitors and locals eat side by side — affordable, varied and full of atmosphere.
 
 **Best for —** Street food · Families · Budget dining<br>
-**Location —** Thong Sala town centre, a few minutes from the pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Phantip+Night+Market+Thong+Sala+Koh+Phangan)
+**Location —** Thong Sala town centre, a few minutes from the pier. [View on map ↗](https://maps.app.goo.gl/SVcdfWXz5PDQNw4N8)
 
 ### Thong Sala Walking Street (Saturday Market)
 Every Saturday evening, Chinese Street closes to traffic and becomes the island's liveliest weekly market. Unlike Phantip, which focuses on food, the Walking Street combines street food with local artisans, handmade crafts, clothing, live music and small producers — grilled seafood, homemade desserts, tropical fruit and regional specialities. If your visit lands on a Saturday, it's one experience not to miss.
 
 **Best for —** Street food · Local atmosphere · Shopping · Live music<br>
-**Location —** Chinese Street, Thong Sala old town. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Thong+Sala+Walking+Street+Saturday+Market+Koh+Phangan)
+**Location —** Chinese Street, Thong Sala old town. [View on map ↗](https://maps.app.goo.gl/CeyTnMGAjNGsChyn7)
 
 ### Phangan Food Court
 Open throughout the day, Phangan Food Court gathers Thai and international kitchens under one roof — home to At Chiang Mai, alongside Japanese, seafood, grilled meats, burgers and vegetarian options. Reliable, casual and affordable, it's one of the easiest ways to please a group with different tastes.
 
 **Best for —** Groups · Variety · Casual dining<br>
-**Location —** Thong Sala, on the main road towards Baan Tai. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Phangan+Food+Court+Thong+Sala+Koh+Phangan)
+**Location —** Thong Sala, on the main road towards Baan Tai. [View on map ↗](https://maps.app.goo.gl/DKgCpL4bXtig9s5S8)
 
 ## Beachfront Dining & Cocktail Bars Near Thong Sala
 
