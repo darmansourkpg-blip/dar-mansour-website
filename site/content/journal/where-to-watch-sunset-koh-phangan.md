@@ -87,6 +87,8 @@ Despite its growing popularity, Zen Beach has retained its relaxed and welcoming
 
 Right on the sand, Grasshopper Beach Bar is the heart of the Zen Beach sunset — tables in the sand, cocktails and resident DJs as the sky turns, with the drum circle just steps away on Fridays. We cover it in full in our [guide to where to eat in Sri Thanu](journal-where-to-eat-sri-thanu.html).
 
+![The sun setting as a deep red disc behind the offshore beacon, framed by trees at Zen Beach, Koh Phangan](assets/uploads/zen-beach-sunset-red-sun-koh-phangan.jpg "Red sun setting over Zen Beach, Koh Phangan")
+
 <p class="getthere"><strong>Getting there</strong> — Sri Thanu, via the small lane beside CM Thai Language School; allow about five minutes to walk through the trees before reaching the beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=Zen+Beach+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a></p>
 
 <aside class="localtip"><span class="localtip__label">Local Tip</span><p>Arrive at least 40 minutes before sunset. Parking fills quickly and, once darkness falls, every parked scooter starts looking exactly the same.</p></aside>
