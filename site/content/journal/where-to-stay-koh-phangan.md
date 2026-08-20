@@ -432,6 +432,7 @@ Koh Phangan rewards travellers who choose their base with intention. Whether you
 
 Explore our other Koh Phangan guides:
 
+- [Best Things to Do in Koh Phangan](journal-best-things-to-do-koh-phangan.html)
 - [Best Beaches in Koh Phangan](journal-best-beaches-koh-phangan.html)
 - [Best Restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html)
 - [Where to Eat in Thong Sala](journal-where-to-eat-thong-sala-koh-phangan.html)
