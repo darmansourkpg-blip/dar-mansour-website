@@ -645,3 +645,4 @@ Continue exploring the island with our other guides:
 - [Romantic Dinner in Koh Phangan](journal-romantic-dinner-koh-phangan.html)
 - [Best Breakfast & Brunch](journal-best-breakfast-brunch-koh-phangan.html)
 - [Where to Watch the Sunset](journal-where-to-watch-sunset-koh-phangan.html)
+- [Best Things to Do in Koh Phangan](journal-best-things-to-do-koh-phangan.html)

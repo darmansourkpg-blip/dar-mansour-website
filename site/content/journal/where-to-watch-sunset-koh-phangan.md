@@ -280,3 +280,5 @@ Sometimes, the most memorable journeys begin after the sun has disappeared.
 Koh Phangan rewards those who slow down. Whether you choose the barefoot atmosphere of Zen Beach, the peaceful reflections of Hin Kong, the panoramic heights of Amsterdam Bar or the elegant setting of Bluerama, every sunset tells a slightly different story.
 
 Take your time. Stay a little longer. Watch the colours change one last time. Because on Koh Phangan, the day doesn't end when the sun touches the horizon — that's when the island becomes its most beautiful.
+
+Sunset is only one chapter of the island, of course. For everything else worth your time here, see our guide to the [best things to do in Koh Phangan](journal-best-things-to-do-koh-phangan.html).
