@@ -45,7 +45,7 @@ For many Moroccans today, a Dada is remembered not only as a caregiver, but as a
 
 The Dadas were never simply responsible for preparing meals. They preserved the rhythm of family life.
 
-They knew every child's favourite dish. They remembered recipes for weddings, celebrations and Ramadan. They prepared mint tea exactly as each family preferred it. They passed down songs, stories and traditions while working quietly behind the scenes.
+They knew every child's favourite dish. They remembered recipes for weddings, celebrations and Ramadan. They prepared mint tea exactly as each family preferred it. They passed down songs, stories and traditions while working quietly behind the scenes — part of the same oral heritage that still carries living traditions such as [Gnaoua music](journal-gnaoua-music-morocco.html) from one generation to the next.
 
 Long before recipes were written in cookbooks, they lived in memory. And it was often the Dadas who carried that memory — generation after generation.
 

@@ -37,7 +37,7 @@ Couscous is one of Morocco's most iconic dishes — steamed semolina grains serv
 
 Ask anyone to name Morocco's most famous dish and many will immediately think of the [tajine](journal-what-is-a-tajine.html). Ask a Moroccan, however, which meal best represents family life, and there's a good chance the answer will be couscous.
 
-For centuries, couscous has been at the heart of Moroccan homes. It marks the rhythm of the week, brings generations together around one table and accompanies both joyful celebrations and quieter family gatherings.
+For centuries, couscous has been at the heart of Moroccan homes. It marks the rhythm of the week, brings generations together around one table and accompanies both joyful celebrations and quieter family gatherings. At the biggest of those celebrations, the table is often joined by music and ceremony — including the spiritual, trance-like sound of [Gnaoua](journal-gnaoua-music-morocco.html).
 
 Its origins date back many centuries to the Amazigh (Berber) peoples of North Africa, who developed the techniques of preparing and steaming semolina long before couscous became known around the world — one of the founding traditions we trace in our [complete guide to Moroccan cuisine](journal-moroccan-cuisine-guide.html). Over time, every region of Morocco adopted the dish, enriching it with its own traditions, ingredients and family recipes.
 
