@@ -1,5 +1,5 @@
 ---
-title: 'Best Things to Do in Koh Phangan: A Local Guide Beyond the Full Moon Party'
+title: 'Best Things to Do in Koh Phangan (2026): A Local Guide Beyond the Full Moon Party'
 seo_title: Best Things to Do in Koh Phangan (2026 Local Guide)
 description: The best things to do in Koh Phangan beyond the Full Moon Party — beaches, hikes, snorkeling, markets, wellness, sunsets, food and the island's music scene.
 date: 2026-08-20

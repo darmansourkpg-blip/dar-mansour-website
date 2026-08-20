@@ -1,5 +1,5 @@
 ---
-title: Best Breakfast & Brunch in Koh Phangan
+title: 'Best Breakfast & Brunch in Koh Phangan (2026)'
 date: 2026-07-15
 author: The Dar Mansour Journal
 category: koh-phangan-guide
