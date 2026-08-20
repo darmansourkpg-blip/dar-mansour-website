@@ -639,6 +639,8 @@ Watching the sunset from an infinity pool over the Gulf of Thailand is hard to b
 
 Some places catch the free-spirited feel that made Koh Phangan famous. On Zen Beach, Grasshopper comes alive each evening as travellers, locals and performers gather for the sunset. Tables sit right on the sand, cocktails flow and resident DJs set the mood as the sky turns. Fridays bring the Zen Beach Drum Circle just steps away; weekends often carry on with beachside electronic sets long after dark.
 
+![Swimmers in the sea as the sun sets over Zen Beach beside Grasshopper Beach Bar, Koh Phangan](assets/uploads/grasshopper-zen-beach-sunset-swim-koh-phangan.jpg "Sunset swim off Zen Beach, Koh Phangan")
+
 **Why we love it —** One of the island's liveliest sunset gatherings, with beach cocktails, DJs and the Zen Beach mood.<br>
 **Best for —** Sunset drinks · DJs · Meeting people · Zen Beach<br>
 **Price —** ฿฿<br>

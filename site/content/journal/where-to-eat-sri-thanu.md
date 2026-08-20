@@ -218,6 +218,8 @@ Few places on Koh Phangan catch the sunset quite like Sri Thanu. As the afternoo
 
 Sri Thanu's sunset gathering point, right on Zen Beach. As the afternoon cools, travellers, residents and performers drift down to the sand and Grasshopper picks up the mood — tables in the sand, cocktails and resident DJs as the light turns. Come Friday, the Zen Beach Drum Circle is just steps away. For more sunset tables across the island, see our [Koh Phangan sunset guide](journal-where-to-watch-sunset-koh-phangan.html).
 
+![Beach tables and string lights at Grasshopper Beach Bar as the crowd gathers for sunset on Zen Beach, Sri Thanu, Koh Phangan](assets/uploads/grasshopper-beach-bar-zen-beach-koh-phangan.jpg "Grasshopper Beach Bar at sunset, Zen Beach, Koh Phangan")
+
 **Why we love it —** Zen Beach's liveliest sundown — sand, cocktails and DJs as the sky turns.<br>
 **Best for —** Sunset drinks · DJs · Meeting people · Zen Beach<br>
 **Price —** ฿฿<br>
