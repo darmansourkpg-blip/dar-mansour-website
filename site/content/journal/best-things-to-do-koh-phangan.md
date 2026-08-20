@@ -21,9 +21,9 @@ faq:
   - question: What are the best things to do in Koh Phangan?
     answer: The best things to do in Koh Phangan include exploring beaches such as Mae Haad and Bottle Beach, snorkeling around Koh Ma, hiking Bottle Beach Viewpoint or Khao Ra, visiting Than Sadet, exploring Chaloklum, experiencing Sri Thanu's wellness scene, visiting Thong Sala's markets and watching sunset on the west coast.
   - question: What shouldn't I miss in Koh Phangan?
-    answer: On a first visit, don't miss Mae Haad and Koh Ma, a west-coast sunset, Than Sadet and Chaloklum fishing village. If you enjoy hiking, add Bottle Beach Viewpoint or Khao Ra, and leave time to experience the island's food and wellness culture.
+    answer: On a first visit, don't miss Mae Haad and Koh Ma, a west-coast sunset, Than Sadet, Chaloklum fishing village and Thong Sala's markets. If you enjoy hiking, add Bottle Beach Viewpoint or Khao Ra, and leave time to experience the island's food and wellness culture.
   - question: Is Koh Phangan worth visiting?
-    answer: Yes — even if you have no interest in the Full Moon Party. Koh Phangan combines beaches, jungle, snorkeling, hiking, markets, wellness, excellent food and distinct local communities within a relatively small island.
+    answer: Yes — even if you have no interest in the Full Moon Party. Koh Phangan combines beaches, jungle, snorkeling, hiking, Thai culture and local life, markets, wellness, excellent food and distinct communities within a relatively small island.
   - question: What can you do in Koh Phangan besides the Full Moon Party?
     answer: Koh Phangan offers hiking, snorkeling, kayaking, waterfalls, fishing villages, Thai markets, yoga, herbal saunas, specialty coffee, excellent restaurants and day trips to Ang Thong Marine Park. The island also has a diverse music scene extending far beyond the Full Moon Party.
   - question: How many days do you need in Koh Phangan?
@@ -33,7 +33,7 @@ faq:
   - question: What are the best free things to do in Koh Phangan?
     answer: Beach days, west-coast sunsets, exploring fishing villages and walking through local markets are among the best free or very low-cost experiences. Some national park areas and attractions may charge entrance fees.
   - question: What can I do in Koh Phangan when it rains?
-    answer: Use rainy periods for a herbal sauna, massage, yoga or sound-healing session, café hopping, a long lunch or exploring Thong Sala. Tropical showers can also pass quickly, so a wet morning doesn't necessarily mean losing the entire day.
+    answer: Use rainy periods for a herbal sauna, massage, yoga or sound-healing session, café hopping, a long lunch or exploring Thong Sala's cafés, shops and restaurants. Tropical showers can also pass quickly, so a wet morning doesn't necessarily mean losing the entire day.
   - question: Where is the best sunset in Koh Phangan?
     answer: The west coast is the place to start, particularly around Hin Kong, Sri Thanu and Zen Beach, Haad Yao and Haad Salad. At Zen Beach, Grasshopper Beach Bar is one option for combining sunset with drinks and music.
   - question: Where is the best snorkeling in Koh Phangan?
@@ -42,7 +42,7 @@ faq:
     answer: For a dramatic coastal view, choose Bottle Beach Viewpoint. For a longer jungle hike and the experience of climbing Koh Phangan's highest peak, choose Khao Ra.
   - question: Can you visit Ang Thong Marine Park from Koh Phangan?
     answer: Yes. Day trips to Mu Ko Ang Thong National Marine Park can be arranged while staying on Koh Phangan, but check whether your chosen excursion departs directly from the island or involves a transfer.
-  - question: What are the main parties in Koh Phangan besides Full Moon?
+  - question: What are the main parties in Koh Phangan besides the Full Moon Party?
     answer: Halfmoon Festival and Jungle Experience are two of the best-known alternatives around Baan Tai. Beach Bums at Merkaba offers a more relaxed Sunday beach-party atmosphere, while Eden Garden and Guy's Bar represent the underground east-coast scene. On the west coast, Grasshopper Beach Bar at Zen Beach combines sunset with music and barefoot beach gatherings.
 ---
 
