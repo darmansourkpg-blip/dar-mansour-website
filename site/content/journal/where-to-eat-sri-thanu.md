@@ -199,7 +199,7 @@ Some breakfasts deserve a calm setting. Seasalt & Sage pairs fresh, wholesome fo
 **Why we love it —** Relaxed brunches, good coffee and fresh, healthy dishes.<br>
 **Best for —** Healthy breakfast · Brunch · Specialty coffee<br>
 **Price —** ฿฿<br>
-**Getting there —** In Sri Thanu village. [View on map ↗](https://share.google/953aZwPUGmBuLl5K6)
+**Getting there —** In Sri Thanu village. [View on map ↗](https://maps.app.goo.gl/EibCGnJn2euAtMtUA)
 
 #### Healthy Bowl & Salads
 
@@ -244,7 +244,7 @@ A few minutes from Sri Thanu, Dear Phangan sits in a garden of papaya, banana, t
 **Best for —** Food lovers · Special occasions · Contemporary Thai cuisine<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Reservations are essential. The chef prepares only the number of covers booked, and the blind menu follows the freshest ingredients of the day.<br>
-**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+13%2F9+Moo+4%2C+Wok+Tum%2C+Ko+Pha-ngan+84280)
+**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://maps.app.goo.gl/hfq3zDUmu5dGif7Q6)
 
 #### Thai Element
 
@@ -273,7 +273,7 @@ A few minutes from Sri Thanu at Hin Kong Beach, L'Alcove — run by Karine and M
 **Best for —** Sunset dinner · Romantic evenings · Wine lovers<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Arrive before sunset to get a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
-**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+15+Hin+Kong+Beach%2C+Ko+Pha-ngan+84280)
+**Getting there —** Directly on Hin Kong Beach, between Mama KOP and CINTAMANI Bar. [View on map ↗](https://maps.app.goo.gl/1YzdW6KWDJVomPjX8)
 
 #### CINTAMANI Bar
 
