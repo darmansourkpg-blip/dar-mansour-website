@@ -897,11 +897,17 @@ def lint_static_pages(pages):
 lint_static_pages(pages)
 
 # ============================================================ WRITE
+def _home_to_root(html):
+    """Point internal home links at "/" instead of index.html so all signals
+    (SEO + analytics) consolidate on the canonical root URL."""
+    return (html.replace('href="index.html"', 'href="/"')
+                .replace('href="/index.html"', 'href="/"'))
+
 for fname, html in pages.items():
     path = os.path.join(OUT, fname)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        f.write(add_img_dims(html))
+        f.write(add_img_dims(_home_to_root(html)))
     print("wrote", fname)
 
 # Standalone 'link in bio' page (darmansour.com/links) — written directly, kept

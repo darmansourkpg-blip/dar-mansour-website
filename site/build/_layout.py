@@ -110,9 +110,9 @@ def head(title, desc, canonical, og_image="assets/img/moroccan-garden-dining-koh
             "var s=document.createElement('script');s.async=true;"
             f"s.src='https://www.googletagmanager.com/gtag/js?id={GA4_ID}';"
             "document.head.appendChild(s);}"
-            "['scroll','mousemove','touchstart','keydown','click'].forEach(function(e){"
+            "['scroll','mousemove','touchstart','keydown','click','visibilitychange','pagehide'].forEach(function(e){"
             "window.addEventListener(e,load,{once:true,passive:true});});"
-            "setTimeout(load,3500);})();</script>\n"
+            "setTimeout(load,1500);})();</script>\n"
         )
     return f'''<!DOCTYPE html>
 <html lang="en">
