@@ -84,7 +84,7 @@ Dining at Dear Phangan is unlike eating anywhere else on the island. The chef-le
 **Best for —** Food lovers · Special occasions · Contemporary Thai cuisine<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Reservations are essential; the chef prepares only the number of covers booked.<br>
-**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Dear+Phangan+13%2F9+Moo+4%2C+Wok+Tum%2C+Ko+Pha-ngan+84280)
+**Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://maps.app.goo.gl/hfq3zDUmu5dGif7Q6)
 
 #### Thai Element
 
@@ -137,7 +137,7 @@ Run by Karine and Mélanie, L'Alcove has long been a west coast favourite for a 
 **Best for —** Sunset dinner · Romantic evenings · Wine lovers<br>
 **Price —** ฿฿฿<br>
 **Good to know —** Arrive before sunset for a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
-**Getting there —** Directly on Hin Kong Beach, next to Romanzo Tropicale. [View on map ↗](https://www.google.com/maps/search/?api=1&query=L%27Alcove+15+Hin+Kong+Beach%2C+Ko+Pha-ngan+84280)
+**Getting there —** Directly on Hin Kong Beach, next to Romanzo Tropicale. [View on map ↗](https://maps.app.goo.gl/1YzdW6KWDJVomPjX8)
 
 #### Kikekla Bar & Restaurant
 

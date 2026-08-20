@@ -97,7 +97,7 @@ Long breakfasts are close to a way of life here, and SAGE leans right into them.
 **Why we love it —** One of the island's best all-day breakfasts, with good coffee and a sea view.<br>
 **Best for —** Breakfast · Brunch · Sea views<br>
 **Price —** ฿฿<br>
-**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://www.google.com/maps/search/?api=1&query=SAGE+Breakfast+%26+More+128+Moo+1%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
+**Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://maps.app.goo.gl/oWYRpPScSTNEep53A)
 
 #### Mimi's Café
 
@@ -204,7 +204,7 @@ Tucked into the greenery of Madua Wan, Swiss Farmacy is the kind of place that q
 **Why we love it —** Wholesome homemade food in one of the island's most peaceful settings.<br>
 **Best for —** Healthy brunch · Homemade food · Families<br>
 **Price —** ฿฿<br>
-**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://maps.app.goo.gl/GiaEd6CVm2mLZMGC7)
+**Getting there —** In Madua Wan, surrounded by jungle in the heart of the island. [View on map ↗](https://maps.app.goo.gl/UrNuuN5bgvmMeosf9)
 
 #### Seasalt & Sage
 
@@ -213,7 +213,7 @@ Fresh, wholesome food in a relaxed room — smoothie bowls, generous breakfasts,
 **Why we love it —** Relaxed brunches, good coffee and fresh, healthy dishes.<br>
 **Best for —** Healthy breakfast · Brunch · Specialty coffee<br>
 **Price —** ฿฿<br>
-**Getting there —** On the Ban Tai beachfront (also a Sri Thanu branch). [View on map ↗](https://www.google.com/maps/search/?api=1&query=Seasalt+%26+Sage+11+Moo+2%2C+Ban+Tai%2C+Ko+Pha-ngan+84280)
+**Getting there —** On the Ban Tai beachfront (also a Sri Thanu branch). [View on map ↗](https://maps.app.goo.gl/EibCGnJn2euAtMtUA)
 
 ## Bakeries & Artisan Pastries in Koh Phangan
 
