@@ -1,5 +1,5 @@
 ---
-title: 'Best Cafés in Koh Phangan: Specialty Coffee & Island Café Culture'
+title: 'Best Cafés in Koh Phangan (2026): Specialty Coffee & Island Café Culture'
 seo_title: Best Cafés in Koh Phangan | Specialty Coffee (2026)
 description: The best cafés in Koh Phangan for specialty coffee, artisan pastries and slow mornings — from Sri Thanu and Hin Kong to Haad Yao, Baan Tai and Chaloklum.
 date: 2026-08-18

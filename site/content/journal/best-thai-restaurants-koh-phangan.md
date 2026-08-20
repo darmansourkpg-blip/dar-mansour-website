@@ -1,5 +1,5 @@
 ---
-title: 'Best Thai Restaurants in Koh Phangan'
+title: 'Best Thai Restaurants in Koh Phangan (2026)'
 seo_title: 'Best Thai Restaurants in Koh Phangan | Authentic Guide 2026'
 description: "Discover the best Thai restaurants in Koh Phangan, from authentic family kitchens and regional Thai cuisine to contemporary Thai dining and local favourites."
 date: 2026-07-16

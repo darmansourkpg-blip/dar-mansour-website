@@ -1,5 +1,5 @@
 ---
-title: Where to Eat in Hin Kong
+title: 'Where to Eat in Hin Kong (2026)'
 date: 2026-07-15
 author: The Dar Mansour Journal
 category: koh-phangan-guide

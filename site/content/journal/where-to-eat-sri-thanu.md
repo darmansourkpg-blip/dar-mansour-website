@@ -1,5 +1,5 @@
 ---
-title: 'Where to Eat in Sri Thanu'
+title: 'Where to Eat in Sri Thanu (2026)'
 seo_title: 'Where to Eat in Sri Thanu | The Local Food Guide (2026)'
 description: "Discover where to eat in Sri Thanu, Koh Phangan, with authentic Thai restaurants, healthy cafés, specialty coffee, sunset bars and local favourites."
 date: 2026-07-14
