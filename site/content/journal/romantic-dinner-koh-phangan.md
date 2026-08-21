@@ -79,7 +79,7 @@ This is our own table, so take it as an honest invitation rather than a sales pi
 **Good to know —** Dinner only; reservation recommended. We arrange [private Moroccan dinners](private-dining-koh-phangan.html) for special occasions, and slow-cooked mains are best [pre-ordered ahead](moroccan-restaurant-reservation-koh-phangan.html).<br>
 **Location —** West Coast · Hin Kong Road, between Hin Kong and Sri Thanu. <a href="https://www.google.com/maps/search/?api=1&amp;query=Dar+Mansour+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
-<p class="reserve-note"><strong>Planning a romantic evening at Dar Mansour?</strong> For anniversaries, special occasions or simply dinner for two, reserve your evening in advance — our slow-cooked Moroccan dishes can also be pre-ordered when booking. <a class="textlink" href="https://wa.me/66822767757?text=Hi%20Dar%20Mansour%2C%20I%27d%20like%20to%20reserve%20a%20romantic%20evening%20for%20two." target="_blank" rel="noopener">Reserve Your Evening →</a></p>
+<p class="reserve-note"><strong>Planning a romantic evening at Dar Mansour?</strong> For an anniversary, a special occasion or simply dinner for two, reserve your table and let us prepare your evening with care. <a class="textlink" href="https://wa.me/66822767757?text=Hi%20Dar%20Mansour%2C%20I%27d%20like%20to%20reserve%20a%20romantic%20evening%20for%20two." target="_blank" rel="noopener">Reserve Your Evening →</a></p>
 
 ## Best Chef's Table for Couples
 
