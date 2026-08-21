@@ -114,7 +114,7 @@ Every family has its own recipes, and many of Morocco's most treasured tajines h
 
 ## What Does Tajine Mean in English? Tajine vs Tagine
 
-Both spellings are correct. **What does tajine mean in English?** *Tagine* is the most common English spelling of *tajine* — the two are transliteration variants of the same Moroccan word, not two different things. Both refer to the same tradition: the distinctive clay cooking vessel, with its conical lid, and the slow-cooked dish prepared inside it. *Tajine* is widely used in Morocco and in French-language contexts, while *tagine* is more common in English cookbooks and travel guides.
+Both spellings are correct. **What does tajine mean in English?** *Tagine* is the most common English spelling of *tajine*. Both words refer to the same Moroccan cooking tradition: the distinctive clay cooking vessel with its conical lid, and the slow-cooked dish prepared inside it. *Tajine* is widely used in Morocco and in French-language contexts, while *tagine* is more common in English cookbooks and travel guides.
 
 ## Discover Tajine at Dar Mansour
 
