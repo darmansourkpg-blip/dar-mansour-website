@@ -1,6 +1,6 @@
 ---
 title: "Best Beaches in Koh Phangan (2026): Swimming, Snorkelling, Sunsets & Hidden Bays"
-seo_title: "Best Beaches in Koh Phangan 2026 — The Complete Guide"
+seo_title: 'Best Beaches in Koh Phangan: 20 Local Picks (2026)'
 description: "The best beaches in Koh Phangan: Haad Yao for all-round days, Mae Haad for snorkelling, Hin Kong for sunsets and Bottle Beach for seclusion."
 date: 2026-08-05
 author: The Dar Mansour Journal
@@ -67,7 +67,7 @@ Koh Phangan is home to some of Thailand's most beautiful beaches — but there i
 
 That's why we haven't ranked the island's beaches from one to twenty. Instead, this guide is built around a simple idea: **choose the beach that matches the kind of day you want.**
 
-**Straight to it:** for an all-round beach day go to **Haad Yao**; for swimming, **Thong Nai Pan Noi**; for snorkelling, **Mae Haad**; for sunsets, **Hin Kong**; for families, **Haad Salad**; for couples, **Secret Beach**; and for seclusion, **Bottle Beach**.
+**What are the best beaches in Koh Phangan?** For an all-round beach day, go to **Haad Yao**; for swimming, **Thong Nai Pan Noi**; for snorkelling, **Mae Haad**; for sunsets, **Hin Kong**; for families, **Haad Salad**; for couples, **Secret Beach**; and for seclusion, **Bottle Beach**.
 
 Over the years we've explored every corner of the island, returning to many beaches in different seasons, tides and weather. We've combined that with local knowledge and feedback from residents and long-term visitors. Rather than simply listing beaches, we explain what makes each one distinct, what to expect before you go, and who it suits best — along with nearby restaurants and where to stay, so you can plan a whole day around each one.
 
