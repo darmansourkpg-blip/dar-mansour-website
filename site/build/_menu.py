@@ -96,6 +96,16 @@ MENU = [
         ("Tafarnout Bread", "90", "Authentic Berber bread baked in a handmade clay oven on hot river pebbles. (Per piece.)", ["VEG"]),
      ]),
 
+    ("treats", "Mansour Treats",
+     "Sweet Moroccan endings to share around the table.",
+     "",
+     [
+        ("Selection of Artisanal Pastries — Served with Traditional Mint Tea", "200",
+         "A selection of artisanal Moroccan pastries served with traditional mint tea. • Chebakia: crispy, flower-shaped pastries fried to golden perfection, soaked in honey and sprinkled with sesame seeds. • Gazelle Horns: delicate crescent-shaped pastries filled with a rich almond paste and infused with orange blossom essence. • Sellou: roasted flour mixed with butter, honey, almonds and sesame.", ["VEG","CAF"]),
+        ("Kunnuz Chocolate Fondant — Made to Be Shared, Served with Two Spoons", "220",
+         "A molten chocolate fondant with a crisp almond biscuit base and a luscious praline heart. A melt-in-the-mouth experience.", ["VEG"]),
+     ]),
+
     ("tea", "Tea &amp; Coffee",
      "The Moroccan ritual to close — or accompany — your meal.",
      "",
