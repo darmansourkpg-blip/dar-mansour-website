@@ -17,3 +17,7 @@ __pycache__/
 # Editor
 .vscode/
 .idea/
+.env
+
+# Généré au build puis publié avec le site (référence IndexNow) — pas commité.
+site/indexnow-manifest.json

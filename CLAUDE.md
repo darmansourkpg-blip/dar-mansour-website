@@ -45,7 +45,14 @@ python3 -m http.server 8899
 - **Déploiement automatique** : à chaque push sur `main`, le workflow
   `.github/workflows/deploy-pages.yml` **régénère le site** (`python3 site/build/build.py`) puis
   publie le dossier `site/`. → Pour mettre une modif en ligne : la faire arriver sur `main`.
-- **Après déploiement** : ping **IndexNow** automatique (Bing/Yandex re-crawlent en minutes).
+- **Après déploiement** : **IndexNow différentiel** (Bing/Yandex re-crawlent en minutes).
+  `site/build/indexnow.py` publie un manifeste d'empreintes avec le site, compare la **production**
+  au nouveau build **avant** le déploiement, et ne soumet **après succès** que les URLs
+  réellement ajoutées / modifiées / supprimées (0 changement = 0 appel). L'empreinte exclut la
+  seule valeur `dateModified` du JSON-LD (dérivée de la date de commit du générateur, donc
+  volatile) ; title, meta description, canonical, reste du schema, H1, contenu et images comptent.
+  Échec = warning visible dans le job avec les URLs concernées ; rattrapage :
+  `python3 site/build/indexnow.py diff --force` puis `submit`. Test à sec : `--dry-run`.
 - **RÈGLE — demander la réindexation après CHAQUE modif d'article/page** : une fois la modif en ligne
   sur `main`, toujours **fournir au client la liste des URLs modifiées** à soumettre manuellement :
   - **Google Search Console** → « Inspect any URL » → **Request Indexing** (quota ~10-15/jour).

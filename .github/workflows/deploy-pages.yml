@@ -46,6 +46,17 @@ jobs:
       - name: Build site
         run: python3 site/build/build.py
 
+      # IndexNow (1/2) — AVANT le déploiement : compare le manifeste d'empreintes
+      # de la PRODUCTION à celui du nouveau build, et écrit la liste des URLs
+      # ajoutées / modifiées / supprimées. Lire le manifeste distant après le
+      # déploiement le comparerait au nouveau manifeste déjà publié (résultat
+      # non déterministe selon le CDN) : l'ordre est donc essentiel.
+      # Le manifeste écrit ici part avec l'artifact et servira de référence au
+      # déploiement suivant.
+      - name: IndexNow — compute changed URLs (before deploy)
+        continue-on-error: true
+        run: python3 site/build/indexnow.py diff --changes "$RUNNER_TEMP/indexnow-changes.json"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -73,14 +84,12 @@ jobs:
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
 
-      # IndexNow: after a successful deploy, notify Bing/Yandex of the current
-      # URLs so they re-crawl within minutes. Non-fatal (never fails the job).
-      - name: Ping IndexNow
+      # IndexNow (2/2) — uniquement après un déploiement réussi, donc quand les
+      # pages sont réellement en ligne. Soumet la liste calculée plus haut :
+      # 0 URL changée = 0 appel. Non bloquant, mais jamais silencieux — un échec
+      # produit un warning visible avec les URLs concernées (rattrapage manuel :
+      # `indexnow.py diff --force` puis `submit`).
+      - name: IndexNow — submit changed URLs (after deploy)
         if: steps.deployment.outcome == 'success' || steps.deployment_retry.outcome == 'success'
-        run: |
-          KEY=d560aac2461f36d3a26e14cd4bd4f84f
-          URLS=$(grep -oE '<loc>[^<]+</loc>' site/sitemap.xml | sed -E 's#</?loc>##g' | awk '{printf "\"%s\",",$0}' | sed 's/,$//')
-          curl -sS -m 30 -X POST "https://api.indexnow.org/indexnow" \
-            -H "Content-Type: application/json" \
-            -d "{\"host\":\"darmansour.com\",\"key\":\"$KEY\",\"keyLocation\":\"https://darmansour.com/$KEY.txt\",\"urlList\":[$URLS]}" \
-            && echo "IndexNow ping sent" || echo "IndexNow ping failed (non-fatal)"
+        continue-on-error: true
+        run: python3 site/build/indexnow.py submit --changes "$RUNNER_TEMP/indexnow-changes.json"
