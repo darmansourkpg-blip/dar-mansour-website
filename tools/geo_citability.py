@@ -410,7 +410,7 @@ def classify_http(status: int, body: str) -> None:
 
 
 def http_post(url: str, headers: dict, payload: dict, cfg: dict,
-              budget: CallBudget, kind: str) -> dict:
+              budget: CallBudget, kind: str, capture: dict | None = None) -> dict:
     import requests
     budget.spend(kind)
     delay = 4
@@ -424,6 +424,10 @@ def http_post(url: str, headers: dict, payload: dict, cfg: dict,
             time.sleep(delay)
             delay *= 2
             continue
+        if capture is not None:
+            capture["status"] = r.status_code
+            capture["headers"] = {k: v for k, v in r.headers.items()}
+            capture["attempts"] = attempt
         if r.status_code == 200:
             return r.json()
         body = redact(r.text)
@@ -438,29 +442,39 @@ def http_post(url: str, headers: dict, payload: dict, cfg: dict,
     raise StopRound(f"Echec apres {attempt} tentative(s) — {last}")
 
 
-def serper_search(query: str, cfg: dict, budget: CallBudget) -> dict:
+def serper_payload(query: str, cfg: dict) -> dict:
     payload = {"q": query, "gl": cfg["gl"], "hl": cfg["hl"], "num": cfg["requested_depth"]}
     if cfg.get("location"):
         payload["location"] = cfg["location"]
+    return payload
+
+
+def serper_search(query: str, cfg: dict, budget: CallBudget,
+                  capture: dict | None = None) -> dict:
     headers = {"X-API-KEY": require_key("SERPER_API_KEY"),
                "Content-Type": "application/json"}
-    return http_post(cfg["search_endpoint"], headers, payload, cfg, budget, "search")
+    return http_post(cfg["search_endpoint"], headers, serper_payload(query, cfg),
+                     cfg, budget, "search", capture)
 
 
-def gemini_generate(prompt: str, cfg: dict, budget: CallBudget,
-                    model: str | None = None) -> dict:
-    model = model or cfg["selection_model"]
-    payload = {
+def gemini_payload(prompt: str, cfg: dict) -> dict:
+    return {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": cfg["temperature"],
                              "responseMimeType": "application/json"},
     }
-    # Aucun `tools` : pas de Google Search grounding, jamais. Le corpus vient
-    # exclusivement de notre etape Retrieval.
+
+
+def gemini_generate(prompt: str, cfg: dict, budget: CallBudget,
+                    model: str | None = None, capture: dict | None = None) -> dict:
+    # Aucun `tools` dans la charge utile : pas de Google Search grounding,
+    # jamais. Le corpus vient exclusivement de notre etape Retrieval.
+    model = model or cfg["selection_model"]
     headers = {"x-goog-api-key": require_key("GEMINI_API_KEY"),
                "Content-Type": "application/json"}
     url = f"{GEMINI_ROOT}/{model}:generateContent"
-    return http_post(url, headers, payload, cfg, budget, "generation")
+    return http_post(url, headers, gemini_payload(prompt, cfg), cfg, budget,
+                     "generation", capture)
 
 
 def gemini_text(resp: dict) -> str:
@@ -469,6 +483,14 @@ def gemini_text(resp: dict) -> str:
                          for p in resp["candidates"][0]["content"]["parts"])
     except (KeyError, IndexError):
         return ""
+
+
+QUOTA_HEADER_HINTS = ("credit", "quota", "ratelimit", "rate-limit", "remaining", "limit")
+
+
+def quota_headers(headers: dict) -> dict:
+    return {k: v for k, v in (headers or {}).items()
+            if any(h in k.lower() for h in QUOTA_HEADER_HINTS)}
 
 
 # --------------------------------------------------------------------------
@@ -885,35 +907,108 @@ def cmd_report(args) -> None:
     print(f"\n  XLSX : {xlsx.relative_to(ROOT)}\n  JSON : {js.relative_to(ROOT)}")
 
 
+DIAGNOSTIC_QUERY = "serper gemini preflight connectivity diagnostic"
+
+
 def cmd_check(args) -> None:
+    """Preflight. En mode --live : EXACTEMENT 1 recherche et 1 generation.
+
+    La requete de diagnostic n'appartient pas aux 20 prompts du protocole, et
+    rien n'est ecrit sur disque : M0 reste vierge."""
     cfg = load_config()
     proto = protocol(cfg)
+    print("=" * 72)
     print("PREFLIGHT — GEO Citability")
+    print("=" * 72)
     for env in KEY_ENV:
-        print(f"  {env:<16} : {'presente (jamais affichee)' if os.environ.get(env) else 'ABSENTE'}")
+        value = os.environ.get(env, "")
+        print(f"  {env:<16} : "
+              + (f"presente, {len(value)} caracteres (jamais affichee ni loggee)"
+                 if value else "ABSENTE"))
     print(f"  Provider         : {cfg['search_provider']} | gl={cfg['gl']} hl={cfg['hl']} "
-          f"| depth={cfg['requested_depth']}")
-    print(f"  Modele           : {cfg['selection_model']} (sans Google Search tool)")
+          f"| num={cfg['requested_depth']} | location="
+          + (str(cfg['location']) if cfg.get('location') else "ABSENT"))
+    print(f"  Modele           : {cfg['selection_model']} (aucun Google Search tool)")
     print(f"  Protocol hash    : {proto['protocol_hash'][:16]}")
     print(f"  Raw prive        : {raw_root(cfg, args.round)}")
+
     if not args.live:
         print("\n  Mode hors ligne (defaut) : aucun appel effectue.")
         print("  Pour un test reel (1 recherche + 1 generation) : check --live")
         return
+
+    if DIAGNOSTIC_QUERY in {p["prompt"] for p in load_prompts()}:
+        sys.exit("REFUS : la requete de diagnostic ne doit pas appartenir aux 20 prompts.")
+
+    # Plafond de 1 + 1 : le budget refuse mecaniquement tout appel supplementaire.
     budget = CallBudget(1, 1)
+    sc, gc = {}, {}
+
+    print("\n" + "-" * 72)
+    print("  SERPER — 1 requete de diagnostic (hors des 20 prompts du protocole)")
+    print("-" * 72)
+    payload = serper_payload(DIAGNOSTIC_QUERY, cfg)
+    print(f"  Charge utile envoyee : {json.dumps(payload, ensure_ascii=False)}")
     try:
-        resp = serper_search("test", cfg, budget)
-        organic = resp.get("organic") or []
-        print(f"\n  Serper : OK — {len(organic)} resultat(s) organiques")
-        corpus = build_corpus(organic, cfg)
-        prompt_text, _, _ = load_selection_prompt()
-        filled = (prompt_text.replace("{{QUESTION}}", "test")
-                  .replace("{{SOURCES}}", render_sources(corpus)))
-        g = gemini_generate(filled, cfg, budget)
-        print(f"  Gemini : OK — modele servi : {g.get('modelVersion') or 'non expose'}")
-        print(f"  JSON exploitable : {not parse_selection(gemini_text(g))['malformed']}")
+        resp = serper_search(DIAGNOSTIC_QUERY, cfg, budget, sc)
     except (StopRound, CallBudgetExceeded) as exc:
-        print(f"\n  ECHEC : {redact(str(exc))[:400]}")
+        print(f"  HTTP status          : {sc.get('status', 'aucune reponse')}")
+        print(f"  ARRET IMMEDIAT       : {redact(str(exc))[:400]}")
+        print(f"  Appels consommes     : search={budget.used['search']}, "
+              f"generation={budget.used['generation']} (aucun retry payant)")
+        return
+
+    organic = resp.get("organic") or []
+    print(f"  HTTP status          : {sc.get('status', 200)}")
+    print(f"  Organic results      : {len(organic)} (demandes : {cfg['requested_depth']})")
+    print(f"  gl envoye            : {payload['gl']}   {'OK' if payload['gl'] == 'th' else 'INATTENDU'}")
+    print(f"  hl envoye            : {payload['hl']}   {'OK' if payload['hl'] == 'en' else 'INATTENDU'}")
+    print(f"  location             : {'ABSENT (conforme)' if 'location' not in payload else payload['location']}")
+    print(f"  Appels Serper        : {budget.used['search']} (plafond 1) | "
+          f"retries techniques : {budget.retries['search']}")
+    print(f"  Pagination           : AUCUNE — un seul appel, `page`/`start` jamais envoyes")
+    q = quota_headers(sc.get("headers", {}))
+    print(f"  Quota / credits      : {q if q else 'non expose par l API'}")
+
+    print("\n" + "-" * 72)
+    print("  GEMINI — 1 generation sur le corpus de diagnostic")
+    print("-" * 72)
+    corpus = build_corpus(organic, cfg)
+    prompt_text, sel_version, _ = load_selection_prompt()
+    filled = (prompt_text.replace("{{QUESTION}}", DIAGNOSTIC_QUERY)
+              .replace("{{SOURCES}}", render_sources(corpus)))
+    gpayload = gemini_payload(filled, cfg)
+    print(f"  Cles de la charge utile : {sorted(gpayload)}")
+    print(f"  'tools' present         : {'OUI — ANOMALIE' if 'tools' in gpayload else 'NON (aucun grounding)'}")
+    print(f"  generationConfig        : {json.dumps(gpayload['generationConfig'])}")
+    try:
+        g = gemini_generate(filled, cfg, budget, capture=gc)
+    except (StopRound, CallBudgetExceeded) as exc:
+        print(f"  HTTP status             : {gc.get('status', 'aucune reponse')}")
+        print(f"  ARRET IMMEDIAT          : {redact(str(exc))[:400]}")
+        return
+
+    text = gemini_text(g)
+    parsed = parse_selection(text)
+    meta = g.get("candidates", [{}])[0].get("groundingMetadata")
+    print(f"  HTTP status             : {gc.get('status', 200)}")
+    print(f"  Modele demande          : {cfg['selection_model']}")
+    print(f"  MODELE EXACT SERVI      : {g.get('modelVersion') or 'non expose'}")
+    print(f"  Response ID             : {g.get('responseId') or 'non expose'}")
+    print(f"  groundingMetadata       : {'PRESENT — ANOMALIE' if meta else 'ABSENT (conforme)'}")
+    print(f"  JSON parsable           : {'NON — malformed' if parsed['malformed'] else 'OUI'}")
+    if not parsed["malformed"]:
+        print(f"    cles obtenues         : {sorted(k for k in ('answer', 'recommendations', 'sources_used') if k in parsed)}")
+        print(f"    sources_used          : {parsed['sources_used'][:6]}")
+        print(f"    recommendations       : {len(parsed['recommendations'])}")
+    print(f"  Selection prompt        : v{sel_version}")
+    print(f"  Appels Gemini           : {budget.used['generation']} (plafond 1) | "
+          f"retries techniques : {budget.retries['generation']}")
+
+    print("\n" + "-" * 72)
+    print(f"  TOTAL : {budget.used['search']} recherche(s), {budget.used['generation']} generation(s)")
+    print("  Aucun fichier ecrit — M0 reste vierge, aucun corpus officiel consomme.")
+    print("-" * 72)
 
 
 def main() -> None:
