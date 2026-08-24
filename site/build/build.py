@@ -820,6 +820,19 @@ pages["journal-authors.html"] = L.redirect_page(
 pages["authors/han-pjae-min/index.html"] = L.redirect_page(
     "authors/pjae/", "P'Jae — Dar Mansour Journal")
 
+# Legacy WordPress URLs (from the previous site) that only have a clean 1:1
+# equivalent today — keep them alive for URL continuity via a canonical stub.
+# Only URLs with a real destination are redirected; category/tag/recipe URLs
+# with no equivalent are left as genuine 404s on purpose (no soft-404s).
+pages["our-menu/index.html"] = L.redirect_page(
+    "moroccan-menu-koh-phangan.html", "Menu — Dar Mansour")
+pages["contact-us/index.html"] = L.redirect_page(
+    "contact-dar-mansour-koh-phangan.html", "Contact — Dar Mansour")
+pages["blog/index.html"] = L.redirect_page(
+    "blog.html", "Journal — Dar Mansour")
+pages["moroccan-restaurant-koh-phangan/index.html"] = L.redirect_page(
+    "", "Dar Mansour — Morocco's Kitchen, Koh Phangan")
+
 
 # ============================================================ IMAGE DIMENSIONS
 # Add intrinsic width/height to every <img> that lacks them, by reading the real
