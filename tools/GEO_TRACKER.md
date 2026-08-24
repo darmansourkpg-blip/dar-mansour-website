@@ -19,6 +19,19 @@ l'évolution M0 → M1 → M2 sur un protocole strictement identique.
 - **Convention de position** : rang d'apparition dans la liste des établissements *nommés* de la
   réponse (1 = premier cité). Une mention en prose, hors liste, compte comme **mention sans position**.
 
+## Traçabilité (`check` et rapports)
+`check` affiche explicitement, sans jamais logger la clé : modèle demandé, **modèle exact servi**
+(`modelVersion`), Response ID, succès/échec du grounding, présence et clés de `groundingMetadata`,
+nombre de sources et de requêtes Google, et — en cas de `429` — le **corps d'erreur complet** avec
+les identifiants de quota cités (seul endroit où l'API laisse deviner le tier).
+
+Chaque run archive `model_requested`, `model_version` et `response_id`. Le rapport M0 ouvre sur un
+bloc « Provenance de la mesure » listant la ou les versions exactes utilisées : si Google change de
+build en cours de route, on le voit, et on saura dans 6 mois ce qui a servi à M0.
+
+**Secrets** : la clé transite par l'en-tête `x-goog-api-key`, jamais dans l'URL ; toute sortie passe
+par `redact()` (clé exacte + motif `AIza…`) avant affichage. `.env` est gitignoré.
+
 ## Coût
 Free tier Gemini uniquement. Le script **refuse** tout autre provider et n'utilise que
 `GEMINI_API_KEY`. Aucune dépense ne peut être engagée sans modifier le code.

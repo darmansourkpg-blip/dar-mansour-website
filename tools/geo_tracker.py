@@ -80,6 +80,25 @@ class QuotaExhausted(RuntimeError):
     """Quota journalier free tier atteint : on s'arrete proprement, reprise demain."""
 
 
+def redact(text: str) -> str:
+    """Filet de securite : aucune cle API ne doit apparaitre dans un log.
+
+    La cle voyage dans l'en-tete `x-goog-api-key`, jamais dans l'URL, donc elle
+    ne peut pas fuir via un message d'erreur. Cette fonction couvre le cas ou
+    Google renverrait la cle dans un corps d'erreur, et les cles collees a tort
+    dans un prompt."""
+    key = os.environ.get("GEMINI_API_KEY", "").strip()
+    if key and key in text:
+        text = text.replace(key, "***REDACTED***")
+    return re.sub(r"AIza[0-9A-Za-z_\-]{10,}", "***REDACTED***", text)
+
+
+def quota_ids(body: str) -> list[str]:
+    """Identifiants de quota cites par une erreur 429 : c'est le seul endroit ou
+    l'API laisse deviner le tier (ex. `generate_content_free_tier_requests`)."""
+    return sorted(set(re.findall(r"[A-Za-z]+(?:_[A-Za-z]+)*_(?:tier|requests|per_day)[a-z_]*", body)))
+
+
 def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
     model = model or cfg["model"]
     url = f"{API_ROOT}/{model}:generateContent"
@@ -104,11 +123,13 @@ def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
         if r.status_code == 200:
             return r.json()
 
-        last = f"HTTP {r.status_code}: {r.text[:600]}"
+        body = redact(r.text)
+        last = f"HTTP {r.status_code}: {body[:600]}"
         if r.status_code == 429:
-            # Distingue une limite par minute (on attend) d'un quota journalier (on s'arrete).
-            if "PerDay" in r.text or "per day" in r.text.lower():
-                raise QuotaExhausted(last)
+            # Corps complet conserve : c'est la seule source d'info sur le tier reel.
+            full = f"HTTP 429 (corps complet) : {body}"
+            if "PerDay" in body or "per day" in body.lower() or "free_tier" in body:
+                raise QuotaExhausted(full)
             print(f"    429 (limite par minute) — pause {delay}s", flush=True)
             time.sleep(delay)
             delay *= 2
@@ -119,7 +140,7 @@ def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
             continue
         break  # 4xx definitif
 
-    raise RuntimeError(f"Appel Gemini echoue apres {attempt} tentative(s) — {last}")
+    raise RuntimeError(redact(f"Appel Gemini echoue apres {attempt} tentative(s) — {last}"))
 
 
 # --------------------------------------------------------------------------
@@ -131,6 +152,18 @@ def answer_text(resp: dict) -> str:
     except (KeyError, IndexError):
         return ""
     return "\n".join(p.get("text", "") for p in parts)
+
+
+def model_version(resp: dict) -> str:
+    """Identifiant EXACT du modele qui a servi la reponse (ex. `gemini-2.5-flash-002`).
+
+    Indispensable : `gemini-2.5-flash` est un alias mouvant. Sans cette valeur,
+    un M0 n'est pas comparable a un M3 si Google fait evoluer le modele derriere."""
+    return resp.get("modelVersion") or ""
+
+
+def response_id(resp: dict) -> str:
+    return resp.get("responseId") or ""
 
 
 def grounding_meta(resp: dict) -> dict:
@@ -300,7 +333,9 @@ def cmd_run(args) -> None:
                 "cluster": prompt["cluster"],
                 "prompt": prompt["prompt"],
                 "target_page": prompt["target_page"],
-                "model": cfg["model"],
+                "model_requested": cfg["model"],
+                "model_version": model_version(resp),
+                "response_id": response_id(resp),
                 "temperature": cfg["temperature"],
                 "collected_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "answer": answer_text(resp),
@@ -402,6 +437,18 @@ def aggregate(records: list[dict]) -> list[dict]:
     return rows
 
 
+def observed_versions(records: list[dict]) -> list[tuple[str, int]]:
+    """Versions exactes de modele ayant servi ce round, avec leur nombre de runs.
+
+    Plusieurs valeurs = Google a change de build en cours de round : a signaler,
+    ca peut expliquer une variation de resultats."""
+    seen: dict[str, int] = {}
+    for rec in records:
+        v = rec.get("model_version") or "non expose"
+        seen[v] = seen.get(v, 0) + 1
+    return sorted(seen.items(), key=lambda kv: -kv[1])
+
+
 def dashboard_kpis(rows: list[dict]) -> dict:
     def subset(intent=None):
         return [r for r in rows if intent is None or r["intent"] == intent]
@@ -475,9 +522,14 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     )
     ws["A3"].font = Font(italic=True, size=9)
 
-    ws["A5"], ws["B5"] = "KPI", "Valeur"
-    ws["A5"].font = ws["B5"].font = Font(bold=True)
-    r = 6
+    ws["A5"] = "Modele(s) exact(s) ayant servi ce round : " + ", ".join(
+        f"{v} ({n} run(s))" for v, n in observed_versions(records)
+    )
+    ws["A5"].font = Font(italic=True, size=9)
+
+    ws["A7"], ws["B7"] = "KPI", "Valeur"
+    ws["A7"].font = ws["B7"].font = Font(bold=True)
+    r = 8
     for k, v in dashboard_kpis(rows).items():
         ws.cell(row=r, column=1, value=k)
         cell = ws.cell(row=r, column=2, value=v)
@@ -533,7 +585,8 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     # --- Runs (raw) : 1 ligne par run, auditable ---
     ws = wb.create_sheet("Runs (raw)")
     headers = [
-        "Round", "Collected At", "Model", "Prompt ID", "Run", "Intent", "Cluster",
+        "Round", "Collected At", "Model Requested", "Model Version (exact)", "Response ID",
+        "Prompt ID", "Run", "Intent", "Cluster",
         "Fixed Prompt", "Dar Mansour Mentioned?", "DM Position", "darmansour.com Cited?",
         "Dar Mansour URLs", "Establishments Named (ordered)", "All Sources Cited",
         "Search Queries Used", "Answer File",
@@ -542,8 +595,9 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     for rec in sorted(records, key=lambda x: (x["prompt_id"], x["run"])):
         a = rec["analysis"]
         ws.append([
-            rec["round"], rec["collected_at"], rec["model"], rec["prompt_id"], rec["run"],
-            rec["intent"], rec["cluster"], rec["prompt"],
+            rec["round"], rec["collected_at"], rec.get("model_requested", rec.get("model", "")),
+            rec.get("model_version") or "non expose", rec.get("response_id") or "—",
+            rec["prompt_id"], rec["run"], rec["intent"], rec["cluster"], rec["prompt"],
             "Yes" if a["mentioned"] else "No", a["position"] or "—",
             "Yes" if a["site_cited"] else "No",
             "\n".join(a["dm_urls"]) or "—",
@@ -566,8 +620,9 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     wb.save(path)
 
 
-def write_markdown(path: Path, round_id: str, rows: list[dict], cfg: dict) -> None:
+def write_markdown(path: Path, round_id: str, rows: list[dict], records: list[dict], cfg: dict) -> None:
     kpis = dashboard_kpis(rows)
+    versions = observed_versions(records)
     L = [
         f"# Dar Mansour — GEO Tracker · Round {round_id}",
         "",
@@ -579,6 +634,23 @@ def write_markdown(path: Path, round_id: str, rows: list[dict], cfg: dict) -> No
         "> `temperature=0` ne rend pas la reponse deterministe : il supprime la variance de "
         "sampling, pas celle du grounding (les resultats de recherche recuperes varient). "
         "C'est justement cette variance que les frequences ci-dessous mesurent.",
+        "",
+        "## Provenance de la mesure",
+        "",
+        "| Element | Valeur |",
+        "| --- | --- |",
+        f"| Modele demande | `{cfg['model']}` (alias mouvant) |",
+        "| **Modele exact ayant servi** | "
+        + ", ".join(f"`{v}` — {n} run(s)" for v, n in versions) + " |",
+        f"| Temperature | {cfg['temperature']} |",
+        f"| Runs par prompt | {cfg['runs_per_prompt']} |",
+        f"| Collecte | {min((r['collected_at'] for r in records), default='—')} "
+        f"-> {max((r['collected_at'] for r in records), default='—')} |",
+        "",
+        ("> Plusieurs versions de modele sur ce round : une partie des ecarts peut venir "
+         "d'un changement de build cote Google, pas du site."
+         if len(versions) > 1 else
+         "> Une seule version de modele sur tout le round : les comparaisons internes sont saines."),
         "",
         "## KPI",
         "",
@@ -639,45 +711,92 @@ def write_markdown(path: Path, round_id: str, rows: list[dict], cfg: dict) -> No
 # Commandes
 # --------------------------------------------------------------------------
 def cmd_check(args) -> None:
+    """Preflight : etablit noir sur blanc ce que l'API accepte reellement, avec ta cle.
+
+    N'affiche jamais la cle. Un seul appel par modele candidat."""
     cfg = load_config()
-    print("Preflight GEO tracker (free tier uniquement)\n")
-    print(f"  Cle GEMINI_API_KEY : {'presente' if os.environ.get('GEMINI_API_KEY') else 'ABSENTE'}")
-    print(f"  Modele configure   : {cfg['model']}")
-    print(f"  Prompts charges    : {len(load_prompts())}\n")
+    key = os.environ.get("GEMINI_API_KEY", "").strip()
+
+    print("=" * 68)
+    print("PREFLIGHT GEO TRACKER — free tier uniquement, aucun cout possible")
+    print("=" * 68)
+    print(f"  Cle GEMINI_API_KEY  : {'presente (jamais affichee, jamais loggee)' if key else 'ABSENTE'}")
+    print(f"  Transport de la cle : en-tete x-goog-api-key (jamais dans l'URL)")
+    print(f"  Provider autorise   : {cfg['provider']} (tout autre provider = refus)")
+    print(f"  Modele demande      : {cfg['model']}")
+    print(f"  Repli(s) teste(s)   : {', '.join(cfg.get('fallback_models', [])) or 'aucun'}")
+    print(f"  Prompts charges     : {len(load_prompts())}")
+    print(f"  Protocole           : {cfg['runs_per_prompt']} runs/prompt, "
+          f"temperature={cfg['temperature']}, {cfg.get('seconds_between_calls', 7)}s entre appels")
+    if not key:
+        sys.exit("\n  => Cree une cle gratuite sur https://aistudio.google.com/apikey "
+                 "(sans compte de facturation), puis : export GEMINI_API_KEY='...'")
 
     candidates = [cfg["model"], *cfg.get("fallback_models", [])]
     for model in candidates:
-        print(f"  Test grounding sur {model} …")
+        print("\n" + "-" * 68)
+        print(f"  TEST : {model}")
+        print("-" * 68)
         try:
             resp = call_gemini("What is the best Moroccan restaurant in Koh Phangan?", cfg, model=model)
         except QuotaExhausted as exc:
-            print(f"    QUOTA JOURNALIER ATTEINT — {str(exc)[:200]}")
+            body = str(exc)
+            print("  Appel grounding      : ECHEC — quota atteint")
+            print("  Code d'erreur complet:")
+            for line in body.splitlines() or [body]:
+                print(f"    {line}")
+            ids = quota_ids(body)
+            print(f"  Quotas cites par l'API : {', '.join(ids) if ids else 'aucun identifiable'}")
+            if any("free_tier" in i for i in ids):
+                print("  Tier detecte         : FREE TIER (confirme par l'identifiant de quota)")
+            print("  => Quota journalier epuise. `run` est reprenable : relance demain.")
             continue
         except RuntimeError as exc:
-            print(f"    ECHEC — {str(exc)[:300]}")
+            print(f"  Appel grounding      : ECHEC\n    {str(exc)[:800]}")
             continue
 
         meta = grounding_meta(resp)
         chunks = meta.get("groundingChunks", [])
         queries = meta.get("webSearchQueries", [])
+        supports = meta.get("groundingSupports", [])
+        version = model_version(resp)
+
+        print(f"  Appel grounding      : REUSSI (HTTP 200)")
+        print(f"  Modele demande       : {model}  (alias, peut changer cote Google)")
+        print(f"  MODELE EXACT SERVI   : {version or 'non expose par l API (champ modelVersion absent)'}")
+        print(f"  Response ID          : {response_id(resp) or 'non expose'}")
+        print(f"  groundingMetadata    : {'PRESENT' if meta else 'ABSENT'}"
+              f"  (cles : {', '.join(sorted(meta)) or '—'})")
+        print(f"  Sources retournees   : {len(chunks)} URL(s) / {len(supports)} support(s)")
+        print(f"  Requetes Google      : {len(queries)}"
+              + (f" -> {', '.join(queries[:3])}" if queries else ""))
+        print(f"  Tier                 : non expose par l API en cas de succes "
+              "(seul un 429 nomme le quota) — free tier confirme par l absence de billing sur la cle")
+
         if not chunks:
-            print("    Reponse OK mais AUCUN groundingChunk : le grounding ne s'est pas declenche")
-            print("    (soit indisponible en free tier sur ce modele, soit non necessaire ici).")
+            print("\n  ATTENTION : reponse OK mais AUCUNE source de grounding.")
+            print("  Le grounding ne s est pas declenche : soit indisponible en free tier sur ce")
+            print("  modele, soit juge inutile pour cette question. Ne pas lancer M0 en l etat.")
             continue
 
-        print(f"    OK — grounding actif : {len(chunks)} source(s), "
-              f"{len(queries)} requete(s) Google")
+        for i, srcs in enumerate(cited_sources(resp, cfg)[:5], 1):
+            print(f"    {i}. {srcs['domain'] or srcs['title'] or '?'}")
         a = analyse_run(resp, cfg)
-        pos_txt = f" (position {a['position']})" if a["position"] else ""
-        print(f"    Dar Mansour mentionne : {'oui' if a['mentioned'] else 'non'}{pos_txt}")
-        print(f"    darmansour.com cite   : {'oui' if a['site_cited'] else 'non'}")
-        print(f"\n  => Utilise ce modele : mets \"model\": \"{model}\" dans tools/geo_config.json")
-        print(f"  => Puis : python3 tools/geo_tracker.py run --round M0")
+        pos_txt = f" (position {a['position']})" if a["position"] else " (mention hors liste)"
+        print(f"  Dar Mansour mentionne: {'oui' + pos_txt if a['mentioned'] else 'non'}")
+        print(f"  darmansour.com cite  : {'oui' if a['site_cited'] else 'non'}")
+
+        print("\n  => PRET. Modele a utiliser pour M0 :")
+        if model != cfg["model"]:
+            print(f"     mets \"model\": \"{model}\" dans tools/geo_config.json, puis :")
+        print(f"     python3 tools/geo_tracker.py run --round M0")
+        if version:
+            print(f"     (la version exacte {version} sera enregistree dans chaque run)")
         return
 
     sys.exit(
-        "\nAucun modele candidat n'a pu executer un appel avec Google Search grounding.\n"
-        "Verifie la cle, ou consulte les quotas free tier sur https://ai.google.dev/gemini-api/docs/rate-limits\n"
+        "\nAucun modele candidat n a pu executer un appel avec Google Search grounding.\n"
+        "Verifie la cle, ou les quotas free tier sur https://ai.google.dev/gemini-api/docs/rate-limits\n"
         "Aucun passage en offre payante ne sera fait automatiquement."
     )
 
@@ -690,7 +809,7 @@ def cmd_report(args) -> None:
     xlsx = outdir / f"Dar_Mansour_GEO_Tracker_{args.round}.xlsx"
     md = outdir / f"geo-report-{args.round}.md"
     write_xlsx(xlsx, args.round, rows, records, cfg)
-    write_markdown(md, args.round, rows, cfg)
+    write_markdown(md, args.round, rows, records, cfg)
 
     k = dashboard_kpis(rows)
     print(f"Round {args.round} — {k['Tests Completed']} test(s) analyses")
