@@ -29,8 +29,23 @@ Chaque run archive `model_requested`, `model_version` et `response_id`. Le rappo
 bloc « Provenance de la mesure » listant la ou les versions exactes utilisées : si Google change de
 build en cours de route, on le voit, et on saura dans 6 mois ce qui a servi à M0.
 
-**Secrets** : la clé transite par l'en-tête `x-goog-api-key`, jamais dans l'URL ; toute sortie passe
-par `redact()` (clé exacte + motif `AIza…`) avant affichage. `.env` est gitignoré.
+## Authentification — clés `AIza` et clés `AQ.`
+Google migre les clés AI Studio du format Standard `AIza…` vers les **auth keys `AQ.…`**. Le script
+**n'inspecte ni ne valide aucun format de clé** : elle est transmise telle quelle, et c'est le
+serveur qui tranche.
+
+`auth_mode` dans `tools/geo_config.json` :
+| valeur | transport |
+| --- | --- |
+| `auto` (défaut) | essaie `x-goog-api-key`, puis `Authorization: Bearer`, puis `?key=` |
+| `header` / `bearer` / `query` | force un transport unique |
+
+En mode `auto`, un `401 ACCESS_TOKEN_TYPE_UNSUPPORTED` sur un transport fait immédiatement passer au
+suivant (pas de retry inutile) ; le transport accepté est mémorisé pour la suite de l'exécution et
+`check` indique lequel figer dans la config.
+
+**Secrets** : toute sortie passe par `redact()` — clé exacte de l'environnement, motif `AIza…`,
+motif `AQ.…`, et tout `?key=` dans une URL. `.env` est gitignoré.
 
 ## Coût
 Free tier Gemini uniquement. Le script **refuse** tout autre provider et n'utilise que

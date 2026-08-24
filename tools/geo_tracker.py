@@ -76,6 +76,46 @@ def load_prompts() -> list[dict]:
 # --------------------------------------------------------------------------
 # Appel Gemini + Google Search grounding
 # --------------------------------------------------------------------------
+AUTH_MODES = ("header", "bearer", "query")
+AUTH_LABEL = {
+    "header": "x-goog-api-key (transport historique, cles AIza)",
+    "bearer": "Authorization: Bearer (attendu par les nouvelles auth keys AQ.)",
+    "query":  "?key= dans l URL (dernier recours ; la cle est masquee dans tout log)",
+}
+# Mode ayant fonctionne pendant cette execution : evite de re-tester a chaque appel.
+_WORKING_AUTH: str | None = None
+
+
+def auth_transport(mode: str, key: str) -> tuple[dict, dict]:
+    """Retourne (headers, params) pour un mode d'authentification donne.
+
+    Aucun format de cle n'est valide ni rejete : `AIza...` comme `AQ....` sont
+    transmises telles quelles. Le format de la cle ne determine pas le transport
+    — c'est la reponse du serveur qui tranche."""
+    headers = {"Content-Type": "application/json"}
+    params: dict = {}
+    if mode == "header":
+        headers["x-goog-api-key"] = key
+    elif mode == "bearer":
+        headers["Authorization"] = f"Bearer {key}"
+    elif mode == "query":
+        params["key"] = key
+    return headers, params
+
+
+def is_auth_type_error(body: str) -> bool:
+    """401 signifiant \"ce type de jeton n est pas accepte sur ce transport\"."""
+    return any(
+        marker in body
+        for marker in ("ACCESS_TOKEN_TYPE_UNSUPPORTED", "Expected OAuth 2 access token",
+                       "UNAUTHENTICATED")
+    )
+
+
+class AuthUnsupported(RuntimeError):
+    """Aucun transport d authentification n a ete accepte pour cette cle."""
+
+
 class QuotaExhausted(RuntimeError):
     """Quota journalier free tier atteint : on s'arrete proprement, reprise demain."""
 
@@ -90,7 +130,11 @@ def redact(text: str) -> str:
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if key and key in text:
         text = text.replace(key, "***REDACTED***")
-    return re.sub(r"AIza[0-9A-Za-z_\-]{10,}", "***REDACTED***", text)
+    # Anciennes cles Standard (AIza...) ET nouvelles auth keys (AQ....), y compris
+    # une cle qui ne serait pas celle de l'environnement (URL, log tiers).
+    text = re.sub(r"AIza[0-9A-Za-z_\-]{10,}", "***REDACTED***", text)
+    text = re.sub(r"AQ\.[0-9A-Za-z_\-.]{10,}", "***REDACTED***", text)
+    return re.sub(r"([?&]key=)[^&\s\"']+", r"\1***REDACTED***", text)
 
 
 def quota_ids(body: str) -> list[str]:
@@ -100,22 +144,59 @@ def quota_ids(body: str) -> list[str]:
 
 
 def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
+    """Appelle Gemini avec Google Search grounding.
+
+    Essaie les transports d authentification dans l ordre jusqu a ce que l un
+    soit accepte (`auth_mode: "auto"`), ou force celui de la config. Le format
+    de la cle n est jamais inspecte : c est le serveur qui decide."""
+    global _WORKING_AUTH
     model = model or cfg["model"]
+    key = api_key()
     url = f"{API_ROOT}/{model}:generateContent"
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "tools": [{"google_search": {}}],
         "generationConfig": {"temperature": cfg.get("temperature", 0)},
     }
-    headers = {"x-goog-api-key": api_key(), "Content-Type": "application/json"}
 
+    configured = cfg.get("auth_mode", "auto")
+    if configured != "auto":
+        modes = [configured]
+    elif _WORKING_AUTH:
+        modes = [_WORKING_AUTH]
+    else:
+        modes = list(AUTH_MODES)
+
+    auth_failures: list[str] = []
+    for mode in modes:
+        headers, params = auth_transport(mode, key)
+        try:
+            resp = _post_with_retry(url, headers, params, payload, cfg)
+        except AuthUnsupported as exc:
+            auth_failures.append(f"{mode}: {exc}")
+            continue
+        if _WORKING_AUTH != mode:
+            _WORKING_AUTH = mode
+        return resp
+
+    raise AuthUnsupported(
+        "Aucun transport d authentification accepte.\n    "
+        + "\n    ".join(auth_failures)
+    )
+
+
+def working_auth_mode() -> str | None:
+    return _WORKING_AUTH
+
+
+def _post_with_retry(url: str, headers: dict, params: dict, payload: dict, cfg: dict) -> dict:
     delay = 5
     last = None
     for attempt in range(1, cfg.get("max_retries", 4) + 1):
         try:
-            r = requests.post(url, headers=headers, json=payload, timeout=120)
+            r = requests.post(url, headers=headers, params=params, json=payload, timeout=120)
         except requests.RequestException as exc:  # reseau
-            last = str(exc)
+            last = redact(str(exc))
             time.sleep(delay)
             delay *= 2
             continue
@@ -125,8 +206,14 @@ def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
 
         body = redact(r.text)
         last = f"HTTP {r.status_code}: {body[:600]}"
+
+        if r.status_code in (401, 403) and is_auth_type_error(body):
+            # Ce transport n est pas accepte pour ce type de cle : inutile de reessayer,
+            # on laisse call_gemini tenter le suivant.
+            raise AuthUnsupported(f"HTTP {r.status_code} — {body[:400]}")
+
         if r.status_code == 429:
-            # Corps complet conserve : c'est la seule source d'info sur le tier reel.
+            # Corps complet conserve : c est la seule source d info sur le tier reel.
             full = f"HTTP 429 (corps complet) : {body}"
             if "PerDay" in body or "per day" in body.lower() or "free_tier" in body:
                 raise QuotaExhausted(full)
@@ -360,6 +447,11 @@ def cmd_run(args) -> None:
             "  Rien n'est perdu : relance la meme commande demain, "
             "elle reprend exactement ou elle s'est arretee."
         )
+        return
+    except AuthUnsupported as exc:
+        print(f"\nAuthentification refusee par l API apres {done} test(s) — arret.")
+        print(f"  {redact(str(exc))[:500]}")
+        print("  Lance `python3 tools/geo_tracker.py check` pour le diagnostic complet.")
         return
     except KeyboardInterrupt:
         print(f"\nInterrompu apres {done} test(s) — reprise possible avec la meme commande.")
@@ -721,7 +813,15 @@ def cmd_check(args) -> None:
     print("PREFLIGHT GEO TRACKER — free tier uniquement, aucun cout possible")
     print("=" * 68)
     print(f"  Cle GEMINI_API_KEY  : {'presente (jamais affichee, jamais loggee)' if key else 'ABSENTE'}")
-    print(f"  Transport de la cle : en-tete x-goog-api-key (jamais dans l'URL)")
+    if key:
+        family = ("auth key nouvelle generation (prefixe AQ.)" if key.startswith("AQ.")
+                  else "cle Standard historique (prefixe AIza)" if key.startswith("AIza")
+                  else "format non reconnu")
+        print(f"  Type de cle detecte : {family} — {len(key)} caracteres")
+        print(f"                        (aucun format n est rejete : le serveur tranche)")
+    print(f"  Mode d auth         : {cfg.get('auth_mode', 'auto')}"
+          + (" (essaie x-goog-api-key, puis Bearer, puis ?key=)"
+             if cfg.get("auth_mode", "auto") == "auto" else ""))
     print(f"  Provider autorise   : {cfg['provider']} (tout autre provider = refus)")
     print(f"  Modele demande      : {cfg['model']}")
     print(f"  Repli(s) teste(s)   : {', '.join(cfg.get('fallback_models', [])) or 'aucun'}")
@@ -751,8 +851,21 @@ def cmd_check(args) -> None:
                 print("  Tier detecte         : FREE TIER (confirme par l'identifiant de quota)")
             print("  => Quota journalier epuise. `run` est reprenable : relance demain.")
             continue
+        except AuthUnsupported as exc:
+            print("  Authentification     : REFUSEE sur tous les transports testes")
+            print("  Code d erreur complet:")
+            for line in str(exc).splitlines():
+                print(f"    {redact(line)}")
+            print()
+            print("  Diagnostic : erreur cote Google, PAS une erreur du script.")
+            print("  `ACCESS_TOKEN_TYPE_UNSUPPORTED` = la passerelle traite la cle comme un")
+            print("  jeton OAuth2 et refuse son type. C est un incident connu et non resolu")
+            print("  sur une partie des comptes dont AI Studio n emet que des auth keys AQ.")
+            print("  Voir : https://discuss.ai.google.dev/ (recherche ACCESS_TOKEN_TYPE_UNSUPPORTED)")
+            print("  Aucune action possible cote code : il faut une cle acceptee par l API.")
+            continue
         except RuntimeError as exc:
-            print(f"  Appel grounding      : ECHEC\n    {str(exc)[:800]}")
+            print(f"  Appel grounding      : ECHEC\n    {redact(str(exc))[:800]}")
             continue
 
         meta = grounding_meta(resp)
@@ -762,6 +875,8 @@ def cmd_check(args) -> None:
         version = model_version(resp)
 
         print(f"  Appel grounding      : REUSSI (HTTP 200)")
+        mode = working_auth_mode() or cfg.get("auth_mode", "auto")
+        print(f"  Transport accepte    : {AUTH_LABEL.get(mode, mode)}")
         print(f"  Modele demande       : {model}  (alias, peut changer cote Google)")
         print(f"  MODELE EXACT SERVI   : {version or 'non expose par l API (champ modelVersion absent)'}")
         print(f"  Response ID          : {response_id(resp) or 'non expose'}")
@@ -788,7 +903,9 @@ def cmd_check(args) -> None:
 
         print("\n  => PRET. Modele a utiliser pour M0 :")
         if model != cfg["model"]:
-            print(f"     mets \"model\": \"{model}\" dans tools/geo_config.json, puis :")
+            print(f"     mets \"model\": \"{model}\" dans tools/geo_config.json")
+        if working_auth_mode() and cfg.get("auth_mode") == "auto":
+            print(f"     mets \"auth_mode\": \"{working_auth_mode()}\" pour figer le transport, puis :")
         print(f"     python3 tools/geo_tracker.py run --round M0")
         if version:
             print(f"     (la version exacte {version} sera enregistree dans chaque run)")
