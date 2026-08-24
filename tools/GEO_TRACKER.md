@@ -51,12 +51,27 @@ motif `AQ.…`, et tout `?key=` dans une URL. `.env` est gitignoré.
 Free tier Gemini uniquement. Le script **refuse** tout autre provider et n'utilise que
 `GEMINI_API_KEY`. Aucune dépense ne peut être engagée sans modifier le code.
 
+## Grounding : verrou avant M0
+Le grounding Google Search est une fonctionnalité **potentiellement facturée**. L'outil
+`google_search` n'est donc **jamais envoyé implicitement**, et `run` refuse de démarrer tant que
+`grounding_confirmed_free` est à `false` dans `tools/geo_config.json`.
+
+| étape | commande | ce qui est envoyé |
+| --- | --- | --- |
+| Phase 1 | `check` | aucun outil — confirme seulement l'accès au modèle en free tier |
+| Phase 2 | `check --grounding` | outil `google_search`, en opt-in explicite |
+| M0 | `run --round M0` | bloqué tant que le flag est `false` |
+
+Tout `400/403/429` mentionnant une facturation lève `BillingRequired` : **arrêt immédiat**, sans
+retry et sans repli sur un autre modèle. Aucune bascule silencieuse vers du grounding payant.
+
 ## Utilisation
 ```bash
 export GEMINI_API_KEY='...'          # clé gratuite : https://aistudio.google.com/apikey
 
-python3 tools/geo_tracker.py check           # 1 appel : vérifie clé + grounding actif
-python3 tools/geo_tracker.py run --round M0  # 60 tests (reprenable)
+python3 tools/geo_tracker.py check              # phase 1 : accès modèle, sans grounding
+python3 tools/geo_tracker.py check --grounding  # phase 2 : sonde le grounding (opt-in)
+python3 tools/geo_tracker.py run --round M0     # 60 tests (verrouillé, reprenable)
 python3 tools/geo_tracker.py report --round M0
 ```
 

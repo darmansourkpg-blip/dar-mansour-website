@@ -78,7 +78,7 @@ def load_prompts() -> list[dict]:
 # --------------------------------------------------------------------------
 AUTH_MODES = ("header", "bearer", "query")
 AUTH_LABEL = {
-    "header": "x-goog-api-key (transport historique, cles AIza)",
+    "header": "x-goog-api-key (transport historique)",
     "bearer": "Authorization: Bearer (attendu par les nouvelles auth keys AQ.)",
     "query":  "?key= dans l URL (dernier recours ; la cle est masquee dans tout log)",
 }
@@ -112,6 +112,22 @@ def is_auth_type_error(body: str) -> bool:
     )
 
 
+class BillingRequired(RuntimeError):
+    """L API exige le tier payant. On s arrete NET : jamais de retry, jamais de
+    bascule silencieuse vers du grounding facture."""
+
+
+BILLING_MARKERS = (
+    "billing", "Billing", "PERMISSION_DENIED", "paid tier", "Paid Tier",
+    "requires a billing account", "not available in the free tier",
+    "BILLING_DISABLED", "SERVICE_DISABLED",
+)
+
+
+def is_billing_error(body: str) -> bool:
+    return any(m in body for m in BILLING_MARKERS)
+
+
 class AuthUnsupported(RuntimeError):
     """Aucun transport d authentification n a ete accepte pour cette cle."""
 
@@ -143,7 +159,7 @@ def quota_ids(body: str) -> list[str]:
     return sorted(set(re.findall(r"[A-Za-z]+(?:_[A-Za-z]+)*_(?:tier|requests|per_day)[a-z_]*", body)))
 
 
-def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
+def call_gemini(prompt: str, cfg: dict, model: str | None = None, grounding: bool = True) -> dict:
     """Appelle Gemini avec Google Search grounding.
 
     Essaie les transports d authentification dans l ordre jusqu a ce que l un
@@ -155,9 +171,12 @@ def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
     url = f"{API_ROOT}/{model}:generateContent"
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "tools": [{"google_search": {}}],
         "generationConfig": {"temperature": cfg.get("temperature", 0)},
     }
+    # L outil google_search n est JAMAIS envoye implicitement : le grounding est
+    # une fonctionnalite potentiellement facturee, il doit etre demande.
+    if grounding:
+        payload["tools"] = [{"google_search": {}}]
 
     configured = cfg.get("auth_mode", "auto")
     if configured != "auto":
@@ -172,6 +191,8 @@ def call_gemini(prompt: str, cfg: dict, model: str | None = None) -> dict:
         headers, params = auth_transport(mode, key)
         try:
             resp = _post_with_retry(url, headers, params, payload, cfg)
+        except BillingRequired:
+            raise  # jamais de repli : on remonte immediatement
         except AuthUnsupported as exc:
             auth_failures.append(f"{mode}: {exc}")
             continue
@@ -206,6 +227,12 @@ def _post_with_retry(url: str, headers: dict, params: dict, payload: dict, cfg: 
 
         body = redact(r.text)
         last = f"HTTP {r.status_code}: {body[:600]}"
+
+        if r.status_code in (400, 403, 429) and is_billing_error(body):
+            raise BillingRequired(
+                f"HTTP {r.status_code} — l API exige un compte de facturation.\n"
+                f"    Corps complet : {body[:600]}"
+            )
 
         if r.status_code in (401, 403) and is_auth_type_error(body):
             # Ce transport n est pas accepte pour ce type de cle : inutile de reessayer,
@@ -389,6 +416,16 @@ def run_path(round_id: str, pid: int, run: int) -> Path:
 
 def cmd_run(args) -> None:
     cfg = load_config()
+    if not cfg.get("grounding_confirmed_free"):
+        sys.exit(
+            "REFUS : \"grounding_confirmed_free\" est false dans tools/geo_config.json.\n"
+            "  M0 sans Google Search grounding n aurait aucun sens (aucune source citee),\n"
+            "  et le grounding ne doit pas etre lance tant qu il n est pas etabli qu il est\n"
+            "  gratuit sur ce compte.\n\n"
+            "  1. python3 tools/geo_tracker.py check              (acces modele, sans grounding)\n"
+            "  2. python3 tools/geo_tracker.py check --grounding  (sonde le grounding)\n"
+            "  3. si et seulement si la phase 2 passe sans facturation, mets le flag a true."
+        )
     prompts = load_prompts()
     runs = cfg["runs_per_prompt"]
     outdir = DATA / args.round
@@ -832,13 +869,33 @@ def cmd_check(args) -> None:
         sys.exit("\n  => Cree une cle gratuite sur https://aistudio.google.com/apikey "
                  "(sans compte de facturation), puis : export GEMINI_API_KEY='...'")
 
+    print()
+    if args.grounding:
+        print("  PHASE 2 — sonde Google Search grounding (opt-in explicite)")
+        print("  Objectif : etablir si le grounding est accessible en free tier sur ce compte.")
+        print("  Si l API exige une facturation, le script s arrete NET (aucun appel facture).")
+    else:
+        print("  PHASE 1 — acces au modele SANS Google Search grounding")
+        print("  Objectif : confirmer que le modele repond en free tier. Aucun outil de")
+        print("  recherche n est envoye, donc aucun risque de facturation grounding.")
+        print("  Pour sonder le grounding ensuite : `check --grounding`.")
+
     candidates = [cfg["model"], *cfg.get("fallback_models", [])]
     for model in candidates:
         print("\n" + "-" * 68)
         print(f"  TEST : {model}")
         print("-" * 68)
         try:
-            resp = call_gemini("What is the best Moroccan restaurant in Koh Phangan?", cfg, model=model)
+            resp = call_gemini(
+                "What is the best Moroccan restaurant in Koh Phangan?",
+                cfg, model=model, grounding=args.grounding,
+            )
+        except BillingRequired as exc:
+            print("  Appel                : REFUSE — compte de facturation exige")
+            print(f"    {redact(str(exc))[:700]}")
+            print("\n  ARRET. Aucune bascule vers le tier payant ne sera faite.")
+            print("  Cette fonctionnalite n est pas disponible en free tier sur ce compte.")
+            return
         except QuotaExhausted as exc:
             body = str(exc)
             print("  Appel grounding      : ECHEC — quota atteint")
@@ -874,7 +931,8 @@ def cmd_check(args) -> None:
         supports = meta.get("groundingSupports", [])
         version = model_version(resp)
 
-        print(f"  Appel grounding      : REUSSI (HTTP 200)")
+        print(f"  Appel                : REUSSI (HTTP 200)"
+              + ("  [avec google_search]" if args.grounding else "  [sans outil de recherche]"))
         mode = working_auth_mode() or cfg.get("auth_mode", "auto")
         print(f"  Transport accepte    : {AUTH_LABEL.get(mode, mode)}")
         print(f"  Modele demande       : {model}  (alias, peut changer cote Google)")
@@ -887,6 +945,15 @@ def cmd_check(args) -> None:
               + (f" -> {', '.join(queries[:3])}" if queries else ""))
         print(f"  Tier                 : non expose par l API en cas de succes "
               "(seul un 429 nomme le quota) — free tier confirme par l absence de billing sur la cle")
+
+        if not args.grounding:
+            print("\n  => PHASE 1 OK : le modele est accessible en free tier.")
+            print("     Le grounding n a PAS ete teste (aucun outil envoye).")
+            if model != cfg["model"]:
+                print(f"     Mets \"model\": \"{model}\" dans tools/geo_config.json.")
+            print("     Etape suivante : python3 tools/geo_tracker.py check --grounding")
+            print("     M0 reste bloque tant que \"grounding_confirmed_free\" est false.")
+            return
 
         if not chunks:
             print("\n  ATTENTION : reponse OK mais AUCUNE source de grounding.")
@@ -901,7 +968,10 @@ def cmd_check(args) -> None:
         print(f"  Dar Mansour mentionne: {'oui' + pos_txt if a['mentioned'] else 'non'}")
         print(f"  darmansour.com cite  : {'oui' if a['site_cited'] else 'non'}")
 
-        print("\n  => PRET. Modele a utiliser pour M0 :")
+        print("\n  => PHASE 2 OK : grounding actif SANS facturation sur ce compte.")
+        print("     Passe \"grounding_confirmed_free\": true dans tools/geo_config.json")
+        print("     pour debloquer M0 (verrou volontaire).")
+        print("\n  => Modele a utiliser pour M0 :")
         if model != cfg["model"]:
             print(f"     mets \"model\": \"{model}\" dans tools/geo_config.json")
         if working_auth_mode() and cfg.get("auth_mode") == "auto":
@@ -943,7 +1013,11 @@ def cmd_report(args) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("check", help="preflight : verifie cle, modele et grounding (1 appel)").set_defaults(func=cmd_check)
+    c = sub.add_parser("check", help="preflight : acces modele (defaut) ou sonde grounding")
+    c.add_argument("--grounding", action="store_true",
+                   help="PHASE 2 : envoie l outil google_search pour tester le grounding "
+                        "(opt-in ; arret immediat si l API exige une facturation)")
+    c.set_defaults(func=cmd_check)
     p = sub.add_parser("run", help="execute les tests (reprenable)")
     p.add_argument("--round", required=True, help="identifiant du round, ex. M0")
     p.set_defaults(func=cmd_run)
