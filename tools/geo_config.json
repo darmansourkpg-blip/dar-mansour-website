@@ -18,5 +18,6 @@
   ],
   "resolve_grounding_urls": true,
   "auth_mode": "auto",
-  "grounding_confirmed_free": false
+  "grounding_confirmed_free": false,
+  "mode": "ungrounded"
 }

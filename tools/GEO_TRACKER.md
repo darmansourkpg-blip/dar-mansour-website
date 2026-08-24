@@ -2,10 +2,28 @@
 
 Mesure la visibilité de Dar Mansour dans les réponses IA, de façon **reproductible et gratuite**.
 
-## Ce qu'on mesure exactement
-**Gemini API + Google Search grounding.** Ce n'est **ni** l'application Gemini grand public,
-**ni** les AI Overviews de Google. C'est un indicateur de **tendance** : ce qui compte, c'est
-l'évolution M0 → M1 → M2 sur un protocole strictement identique.
+## Deux modes de mesure
+
+### `ungrounded` (défaut — le seul actif)
+**Gemini API ungrounded visibility benchmark.** Gemini 3.6 Flash répond **sans outil de recherche** :
+on mesure ce que le modèle sait de Dar Mansour **par lui-même**, pas ce qu'il citerait après une
+recherche web. Gratuit, aucun appel facturable possible.
+
+Mesuré : `Mention Frequency` · `Average Position When Mentioned` · `GEO Stability` ·
+`Competitor Frequency`.
+**Non mesuré, et marqué `N/A — no grounding` partout** : citations, URLs de darmansour.com, sources
+externes, requêtes Google. Ces champs ne sont **jamais** remplis comme s'ils avaient été mesurés.
+
+**Comparaisons interdites** : AI Overviews de Google · Gemini avec grounding · application Gemini
+grand public. Ce sont des grandeurs différentes. **Seule comparaison valide** : un autre round du
+même benchmark ungrounded, même modèle, même protocole.
+
+### `grounded` (conservé, verrouillé)
+Gemini + Google Search grounding. **Indisponible en free tier sur ce compte** : la fonctionnalité
+exige un compte de facturation, volontairement non activé. Le code est conservé intact pour plus
+tard ; `resolve_mode()` refuse ce mode tant que `grounding_confirmed_free` est `false`.
+
+Ce qui compte dans les deux cas : l'évolution M0 → M1 → M2 sur un protocole strictement identique.
 
 ## Protocole
 - 20 prompts fixes (`tools/geo_prompts.json`) × **3 runs indépendants** = 60 tests par round.
@@ -71,7 +89,7 @@ export GEMINI_API_KEY='...'          # clé gratuite : https://aistudio.google.c
 
 python3 tools/geo_tracker.py check              # phase 1 : accès modèle, sans grounding
 python3 tools/geo_tracker.py check --grounding  # phase 2 : sonde le grounding (opt-in)
-python3 tools/geo_tracker.py run --round M0     # 60 tests (verrouillé, reprenable)
+python3 tools/geo_tracker.py run --round M0     # 60 tests en mode ungrounded (reprenable)
 python3 tools/geo_tracker.py report --round M0
 ```
 

@@ -57,6 +57,33 @@ def load_config() -> dict:
     return cfg
 
 
+NA = "N/A — no grounding"
+MODE_LABEL = {
+    "ungrounded": "Gemini API ungrounded visibility benchmark",
+    "grounded": "Gemini API + Google Search grounding",
+}
+
+
+def resolve_mode(cfg: dict, override: str | None = None) -> str:
+    """Mode de mesure. `grounded` reste dans le code mais est VERROUILLE tant que
+    la facturation n a pas ete explicitement activee et le grounding confirme."""
+    mode = override or cfg.get("mode", "ungrounded")
+    if mode not in MODE_LABEL:
+        sys.exit(f"Mode inconnu : {mode} (attendu : {' | '.join(MODE_LABEL)})")
+    if mode == "grounded" and not cfg.get("grounding_confirmed_free"):
+        sys.exit(
+            "REFUS : mode `grounded` verrouille.\n"
+            "  Le grounding Google Search n est pas disponible en free tier sur ce compte.\n"
+            "  Il exige un compte de facturation, qui n a pas ete active.\n\n"
+            "  Pour l activer plus tard, et seulement en connaissance de cause :\n"
+            "    1. activer la facturation cote Google\n"
+            "    2. python3 tools/geo_tracker.py check --grounding\n"
+            "    3. passer \"grounding_confirmed_free\": true dans tools/geo_config.json\n\n"
+            "  Mode disponible sans aucun cout : `ungrounded`."
+        )
+    return mode
+
+
 def api_key() -> str:
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
@@ -373,7 +400,7 @@ def extract_establishments(text: str) -> list[str]:
     return found
 
 
-def analyse_run(resp: dict, cfg: dict) -> dict:
+def analyse_run(resp: dict, cfg: dict, grounded: bool = True) -> dict:
     text = answer_text(resp)
     establishments = extract_establishments(text)
     mentioned = mentions_brand(text, cfg)
@@ -383,6 +410,22 @@ def analyse_run(resp: dict, cfg: dict) -> dict:
         if mentions_brand(name, cfg):
             position = i
             break
+
+    if not grounded:
+        # Aucune recherche web n a eu lieu : les champs de citation ne sont pas
+        # "vides", ils sont NON MESURES. On ne les remplit pas comme s ils l etaient.
+        return {
+            "grounded": False,
+            "mentioned": mentioned,
+            "position": position,
+            "site_cited": None,
+            "dm_urls": None,
+            "all_sources": None,
+            "competitors": [n for n in establishments if not mentions_brand(n, cfg)],
+            "establishments": establishments,
+            "search_queries": None,
+            "answer_chars": len(text),
+        }
 
     sources = cited_sources(resp, cfg)
     dm_urls = [
@@ -395,6 +438,7 @@ def analyse_run(resp: dict, cfg: dict) -> dict:
     competitors = [n for n in establishments if not mentions_brand(n, cfg)]
 
     return {
+        "grounded": True,
         "mentioned": mentioned,
         "position": position,
         "site_cited": bool(dm_urls),
@@ -416,16 +460,8 @@ def run_path(round_id: str, pid: int, run: int) -> Path:
 
 def cmd_run(args) -> None:
     cfg = load_config()
-    if not cfg.get("grounding_confirmed_free"):
-        sys.exit(
-            "REFUS : \"grounding_confirmed_free\" est false dans tools/geo_config.json.\n"
-            "  M0 sans Google Search grounding n aurait aucun sens (aucune source citee),\n"
-            "  et le grounding ne doit pas etre lance tant qu il n est pas etabli qu il est\n"
-            "  gratuit sur ce compte.\n\n"
-            "  1. python3 tools/geo_tracker.py check              (acces modele, sans grounding)\n"
-            "  2. python3 tools/geo_tracker.py check --grounding  (sonde le grounding)\n"
-            "  3. si et seulement si la phase 2 passe sans facturation, mets le flag a true."
-        )
+    mode = resolve_mode(cfg, getattr(args, "mode", None))
+    grounded = mode == "grounded"
     prompts = load_prompts()
     runs = cfg["runs_per_prompt"]
     outdir = DATA / args.round
@@ -438,7 +474,21 @@ def cmd_run(args) -> None:
         if not run_path(args.round, p["id"], r).exists()
     ]
     total = len(prompts) * runs
+    # Un round ne doit jamais melanger les deux modes : les metriques ne sont pas comparables.
+    for existing in outdir.glob("*.json"):
+        prev = json.loads(existing.read_text()).get("mode")
+        if prev and prev != mode:
+            sys.exit(
+                f"REFUS : le round {args.round} contient deja des donnees en mode `{prev}`.\n"
+                f"  Melanger `{prev}` et `{mode}` produirait des metriques incomparables.\n"
+                f"  Utilise un autre identifiant de round (ex. {args.round}-{mode})."
+            )
+
     print(f"Round {args.round} — {total} tests au total, {len(todo)} restant(s).")
+    print(f"Mode   : {mode} — {MODE_LABEL[mode]}")
+    if not grounded:
+        print("         aucun outil google_search envoye : aucun cout possible.")
+        print("         Les champs de citation seront marques \"" + NA + "\".")
     print(f"Modele : {cfg['model']} | temperature={cfg['temperature']} | free tier uniquement\n")
     if not todo:
         print("Tout est deja collecte. Lance `report` pour generer le rapport.")
@@ -448,9 +498,10 @@ def cmd_run(args) -> None:
     try:
         for prompt, run in todo:
             print(f"[{done + 1}/{len(todo)}] prompt {prompt['id']:02d} run {run} — {prompt['prompt'][:52]}…")
-            resp = call_gemini(prompt["prompt"], cfg)
+            resp = call_gemini(prompt["prompt"], cfg, grounding=grounded)
             record = {
                 "round": args.round,
+                "mode": mode,
                 "prompt_id": prompt["id"],
                 "run": run,
                 "intent": prompt["intent"],
@@ -466,7 +517,7 @@ def cmd_run(args) -> None:
                 "grounding_metadata": grounding_meta(resp),
                 "analysis": None,
             }
-            record["analysis"] = analyse_run(resp, cfg)
+            record["analysis"] = analyse_run(resp, cfg, grounded=grounded)
             a = record["analysis"]
             flag = "MENTIONNE" if a["mentioned"] else "absent"
             pos = f" pos {a['position']}" if a["position"] else ""
@@ -484,6 +535,11 @@ def cmd_run(args) -> None:
             "  Rien n'est perdu : relance la meme commande demain, "
             "elle reprend exactement ou elle s'est arretee."
         )
+        return
+    except BillingRequired as exc:
+        print(f"\nARRET apres {done} test(s) : l API exige un compte de facturation.")
+        print(f"  {redact(str(exc))[:500]}")
+        print("  Aucun appel facture n a ete effectue.")
         return
     except AuthUnsupported as exc:
         print(f"\nAuthentification refusee par l API apres {done} test(s) — arret.")
@@ -532,11 +588,12 @@ def aggregate(records: list[dict]) -> list[dict]:
         analyses = [r["analysis"] for r in runs]
         mentions = [a for a in analyses if a["mentioned"]]
         positions = [a["position"] for a in analyses if a["position"]]
-        cites = [a for a in analyses if a["site_cited"]]
+        grounded = all(a.get("grounded", True) for a in analyses)
+        cites = [a for a in analyses if a["site_cited"]] if grounded else []
 
         urls, comp_freq = [], {}
         for a in analyses:
-            for u in a["dm_urls"]:
+            for u in (a["dm_urls"] or []):
                 if u not in urls:
                     urls.append(u)
             for c in set(a["competitors"]):
@@ -555,11 +612,12 @@ def aggregate(records: list[dict]) -> list[dict]:
                 "mention_runs": len(mentions),
                 "mention_frequency": mention_freq,
                 "geo_stability": stability_label(mention_freq),
-                "citation_runs": len(cites),
-                "citation_frequency": len(cites) / n if n else 0.0,
+                "grounded": grounded,
+                "citation_runs": len(cites) if grounded else None,
+                "citation_frequency": (len(cites) / n if n else 0.0) if grounded else None,
                 "avg_position_when_mentioned": (sum(positions) / len(positions)) if positions else None,
                 "positions": positions,
-                "dm_urls": urls,
+                "dm_urls": urls if grounded else None,
                 "top_competitors": top_comp,
             }
         )
@@ -586,13 +644,18 @@ def dashboard_kpis(rows: list[dict]) -> dict:
         return (sum(r[key] for r in rs) / len(rs)) if rs else 0.0
 
     positions = [p for r in rows for p in r["positions"]]
+    grounded = all(r.get("grounded", True) for r in rows)
+
+    def crate(rs):
+        return rate(rs, "citation_frequency") if grounded else NA
+
     return {
         "Commercial Mention Rate": rate(subset("Commercial"), "mention_frequency"),
         "Editorial Mention Rate": rate(subset("Editorial"), "mention_frequency"),
         "Overall Mention Rate": rate(rows, "mention_frequency"),
-        "Commercial Citation Rate": rate(subset("Commercial"), "citation_frequency"),
-        "Editorial Citation Rate": rate(subset("Editorial"), "citation_frequency"),
-        "Overall Citation Rate": rate(rows, "citation_frequency"),
+        "Commercial Citation Rate": crate(subset("Commercial")),
+        "Editorial Citation Rate": crate(subset("Editorial")),
+        "Overall Citation Rate": crate(rows),
         "Avg Position When Mentioned": (sum(positions) / len(positions)) if positions else None,
         "Prompts Strong (3/3)": sum(1 for r in rows if r["geo_stability"] == "Strong"),
         "Prompts Emerging (2/3)": sum(1 for r in rows if r["geo_stability"] == "Emerging"),
@@ -605,11 +668,25 @@ def dashboard_kpis(rows: list[dict]) -> dict:
 # --------------------------------------------------------------------------
 # Sorties : XLSX + rapport Markdown
 # --------------------------------------------------------------------------
-MEASURE_NOTE = (
+MEASURE_NOTE_GROUNDED = (
     "Mesure : Gemini API + Google Search grounding (modele {model}, temperature {temp}, "
     "{runs} runs independants par prompt). Ce n'est NI l'application Gemini grand public, "
     "NI les AI Overviews de Google. C'est un indicateur de tendance reproductible."
 )
+
+MEASURE_NOTE_UNGROUNDED = (
+    "Gemini API ungrounded visibility benchmark — modele {model}, temperature {temp}, "
+    "{runs} runs independants par prompt, SANS outil de recherche. Mesure ce que le modele "
+    "sait de Dar Mansour par lui-meme (memoire d entrainement), PAS ce qu il citerait apres "
+    "une recherche web. A ne comparer NI aux AI Overviews de Google, NI a un Gemini avec "
+    "grounding, NI a l application Gemini grand public : ce sont des grandeurs differentes. "
+    "Les champs de citation ne sont pas mesures ici (" + NA + ")."
+)
+
+
+def measure_note(rows: list[dict]) -> str:
+    grounded = all(r.get("grounded", True) for r in rows)
+    return MEASURE_NOTE_GROUNDED if grounded else MEASURE_NOTE_UNGROUNDED
 
 HEADER_FILL = "00837D"
 
@@ -645,8 +722,10 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     ws.title = "Dashboard"
     ws["A1"] = "DAR MANSOUR — GEO VISIBILITY TRACKER"
     ws["A1"].font = Font(bold=True, size=15, color=HEADER_FILL)
-    ws["A2"] = f"Round {round_id} — genere le {date.today().isoformat()}"
-    ws["A3"] = MEASURE_NOTE.format(
+    grounded_round = all(r.get("grounded", True) for r in rows)
+    ws["A2"] = (f"Round {round_id} — {MODE_LABEL['grounded' if grounded_round else 'ungrounded']}"
+                f" — genere le {date.today().isoformat()}")
+    ws["A3"] = measure_note(rows).format(
         model=cfg["model"], temp=cfg["temperature"], runs=cfg["runs_per_prompt"]
     )
     ws["A3"].font = Font(italic=True, size=9)
@@ -662,7 +741,7 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     for k, v in dashboard_kpis(rows).items():
         ws.cell(row=r, column=1, value=k)
         cell = ws.cell(row=r, column=2, value=v)
-        if "Rate" in k:
+        if "Rate" in k and not isinstance(v, str):
             cell.number_format = "0%"
         elif "Position" in k and v is not None:
             cell.number_format = "0.0"
@@ -681,7 +760,11 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
         grp = clusters[name]
         ws.cell(row=r, column=1, value=name)
         ws.cell(row=r, column=2, value=sum(g["mention_frequency"] for g in grp) / len(grp)).number_format = "0%"
-        ws.cell(row=r, column=3, value=sum(g["citation_frequency"] for g in grp) / len(grp)).number_format = "0%"
+        if grounded_round:
+            ws.cell(row=r, column=3,
+                    value=sum(g["citation_frequency"] for g in grp) / len(grp)).number_format = "0%"
+        else:
+            ws.cell(row=r, column=3, value=NA)
         ws.cell(row=r, column=4, value=len(grp))
     _autosize(ws)
     ws.column_dimensions["A"].width = 32
@@ -699,14 +782,17 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
         ws.append([
             row["prompt_id"], row["intent"], row["cluster"], row["prompt"], row["target_page"],
             row["runs"], row["mention_runs"], row["mention_frequency"], row["geo_stability"],
-            row["citation_runs"], row["citation_frequency"], row["avg_position_when_mentioned"],
+            row["citation_runs"] if row.get("grounded", True) else NA,
+            row["citation_frequency"] if row.get("grounded", True) else NA,
+            row["avg_position_when_mentioned"],
             ", ".join(str(p) for p in row["positions"]) or "—",
-            "\n".join(row["dm_urls"]) or "—",
+            ("\n".join(row["dm_urls"] or []) or "—") if row.get("grounded", True) else NA,
             ", ".join(f"{n} ({c}/{row['runs']})" for n, c in row["top_competitors"]) or "—",
         ])
     for i in range(2, ws.max_row + 1):
         ws.cell(row=i, column=8).number_format = "0%"
-        ws.cell(row=i, column=11).number_format = "0%"
+        if grounded_round:
+            ws.cell(row=i, column=11).number_format = "0%"
         ws.cell(row=i, column=12).number_format = "0.0"
     _style_header(ws, len(headers))
     _autosize(ws, maxw=45)
@@ -714,7 +800,7 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     # --- Runs (raw) : 1 ligne par run, auditable ---
     ws = wb.create_sheet("Runs (raw)")
     headers = [
-        "Round", "Collected At", "Model Requested", "Model Version (exact)", "Response ID",
+        "Round", "Mode", "Collected At", "Model Requested", "Model Version (exact)", "Response ID",
         "Prompt ID", "Run", "Intent", "Cluster",
         "Fixed Prompt", "Dar Mansour Mentioned?", "DM Position", "darmansour.com Cited?",
         "Dar Mansour URLs", "Establishments Named (ordered)", "All Sources Cited",
@@ -724,15 +810,16 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
     for rec in sorted(records, key=lambda x: (x["prompt_id"], x["run"])):
         a = rec["analysis"]
         ws.append([
-            rec["round"], rec["collected_at"], rec.get("model_requested", rec.get("model", "")),
+            rec["round"], rec.get("mode", "grounded"), rec["collected_at"], rec.get("model_requested", rec.get("model", "")),
             rec.get("model_version") or "non expose", rec.get("response_id") or "—",
             rec["prompt_id"], rec["run"], rec["intent"], rec["cluster"], rec["prompt"],
             "Yes" if a["mentioned"] else "No", a["position"] or "—",
-            "Yes" if a["site_cited"] else "No",
-            "\n".join(a["dm_urls"]) or "—",
+            ("Yes" if a["site_cited"] else "No") if a.get("grounded", True) else NA,
+            ("\n".join(a["dm_urls"] or []) or "—") if a.get("grounded", True) else NA,
             " > ".join(a["establishments"]) or "—",
-            ", ".join(sorted({s["domain"] for s in a["all_sources"] if s["domain"]})) or "—",
-            " | ".join(a["search_queries"]) or "—",
+            (", ".join(sorted({s["domain"] for s in (a["all_sources"] or []) if s["domain"]})) or "—")
+            if a.get("grounded", True) else NA,
+            (" | ".join(a["search_queries"] or []) or "—") if a.get("grounded", True) else NA,
             f"data/geo/{rec['round']}/prompt-{rec['prompt_id']:02d}_run-{rec['run']}.json",
         ])
     _style_header(ws, len(headers))
@@ -752,18 +839,44 @@ def write_xlsx(path: Path, round_id: str, rows: list[dict], records: list[dict],
 def write_markdown(path: Path, round_id: str, rows: list[dict], records: list[dict], cfg: dict) -> None:
     kpis = dashboard_kpis(rows)
     versions = observed_versions(records)
+    grounded = all(r.get("grounded", True) for r in rows)
+    title = ("Dar Mansour — GEO Tracker" if grounded
+             else "Dar Mansour — Gemini API ungrounded visibility benchmark")
     L = [
-        f"# Dar Mansour — GEO Tracker · Round {round_id}",
+        f"# {title} · Round {round_id}",
         "",
         f"_Genere le {date.today().isoformat()}._",
         "",
         "> **Ce que mesure ce rapport.** "
-        + MEASURE_NOTE.format(model=cfg["model"], temp=cfg["temperature"], runs=cfg["runs_per_prompt"]),
+        + measure_note(rows).format(
+            model=cfg["model"], temp=cfg["temperature"], runs=cfg["runs_per_prompt"]),
         ">",
-        "> `temperature=0` ne rend pas la reponse deterministe : il supprime la variance de "
-        "sampling, pas celle du grounding (les resultats de recherche recuperes varient). "
-        "C'est justement cette variance que les frequences ci-dessous mesurent.",
-        "",
+        ("> `temperature=0` ne rend pas la reponse deterministe : il supprime la variance de "
+         "sampling, pas celle du grounding (les resultats de recherche recuperes varient). "
+         "C'est justement cette variance que les frequences ci-dessous mesurent."
+         if grounded else
+         "> `temperature=0` reduit la variance de sampling sans la supprimer. La variance "
+         "residuelle mesuree ici reflete la solidite de l association \"Koh Phangan / marocain / "
+         "Dar Mansour\" dans le modele lui-meme."),
+        "",]
+    if not grounded:
+        L += [
+            "## Perimetre — a lire avant tout chiffre",
+            "",
+            "| | |",
+            "| --- | --- |",
+            "| **Ce qui est mesure** | Ce que Gemini 3.6 Flash restitue de memoire, sans recherche web |",
+            "| **Ce qui n est PAS mesure** | " + NA + " : citations, URLs de darmansour.com, sources externes |",
+            "| **Comparaisons interdites** | AI Overviews de Google · Gemini avec grounding · application Gemini grand public |",
+            "| **Comparaison valide** | un autre round du meme benchmark ungrounded, meme modele, meme protocole |",
+            "",
+            "> Le grounding Google Search n est pas disponible en free tier sur ce compte "
+            "(il exige un compte de facturation, volontairement non active). Ce benchmark est "
+            "la mesure gratuite la plus proche : il dit si la marque existe dans la connaissance "
+            "du modele, ce qui reste un signal GEO reel — mais un signal **different**.",
+            "",
+        ]
+    L += [
         "## Provenance de la mesure",
         "",
         "| Element | Valeur |",
@@ -789,6 +902,8 @@ def write_markdown(path: Path, round_id: str, rows: list[dict], records: list[di
     for k, v in kpis.items():
         if v is None:
             val = "—"
+        elif isinstance(v, str):
+            val = v
         elif "Rate" in k:
             val = f"{v:.0%}"
         elif "Position" in k:
@@ -805,7 +920,8 @@ def write_markdown(path: Path, round_id: str, rows: list[dict], records: list[di
         L += [
             f"| {r['prompt_id']} | {r['cluster']} | {r['prompt'][:58]} | "
             f"{r['mention_runs']}/{r['runs']} | {r['geo_stability']} | "
-            f"{r['citation_runs']}/{r['runs']} | {pos} |"
+            + (f"{r['citation_runs']}/{r['runs']}" if r.get("grounded", True) else NA)
+            + f" | {pos} |"
         ]
 
     # Concurrents dominants, tous prompts confondus
@@ -830,7 +946,7 @@ def write_markdown(path: Path, round_id: str, rows: list[dict], records: list[di
         "- Les signaux solides sont : `0/3 -> 3/3` sur un prompt donne, ou la moyenne "
         "**au niveau du cluster** sur les 20 prompts.",
         "- Chaque chiffre est reconstituable depuis `data/geo/" + round_id + "/` "
-        "(reponses brutes + groundingMetadata archives).",
+        "(reponses brutes archivees).",
         "",
     ]
     path.write_text("\n".join(L))
@@ -999,9 +1115,12 @@ def cmd_report(args) -> None:
     write_markdown(md, args.round, rows, records, cfg)
 
     k = dashboard_kpis(rows)
+    mode = "grounded" if all(r.get("grounded", True) for r in rows) else "ungrounded"
     print(f"Round {args.round} — {k['Tests Completed']} test(s) analyses")
+    print(f"  Mode                  : {mode} — {MODE_LABEL[mode]}")
     print(f"  Overall Mention Rate  : {k['Overall Mention Rate']:.0%}")
-    print(f"  Overall Citation Rate : {k['Overall Citation Rate']:.0%}")
+    cr = k["Overall Citation Rate"]
+    print(f"  Overall Citation Rate : {cr if isinstance(cr, str) else format(cr, '.0%')}")
     pos = k["Avg Position When Mentioned"]
     print(f"  Avg Position          : {pos:.1f}" if pos else "  Avg Position          : —")
     print(f"  Strong/Emerging/Weak/Invisible : {k['Prompts Strong (3/3)']}/"
@@ -1020,6 +1139,8 @@ def main() -> None:
     c.set_defaults(func=cmd_check)
     p = sub.add_parser("run", help="execute les tests (reprenable)")
     p.add_argument("--round", required=True, help="identifiant du round, ex. M0")
+    p.add_argument("--mode", choices=sorted(MODE_LABEL),
+                   help="ungrounded (defaut, gratuit) | grounded (verrouille : facturation requise)")
     p.set_defaults(func=cmd_run)
     p = sub.add_parser("report", help="agrege et genere XLSX + rapport Markdown")
     p.add_argument("--round", required=True)
