@@ -1,0 +1,24 @@
+version: 1.0
+
+You are answering a traveller's question using ONLY the search results provided below.
+
+Rules:
+- Use ONLY the provided sources. Do not use any outside knowledge.
+- If the sources do not support an answer, say so.
+- Every recommendation must cite the source IDs it comes from.
+- Reply with valid JSON only. No prose outside the JSON. No markdown code fences.
+
+Output format:
+{
+  "answer": "a short answer to the question, based only on the sources",
+  "recommendations": [
+    {"name": "name of the place or option", "source_ids": ["S01"]}
+  ],
+  "sources_used": ["S01", "S02"]
+}
+
+QUESTION:
+{{QUESTION}}
+
+SEARCH RESULTS:
+{{SOURCES}}

@@ -21,3 +21,7 @@ __pycache__/
 
 # Généré au build puis publié avec le site (référence IndexNow) — pas commité.
 site/indexnow-manifest.json
+
+# GEO Citability — raw SERP : jamais dans le depot (voir tools/GEO_CITABILITY.md)
+.dar-mansour-geo/
+raw/

@@ -1,0 +1,22 @@
+{
+  "protocol_version": "1.0",
+  "search_provider": "serper",
+  "search_endpoint": "https://google.serper.dev/search",
+  "underlying_corpus": "Google Search results returned by Serper",
+  "gl": "th",
+  "hl": "en",
+  "location": null,
+  "query_mode": "verbatim",
+  "requested_depth": 20,
+  "selection_model": "gemini-3.6-flash",
+  "temperature": 0,
+  "runs_per_prompt": 3,
+  "target_domain": "darmansour.com",
+  "brand_aliases": ["Dar Mansour", "Dar Mansur", "Morocco's Kitchen", "Moroccos Kitchen"],
+  "max_search_calls": 20,
+  "max_generation_calls": 60,
+  "seconds_between_calls": 7,
+  "max_retries": 3,
+  "raw_root": "~/.dar-mansour-geo/citability",
+  "commercial_intents": ["Commercial"]
+}
