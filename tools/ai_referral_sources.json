@@ -1,0 +1,12 @@
+{
+  "version": "2026-08-25.1",
+  "note": "Liste EXPLICITE des sources IA. Ne jamais se fier au seul channel group GA4 'ai-assistant' : le M0 le prouve, Perplexity y echappe (perplexity / (not set)). Toute evolution de cette liste change de version ET impose de recalculer les rounds anterieurs, sinon une hausse ne serait qu'un effet de detection.",
+  "platforms": [
+    {"platform": "ChatGPT",    "sources": ["chatgpt.com", "chat.openai.com", "openai.com"]},
+    {"platform": "Perplexity", "sources": ["perplexity", "perplexity.ai", "www.perplexity.ai"]},
+    {"platform": "Gemini",     "sources": ["gemini.google.com", "bard.google.com"]},
+    {"platform": "Copilot",    "sources": ["copilot.microsoft.com", "m365.cloud.microsoft", "bing.com/chat"]},
+    {"platform": "Claude",     "sources": ["claude.ai"]},
+    {"platform": "You.com",    "sources": ["you.com"]}
+  ]
+}
