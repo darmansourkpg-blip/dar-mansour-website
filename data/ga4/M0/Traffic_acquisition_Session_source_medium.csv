@@ -1,0 +1,122 @@
+# ----------------------------------------
+# Traffic acquisition: Session source / medium
+# Account: Dar Mansour - Morocco's Kitchen
+# Property: Dar Mansour - Morocco's Kitchen
+# ----------------------------------------
+# 
+# All Users
+# Start date: 20260701
+# End date: 20260825
+Session source / medium,Landing page + query string,Sessions,Engaged sessions,Engagement rate,Average engagement time per session,Events per session,Event count,Key events,Session key event rate,Total revenue
+(direct) / (none),/,230,92,0.4,45.23913043478261,5.104347826086957,1174,4,0.017391304347826087,0
+google / organic,/,137,87,0.635036496350365,85.61313868613139,6.138686131386861,841,8,0.051094890510948905,0
+(direct) / (none),/index.html,101,61,0.6039603960396039,95.25742574257426,6.6138613861386135,668,0,0,0
+(direct) / (none),/moroccan-menu-koh-phangan.html,69,34,0.4927536231884058,35.231884057971016,4.304347826086956,297,2,0.028985507246376812,0
+google / organic,/journal-best-breakfast-brunch-koh-phangan.html,34,10,0.29411764705882354,28.235294117647058,3.7941176470588234,129,0,0,0
+(direct) / (none),/dar-mansour-founders-vision.html,30,4,0.13333333333333333,11.5,2.6,78,0,0,0
+google / organic,(not set),29,0,0,0,2,58,0,0,0
+google / organic,/journal-where-to-watch-sunset-koh-phangan.html,29,7,0.2413793103448276,39.172413793103445,4.793103448275862,139,0,0,0
+google / organic,/journal-best-restaurants-koh-phangan.html,28,18,0.6428571428571429,83.57142857142857,4.75,133,1,0.03571428571428571,0
+google / organic,/journal-where-to-eat-sri-thanu.html,27,12,0.4444444444444444,91.62962962962963,3.6666666666666665,99,0,0,0
+google / organic,/index.html,21,13,0.6190476190476191,97.14285714285714,10.238095238095237,215,0,0,0
+(direct) / (none),(not set),16,0,0,0,2,32,0,0,0
+google / organic,/journal-where-to-eat-thong-sala-koh-phangan.html,16,9,0.5625,58.125,4.6875,75,0,0,0
+google / organic,/moroccan-menu-koh-phangan.html,16,2,0.125,5.5,2.625,42,0,0,0
+chatgpt.com / ai-assistant,/,15,10,0.6666666666666666,28.533333333333335,4.933333333333334,74,2,0.06666666666666667,0
+google / organic,/journal-best-thai-restaurants-koh-phangan.html,15,11,0.7333333333333333,42.6,4.466666666666667,67,0,0,0
+chatgpt.com / ai-assistant,/journal-best-beaches-koh-phangan.html,14,7,0.5,19.857142857142858,3.642857142857143,51,0,0,0
+google / organic,/journal-best-beaches-koh-phangan.html,13,4,0.3076923076923077,29.923076923076923,3.6923076923076925,48,0,0,0
+google / organic,/journal-romantic-dinner-koh-phangan.html,12,8,0.6666666666666666,48.083333333333336,4.75,57,0,0,0
+(direct) / (none),/journal-best-restaurants-koh-phangan.html,11,2,0.18181818181818182,145.45454545454547,5.454545454545454,60,0,0,0
+google / organic,/blog.html,10,7,0.7,96.3,8.8,88,0,0,0
+google / organic,/journal-where-to-eat-hin-kong.html,10,6,0.6,66.2,3.8,38,0,0,0
+(direct) / (none),/moroccan-restaurant-reservation-koh-phangan.html,9,3,0.3333333333333333,6.666666666666667,3.5555555555555554,32,2,0.2222222222222222,0
+google / organic,/journal-where-to-stay-koh-phangan.html,9,8,0.8888888888888888,100,4.444444444444445,40,1,0.1111111111111111,0
+pistenord.com / referral,/,8,5,0.625,13.75,7,56,0,0,0
+(direct) / (none),/blog.html,7,2,0.2857142857142857,250.71428571428572,11.714285714285714,82,0,0,0
+(direct) / (none),/journal-the-dadas-guardians-of-moroccan-recipes.html,7,1,0.14285714285714285,0.5714285714285714,2.7142857142857144,19,0,0,0
+google / cpc,/,7,0,0,0,3,21,0,0,0
+google / organic,/moroccan-restaurant-reservation-koh-phangan.html,7,2,0.2857142857142857,5.428571428571429,3,21,2,0.2857142857142857,0
+google / organic,/moroccan-restaurant-reviews-koh-phangan.html,7,2,0.2857142857142857,203.14285714285714,10.428571428571429,73,0,0,0
+(direct) / (none),/journal-moroccan-cuisine-guide.html,6,0,0,0.5,3.1666666666666665,19,0,0,0
+(direct) / (none),/journal-where-to-eat-sri-thanu.html,6,0,0,0.16666666666666666,3,18,0,0,0
+google / organic,/journal-the-dadas-guardians-of-moroccan-recipes.html,6,3,0.5,64.5,3.6666666666666665,22,0,0,0
+(direct) / (none),/contact-dar-mansour-koh-phangan.html,5,2,0.4,22.4,4,20,0,0,0
+(direct) / (none),/journal-best-breakfast-brunch-koh-phangan.html,5,2,0.4,0,3.6,18,0,0,0
+chatgpt.com / ai-assistant,/journal-where-to-eat-hin-kong.html,5,1,0.2,0.8,3.6,18,0,0,0
+google / organic,/contact-dar-mansour-koh-phangan.html,5,5,1,59,8,40,0,0,0
+google / organic,/journal-gnaoua-music-morocco.html,5,1,0.2,2.4,3.4,17,0,0,0
+(direct) / (none),/journal-best-beaches-koh-phangan.html,4,1,0.25,20.25,3.25,13,0,0,0
+(direct) / (none),/journal-what-is-a-tajine.html,4,0,0,0.25,3.25,13,0,0,0
+(not set),,4,0,0,5.5,1,4,0,0,0
+chatgpt.com / ai-assistant,/journal-best-restaurants-koh-phangan.html,4,1,0.25,1.25,3.5,14,0,0,0
+chatgpt.com / ai-assistant,/journal-where-to-eat-thong-sala-koh-phangan.html,4,1,0.25,2.5,3.25,13,0,0,0
+google / organic,/journal-best-cafes-koh-phangan.html,4,2,0.5,22.25,3.5,14,0,0,0
+perplexity / (not set),/journal-best-restaurants-koh-phangan.html,4,1,0.25,0,2.75,11,0,0,0
+phanganlife.com / referral,/,4,3,0.75,66,6.5,26,2,0.25,0
+(direct) / (none),/journal-best-thai-restaurants-koh-phangan.html,3,0,0,0,3,9,0,0,0
+(direct) / (none),/journal-what-is-couscous.html,3,0,0,0,3,9,0,0,0
+(direct) / (none),/journal-where-to-eat-hin-kong.html,3,0,0,0,3,9,0,0,0
+(direct) / (none),/journal-where-to-stay-koh-phangan.html,3,1,0.3333333333333333,15,3.3333333333333335,10,0,0,0
+(direct) / (none),/moroccan-restaurant-reviews-koh-phangan.html,3,3,1,106.33333333333333,8,24,0,0,0
+google / organic,/dar-mansour-founders-vision.html,3,3,1,114,8,24,1,0.3333333333333333,0
+google / organic,/journal-what-is-a-tajine.html,3,2,0.6666666666666666,8.666666666666666,3.6666666666666665,11,0,0,0
+google / organic,/koh-phangan-guide.html,3,3,1,91,7.666666666666667,23,0,0,0
+google / organic,/moroccan-interior-art-koh-phangan.html,3,2,0.6666666666666666,289.3333333333333,24.333333333333332,73,0,0,0
+google / organic,/private-dining-koh-phangan.html,3,1,0.3333333333333333,20,7,21,0,0,0
+(direct) / (none),/journal-gnaoua-music-morocco.html,2,0,0,0,3,6,0,0,0
+(direct) / (none),/journal-romantic-dinner-koh-phangan.html,2,0,0,0,3,6,0,0,0
+(direct) / (none),/journal-where-to-eat-thong-sala-koh-phangan.html,2,0,0,0,3,6,0,0,0
+(direct) / (none),/journal-where-to-watch-sunset-koh-phangan.html,2,1,0.5,76.5,10,20,0,0,0
+(direct) / (none),/moroccan-cocktails-koh-phangan.html,2,1,0.5,21.5,5,10,0,0,0
+(direct) / (none),/moroccan-pantry-koh-phangan.html,2,0,0,0,2,4,0,0,0
+(direct) / (none),/moroccan-wine-pairing-koh-phangan.html,2,2,1,534,29.5,59,0,0,0
+(not set),/moroccan-menu-koh-phangan.html,2,0,0,78,2,4,0,0,0
+chatgpt.com / ai-assistant,/journal-best-cafes-koh-phangan.html,2,0,0,0,3,6,0,0,0
+chatgpt.com / ai-assistant,/journal-where-to-stay-koh-phangan.html,2,1,0.5,6.5,3.5,7,0,0,0
+chatgpt.com / ai-assistant,/journal-where-to-watch-sunset-koh-phangan.html,2,0,0,0,3,6,0,0,0
+google / organic,/journal-best-things-to-do-koh-phangan.html,2,1,0.5,32.5,4.5,9,0,0,0
+google / organic,/moroccan-hospitality-values-koh-phangan.html,2,2,1,37.5,7,14,0,0,0
+google / organic,/moroccan-wine-pairing-koh-phangan.html,2,1,0.5,86,5,10,0,0,0
+linkedin.com / referral,/,2,1,0.5,149.5,5,10,0,0,0
+phanganlife.com / referral,(not set),2,0,0,0,2,4,0,0,0
+(direct) / (none),/best-moroccan-restaurant-world-press.html,1,1,1,31,4,4,0,0,0
+(direct) / (none),/faq.html,1,0,0,0,3,3,0,0,0
+(direct) / (none),/journal-best-cafes-koh-phangan.html,1,0,0,0,3,3,0,0,0
+(direct) / (none),/journal-where-to-eat-thong-sala-koh-phangan.html?hl=de-DE,1,0,0,0,3,3,0,0,0
+(direct) / (none),/moroccan-hospitality-values-koh-phangan.html,1,0,0,0,3,3,0,0,0
+(direct) / (none),/moroccan-restaurant-reservation-koh-phangan.html?rwg_token=AE37R_iz800XrC9VBZMkeFlew4u1yRJRKKj5hEHLCqnYljtzj7MXqT3ZaYz84mzxRWO7t88F_Y2JEc1HDL_J6c0E0dyRMKlqCQ%3D%3D,1,1,1,19,6,6,0,0,0
+(direct) / (none),/private-dining-koh-phangan.html,1,0,0,0,3,3,0,0,0
+(not set),/,1,0,0,0,1,1,0,0,0
+(not set),/journal-where-to-eat-hin-kong.html,1,0,0,44,3,3,0,0,0
+bing / organic,/journal-where-to-eat-hin-kong.html,1,1,1,29,7,7,0,0,0
+chatgpt.com / ai-assistant,/dar-mansour-founders-vision.html,1,1,1,5,5,5,0,0,0
+chatgpt.com / ai-assistant,/journal-romantic-dinner-koh-phangan.html,1,1,1,100,4,4,0,0,0
+facebook.com / referral,/,1,0,0,0,3,3,0,0,0
+facebook.com / referral,/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEe0BlncGV1PNWjkM7xvbJ56aKhFEO_850t9jeDF9DDva5z8uIpJfz8jQMrFN0_aem_3w4tgCZ63Sgzd_EcqsJgXA,1,1,1,7,4,4,0,0,0
+facebook.com / referral,/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEeGh3IhWK3YZVkoASoE0ngRj8G487awvsQANmQk9X1w2V6EtKoF828ThvyE0k_aem_yWqSDlUw26XjTzwoSD658g,1,0,0,0,3,3,0,0,0
+facebook.com / referral,/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEeSJOMBznlJmOmi5ECEacHUju-S0rC45bViD0oqCF8dh67lQCsR4BoOa2oXDU_aem_PeTxCmvavkiFKU15yQLizA,1,0,0,0,3,3,0,0,0
+facebook.com / referral,/?fbclid=IwcGRvZgRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAR4nARA2s51tuQaYrb01VCMCqTL1VzKsJCRSNFSy3lknSyD43hSpKvdPM4r5Tg_aem_bbLa8hwFPkW6yotZJlCAsg,1,1,1,8,4,4,0,0,0
+facebook.com / referral,/?fbclid=IwcGRvZgRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAR5UU0ipIDtfrDd97dsmUiDXwfbk98F8YM2_UPb0Sg_4fhmTkdtZ4diMs0T09g_aem_3qLCVG2aCoLcqR2jqmvq9A,1,0,0,0,3,3,0,0,0
+facebook.com / referral,/?fbclid=IwcGRvZgRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAR5dYmO0hzBlNEI5l5IMYJI6qR6Xq5ceVnK9DxkdIQp2ecliHv--I15EAWo8iw_aem_OICpsEo4qWWNKHpu_yJ8oA,1,0,0,0,3,3,0,0,0
+facebook.com / referral,/?fbclid=IwcGRvZgRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAR6khbCQnG1YkvHtLvO5T9mij1Mfez0LwVnTSekq53ZONv0ktFR17iAIONcJtg_aem_bbl1Qs8rYwAKfYZ9NkevdQ,1,1,1,4,4,4,0,0,0
+google / organic,,1,0,0,0,2,2,0,0,0
+google / organic,/authors/,1,0,0,0,2,2,0,0,0
+google / organic,/best-moroccan-restaurant-world-press.html,1,0,0,0,2,2,0,0,0
+google / organic,/journal-moroccan-cuisine-guide.html,1,1,1,1,4,4,0,0,0
+google / organic,/moroccan-culture-cuisine.html,1,1,1,7,4,4,0,0,0
+ig / social,/?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadLceD9XW6n09tWJjIsxb3ARzLL1LSzV00I6AMoOC8X_5ozcPBmVJbtvmogCQ_aem__jnCsqRgcuCyVO0PA6L2Ng,1,0,0,0,3,3,0,0,0
+ig / social,/?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadwdumD6UnvkkVIFVY_JvbLyVoL8Il_nNu4jC4eWVIu79mFCB-fk9TnZtaLkw_aem_GrnzBlKVVrCbY9TOjceYBA,1,0,0,0,3,3,0,0,0
+ig / social,/?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaegspP5RccLkW_Fp27-jeHwlXb7Zhe9O9FTSedjnQDbo67sM380h0LqQvH1lQ_aem_qR2mXdHQbiLLPcvwhQpXWg,1,1,1,0,4,4,0,0,0
+l.instagram.com / referral,/,1,0,0,0,3,3,0,0,0
+l.instagram.com / referral,/?fbclid=PAcGRvZgJmZGlkFlDDZXauI7FRZgvXcHn_fgxxfpqKyHZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaeZkfTCpt7mm7WsLMGdvDHT0xNth1s1vRxpA9aJJQ1YAFeeDThkkGLhSs7bTA_aem_EQgQF7Kz1eoENrZR1ItvHQ,1,0,0,0,3,3,0,0,0
+linkedin.com / referral,(not set),1,0,0,0,2,2,0,0,0
+m.facebook.com / referral,/,1,1,1,26,6,6,0,0,0
+osdzc.com / referral,/,1,0,0,0,3,3,0,0,0
+perplexity / (not set),/journal-where-to-stay-koh-phangan.html,1,0,0,0,3,3,0,0,0
+phanganlife.com / referral,/journal-where-to-watch-sunset-koh-phangan.html,1,1,1,163,15,15,0,0,0
+pistenord.com / referral,(not set),1,0,0,0,2,2,0,0,0
+tripadvisor.com / referral,/,1,1,1,22,4,4,0,0,0
+tripadvisor.com / referral,/blog.html,1,1,1,112,10,10,0,0,0
+tripadvisor.com / referral,/faq.html,1,1,1,18,5,5,0,0,0
+yandex.kz / referral,/journal-best-restaurants-koh-phangan.html,1,1,1,17,4,4,0,0,0

@@ -1,0 +1,14 @@
+{
+  "round": "M0",
+  "period_start": "2026-07-01",
+  "period_end": "2026-08-25",
+  "ga4_report": "Reports > Acquisition > Traffic acquisition",
+  "primary_dimension": "Session source / medium",
+  "secondary_dimension": "Landing page + query string",
+  "traffic_export": "Traffic_acquisition_Session_source_medium.csv",
+  "event_export": "Events_Session_source_medium_x_Event_name.csv",
+  "contact_event_name": "contact_click",
+  "contact_overrides": {},
+  "event_secondary_dimension": "Event name",
+  "notes": "contact_sessions et contact_clicks sont derives de l'export evenements (dimension secondaire 'Event name'), pas de la colonne 'Key events' de l'export trafic : celle-ci compte des EVENEMENTS, pas des sessions. M0 est integralement recalculable depuis ces deux fichiers bruts."
+}
