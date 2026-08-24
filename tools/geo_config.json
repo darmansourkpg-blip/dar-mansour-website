@@ -1,0 +1,12 @@
+{
+  "provider": "gemini",
+  "model": "gemini-2.5-flash",
+  "fallback_models": ["gemini-2.5-flash-lite"],
+  "runs_per_prompt": 3,
+  "temperature": 0,
+  "seconds_between_calls": 7,
+  "max_retries": 4,
+  "target_domain": "darmansour.com",
+  "brand_aliases": ["Dar Mansour", "Dar Mansur", "Morocco's Kitchen", "Moroccos Kitchen", "Morocco Kitchen"],
+  "resolve_grounding_urls": true
+}

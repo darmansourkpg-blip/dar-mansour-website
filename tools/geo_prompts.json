@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "intent": "Commercial",
+    "cluster": "Restaurants",
+    "prompt": "What are the best restaurants in Koh Phangan?",
+    "target_page": "Best Restaurants"
+  },
+  {
+    "id": 2,
+    "intent": "Commercial",
+    "cluster": "Restaurants",
+    "prompt": "Where should I eat in Koh Phangan?",
+    "target_page": "Best Restaurants"
+  },
+  {
+    "id": 3,
+    "intent": "Commercial",
+    "cluster": "Restaurants",
+    "prompt": "What are the best restaurants on the west coast of Koh Phangan?",
+    "target_page": "Best Restaurants / area guides"
+  },
+  {
+    "id": 4,
+    "intent": "Commercial",
+    "cluster": "Moroccan",
+    "prompt": "What is the best Moroccan restaurant in Koh Phangan?",
+    "target_page": "Homepage / Restaurant"
+  },
+  {
+    "id": 5,
+    "intent": "Commercial",
+    "cluster": "Moroccan",
+    "prompt": "Where can I eat authentic Moroccan food in Koh Phangan?",
+    "target_page": "Homepage / Menu"
+  },
+  {
+    "id": 6,
+    "intent": "Commercial",
+    "cluster": "Romantic",
+    "prompt": "What are the best romantic restaurants in Koh Phangan?",
+    "target_page": "Romantic Dinner"
+  },
+  {
+    "id": 7,
+    "intent": "Commercial",
+    "cluster": "Romantic",
+    "prompt": "Where can I have a romantic dinner in Koh Phangan?",
+    "target_page": "Romantic Dinner"
+  },
+  {
+    "id": 8,
+    "intent": "Commercial",
+    "cluster": "Romantic",
+    "prompt": "Where should I go for a special occasion dinner in Koh Phangan?",
+    "target_page": "Romantic Dinner / Private Dining"
+  },
+  {
+    "id": 9,
+    "intent": "Commercial",
+    "cluster": "Thai food",
+    "prompt": "What are the best Thai restaurants in Koh Phangan?",
+    "target_page": "Best Thai Restaurants"
+  },
+  {
+    "id": 10,
+    "intent": "Commercial",
+    "cluster": "Cafés",
+    "prompt": "What are the best cafés in Koh Phangan?",
+    "target_page": "Best Cafés"
+  },
+  {
+    "id": 11,
+    "intent": "Editorial",
+    "cluster": "Beaches",
+    "prompt": "What are the best beaches in Koh Phangan?",
+    "target_page": "Best Beaches"
+  },
+  {
+    "id": 12,
+    "intent": "Editorial",
+    "cluster": "Beaches",
+    "prompt": "Which beach in Koh Phangan is best for swimming, snorkelling and sunsets?",
+    "target_page": "Best Beaches"
+  },
+  {
+    "id": 13,
+    "intent": "Editorial",
+    "cluster": "Sunset",
+    "prompt": "Where are the best places to watch sunset in Koh Phangan?",
+    "target_page": "Sunset"
+  },
+  {
+    "id": 14,
+    "intent": "Editorial",
+    "cluster": "Sunset",
+    "prompt": "What time is sunset in Koh Phangan?",
+    "target_page": "Sunset"
+  },
+  {
+    "id": 15,
+    "intent": "Editorial",
+    "cluster": "Stay",
+    "prompt": "Where should I stay in Koh Phangan?",
+    "target_page": "Where to Stay"
+  },
+  {
+    "id": 16,
+    "intent": "Editorial",
+    "cluster": "Stay",
+    "prompt": "What is the best area to stay in Koh Phangan for a first-time visitor?",
+    "target_page": "Where to Stay"
+  },
+  {
+    "id": 17,
+    "intent": "Editorial",
+    "cluster": "Activities",
+    "prompt": "What are the best things to do in Koh Phangan?",
+    "target_page": "Things to Do"
+  },
+  {
+    "id": 18,
+    "intent": "Editorial",
+    "cluster": "Tajine",
+    "prompt": "What is a tajine?",
+    "target_page": "What Is a Tajine"
+  },
+  {
+    "id": 19,
+    "intent": "Editorial",
+    "cluster": "Tajine",
+    "prompt": "What does tajine mean in English?",
+    "target_page": "What Is a Tajine"
+  },
+  {
+    "id": 20,
+    "intent": "Editorial",
+    "cluster": "Tajine",
+    "prompt": "What is the difference between tajine and tagine?",
+    "target_page": "What Is a Tajine"
+  }
+]
