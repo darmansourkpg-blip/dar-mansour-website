@@ -635,6 +635,25 @@ def diagnose(retrieved: bool, selections: int, runs: int) -> str:
     return "RETRIEVED_PARTIALLY_SELECTED"
 
 
+def corpus_coverage(rows: list[dict]) -> dict:
+    """Qualite du corpus, derivee des donnees deja collectees. Aucun appel."""
+    depths = [r["actual_depth"] for r in rows]
+    if not depths:
+        return {"requested_depth": None, "mean": None, "median": None, "min": None,
+                "below_20": 0, "below_10": 0, "prompts": 0}
+    requested = rows[0]["requested_depth"]
+    return {
+        "requested_depth": requested,
+        "mean": statistics.mean(depths),
+        "median": statistics.median(depths),
+        "min": min(depths),
+        "max": max(depths),
+        "below_20": sum(1 for d in depths if d < 20),
+        "below_10": sum(1 for d in depths if d < 10),
+        "prompts": len(depths),
+    }
+
+
 def aggregate(cfg: dict, round_id: str) -> dict:
     prompts = load_prompts()
     runs_per = cfg["runs_per_prompt"]
@@ -721,6 +740,10 @@ def aggregate(cfg: dict, round_id: str) -> dict:
                         ("NOT_RETRIEVED", "RETRIEVED_NOT_SELECTED",
                          "RETRIEVED_PARTIALLY_SELECTED", "RETRIEVED_STABLY_SELECTED",
                          "ANOMALY", "INCOMPLETE")},
+        # Corpus Coverage : la profondeur reellement obtenue conditionne le sens
+        # des taux Top-N. Un Top-20 calcule sur des corpus de 9 resultats ne
+        # mesurerait pas la meme chose d'un prompt a l'autre.
+        "corpus_coverage": corpus_coverage(rows),
         "corpus_depth_shortfall": [
             {"prompt_id": r["prompt_id"], "actual": r["actual_depth"],
              "requested": r["requested_depth"]}
@@ -789,6 +812,15 @@ def write_outputs(agg: dict) -> tuple[Path, Path]:
            ["Malformed runs", s["malformed_runs"], "exclus d'aucun taux, signales tels quels"],
            *[[f"Stability {k}", v, ""] for k, v in s["stability_distribution"].items()],
            *[[f"Diagnostic {k}", v, ""] for k, v in s["diagnostics"].items()],
+           ["— Corpus Coverage —", "", "à lire avant les taux Top-N"],
+           ["Requested depth", s["corpus_coverage"]["requested_depth"], ""],
+           ["Actual depth — mean", s["corpus_coverage"]["mean"], ""],
+           ["Actual depth — median", s["corpus_coverage"]["median"], ""],
+           ["Actual depth — minimum", s["corpus_coverage"]["min"], f"max {s['corpus_coverage']['max']}"],
+           ["Prompts with actual depth < 20", s["corpus_coverage"]["below_20"],
+            f"sur {s['corpus_coverage']['prompts']} prompts"],
+           ["Prompts with actual depth < 10", s["corpus_coverage"]["below_10"],
+            f"sur {s['corpus_coverage']['prompts']} prompts"],
            ["Corpus depth shortfall", len(s["corpus_depth_shortfall"]),
             str(s["corpus_depth_shortfall"]) if s["corpus_depth_shortfall"] else "aucun"]])
 
@@ -900,6 +932,18 @@ def cmd_report(args) -> None:
     print(f"  Brand mention / recommend.  : {pct(s['mention_rate'])} / {pct(s['recommendation_rate'])}")
     print(f"  Stabilite                   : {s['stability_distribution']}")
     print(f"  Diagnostics                 : { {k: v for k, v in s['diagnostics'].items() if v} }")
+    c = s["corpus_coverage"]
+    if c["prompts"]:
+        print("\n  CORPUS COVERAGE (a lire AVANT les taux Top-N)")
+        print(f"    Requested depth           : {c['requested_depth']}")
+        print(f"    Actual depth moyenne      : {c['mean']:.2f}")
+        print(f"    Actual depth mediane      : {c['median']:.1f}")
+        print(f"    Actual depth minimum      : {c['min']}   (max {c['max']})")
+        print(f"    Prompts < 20 resultats    : {c['below_20']}/{c['prompts']}")
+        print(f"    Prompts < 10 resultats    : {c['below_10']}/{c['prompts']}")
+        if c["below_20"]:
+            print("    -> Top-20 porte sur des corpus de tailles differentes : "
+                  "l'interpreter avec cette reserve.")
     if args.dry_run:
         print("\n--dry-run : aucun fichier ecrit.")
         return

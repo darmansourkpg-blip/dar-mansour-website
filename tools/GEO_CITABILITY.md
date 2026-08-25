@@ -77,6 +77,24 @@ Raw par défaut : `~/.dar-mansour-geo/citability/<ROUND>/`.
 pas, `git add -f` passe outre. Le SHA-256 du corpus, lui, est versionné : il prouve que les 3 runs
 ont vu le même input sans rien republier.
 
+## Corpus Coverage — à lire avant les taux Top-N
+Le rapport ouvre sur la profondeur réellement obtenue : `requested depth`, moyenne, médiane,
+minimum/maximum, nombre de prompts sous 20 et sous 10 résultats. Un `Top-20 Retrieval Rate` calculé
+sur des corpus de tailles différentes ne mesure pas la même chose d'un prompt à l'autre — cette
+réserve doit être lue **avant** les taux, pas après. Calculé depuis les données déjà collectées,
+sans aucun appel supplémentaire.
+
+## Limite de débit Serper
+Les réponses exposent `x-ratelimit-limit`, `x-ratelimit-remaining` et `x-ratelimit-reset`. Le relevé
+du preflight (`limit=25`, reset à quelques minutes, non aligné sur une frontière calendaire) indique
+une **limite de débit sur fenêtre courte et glissante** — **pas** un quota de crédits ni un quota
+journalier. La durée exacte de la fenêtre n'est pas établie et **ne doit pas être documentée comme
+certaine**. Le solde de crédits gratuits n'est **pas** exposé par ces en-têtes.
+
+À `seconds_between_calls: 7`, les 20 recherches s'étalent sur ~2 min 20 s (9 requêtes au maximum
+dans une minute glissante) : aucune cadence supplémentaire n'est nécessaire. Un `429` déclenche
+un arrêt propre et reprenable, sans retry.
+
 ## Garde-fous
 
 - Plafonds durs : **20 recherches, 60 générations** par round. Un dépassement est refusé.
