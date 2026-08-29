@@ -51,6 +51,14 @@ MENU = [
         ("4 M'semens", "280", "1 piece of each type.", []),
      ]),
 
+    ("tanjia", "Tanjia — Kitchen's Recommendation",
+     "Our tribute to slowness. This traditional Marrakech dish is gently simmered for over 5 hours in a sealed clay jar buried in glowing embers, creating a rich concentration of deep flavours. An individual serving for one guest, accompanied by Tafarnout bread.",
+     "",
+     [
+        ("Tanjia Marrakchia — Beef Shank, Preserved Lemon &amp; Smen", "580",
+         "Slow-cooked beef shank (350 g) with homemade preserved lemon and smen, organic Taliouine saffron, cumin, garlic cloves and olive oil. “A magical explosion of aromas released after long hours of cooking.”", ["GF","LTD"]),
+     ]),
+
     ("tajines", "Tajines",
      "Uncover the rich, slow-cooked flavours of our regional Tajines, traditionally prepared in Moroccan clay pots and gently simmered over charcoal. Each Tajine is an individual serving for one guest, accompanied by Tafarnout bread.",
      "",
@@ -65,14 +73,6 @@ MENU = [
          "Spiced minced-beef meatballs simmered in a savoury fresh tomato sauce with onions, garlic, olive oil, cumin, paprika and cilantro. Topped with an egg. Ask for the mild spicy version.", ["GF","SPICY","LTD"]),
         ("Chefchaouen's Tajine — 4 Seasonal Vegetables", "330",
          "Simmered zucchini, pumpkin, sweet potatoes and carrots on a bed of olive oil, onions and chickpeas. Infused with ginger, paprika, turmeric and salt. Pure vegetable goodness in a pot.", ["VEGAN","GF","LTD"]),
-     ]),
-
-    ("tanjia", "Tanjia — Kitchen's Recommendation",
-     "Our tribute to slowness. This traditional Marrakech dish is gently simmered for over 5 hours in a sealed clay jar buried in glowing embers, creating a rich concentration of deep flavours. An individual serving for one guest, accompanied by Tafarnout bread.",
-     "",
-     [
-        ("Tanjia Marrakchia — Beef Shank, Preserved Lemon &amp; Smen", "580",
-         "Slow-cooked beef shank (350 g) with homemade preserved lemon and smen, organic Taliouine saffron, cumin, garlic cloves and olive oil. “A magical explosion of aromas released after long hours of cooking.”", ["GF","LTD"]),
      ]),
 
     ("couscous", "Couscous",
