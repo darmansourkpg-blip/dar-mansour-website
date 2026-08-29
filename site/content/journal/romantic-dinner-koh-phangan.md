@@ -36,7 +36,7 @@ about: ''
 
 Some evenings are meant to slow down. A quiet table, low light, the sea nearby, and no reason to rush — Koh Phangan does this beautifully once you know where to look.
 
-This guide brings together the island's most romantic places to eat, from candlelit rooms to beachfront tables and sunset terraces. It's published by Dar Mansour, so we'll be upfront: our own table is one of them. But a romantic evening is personal, so we've included the spots we'd genuinely send couples to — whatever kind of night you're planning.
+This guide brings together the island's most romantic places to eat, from candlelit rooms to beachfront tables and sunset terraces. It's published by Dar Mansour, so we'll be upfront: our own table is one of them. But a romantic evening is personal, so we've included the spots we'd genuinely send couples to — whatever kind of night you're planning, from a quiet table for two to [a special occasion dinner in Koh Phangan](private-dining-koh-phangan.html) with the room to yourselves.
 
 **Straight to it:** for a candlelit, riad-style dinner, **Dar Mansour**; for a chef-led garden tasting, **Dear Phangan**; for French cooking on the sand, **L'Alcove**; and for a sunset drink before dinner, **CINTAMANI** or **Bluerama**.
 

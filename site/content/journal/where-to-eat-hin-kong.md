@@ -291,6 +291,7 @@ Tucked inside Mama Market, Oh My Burger has built one of the island's strongest 
 - Reservations are recommended for Dear Phangan and Dar Mansour, especially in high season.
 - Most places are only a few minutes apart, so Hin Kong is easy to explore over several evenings.
 - Sri Thanu is less than five minutes away by scooter, with even more cafés, markets and healthy options.
+- Staying nearby keeps you close to Hin Kong's dining and sunset scene — see [where to stay on the west coast](journal-where-to-stay-koh-phangan.html).
 
 ## A Perfect Food Day in Hin Kong
 
@@ -306,4 +307,4 @@ Tucked inside Mama Market, Oh My Burger has built one of the island's strongest 
 
 From authentic Thai family kitchens and beachfront seafood to chef-led tasting menus, Moroccan hospitality and creative cocktail bars, Hin Kong offers one of the richest dining scenes on Koh Phangan. Its compact layout makes it easy to explore on foot or by scooter, and the sunsets set the backdrop for every meal.
 
-For a single evening or several days, Hin Kong is a place where each meal is another reason to fall for Koh Phangan's west coast — and when you're ready to roam, the [island-wide restaurant guide](journal-best-restaurants-koh-phangan.html) picks up where this one leaves off.
+For a single evening or several days, Hin Kong is a place where each meal is another reason to fall for Koh Phangan's west coast — and when you're ready to roam, the [island-wide restaurant guide](journal-best-restaurants-koh-phangan.html) picks up where this one leaves off, and [the island's best beaches](journal-best-beaches-koh-phangan.html) cover the days between meals.
