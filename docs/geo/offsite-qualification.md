@@ -133,9 +133,18 @@ une sollicitation connue. Un contact détruirait irréversiblement cette propri�
 Les 20 D-CANDIDATES ont été vérifiés : **`NO MENTION FOUND (search-verified)` pour les 20**, donc
 **`D CONFIRMED` opérationnellement**, sous la réserve permanente du §1.
 
-Ce résultat est en soi une information : **aucun** des domaines qui nous devancent dans les corpus
-M0 ne mentionne Dar Mansour. Notre absence des SERP et notre absence de leurs pages sont deux
-faits distincts, et ce document ne prétend pas que le second cause le premier.
+Portée exacte de cette observation :
+
+> Among the 20 D-CONFIRMED domains examined, no indexed Dar Mansour mention was found during the
+> web verification. This observation applies only to this qualified subset of M0 domains and must
+> not be generalized to all domains appearing ahead of Dar Mansour in M0.
+
+> The absence of Dar Mansour from these pages and the absence of darmansour.com from the
+> corresponding SERPs are two distinct observations. No causal relationship is inferred.
+
+Le sous-ensemble vérifié exclut notamment les domaines classés `OUTREACH SHEET SAYS CONTACTED /
+GMAIL NOT CONFIRMED` (dont Tristan Balme, 9 apparitions M0), les relations déjà établies, et
+l'ensemble des domaines UGC et plateformes des corpus.
 
 ### D1 — cluster Food : deux gaps M0 distincts, aucun classement global
 
