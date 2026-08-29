@@ -394,7 +394,7 @@ If discovering Koh Phangan through its restaurants is part of your trip, base yo
 And wherever you stay, our own [Dar Mansour – Morocco's Kitchen](moroccan-menu-koh-phangan.html) sits between Hin Kong and Sri Thanu for a slow Moroccan dinner.
 
 ## Best Hotels for Couples in Koh Phangan
-The west coast (Hin Kong, Sri Thanu) pairs sunsets with the island's most romantic tables, while adults-only stays like Mångata and private villas such as Villa La Favela and Bliss Villas offer quiet and privacy. Plan the evening with our [romantic dinner in Koh Phangan](journal-romantic-dinner-koh-phangan.html) guide.
+The west coast (Hin Kong, Sri Thanu) pairs sunsets with the island's most romantic tables, while adults-only stays like Mångata and private villas such as Villa La Favela and Bliss Villas offer quiet and privacy. Plan the evening with our [romantic dinner in Koh Phangan](journal-romantic-dinner-koh-phangan.html) guide, and for a birthday or an anniversary, [private dining for a special occasion](private-dining-koh-phangan.html).
 
 ## Where to Eat Near Your Hotel
 Wherever you land, there's a guide for it:
@@ -402,7 +402,7 @@ Wherever you land, there's a guide for it:
 - Staying in **Sri Thanu**? → [Best restaurants in Sri Thanu](journal-where-to-eat-sri-thanu.html)
 - Staying in **Hin Kong**? → [Best restaurants in Hin Kong](journal-where-to-eat-hin-kong.html)
 - Staying near **Thong Sala / Baan Tai**? → [Where to eat in Thong Sala](journal-where-to-eat-thong-sala-koh-phangan.html)
-- Anywhere on the island → [Best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html) · [Where to watch the sunset](journal-where-to-watch-sunset-koh-phangan.html)
+- Anywhere on the island → [Where to eat in Koh Phangan](journal-best-restaurants-koh-phangan.html) · [Where to watch the sunset](journal-where-to-watch-sunset-koh-phangan.html)
 
 ## When to Go, and West vs East Coast
 

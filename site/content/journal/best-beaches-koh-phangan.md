@@ -586,7 +586,7 @@ A great beach day is often made better by a memorable meal. These guides cover t
 | Hin Kong | [Best restaurants in Hin Kong](journal-where-to-eat-hin-kong.html) |
 | Sri Thanu | [Best restaurants in Sri Thanu](journal-where-to-eat-sri-thanu.html) |
 | Thong Sala & Baan Tai | [Where to eat in Thong Sala](journal-where-to-eat-thong-sala-koh-phangan.html) |
-| Island-wide | [Best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html) |
+| Island-wide | [Where to eat in Koh Phangan](journal-best-restaurants-koh-phangan.html) |
 | Romantic evenings | [Romantic dinner in Koh Phangan](journal-romantic-dinner-koh-phangan.html) |
 | Coffee & brunch | [Best breakfast & brunch](journal-best-breakfast-brunch-koh-phangan.html) |
 

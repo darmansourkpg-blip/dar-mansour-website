@@ -325,6 +325,7 @@ When the workday is done, Mama Market, Grasshopper Beach Bar and Dar Mansour are
 - Come to Mama Market after sunset for the liveliest atmosphere and the widest choice.
 - Arrive at Grasshopper Beach Bar at least 30 minutes before sunset for a good spot on the sand.
 - Don't limit yourself to Sri Thanu — some of the island's best restaurants are minutes away in Hin Kong.
+- Sri Thanu suits a longer stay if yoga and slow mornings are the plan — see [where to stay around Sri Thanu](journal-where-to-stay-koh-phangan.html).
 
 ## A Perfect Food Day in Sri Thanu
 
@@ -342,4 +343,4 @@ When the workday is done, Mama Market, Grasshopper Beach Bar and Dar Mansour are
 
 Sri Thanu may be best known as Koh Phangan's wellness hub, but its food scene has quietly become one of its biggest draws — from breakfast cafés and a lively evening market to authentic Thai kitchens, sunset bars and a slow Moroccan dinner.
 
-Our advice is simple: don't stay in one place. Good coffee in the morning, local Thai flavours for lunch, sunset at Zen Beach, and the evening around a shared table. For a weekend or a month, Sri Thanu is one of the best places on Koh Phangan to eat well every day — and when you're ready to roam, the [island-wide restaurant guide](journal-best-restaurants-koh-phangan.html) picks up where this one leaves off.
+Our advice is simple: don't stay in one place. Good coffee in the morning, local Thai flavours for lunch, sunset at Zen Beach — one of [the beaches along this coast](journal-best-beaches-koh-phangan.html) — and the evening around a shared table. For a weekend or a month, Sri Thanu is one of the best places on Koh Phangan to eat well every day — and when you're ready to roam, the [island-wide restaurant guide](journal-best-restaurants-koh-phangan.html) picks up where this one leaves off.

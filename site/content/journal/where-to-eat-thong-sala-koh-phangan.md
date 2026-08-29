@@ -362,6 +362,7 @@ For the island as a whole, see the [best restaurants in Koh Phangan](journal-bes
 - **Most places are walkable.** Once you've parked the scooter, many restaurants, cafés and markets are easy to explore on foot.
 - **Check opening hours.** Island hours change through the year, especially in low season — confirm on Google Maps before travelling.
 - **Bring cash.** Most restaurants take cards or QR payments, but many market stalls and small family businesses are cash only.
+- **Basing yourself here.** Thong Sala is the island's arrival point and its most convenient base — see [where to stay near Thong Sala](journal-where-to-stay-koh-phangan.html).
 
 ## Final Thoughts
 
