@@ -150,6 +150,25 @@ Ce que M0 réfute est précisément et uniquement : **le volume brut de liens in
 facteur limitant principal**. L'effet de la **qualité et de la contextualisation** sémantique des
 liens — ce que `9708db8` a modifié — reste **UNKNOWN**.
 
+### 3.1 Exceptions au gel
+
+**Post-M0 documented exception — `1de3ddb`**
+
+During the M0→M1 freeze window, commit `1de3ddb` modified `moroccan-menu-koh-phangan.html` by
+moving the Tanjia section before the Tajines section. This was a real published content-order
+change and therefore means **the freeze was not strictly total**.
+
+The change did not target the M1 control pages or the generic Food / Beaches / Stay / Things to Do
+retrieval gaps under investigation. It affected the Moroccan menu page, within a cluster already
+retrieved and stably selected at M0.
+
+**Interpretation rule for M1:** any movement on Moroccan/Tajine-related prompts must be read with
+this post-M0 menu change documented as a possible confounder. No causal attribution may be made to
+`9708db8` or to passive maturation for those affected intentions without accounting for `1de3ddb`.
+
+This exception does not alter the official M0 baseline, the 20-prompt denominator, or the
+pre-registered M1 protocol.
+
 ---
 
 ## 4. Classification des pages pour la lecture de M1
