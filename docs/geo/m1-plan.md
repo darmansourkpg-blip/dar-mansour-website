@@ -169,6 +169,81 @@ this post-M0 menu change documented as a possible confounder. No causal attribut
 This exception does not alter the official M0 baseline, the 20-prompt denominator, or the
 pre-registered M1 protocol.
 
+### 3.2 GSC Crawl Checkpoints — chronologie de recrawl
+
+Une **date de déploiement n'est pas une date de maturation**. Tant que Googlebot n'a pas recrawlé
+une page, la version déployée n'est pas celle qui alimente les SERP mesurées par le benchmark.
+Les dates `Last crawled` relevées dans Google Search Console sont donc conservées comme
+**variable descriptive de chronologie**.
+
+**Statut méthodologique de cette variable — à ne pas dépasser :**
+
+- GSC est un **indicateur complémentaire de maturation / indexation**, jamais une variable causale.
+- Ce n'est **pas** une condition de lancement : M1 ne dépend pas d'un recrawl complet du site.
+  Aucune règle du type « M1 ne peut commencer que lorsque toutes les pages ont été recrawlées ».
+- Le benchmark M1 reste **exclusivement** un dispositif Serper/Google + Gemini conforme au
+  protocole pré-enregistré du §2. GSC ne fait pas partie de la mesure.
+
+#### GSC Crawl Checkpoint #1 — 3 septembre 2026
+
+Dates `Last crawled` relevées dans Google Search Console pour les pages indexées :
+
+| Page | Last crawled (GSC, au 03/09/2026) |
+|---|---|
+| Sunset | 27 Aug 2026 |
+| Home | 26 Aug 2026 |
+| Couscous | 26 Aug 2026 |
+| Moroccan Menu | 22 Aug 2026 |
+| Thong Sala | 22 Aug 2026 |
+| Tajine | 21 Aug 2026 |
+| Where to Stay | 21 Aug 2026 |
+| Best Beaches | 21 Aug 2026 |
+| Romantic Dinner | 21 Aug 2026 |
+| Best Thai Restaurants | 21 Aug 2026 |
+| Things to Do | 20 Aug 2026 |
+| Best Restaurants | 20 Aug 2026 |
+| Sri Thanu | 20 Aug 2026 |
+| Best Cafés | 19 Aug 2026 |
+| Hin Kong | 18 Aug 2026 |
+| Private Dining | 23 Jul 2026 |
+
+#### Conséquence pour `9708db8`
+
+L'intervention Internal Linking a été déployée le **29 août 2026**. Les six pages qu'elle modifie
+portaient, au checkpoint du 3 septembre, les dates de crawl suivantes :
+
+| Page éditée par `9708db8` | Last crawled au 03/09 | Postérieur au déploiement ? |
+|---|---|---|
+| Romantic Dinner | 21 Aug 2026 | **non** |
+| Where to Stay | 21 Aug 2026 | **non** |
+| Best Beaches | 21 Aug 2026 | **non** |
+| Thong Sala | 22 Aug 2026 | **non** |
+| Sri Thanu | 20 Aug 2026 | **non** |
+| Hin Kong | 18 Aug 2026 | **non** |
+
+**Au 3 septembre 2026, aucune des six pages modifiées par `9708db8` n'avait de recrawl Googlebot
+post-intervention observable dans GSC.** Les six dates sont antérieures au déploiement.
+
+#### Conséquence pour l'exception `1de3ddb`
+
+`moroccan-menu-koh-phangan.html` affichait `Last crawled: 22 Aug 2026`, tandis que `1de3ddb`
+(déplacement de la section Tanjia) a été déployé le **30 août 2026**. Le changement n'était donc
+**pas encore reflété par un recrawl observable** au checkpoint #1. Cela complète — sans l'annuler —
+l'exception au gel documentée au §3.1.
+
+#### Chronologie à conserver par page touchée par `9708db8`
+
+Pour chaque page directement modifiée par l'intervention, conserver dans la mesure du possible :
+
+`deployment date → GSC last crawl before intervention → first observed post-intervention crawl → M1 measurement date`
+
+Si une intention bouge à M1, **cette chronologie doit être consultée avant toute interprétation.**
+
+#### Checkpoint #2 — prévu le 9 septembre 2026
+
+Nouvel export des dates `Last crawled`, comparé à la baseline du 03/09 ci-dessus, **avant** de
+décider de la date de la mesure M1.
+
 ---
 
 ## 4. Classification des pages pour la lecture de M1
@@ -228,13 +303,17 @@ corps** d'un article de 9 651 mots.
    moindre mouvement de rang ou de taux. Une variation de profondeur déplace mécaniquement les
    seuils Top-N.
 3. Puis seulement : Retrieval Rate, Top-N, rangs, Selection.
+4. **Pour toute page modifiée par `9708db8` ou `1de3ddb` qui bouge**, consulter la chronologie de
+   recrawl du §3.2 **avant** d'interpréter. Un mouvement sans recrawl post-intervention observable
+   appelle une interprétation encore plus prudente qu'un mouvement avec recrawl observé.
 
 ### 6.2 Interprétations autorisées
 
 | Observation M1 | Lecture autorisée |
 |---|---|
 | Cafés et/ou Things to Do entrent | Hypothèse **G (maturité) renforcée**. Aucune action : l'effet a été obtenu sans rien faire. |
-| Beaches et/ou Where to Stay entrent | **Association temporelle** avec `9708db8`, **confondue avec l'âge**. Jamais de causalité. |
+| Beaches et/ou Where to Stay entrent, **avec** recrawl post-intervention observé (§3.2) | **Association temporelle** avec `9708db8` **et** la maturation, confondue avec l'âge. Jamais de causalité. |
+| Beaches et/ou Where to Stay entrent, **sans** recrawl post-intervention observable (§3.2) | Interprétation **encore plus prudente** : la version modifiée n'est pas établie comme étant celle que Google a vue. |
 | Best Restaurants entre | Aucune intervention sur cette page → maturité ou volatilité SERP. **Ne rien s'attribuer.** |
 | Best Restaurants reste dehors | Le candidat suivant n'est **pas** « plus de contenu », mais une étude sur la **preuve d'expérience éditoriale réellement documentable** (§7). |
 | Special Occasion reste `NOT_RETRIEVED` | L'alignement H1/title de Private Dining (`private dining` + `Koh Phangan` + `special occasion`) devient un **candidat de test contrôlé isolé** — une seule variable, une seule page. |
