@@ -239,10 +239,98 @@ Pour chaque page directement modifiée par l'intervention, conserver dans la mes
 
 Si une intention bouge à M1, **cette chronologie doit être consultée avant toute interprétation.**
 
-#### Checkpoint #2 — prévu le 9 septembre 2026
+#### GSC Crawl Checkpoint #2 — 7 septembre 2026
 
-Nouvel export des dates `Last crawled`, comparé à la baseline du 03/09 ci-dessus, **avant** de
-décider de la date de la mesure M1.
+Le checkpoint #2, initialement prévu le 9 septembre, a été relevé le **7 septembre 2026** à partir
+de l'export GSC « Coverage / Valid — All known pages ». Le checkpoint #1 ci-dessus est **conservé
+intact** : les deux états coexistent, aucun n'écrase l'autre.
+
+| Page | Checkpoint #1 (03/09) | Checkpoint #2 (07/09) | Recrawl depuis #1 |
+|---|---|---|---|
+| Hin Kong | 18 Aug | **2 Sep 2026** | ✅ |
+| Sri Thanu | 20 Aug | **2 Sep 2026** | ✅ |
+| Best Restaurants | 20 Aug | **2 Sep 2026** | ✅ |
+| Best Beaches | 21 Aug | **2 Sep 2026** | ✅ |
+| Romantic Dinner | 21 Aug | **2 Sep 2026** | ✅ |
+| Where to Stay | 21 Aug | **2 Sep 2026** | ✅ |
+| Thong Sala | 22 Aug | **2 Sep 2026** | ✅ |
+| Moroccan Menu | 22 Aug | **2 Sep 2026** | ✅ |
+| Things to Do | 20 Aug | **4 Sep 2026** | ✅ |
+| Home | 26 Aug | **30 Aug 2026** | ✅ |
+| Private Dining | 23 Jul | **30 Aug 2026** | ✅ |
+| Sunset | 27 Aug | 27 Aug 2026 | — |
+| Couscous | 26 Aug | 26 Aug 2026 | — |
+| Tajine | 21 Aug | 21 Aug 2026 | — |
+| Best Thai Restaurants | 21 Aug | 21 Aug 2026 | — |
+| Best Cafés | 19 Aug | 20 Aug 2026 | — |
+
+*Note de relevé : Best Cafés était noté « 19 Aug » au checkpoint #1 et apparaît à « 20 Aug » dans
+l'export du 07/09. L'écart d'un jour tient à la source du relevé (inspection manuelle vs export) ;
+dans les deux cas la page n'a pas reçu de recrawl récent comparable.*
+
+#### Conséquence pour `9708db8`
+
+**Les 6 pages directement modifiées par `9708db8` ont désormais un recrawl Googlebot
+post-intervention observable, toutes datées du 2 septembre 2026** — soit 4 jours après le
+déploiement du 29 août.
+
+Ce que cela établit, et rien de plus : **Google a récupéré les versions post-intervention de ces
+six pages.** Cela ne constitue en aucune manière une preuve, ni même un indice, d'un effet de
+`9708db8` sur le retrieval.
+
+**Le recrawl n'est pas spécifique aux pages de l'intervention.** `journal-best-restaurants-koh-phangan.html`,
+qui n'a **pas** été modifiée par `9708db8`, a été recrawlée **le même jour, le 2 septembre**, comme
+`moroccan-menu` ; Things to Do l'a été le 4 septembre, Home et Private Dining le 30 août. Un
+recrawl observé sur une page de l'intervention n'a donc aucune valeur discriminante.
+
+#### Conséquence pour l'exception `1de3ddb`
+
+`moroccan-menu-koh-phangan.html` : 22 Aug → **2 Sep 2026**. Le déplacement de la section Tanjia
+(déployé le 30 août) a lui aussi un recrawl post-modification observable. **Le changement reste un
+confondant documenté** pour les intentions Moroccan et Tajine (§3.1) — le recrawl le confirme comme
+effectivement pris en compte par Google, il ne l'annule pas.
+
+#### Pages sans recrawl récent — réserve supplémentaire
+
+Cinq pages du tableau n'ont **pas** reçu de recrawl comparable entre les deux checkpoints :
+**Best Cafés** (20 Aug), **Best Thai Restaurants** (21 Aug), **Tajine** (21 Aug), **Couscous**
+(26 Aug) et **Sunset** (27 Aug).
+
+Pour ces pages, tout mouvement observé à M1 doit porter la réserve suivante : la version
+actuellement indexée par Google n'a pas été rafraîchie depuis la période M0. Cela concerne en
+particulier **Best Cafés**, l'un des deux contrôles de maturité les plus propres (§4).
+
+#### Chronologie M0 → M1 observable
+
+```
+M0                              ≈ 20–21 août 2026
+intervention 9708db8 déployée     29 août 2026
+exception 1de3ddb déployée        30 août 2026
+recrawl Home / Private Dining     30 août 2026
+checkpoint #1                     3 septembre 2026  — aucun recrawl post-intervention observable
+recrawl des 6 pages 9708db8       2 septembre 2026
+recrawl Best Restaurants          2 septembre 2026  (page NON modifiée)
+recrawl moroccan-menu             2 septembre 2026
+recrawl Things to Do              4 septembre 2026
+checkpoint #2 observé             7 septembre 2026
+M1 visée                         ~21 septembre 2026, sous réserve d'aucune nouvelle intervention
+```
+
+#### Statut enregistré avant M1
+
+Pour les 6 pages de `9708db8` : **`post-intervention recrawl observed = YES`**.
+
+Cela autorise **uniquement** la lecture d'une séquence temporelle — `intervention → recrawl →
+mesure M1` — et **aucune causalité**. La règle du §6.2 reste applicable telle quelle.
+
+#### Fenêtre retenue pour M1
+
+M1 n'est **pas** lancée maintenant. Le recrawl des pages de l'intervention date du 2 septembre ;
+la fenêtre retenue laisse du temps entre récupération par Googlebot et mesure. Cible : **21
+septembre 2026**, soit environ 19 jours après le recrawl et environ un mois après M0.
+
+**Ces 19 jours ne constituent pas une règle méthodologique.** C'est la fenêtre retenue pour cette
+expérience précise, et elle ne s'impose ni à M2 ni à aucune vague ultérieure.
 
 ---
 
