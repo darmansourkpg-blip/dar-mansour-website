@@ -134,7 +134,7 @@ home_body = f'''
     <span class="eyebrow">Wine Pairing &amp; The Mansour Bar</span>
     <h2>On the spiced path of Morocco</h2>
     <p class="lead">Wine here is more than a drink — it's a dialogue with the dish. We are proud to offer Koh Phangan's only dedicated Moroccan wine pairing menu, each label selected to elevate the warmth and aromatic depth of our slow food.</p>
-    <p style="margin-top:1.2rem;">At The Mansour Bar, cocktails are a story, a scent, a spark of memory — from <em>Rock the Casbah</em> with Ras El Hanout syrup to the infamous Mansour's Jasminade.</p>
+    <p style="margin-top:1.2rem;">At The Mansour Bar, cocktails are a story, a scent, a spark of memory — from <em>Rock the Kasbah</em> with Ras El Hanout syrup to the infamous Mansour's Jasminade.</p>
     <a class="textlink" href="moroccan-wine-pairing-koh-phangan.html">Explore wine &amp; cocktails {A}</a>
   </div>
 </div></div></section>
