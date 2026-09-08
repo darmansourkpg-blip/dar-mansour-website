@@ -48,7 +48,7 @@ WINE_GROUPS = [
 COCKTAILS = [
     ("Mansour Signatures", "Inspiration everywhere — just look around.", [
         ("My name is Berber, James Berber!","250","A refreshing twist on the classic dry martini: extra-dry vermouth infused with olive oil and dry gin. (Vodka version on request.)"),
-        ("Rock the Casbah","250","A bold Margarita with Ras El Hanout syrup, tequila, orange liqueur and fresh lime."),
+        ("Rock the Kasbah","250","A bold Margarita with Ras El Hanout syrup, tequila, orange liqueur and fresh lime."),
         ("A Camel in Zen Beach","250","A daiquiri of date syrup, white rum and fresh lime."),
     ]),
     ("Mansour Classics", "To live without restrictions.", [
