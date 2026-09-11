@@ -498,7 +498,7 @@ reviews_body = L.breadcrumb(("Reviews", None)) + L.subhero(
   <div class="elfsight-app-5bfc57f3-42b7-4a48-9677-31510ee6435e" data-elfsight-app-lazy style="margin:2rem 0;"></div>
 </div></section>
 ''' + L.cta_band("Come and write your own story", "Reserve your evening and discover the experience for yourself.") + L.related(
-    ("Recognition", "In the Press", "best-moroccan-restaurant-world-press.html", "assets/img/dar-mansour-front-koh-phangan.jpeg", "Storefront"),
+    ("Recognition", "In the Press", "best-moroccan-restaurant-world-press.html", "assets/uploads/golf-du-maroc-feature-dar-mansour-koh-phangan.jpg", "Dar Mansour featured in Golf du Maroc magazine"),
     ("Menu", "Our Moroccan Menu", "moroccan-menu-koh-phangan.html", "assets/uploads/moroccan-couscous-vegetables-dar-mansour-koh-phangan.jpg", "Couscous"),
     ("Founders", "Our Story", "dar-mansour-founders-vision.html", "assets/uploads/dar-mansour-founders-our-story-koh-phangan.jpg", "Maïja and Bruno, arm in arm before a Thai temple in Koh Phangan — the founders of Dar Mansour"))
 pages["moroccan-restaurant-reviews-koh-phangan.html"] = L.page(
