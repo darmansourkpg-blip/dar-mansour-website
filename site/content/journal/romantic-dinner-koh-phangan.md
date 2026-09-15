@@ -48,11 +48,11 @@ We live and eat on the island year-round, so these are places we return to — c
 
 If we were planning one memorable evening for friends visiting Koh Phangan, these five would be the first we'd consider — each a different mood:
 
-- **Dar Mansour** — candlelit Moroccan slow dining
-- **Dear Phangan** — chef-led garden tasting
-- **L'Alcove** — French cooking on the beach
-- **Yukinoya** — teppanyaki theatre by the sea
-- **CINTAMANI** — striking design and cocktails
+- **[Dar Mansour](#dar-mansour)** — candlelit Moroccan slow dining
+- **[Dear Phangan](#dear-phangan)** — chef-led garden tasting
+- **[L'Alcove](#lalcove)** — French cooking on the beach
+- **[Yukinoya](#yukinoya)** — teppanyaki theatre by the sea
+- **[CINTAMANI](#cintamani)** — striking design and cocktails
 
 ## Romantic Dinner Quick Picks
 
@@ -60,17 +60,17 @@ Short on time? Here are our favourites at a glance.
 
 | Looking for… | Our pick | Area |
 |---|---|---|
-| Candlelit, riad-style dinner | Dar Mansour | Hin Kong / Sri Thanu |
-| Marriage proposal (private) | Dar Mansour | Hin Kong |
-| Chef's table for two | Dear Phangan | Wok Tum |
-| French dinner on the beach | L'Alcove | Hin Kong Beach |
-| Striking design & cocktails | CINTAMANI | Hin Kong Beach |
-| Sunset drink before dinner | Bluerama | Nai Wok, Wok Tum |
-| Honeymoon / east coast | Yukinoya (Anantara) | Thong Nai Pan |
+| Candlelit, riad-style dinner | [Dar Mansour](#dar-mansour) | Hin Kong / Sri Thanu |
+| Marriage proposal (private) | [Dar Mansour](#dar-mansour) | Hin Kong |
+| Chef's table for two | [Dear Phangan](#dear-phangan) | Wok Tum |
+| French dinner on the beach | [L'Alcove](#lalcove) | Hin Kong Beach |
+| Striking design & cocktails | [CINTAMANI](#cintamani) | Hin Kong Beach |
+| Sunset drink before dinner | [Bluerama](#bluerama) | Nai Wok, Wok Tum |
+| Honeymoon / east coast | [Yukinoya](#yukinoya) (Anantara) | Thong Nai Pan |
 
 ## Candlelit & Intimate
 
-### Dar Mansour — A Riad-Style Evening
+### Dar Mansour — A Riad-Style Evening {#dar-mansour}
 
 This is our own table, so take it as an honest invitation rather than a sales pitch. Dar Mansour is the only Moroccan restaurant on Koh Phangan, set on the road between Hin Kong and Sri Thanu. One of the more intimate dining rooms in Koh Phangan, the space is candlelit and dressed with décor gathered across Morocco — closer to an evening in a riad than a night out. Slow-cooked [tajines](journal-what-is-a-tajine.html), tanjia and hand-rolled [couscous](journal-what-is-couscous.html) arrive unhurried, often to the quiet rhythms of Gnaoua music — a night built for lingering.
 
@@ -83,7 +83,7 @@ This is our own table, so take it as an honest invitation rather than a sales pi
 
 ## Best Chef's Table for Couples
 
-### Dear Phangan — A Chef-Led Garden
+### Dear Phangan — A Chef-Led Garden {#dear-phangan}
 
 A few minutes away in Wok Tum, Dear Phangan sits in a garden of papaya, banana and fresh herbs, and every part of the evening feels considered. Recognised by the Michelin Guide, it's chef-led and firmly local — a blind menu that changes with the seasons, seafood in daily from the pier — quietly creative but rooted in Thai flavour.
 
@@ -94,7 +94,7 @@ A few minutes away in Wok Tum, Dear Phangan sits in a garden of papaya, banana a
 
 ## Sunset & Beachfront Romance
 
-### L'Alcove — French Cooking on the Sand
+### L'Alcove — French Cooking on the Sand {#lalcove}
 
 At Hin Kong Beach, L'Alcove sets its tables almost on the sand. The cooking is French with a light Thai touch — duck confit, fresh salmon, a generous cheese platter — backed by one of the island's deepest lists of French wine and Champagne. Time it for sunset.
 
@@ -103,7 +103,7 @@ At Hin Kong Beach, L'Alcove sets its tables almost on the sand. The cooking is F
 **Good to know —** Beachfront tables are limited — arrive before sunset; live music some evenings.<br>
 **Location —** West Coast · Hin Kong Beach. <a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Alcove+Koh+Phangan" target="_blank" rel="noopener">View on map ↗</a>
 
-### CINTAMANI — Striking Design & Cocktails
+### CINTAMANI — Striking Design & Cocktails {#cintamani}
 
 Also on Hin Kong Beach, CINTAMANI feels transporting — Silk Road inspiration, jungle-glam design and tropical gardens by the sea. The cocktails match the room, with a considered wine list and Mediterranean-style tapas. Settle in as the sky changes over the Gulf.
 
@@ -114,7 +114,7 @@ Also on Hin Kong Beach, CINTAMANI feels transporting — Silk Road inspiration, 
 
 ## A Sunset Drink Before Dinner
 
-### Bluerama
+### Bluerama {#bluerama}
 
 Just before Amsterdam Bar in Nai Wok, Bluerama is designed around an adults-only infinity pool overlooking the Gulf — calm, refined and made for couples. It's not a full dinner spot, but it's one of the loveliest places for a sundowner before your table elsewhere.
 
@@ -125,7 +125,7 @@ Just before Amsterdam Bar in Nai Wok, Bluerama is designed around an adults-only
 
 ## Best for a Honeymoon
 
-### Yukinoya at Anantara Rasananda — Teppanyaki by the Sea
+### Yukinoya at Anantara Rasananda — Teppanyaki by the Sea {#yukinoya}
 
 For couples staying around Thong Nai Pan, you don't have to cross the island. Yukinoya, inside Anantara Rasananda, is Koh Phangan's only teppanyaki restaurant — dinner comes with a show as the chef grills A5 Wagyu and local seafood in front of you, with a deep sake list and tables under the stars over the pool and sea.
 

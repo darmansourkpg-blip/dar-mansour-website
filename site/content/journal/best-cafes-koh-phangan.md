@@ -76,19 +76,19 @@ Short on time? These are our favourite cafés across the island at a glance.
 
 | Looking for… | Our recommendation |
 | --- | --- |
-| Best roastery experience | Bubba's Roastery (Haad Yao) |
-| Best specialty coffee & bakery | Indigo Specialty Coffee & Bakery |
-| Best neighbourhood café | Mimi's Café |
-| Best coffee community | Chacha Coffee |
-| Best healthy café | Foxxy's Restaurant & Café |
-| Best beachfront café | Kikela |
-| Best for coffee exploration | Balance Specialty Coffee |
-| Best local bakery & coffee | Nira's Home Bakery |
-| Best Italian-style coffee in the north | Caffe Della Moca |
+| Best roastery experience | [Bubba's Roastery](#bubbas-roastery) (Haad Yao) |
+| Best specialty coffee & bakery | [Indigo Specialty Coffee & Bakery](#indigo-specialty-coffee-bakery) |
+| Best neighbourhood café | [Mimi's Café](#mimis-cafe) |
+| Best coffee community | [Chacha Coffee](#chacha-coffee) |
+| Best healthy café | [Foxxy's Restaurant & Café](#foxxys-restaurant-cafe) |
+| Best beachfront café | [Kikela](#kikela) |
+| Best for coffee exploration | [Balance Specialty Coffee](#balance-specialty-coffee) |
+| Best local bakery & coffee | [Nira's Home Bakery](#niras-home-bakery) |
+| Best Italian-style coffee in the north | [Caffe Della Moca](#caffe-della-moca) |
 
 ## Our Favourite Cafés in Koh Phangan
 
-#### Indigo Specialty Coffee & Bakery
+#### Indigo Specialty Coffee & Bakery {#indigo-specialty-coffee-bakery}
 
 The kind of café that becomes routine after one visit. Indigo Specialty Coffee & Bakery has built its name on specialty coffee, pastries baked fresh each morning and an easy welcome — a flat white, a flaky croissant or a slow morning, all done with a steady hand. Locals, remote workers and travellers all end up here.
 
@@ -97,7 +97,7 @@ The kind of café that becomes routine after one visit. Indigo Specialty Coffee 
 **Price —** ฿฿<br>
 **Getting there —** On the main road between Hin Kong and Sri Thanu, just north of Sonolito Thai Food. [View on map ↗](https://maps.app.goo.gl/uPNXjJsfAM61uNVa8)
 
-#### Foxxy's Restaurant & Café
+#### Foxxy's Restaurant & Café {#foxxys-restaurant-cafe}
 
 Known for its nourishing breakfasts and premium coffee, Foxxy's Restaurant & Café serves wholesome all-day meals made with quality ingredients, including plenty of vegan and gluten-free options. Its relaxed atmosphere makes it a natural place for a slow breakfast, a healthy lunch or a productive work session.
 
@@ -106,7 +106,7 @@ Known for its nourishing breakfasts and premium coffee, Foxxy's Restaurant & Caf
 **Price —** ฿฿<br>
 **Getting there —** In Sri Thanu, just past Mama Noi Mango Sticky Rice when coming from Hin Kong. [View on map ↗](https://maps.app.goo.gl/FNwG9mfoMX3mbxmd7)
 
-#### Mimi's Café
+#### Mimi's Café {#mimis-cafe}
 
 In the heart of Sri Thanu, Mimi's is a neighbourhood café where residents, remote workers and travellers gather over good Italian coffee, fresh breakfasts and homemade lunches. The kitchen leans on organic eggs and seasonal produce where it can, in a relaxed, friendly room — a natural stop between the beach and a yoga class.
 
@@ -115,7 +115,7 @@ In the heart of Sri Thanu, Mimi's is a neighbourhood café where residents, remo
 **Price —** ฿<br>
 **Getting there —** In the heart of Sri Thanu village. [View on map ↗](https://maps.app.goo.gl/5Yb2mgZjDcCEEvtXA)
 
-#### Kikela
+#### Kikela {#kikela}
 
 Set directly on Hin Kong Beach, Kikela is a stylish all-day beachfront restaurant where you can settle in over specialty coffee, a working lunch, dinner or cocktails with sunset views. Its creative Asian fusion cuisine, homemade desserts and relaxed atmosphere make it one of the west coast's favourite places to spend the day.
 
@@ -124,7 +124,7 @@ Set directly on Hin Kong Beach, Kikela is a stylish all-day beachfront restauran
 **Price —** ฿฿<br>
 **Getting there —** Directly on Hin Kong Beach, just beyond CINTAMANI Bar on the way to Sri Thanu. [View on map ↗](https://maps.app.goo.gl/nY3YCo6CC2792ytC9)
 
-#### Chacha Coffee
+#### Chacha Coffee {#chacha-coffee}
 
 Coffee is taken seriously here. Chacha Coffee pairs carefully sourced beans with well-pulled espresso and an easy atmosphere that keeps locals and remote workers coming back. Alongside espresso, filter and iced drinks, the all-day breakfast carries a subtle thread of Moroccan spice. Community events like the Friday Run Club have made it a favourite morning meeting spot.
 
@@ -133,7 +133,7 @@ Coffee is taken seriously here. Chacha Coffee pairs carefully sourced beans with
 **Price —** ฿<br>
 **Getting there —** In Baan Tai, on the main road between Thong Sala and Haad Rin. [View on map ↗](https://maps.app.goo.gl/wPqLJ2YxKYq5EquP7)
 
-#### Bubba's Roastery — Haad Yao
+#### Bubba's Roastery — Haad Yao {#bubbas-roastery}
 
 Not just another branch — this is where Bubba's roasts its beans, so the coffee is the point. Expect a focused coffee experience alongside a solid brunch, in a relaxed Haad Yao setting. A good stop for anyone who wants to taste the roast at the source.
 
@@ -142,7 +142,7 @@ Not just another branch — this is where Bubba's roasts its beans, so the coffe
 **Price —** ฿฿<br>
 **Getting there —** In Haad Yao, on the west coast. [View on map ↗](https://maps.app.goo.gl/QympUkCqJTbd1iVF8)
 
-#### Balance Specialty Coffee
+#### Balance Specialty Coffee {#balance-specialty-coffee}
 
 Set among the palm trees in the heart of Koh Phangan, Balance Specialty Coffee brings an Australian-inspired approach to both coffee and food. The real focus is on the beans, with different origins and varieties to explore through espresso, V60 or cold brew, all served in a calm, beautifully designed setting. It's the kind of place that works equally well for a serious coffee, a quiet meeting or simply slowing down away from the busier coastal villages.
 
@@ -151,7 +151,7 @@ Set among the palm trees in the heart of Koh Phangan, Balance Specialty Coffee b
 **Price —** ฿<br>
 **Getting there —** On Madua Wan Road, in the heart of Koh Phangan. [View on map ↗](https://maps.app.goo.gl/fG6BgZPcuKAMpUsZ8)
 
-#### Nira's Home Bakery
+#### Nira's Home Bakery {#niras-home-bakery}
 
 A Thong Sala favourite for homemade cakes and pastries, Nira's Home Bakery has built a loyal following on baking made with care — a good stop for a sweet treat with coffee or something fresh to take away. In an island café scene filled with newer arrivals, Nira's brings something different: the familiar character of a long-established local bakery.
 
@@ -160,7 +160,7 @@ A Thong Sala favourite for homemade cakes and pastries, Nira's Home Bakery has b
 **Price —** ฿<br>
 **Getting there —** In Thong Sala, near the town centre. [View on map ↗](https://maps.app.goo.gl/MVgzheouPjkERP4bA)
 
-#### Caffe Della Moca
+#### Caffe Della Moca {#caffe-della-moca}
 
 Up in Chaloklum on the north coast, Caffe Della Moca brings an Italian-leaning approach to coffee — a reliable espresso stop in an area with fewer specialty options. It's a good place for a proper cup before or after exploring Chaloklum and Koh Phangan's quieter northern coast.
 

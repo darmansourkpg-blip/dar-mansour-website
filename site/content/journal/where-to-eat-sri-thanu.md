@@ -59,20 +59,20 @@ Short on time? These are our favourite recommendations while you're staying in S
 
 | Looking for… | Our recommendation |
 |---|---|
-| Best authentic Thai restaurant | Restaurant Sunshine |
-| Best breakfast | Mimi's Café |
-| Best Japanese restaurant | Umami Ramen & Sushi |
-| Best healthy café | Deli Devi |
-| Best burger | Oh My Burger |
-| Best casual dinner | Mama Market |
-| Best sunset drinks | Grasshopper Beach Bar |
-| Best special dinner | Dar Mansour – Morocco's Kitchen |
+| Best authentic Thai restaurant | [Restaurant Sunshine](#restaurant-sunshine) |
+| Best breakfast | [Mimi's Café](#mimis-cafe) |
+| Best Japanese restaurant | [Umami Ramen & Sushi](#umami-ramen-sushi) |
+| Best healthy café | [Deli Devi](#deli-devi) |
+| Best burger | [Oh My Burger](#oh-my-burger) |
+| Best casual dinner | [Mama Market](#mama-market) |
+| Best sunset drinks | [Grasshopper Beach Bar](#grasshopper-beach-bar) |
+| Best special dinner | [Dar Mansour – Morocco's Kitchen](#dar-mansour-moroccos-kitchen) |
 
 ## Best Restaurants in Sri Thanu
 
 Sri Thanu is known for yoga and wellness, but its restaurants have become just as much a reason to visit. Within a small area you'll find Thai home cooking, international kitchens, Japanese comfort food, lively social dining and slow Moroccan evenings — enough to eat well from morning until late.
 
-#### Restaurant Sunshine
+#### Restaurant Sunshine {#restaurant-sunshine}
 
 A Sri Thanu favourite where proper Thai cooking meets the village's wellness leanings. The kitchen's southern specialities carry real punch — bold, aromatic and generously spiced — while the curries and stir-fries keep things familiar. Smoothie bowls, cold-pressed juices and hearty vegetarian plates mean everyone at the table finds something, whatever their diet.
 
@@ -90,7 +90,7 @@ Beside the lake in Sri Thanu, this Bali- and Australia-inspired pub is built aro
 **Price —** ฿฿<br>
 **Getting there —** Beside the lake in Sri Thanu, just off the main road. [View on map ↗](https://www.google.com/maps/search/?api=1&query=The+Lakehouse+%7C+Restaurant+%26+Pub+84%2F32%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
-#### Umami Ramen & Sushi
+#### Umami Ramen & Sushi {#umami-ramen-sushi}
 
 Little beats a steaming bowl of ramen after a day out on the island, and that's Umami's stock in trade — rich broths, well-cooked noodles and fresh sushi in a relaxed room that suits solo travellers and families alike. Generous portions, friendly service and steady quality make it an easy call for honest Japanese comfort food without the fine-dining formality.
 
@@ -108,7 +108,7 @@ A short walk from Zen Beach, Plantasia is a relaxed restaurant and lounge that c
 **Price —** ฿฿<br>
 **Getting there —** A short walk from Zen Beach, Sri Thanu. [View on map ↗](https://share.google/L5A56OxH1gLfomJGx)
 
-#### Dar Mansour – Morocco's Kitchen
+#### Dar Mansour – Morocco's Kitchen {#dar-mansour-moroccos-kitchen}
 
 Just up the road from Sri Thanu, Dar Mansour brings Morocco to the west coast — family recipes, slow cooking and a room dressed in décor gathered across Morocco. Everything is made from scratch, from fragrant tajines and royal couscous to handmade pastilla, slow-cooked meats and delicate pastries, with homemade spice blends at the heart of it. Dinner here feels closer to an evening in a riad, where food, design and music meet. *(This is our own restaurant — see the [menu](moroccan-menu-koh-phangan.html), [wine pairing](moroccan-wine-pairing-koh-phangan.html) or [private dining](private-dining-koh-phangan.html).)*
 
@@ -130,7 +130,7 @@ A dependable all-day café in the middle of Sri Thanu's café-and-yoga strip —
 **Price —** ฿฿<br>
 **Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga studios and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+%26+Caf%C3%A9+17%2F11+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
-#### Deli Devi
+#### Deli Devi {#deli-devi}
 
 Half deli, half artisan café, and a fixture of Sri Thanu's wellness scene. The specialty is handmade plant-based food — vegan cheeses, raw desserts, ceremonial cacao, cakes, smoothies and good coffee. Come for a healthy breakfast, take a few things away for later, or simply sit with cake and a coffee; the craft shows in every corner of the counter.
 
@@ -139,7 +139,7 @@ Half deli, half artisan café, and a fixture of Sri Thanu's wellness scene. The 
 **Price —** ฿฿<br>
 **Getting there —** On the main road between Thong Sala and Chaloklum. [View on map ↗](https://share.google/oG4H9AuIg8UKVFj1M)
 
-#### Mimi's Café
+#### Mimi's Café {#mimis-cafe}
 
 Right in the middle of the village, Mimi's is Sri Thanu's neighbourhood café — the kind of place regulars, remote workers and travellers keep drifting back to. Italian coffee, fresh breakfasts and homemade lunches come from a kitchen that uses organic eggs and seasonal produce where it can. Friendly and unfussy, and a natural pause between a swim and a yoga class.
 
@@ -152,7 +152,7 @@ Right in the middle of the village, Mimi's is Sri Thanu's neighbourhood café �
 
 When evening comes, Mama Market becomes one of the village's liveliest places to eat. If everyone in your group wants something different, this is the easiest place to keep them all happy.
 
-#### Mama Market Sri Thanu
+#### Mama Market Sri Thanu {#mama-market}
 
 When the village winds down for the evening, Mama Market fills up. This open-air food court gathers stalls from across the map — Thai plates and grilled seafood, wood-fired pizza, fresh noodles, vegan dishes and homemade desserts — in one relaxed, affordable spot. It's the easy answer when nobody in the group wants the same thing, and the Oh My Burger stall alone is worth the trip.
 
@@ -161,7 +161,7 @@ When the village winds down for the evening, Mama Market fills up. This open-air
 **Price —** ฿<br>
 **Getting there —** On the main road in Sri Thanu, close to the village's cafés, yoga and wellness centres. [View on map ↗](https://maps.app.goo.gl/MoRQn4QcJJZuknTz6)
 
-#### Oh My Burger
+#### Oh My Burger {#oh-my-burger}
 
 A burger stall inside Mama Market that punches well above a food court. The focus is squarely on ingredients — buns from a local bakery, grass-fed beef from a local butcher, homemade sauces — in burgers that stay simple, juicy and full of flavour. There are vegetarian options too, handy when the group is grazing different stalls around the market.
 
@@ -214,7 +214,7 @@ A simple, good idea: build your own bowl exactly how you like it. Choose from fr
 
 Few places on Koh Phangan catch the sunset quite like Sri Thanu. As the afternoon fades, visitors and residents drift towards the beach, where relaxed music, good cocktails and a wide sea view make one of the island's easiest evening rituals. Our [sunset guide to Koh Phangan](journal-where-to-watch-sunset-koh-phangan.html) covers the wider island.
 
-#### Grasshopper Beach Bar
+#### Grasshopper Beach Bar {#grasshopper-beach-bar}
 
 Sri Thanu's sunset gathering point, right on Zen Beach. As the afternoon cools, travellers, residents and performers drift down to the sand and Grasshopper picks up the mood — tables in the sand, cocktails and resident DJs as the light turns. Come Friday, the Zen Beach Drum Circle is just steps away. For more sunset tables across the island, see our [Koh Phangan sunset guide](journal-where-to-watch-sunset-koh-phangan.html).
 

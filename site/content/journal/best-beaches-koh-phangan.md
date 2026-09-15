@@ -77,30 +77,30 @@ There isn't one best beach in Koh Phangan — it depends on the experience you'r
 
 | Looking for… | Top pick | Why we chose it |
 | --- | --- | --- |
-| Best overall beach | Haad Yao | The island's best all-round beach: swimming, scenery, beachfront restaurants and easy access. |
-| Best for swimming | Thong Nai Pan Noi | Calm, sheltered water and one of the island's most reliable swimming beaches year-round. |
-| Best for snorkelling | Mae Haad | Home to Koh Ma and the island's most accessible coral reef, straight from the shore. |
-| Best sunset beach | Hin Kong | Spectacular west-coast sunsets, a relaxed mood and some of the island's finest restaurants and bars. |
-| Best beach restaurants | Haad Yao | A superb run of beachfront cafés and restaurants right on the sand. |
-| Best hidden beach | Bottle Beach | A beautiful bay wrapped in jungle, rewarding those willing to make the journey. |
-| Best for families | Haad Salad | Calm, shallow water, soft sand and a peaceful atmosphere. |
-| Best for couples | Secret Beach (Haad Son) | A picturesque tropical cove with beautiful sunsets and a romantic feel. |
-| Best luxury beach | Thong Nai Pan Noi | Several of the island's finest beachfront resorts in one of its most beautiful bays. |
-| Best Full Moon beach | Haad Rin Nok | World-famous for the Full Moon Party, yet a lovely swimming beach outside party nights. |
+| Best overall beach | [Haad Yao](#haad-yao) | The island's best all-round beach: swimming, scenery, beachfront restaurants and easy access. |
+| Best for swimming | [Thong Nai Pan Noi](#thong-nai-pan-noi) | Calm, sheltered water and one of the island's most reliable swimming beaches year-round. |
+| Best for snorkelling | [Mae Haad](#mae-haad) | Home to Koh Ma and the island's most accessible coral reef, straight from the shore. |
+| Best sunset beach | [Hin Kong](#hin-kong) | Spectacular west-coast sunsets, a relaxed mood and some of the island's finest restaurants and bars. |
+| Best beach restaurants | [Haad Yao](#haad-yao) | A superb run of beachfront cafés and restaurants right on the sand. |
+| Best hidden beach | [Bottle Beach](#bottle-beach) | A beautiful bay wrapped in jungle, rewarding those willing to make the journey. |
+| Best for families | [Haad Salad](#haad-salad) | Calm, shallow water, soft sand and a peaceful atmosphere. |
+| Best for couples | [Secret Beach](#secret-beach) (Haad Son) | A picturesque tropical cove with beautiful sunsets and a romantic feel. |
+| Best luxury beach | [Thong Nai Pan Noi](#thong-nai-pan-noi) | Several of the island's finest beachfront resorts in one of its most beautiful bays. |
+| Best Full Moon beach | [Haad Rin Nok](#haad-rin) | World-famous for the Full Moon Party, yet a lovely swimming beach outside party nights. |
 
 ## Editor's Choice
 
 Not every beach offers the same experience. These stand out in their category and are worth planning your day around.
 
-- **Best overall beach —** Haad Yao
-- **Best swimming beach —** Thong Nai Pan Noi
-- **Best snorkelling beach —** Mae Haad
-- **Best sunset beach —** Hin Kong
-- **Best hidden beach —** Bottle Beach
-- **Best beach for families —** Haad Salad
-- **Best beach for couples —** Secret Beach
-- **Best beach restaurants —** Haad Yao
-- **Best luxury beach —** Thong Nai Pan Noi
+- **Best overall beach —** [Haad Yao](#haad-yao)
+- **Best swimming beach —** [Thong Nai Pan Noi](#thong-nai-pan-noi)
+- **Best snorkelling beach —** [Mae Haad](#mae-haad)
+- **Best sunset beach —** [Hin Kong](#hin-kong)
+- **Best hidden beach —** [Bottle Beach](#bottle-beach)
+- **Best beach for families —** [Haad Salad](#haad-salad)
+- **Best beach for couples —** [Secret Beach](#secret-beach)
+- **Best beach restaurants —** [Haad Yao](#haad-yao)
+- **Best luxury beach —** [Thong Nai Pan Noi](#thong-nai-pan-noi)
 
 ## Choose Your Beach First
 
@@ -108,16 +108,16 @@ Most visitors ask, "Which is the best beach in Koh Phangan?" A better question i
 
 | If you're looking for… | We recommend… |
 | --- | --- |
-| The best swimming | Thong Nai Pan Noi · Haad Yao · Haad Salad |
-| Snorkelling | Mae Haad · Haad Khom · Bottle Beach |
-| Spectacular sunsets | Hin Kong · Sri Thanu · Secret Beach · Zen Beach |
-| Beachfront restaurants | Haad Yao · Sri Thanu · Hin Kong |
-| Family-friendly beaches | Thong Nai Pan Noi · Haad Salad · Haad Yao |
-| Romantic beaches | Secret Beach · Bottle Beach · Haad Khom |
-| Peace and seclusion | Than Sadet · Bottle Beach · Haad Khom |
-| Beach bars and atmosphere | Haad Rin · Zen Beach · Baan Tai |
-| Photography | Bottle Beach · Mae Haad · Thong Nai Pan |
-| Easy access | Haad Yao · Haad Salad · Hin Kong |
+| The best swimming | [Thong Nai Pan Noi](#thong-nai-pan-noi) · [Haad Yao](#haad-yao) · [Haad Salad](#haad-salad) |
+| Snorkelling | [Mae Haad](#mae-haad) · [Haad Khom](#haad-khom) · [Bottle Beach](#bottle-beach) |
+| Spectacular sunsets | [Hin Kong](#hin-kong) · [Sri Thanu](#sri-thanu) · [Secret Beach](#secret-beach) · [Zen Beach](#zen-beach) |
+| Beachfront restaurants | [Haad Yao](#haad-yao) · [Sri Thanu](#sri-thanu) · [Hin Kong](#hin-kong) |
+| Family-friendly beaches | [Thong Nai Pan Noi](#thong-nai-pan-noi) · [Haad Salad](#haad-salad) · [Haad Yao](#haad-yao) |
+| Romantic beaches | [Secret Beach](#secret-beach) · [Bottle Beach](#bottle-beach) · [Haad Khom](#haad-khom) |
+| Peace and seclusion | [Than Sadet](#than-sadet) · [Bottle Beach](#bottle-beach) · [Haad Khom](#haad-khom) |
+| Beach bars and atmosphere | [Haad Rin](#haad-rin) · [Zen Beach](#zen-beach) · [Baan Tai](#baan-tai) |
+| Photography | [Bottle Beach](#bottle-beach) · [Mae Haad](#mae-haad) · Thong Nai Pan |
+| Easy access | [Haad Yao](#haad-yao) · [Haad Salad](#haad-salad) · [Hin Kong](#hin-kong) |
 
 <aside class="localtip"><span class="localtip__label">Editor's Tip</span><p>Don't try to visit Bottle Beach, Haad Rin and Thong Nai Pan on the same day. Koh Phangan looks small on a map, but its beaches sit on different coasts connected by hilly roads. Explore one coastline at a time and you'll spend far more of your day on the sand than on a scooter.</p></aside>
 
@@ -199,7 +199,7 @@ Just a few minutes from Thong Sala, Ao Nai Wok is often overlooked by visitors h
 
 **Nearby —** Eat: [Thong Sala food guide](journal-where-to-eat-thong-sala-koh-phangan.html) · Beaches: Hin Kong · Baan Tai · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Ao+Nai+Wok+Beach+Koh+Phangan)
 
-### Hin Kong Beach
+### Hin Kong Beach {#hin-kong}
 _Sunset Beach · West Coast_
 
 Hin Kong is one of the island's most distinctive beaches. Rather than a classic swimming beach, it's a long tidal bay known for its sunsets, relaxed mood and thriving food scene. At high tide the water gently covers the sand; at low tide it reveals a vast seascape towards Ang Thong Marine Park. It has become one of the island's favourite places to gather at sunset, ringed by excellent restaurants, cafés and beach bars.
@@ -215,7 +215,7 @@ Hin Kong is one of the island's most distinctive beaches. Rather than a classic 
 
 **Nearby —** Eat: [Best restaurants in Hin Kong](journal-where-to-eat-hin-kong.html) · Beaches: Sri Thanu · Ao Nai Wok · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Hin+Kong+Beach+Koh+Phangan)
 
-### Sri Thanu Beach
+### Sri Thanu Beach {#sri-thanu}
 _Wellness Beach · West Coast_
 
 Sri Thanu Beach reflects the village itself — peaceful, relaxed and closely tied to the island's wellness community. It offers calm views, beautiful sunsets and easy access to yoga studios, healthy cafés and some of the island's best restaurants. Swimming varies with the tides, but it's a fine place for a slow afternoon before dinner nearby.
@@ -231,7 +231,7 @@ Sri Thanu Beach reflects the village itself — peaceful, relaxed and closely ti
 
 **Nearby —** Eat: [Best restaurants in Sri Thanu](journal-where-to-eat-sri-thanu.html) · Beaches: Hin Kong · Zen Beach · Haad Chao Phao · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Sri+Thanu+Beach+Koh+Phangan)
 
-### Zen Beach
+### Zen Beach {#zen-beach}
 _Sunset Gathering Spot · West Coast_
 
 More than a traditional beach, Zen Beach is one of the island's most famous sunset gathering places. Each evening, visitors and residents come together to watch the sun drop into the Gulf of Thailand, often with live music, drumming and spontaneous dancing. The beach is small, but its community atmosphere makes it one of the most memorable places to end the day.
@@ -263,7 +263,7 @@ Set between Sri Thanu and Secret Beach, Haad Chao Phao is one of the west coast'
 
 **Nearby —** Eat: [Best restaurants in Sri Thanu](journal-where-to-eat-sri-thanu.html) · Beaches: Zen Beach · Secret Beach · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Haad+Chao+Phao+Koh+Phangan)
 
-### Secret Beach (Haad Son)
+### Secret Beach (Haad Son) {#secret-beach}
 _Hidden Cove · West Coast_
 
 Despite the name, Secret Beach is no longer much of a secret — but it remains one of the island's most attractive small beaches. Sheltered by palms and framed by rocky headlands, this compact bay pairs soft sand, calm water and a relaxed feel that appeals to couples, photographers and anyone after a quieter alternative. Its west-facing position also makes it a popular sunset spot.
@@ -279,7 +279,7 @@ Despite the name, Secret Beach is no longer much of a secret — but it remains 
 
 **Nearby —** Eat: [Best restaurants in Sri Thanu](journal-where-to-eat-sri-thanu.html) · Beaches: Haad Chao Phao · Haad Yao · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Secret+Beach+Haad+Son+Koh+Phangan)
 
-### Haad Yao
+### Haad Yao {#haad-yao}
 _Classic White-Sand Beach · West Coast_
 
 Haad Yao is one of the island's best-known beaches, and for good reason. Its long ribbon of soft white sand, clear turquoise water and wide choice of beachfront cafés, restaurants and resorts make it one of the most complete beach destinations on Koh Phangan. Whether to swim, lunch by the sea or spend a relaxed afternoon, it consistently delivers the island's best all-round beach day.
@@ -295,7 +295,7 @@ Haad Yao is one of the island's best-known beaches, and for good reason. Its lon
 
 **Nearby —** Eat: [Best restaurants in Sri Thanu](journal-where-to-eat-sri-thanu.html) · Beaches: Secret Beach · Haad Salad · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Haad+Yao+Beach+Koh+Phangan)
 
-### Haad Salad
+### Haad Salad {#haad-salad}
 _Family-Friendly Bay · West Coast_
 
 Sheltered by gently curving headlands, Haad Salad is calmer and more intimate than neighbouring Haad Yao. The protected bay, soft sand and gentle water make it especially popular with families, while the relaxed mood suits couples and anyone after a quieter beach day. Several beachfront restaurants and boutique resorts blend into the landscape without overwhelming it.
@@ -311,7 +311,7 @@ Sheltered by gently curving headlands, Haad Salad is calmer and more intimate th
 
 **Nearby —** Eat: [Best restaurants in Sri Thanu](journal-where-to-eat-sri-thanu.html) · Beaches: Haad Yao · Mae Haad · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Haad+Salad+Koh+Phangan)
 
-### Mae Haad
+### Mae Haad {#mae-haad}
 _Snorkelling Beach · West Coast_
 
 ![Aerial view of the white sandbar linking Mae Haad to Koh Ma island, with coral reefs in turquoise water, Koh Phangan, Thailand](assets/uploads/koh-ma-sandbar-mae-haad-koh-phangan.jpg "Mae Haad and the Koh Ma sandbar, Koh Phangan")
@@ -365,7 +365,7 @@ Despite its Californian name, Malibu Beach feels unmistakably tropical. Fine whi
 
 **Nearby —** Eat: [Best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html) · Beaches: Chaloklum · Haad Khom · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Malibu+Beach+Koh+Phangan)
 
-### Haad Khom
+### Haad Khom {#haad-khom}
 _Hidden Snorkelling Beach · North Coast_
 
 Tucked away on the island's northeastern coast, Haad Khom is one of its most peaceful beaches. Surrounded by lush hills and far from the busiest areas, it offers clear water, colourful coral and an atmosphere that feels wonderfully untouched. It's especially popular with snorkellers thanks to the reef just offshore, and its quiet setting is ideal for disconnecting for the day.
@@ -401,7 +401,7 @@ Hidden at the end of a small coastal road, Thong Lang is one of the island's lea
 
 The east coast holds some of the island's most spectacular scenery. Sheltered bays, jungle-covered hills and clear water create a very different atmosphere from the west. The pace is slower, the beaches quieter and several of the island's finest luxury resorts are found here. Reaching some beaches takes a longer drive — or even a boat — but the reward is a coastline that feels more secluded.
 
-### Bottle Beach (Haad Khuat)
+### Bottle Beach (Haad Khuat) {#bottle-beach}
 _Jungle-Backed Bay · East Coast_
 
 ![A longtail boat named Bottle Beach moored on the sand below jungle hills, Koh Phangan, Thailand](assets/uploads/bottle-beach-longtail-boat-koh-phangan.jpg "Bottle Beach (Haad Khuat), Koh Phangan")
@@ -419,7 +419,7 @@ Bottle Beach is one of the island's most iconic beaches and a favourite for anyo
 
 **Nearby —** Eat: [Best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html) · Beaches: Haad Khom · Thong Nai Pan Noi · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Bottle+Beach+Haad+Khuat+Koh+Phangan)
 
-### Thong Nai Pan Noi
+### Thong Nai Pan Noi {#thong-nai-pan-noi}
 _Luxury Beach · East Coast_
 
 Thong Nai Pan Noi is widely regarded as one of the island's most elegant beaches. The sheltered bay pairs powder-soft sand and calm turquoise water with a collection of the island's finest luxury resorts, creating an atmosphere that's both refined and relaxed. Despite its upscale reputation, it stays welcoming to day visitors, with excellent restaurants, beach cafés and plenty of space to enjoy the sea.
@@ -451,7 +451,7 @@ Just around the headland from Thong Nai Pan Noi, its larger sister bay offers a 
 
 **Nearby —** Eat: [Best restaurants in Koh Phangan](journal-best-restaurants-koh-phangan.html) · Beaches: Thong Nai Pan Noi · Than Sadet · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Thong+Nai+Pan+Yai+Koh+Phangan)
 
-### Than Sadet Beach
+### Than Sadet Beach {#than-sadet}
 _Royal Heritage Beach · East Coast_
 
 Hidden within Than Sadet–Ko Pha-ngan National Park, Than Sadet pairs a quiet sandy beach with one of the island's most historically significant sites. The nearby river and waterfall have drawn visitors for centuries, including several Thai kings whose visits gave the area its royal significance. Today it remains one of the island's most peaceful destinations, with beautiful scenery and clear water.
@@ -471,7 +471,7 @@ Hidden within Than Sadet–Ko Pha-ngan National Park, Than Sadet pairs a quiet s
 
 Unlike the west and east, the south coast is defined by energy and accessibility. This is where the ferries arrive, where the Full Moon Party takes place, and where you can choose between lively beach scenes and quieter stretches just a short distance away. Southern Koh Phangan is more than nightlife — it also has beautiful beaches and convenient access to restaurants and accommodation.
 
-### Baan Tai Beach
+### Baan Tai Beach {#baan-tai}
 _Lively Beach · South Coast_
 
 Stretching several kilometres south of Thong Sala, Baan Tai is one of the island's most versatile coastlines. Long sandy beaches, relaxed beach bars, yoga studios, cafés and beachfront resorts sit alongside easy access to the famous nightlife. Away from the busiest Full Moon periods, it has a surprisingly laid-back feel, popular with long-term visitors, digital nomads and anyone wanting a convenient base close to everything.
@@ -487,7 +487,7 @@ Stretching several kilometres south of Thong Sala, Baan Tai is one of the island
 
 **Nearby —** Eat: [Where to eat in Thong Sala](journal-where-to-eat-thong-sala-koh-phangan.html) · Beaches: Ao Bang Charu · Haad Rin Nok · [View on map ↗](https://www.google.com/maps/search/?api=1&query=Baan+Tai+Beach+Koh+Phangan)
 
-### Haad Rin Nok
+### Haad Rin Nok {#haad-rin}
 _Full Moon Beach · South Coast_
 
 Haad Rin Nok is the beach that made Koh Phangan famous around the world. Home to the Full Moon Party, this wide crescent of soft sand transforms once a month into one of the world's best-known beach celebrations. Outside party nights, though, it's a surprisingly attractive tropical beach with clear water, soft sand and plenty of beachfront cafés — and during quieter periods it's excellent for swimming and relaxing.

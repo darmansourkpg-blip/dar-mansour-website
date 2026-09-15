@@ -78,30 +78,30 @@ Because we live and work here, this guide is designed to evolve. Restaurants cha
 
 If you only have one weekend in Koh Phangan, these are the places we wouldn't miss.
 
-- **Dear Phangan**
-- **DAO by Chef Nir Mesika**
-- **La Ceviche's – Ceviche Bar**
-- **Carte Blanche**
-- **Mama KOP**
+- **[Dear Phangan](#dear-phangan)**
+- **[DAO by Chef Nir Mesika](#dao-by-chef-nir-mesika)**
+- **[La Ceviche's – Ceviche Bar](#la-ceviches-ceviche-bar)**
+- **[Carte Blanche](#carte-blanche)**
+- **[Mama KOP](#mama-kop)**
 
 ## Looking for… Our Recommendation
 
 | Looking for… | Our recommendation |
 | --- | --- |
-| Best overall dining experience | Dear Phangan |
-| Best chef's table experience | DAO by Chef Nir Mesika |
-| Best sunset restaurant | L'Alcove |
-| Best authentic Thai food | Mama KOP |
-| Best seafood | Fisherman's Restaurant & Bar |
-| Best restaurant with a view | Art of Nature Restaurant (Adults Only) |
-| Best romantic dinner | Dar Mansour – Morocco's Kitchen |
-| Best Italian restaurant | NENA Locanda Italiana |
-| Best French cuisine | Carte Blanche |
-| Best Japanese restaurant | Yukinoya at Anantara Rasananda |
-| Best vegan restaurant | Pure Vegan Heaven Thongsala |
-| Best specialty coffee | Indigo Specialty Coffee & Bakery |
-| Best cocktails & atmosphere | CINTAMANI Bar |
-| Best breakfast & brunch | Foxxy's Restaurant & Café |
+| Best overall dining experience | [Dear Phangan](#dear-phangan) |
+| Best chef's table experience | [DAO by Chef Nir Mesika](#dao-by-chef-nir-mesika) |
+| Best sunset restaurant | [L'Alcove](#lalcove) |
+| Best authentic Thai food | [Mama KOP](#mama-kop) |
+| Best seafood | [Fisherman's Restaurant & Bar](#fishermans-restaurant-bar) |
+| Best restaurant with a view | [Art of Nature Restaurant](#art-of-nature-restaurant) (Adults Only) |
+| Best romantic dinner | [Dar Mansour – Morocco's Kitchen](#dar-mansour-moroccos-kitchen) |
+| Best Italian restaurant | [NENA Locanda Italiana](#nena-locanda-italiana) |
+| Best French cuisine | [Carte Blanche](#carte-blanche) |
+| Best Japanese restaurant | [Yukinoya at Anantara Rasananda](#yukinoya-at-anantara-rasananda) |
+| Best vegan restaurant | [Pure Vegan Heaven Thongsala](#pure-vegan-heaven-thongsala) |
+| Best specialty coffee | [Indigo Specialty Coffee & Bakery](#indigo-specialty-coffee-bakery) |
+| Best cocktails & atmosphere | [CINTAMANI Bar](#cintamani-bar) |
+| Best breakfast & brunch | [Foxxy's Restaurant & Café](#foxxys-restaurant-cafe) |
 
 ## How to Choose the Right Restaurant in Koh Phangan
 
@@ -146,7 +146,7 @@ No single restaurant can represent Koh Phangan — and that's part of the island
 
 At the heart of Thai cuisine lies one idea: balance. Sweet meets spicy, fresh herbs soften rich curries, and every dish is layered with contrasting flavours and textures. Across Koh Phangan, family-run kitchens and long-established local restaurants keep those traditions alive with the same care and generosity that made Thai food famous. For a deeper look, see our guide to the [best Thai restaurants in Koh Phangan](journal-best-thai-restaurants-koh-phangan.html).
 
-#### Mama KOP
+#### Mama KOP {#mama-kop}
 
 A family-run kitchen a few steps from Hin Kong Beach, and something of a west coast fixture. Fresh seafood, fragrant curries and classic stir-fries are cooked simply and well, with local ingredients and recipes that taste properly homemade. Come late afternoon and you can watch the bay change colour before dinner.
 
@@ -187,7 +187,7 @@ A small family-run place of the kind travellers always hope to stumble on. The k
 
 Thai cuisine has always evolved through creativity, regional influences and exceptional local produce. Today a new generation of chefs is pushing that further, combining classical technique with contemporary ideas — cooking that feels innovative without losing its connection to Thai tradition.
 
-#### DAO by Chef Nir Mesika
+#### DAO by Chef Nir Mesika {#dao-by-chef-nir-mesika}
 
 The island's benchmark for chef-led dining, set in a restored Thai house in Thong Sala with just sixteen seats around a communal chef's table. Nir Mesika — who ran restaurants in New York and Tel Aviv before settling here — cooks an ever-changing ten-course menu that folds his Mediterranean and Israeli background into local Thai produce. Nir and Liat introduce every course themselves, so you leave knowing the thinking behind each plate.
 
@@ -197,7 +197,7 @@ The island's benchmark for chef-led dining, set in a restored Thai house in Thon
 **Good to know —** Just sixteen seats. Reservations are essential and best made well ahead.<br>
 **Getting there —** In a restored Thai house in Thong Sala, a few minutes from the ferry pier. [View on map ↗](https://maps.app.goo.gl/yjT9ryagAwwmPP1K8)
 
-#### Dear Phangan
+#### Dear Phangan {#dear-phangan}
 
 A garden of papaya, banana, tamarind and fresh herbs surrounds this quiet open-air restaurant, and every part of the evening feels considered. It's chef-led and firmly local: a blind menu that changes with the seasons, seafood in daily from the pier, produce from nearby farms and edible flowers from the garden. The cooking is quietly creative but rooted in Thai flavours — reason enough for the Michelin Guide to take notice.
 
@@ -220,7 +220,7 @@ Some kitchens honour Thai tradition by preserving it; Thai Element does it by re
 
 Life on an island revolves around the sea — and so does its cuisine. Each day, fishing boats bring in fresh fish, prawns, crab and shellfish that find their way onto menus across Koh Phangan. From authentic Thai seafood to Mediterranean-inspired cooking and bright ceviche, the island offers some of the freshest seafood dining in southern Thailand.
 
-#### Fisherman's Restaurant & Bar
+#### Fisherman's Restaurant & Bar {#fishermans-restaurant-bar}
 
 An institution, simply because it has done the right thing for years. Beside the small pier in Baan Tai, it's long been one of the island's go-to spots for fresh seafood — whole fish, giant river prawns, squid and shellfish, handled with a focus on quality rather than fuss, and served just metres from the water. As the light fades over the bay, it's easy to see why people come back each trip.
 
@@ -238,7 +238,7 @@ Seafood doesn't have to be traditional. Salt. takes a contemporary line — the 
 **Price —** ฿฿฿<br>
 **Getting there —** On the Thong Sala waterfront, a short walk from the ferry pier and Raja Ferry terminal. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salt.+Seafood+Restaurant+%26+Bar+26+Moo+9%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
 
-#### La Ceviche's – Ceviche Bar
+#### La Ceviche's – Ceviche Bar {#la-ceviches-ceviche-bar}
 
 There aren't many places where your seafood travels only a few metres to the plate. La Ceviche's sits inside Thong Sala Fresh Market, among the fishermen and traders who supply half the island — lively, local, and far from a formal dining room. The menu centres on ceviche made with fish straight from the market, plus prawns, seasonal vegetables and produce from nearby farmers. Fresh, simple, and part of the market's rhythm.
 
@@ -261,7 +261,7 @@ Some of the best seafood here comes with nothing more than the sound of the wave
 
 Few cuisines are loved as universally as Italian. Fresh handmade pasta, crisp wood-fired pizza, recipes perfected over generations — all rooted in quality ingredients, regional tradition and genuine hospitality. Koh Phangan has Italian restaurants that capture exactly that.
 
-#### NENA Locanda Italiana
+#### NENA Locanda Italiana {#nena-locanda-italiana}
 
 Some Italian restaurants just make you feel at home. Run by Mimmo and his partner, this Southern Italian kitchen has quietly built one of the island's best reputations for the real thing. Homemade pasta leads — generous seafood pasta, spaghetti properly al dente, a slow-cooked ragù, a simple ricotta, tomato and basil. Good ingredients, a warm welcome and a solid wine list. Gluten-free pasta available.
 
@@ -292,7 +292,7 @@ Some Italian places focus on pizza; this one celebrates the regional cooking you
 
 Few cuisines celebrate the pleasure of dining quite like French cooking — from elegant market cooking to timeless bistro classics, built on good ingredients, careful technique and the simple joy of sharing food and wine. Koh Phangan offers two lovely interpretations of that art de vivre.
 
-#### Carte Blanche
+#### Carte Blanche {#carte-blanche}
 
 Some chefs follow recipes; Dodo, the French owner here, follows inspiration. This intimate Haad Yao restaurant blends French technique with the best seasonal produce from around Thailand, and the menu shifts with the market — tuna tartare, house-cured gravlax, squid-ink spaghetti, and desserts worth leaving room for. The mood stays relaxed and unpretentious, as good for a date as for dinner with friends who care about cooking.
 
@@ -302,7 +302,7 @@ Some chefs follow recipes; Dodo, the French owner here, follows inspiration. Thi
 **Good to know —** The menu changes often with the season and the chef's mood — check the blackboard for the day's dishes.<br>
 **Getting there —** In Haad Yao, a few minutes from Haad Yao Beach. [View on map ↗](https://maps.app.goo.gl/1tqzhYQ9aj5Ldxny9)
 
-#### L'Alcove
+#### L'Alcove {#lalcove}
 
 Run by Karine and Mélanie, L'Alcove has become a west coast fixture — tables almost on the sand at Hin Kong Beach, French cooking with a light Thai touch, and one of the island's deepest lists of French wine and Champagne. Expect duck confit, fresh salmon and a generous cheese platter. Come before the sun drops: on Fridays and Sundays, live musicians, singers and fire performers take over the beach as the light fades.
 
@@ -316,7 +316,7 @@ Run by Karine and Mélanie, L'Alcove has become a west coast fixture — tables 
 
 Japanese cuisine has quietly become one of the island's highlights. From carefully prepared sushi to comforting ramen and a proper teppanyaki experience, there's an option for every occasion. These are the Japanese restaurants we keep coming back to.
 
-#### Yukinoya at Anantara Rasananda
+#### Yukinoya at Anantara Rasananda {#yukinoya-at-anantara-rasananda}
 
 Koh Phangan's only teppanyaki restaurant, inside the Anantara Rasananda resort on the east coast. Sit at the counter and dinner comes with a show — flames off the teppan, quick knife-work — as the chef grills A5 Wagyu, Tajima beef, local lobster, hamachi and scallop carpaccio in front of you. There's a deep list of rare sake and a few inventive cocktails, the cucumber-wasabi martini among them. Prefer it quieter? The outside tables sit under the stars, over the pool and the sea.
 
@@ -361,7 +361,7 @@ Travelling isn't only about new places — sometimes it's new flavours. thanaka 
 
 Moroccan cuisine is inseparable from hospitality. Built around slow cooking, fragrant spices, preserved ingredients and dishes made to be shared, it turns every meal into a moment of generosity. From the imperial kitchens of Marrakech and Fez to Berber recipes from the Atlas Mountains and the flavours of the Atlantic coast, each region tells its own story — our [complete guide to Moroccan cuisine](journal-moroccan-cuisine-guide.html) explores that heritage in depth. Discovering these flavours for the first time or returning to old favourites, Dar Mansour invites you to the warmth at the heart of Moroccan culture — a tradition kept alive by the [Dadas, the women who have guarded Moroccan family recipes](journal-the-dadas-guardians-of-moroccan-recipes.html) across generations.
 
-#### Dar Mansour – Morocco's Kitchen
+#### Dar Mansour – Morocco's Kitchen {#dar-mansour-moroccos-kitchen}
 
 Dar Mansour brings Moroccan cooking to Koh Phangan through family recipes, warm hospitality and a room unlike any other on the island. Everything is made from scratch — traditional techniques, homemade spice blends, carefully chosen ingredients — from [fragrant tajines](journal-what-is-a-tajine.html) and royal couscous to handmade pastilla, slow-cooked meats and delicate pastries. Handcrafted décor sourced across Morocco turns dinner into something closer to an evening in a riad, where food, design and [music](journal-gnaoua-music-morocco.html) meet. _(This is our own restaurant — see the_ [_menu_](moroccan-menu-koh-phangan.html)_,_ [_wine pairing_](moroccan-wine-pairing-koh-phangan.html) _or_ [_private dining_](private-dining-koh-phangan.html)_.)_
 
@@ -446,7 +446,7 @@ Set aside what you expect from a restaurant. SnooZe cooks with curiosity and a b
 
 On Koh Phangan, the scenery is often as memorable as the meal. Looking out over Haad Salad Bay or watching the sun sink into the Gulf of Thailand from a quiet hillside, these restaurants pair good food with some of the island's widest views.
 
-#### Art of Nature Restaurant (Adults Only)
+#### Art of Nature Restaurant (Adults Only) {#art-of-nature-restaurant}
 
 Set high above Ban Kai within the adults-only Art of Nature Resort, this open-air restaurant looks clear across the Gulf of Thailand. The kitchen keeps things fresh and natural — smoothie bowls and colourful breakfasts through to grilled dishes, seafood and cocktails across the day. As the sun drops, tropical gardens, easy house music and the wide sea view make it a fine place to settle in.
 
@@ -468,7 +468,7 @@ Some places are worth the trip for the food, others for the view — Salaad View
 
 A great day on Koh Phangan often starts with excellent coffee and a leisurely breakfast. From artisan bakeries and specialty roasters to healthy brunch cafés by the sea, the island has become one of southern Thailand's best places for slow mornings. After a perfectly brewed coffee, fluffy pancakes or a full brunch, these are the places worth waking up for — and our guide to the [best breakfast and brunch in Koh Phangan](journal-best-breakfast-brunch-koh-phangan.html) covers many more.
 
-#### Indigo Specialty Coffee & Bakery
+#### Indigo Specialty Coffee & Bakery {#indigo-specialty-coffee-bakery}
 
 An easy café to build a morning around. Indigo made its name on specialty coffee and pastries baked fresh each day, served with a genuine welcome. A flat white and a croissant, or a longer brunch — all handled with a steady hand, which is why locals, remote workers and travellers keep turning up.
 
@@ -486,7 +486,7 @@ Breakfast is close to a ritual here, and SAGE embraces it. Looking out over the 
 **Price —** ฿฿<br>
 **Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://maps.app.goo.gl/oWYRpPScSTNEep53A)
 
-#### Foxxy's Restaurant & Café
+#### Foxxy's Restaurant & Café {#foxxys-restaurant-cafe}
 
 A Sri Thanu all-rounder that earns its place among the island's cafés — the sort you return to across a whole trip. Slow breakfasts, relaxed lunches and proper coffee all work here, with generous brunch plates, smoothie bowls, fresh salads and homemade cakes in a bright, welcoming room. Easy-going and consistent, which is half the appeal.
 
@@ -539,7 +539,7 @@ The best burgers don't need a fancy dining room — just good ingredients. Tucke
 
 Koh Phangan is one of Thailand's leading wellness destinations, drawing yogis, digital nomads and health-conscious travellers from around the world. Naturally, the island has an outstanding selection of cafés and restaurants built around fresh ingredients and plant-based cooking. Vegan, vegetarian or simply after wholesome food, these are the places we recommend most.
 
-#### Pure Vegan Heaven Thongsala
+#### Pure Vegan Heaven Thongsala {#pure-vegan-heaven-thongsala}
 
 Plant-based cooking with real imagination. Pure Vegan Heaven reworks Thai food through a fully vegan lens, turning local ingredients into colourful, nutrient-dense dishes with plenty of flavour — smoothie bowls and salads through to hearty curries, burgers and Thai-fusion plates, all carefully sourced. Bright, friendly and consistent, it's one of the island's best-known vegan kitchens.
 
@@ -616,7 +616,7 @@ Every Sunday, the fishing village of Chaloklum becomes one of the island's most 
 
 Sunset is a ritual on Koh Phangan. As the afternoon light softens, people drift towards the west coast, where beachfront bars, rooftop terraces and quiet lounges offer front-row seats to one of Thailand's finest daily spectacles. After expertly crafted cocktails, chilled music or simply the best seat for the sunset, these are the bars we return to.
 
-#### CINTAMANI Bar
+#### CINTAMANI Bar {#cintamani-bar}
 
 Stepping into CINTAMANI feels like arriving somewhere else entirely. Inspired by the colours and textures of the Silk Road, it mixes jungle-glam, Bedouin touches and maximalist design into one of the island's most striking rooms — set among tropical gardens right on Hin Kong Beach, every corner full of handmade detail and vintage finds. The cocktails match the setting, alongside a considered wine list and Mediterranean-style tapas. Arrive before sunset, order a house creation and settle in as the sky changes over the Gulf.
 

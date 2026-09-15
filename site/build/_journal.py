@@ -319,7 +319,7 @@ def _dates(value):
 # Markdown renderer with the 'toc' extension: it slugs every heading into an id
 # (so anchors work) and exposes the heading tree via .toc_tokens.
 _MD = _md.Markdown(extensions=["extra", "sane_lists", "toc"],
-                   extension_configs={"toc": {"toc_depth": "2-3"}})
+                   extension_configs={"toc": {"toc_depth": "2-4"}})
 
 
 def _add_target_blank_to_external_links(html):

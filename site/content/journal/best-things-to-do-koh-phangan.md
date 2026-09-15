@@ -57,17 +57,17 @@ Short on time? These are our picks for the different sides of the island at a gl
 | Looking for… | Our recommendation |
 | --- | --- |
 | Best beach experience | Mae Haad & Koh Ma |
-| Best coastal viewpoint | Bottle Beach Viewpoint |
-| Best jungle hike | Khao Ra |
-| Best nature & history | Than Sadet Waterfall |
-| Best local village experience | Chaloklum |
+| Best coastal viewpoint | [Bottle Beach Viewpoint](#bottle-beach-viewpoint) |
+| Best jungle hike | [Khao Ra](#khao-ra) |
+| Best nature & history | [Than Sadet Waterfall](#than-sadet-waterfall) |
+| Best local village experience | [Chaloklum](#chaloklum) |
 | Best wellness area | Sri Thanu |
 | Best local food experience | Thong Sala markets |
-| Best sunset | Koh Phangan's west coast |
-| Best day trip | Ang Thong Marine Park |
-| Best iconic party | Full Moon Party — Haad Rin |
-| Best jungle festivals | Halfmoon Festival & Jungle Experience — Baan Tai |
-| Best laid-back beach party | Beach Bums at Merkaba — Baan Tai |
+| Best sunset | [Koh Phangan's west coast](#koh-phangans-west-coast) |
+| Best day trip | [Ang Thong Marine Park](#ang-thong-marine-park) |
+| Best iconic party | [Full Moon Party — Haad Rin](#full-moon-party-haad-rin) |
+| Best jungle festivals | [Halfmoon Festival & Jungle Experience — Baan Tai](#halfmoon-festival-jungle-experience-baan-tai) |
+| Best laid-back beach party | [Beach Bums at Merkaba — Baan Tai](#beach-bums-at-merkaba-baan-tai) |
 
 ## Koh Phangan Beyond the Full Moon Party
 
@@ -123,7 +123,7 @@ The appearance of the sandbar changes with the tide, and underwater visibility v
 **Getting there —** Mae Haad, northwest Koh Phangan. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mae+Haad+Beach+Koh+Phangan)<br>
 **Good to know —** Check the tide and sea conditions before going.
 
-## 3. Hike to Bottle Beach Viewpoint
+## 3. Hike to Bottle Beach Viewpoint {#bottle-beach-viewpoint}
 
 Bottle Beach Viewpoint is one of those places where the final few metres explain why you made the effort.
 
@@ -142,7 +142,7 @@ If you're planning to continue down towards Bottle Beach itself, make sure you u
 **Getting there —** On the ridge above Haad Khuat, north coast. [View on map ↗](https://share.google/epw5xNUGCBG62vN5P)<br>
 **Good to know —** This isn't the place for flip-flops.
 
-## 4. Hike Khao Ra, Koh Phangan's Highest Peak
+## 4. Hike Khao Ra, Koh Phangan's Highest Peak {#khao-ra}
 
 If Bottle Beach Viewpoint is about the coast, Khao Ra is about understanding the island from above.
 
@@ -159,7 +159,7 @@ Khao Ra isn't necessary for everyone visiting Koh Phangan — but for hikers, it
 **Allow —** A substantial part of the morning rather than squeezing it between other activities.<br>
 **Good to know —** Avoid starting late in the hottest part of the day.
 
-## 5. Visit Than Sadet Waterfall & Discover Koh Phangan's Royal History
+## 5. Visit Than Sadet Waterfall & Discover Koh Phangan's Royal History {#than-sadet-waterfall}
 
 Many visitors arrive at Than Sadet Waterfall expecting simply another waterfall. There's much more to it.
 
@@ -178,7 +178,7 @@ Waterfall conditions vary considerably through the year, so don't expect exactly
 **Getting there —** Than Sadet–Ko Phangan National Park, east coast. [View on map ↗](https://share.google/fpQSLxomsqJwn3zWY)<br>
 **Good to know —** Water levels vary significantly by season.
 
-## 6. Spend a Morning in Chaloklum Fishing Village
+## 6. Spend a Morning in Chaloklum Fishing Village {#chaloklum}
 
 Head north early and Koh Phangan begins to feel different again.
 
@@ -220,7 +220,7 @@ And if the sea looks rough, save the kayak for another day.
 **Where —** Mae Haad · Koh Ma · Haad Salad · Northwest Koh Phangan<br>
 **Good to know —** Morning conditions are often preferable, but always judge the sea on the day.
 
-## 8. Watch Sunset on Koh Phangan's West Coast
+## 8. Watch Sunset on Koh Phangan's West Coast {#koh-phangans-west-coast}
 
 Sunset isn't simply something to see on Koh Phangan's west coast. It's almost part of the daily schedule.
 
@@ -316,7 +316,7 @@ Go hungry. Walk the entire street once. Then decide what you actually want to ea
 **Good to know —** Market schedules can change; check locally before going specifically for the Walking Street.<br>
 **Explore more —** [Where to Eat in Thong Sala](journal-where-to-eat-thong-sala-koh-phangan.html)
 
-## 13. Take a Day Trip from Koh Phangan to Ang Thong Marine Park
+## 13. Take a Day Trip from Koh Phangan to Ang Thong Marine Park {#ang-thong-marine-park}
 
 When you want to leave Koh Phangan for a day, make it worthwhile.
 
@@ -339,7 +339,7 @@ The important practical point is to check the departure arrangement carefully. N
 
 The Full Moon Party at Haad Rin may be the name everyone knows, but Koh Phangan's nightlife and music scene extends much further into the island. And it isn't one scene.
 
-### Full Moon Party — Haad Rin
+### Full Moon Party — Haad Rin {#full-moon-party-haad-rin}
 
 The original giant beach gathering remains Koh Phangan's largest and most famous party, transforming Haad Rin Beach into a night of music, fire, neon and crowds around the full moon. It's the experience that put Koh Phangan on the international party map — but it's only one expression of the island's nightlife.
 
@@ -348,7 +348,7 @@ The original giant beach gathering remains Koh Phangan's largest and most famous
 **Vibe —** Huge beach party · Multiple music styles · Fire shows · All-night dancing<br>
 **Good to know —** Dates can shift, including around Buddhist holidays, so always check the current official date.
 
-### Halfmoon Festival — Baan Tai
+### Halfmoon Festival — Baan Tai {#halfmoon-festival-jungle-experience-baan-tai}
 
 Halfmoon Festival takes the experience away from Haad Rin and into a very different environment. Its current format combines a sunset event with the Halfmoon Magic Forest in Baan Tai, where multiple stages carry the night from beachfront sunset into a forest festival.
 
@@ -366,7 +366,7 @@ Also hidden in the Baan Tai jungle, Jungle Experience is another long-establishe
 **Vibe —** Jungle party · Electronic music · Performers · Late-night dancing<br>
 **Good to know —** Dates and lineups change from one edition to another, so check the current event before going.
 
-### Beach Bums — Merkaba Sunset Beach Club, Baan Tai
+### Beach Bums — Merkaba Sunset Beach Club, Baan Tai {#beach-bums-at-merkaba-baan-tai}
 
 For something more relaxed and community-driven, Beach Bums brings a completely different energy to Koh Phangan's party scene. Hosted at Merkaba Sunset Beach Club in Baan Tai, the gathering starts during the day and continues through sunset into the night, combining underground house and electronic music with barefoot dancing directly beside the sea.
 

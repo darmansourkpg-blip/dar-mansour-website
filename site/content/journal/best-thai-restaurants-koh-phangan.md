@@ -59,21 +59,21 @@ Short on time? These are our favourite Thai recommendations across the island.
 
 | Looking for… | Our recommendation |
 |---|---|
-| Best overall Thai restaurant | Muai's Thai Traditional Cooking Academy & Restaurant |
-| Best contemporary Thai | Thai Element |
-| Best authentic family restaurant | Mama KOP |
-| Best Southern Thai cuisine | Restaurant Sunshine |
-| Best Northern Thai cuisine | At Chiang Mai |
-| Best Isan cuisine | TORTALN Thai Isan Food |
-| Best local secret | No Name Kitchen Phangan |
-| Best family-run restaurant | Auntie's Restaurant |
-| Best value | Krua Thai |
+| Best overall Thai restaurant | [Muai's Thai Traditional Cooking Academy & Restaurant](#muais-thai-traditional-cooking-academy-restaurant) |
+| Best contemporary Thai | [Thai Element](#thai-element) |
+| Best authentic family restaurant | [Mama KOP](#mama-kop) |
+| Best Southern Thai cuisine | [Restaurant Sunshine](#restaurant-sunshine) |
+| Best Northern Thai cuisine | [At Chiang Mai](#at-chiang-mai) |
+| Best Isan cuisine | [TORTALN Thai Isan Food](#tortaln-thai-isan-food) |
+| Best local secret | [No Name Kitchen Phangan](#no-name-kitchen-phangan) |
+| Best family-run restaurant | [Auntie's Restaurant](#aunties-restaurant) |
+| Best value | [Krua Thai](#krua-thai) |
 
 ## Best Authentic Thai Restaurants in Koh Phangan
 
 These are the places we recommend first to anyone wanting authentic Thai cooking. Each has its own take on Thailand's traditions while staying true to the flavours that made Thai food famous. (Southern specialists have their own section below.)
 
-#### Muai's Thai Traditional Cooking Academy & Restaurant
+#### Muai's Thai Traditional Cooking Academy & Restaurant {#muais-thai-traditional-cooking-academy-restaurant}
 
 Few places capture authentic Thai hospitality like Muai's. Known internationally for its cooking academy, it's increasingly a destination for the restaurant alone. Every dish follows traditional family recipes — genuine Thai home cooking in a relaxed, welcoming room. The menu runs through the classics, from fragrant green curry and Pad Thai to holy basil stir-fry and mango sticky rice, with fresh ingredients and balanced flavours that have earned it one of the island's highest ratings.
 
@@ -83,7 +83,7 @@ Few places capture authentic Thai hospitality like Muai's. Known internationally
 **Price —** ฿<br>
 **Getting there —** In Thong Sala. [View on map ↗](https://share.google/Ph56FnrVyGrwHRQyz)
 
-#### Mama KOP
+#### Mama KOP {#mama-kop}
 
 Few restaurants are as loved on the west coast as Mama KOP. Family recipes, fresh seafood and generous portions have earned it a loyal following with residents and returning travellers. The cooking is classic Thai without fuss — fragrant curries, stir-fries cooked to order and seafood in from local fishermen — served a few steps from Hin Kong Beach. It's exactly what many picture when they imagine authentic Thai food by the sea.
 
@@ -94,7 +94,7 @@ Few restaurants are as loved on the west coast as Mama KOP. Family recipes, fres
 **Good to know —** There are two similarly named places in Hin Kong. This is Mama KOP, the beachfront one — not MamaKOP Restaurant, set further inland.<br>
 **Getting there —** Directly on Hin Kong Beach, a short stroll south of L'Alcove. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+KOP+19+Hin+Kong+Road%2C+Ko+Pha-ngan+84280)
 
-#### Auntie's Restaurant
+#### Auntie's Restaurant {#aunties-restaurant}
 
 Some of the island's best meals come in the simplest settings, and Auntie's is a fine example. This family-run kitchen has built its name on generous portions, home-style cooking and genuinely warm service. Everything is made with the care of a traditional Thai family kitchen — fragrant curries, spicy stir-fries and comforting noodle dishes — and guests tend to leave feeling welcomed like old friends.
 
@@ -108,7 +108,7 @@ Some of the island's best meals come in the simplest settings, and Auntie's is a
 
 A new generation of chefs shows that Thai food can evolve without losing its soul — honouring the traditions while refining technique, sourcing and presentation.
 
-#### Thai Element
+#### Thai Element {#thai-element}
 
 Thai Element is the island's benchmark for contemporary Thai. Rather than reinventing the classics, the kitchen refines them through careful technique, elegant plating and thoughtful sourcing — every plate feels modern yet unmistakably Thai. The signature Massaman Heang sums it up: beef slow-braised with potatoes and roasted spices until the sauce is rich, silky and deeply aromatic. A calm, contemporary room makes it a good choice for a special occasion or a more refined side of Thai cooking.
 
@@ -122,7 +122,7 @@ Thai Element is the island's benchmark for contemporary Thai. Rather than reinve
 
 Southern Thailand produces some of the country's boldest, most aromatic cooking — fresh seafood, turmeric, coconut, shrimp paste and fragrant herbs. Koh Phangan sits within this region, which makes it a fine place to discover it.
 
-#### Restaurant Sunshine
+#### Restaurant Sunshine {#restaurant-sunshine}
 
 Restaurant Sunshine has quietly built one of the island's strongest reputations for Southern Thai cooking. The menu runs through Thai favourites, but it's the regional specialities — aromatic curries, fresh spices, local ingredients — that set it apart. Generous portions, friendly service and a relaxed room have made it a favourite with residents who know the island's food well. A fine introduction to the character of Southern Thai cuisine.
 
@@ -136,7 +136,7 @@ Restaurant Sunshine has quietly built one of the island's strongest reputations 
 
 One of the pleasures of eating here is discovering that Thai food isn't one style. Every region has its own traditions and iconic dishes — and these two open a window on the north and north-east.
 
-#### At Chiang Mai
+#### At Chiang Mai {#at-chiang-mai}
 
 Northern Thai cooking is rare on Koh Phangan, which makes At Chiang Mai one of the island's more distinctive tables. It specialises in the comforting food of Chiang Mai and the north, where coconut, warming spice and slow-cooked curries make dishes unlike those of the south. Its signature Khao Soi — a rich coconut curry noodle soup topped with crisp noodles — is reason enough to visit.
 
@@ -146,7 +146,7 @@ Northern Thai cooking is rare on Koh Phangan, which makes At Chiang Mai one of t
 **Price —** ฿<br>
 **Getting there —** In Thong Sala. [View on map ↗](https://share.google/uZWxjwzhkCDYBVG7u)
 
-#### TORTALN Thai Isan Food
+#### TORTALN Thai Isan Food {#tortaln-thai-isan-food}
 
 Where much of the island leans southern, TORTALN brings the bold flavours of Thailand's north-east. Isan cooking is all grilled meats, sticky rice, sharp salads and intense dipping sauces, served here in a relaxed, local setting with generous portions and good value. If you've had your fill of green curry and Pad Thai, this is a completely different side of Thai food.
 
@@ -160,7 +160,7 @@ Where much of the island leans southern, TORTALN brings the bold flavours of Tha
 
 Some of the island's most rewarding Thai meals aren't in the busiest restaurants — they're in modest, family-run kitchens where recipes are handed down and every dish is cooked with care. If you like the places locals recommend over guidebooks, start here.
 
-#### No Name Kitchen Phangan
+#### No Name Kitchen Phangan {#no-name-kitchen-phangan}
 
 Tucked away in Thong Sala, No Name Kitchen has quietly become one of the island's highest-rated Thai kitchens. The modest name hides consistently excellent food, warm service and beautifully cooked classics — everything made fresh to order. The menu covers many of Thailand's best-loved dishes, each done with good ingredients and balanced flavours, which is why it keeps such a loyal following.
 
@@ -170,7 +170,7 @@ Tucked away in Thong Sala, No Name Kitchen has quietly become one of the island'
 **Price —** ฿<br>
 **Getting there —** On the main road between Thong Sala and Baan Tai, just past Phangan Food Court coming from Thong Sala. [View on map ↗](https://maps.app.goo.gl/4ov9xA5Z4eh3YDfW7)
 
-#### Krua Thai
+#### Krua Thai {#krua-thai}
 
 Krua Thai is one of those dependable local restaurants that earns a following through consistency rather than publicity. In Baan Tai, it serves an extensive menu of traditional Thai dishes — fresh ingredients, generous portions, honest flavours. Whether it's a comforting curry, a noodle dish or a spicy papaya salad, the kitchen delivers the familiar favourites with confidence, and friendly service and good value keep people coming back.
 

@@ -659,7 +659,7 @@ body.lb-open { overflow: hidden; }
 .toc a::before { content: counter(toc, decimal-leading-zero); color: var(--green); font-weight: 700; font-variant-numeric: tabular-nums; }
 .toc a:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
 /* keep anchored headings clear of the fixed header when jumped to */
-.prose h2[id], .prose h3[id] { scroll-margin-top: 104px; }
+.prose h2[id], .prose h3[id], .prose h4[id] { scroll-margin-top: 104px; }
 
 /* Quick Guide key-facts box */
 .qguide { background: var(--cream); border: 1px solid var(--line); border-left: 3px solid var(--green); border-radius: 4px; padding: 1.4rem 1.7rem; margin: 0 0 2.4rem; }
