@@ -56,16 +56,16 @@ Short on time? Here are our favourite sunset spots at a glance.
 
 | Sunset spot | Best for | Area |
 |---|---|---|
-| Zen Beach | Barefoot sunset ritual & drum circles | Sri Thanu |
-| Hin Kong Beach | Peaceful reflections and a wide open sky | Hin Kong |
-| Wave Sunset Restaurant & Bar | Panoramic sunset views over the sea | West coast |
-| Amsterdam Bar | The island's most famous panoramic view | Hill between Wok Tum & Hin Kong |
-| Bluerama | An elegant, adults-only sunset drink | Nai Wok, Wok Tum |
-| Three Sixty Rooftop Bar | A 360° rooftop panorama | Above Koh Ma, north-west |
-| Mae Haad Tree House | A quiet treehouse sunset by the pool | Ko Mae hills, north-west |
-| Secret Mountain | Jungle-meets-ocean and a slow afternoon | Baan Tai hills |
-| Leela Beach | A quiet beach for couples | South of Haad Rin |
-| Mae Haad & Koh Ma | Sunset over the sandbank (and snorkelling) | North-west, near Chaloklum |
+| [Zen Beach](#zen-beach) | Barefoot sunset ritual & drum circles | Sri Thanu |
+| [Hin Kong Beach](#hin-kong-beach) | Peaceful reflections and a wide open sky | Hin Kong |
+| [Wave Sunset Restaurant & Bar](#wave-sunset-restaurant-bar) | Panoramic sunset views over the sea | West coast |
+| [Amsterdam Bar](#amsterdam-bar) | The island's most famous panoramic view | Hill between Wok Tum & Hin Kong |
+| [Bluerama](#bluerama) | An elegant, adults-only sunset drink | Nai Wok, Wok Tum |
+| [Three Sixty Rooftop Bar](#three-sixty-rooftop-bar) | A 360° rooftop panorama | Above Koh Ma, north-west |
+| [Mae Haad Tree House](#mae-haad-tree-house) | A quiet treehouse sunset by the pool | Ko Mae hills, north-west |
+| [Secret Mountain](#secret-mountain) | Jungle-meets-ocean and a slow afternoon | Baan Tai hills |
+| [Leela Beach](#leela-beach) | A quiet beach for couples | South of Haad Rin |
+| [Mae Haad & Koh Ma](#mae-haad-koh-ma) | Sunset over the sandbank (and snorkelling) | North-west, near Chaloklum |
 
 ![Golden sunset over Hin Kong Beach, Koh Phangan](assets/uploads/where-to-watch-the-sunset-in-koh-phangan6.jpg "Sunset at Hin Kong Beach")
 
@@ -85,7 +85,7 @@ For the best experience, arrive 30–45 minutes before sunset, especially at pop
 
 ## Sunset on the Beach
 
-### Zen Beach — Koh Phangan's Sunset Ritual
+### Zen Beach — Koh Phangan's Sunset Ritual {#zen-beach}
 
 No place captures the spirit of Koh Phangan quite like Zen Beach. Every evening, travellers, musicians, yogis and long-term residents gather on the sand to watch another day come to an end. Some meditate quietly. Some play music. Others simply sit barefoot, watching the colours change across the horizon.
 
@@ -101,7 +101,7 @@ Right on the sand, Grasshopper Beach Bar is the heart of the Zen Beach sunset �
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Relaxed atmosphere</li><li>Live music (many evenings)</li><li>Families welcome</li><li>Barefoot beach</li><li>Great for meeting people</li></ul></div>
 
-### Hin Kong Beach — Peace, Reflections & Endless Sky
+### Hin Kong Beach — Peace, Reflections & Endless Sky {#hin-kong-beach}
 
 If we had to choose one place that perfectly represents Koh Phangan's west coast, it would probably be Hin Kong. The beach stretches for kilometres and remains surprisingly peaceful, even during high season. At low tide, the sea retreats to reveal mirror-like reflections across the wet sand, creating one of the island's most photogenic landscapes.
 
@@ -123,7 +123,7 @@ Just steps from Hin Kong Beach, L'Alcove has long been one of the west coast's f
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>French cuisine & sunset dinners</li><li>Deep French wine & Champagne list</li><li>Tables almost on the sand</li><li>Live music & fire shows some evenings (esp. Fri & Sun)</li><li>Arrive before sunset for a beachfront table</li></ul></div>
 
-### Wave Sunset Restaurant & Bar
+### Wave Sunset Restaurant & Bar {#wave-sunset-restaurant-bar}
 
 Set on Koh Phangan's west coast, Wave Sunset spreads across two levels — an elevated deck with a wide, panoramic view over the sea, and the beach itself just below. The kitchen mixes Thai and Western dishes with cocktails that are best enjoyed close to the water, and the pace stays relaxed throughout. With warm lighting and live music on some evenings, it settles easily into a long, unhurried sundown — good with friends or with someone you love.
 
@@ -179,7 +179,7 @@ Sometimes, the finest sunsets aren't found on the beach, but high above it. Seve
 
 Do keep in mind that some of the access roads are steep. If you're not comfortable riding a scooter uphill, it's perfectly fine to park lower down and walk the final section.
 
-### Amsterdam Bar — The Island's Most Famous Sunset View
+### Amsterdam Bar — The Island's Most Famous Sunset View {#amsterdam-bar}
 
 Ask almost any local where to watch the sunset, and Amsterdam Bar will almost certainly be mentioned. Perched high above the coastline between Wok Tum and Hin Kong, it has become one of Koh Phangan's iconic viewpoints.
 
@@ -191,7 +191,7 @@ From its elevated terraces, the view stretches across the entire west coast, wit
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Infinity pool</li><li>Cocktails</li><li>Food available</li><li>Young atmosphere</li><li>Panoramic views</li></ul></div>
 
-### Bluerama — Sunset with a Touch of Elegance
+### Bluerama — Sunset with a Touch of Elegance {#bluerama}
 
 Just before Amsterdam Bar sits one of the island's most refined sunset venues. Bluerama offers an entirely different atmosphere. Designed around an adults-only infinity pool overlooking the Gulf of Thailand, it feels calmer, more sophisticated and perfectly suited to couples or anyone seeking a quieter evening.
 
@@ -209,7 +209,7 @@ Tucked into the hills near Baan Kai, Apichada feels like the treehouse dream you
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Treehouse aesthetic</li><li>Thai-style mattresses</li><li>South-west views</li><li>Relaxed & friendly</li></ul></div>
 
-### Three Sixty Rooftop Bar — A Different Perspective
+### Three Sixty Rooftop Bar — A Different Perspective {#three-sixty-rooftop-bar}
 
 Located above Koh Ma in the island's north-west, Three Sixty Rooftop Bar offers exactly what its name promises. Unlike the west-coast beaches, the rooftop setting allows uninterrupted views in every direction. As the sun begins to set, the changing light transforms the surrounding hills, coastline and neighbouring islands into an extraordinary panorama. The road is fully paved, making access easier than many hillside viewpoints.
 
@@ -217,7 +217,7 @@ Located above Koh Ma in the island's north-west, Three Sixty Rooftop Bar offers 
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Easy access</li><li>Panoramic rooftop</li><li>Music</li><li>Cocktails</li><li>North-west views</li></ul></div>
 
-### Mae Haad Tree House — The Quiet Neighbour of the Crowds
+### Mae Haad Tree House — The Quiet Neighbour of the Crowds {#mae-haad-tree-house}
 
 Just above Mae Haad in the Ko Mae hills, the Tree House sits a short ride from the busy Three Sixty — yet most visitors walk straight past it. That's the whole point. While the rooftop next door fills up, here you can settle into a bean bag by the swimming pool with the ocean opening up wide in front of you, often with the place almost to yourself. The setting does the work: rustic wooden platforms, easy music and an unobstructed horizon as the light shifts from gold to pink to deep purple over the water. The cocktails and ciders are genuinely good, and once you've found your spot, leaving becomes difficult. Rustic rather than polished — and better for it.
 
@@ -227,7 +227,7 @@ Just above Mae Haad in the Ko Mae hills, the Tree House sits a short ride from t
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Swimming pool</li><li>Bean bags & lounge areas</li><li>Excellent cocktails & ciders</li><li>Wide-open sunset view</li><li>Much quieter than Three Sixty</li><li>Rustic setting</li></ul></div>
 
-### Secret Mountain — Jungle Meets Ocean
+### Secret Mountain — Jungle Meets Ocean {#secret-mountain}
 
 Hidden among the hills above Baan Tai, Secret Mountain feels like a peaceful escape from the busier coastline. Here, jungle-covered hills meet distant ocean views, creating a completely different sunset atmosphere. Its terraces, swimming pool and relaxed setting make it a wonderful place to spend a slow afternoon before watching the final light disappear behind the mountains.
 
@@ -241,7 +241,7 @@ Hidden among the hills above Baan Tai, Secret Mountain feels like a peaceful esc
 
 Although the west coast offers the island's finest sunsets, two additional locations deserve a special mention.
 
-### Mae Haad & Koh Ma
+### Mae Haad & Koh Ma {#mae-haad-koh-ma}
 
 At the north-west tip of Koh Phangan, Mae Haad is famous for the sandbank connecting the beach to the small island of Koh Ma. By day, it's one of the island's best snorkelling spots. Towards evening, it becomes wonderfully peaceful, and watching the sun sink beyond the sandbank creates one of Koh Phangan's most distinctive coastal landscapes.
 
@@ -249,7 +249,7 @@ At the north-west tip of Koh Phangan, Mae Haad is famous for the sandbank connec
 
 <div class="goodtoknow"><p class="goodtoknow__title">Good to know</p><ul><li>Snorkelling</li><li>Families</li><li>Easy parking</li><li>Quiet atmosphere</li></ul></div>
 
-### Leela Beach
+### Leela Beach {#leela-beach}
 
 Just south of Haad Rin lies one of Koh Phangan's most elegant beaches. Leela Beach remains surprisingly peaceful despite its proximity to the island's busiest area. Its west-facing position allows beautiful sunsets during much of the year, particularly for couples looking for a quieter atmosphere. Seasonally, the sun may set slightly further north, but the beach remains one of Koh Phangan's hidden treasures.
 

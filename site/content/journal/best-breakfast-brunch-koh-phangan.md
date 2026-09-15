@@ -57,22 +57,22 @@ Short on time? These are our favourite morning recommendations across the island
 
 | Looking for… | Our recommendation |
 | --- | --- |
-| Best overall breakfast | Bubba's Coffee |
-| Best brunch | Foxxy's Restaurant & Café |
-| Best specialty coffee | Indigo Specialty Coffee & Bakery |
-| Best healthy breakfast | Deli Devi |
-| Best vegan breakfast | Eat.Co |
-| Best breakfast bowls | Mimi's Café |
-| Best bakery | German Bakery by Achim |
-| Best artisan pastries | Nira's Home Bakery |
-| Best breakfast with a sea view | SAGE Breakfast & More |
-| Best quiet hideaway | Swiss Farmacy |
+| Best overall breakfast | [Bubba's Coffee](#bubbas-coffee) |
+| Best brunch | [Foxxy's Restaurant & Café](#foxxys-restaurant-cafe) |
+| Best specialty coffee | [Indigo Specialty Coffee & Bakery](#indigo-specialty-coffee-bakery) |
+| Best healthy breakfast | [Deli Devi](#deli-devi) |
+| Best vegan breakfast | [Eat.Co](#eatco) |
+| Best breakfast bowls | [Mimi's Café](#mimis-cafe) |
+| Best bakery | [German Bakery by Achim](#german-bakery-by-achim) |
+| Best artisan pastries | [Nira's Home Bakery](#niras-home-bakery) |
+| Best breakfast with a sea view | [SAGE Breakfast & More](#sage-breakfast-more) |
+| Best quiet hideaway | [Swiss Farmacy](#swiss-farmacy) |
 
 ## Best Breakfast & Brunch in Koh Phangan
 
 The cafés we come back to when we want a proper breakfast or a slow, unhurried brunch.
 
-#### Bubba's Coffee
+#### Bubba's Coffee {#bubbas-coffee}
 
 One of the island's best-known coffee names, and a dependable all-rounder for a full brunch. Carefully sourced beans meet generous breakfast plates, smoothie bowls and baked goods, in an easy, welcoming room. With cafés in Baan Tai and Thong Sala and the roastery in Haad Yao, Bubba's has become a morning fixture across the island.
 
@@ -81,7 +81,7 @@ One of the island's best-known coffee names, and a dependable all-rounder for a 
 **Price —** ฿<br>
 **Getting there —** In Baan Tai (also in Thong Sala; roastery in Haad Yao). [View on map ↗](https://maps.app.goo.gl/Qo2YGGgtduRGXzFd9)
 
-#### Foxxy's Restaurant & Café
+#### Foxxy's Restaurant & Café {#foxxys-restaurant-cafe}
 
 One of Sri Thanu's most dependable all-day cafés, good for a slow breakfast, a relaxed lunch or just a proper coffee. The menu pulls together generous brunch plates, smoothie bowls, fresh salads and homemade cakes with quality specialty coffee, in a bright, welcoming room.
 
@@ -90,7 +90,7 @@ One of Sri Thanu's most dependable all-day cafés, good for a slow breakfast, a 
 **Price —** ฿฿<br>
 **Getting there —** On the main road in Sri Thanu, close to the village's cafés and wellness centres. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Foxxy%27s+Restaurant+%26+Caf%C3%A9+17%2F11+Moo+8%2C+Sri+Thanu%2C+Ko+Pha-ngan+84280)
 
-#### SAGE Breakfast & More
+#### SAGE Breakfast & More {#sage-breakfast-more}
 
 Long breakfasts are close to a way of life here, and SAGE leans right into them. Overlooking the sea in Ban Tai, this bright café serves one of the island's fullest all-day breakfast and brunch menus — specialty coffee, smoothie bowls, pancakes, generous egg dishes and lighter options through the day. Vegan, vegetarian or classic, it's covered.
 
@@ -99,7 +99,7 @@ Long breakfasts are close to a way of life here, and SAGE leans right into them.
 **Price —** ฿฿<br>
 **Getting there —** On the Ban Tai beachfront, overlooking the sea, with easy parking. [View on map ↗](https://maps.app.goo.gl/oWYRpPScSTNEep53A)
 
-#### Mimi's Café
+#### Mimi's Café {#mimis-cafe}
 
 In the heart of Sri Thanu, Mimi's is a neighbourhood café where residents, remote workers and travellers gather over good Italian coffee, fresh breakfasts and homemade lunches. The kitchen leans on organic eggs and seasonal produce where it can, in a relaxed, friendly room — a natural stop between the beach and a yoga class.
 
@@ -112,7 +112,7 @@ In the heart of Sri Thanu, Mimi's is a neighbourhood café where residents, remo
 
 For travellers who care as much about the coffee as the food. If coffee is the main event, our dedicated guide to the [best cafés in Koh Phangan](journal-best-cafes-koh-phangan.html) goes deeper into the island's roasters and café culture.
 
-#### Indigo Specialty Coffee & Bakery
+#### Indigo Specialty Coffee & Bakery {#indigo-specialty-coffee-bakery}
 
 The kind of café that becomes routine after one visit. Indigo has built its name on specialty coffee, pastries baked fresh each morning and an easy welcome — a flat white, a flaky croissant or a slow brunch, all done with a steady hand. Locals, remote workers and travellers all end up here.
 
@@ -161,7 +161,7 @@ Up in Chaloklum on the north coast, Caffe Della Moca brings an Italian-leaning a
 
 Fresh ingredients, nourishing breakfasts and some of the island's best vegetarian and vegan cooking.
 
-#### Deli Devi
+#### Deli Devi {#deli-devi}
 
 Part deli, part artisan café, and unlike anywhere else on the island. Deli Devi specialises in handmade plant-based products — vegan cheeses, raw desserts, ceremonial cacao, homemade cakes, smoothies and specialty coffee. Drop in for a healthy breakfast, pick up ingredients or just have cake with a coffee.
 
@@ -170,7 +170,7 @@ Part deli, part artisan café, and unlike anywhere else on the island. Deli Devi
 **Price —** ฿฿<br>
 **Getting there —** On the main road between Thong Sala and Chaloklum. [View on map ↗](https://share.google/oG4H9AuIg8UKVFj1M)
 
-#### Eat.Co
+#### Eat.Co {#eatco}
 
 A favourite for plant-based food that satisfies everyone, not only vegans. Everything is made from scratch with good ingredients — colourful bowls, hearty plates and a few creative recipes — in a warm, relaxed room that draws yogis, remote workers, travellers and residents alike.
 
@@ -197,7 +197,7 @@ A relaxed Sri Thanu café for a healthy, fresh start to the day — good breakfa
 **Price —** ฿<br>
 **Getting there —** In Sri Thanu, on the west coast. [View on map ↗](https://maps.app.goo.gl/TTpEBWqoAcMWuY257)
 
-#### Swiss Farmacy
+#### Swiss Farmacy {#swiss-farmacy}
 
 Tucked into the greenery of Madua Wan, Swiss Farmacy is the kind of place that quickly feels like home. The focus is wholesome homemade cooking, organic ingredients and a genuinely relaxed pace — fresh sandwiches, changing daily specials and good coffee, with a few resident animals wandering about.
 
@@ -219,7 +219,7 @@ Fresh, wholesome food in a relaxed room — smoothie bowls, generous breakfasts,
 
 Fresh bread, buttery croissants, artisan pastries and a good morning coffee to go with them.
 
-#### German Bakery by Achim
+#### German Bakery by Achim {#german-bakery-by-achim}
 
 A long-running name for proper bread and baked goods, German Bakery by Achim turns out fresh loaves, pretzels and pastries in the German tradition — a reliable stop for anyone missing a good crusty bread or a hearty bakery breakfast.
 
@@ -228,7 +228,7 @@ A long-running name for proper bread and baked goods, German Bakery by Achim tur
 **Price —** ฿<br>
 **Getting there —** In Thong Sala. [View on map ↗](https://maps.app.goo.gl/FshFsoZN6Ws3ZMhJ9)
 
-#### Nira's Home Bakery
+#### Nira's Home Bakery {#niras-home-bakery}
 
 A Thong Sala favourite for homemade cakes and pastries. Nira's has built a loyal following on baking made with care — a good stop for a sweet treat with coffee or something fresh to take away.
 

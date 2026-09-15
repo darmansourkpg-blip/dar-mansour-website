@@ -59,24 +59,24 @@ Short on time? These are our favourite recommendations in Hin Kong.
 
 | Looking for… | Our recommendation |
 | --- | --- |
-| Best overall dining experience | Dear Phangan |
-| Best authentic Thai restaurant | Mama KOP |
-| Best contemporary Thai | Thai Element |
-| Best seafood restaurant | Happiness Restaurant |
-| Best beachfront dining | Kikekla Bar & Restaurant |
-| Best sunset restaurant | L'Alcove |
-| Best cocktails | CINTAMANI Bar |
-| Best vegan restaurant | Pure Vegan Heaven |
-| Best Indian restaurant | Chana Masala |
-| Best Italian restaurant | Romanzo Tropicale |
-| Best Mexican restaurant | El Barrio Koh Phangan |
-| Best romantic dinner | Dar Mansour – Morocco's Kitchen |
+| Best overall dining experience | [Dear Phangan](#dear-phangan) |
+| Best authentic Thai restaurant | [Mama KOP](#mama-kop) |
+| Best contemporary Thai | [Thai Element](#thai-element) |
+| Best seafood restaurant | [Happiness Restaurant](#happiness-restaurant) |
+| Best beachfront dining | [Kikekla Bar & Restaurant](#kikekla-bar-restaurant) |
+| Best sunset restaurant | [L'Alcove](#lalcove) |
+| Best cocktails | [CINTAMANI Bar](#cintamani-bar) |
+| Best vegan restaurant | [Pure Vegan Heaven](#pure-vegan-heaven) |
+| Best Indian restaurant | [Chana Masala](#chana-masala) |
+| Best Italian restaurant | [Romanzo Tropicale](#romanzo-tropicale) |
+| Best Mexican restaurant | [El Barrio Koh Phangan](#el-barrio-koh-phangan) |
+| Best romantic dinner | [Dar Mansour – Morocco's Kitchen](#dar-mansour-moroccos-kitchen) |
 
 ## Best Restaurants in Hin Kong
 
 From chef-led tasting menus to authentic family cooking and beachfront tables, Hin Kong has become one of the island's most rewarding places to eat. The beachfront restaurants have their own section below.
 
-#### Dear Phangan
+#### Dear Phangan {#dear-phangan}
 
 Dining at Dear Phangan is unlike eating anywhere else on the island. The chef-led blind menu changes with the freshest produce of the day, so every course is considered and every evening feels its own. Only a limited number of guests are cooked for each night, so reservations are essential.
 
@@ -86,7 +86,7 @@ Dining at Dear Phangan is unlike eating anywhere else on the island. The chef-le
 **Good to know —** Reservations are essential; the chef prepares only the number of covers booked.<br>
 **Getting there —** Just past Koh Phangan Hospital, on the road to Wok Tum towards Hin Kong. [View on map ↗](https://maps.app.goo.gl/hfq3zDUmu5dGif7Q6)
 
-#### Thai Element
+#### Thai Element {#thai-element}
 
 Thai Element offers a refined take on Thai cooking, pairing authentic recipes with careful sourcing and elegant plating. Rather than reinventing the classics, the kitchen sharpens familiar flavours through thoughtful technique while staying unmistakably Thai. On a first visit, order the Massaman Heang — beef slow-braised in a rich Massaman curry with potatoes and roasted spices, reduced until thick and deeply flavoured.
 
@@ -95,7 +95,7 @@ Thai Element offers a refined take on Thai cooking, pairing authentic recipes wi
 **Price —** ฿฿<br>
 **Getting there —** On the main road between Hin Kong and Sri Thanu, almost opposite Dar Mansour – Morocco's Kitchen. [View on map ↗](https://maps.app.goo.gl/Th29wHxKmtd1TKGq8)
 
-#### Dar Mansour – Morocco's Kitchen
+#### Dar Mansour – Morocco's Kitchen {#dar-mansour-moroccos-kitchen}
 
 This is our own table, right here on the Hin Kong road towards Sri Thanu. Dar Mansour brings Morocco to the west coast through family recipes, slow cooking and a room dressed in handcrafted décor gathered across Morocco. Everything's made from scratch — homemade spice blends, slow-cooked tajines, royal couscous, handmade pastilla and pastries — with signature cocktails built on the same Moroccan spices. Dinner feels closer to an evening in a riad, where food, design and music meet. _(This is our own restaurant — see the_ [_menu_](moroccan-menu-koh-phangan.html)_,_ [_wine pairing_](moroccan-wine-pairing-koh-phangan.html) _or_ [_private dining_](private-dining-koh-phangan.html)_.)_
 
@@ -109,7 +109,7 @@ This is our own table, right here on the Hin Kong road towards Sri Thanu. Dar Ma
 
 One of Hin Kong's biggest draws is good food a few steps from the sea. Fresh seafood, French classics or a relaxed sunset dinner — these tables pair the food with some of the island's finest west coast views.
 
-#### Mama KOP
+#### Mama KOP {#mama-kop}
 
 A family-run kitchen a few steps from Hin Kong Beach, and a west coast fixture. Fresh seafood, fragrant curries and classic stir-fries are cooked simply and well, with recipes that taste properly homemade. Come late afternoon and watch the bay change colour before dinner.
 
@@ -119,7 +119,7 @@ A family-run kitchen a few steps from Hin Kong Beach, and a west coast fixture. 
 **Good to know —** There are two similarly named places in Hin Kong. This is Mama KOP, the beachfront one — not MamaKOP Restaurant, set further inland.<br>
 **Getting there —** Directly on Hin Kong Beach, a short stroll south of L'Alcove. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Mama+KOP+19+Hin+Kong+Road%2C+Ko+Pha-ngan+84280)
 
-#### Happiness Restaurant
+#### Happiness Restaurant {#happiness-restaurant}
 
 A Hin Kong Beach seafood favourite, a short walk from Mama KOP. The catch comes in daily, and the live tanks let you choose prawns, crab, shellfish or fish before they're cooked to order — the soft-shell crab is the one to get. Simple beachfront Thai seafood, with the waves for a soundtrack.
 
@@ -129,7 +129,7 @@ A Hin Kong Beach seafood favourite, a short walk from Mama KOP. The catch comes 
 **Good to know —** Opens from 2:00 pm — good for a late lunch, sunset drinks or dinner by the sea.<br>
 **Getting there —** Directly on Hin Kong Beach, a short walk from Mama KOP. [View on map ↗](https://maps.app.goo.gl/3qdAKVbJYNfDLb5v7)
 
-#### L'Alcove
+#### L'Alcove {#lalcove}
 
 Run by Karine and Mélanie, L'Alcove has long been a west coast favourite for a sunset dinner — French cooking with a light Thai touch, one of the island's deepest lists of French wine and Champagne, and tables almost on the sand. Expect duck confit, fresh salmon and a generous cheese platter. Arrive before the sun drops.
 
@@ -139,7 +139,7 @@ Run by Karine and Mélanie, L'Alcove has long been a west coast favourite for a 
 **Good to know —** Arrive before sunset for a beachfront table. Live music and fire shows on selected evenings, especially Fridays and Sundays.<br>
 **Getting there —** Directly on Hin Kong Beach, next to Romanzo Tropicale. [View on map ↗](https://maps.app.goo.gl/1YzdW6KWDJVomPjX8)
 
-#### Kikekla Bar & Restaurant
+#### Kikekla Bar & Restaurant {#kikekla-bar-restaurant}
 
 Directly on Hin Kong Beach, Kikekla shifts easily through the day — a morning coffee, a working lunch over the sea, Asian-fusion cooking at sunset, then cocktails as the sky turns orange over the bay. Led by Thai chefs, the kitchen blends local flavours with contemporary Asian touches, rounded out by homemade desserts and creative drinks. Relaxed and stylish, it draws remote workers by day and sunset lovers by night.
 
@@ -148,7 +148,7 @@ Directly on Hin Kong Beach, Kikekla shifts easily through the day — a morning 
 **Price —** ฿<br>
 **Getting there —** Directly on Hin Kong Beach, not far from L'Alcove. [View on map ↗](https://maps.app.goo.gl/FUEJeTKCjhG7MpbW8)
 
-#### Romanzo Tropicale
+#### Romanzo Tropicale {#romanzo-tropicale}
 
 Beside the sea in Hin Kong, Romanzo Tropicale brings traditional Italian cooking to one of the west coast's most relaxed sunset settings. Homemade pasta, gnocchi, ravioli and Italian classics are made with care, and the beachfront terrace encourages long, unhurried dinners — as good for a simple plate of pasta as for a full meal with wine as the sky changes over the bay.
 
@@ -183,7 +183,7 @@ A long-standing local favourite serving authentic Thai cooking in a relaxed, fam
 
 Beyond Thai and Moroccan, Hin Kong reaches further afield — bright Mexican sharing plates, homemade Italian pasta and fragrant Indian curries, all within a few minutes of each other.
 
-#### El Barrio Koh Phangan
+#### El Barrio Koh Phangan {#el-barrio-koh-phangan}
 
 Bold flavours, colourful sharing plates and an easy social mood have made El Barrio a west coast favourite. The kitchen turns out crisp fish tacos, ceviche, fresh guacamole and generous plates made for sharing, with margaritas and a proper michelada. The rooftop terrace adds sea and sunset views — good for a casual dinner or drinks as the light goes.
 
@@ -192,7 +192,7 @@ Bold flavours, colourful sharing plates and an easy social mood have made El Bar
 **Price —** ฿฿<br>
 **Getting there —** On Hin Kong Road, directly in front of L'Alcove. [View on map ↗](https://maps.app.goo.gl/r5yhB3SWaS7vQVqN7)
 
-#### Chana Masala
+#### Chana Masala {#chana-masala}
 
 Good South Indian food can be hard to find in Thailand, which makes Chana Masala a welcome discovery. The menu brings together North and South Indian favourites — fragrant curries, dosas, thalis and generous vegetarian dishes — in a relaxed room with both conventional seating and cushions around low tables. Warm service and comforting flavours make it an easy lunch or informal dinner.
 
@@ -205,7 +205,7 @@ Good South Indian food can be hard to find in Thailand, which makes Chana Masala
 
 Hin Kong's food scene reflects the island's strong wellness culture, with plant-based cooking that appeals well beyond committed vegans.
 
-#### Pure Vegan Heaven
+#### Pure Vegan Heaven {#pure-vegan-heaven}
 
 Colourful, generous and entirely plant-based, Pure Vegan Heaven is one of the island's best-known vegan kitchens. Everything is made with fresh ingredients — nourishing bowls and Thai-inspired dishes through to burgers, wraps, curries and homemade desserts — a menu built to satisfy, not just to feel healthy, so it works even for diners who don't usually eat vegan.
 
@@ -218,7 +218,7 @@ Colourful, generous and entirely plant-based, Pure Vegan Heaven is one of the is
 
 As the sun drops, Hin Kong becomes one of the island's favourite places for an evening drink — from handcrafted cocktails to relaxed beachfront lounges. Our [sunset guide to Koh Phangan](journal-where-to-watch-sunset-koh-phangan.html) covers the wider west coast.
 
-#### CINTAMANI Bar
+#### CINTAMANI Bar {#cintamani-bar}
 
 Set among tropical gardens above Hin Kong Beach, CINTAMANI is one of the island's most distinctive rooms. A JungleGlam, Bedouin-inspired aesthetic brings together handcrafted décor, warm light and exotic detail, matched by inventive cocktails built on spices and herbs from around the world, plus a considered wine list and Mediterranean-style tapas.
 

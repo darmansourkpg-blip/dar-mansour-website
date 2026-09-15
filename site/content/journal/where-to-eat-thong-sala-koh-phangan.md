@@ -53,23 +53,23 @@ If you're short on time, these are the places we'd point you to first.
 
 | Looking for… | Our recommendation |
 | --- | --- |
-| Authentic Thai | Muai's Thai Traditional Cooking |
-| Northern Thai | At Chiang Mai |
-| Chef's table | DAO by Chef Nir Mesika |
-| Seafood | Salt. Seafood Restaurant & Bar |
-| Fresh seafood lunch | La Ceviche's |
-| Korean | Seoul Vibe |
-| French | Ratatouille · Bistrot Riviera |
-| Japanese | Wasabi |
-| Burmese | thanaka |
-| Middle Eastern | Baharat – House of Shawarma |
-| Brunch | Bubba's Coffee |
-| Bakery | Nira's Home Bakery |
-| Vegan | Pure Vegan Heaven |
-| Street food | Phantip Night Market |
-| Saturday experience | Thong Sala Walking Street |
-| Sunset drinks | Beach Lounge |
-| Cocktails | Seadation |
+| Authentic Thai | [Muai's Thai Traditional Cooking](#muais-thai-traditional-cooking) |
+| Northern Thai | [At Chiang Mai](#at-chiang-mai) |
+| Chef's table | [DAO by Chef Nir Mesika](#dao-by-chef-nir-mesika) |
+| Seafood | [Salt. Seafood Restaurant & Bar](#salt-seafood-restaurant-bar) |
+| Fresh seafood lunch | [La Ceviche's](#la-ceviches) |
+| Korean | [Seoul Vibe](#seoul-vibe) |
+| French | [Ratatouille](#ratatouille) · [Bistrot Riviera](#bistrot-riviera) |
+| Japanese | [Wasabi](#wasabi) |
+| Burmese | [thanaka](#thanaka) |
+| Middle Eastern | [Baharat – House of Shawarma](#baharat-house-of-shawarma) |
+| Brunch | [Bubba's Coffee](#bubbas-coffee) |
+| Bakery | [Nira's Home Bakery](#niras-home-bakery) |
+| Vegan | [Pure Vegan Heaven](#pure-vegan-heaven) |
+| Street food | [Phantip Night Market](#phantip-night-market) |
+| Saturday experience | [Thong Sala Walking Street](#thong-sala-walking-street) |
+| Sunset drinks | [Beach Lounge](#beach-lounge) |
+| Cocktails | [Seadation](#seadation) |
 
 ## Thong Sala at a Glance
 
@@ -98,7 +98,7 @@ We live on Koh Phangan year-round and regularly revisit the restaurants featured
 
 Thong Sala is one of the strongest areas on the island for authentic Thai cuisine — from long-established family kitchens to Northern Thai specialities. For the island as a whole, see our [best Thai restaurants in Koh Phangan](journal-best-thai-restaurants-koh-phangan.html) guide.
 
-### Muai's Thai Traditional Cooking Academy & Restaurant
+### Muai's Thai Traditional Cooking Academy & Restaurant {#muais-thai-traditional-cooking}
 Muai's is one of Koh Phangan's best-known ambassadors for authentic Thai cuisine. Internationally recognised for its cooking academy, it has become a destination in its own right for beautifully prepared family recipes served with genuine Thai hospitality — from fragrant Green Curry and Pad Thai to Holy Basil Stir-Fry, Massaman and Mango Sticky Rice.
 
 **Best for —** Authentic Thai · Cooking classes · Families<br>
@@ -112,7 +112,7 @@ Between Thong Sala and Baan Tai, No Name Kitchen has quietly built one of the st
 **Price —** ฿<br>
 **Location —** Between Thong Sala and Baan Tai, about 5 minutes from the centre. [View on map ↗](https://maps.app.goo.gl/4ov9xA5Z4eh3YDfW7)
 
-### At Chiang Mai
+### At Chiang Mai {#at-chiang-mai}
 Inside the Phangan Food Court, At Chiang Mai specialises in authentic Northern Thai recipes rarely found elsewhere on Koh Phangan. Its signature Khao Soi — a rich coconut curry noodle soup from Chiang Mai — has earned a loyal following, and it's one of the island's best places to discover Thailand's regional diversity.
 
 **Best for —** Northern Thai · Khao Soi · Great value<br>
@@ -144,7 +144,7 @@ A welcoming neighbourhood restaurant serving both Thai favourites and internatio
 
 Thong Sala is known for casual restaurants and markets, but it's also home to one of Koh Phangan's most remarkable dining experiences.
 
-### DAO by Chef Nir Mesika
+### DAO by Chef Nir Mesika {#dao-by-chef-nir-mesika}
 For many food lovers, DAO is worth travelling across the island for. Inside a beautifully restored traditional Thai house, Chef Nir Mesika welcomes just sixteen guests around an intimate communal chef's table. Drawing on experience in New York and Tel Aviv, he creates an ever-changing tasting menu inspired by Mediterranean, Israeli and Thai influences, using carefully selected local ingredients — one of the island's most original and memorable meals.
 
 **Best for —** Chef's table · Food lovers · Special occasions<br>
@@ -170,14 +170,14 @@ Above the lively streets of Thong Sala, Upstairs offers a quieter setting away f
 
 Thanks to its fishing port and daily fresh market, Thong Sala is one of the island's best places for seafood — whether you want refined waterfront dining or fish straight from the morning's catch.
 
-### Salt. Seafood Restaurant & Bar
+### Salt. Seafood Restaurant & Bar {#salt-seafood-restaurant-bar}
 A short walk from Thong Sala Pier, Salt. has become one of the island's leading destinations for contemporary seafood. It pairs the freshest local catch with Mediterranean influences — oysters, premium fish, creative sharing plates — alongside a thoughtful cocktail and wine list, in a stylish waterfront room suited to a long lunch, sunset drinks or a memorable dinner.
 
 **Best for —** Seafood · Date nights · Cocktails · Special occasions<br>
 **Price —** ฿฿฿<br>
 **Location —** Thong Sala waterfront, walking distance from the pier. [View on map ↗](https://www.google.com/maps/search/?api=1&query=Salt.+Seafood+Restaurant+%26+Bar+26+Moo+9%2C+Thong+Sala%2C+Ko+Pha-ngan+84280)
 
-### La Ceviche's – Ceviche Bar
+### La Ceviche's – Ceviche Bar {#la-ceviches}
 Few restaurants can honestly say their seafood travels only a few metres to the plate. Inside Thong Sala Fresh Market, La Ceviche's prepares bright ceviches with fish delivered daily by local fishermen, plus prawns and seasonal produce from neighbouring stalls — one of the freshest seafood lunches on the island and a perfect stop while exploring the market.
 
 **Best for —** Fresh seafood · Lunch · Food lovers<br>
@@ -188,42 +188,42 @@ Few restaurants can honestly say their seafood travels only a few metres to the 
 
 One of Thong Sala's greatest strengths is its diversity. Within a few streets you can travel from Korea and Japan to Myanmar, the Middle East and Europe without leaving the town centre.
 
-### Seoul Vibe Korean Restaurant
+### Seoul Vibe Korean Restaurant {#seoul-vibe}
 One of the island's best Korean restaurants, Seoul Vibe serves authentic comfort food in a welcoming, contemporary setting — generous portions of Korean BBQ, bibimbap, crispy fried chicken, kimchi stews and homemade side dishes. Friendly service and consistently good food have made it a favourite with residents and long-term visitors.
 
 **Best for —** Authentic Korean · Groups · Casual dinners<br>
 **Price —** ฿฿<br>
 **Location —** Thong Sala town centre, walking distance from Phantip Night Market. [View on map ↗](https://share.google/gDtdMW0HC8H0yg0ZB)
 
-### Baharat – House of Shawarma
+### Baharat – House of Shawarma {#baharat-house-of-shawarma}
 For Middle Eastern flavours, Baharat has become one of the island's favourite addresses — freshly baked pita, homemade falafel, slow-roasted shawarma and grilled meats in generous, flavour-packed portions, equally good for a quick lunch or an easy dinner.
 
 **Best for —** Shawarma · Falafel · Middle Eastern cuisine<br>
 **Price —** ฿<br>
 **Location —** Thong Sala, near the Fresh Market. [View on map ↗](https://share.google/WmVUUwjwnHyZ7VEF7)
 
-### Wasabi Japanese Restaurant
+### Wasabi Japanese Restaurant {#wasabi}
 Reliable, consistent and always fresh, Wasabi has earned a loyal following for quality sushi, sashimi and classic Japanese dishes — one of the safest choices for Japanese food on Koh Phangan, whether for a light lunch or a relaxed dinner.
 
 **Best for —** Sushi · Sashimi · Japanese cuisine<br>
 **Price —** ฿฿<br>
 **Location —** Thong Sala (second branch in Haad Son). [View on map ↗](https://maps.app.goo.gl/pPTNwyfYEScAW1Wr7)
 
-### thanaka
+### thanaka {#thanaka}
 One of Thong Sala's most distinctive kitchens, thanaka introduces diners to the culinary traditions of Myanmar. Family-run and full of character, it specialises in authentic Burmese recipes — fragrant curries, noodle dishes and the famous Lahpet Thoke, Myanmar's fermented tea-leaf salad. If you're after something genuinely different, it's one of the island's most rewarding meals.
 
 **Best for —** Burmese cuisine · Authentic flavours · Something different<br>
 **Price —** ฿<br>
 **Location —** Thong Sala town centre, near Phantip Night Market. [View on map ↗](https://share.google/YD7O4CNchnPqt3j8r)
 
-### Bistrot Riviera
+### Bistrot Riviera {#bistrot-riviera}
 Bringing a little French Riviera charm to Koh Phangan, Bistrot Riviera serves French and Mediterranean classics in an elegant yet relaxed atmosphere — a refined alternative to the town's more casual eateries, whether for a leisurely lunch, a glass of wine or a romantic dinner.
 
 **Best for —** French cuisine · Wine · Couples<br>
 **Price —** ฿฿<br>
 **Location —** Thong Sala, near the town centre. [View on map ↗](https://share.google/bnxyWOZcZSoZyx4M5)
 
-### Ratatouille
+### Ratatouille {#ratatouille}
 Inspired by traditional French bistros with Mediterranean influences, Ratatouille focuses on carefully prepared seasonal cuisine in an intimate setting. The menu changes with available ingredients, so each visit is a little different — a favourite among many of the island's long-term residents.
 
 **Best for —** French-inspired cuisine · Seasonal menus · Relaxed dinners<br>
@@ -251,7 +251,7 @@ A favourite with residents and returning visitors, Mojo's has earned its reputat
 **Price —** ฿฿<br>
 **Location —** Thong Sala town centre (also in Chaloklum). [View on map ↗](https://share.google/RHe2n9pf9huUBOIgV)
 
-### Pure Vegan Heaven Thongsala
+### Pure Vegan Heaven Thongsala {#pure-vegan-heaven}
 Koh Phangan is one of Thailand's leading wellness destinations, and Pure Vegan Heaven reflects that reputation — colourful plant-based cooking from fresh ingredients, from smoothie bowls and burgers to curries and salads. Even non-vegans often leave impressed by the flavour.
 
 **Best for —** Vegan cuisine · Healthy dining · Wellness travellers<br>
@@ -262,7 +262,7 @@ Koh Phangan is one of Thailand's leading wellness destinations, and Pure Vegan H
 
 Thong Sala has quietly become one of the island's best places for breakfast and specialty coffee, with cafés that open earlier than most restaurants. For the island-wide picture, see our [best breakfast & brunch in Koh Phangan](journal-best-breakfast-brunch-koh-phangan.html) guide.
 
-### Bubba's Coffee
+### Bubba's Coffee {#bubbas-coffee}
 Few cafés have shaped Koh Phangan's coffee culture as much as Bubba's — carefully sourced beans, expertly brewed specialty coffee and generous brunch dishes, from avocado toast and smoothie bowls to pancakes and homemade baked goods, all prepared with real consistency.
 
 **Best for —** Brunch · Specialty coffee · Digital nomads<br>
@@ -276,7 +276,7 @@ One of Thong Sala's newest cafés, Croissant & Ko specialises in beautifully lam
 **Price —** ฿<br>
 **Location —** Thong Sala, near the ferry pier. [View on map ↗](https://share.google/3Q54fSjeFs96lQ0nk)
 
-### Nira's Home Bakery
+### Nira's Home Bakery {#niras-home-bakery}
 A long-established favourite among residents, Nira's has been serving homemade cakes, pastries and baked treats for many years. Relaxed, welcoming and consistently good, it's perfect for afternoon coffee, dessert or something sweet to take away.
 
 **Best for —** Homemade cakes · Coffee · Pastries<br>
@@ -290,13 +290,13 @@ If fresh bread and pastries are the priority, Thong Sala has more options worth 
 
 Street food is one of the great pleasures of eating in Thong Sala. Unlike much of the island, where restaurants spread along the coast, Thong Sala brings dozens of vendors together in a compact area — easy to sample Thai dishes, seafood, desserts and international snacks in a single evening. If you're here for one night, don't miss the markets.
 
-### Phantip Night Market
+### Phantip Night Market {#phantip-night-market}
 Open every evening, Phantip is the island's best everyday street-food destination. Dozens of stalls prepare grilled seafood, Pad Thai, curries, satay, fresh fruit shakes, Thai desserts and international dishes in a lively open-air food court where visitors and locals eat side by side — affordable, varied and full of atmosphere.
 
 **Best for —** Street food · Families · Budget dining<br>
 **Location —** Thong Sala town centre, a few minutes from the pier. [View on map ↗](https://maps.app.goo.gl/SVcdfWXz5PDQNw4N8)
 
-### Thong Sala Walking Street (Saturday Market)
+### Thong Sala Walking Street (Saturday Market) {#thong-sala-walking-street}
 Every Saturday evening, Chinese Street closes to traffic and becomes the island's liveliest weekly market. Unlike Phantip, which focuses on food, the Walking Street combines street food with local artisans, handmade crafts, clothing, live music and small producers — grilled seafood, homemade desserts, tropical fruit and regional specialities. If your visit lands on a Saturday, it's one experience not to miss.
 
 **Best for —** Street food · Local atmosphere · Shopping · Live music<br>
@@ -312,14 +312,14 @@ Open throughout the day, Phangan Food Court gathers Thai and international kitch
 
 A few minutes from the town centre you'll find several excellent places for sunset drinks, dinner by the sea or expertly crafted cocktails — the perfect way to end a day exploring the island.
 
-### Beach Lounge
+### Beach Lounge {#beach-lounge}
 Just south of Thong Sala Pier, overlooking Ao Bang Charu Beach, Beach Lounge offers one of the closest beachfront dining experiences to the town centre. By day it's a relaxed beach café for lunch with sea views; as sunset approaches, the mood shifts with chilled DJ sets, creative cocktails and Mediterranean-inspired cuisine beside the water. The kitchen draws particular praise for its generous portions and slow-roasted lamb, and the peaceful setting suits couples, groups or one last drink before the ferry.
 
 **Best for —** Sunset dinners · Beachfront cocktails · Live DJs · Couples<br>
 **Price —** ฿฿<br>
 **Location —** Ao Bang Charu Beach, a few minutes south of Thong Sala Pier. [View on map ↗](https://maps.app.goo.gl/j1ggBxiopuBz4sXY7)
 
-### Seadation
+### Seadation {#seadation}
 Along Thong Sala's main road, Seadation has quietly become one of Koh Phangan's favourite cocktail destinations. The experience centres on bartender P'Bao, whose reputation reaches well beyond the island — rather than ordering from a menu, many regulars simply describe the flavours they enjoy and let him create a completely bespoke cocktail. Refreshing, spirit-forward, tropical or unexpected, every drink is made with genuine creativity and precision, in an intimate room with good music.
 
 **Best for —** Signature cocktails · Bespoke creations · Cocktail lovers · Evening drinks<br>
