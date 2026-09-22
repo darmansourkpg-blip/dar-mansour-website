@@ -1,0 +1,200 @@
+{
+  "document": "M1_PRE_MEASUREMENT_STATE",
+  "version": "1.0",
+  "created_utc": "2026-09-22",
+  "planned_m1_date": "2026-09-22",
+  "m1_execution_status": "NOT_EXECUTED_BLOCKED",
+  "freeze_reference_commit": {
+    "sha": "f309c40",
+    "timestamp_utc": "2026-09-07T06:36:12Z"
+  },
+  "deployed_commit_at_m1": {
+    "sha": "6f00cb2",
+    "timestamp_utc": "2026-09-15T05:37:39Z"
+  },
+  "m0_baseline": {
+    "immutable": true,
+    "retrieval_rate": {
+      "value": 0.3,
+      "numerator": 6,
+      "denominator": 20
+    },
+    "conditional_citability_rate": {
+      "value": 1.0,
+      "numerator": 18,
+      "denominator": 18
+    },
+    "top3": 0.1,
+    "top5": 0.15,
+    "top10": 0.3,
+    "top20": 0.3,
+    "mean_rank": 5.8,
+    "median_rank": 6,
+    "diagnostics": {
+      "NOT_RETRIEVED": 14,
+      "RETRIEVED_STABLY_SELECTED": 6,
+      "RETRIEVED_NOT_SELECTED": 0
+    },
+    "raw_location": "~/.dar-mansour-geo/citability/M0/ (outside repository, operator machine)"
+  },
+  "post_freeze_commits": [
+    {
+      "sha": "9708db8",
+      "pr": null,
+      "commit_utc": "2026-08-29T05:46:38Z",
+      "deploy_completed_utc": "2026-08-29T05:47:25Z",
+      "run": 335,
+      "title": "Internal Linking M0 -> M1 : intervention controlee sur 9 liens",
+      "classification": "PLANNED_INTERVENTION",
+      "pages_affected": 6
+    },
+    {
+      "sha": "1de3ddb",
+      "pr": 144,
+      "commit_utc": "2026-08-29T19:13:44Z",
+      "deploy_completed_utc": "2026-08-29T19:14:20Z",
+      "run": 336,
+      "title": "Menu: move Tanjia section before Tajines",
+      "classification": "POTENTIAL_CONFOUNDER",
+      "scope": "Moroccan/Tajine intents",
+      "pages_affected": 1
+    },
+    {
+      "sha": "013d9c5",
+      "pr": 145,
+      "commit_utc": "2026-09-08T07:51:00Z",
+      "deploy_completed_utc": "2026-09-08T07:52:10Z",
+      "run": 337,
+      "title": "Menu: rename cocktail Rock the Casbah -> Rock the Kasbah",
+      "classification": "NEGLIGIBLE",
+      "pages_affected": 2
+    },
+    {
+      "sha": "4267ea5",
+      "pr": 146,
+      "commit_utc": "2026-09-11T07:29:36Z",
+      "deploy_completed_utc": "2026-09-11T07:30:13Z",
+      "run": 338,
+      "title": "Reviews: Golf du Maroc feature image for the Recognition card",
+      "classification": "LOW_RELEVANCE",
+      "pages_affected": 1
+    },
+    {
+      "sha": "6f00cb2",
+      "pr": 147,
+      "commit_utc": "2026-09-15T05:37:39Z",
+      "deploy_completed_utc": "2026-09-15T05:38:13Z",
+      "run": 339,
+      "title": "Journal: internal anchor navigation across 12 Koh Phangan guides",
+      "classification": "POTENTIAL_CONFOUNDER",
+      "scope": "cross-corpus technical modification",
+      "pages_affected": 12,
+      "did_introduce": [
+        "same_page_anchor_navigation",
+        "explicit_heading_ids",
+        "toc_depth_2_3_to_2_4_h4_ids",
+        "scroll_margin_h4",
+        "215_same_page_internal_links"
+      ],
+      "did_not_introduce": [
+        "new_editorial_pages",
+        "new_urls",
+        "new_recommendations",
+        "new_restaurant_selections",
+        "new_rankings",
+        "new_editorial_content",
+        "new_inter_page_internal_linking",
+        "new_external_links",
+        "new_seo_titles",
+        "new_meta_descriptions",
+        "new_schema_content",
+        "changed_visible_heading_text"
+      ],
+      "may_have_affected": [
+        "dateModified_signals",
+        "recrawl_reprocessing",
+        "internal_document_structure",
+        "fragment_navigation"
+      ]
+    }
+  ],
+  "elapsed": {
+    "pr147_deploy_to_m1_days": 7,
+    "intervention_9708db8_deploy_to_m1_days": 24,
+    "m0_to_m1_days": 32
+  },
+  "indexnow_timestamps": "UNKNOWN - per-run submission logs not captured into the repository",
+  "pages_affected_by_pr147": [
+    {
+      "page": "best-restaurants-koh-phangan",
+      "m1_role": "CONTROL - TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "best-cafes-koh-phangan",
+      "m1_role": "CONTROL - TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "best-things-to-do-koh-phangan",
+      "m1_role": "CONTROL - TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "where-to-watch-sunset-koh-phangan",
+      "m1_role": "CONTROL - TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "best-thai-restaurants-koh-phangan",
+      "m1_role": "TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "best-breakfast-brunch-koh-phangan",
+      "m1_role": "TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "romantic-dinner-koh-phangan",
+      "m1_role": "INTERVENTION 9708db8 + TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "best-beaches-koh-phangan",
+      "m1_role": "INTERVENTION 9708db8 + TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "where-to-stay-koh-phangan",
+      "m1_role": "INTERVENTION 9708db8 + TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "where-to-eat-hin-kong",
+      "m1_role": "INTERVENTION 9708db8 + TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "where-to-eat-sri-thanu",
+      "m1_role": "INTERVENTION 9708db8 + TECHNICALLY MODIFIED POST-FREEZE"
+    },
+    {
+      "page": "where-to-eat-thong-sala-koh-phangan",
+      "m1_role": "INTERVENTION 9708db8 + TECHNICALLY MODIFIED POST-FREEZE"
+    }
+  ],
+  "blockers": [
+    {
+      "id": 1,
+      "blocker": "API credentials absent",
+      "detail": "SERPER_API_KEY and GEMINI_API_KEY unset in this environment"
+    },
+    {
+      "id": 2,
+      "blocker": "Serper unreachable",
+      "detail": "https://google.serper.dev/ returns HTTP 000 through the egress proxy; generativelanguage.googleapis.com reachable (404)"
+    },
+    {
+      "id": 3,
+      "blocker": "M0 raw corpora absent",
+      "detail": "~/.dar-mansour-geo/ contains 0 files in this environment"
+    }
+  ],
+  "causal_claims_permitted": false,
+  "evidence_levels": [
+    "OBSERVATION",
+    "INTERPRETATION",
+    "CAUSAL_CLAIM (not permitted on M1 alone)"
+  ]
+}
