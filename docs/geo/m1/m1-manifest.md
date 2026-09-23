@@ -69,6 +69,7 @@ committed to this public repository.
 | `m0-corpus-depth.csv` | `docs/geo/m1/` | CSV | Requested vs actual depth per prompt, retrieval status, best rank | M0 | derived |
 | `m0-corpus-depth.json` | `docs/geo/m1/` | JSON | Same, machine-readable | M0 | derived |
 | `m0-m1-retrieval-gap-prep.md` | `docs/geo/m1/` | Markdown | **Preparation** for Report 2 — pre-registered reading order applied, 4 classifications on 20/20, observations vs hypotheses, blocking gaps | M0+M1 | derived |
+| `gsc-generative-ai-source.md` | `docs/geo/m1/` | Markdown | **Layer E** — GSC Generative AI (beta) source record: inventory, independent validation, Pages divergence documented, limitations | M1 | derived |
 
 ## Source files received (immutable, held outside the repository)
 
@@ -79,6 +80,8 @@ committed to this public repository.
 | 3 | `Landing page_ Landing page.xlsx` | GA4 Landing pages | 25/08 → 21/09 | 28/07 → 24/08 | Organic Search (verified indirectly) | ✅ usable; truncated to 28 rows |
 | 4 | `Traffic_acquisition_…csv` | GA4 Traffic acquisition | 25/08 → 21/09 | 28/07 → 24/08 | **none** — all channels | ✅ |
 | 5 | GSC Sitemap screenshot | GSC Sitemaps | Last read 2026-09-21 | — | — | ✅ observation recorded |
+| E1 | `…Performance-on-Search-Generative-AI-Features-2026-09-23.xlsx` | GSC Generative AI (beta) | Last 28 days (exact dates **unknown**) | Previous 28 days | Web | ✅ validated · **held outside the repository** pending diffusion policy |
+| E2 | `Dar_Mansour_M1_GSC_Generative_AI_2026-09-23.md` | Operator report on E1 | idem | idem | — | ✅ figures confirmed against E1 · **held outside the repository** |
 
 The earlier 2026-09-22 Performance export (unintended page filter) is **superseded and unused**.
 
@@ -99,6 +102,7 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 | **C — GSC Sitemap** | File 5 | **COMPLETE** |
 | **C — GSC Crawl** | Checkpoint #3 | **COMPLETE** — 2026-09-23, all 12 classified: **9/12 POST-#147 RECRAWL CONFIRMED · 3/12 NO POST-#147 RECRAWL OBSERVED · 0/12 UNKNOWN**. Timezone rule resolved: GSC `Last crawl` is shown in the user's local time (Google Search Console Help, URL Inspection tool), inspections made in Thailand (ICT, UTC+7); threshold = 2026-09-15 12:38:13 ICT. |
 | **D — GA4** | Files 3 and 4 | **COMPLETE** |
+| **E — GSC Generative AI (beta)** | Files E1 and E2 | **COMPLETE (observational)** — 3 373 / 1 771 impressions, +90,5 %; Countries and Devices agree; Pages tab sums +77 / +39 higher, divergence documented and **not corrected**. Not a citation measure, not comparable to Serper/Gemini, not attributed to any intervention. |
 | **Pre-measurement** | Report 3 | **COMPLETE** |
 
 ## Missing evidence
