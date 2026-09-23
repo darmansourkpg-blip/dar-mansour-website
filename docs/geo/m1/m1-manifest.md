@@ -68,6 +68,7 @@ committed to this public repository.
 | `m0-minimal-corpus.csv` | `docs/geo/m1/` | CSV | The extraction itself — 187 rows, one per result | M0 | **primary evidence (derived from raw)** |
 | `m0-corpus-depth.csv` | `docs/geo/m1/` | CSV | Requested vs actual depth per prompt, retrieval status, best rank | M0 | derived |
 | `m0-corpus-depth.json` | `docs/geo/m1/` | JSON | Same, machine-readable | M0 | derived |
+| `m0-m1-retrieval-gap-prep.md` | `docs/geo/m1/` | Markdown | **Preparation** for Report 2 — pre-registered reading order applied, 4 classifications on 20/20, observations vs hypotheses, blocking gaps | M0+M1 | derived |
 
 ## Source files received (immutable, held outside the repository)
 
@@ -87,8 +88,10 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 |---|---|---|
 | **A — GEO** | M0 raw corpus (operator machine) | **COMPLETE** |
 | **A — GEO** | M0 minimal corpus extraction, 20/20 prompts, 187 rows | **COMPLETE** — integrated 2026-09-23; reproduces every official M0 figure exactly |
-| **A — GEO** | M1 Serper retrieval, 20/20 | **COMPLETE** |
-| **A — GEO** | M1 Gemini selection, target 60/60 | **PARTIAL** — HTTP 503 then 429; runner resumable |
+| **A — GEO** | M1 Serper retrieval, 20/20 | **COMPLETE** — executed and preserved |
+| **A — GEO** | M1 minimal corpus extraction | **WAITING** — blocks corpus depth, URL-level and composition comparison |
+| **A — GEO** | M0→M1 retrieval classification, 20/20 | **COMPLETE (provisional)** — 4 STILL RETRIEVED · 2 NEW · 2 LOST · 12 STILL NOT RETRIEVED; Retrieval Rate 30 % → 30 % with 2 in / 2 out |
+| **A — GEO** | M1 Gemini selection, target 60/60 | **PARTIAL — 17/60** confirmed by `status`; 43 remaining, blocked by HTTP 429 quota; runner resumable |
 | **A — GEO** | Report 1 `M1_GEO_CITABILITY` | **WAITING** |
 | **A — GEO** | Report 2 `M0_M1_RETRIEVAL_GAP_ANALYSIS` | **WAITING** |
 | **B — GSC Performance** | File 1 | **COMPLETE** |
@@ -110,7 +113,12 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
    20/20 prompts, 187 rows, integrity verified; the M0 side of Report 2 now rests on primary
    evidence. See `m0-corpus-evidence.md`.
 
-**Only item 1 remains outstanding.**
+4. **M1 minimal corpus extraction** (`prompt_id | rank | domain | path | title`, no snippets) for
+   the 20 prompts, from `~/.dar-mansour-geo/citability/M1/`. **No new Serper search** — the
+   corpora are already stored. Without it: M1 depths, the Dar Mansour URLs retrieved on prompts
+   10 and 12, and all corpus-composition comparison remain UNKNOWN.
+
+**Items 1 and 4 remain outstanding.**
 
 ## QA status
 
@@ -124,7 +132,7 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 | All raw M1 evidence preserved | ⬜ pending run |
 | Retrieval Rate calculated | ⬜ pending run |
 | Conditional Citability calculated | ⬜ pending run |
-| 20/20 prompts classified M0→M1 | ⬜ pending run — **M0 side complete for all 20** |
+| 20/20 prompts classified M0→M1 | ✅ **provisional** — 4/2/2/12, from prompt-level M1 observation; ranks not final until M1 depths are known |
 | Competing retrieval evidence preserved | ⬜ pending run |
 | PR #147 documented as potential confounder | ✅ Report 3 §3.4 |
 | Timestamps recorded | ✅ commit + deployment; IndexNow UNKNOWN |
