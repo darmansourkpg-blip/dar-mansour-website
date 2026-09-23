@@ -48,7 +48,16 @@ Generated 2026-09-22. Branch `claude/dar-mansour-geo-audit-qflqxf`. **Not merged
 | Round | Path |
 |---|---|
 | M0 | `~/.dar-mansour-geo/citability/M0/` |
-| M1 | `~/.dar-mansour-geo/citability/M1/` (new, not yet created) |
+| M1 | `~/.dar-mansour-geo/citability/M1/` |
+
+**Private files, referenced here but never committed:**
+
+| File | Rows | Why private |
+|---|---|---|
+| `m0-retrieval-extract.csv` | 187 | Third-party Serper results |
+| `m1-retrieval-extract.csv` | 195 | Third-party Serper results |
+| `m1-minimal-corpus.csv` | 195 | Derived from M1 Serper results — third-party domains, paths and titles |
+| `m0-m1-prompt-comparison-full.csv` | 20 | Full version of the committed comparison, **including the `m0_top3_domains` and `m1_top3_domains` columns** stripped from the public copy |
 
 Raw SERP payloads, third-party snippets, third-party titles and competitor domains are **never**
 committed to this public repository.
@@ -70,6 +79,7 @@ committed to this public repository.
 | `m0-corpus-depth.json` | `docs/geo/m1/` | JSON | Same, machine-readable | M0 | derived |
 | `m0-m1-retrieval-gap-prep.md` | `docs/geo/m1/` | Markdown | **Preparation** for Report 2 — pre-registered reading order applied, 4 classifications on 20/20, observations vs hypotheses, blocking gaps | M0+M1 | derived |
 | `gsc-generative-ai-source.md` | `docs/geo/m1/` | Markdown | **Layer E** — GSC Generative AI (beta) source record: inventory, independent validation, Pages divergence documented, limitations | M1 | derived |
+| `m0-m1-retrieval-gap-analysis.md` | `docs/geo/m1/` | Markdown | **Report 2 — retrieval section, complete**: integrity, depths, 20/20 classification, Dar Mansour URLs, 06/07 and 13/14 divergences, composition, UGC, observations vs hypotheses | M0+M1 | derived |
 
 ## Source files received (immutable, held outside the repository)
 
@@ -92,11 +102,12 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 | **A — GEO** | M0 raw corpus (operator machine) | **COMPLETE** |
 | **A — GEO** | M0 minimal corpus extraction, 20/20 prompts, 187 rows | **COMPLETE** — integrated 2026-09-23; reproduces every official M0 figure exactly |
 | **A — GEO** | M1 Serper retrieval, 20/20 | **COMPLETE** — executed and preserved |
-| **A — GEO** | M1 minimal corpus extraction | **WAITING** — blocks corpus depth, URL-level and composition comparison |
-| **A — GEO** | M0→M1 retrieval classification, 20/20 | **COMPLETE (provisional)** — 4 STILL RETRIEVED · 2 NEW · 2 LOST · 12 STILL NOT RETRIEVED; Retrieval Rate 30 % → 30 % with 2 in / 2 out |
+| **A — GEO** | M1 minimal corpus extraction, 20/20 prompts, 195 rows | **COMPLETE** — integrated 2026-09-23; integrity verified, no duplicate rank |
+| **A — GEO** | M0→M1 retrieval classification, 20/20 | **COMPLETE** — 4 STILL · 2 NEW (10, 12) · 2 LOST (07, 14) · 12 STILL NOT RETRIEVED; Retrieval Rate 30 % → 30 % with 2 in / 2 out, **not general stability** |
+| **A — GEO** | Report 2 — **retrieval section** | **COMPLETE — finalisable**; depths M0 9,35 → M1 9,75, max 10 in both rounds so Top-10 ≡ Top-20 still holds |
 | **A — GEO** | M1 Gemini selection, target 60/60 | **PARTIAL — 17/60** confirmed by `status`; 43 remaining, blocked by HTTP 429 quota; runner resumable |
 | **A — GEO** | Report 1 `M1_GEO_CITABILITY` | **WAITING** |
-| **A — GEO** | Report 2 `M0_M1_RETRIEVAL_GAP_ANALYSIS` | **WAITING** |
+| **A — GEO** | Report 2 — **selection section** | **BLOCKED** — Gemini 17/60 |
 | **B — GSC Performance** | File 1 | **COMPLETE** |
 | **C — GSC Coverage** | File 2 | **COMPLETE** |
 | **C — GSC Sitemap** | File 5 | **COMPLETE** |
@@ -117,12 +128,11 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
    20/20 prompts, 187 rows, integrity verified; the M0 side of Report 2 now rests on primary
    evidence. See `m0-corpus-evidence.md`.
 
-4. **M1 minimal corpus extraction** (`prompt_id | rank | domain | path | title`, no snippets) for
-   the 20 prompts, from `~/.dar-mansour-geo/citability/M1/`. **No new Serper search** — the
-   corpora are already stored. Without it: M1 depths, the Dar Mansour URLs retrieved on prompts
-   10 and 12, and all corpus-composition comparison remain UNKNOWN.
+4. ~~M1 minimal corpus extraction~~ — **received and integrated 2026-09-23.** 20/20 prompts,
+   195 rows, integrity verified. Depths, Dar Mansour URLs on prompts 10 and 12, the two prompt-04
+   URLs, composition and UGC are all resolved.
 
-**Items 1 and 4 remain outstanding.**
+**Only item 1 remains outstanding: the 43 remaining Gemini generations.**
 
 ## QA status
 
