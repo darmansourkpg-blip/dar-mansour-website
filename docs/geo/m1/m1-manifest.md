@@ -41,7 +41,7 @@ Generated 2026-09-22. Branch `claude/dar-mansour-geo-audit-qflqxf`. **Not merged
 | M1 Retrieval Rate / Conditional Citability | idem |
 | URL-level analysis | idem |
 | Competitive retrieval evidence | idem |
-| GSC Crawl Checkpoint #3 | Operator export — must cover the 12 guides touched by PR #147 |
+| ~~GSC Crawl Checkpoint #3~~ | **Delivered 2026-09-23 — see the update below** |
 
 ## Raw data locations (outside this repository, by policy)
 
@@ -62,7 +62,7 @@ committed to this public repository.
 | Filename | Path | Format | Purpose | Round | Raw or derived |
 |---|---|---|---|---|---|
 | `gsc-crawl-checkpoint-3.md` | `docs/geo/m1/` | Markdown | Crawl Checkpoint #3 — post-#147 recrawl status of the 12 modified guides | M1 | derived |
-| `gsc-crawl-checkpoint-3.csv` | `docs/geo/m1/` | CSV | Machine-readable checkpoint #3 | M1 | derived |
+| `gsc-crawl-checkpoint-3.csv` | `docs/geo/m1/` | CSV | Machine-readable checkpoint #3 — displayed ICT value **and** computed UTC equivalent per URL | M1 | derived |
 | `m1-source-validation.md` | `docs/geo/m1/` | Markdown | Validation of the four primary GSC/GA4 source files + sitemap observation | M1 | derived |
 
 ## Source files received (immutable, held outside the repository)
@@ -89,7 +89,7 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 | **B — GSC Performance** | File 1 | **COMPLETE** |
 | **C — GSC Coverage** | File 2 | **COMPLETE** |
 | **C — GSC Sitemap** | File 5 | **COMPLETE** |
-| **C — GSC Crawl** | Checkpoint #3 | **PARTIAL** — updated 2026-09-23 with 11 URL Inspections: **2/12 CONFIRMED · 3/12 NO RECRAWL · 7/12 UNKNOWN (time-of-day required)** |
+| **C — GSC Crawl** | Checkpoint #3 | **COMPLETE** — 2026-09-23, all 12 classified: **9/12 POST-#147 RECRAWL CONFIRMED · 3/12 NO POST-#147 RECRAWL OBSERVED · 0/12 UNKNOWN**. Timezone rule resolved: GSC `Last crawl` is shown in the user's local time (Google Search Console Help, URL Inspection tool), inspections made in Thailand (ICT, UTC+7); threshold = 2026-09-15 12:38:13 ICT. |
 | **D — GA4** | Files 3 and 4 | **COMPLETE** |
 | **Pre-measurement** | Report 3 | **COMPLETE** |
 
@@ -98,9 +98,9 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 1. **Gemini selection runs** — the controlled GEO measurement is not complete until 60/60.
    Reports 1 and 2 stay pending. No run may be simulated, and the model, provider and protocol
    must not be changed.
-2. ~~11 manual GSC URL Inspections~~ — **received 2026-09-23.** Replaced by: the **time of day**
-   (full displayed timestamp) for the **7 URLs crawled on 2026-09-15**, the deployment day itself,
-   plus the GSC display timezone. Listed in `gsc-crawl-checkpoint-3.md` §3.
+2. ~~11 manual GSC URL Inspections~~ · ~~time of day for the 7 URLs of 2026-09-15~~ —
+   **all received and resolved 2026-09-23. Crawl Checkpoint #3 is closed: 9/12 CONFIRMED,
+   3/12 NO RECRAWL, 0/12 UNKNOWN.** Nothing further is needed on the crawl layer.
 3. **Minimal M0 corpus extraction** (`rank | domain | path | title`, no snippets) for the 20
    prompts — needed so Report 2 rests on primary evidence rather than aggregates.
 
