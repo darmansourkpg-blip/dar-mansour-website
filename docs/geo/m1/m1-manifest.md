@@ -89,7 +89,7 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 | **B — GSC Performance** | File 1 | **COMPLETE** |
 | **C — GSC Coverage** | File 2 | **COMPLETE** |
 | **C — GSC Sitemap** | File 5 | **COMPLETE** |
-| **C — GSC Crawl** | Checkpoint #3 | **PARTIAL** — 1/12 classifiable, 11/12 **UNKNOWN** |
+| **C — GSC Crawl** | Checkpoint #3 | **PARTIAL** — updated 2026-09-23 with 11 URL Inspections: **2/12 CONFIRMED · 3/12 NO RECRAWL · 7/12 UNKNOWN (time-of-day required)** |
 | **D — GA4** | Files 3 and 4 | **COMPLETE** |
 | **Pre-measurement** | Report 3 | **COMPLETE** |
 
@@ -98,8 +98,9 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 1. **Gemini selection runs** — the controlled GEO measurement is not complete until 60/60.
    Reports 1 and 2 stay pending. No run may be simulated, and the model, provider and protocol
    must not be changed.
-2. **11 manual GSC URL Inspections** — listed in `gsc-crawl-checkpoint-3.md` §6. Best Restaurants
-   is excluded: sufficient evidence already exists.
+2. ~~11 manual GSC URL Inspections~~ — **received 2026-09-23.** Replaced by: the **time of day**
+   (full displayed timestamp) for the **7 URLs crawled on 2026-09-15**, the deployment day itself,
+   plus the GSC display timezone. Listed in `gsc-crawl-checkpoint-3.md` §3.
 3. **Minimal M0 corpus extraction** (`rank | domain | path | title`, no snippets) for the 20
    prompts — needed so Report 2 rests on primary evidence rather than aggregates.
 
