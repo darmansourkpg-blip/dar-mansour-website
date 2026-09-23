@@ -53,6 +53,56 @@ Generated 2026-09-22. Branch `claude/dar-mansour-geo-audit-qflqxf`. **Not merged
 Raw SERP payloads, third-party snippets, third-party titles and competitor domains are **never**
 committed to this public repository.
 
+---
+
+# Update — 2026-09-23 · Evidence consolidation + Crawl Checkpoint #3
+
+## Files added
+
+| Filename | Path | Format | Purpose | Round | Raw or derived |
+|---|---|---|---|---|---|
+| `gsc-crawl-checkpoint-3.md` | `docs/geo/m1/` | Markdown | Crawl Checkpoint #3 — post-#147 recrawl status of the 12 modified guides | M1 | derived |
+| `gsc-crawl-checkpoint-3.csv` | `docs/geo/m1/` | CSV | Machine-readable checkpoint #3 | M1 | derived |
+| `m1-source-validation.md` | `docs/geo/m1/` | Markdown | Validation of the four primary GSC/GA4 source files + sitemap observation | M1 | derived |
+
+## Source files received (immutable, held outside the repository)
+
+| # | Filename | Source | Period | Comparison | Filter | Status |
+|---|---|---|---|---|---|---|
+| 1 | `…Performance-on-Search-2026-09-23.xlsx` | GSC Performance | Last 28 days | Previous 28 days | Web, **no page filter** | ✅ authoritative |
+| 2 | `…Coverage-2026-09-22.xlsx` | GSC Indexing | → 2026-09-18 | — | All known pages | ✅ usable; **no per-URL Last crawled** |
+| 3 | `Landing page_ Landing page.xlsx` | GA4 Landing pages | 25/08 → 21/09 | 28/07 → 24/08 | Organic Search (verified indirectly) | ✅ usable; truncated to 28 rows |
+| 4 | `Traffic_acquisition_…csv` | GA4 Traffic acquisition | 25/08 → 21/09 | 28/07 → 24/08 | **none** — all channels | ✅ |
+| 5 | GSC Sitemap screenshot | GSC Sitemaps | Last read 2026-09-21 | — | — | ✅ observation recorded |
+
+The earlier 2026-09-22 Performance export (unintended page filter) is **superseded and unused**.
+
+## Evidence inventory by layer
+
+| Layer | Item | Status |
+|---|---|---|
+| **A — GEO** | M0 raw corpus (operator machine) | **COMPLETE** |
+| **A — GEO** | M1 Serper retrieval, 20/20 | **COMPLETE** |
+| **A — GEO** | M1 Gemini selection, target 60/60 | **PARTIAL** — HTTP 503 then 429; runner resumable |
+| **A — GEO** | Report 1 `M1_GEO_CITABILITY` | **WAITING** |
+| **A — GEO** | Report 2 `M0_M1_RETRIEVAL_GAP_ANALYSIS` | **WAITING** |
+| **B — GSC Performance** | File 1 | **COMPLETE** |
+| **C — GSC Coverage** | File 2 | **COMPLETE** |
+| **C — GSC Sitemap** | File 5 | **COMPLETE** |
+| **C — GSC Crawl** | Checkpoint #3 | **PARTIAL** — 1/12 classifiable, 11/12 **UNKNOWN** |
+| **D — GA4** | Files 3 and 4 | **COMPLETE** |
+| **Pre-measurement** | Report 3 | **COMPLETE** |
+
+## Missing evidence
+
+1. **Gemini selection runs** — the controlled GEO measurement is not complete until 60/60.
+   Reports 1 and 2 stay pending. No run may be simulated, and the model, provider and protocol
+   must not be changed.
+2. **11 manual GSC URL Inspections** — listed in `gsc-crawl-checkpoint-3.md` §6. Best Restaurants
+   is excluded: sufficient evidence already exists.
+3. **Minimal M0 corpus extraction** (`rank | domain | path | title`, no snippets) for the 20
+   prompts — needed so Report 2 rests on primary evidence rather than aggregates.
+
 ## QA status
 
 | Check | Status |
