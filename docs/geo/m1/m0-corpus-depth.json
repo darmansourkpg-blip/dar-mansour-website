@@ -1,0 +1,66 @@
+{
+  "depths": {
+    "1": 9,
+    "2": 10,
+    "3": 10,
+    "4": 10,
+    "5": 9,
+    "6": 10,
+    "7": 10,
+    "8": 10,
+    "9": 10,
+    "10": 9,
+    "11": 9,
+    "12": 8,
+    "13": 10,
+    "14": 10,
+    "15": 10,
+    "16": 10,
+    "17": 9,
+    "18": 7,
+    "19": 9,
+    "20": 8
+  },
+  "retrieved": {
+    "4": [
+      [
+        2,
+        "/"
+      ],
+      [
+        10,
+        "/moroccan-restaurant-reviews-koh-phangan.html"
+      ]
+    ],
+    "5": [
+      [
+        2,
+        "/"
+      ]
+    ],
+    "6": [
+      [
+        10,
+        "/journal-romantic-dinner-koh-phangan.html"
+      ]
+    ],
+    "7": [
+      [
+        9,
+        "/journal-romantic-dinner-koh-phangan.html"
+      ]
+    ],
+    "13": [
+      [
+        8,
+        "/journal-where-to-watch-sunset-koh-phangan.html"
+      ]
+    ],
+    "14": [
+      [
+        4,
+        "/journal-where-to-watch-sunset-koh-phangan.html"
+      ]
+    ]
+  }
+}

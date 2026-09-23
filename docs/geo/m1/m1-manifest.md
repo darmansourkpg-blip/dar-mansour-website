@@ -9,7 +9,7 @@ Generated 2026-09-22. Branch `claude/dar-mansour-geo-audit-qflqxf`. **Not merged
 | `m1-pre-measurement-state.md` | `docs/geo/m1/` | Markdown | **Report 3** — frozen pre-measurement state, commit history, PR #144–#147 confounder classification, deployment timing, experimental limitations, execution instructions | M1 | derived |
 | `m1-pre-measurement-state.json` | `docs/geo/m1/` | JSON | Machine-readable equivalent of Report 3 | M1 | derived |
 | `m0-m1-protocol-comparability-check.md` | `docs/geo/m1/` | Markdown | §5 comparability check — every protocol parameter classified IDENTICAL / DIFFERENT; STOP verdict | M0+M1 | derived |
-| `m0-m1-prompt-comparison.csv` | `docs/geo/m1/` | CSV | 20-prompt comparison table — **M0 columns populated, M1 columns empty pending the run** | M0 (+M1 scaffold) | derived |
+| `m0-m1-prompt-comparison.csv` | `docs/geo/m1/` | CSV | 20-prompt comparison table — **M0 columns populated from primary corpus evidence (2026-09-23), M1 columns empty pending the run** | M0 (+M1 scaffold) | derived |
 | `m1-manifest.md` | `docs/geo/m1/` | Markdown | This manifest | M1 | derived |
 
 ## Pre-existing context (same repository)
@@ -36,7 +36,7 @@ Generated 2026-09-22. Branch `claude/dar-mansour-geo-audit-qflqxf`. **Not merged
 | Deliverable | Blocked by |
 |---|---|
 | **Report 1 — `M1_GEO_CITABILITY`** | M1 run not possible here (credentials, Serper egress) |
-| **Report 2 — `M0_M1_RETRIEVAL_GAP_ANALYSIS`** | Requires the M1 run **and** the M0 raw corpora |
+| **Report 2 — `M0_M1_RETRIEVAL_GAP_ANALYSIS`** | M0 side now available; **blocked only by the incomplete M1 Gemini phase** |
 | M1 raw runs (per prompt, per run) | idem |
 | M1 Retrieval Rate / Conditional Citability | idem |
 | URL-level analysis | idem |
@@ -64,6 +64,10 @@ committed to this public repository.
 | `gsc-crawl-checkpoint-3.md` | `docs/geo/m1/` | Markdown | Crawl Checkpoint #3 — post-#147 recrawl status of the 12 modified guides | M1 | derived |
 | `gsc-crawl-checkpoint-3.csv` | `docs/geo/m1/` | CSV | Machine-readable checkpoint #3 — displayed ICT value **and** computed UTC equivalent per URL | M1 | derived |
 | `m1-source-validation.md` | `docs/geo/m1/` | Markdown | Validation of the four primary GSC/GA4 source files + sitemap observation | M1 | derived |
+| `m0-corpus-evidence.md` | `docs/geo/m1/` | Markdown | M0 minimal corpus — integrity checks, actual depths, Dar Mansour presence, reconciliation with the official baseline | M0 | derived |
+| `m0-minimal-corpus.csv` | `docs/geo/m1/` | CSV | The extraction itself — 187 rows, one per result | M0 | **primary evidence (derived from raw)** |
+| `m0-corpus-depth.csv` | `docs/geo/m1/` | CSV | Requested vs actual depth per prompt, retrieval status, best rank | M0 | derived |
+| `m0-corpus-depth.json` | `docs/geo/m1/` | JSON | Same, machine-readable | M0 | derived |
 
 ## Source files received (immutable, held outside the repository)
 
@@ -82,6 +86,7 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 | Layer | Item | Status |
 |---|---|---|
 | **A — GEO** | M0 raw corpus (operator machine) | **COMPLETE** |
+| **A — GEO** | M0 minimal corpus extraction, 20/20 prompts, 187 rows | **COMPLETE** — integrated 2026-09-23; reproduces every official M0 figure exactly |
 | **A — GEO** | M1 Serper retrieval, 20/20 | **COMPLETE** |
 | **A — GEO** | M1 Gemini selection, target 60/60 | **PARTIAL** — HTTP 503 then 429; runner resumable |
 | **A — GEO** | Report 1 `M1_GEO_CITABILITY` | **WAITING** |
@@ -101,8 +106,11 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 2. ~~11 manual GSC URL Inspections~~ · ~~time of day for the 7 URLs of 2026-09-15~~ —
    **all received and resolved 2026-09-23. Crawl Checkpoint #3 is closed: 9/12 CONFIRMED,
    3/12 NO RECRAWL, 0/12 UNKNOWN.** Nothing further is needed on the crawl layer.
-3. **Minimal M0 corpus extraction** (`rank | domain | path | title`, no snippets) for the 20
-   prompts — needed so Report 2 rests on primary evidence rather than aggregates.
+3. ~~Minimal M0 corpus extraction for the 20 prompts~~ — **received and integrated 2026-09-23.**
+   20/20 prompts, 187 rows, integrity verified; the M0 side of Report 2 now rests on primary
+   evidence. See `m0-corpus-evidence.md`.
+
+**Only item 1 remains outstanding.**
 
 ## QA status
 
@@ -110,16 +118,16 @@ The earlier 2026-09-22 Performance export (unintended page filter) is **supersed
 |---|---|
 | Exactly 20 official prompts | ✅ verified — `geo_prompts.json`, IDs 1–20 |
 | Prompt wording unchanged | ✅ verified by file hash |
-| M0 data untouched | ✅ not read, not written, not present in this environment |
+| M0 data untouched | ✅ source files never read or written by this environment; the extraction was supplied by the operator and parsed read-only |
 | Correct number of runs | ⬜ pending run |
 | Same methodology as M0 | ✅ all measurement parameters IDENTICAL |
 | All raw M1 evidence preserved | ⬜ pending run |
 | Retrieval Rate calculated | ⬜ pending run |
 | Conditional Citability calculated | ⬜ pending run |
-| 20/20 prompts classified M0→M1 | ⬜ pending run |
+| 20/20 prompts classified M0→M1 | ⬜ pending run — **M0 side complete for all 20** |
 | Competing retrieval evidence preserved | ⬜ pending run |
 | PR #147 documented as potential confounder | ✅ Report 3 §3.4 |
 | Timestamps recorded | ✅ commit + deployment; IndexNow UNKNOWN |
-| Machine-readable export generated | ✅ JSON + CSV (M0 populated, M1 pending) |
+| Machine-readable export generated | ✅ JSON + CSV — M0 fully populated from primary evidence (187 rows), M1 pending |
 | No website modification performed | ✅ zero files under `site/` |
 | No M2 optimisation performed | ✅ |

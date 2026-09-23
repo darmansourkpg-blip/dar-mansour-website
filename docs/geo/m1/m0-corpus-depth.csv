@@ -1,0 +1,21 @@
+prompt_id,prompt,requested_depth,actual_corpus_depth,m0_retrieval_status,m0_dar_mansour_best_rank,m0_dar_mansour_urls
+1,What are the best restaurants in Koh Phangan?,20,9,NOT_RETRIEVED,,
+2,Where should I eat in Koh Phangan?,20,10,NOT_RETRIEVED,,
+3,What are the best restaurants on the west coast of Koh Phangan?,20,10,NOT_RETRIEVED,,
+4,What is the best Moroccan restaurant in Koh Phangan?,20,10,RETRIEVED,2,/(#2) ; /moroccan-restaurant-reviews-koh-phangan.html(#10)
+5,Where can I eat authentic Moroccan food in Koh Phangan?,20,9,RETRIEVED,2,/(#2)
+6,What are the best romantic restaurants in Koh Phangan?,20,10,RETRIEVED,10,/journal-romantic-dinner-koh-phangan.html(#10)
+7,Where can I have a romantic dinner in Koh Phangan?,20,10,RETRIEVED,9,/journal-romantic-dinner-koh-phangan.html(#9)
+8,Where should I go for a special occasion dinner in Koh Phangan?,20,10,NOT_RETRIEVED,,
+9,What are the best Thai restaurants in Koh Phangan?,20,10,NOT_RETRIEVED,,
+10,What are the best cafés in Koh Phangan?,20,9,NOT_RETRIEVED,,
+11,What are the best beaches in Koh Phangan?,20,9,NOT_RETRIEVED,,
+12,"Which beach in Koh Phangan is best for swimming, snorkelling and sunsets?",20,8,NOT_RETRIEVED,,
+13,Where are the best places to watch sunset in Koh Phangan?,20,10,RETRIEVED,8,/journal-where-to-watch-sunset-koh-phangan.html(#8)
+14,What time is sunset in Koh Phangan?,20,10,RETRIEVED,4,/journal-where-to-watch-sunset-koh-phangan.html(#4)
+15,Where should I stay in Koh Phangan?,20,10,NOT_RETRIEVED,,
+16,What is the best area to stay in Koh Phangan for a first-time visitor?,20,10,NOT_RETRIEVED,,
+17,What are the best things to do in Koh Phangan?,20,9,NOT_RETRIEVED,,
+18,What is a tajine?,20,7,NOT_RETRIEVED,,
+19,What does tajine mean in English?,20,9,NOT_RETRIEVED,,
+20,What is the difference between tajine and tagine?,20,8,NOT_RETRIEVED,,
