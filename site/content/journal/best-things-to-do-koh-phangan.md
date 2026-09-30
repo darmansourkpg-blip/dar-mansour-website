@@ -444,6 +444,8 @@ Sometimes the best day on Koh Phangan is the one you didn't organise.
 
 **Explore more —** [Where to Stay in Koh Phangan: Best Areas for Every Type of Traveller](journal-where-to-stay-koh-phangan.html)
 
+**Getting around —** [How to Get Around Koh Phangan: Scooters, Taxis, Cars and Boats](journal-how-to-get-around-koh-phangan.html) — journey times and transport between the island's different areas.
+
 ## Final Thoughts
 
 The Full Moon Party may have put Koh Phangan on the world map. But it isn't what defines the island once you've spent some time here.
