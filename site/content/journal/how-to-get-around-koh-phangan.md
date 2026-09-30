@@ -5,9 +5,8 @@ description: How to get around Koh Phangan — scooter, taxi, car or longtail bo
 date: 2026-09-29
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-# cover: PENDING — awaiting a real Dar Mansour/team longtail-boat photo (see preparation report). Fill before build.
-cover: ""
-cover_alt: ""
+cover: assets/uploads/longtail-boat-bottle-beach-koh-phangan.jpg
+cover_alt: Longtail boat at Bottle Beach in Koh Phangan
 quick_guide:
   - label: Best for
     value: Deciding how to get around — scooter, taxi, car, bicycle or longtail boat
@@ -70,6 +69,8 @@ There is no universal winner. For someone already comfortable on two wheels, a s
 ## Taxis and Shared Pickup Taxis
 
 Koh Phangan's shared taxis are converted pickup trucks, known locally as songthaews. You'll see them on the main roads and can wave one down.
+
+![Shared pickup taxis near Thong Sala Pier in Koh Phangan](assets/uploads/shared-pickup-taxis-thong-sala-pier-koh-phangan.webp "Shared pickup taxis (songthaews) near Thong Sala Pier, Koh Phangan")
 
 Drivers tend to work by area. Not every driver covers every part of the island, so the first taxi you stop may not be going where you need.
 
@@ -135,6 +136,8 @@ By contrast, the Thong Sala–Hin Kong stretch is relatively flat and easier.
 
 Road surface matters too. Sand can accumulate on the road, particularly after heavy rain, and debris can be washed onto the surface. Slow down before bends and anticipate changes in the road rather than braking or changing direction suddenly once you're already on them.
 
+![Scooter riding on a steep road in Koh Phangan](assets/uploads/scooter-steep-road-use-low-gear-koh-phangan.webp "A steep road with a 'use low gear' sign, Koh Phangan")
+
 ## Renting a Car
 
 A car isn't simply a fallback for people who don't want a scooter.
@@ -198,6 +201,8 @@ If you arrive at Thong Sala Pier without your own transport arranged, getting to
 Hotels and villas can often organise a pier pickup in advance. Otherwise, there are generally plenty of taxis around the pier when ferries arrive.
 
 There are also numerous scooter and car rental businesses around Thong Sala, so renting shortly after arrival is possible.
+
+![Scooter rental near Thong Sala Pier in Koh Phangan](assets/uploads/scooter-rental-thong-sala-pier-koh-phangan.webp "Scooter and car rental near Thong Sala Pier, Koh Phangan")
 
 Season makes a difference. In low season, finding a vehicle after arriving is generally straightforward. During high season, availability can become tighter, so if you already know you want a particular vehicle, we'd book ahead rather than assume one will be waiting.
 
@@ -277,6 +282,8 @@ Once the rain has eased, don't assume the road has immediately returned to norma
 ## Practical Tips
 
 Petrol is easy to find. Alongside petrol stations and small local pumps, you'll see Thai shops selling petrol in reused glass bottles, often old spirits bottles — a familiar sight around the island.
+
+![Petrol sold in glass bottles at a roadside shop in Koh Phangan](assets/uploads/petrol-glass-bottles-roadside-koh-phangan.webp "Roadside petrol sold in glass bottles, Koh Phangan")
 
 Scooters are much easier to park than cars. If a restaurant, beach or accommodation has an access road that feels uncomfortably steep, there's nothing wrong with parking somewhere more comfortable and walking the final stretch.
 
