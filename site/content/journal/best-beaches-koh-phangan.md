@@ -413,7 +413,7 @@ Bottle Beach is one of the island's most iconic beaches and a favourite for anyo
 **Facilities —** Beach restaurants · Limited accommodation<br>
 **Access —** Boat or challenging road · **Crowds —** Quiet to moderate
 
-**Good to know —** You can reach Bottle Beach by scooter, but the final road is steep and tricky after rain. Many visitors prefer a longtail boat from Chaloklum.
+**Good to know —** You can reach Bottle Beach by scooter, but the final road is steep and tricky after rain. Many visitors prefer a longtail boat from Chaloklum. Our guide to [getting around Koh Phangan](journal-how-to-get-around-koh-phangan.html) explains how longtail boats work for beaches like this.
 
 **Our take —** Bottle Beach isn't somewhere you simply stop by — it's a destination in itself. The journey is part of the experience, and the scenery repays the effort.
 

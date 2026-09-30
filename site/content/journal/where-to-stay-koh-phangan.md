@@ -421,7 +421,7 @@ If we had to generalise: **choose west for food, sunsets and variety; choose eas
 
 - **Pick the area, then the hotel.** Decide what kind of trip you want — wellness, sunsets, luxury, nightlife or the beach — and choose the area first.
 - **Book ahead in high season.** December to March and every Full Moon Party fill the best-rated places quickly.
-- **Rent a scooter.** The island is small; a scooter turns "far" into ten minutes and opens up every beach and restaurant.
+- **Rent a scooter.** If you're already a confident rider, a scooter gives you much more freedom to explore the island. If you'd rather not ride, our guide to [**how to get around Koh Phangan**](journal-how-to-get-around-koh-phangan.html) covers taxis, cars, boats and getting around without a scooter.
 - **Check current ratings and hours.** Guest scores and opening times shift through the year — confirm on Google or Agoda before booking.
 
 ## Final Thoughts
