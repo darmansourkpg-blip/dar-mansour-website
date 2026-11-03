@@ -5,9 +5,8 @@ description: The best cafés in Koh Phangan for specialty coffee, artisan pastri
 date: 2026-08-18
 author: The Dar Mansour Journal
 category: koh-phangan-guide
-cover: assets/uploads/specialty-coffee-latte-art-cafe-koh-phangan.webp
-cover_alt: Two lattes with heart latte art beside eggs Benedict and a fruit-and-granola bowl on a marble table at a café in Koh Phangan
-hero_scrim: light
+cover: assets/uploads/espresso-machine-double-shot.jpg
+cover_alt: Two espresso shots pulling into glasses under an espresso machine group head
 quick_guide:
   - label: Best for
     value: Specialty coffee · Café culture · Slow mornings · Digital nomads
