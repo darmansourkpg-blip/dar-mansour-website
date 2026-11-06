@@ -243,7 +243,7 @@ menu_body = L.breadcrumb(("Menu", None)) + L.subhero(
     <p>In the heart of Moroccan homes, the <a class="ilink" href="moroccan-hospitality-values-koh-phangan.html">Dadas</a> stand as iconic figures, preserving a culinary heritage passed down from generation to generation. Originally from Mali or Senegal, these women became the silent guardians of Moroccan family recipes — slow-cooked dishes full of generosity, depth and soul. It is their legacy we honour at Dar Mansour: food as love, patience and memory.</p>
   </div>
   <div style="max-width:820px;margin:2.5rem auto 0;">{render_legend()}</div>
-  <div class="note reveal" style="max-width:820px;margin:1.4rem auto 0;"><p>All prices are in Thai Baht (฿). A 3% surcharge applies to card payments. Our Tajines, Tanjias and Couscous are freshly prepared to order in limited quantities — most requiring 1 to 5 hours of slow cooking. Pre-ordering via WhatsApp, ideally 5 hours ahead, is advised.</p></div>
+  <div class="note reveal" style="max-width:820px;margin:1.4rem auto 0;"><p>All prices are in Thai Baht (฿). A 3% surcharge applies to card payments.</p></div>
 
 {render_menu()}
 
